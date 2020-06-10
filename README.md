@@ -1,4 +1,4 @@
-# lang-en_US
+# lang-zh_ZH
 
 ### READ THIS WHEN YOU WANT TO MAKE TRANSLATIONS TO ANOTHER LANGUAGE
 
@@ -100,7 +100,7 @@ In the GUI go to: Settings -> Display Settings -> Language
 
 ### GITHUB
 
-A language repository will be made available at [Github](https://github.com/limetech), where translators can create Pull Requests (PR) and submit their work.
+A language repository will be made available at [Github](https://github.com/unraid), where translators can create Pull Requests (PR) and submit their work.
 
 Once you are satisfied with your results, use Github (an account is required) to fork the respective language repository and create a PR with your modifications.
 
