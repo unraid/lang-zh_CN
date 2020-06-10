@@ -1,0 +1,301 @@
+A registration replacement key has been created for USB Flash GUID=
+About=
+alert=
+An email has been sent to=
+and=
+Anonymize diagnostics=
+Anytime=
+Archived Notifications=
+Are you sure=
+Array has been Reset=Array has been **Reset**
+Array must be Started to change permissions=Array must be **Started** to change permissions
+Array must be Stopped to change=Array must be **Stopped** to change
+Array=
+Author=
+Blacklisted USB Flash GUID=
+Branch=
+By using this software, you agree with our=
+Cache slots=
+Cannot connect to key-server=
+Check for Updates=
+click Install Key=click <i>Install Key</i>
+collecting diagnostic information this may take several minutes=collecting diagnostic information (this may take several minutes)
+Component=
+Credits=
+Data slots=
+Delete notification=
+Developer=
+Diagnostics=
+Disks=
+Display Settings=
+End-User License Agreement=
+Enter URL of language pack XML file=
+Error accessing your physical USB Flash boot device=
+EULA=
+Event=
+Expiration=
+Extend=
+extended=
+Get Trial Key=
+Hardware Profile=
+Hide Details=
+If you do not receive an email, please check your spam or junk-email folder=
+Importance=
+Important=
+Install=
+Installed languages=
+Invalid Trial Installation=Invalid *Trial* Installation
+It will collect all of the system hardware information, remove any serial numbers, and securely upload it to LimeTech=
+Key file URL=
+Language support added=
+Language support deleted=
+Language=
+Missing Key File=
+Missing Language=
+Network Settings=
+New Config=
+New Permissions=
+No personal information such as user names, passwords, or any other file contents is included in the hardware profile=No personal information such as user names, passwords, or any other file contents is included in the hardware profile
+normal=
+Only ZIP files are allowed=
+Page Map=
+Parity slots=
+Please check your=
+Please select a language before proceeding=
+Please=
+Preserve current assignments=
+previous=
+Privacy Policy=
+Processes=
+Purchase Key=
+Registered GUID=
+Registered on=
+Registered to=
+registering USB Flash GUID=
+Release has been withdrawn=
+Remove the installed language=
+Replaceable=
+Request Extension=
+Request Trial Extension=
+Restore=
+See=
+Select language file=
+Select language=
+Show Details=
+slots=
+Subject=
+System Devices=
+System Update Check=
+Text=
+Thank you for choosing Unraid OS=
+Thank you for registering USB Flash GUID=
+Thank you for trying Unraid OS=
+The registered GUID does not match the USB Flash boot device GUID=
+There is a physical problem accessing your USB Flash boot device=
+this may take several minutes=
+This release has been withdrawn for use with Trial keys=This release has been withdrawn for use with *Trial* keys
+This server has %s attached storage device=
+This server has %s attached storage devices=
+This utility is used for troubleshooting purposes=
+This will delete all notification files=
+This will update folder file permissions=This will update folder & file permissions
+Time=
+To install a registration key, paste the key file URL in the box below and click Install Key=To install a registration key, paste the key file URL in the box below and click **Install Key**
+to select your language=
+To support more storage devices as your server grows, click Upgrade Key below=To support more storage devices as your server grows, click *Upgrade Key* below
+Trial key expires on=***Trial*** key expires on
+Trial=
+Update OS=
+Upgrade Key=
+uploading hardware information=
+Uploading=
+Use this to develop language packs=
+Use this to install official language packs=
+User Shares=
+User=
+Vars=
+warning=
+webGUI=
+When received, please paste the URL into the Key file URL box and=When received, please paste the URL into the <i>Key file</i> URL box and
+Wrong File Extension=
+You havent sent Limetech your hardware profile yet=You haven't sent Limetech your hardware profile yet
+Your hardware profile was last submitted on=
+Your Trial key has expired=Your *Trial* key has expired
+Your Trial key requires an internet connection=Your *Trial* key requires an internet connection
+
+; Sysdevs text - added May 18, 2020
+A reboot is required to apply changes=
+ALERT=
+Bind selected to VFIO at Boot=
+CPU Thread Pairings=
+Changes saved=
+Function Level Reset FLR supported=Function Level Reset (FLR) supported
+In use by Unraid=
+Kernel driver in use vfio-pci=Kernel driver in use: vfio-pci
+No changes=
+PCI Devices and IOMMU Groups=
+Reboot to take effect=
+SCSI Devices=
+The below list doesnt not reflect the way IOMMU would naturally group devices=The below list doesn't not reflect the way IOMMU would naturally group devices
+This controller is bound to vfio, connected USB devices are not visible=
+This controller is bound to vfio, connected drives are not visible=
+To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=To see natural IOMMU groups for your hardware, go to the [VM Manager] page and set the **PCIe ACS override** setting to **Disabled**
+USB Devices=
+Your system has booted with the PCIe ACS Override setting enabled=
+
+:diagnostics_1_plug:
+This utility is used for troubleshooting purposes. It will collect all of the system information and configuration files, and package these files in a single ZIP file which can be saved locally.
+Subsequently, this file can be included in your correspondence with Limetech or the Unraid forum.
+
+This will help others to quickly get the inside information of your system and provide better support to your problem. The following information
+and configuration files are collected:
+:end
+
+:diagnostics_2_plug:
++ */config*
+  <br>copy all *\*.cfg files*, *go* file and the *super.dat* file. These are configuration files.
++ */config/shares*
+  <br>copy all *\*.cfg* files. These are user share settings files.
++ *Syslog file(s)*
+  <br>copy the current *syslog* file and any previous existing *syslog* files.
++ *System*
+  <br>save output of the following commands:
+  <br>lsscsi, lspci, lsusb, free, lsof, ps, ethtool & ifconfig.
+  <br>display of iommu groups.
+  <br>display of command line parameters (e.g. pcie acs override, pci stubbing, etc).
+  <br>save system variables.
++ *SMART reports*
+  <br>save a SMART report of each individual disk present in your system.
++ *Docker*
+  <br>save files *docker.log*, *libvirtd.log* and *libvirt/qemu/\*.log*.
+:end
+
+:diagnostics_3_plug:
+Clicking **Download** will start the collection process and then instruct your browser to save the zip file locally.
+
+*No personal information such as user names, passwords, or any other file contents not specified above is included
+by Unraid OS; however, your server name, IP address, and user share names* **will** *be included.*
+
+*Note that 3rd-party plugins **may** or may not store personal information in plugin-specific configuration files and/or output
+to the system log.*
+
+*Use* **Anonymize diagnostics** *when publishing the diagnostics file in the public forum. In private communication with Limetech it is recommended to uncheck this setting and capture all information unaltered.*
+:end
+
+:newconfig_plug:
+This is a utility to reset the array disk configuration so that all disks appear as "New" disks, as
+if it were a fresh new server.
+
+This is useful when you have added or removed multiple drives and wish to rebuild parity based on
+the new configuration.
+
+Use the *'Preserve current assignments'* selection to populate the desired disk slots ***after*** the array has been reset. By default **no** disk slots are populated.
+
+**DO NOT USE THIS UTILITY THINKING IT WILL REBUILD A FAILED DRIVE** - it will have the opposite
+effect of making it ***impossible*** to rebuild an existing failed drive - you have been warned!
+:end
+
+:newperms_1_plug:
+This is a mandatory one-time action to be taken after upgrading from a pre-5.0 Unraid server release to Unraid v5 or a later release.
+Select **ALL DISKS** when performing this one-time action.
+
+This utility is also useful for restoring default ownership/permissions on files and
+directories when transitioning back from Active Directory to non-Active Directory integration.
+
+The utility starts a background process that goes to each of your data disks and cache disks and selected user shares
+and changes file and directory ownership to *nobody/users* (i.e., uid/gid to 99/100), and sets permissions
+as follows:
+:end
+
+:newperms_2_plug:
+For directories:
+  drwxrwxrwx
+
+For read/write files:
+  -rw-rw-rw-
+
+For readonly files:
+  -r--r--r--
+:end
+
+:newperms_3_plug:
+Clicking **Start** will open another window and start the background process.
+
+Closing the window before completion will terminate the background process - so don't do that. This process can take a long time if you have many files.
+
+Note that this tool may negatively affect any docker containers if you allow your appdata share to be included.
+:end
+
+:registration_1_plug:
+Your server will not be usable until you purchase a Registration key or install a free 30-day *Trial* key. A *Trial*
+key provides all the functionality of a *Pro* Registration key.
+
+Registration keys are bound to your USB Flash boot device serial number (GUID).  Please use a high quality name brand device
+at least 1GB in size.
+
+Note: USB memory card readers are generally **not** supported because most do not present unique serial numbers.
+:end
+
+:registration_2_plug:
++ Please make sure your [server time](DateTime) is accurate to within 5 minutes.
++ Please make sure there is a [DNS server](NetworkSettings) specified.
+:end
+
+:registration_3_plug:
+Your *Trial* key includes all the functionality and device support of a *Pro* Registration key.
+
+After your *Trial* key has reached expiration, your server **still functions normally** until the next time you **Stop** the array.
+
+At that point, you may either purchase a Registration key, or request a *Trial* extension.
+:end
+
+:registration_4_plug:
+To continue using Unraid OS you may purchase a Registration key. Alternately, you may request a *Trial* extension key.
+
+Most *Trial* extension requests are processed immediately but please allow up to one business day to receive your *Trial* extension key.
+:end
+
+:registration_5_plug:
+It is not possible to use a *Trial* key with an existing Unraid OS installation.
+
+You may purchase a Registration key corresponding to this USB Flash device to continue using this installation.
+
+For more information, please [Contact Support](https://lime-technology.com/contact).
+:end
+
+:registration_6_plug:
+It appears that your Registration key file is corrupted or missing.  The key file should be located in the
+[config](/Registration/Browse?dir&#61;/boot/config) directory on your USB Flash boot device.
+
+If you do not have a backup copy of your Registration key file, [Contact Support](https://lime-technology.com/contact).
+
+If this was a *Trial* installation, you may purchase a Registration key.
+:end
+
+:registration_7_plug:
+*Trial* installations are only valid with the originally registered USB Flash device.
+
+To continue using this installation with this USB Flash device, you may purchase a Registration key.
+:end
+
+:registration_8_plug:
+The Registration key file does not correspond to the USB Flash boot device.
+Please copy the correct key file to the [config](/Registration/Browse?dir&#61;/boot/config) directory
+on your USB Flash boot device. If you do not have a backup copy of your key file, [Contact Support](https://lime-technology.com/contact).
+
+If you want to replace your Registration key with a new key bound to this USB Flash device, click Replace Key below. An original key may be
+replaced anytime. Thereafter, a replacement key may be replaced again after one year has passed.  If you require
+another replacement key sooner, [Contact Support](https://lime-technology.com/contact).
+
+**Note:** Replacing a Registration key results in permanently *blacklisting* the previous USB Flash GUID.
+:end
+
+:registration_9_plug:
+This USB Flash boot device has been *blacklisted*. This can occur as a result of transfering your Registration key to
+a replacement USB Flash device, and you are currently booted from your old USB Flash device.
+
+A USB Flash device may also be *blacklisted* if there is no serial number, or if we discover the serial number
+is not unique (this is common with USB card readers).
+
+For more information, please [Contact Support](https://lime-technology.com/contact).
+:end
