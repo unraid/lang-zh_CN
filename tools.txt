@@ -167,7 +167,7 @@ and configuration files are collected:
 + *SMART reports*
   <br>save a SMART report of each individual disk present in your system.
 + *Docker*
-  <br>save files *docker.log*, *libvirtd.log* and *libvirt/qemu/\*.log*.
+  <br>save files *docker.log*, *libvirtd.log*, *libvirt/qemu/\*.log* and *vfio-pci*.
 :end
 
 :diagnostics_3_plug:
