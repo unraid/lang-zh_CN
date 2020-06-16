@@ -319,6 +319,7 @@ Install Language Pack=
 Remove Language Pack=
 Update Language Pack=
 Installed Version=
+A note about translations=
 
 ; Help Text
 This chooses how to sort the results=
