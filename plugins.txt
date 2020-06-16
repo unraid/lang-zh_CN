@@ -8,6 +8,7 @@ Enter URL of remote plugin file or local plugin file=
 ERROR=
 Install Plugin=
 install=
+Install=
 Installed Plugins=
 Installing Update=
 need check=
