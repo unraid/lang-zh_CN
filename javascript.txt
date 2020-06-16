@@ -52,3 +52,6 @@ Spinning up all drives=
 Starting services=
 Stopping services=
 Unmounting disks=
+Autostart disabled=
+Missing encryption key=
+Opening encrypted volumes=
