@@ -1,215 +1,214 @@
 ; Translation Credit.  Will appear in CA's credits
-translationCredit=<Author> (<Language>)
-Cancel=
+translationCredit=<少花一点> (<中文>)
+Cancel=取消
 
 ; My PSAs / banners
-Happy New Year=
-Happy Holidays from Andrew, Tracey, and family=
-Please Enjoy Responsibly=
-Popup Blocked CA requires popups to be enabled under certain circumstances You must white list your server within your browser to allow popups=
-Docker Service Not Enabled - Only Plugins Available To Be Installed Or Managed=
-Community Applications works best when cookies are enabled in your browser Certain features may not be available=
-Backup Server Active Some icons may not appear, and plugin installations may be affected=
-
+Happy New Year=新年快乐
+Happy Holidays from Andrew, Tracey, and family=来自安德鲁，特蕾西和家人的节日快乐
+Please Enjoy Responsibly=请负责任地享受
+Popup Blocked CA requires popups to be enabled under certain circumstances You must white list your server within your browser to allow popups=弹出窗口阻止CA需要在某些情况下启用弹出窗口。您必须在浏览器中将服务器列入白名单以允许弹出窗口
+Docker Service Not Enabled - Only Plugins Available To Be Installed Or Managed=未启用Docker服务-仅可安装或管理的插件
+Community Applications works best when cookies are enabled in your browser Certain features may not be available=在浏览器中启用Cookie时，社区应用程序最有效。某些功能可能不可用
+Backup Server Active Some icons may not appear, and plugin installations may be affected=备份服务器处于活动状态某些图标可能不会显示，插件安装可能会受到影响
 ; Sorting Options
-Sorting options=
-Sorting options unavailable=
-Sort By Name Ascending=
-Sort By Name Descending=
-Sort By Downloads=
-Sort By Trend=
-Sort By Date Added=
+Sorting options=排序选项
+Sorting options unavailable=排序选项不可用
+Sort By Name Ascending=按名称升序排列
+Sort By Name Descending=按名称降序排序 
+Sort By Downloads=按下载排序
+Sort By Trend=按趋势排序
+Sort By Date Added=按添加日期排序
 ; Initial disclaimer translations
-Disclaimer=
-All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=
-Every attempt is made to ensure that only safe and compatible applications are present=
-Application Policy=
-I Understand=
-Installations of apps disabled You must accept the warning to be able to install applications=
-Click here=
+Disclaimer=免责声明
+All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=此处列出的所有应用程序均为Unraid的第三方补充，社区应用程序或Limetech的作者均不对此处列出的任何应用程序的适用性做任何保证。
+Every attempt is made to ensure that only safe and compatible applications are present=尽一切努力确保仅存在安全且兼容的应用程序
+Application Policy=申请政策
+I Understand=我了解
+Installations of apps disabled You must accept the warning to be able to install applications=禁止安装应用程序您必须接受警告才能安装应用程序
+Click here=点击这里
 
 ; Plugin Disclaimer
-Community Applications contains both docker containers and plugin applications Plugins are designed for OS enhancements, and run with full privileges on your system and are clearly identified within CA=
-Plugin Note=
+Community Applications contains both docker containers and plugin applications Plugins are designed for OS enhancements, and run with full privileges on your system and are clearly identified within CA=社区应用程序同时包含docker容器和插件应用程序，这些插件是为增强操作系统而设计的，并在您的系统上以完全特权运行，并且在CA 
+Plugin Note=插件说明
 
 ; Multi Install
-Install Plugin Applications=
+Install Plugin Applications=安装插件应用程序
 
 ; Searches
-Search=
-Please enter search term=
-Click Here To Get More Results From DockerHub=
-No Matching Applications Found On Docker Hub=
-No Matching Applications Found=
+Search=搜索
+Please enter search term=请输入搜索词
+Click Here To Get More Results From DockerHub=单击此处以从DockerHub获得更多结果
+No Matching Applications Found On Docker Hub=在Docker Hub上找不到匹配的应用程序
+No Matching Applications Found=找不到匹配的应用程序
 
 ; Install Plugin title of openbox
-Install Plugin=
+Install Plugin=安装插件
 
 ; Remove App from previously installed
-Delete Template=
-Yes, delete it=
+Delete Template=删除模板
+Yes, delete it=是的，删除它
 
 ; Uninstall popup
-Uninstall Application=
-Yes uninstall it=
+Uninstall Application=卸载应用程序
+Yes uninstall it=是的，卸载它
 
 ; Remove Private Application
-Remove Private Application=
-Yes, remove it=
+Remove Private Application=删除私人应用程序
+Yes, remove it=是的，删除它
 
 ; App Pinning
-Click to pin this application=
-Click to unpin this application=
+Click to pin this application=单击以固定此应用程序
+Click to unpin this application=点击取消固定此应用程序
 
 ; Branch installations
-Choose A Branch To Install=
+Choose A Branch To Install=选择要安装的分支
 
 ; Multiple application installs
 ; no apps selected
-Install Selected Applications=
+Install Selected Applications=安装选定的应用程序
 
-Yes, install it=
+Yes, install it=是的，安装它
 
 ; Multi-install popup
-Yes, install them=
-Cookies not enabled Plugins must be separately installed from docker applications=
-Docker applications will be installed utilizing the most recently saved template with no user input on your part=
-Updating Support Links=
-Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=
+Yes, install them=是的，安装它们
+Cookies not enabled Plugins must be separately installed from docker applications=未启用Cookie的插件必须与Docker应用程序分开安装
+Docker applications will be installed utilizing the most recently saved template with no user input on your part=Docker应用程序将使用最近保存的模板进行安装，您无需用户输入
+Updating Support Links=更新支持链接
+Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=完成安装如果未出现“完成”按钮，则需要单击右上角的红色X 
 
 ; error messages
-No data was returned It is probable that another browser session has rebooted your server Reloading this browser tab will probably fix this error=
-An error occurred Could not find any %s Apps=
-Download of appfeed failed=
+No data was returned It is probable that another browser session has rebooted your server Reloading this browser tab will probably fix this error=没有返回任何数据可能是另一个浏览器会话重新启动了服务器。重新加载此浏览器选项卡可能会解决此错误
+An error occurred Could not find any %s Apps=发生错误，找不到任何 ％s Apps 
+Download of appfeed failed=appfeed下载失败
 ; the %s here refers to a function being called
-Something really went wrong here=
-Post the ENTIRE contents of this message in the Community Applications Support Thread=
-Unknown error happened Please post a screenshot in the support thread of the Statistics screen=
-Something really wrong happened Reloading the Apps tab will probably fix the problem=
-This plugin has a duplicated name from another plugin %s This will impact your ability to install both plugins simultaneously=
+Something really went wrong here=这里真的出了点问题
+Post the ENTIRE contents of this message in the Community Applications Support Thread=在社区应用程序支持线程中发布此消息的全部内容
+Unknown error happened Please post a screenshot in the support thread of the Statistics screen=发生未知错误请在统计屏幕的支持线程中发布屏幕截图
+Something really wrong happened Reloading the Apps tab will probably fix the problem=出现真正的错误重新加载应用程序选项卡可能会解决该问题
+This plugin has a duplicated name from another plugin %s This will impact your ability to install both plugins simultaneously=此插件的名称与另一个插件 %s 重复，这将影响您同时安装这两个插件的能力
 
 ; CA Sections Keep the length reasonable
-MENU=
-Installed Apps=
-Previous Apps=
-Pinned Apps=
-CATEGORIES=
-New Apps=
-Updated Apps=
-Random Apps=
-Top New Installs=
-Trending Apps=
-All Apps=
-OTHER=
-Statistics=
-Credits=
-Support=
-VERSION=
-Change Log=
+MENU=菜单
+Installed Apps=已安装的应用程序
+Previous Apps=以前的应用程序
+Pinned Apps=固定的应用程序
+CATEGORIES=类别
+New Apps=新应用
+Updated Apps=更新的应用程序
+Random Apps=随机应用
+Top New Installs=热门新安装次数
+Trending Apps=热门应用程式
+All Apps=所有应用程序
+OTHER=其他
+Statistics=统计信息
+Credits=学分
+Support=支持
+VERSION=版本 
+Change Log=更新日志
 
 ; Credits
-Development=
-Additional Contributions=
-GUI Layout Design=
-Application Feed=
-Additional Testing=
-Moderation=
-Additional Libraries=
-Copyright=
-Translation=
+Development=发展
+Additional Contributions=其他贡献
+GUI Layout Design=GUI布局设计
+Application Feed=申请提要
+Additional Testing=附加测试
+Moderation=审核
+Additional Libraries=附加库
+Copyright=版权
+Translation=翻译
 
 ; Statistics page
-Deprecated Applications are able to still be installed if you have previously had them installed New installations of these applications are blocked unless you enable Display Deprecated Applications within CAs General Settings=
-The following applications are blacklisted CA will never allow you to install or reinstall these applications=
-While highly not recommended to do, incompatible applications can be installed by enabling Display Incompatible Applications within CAs General Settings=
-This display is informational ONLY=
-unknown=
-Last Change To Application Feed=
-Number Of Docker Applications=
-Number Of Plugin Applications=
-Number Of Templates=
-Number Of Repositories=
-Number Of Private Docker Applications=
-Number Of Invalid Templates=
-Number Of Template Errors=
-Number Of Blacklisted Apps=
-Number Of Incompatible Applications=
-Number Of Deprecated Applications=
-Number Of Moderation Entries=
-Primary Server=
-Backup Server=
+Deprecated Applications are able to still be installed if you have previously had them installed New installations of these applications are blocked unless you enable Display Deprecated Applications within CAs General Settings=如果您以前已安装过弃用应用程序，则仍可以安装这些应用程序除非您在CAS常规设置中启用了显示弃用应用程序，否则这些应用程序的新安装将被阻止
+The following applications are blacklisted CA will never allow you to install or reinstall these applications=以下应用程序被列入黑名单CA永远不允许您安装或重新安装这些应用程序
+While highly not recommended to do, incompatible applications can be installed by enabling Display Incompatible Applications within CAs General Settings=虽然强烈不建议这样做，但可以通过在CAS常规设置中启用显示不兼容的应用程序来安装不兼容的应用程序
+This display is informational ONLY=此显示仅供参考
+unknown=未知
+Last Change To Application Feed=申请Feed的最新更改
+Number Of Docker Applications=Docker应用程序数量
+Number Of Plugin Applications=插件应用数量
+Number Of Templates=模板数
+Number Of Repositories=存储库数量
+Number Of Private Docker Applications=私有Docker应用程序数量
+Number Of Invalid Templates=无效模板数
+Number Of Template Errors=模板错误数
+Number Of Blacklisted Apps=被列入黑名单的应用数量
+Number Of Incompatible Applications=不兼容的应用程序数量
+Number Of Deprecated Applications=已弃用的应用程序数量
+Number Of Moderation Entries=审核条目数
+Primary Server=主服务器
+Backup Server=备份服务器
 
 ; Statistics Popup Titles
-Repository List=
-All Invalid Templates Found=
-Template Errors=
-All Moderation Entries=
+Repository List=仓库清单
+All Invalid Templates Found=找到所有无效模板
+Template Errors=模板错误
+All Moderation Entries=所有审核条目
 
 ; Statistics Popup
-No invalid templates found=
-These templates are invalid and the application they are referring to is unknown=
-No templates were automatically fixed=
-All of these errors found have been fixed automatically=
-Note that many of these errors can be avoided by following the directions=
-HERE=
-The following plugins have duplicated filenames and are not able to be installed simultaneously=
-The following docker applications refer to the same docker repository but may have subtle changes in the template to warrant this=
-If any of these entries are incorrect then contact the moderators of CA to discuss=
-Global Repository Comments=
-Applied to all applications=(Applied to all applications)
-Individual Application Moderation=
+No invalid templates found=未找到无效模板
+These templates are invalid and the application they are referring to is unknown=这些模板无效，并且它们引用的应用程序未知
+No templates were automatically fixed=没有模板被自动修复
+All of these errors found have been fixed automatically=找到的所有这些错误已自动修复
+Note that many of these errors can be avoided by following the directions=请注意，这些错误中的许多都可以通过遵循说明来避免
+HERE=这里
+The following plugins have duplicated filenames and are not able to be installed simultaneously=以下插件的文件名重复，无法同时安装
+The following docker applications refer to the same docker repository but may have subtle changes in the template to warrant this=以下docker应用程序引用相同的docker存储库，但模板中可能有细微的更改以保证这一点
+If any of these entries are incorrect then contact the moderators of CA to discuss=如果这些条目中的任何一个不正确，请联系CA的版主进行讨论
+Global Repository Comments=全局存储库评论
+Applied to all applications=(适用于所有应用程序)
+Individual Application Moderation=个人申请审核
 
 ; Misc
-Community Applications Changelog=
+Community Applications Changelog=社区应用程序变更日志
 
 ; Categories try not to be excessively long This is displayed on the left of CA screen
 
-Backup=
-Cloud=
-Downloaders=
-Game Servers=
-Home Automation=
-Media Applications=
-Books=
-Music=
-Photos=
-Video=
-Other=
-Media Servers=
-Network Services=
-DNS=
-FTP=
-Management=
-Messenger=
-Proxy=
-VOIP=
-VPN=
-Web=
-Productivity=
-Security=
-Tools Utilities=Tools / Utilities
-System=
-Themes=
-Utilities=
-Private Apps=
-Uncategorized=
+Backup=备份
+Cloud=云
+Downloaders=下载者
+Game Servers=游戏服务器
+Home Automation=家庭自动化
+Media Applications=媒体应用程序
+Books=书籍
+Music=音乐
+Photos=照片
+Video=影片
+Other=其他
+Media Servers=媒体服务器
+Network Services=网络服务
+DNS=DNS 
+FTP=FTP 
+Management=管理
+Messenger=Messenger 
+Proxy=代理
+VOIP=VOIP 
+VPN=VPN 
+Web=网络
+Productivity=生产力
+Security=安全性
+Tools Utilities=Tools / Utilities工具实用程序工具/实用程序
+System=系统
+Themes=主题
+Utilities=实用程序
+Private Apps=私人应用程式
+Uncategorized=未分类
 
 ; Categories displayed within a popup or on the card
-GameServers=
-HomeAutomation=
-MediaApp=
+GameServers=游戏服务器
+HomeAutomation=HomeAutomation 
+MediaApp=MediaApp 
 MediaAppBooks=MediaApp:Books
 MediaAppMusic=MediaApp:Music
 MediaAppPhotos=MediaApp:Photos
 MediaAppVideo=MediaApp:Video
 MediaAppOther=MediaApp:Other
-MediaServer=
+MediaServer=MediaServer 
 MediaServerBooks=MediaServer:Books
 MediaServerMusic=MediaServer:Music
 MediaServerPhotos=MediaServer:Photos
 MediaServerVideo=MediaServer:Video
 MediaServerOther=MediaServer:Other
-Network=
+Network=网络
 NetworkDNS=Network:DNS
 NetworkFTP=Network:FTP
 NetworkManagement=Network:Management
@@ -221,119 +220,119 @@ NetworkOther=Network:Other
 ToolsSystem=Tools:System
 ToolsThemes=Tools:Themes
 ToolsUtilities=Tools:Utilities
-Other=
+Other=其他
 OtherUncategorized=Other:Uncategorized
-and %s more=
+and %s more=和另外％s 
 
 ; App Popup Related
-Donate To Author=
-Donate To Maintainer=
-Author=
-Maintainer=
-DockerHub=
-Application Template=
-Base OS=
-DockerHub Stars=
-Added to CA=
-Date Updated=
-Current Version=
-Minimum OS=
-Max OS=
-Total Downloads=
-Licence=
-30 Day Trend=
-Ranked #%s=
+Donate To Author=捐赠给作者
+Donate To Maintainer=捐赠给维护者
+Author=创造者
+Maintainer=维护者
+DockerHub=DockerHub 
+Application Template=申请模板
+Base OS=基本操作系统
+DockerHub Stars=DockerHub明星
+Added to CA=已添加到CA 
+Date Updated=更新日期
+Current Version=当前版本
+Minimum OS=最低OS 
+Max OS=最大OS 
+Total Downloads=下载总次数
+Licence=许可证
+30 Day Trend=30天趋势
+Ranked #%s=排名＃％s 
 ; as in Trending up or down arrow
-Trending %s=
+Trending %s=趋势％s 
 ; as in As of some date
 As of %s=(As of %s)
 This application template has been blacklisted=This application / template has been blacklisted
 This application template has been deprecated=This application / template has been deprecated
-This application is not compatible with your version of Unraid=
+This application is not compatible with your version of Unraid=此应用程序与您的Unraid 版本不兼容
 Another browser tab or device has updated the displayed templates Some actions are not available=Another browser tab or device has updated the displayed templates. Some actions are not available
 Reinstall default=Reinstall (default)
-WebUI=
-Reinstall=
-Install=
-Project=
+WebUI=WebUI 
+Reinstall=重新安装
+Install=安装
+Project=项目
 Install Using The Templates Default Tag=Install Using The Template's Default Tag
 Moderator Comments=Moderator Comments:
-Note not all authors keep up to date on change logs=
-Note not all maintainers keep up to date on change logs=
+Note not all authors keep up to date on change logs=请注意，并非所有作者都及时了解更改日志
+Note not all maintainers keep up to date on change logs=请注意，并非所有维护者都保持最新更新记录
 ;the following if using a space you MUST use nbsp but keep it down to one word if at all possible
-Donate=
-Currently Installed Version=
-Install The Update=
+Donate=捐献
+Currently Installed Version=当前安装的版本
+Install The Update=安装更新
 ; as in you have the latest version already installed
-Latest Version=
-Multi Language Support=
+Latest Version=最新版本
+Multi Language Support=多国语言支持
 ; as in more than 100000
-More than %s=
+More than %s=超过 ％s 
 
 ; Graphs
-Trend Per Month=
-Downloads Per Month=
-Total Downloads=
+Trend Per Month=每月趋势
+Downloads Per Month=每月下载量
+Total Downloads=下载总次数
 
 ; Multi install script
-Installing docker applications %s=
-Starting %s=
-%s failed to start You should install it by itself to fix the errors=
-Setting installed applications to autostart=
-Docker Application Installation finished=
+Installing docker applications %s=安装Docker应用程序 ％s 
+Starting %s=起始 ％s 
+%s failed to start You should install it by itself to fix the errors=％s 无法启动，您应该自行安装它以修复错误
+Setting installed applications to autostart=将已安装的应用程序设置为自动启动
+Docker Application Installation finished=Docker应用程序安装完成
 
 ; Application Cards
-Private dockerHub Conversion=Private (dockerHub Conversion)
-Go to the project page=
-Go to the support thread=
-Uninstall Application=
-Remove Private Application=
-Remove Application From List=
-Check off to select multiple reinstalls=
-Go to the plugin settings=
-Click to reinstall the application using default values=
-Click to edit the application values=
-Click to reinstall=
-Click to install=
-Install plugin=
-Click to go to the WebUI=
-This application has been marked as being Beta=
-This application template has been deprecated=
-This application is not compatible with your version of Unraid=
-This application template has been blacklisted=
-Search for more applications from %s=
-Click for more information=
+Private dockerHub Conversion=Private (dockerHub Conversion)私有dockerHub转换私有（dockerHub转换）
+Go to the project page=转到项目页面
+Go to the support thread=转到支持线程
+Uninstall Application=卸载应用程序
+Remove Private Application=删除私人应用程序
+Remove Application From List=从列表中删除应用程序
+Check off to select multiple reinstalls=选中以选择多个重新安装
+Go to the plugin settings=转到插件设置
+Click to reinstall the application using default values=单击以使用默认值重新安装该应用程序
+Click to edit the application values=单击以编辑应用程序值
+Click to reinstall=点击重新安装
+Click to install=点击安装
+Install plugin=安装插件
+Click to go to the WebUI=单击以转到WebUI 
+This application has been marked as being Beta=此应用程序已被标记为Beta 
+This application template has been deprecated=此应用程序模板已弃用
+This application is not compatible with your version of Unraid=此应用程序与您的Unraid 版本不兼容
+This application template has been blacklisted=此应用程序模板已被列入黑名单
+Search for more applications from %s=从 ％s  搜索更多应用程序
+Click for more information=点击了解更多信息
 
 ; Dockerhub searches
-Search For Containers From %s=
-Search for similar containers=
+Search For Containers From %s=从 ％s  搜索容器
+Search for similar containers=搜索类似的容器
 
 ; Page Navigation
 Displaying %s - %s of %s=Displaying %1$s - %2$s (of %3$s)
 
-Updating Content=
-Language=
-Switch to this language=
-Country Code=
-Install Language Pack=
-Remove Language Pack=
-Update Language Pack=
-Installed Version=
-A note about translations=
+Updating Content=更新内容
+Language=语言
+Switch to this language=切换到此语言
+Country Code=国家代码
+Install Language Pack=安装语言包
+Remove Language Pack=删除语言包
+Update Language Pack=更新语言包
+Installed Version=安装的版本
+A note about translations=有关翻译的说明
 
 ; Help Text
-This chooses how to sort the results=
-These icons respectively will Install or Edit an application=
+This chooses how to sort the results=这将选择结果的排序方式
+These icons respectively will Install or Edit an application=这些图标分别将安装或编辑应用程序
 Clicking these icons will take you to an applications GUI or settings=Clicking these icons will take you to an application's GUI or settings
-This will update an application=
-This will take you to the appropriate support thread for an application=
-This will immediately switch to the language=
-This will take you to the project page for an application=
-Clicking this icon will uninstall the application or delete it from the lists depending upon your current section=
-Clicking these icons will pin or unpin an application for later viewer from the Pinned Apps section=
-Clicking this will display more information about the application NOTE You can also click on the applications icon to display more information=
-Clicking this will display any warnings or extra comments about the application=
-On the previous apps section you can select multiple applications to install simultaneously=
-This is the recommended version to install by the application author themselves=
-For support for this plugin visit=
-To view the policies Community Applications has=
+This will update an application=这将更新一个应用程序
+This will take you to the appropriate support thread for an application=这将带您到应用程序的适当支持线程
+This will immediately switch to the language=这将立即切换为语言
+This will take you to the project page for an application=这将带您进入应用程序的项目页面
+Clicking this icon will uninstall the application or delete it from the lists depending upon your current section=单击此图标将卸载应用程序或将其从列表中删除，具体取决于您的当前部分
+Clicking these icons will pin or unpin an application for later viewer from the Pinned Apps section=单击这些图标将从固定的应用程序部分固定或取消固定应用程序以供稍后查看
+Clicking this will display more information about the application NOTE You can also click on the applications icon to display more information=单击此按钮将显示有关应用笔记的更多信息。您也可以单击应用程序图标以显示更多信息
+Clicking this will display any warnings or extra comments about the application=单击此选项将显示有关该应用程序的任何警告或额外注释
+On the previous apps section you can select multiple applications to install simultaneously=在前面的应用程序部分，您可以选择要同时安装的多个应用程序
+This is the recommended version to install by the application author themselves=这是应用程序作者自己安装的推荐版本
+For support for this plugin visit=要获得对此插件的支持，请访问
+To view the policies Community Applications has=要查看社区应用程序具有的策略，请执行以下操作
