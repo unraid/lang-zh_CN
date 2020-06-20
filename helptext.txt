@@ -1,26 +1,26 @@
 :main_array_devices_help:
-**Colored Status Indicator** the significance of the color indicator at the beginning of each line in *Array Devices* is as follows:
+**有色状态指示器** 颜色指示器在 *阵列设备* 中每行开头的含义如下：
 
-<i class='fa fa-circle orb green-orb'></i>Normal operation, device is active.
+<i class='fa fa-circle orb green-orb'></i>正常运行，设备处于活动状态。
 
-<i class='fa fa-circle orb grey-orb'></i>Device is in standby mode (spun-down).
+<i class='fa fa-circle orb grey-orb'></i>设备处于待机模式（快速启动）。
 
-<i class='fa fa-warning orb yellow-orb'></i>Device contents emulated.
+<i class='fa fa-warning orb yellow-orb'></i>模拟设备内容。
 
-<i class='fa fa-times orb red-orb'></i>Device is disabled, contents emulated.
+<i class='fa fa-times orb red-orb'></i>设备已禁用，内容已模拟。
 
-<i class='fa fa-square orb blue-orb'></i>New device.
+<i class='fa fa-square orb blue-orb'></i>新设备。
 
-<i class='fa fa-square orb grey-orb'></i>No device present, position is empty.
+<i class='fa fa-square orb grey-orb'></i>设备不存在，位置为空。
 
-**Identification** is the *signature* that uniquely identifies a storage device. The signature
-includes the device model number, serial number, linux device id, and the device size.
+**标识**是唯一标识存储设备的*签名*。签名
+包括设备型号、序列号、Linux设备ID和设备大小。
 
-**Temp.** (temperature) is read directly from the device. You configure which units to use on
-the [Display Preferences](Settings/DisplaySettings) page.  We do not read the temperature of spun-down hard
-drives since this typically causes them to spin up; instead we display the `*` symbol.  We also
-display the `*` symbol for SSD and Flash devices, though sometimes these devices do report a valid
-temperature, and sometimes they return the value `0`.
+**温度** (温度) 直接从设备读取。您可以在 [显示首选项](Settings/DisplaySettings)
+页面上配置要使用的单位。 我们不读取快速旋转的硬盘驱动器的温度，
+因为这通常会使它们旋转，而是显示*符号。我们还会显示`*`SSD和闪存设备的符号，
+尽管有时这些设备确实报告了有效的温度，
+有时它们返回值0。
 
 **Size, Used, Free** reports the total device size, used space, and remaining space for files.  These
 units are also configured on the [Display Preferences](Settings/DisplaySettings) page.  The
