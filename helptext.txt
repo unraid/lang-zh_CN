@@ -1801,274 +1801,272 @@ Choose here whether any parity errors found during the check, need to be correct
 :end
 
 :mover_schedule_help:
-Choose a mover schedule ranging from hourly, daily, weekly and monthly.
+选择每小时，每天，每周和每月的 Mover 计划。
 
-The interval determines how fast the mover will activated, it runs in the background.
+间隔确定 Mover 将在后台运行的速度。
 :end
 
 :mover_day_of_the_week_help:
-Choose a day when the weekly schedule is selected. Otherwise disabled.
+选择每周计划后选择一天。 否则将禁用。
 :end
 
 :mover_day_of_the_month_help:
-Choose a date when the monthly schedule is selected. Otherwise disabled.
+选择每月计划后选择一个日期。 否则将禁用。
 :end
 
 :mover_time_of_the_day_help:
-When an hourly schedule is selected this will set the interval in hours. An interval always starts on the whole hour (minute 0).
+选择按小时计划后，将以小时为单位设置间隔。 间隔始终始于整点（0分钟）。
 
-For the other schedules choose here the time of the day the mover should start.
+对于其他计划，请在此处选择 Mover 应该在一天中的开始时间。
 :end
 
 :mover_logging_help:
-Write mover messages to the syslog file.
+将 Mover 讯息写入系统日志文件。
 :end
 
 :notifications_display_help:
-In *Detailed* view all notifications will be displayed on screen as soon as they arrive.<br>
-Notifications can be acknowledged individually or all in once.
+在*详细*视图中，所有通知会立即显示在屏幕上。<br>
+通知可以单独确认，也可以一次全部确认。
 
-In *Summarized* view notifications will be counted only and the number of unread notifications is shown in the menu header per category.<br>
-Click on the counters to either acknowledge or view the unread notifications.
+在*摘要*视图中，通知将仅计算未读通知数并显示在每个类别的菜单标题中。<br>
+单击计数器以确认或查看未读的通知。
 :end
 
 :notifications_date_format_help:
-Select the desired date format which is used in the notifications archive. Recommended is YYYY-MM-DD, which makes the date/time column sortable in a sensible way.
+选择在通知存档中所使用的日期格式。 推荐使用年—月—日，这样可使日期／时间列以合理的方式排序。
 :end
 
 :notifications_time_format_help:
-Select the desired time format which is used in the notifications archive. Recommended is 24 hours, which makes the date/time column sortable in a sensible way.
+选择在通知存档中所使用的时间格式。 推荐使用24小时制，这样可使日期／时间列以合理的方式排序。
 :end
 
 :notifications_display_position_help:
-Choose the position of where notifications appear on screen. Multiple notifications are stacked, bottom-to-top or top-to-bottom depending on the selected placement.
+选择通知在屏幕上出现的位置。 多个通知会堆叠在一起，从下到上或从上到下，具体取决于所选的展示位置。
 :end
 
 :notifications_store_flash_help:
-By default notifications are stored on RAM disk, which will get lost upon system reboot.
-Notifications may be stored permanently on the flash drive under folder '/boot/config/plugins/dynamix' instead.
+默认情况下，通知将存储在RAM磁盘上，在系统重新引导时这些通知将丢失。
+通知可被永久存储在闪存驱动器的文件夹 '/boot/config/plugins/dynamix' 下.
 :end
 
 :notifications_system_help:
-By default the notifications system is disabled. Enable it here to start receiving notifications.
-The following sections give more options about which and what type of notifications will be sent.
+默认情况下，通知系统是禁用的。 在此处启用它以开始接收通知。
+以下各节提供了有关发送哪种类型的通知的更多选项。
 :end
 
 :notifications_os_update_help:
-Start a periodic verification and notify the user when a new version of the Unraid OS system is detected.
-Use the checkboxes below to select how notifications need to be given; by browser, by email and/or by custom agent.
+启动定期验证，并在检测到新版本的Unraid OS系统时通知用户。
+使用下面的复选框选择如何发出通知； 通过浏览器，通过电子邮件 和/或 通过自定义代理。
 :end
 
 :notifications_plugins_update_help:
-Start a periodic verification and notify the user when a new version of one or more of the installed plugins is detected.
-Use the checkboxes below to select how notifications need to be given; by browser, by email and/or by custom agent.
+启动定期验证，并在检测到一个或多个已安装插件的新版本时通知用户。
+使用下面的复选框选择如何发出通知； 通过浏览器，通过电子邮件 和/或 通过自定义代理。
 :end
 
 :notifications_docker_update_help:
-Start a periodic verification and notify the user when a new version of one or more of the installed dockers is detected.
-Use the checkboxes below to select how notifications need to be given; by browser, by email and/or by custom agent.
+启动定期验证，并在检测到一个或多个已安装 Docker 的新版本时通知用户。
+使用下面的复选框选择如何发出通知； 通过浏览器，通过电子邮件 和/或 通过自定义代理。
 :end
 
 :notifications_array_status_help:
-Start a periodic array health check (preventive maintenance) and notify the user the result of this check.
+启动定期阵列运行状况检查（预防性维护），并将检查结果通知用户。
 :end
 
 :notifications_agent_selection_help:
-Use the checkboxes above to select what and how notifications need to be given; by browser, by email and/or by a service.<br>
-<b>Tip:</b> you can use custom notification agents; just add them to "/boot/config/plugins/dynamix/notification/agents" directory and check 'Agents'.
+使用上面的复选框选择需要发出通知的内容和方式； 通过浏览器，通过电子邮件 和/或 通过服务。<br>
+<b>　提示：</b> 您可以使用自定义通知代理； 只需将它们添加到 "/boot/config/plugins/dynamix/notification/agents" 目录并选中“代理”即可.
 :end
 
 :notifications_classification_help:
-Notifications are classified as:
+通知分类为：
 
-*notice* - these are informative notifications and do not indicate a problem situation, e.g. a new version is available<br>
-*warning* - these are attentive notifications and may indicate future problems, e.g. a hard disk is hotter than usual<br>
-*alert* - these are serious notifications and require immediate attention, e.g. a failing hard disk<br>
+*注意* - 这些是资讯性的通知，并不表示出现问题情况，例如有新版本可用<br>
+*警告* - 这些是需要注意的通知，可能表示将来的问题，例如硬盘比平时更热<br>
+*警报* - 这些是严重的通知，需要立即关注，例如发生故障的硬盘<br>
 
-Choose for each classification how you want to be notified.
+为每个分类选择要如何被通知。
 :end
 
 :smtp_preset_service_help:
-Select a preset service to set the basic service settings.
+选择一个预设服务以设置基本服务设置。
 :end
 
 :smtp_email_address_help:
-Email address of your mail account. This address is used as sender of the notifications.
+您的邮件帐户的电子邮件地址。 该地址用作通知的发送者。
 :end
 
 :smtp_recipients_help:
-Recipients of status and error notifications. Specify one or more email addresses, separate multiple email addresses with a space.
+状态和错误通知的接收者。 指定一个或多个电子邮件地址，用空格分隔多个电子邮件地址。
 :end
 
 :smtp_priority_help:
-Set email header with high importance, when there is a problem with unRaid.
+当 unRaid 出现问题时，请将电子邮件标头设置为高度重要。
 :end
 
 :smtp_subject_prefix_help:
-Set a prefix for easy recognition of Unraid messages.
+设置前缀以便识别 Unraid 消息。
 :end
 
 :smtp_mail_server_help:
-Specify the name of the email server. Use the preset service selection to have this filled-in automatically.
+指定电子邮件服务器的名称。 使用预设服务选择来自动填写此内容。
 :end
 
 :smtp_mail_server_port_help:
-Specify the port of the email server. Use the preset service selection to have this filled-in automatically.
+指定电子邮件服务器的端口。 使用预设服务选择来自动填写此内容。
 :end
 
 :smtp_use_ssl_tls_help:
-Specifies whether to use SSL/TLS to talk to the SMTP server.
+指定是否使用 SSL / TLS 与 SMTP 服务器对话。
 :end
 
 :smtp_use_starttls_help:
-Specifies whether to use STARTTLS before starting SSL negotiation - See RFC 2487.
+指定在开始 SSL 协商之前是否使用 STARTTLS - 请参阅 RFC 2487。
 :end
 
 :smtp_define_tls_cert_help:
-Select only when you have a certificate which required for communication.
+仅当您具有通信所需的证书时才选择。
 :end
 
 :smtp_tls_cert_location_help:
-The file name of an RSA certificate to use for TLS - as required.
+用于 TLS 的 RSA 证书的文件名 - 是需要的。
 :end
 
 :smtp_authentication_method_help:
-Select the correct authentication method for your email server. Use test to verify that access is working properly.
+为您的电子邮件服务器选择正确的身份验证方法。 使用测试来验证访问是否正常运作。
 :end
 
 :smtp_username_password_help:
-Enter the username and password to login to your email account. Be aware that the password is stored unencrypted in the email configuration file.
+输入用户名和密码以登录到您的电子邮件帐户。 请注意，存储在电子邮件配置文件中的密码并未加密。
 :end
 
 :plugin_install_help:
-To download and install a plugin, enter the plg file URL and click **Install**. A window will open
-that displays install progress. Do not close this window until install has completed. You may also specify
-the local file name of an extension.
+要下载并安装插件，请输入 plg 文件网址，然后单击**安装**。 這将打开一个窗口显示安装进度。 
+在安装完成之前，请勿关闭此窗口。 您也可以指定扩展名的本地文件名。
 :end
 
 :plugin_error_help:
-These plugins were not installed because of some kind of installation error.  You should delete these
-plugins and then **reboot** your server.*
+由于某种安装错误，未安装这些插件。 您应该删除这些插件，然后**重启**服务器。*
 :end
 
 :plugin_stale_help:
-These plugins were not installed because newer code already exists.  It is safe to simply delete these.
+由于已经存在更新的代码，因此未安装这些插件。 只需将删除它们就可。
 :end
 
 :docker_client_general_help:
-Templates are a quicker way to setting up Docker Containers on your Unraid server.  There are two types of templates:
+模板是在Unraid服务器上设置 Docker 容器的更快方法。 有两种类型的模板：
 
-**Default templates**<br>
-When valid repositories are added to your Docker Repositories page, they will appear in a section on this drop down for you to choose (master categorized by author, then by application template).
-After selecting a default template, the page will populate with new information about the application in the Description field, and will typically provide instructions for how to setup the container.
-Select a default template when it is the first time you are configuring this application.
+**默认模板**<br>
+将有效的存储库添加到 Docker Repositories 页面后，它们将显示在此下拉列表中的一部分供您选择（母版按作者分类，然后按应用程序模板分类）。
+选择默认模板后，该页面将在“描述”字段中写入有关该应用程序的新信息，并且通常会提供有关如何设置容器的说明。
+首次配置此应用程序时，请选择一个默认模板。
 
-**User-defined templates**<br>
-Once you've added an application to your system through a Default template,
-the settings you specified are saved to your USB flash device to make it easy to rebuild your applications in the event an upgrade were to fail or if another issue occurred.
-To rebuild, simply select the previously loaded application from the User-defined list and all the settings for the container will appear populated from your previous setup.
-Clicking create will redownload the necessary files for the application and should restore you to a working state.
-To delete a User-defined template, select it from the list above and click the red X to the right of it.
+**用户定义模板**<br>
+通过默认模板将应用程序添加到系统后，
+您指定的设置将保存到USB闪存设备中，以便在升级失败或发生其他问题时轻松地重建应用程序。
+如要重建，只需从“用户定义”列表中选择先前加载的应用程序，容器的所有设置将显示为先前设置中的状态。
+单击创建将重新下载该应用程序所需的文件，并恢复到可运作状态。
+要删除用户定义模板，请从上面的列表中选择，然后单击它右边的红色 X。
 :end
 
 :docker_client_name_help:
-Give the container a name or leave it as default.
+为容器命名或保留默认名称。
 :end
 
 :docker_client_overview_help:
-A description for the application container.  Supports basic HTML mark-up.
+应用程序容器的描述。 支持基本的 HTML 标记。
 :end
 
 :docker_client_repository_help:
-The repository for the application on the Docker Registry.  Format of authorname/appname.
-Optionally you can add a : after appname and request a specific version for the container image.
+Docker Registry 上应用程序的存储库。 格式为作者名 / 应用名。
+（可选）您可以在应用名之后添加 '：' ，并请求容器映像的特定版本。
 :end
 
 :docker_client_support_thread_help:
-Link to a support thread on Lime-Technology's forum.
+链接到 Lime-Technology 论坛上的支持主题。
 :end
 
 :docker_client_project_page_help:
-Link to the project page (eg: www.plex.tv)
+链接到项目页面（例如： www.plex.tv ）
 :end
 
 :docker_client_donation_text_help:
-Text to appear on Donation Links Within The Apps Tab
+在“应用”标签中的“捐赠链接”上显示的文字
 :end
 
 :docker_client_donation_link_help:
-Link to the donation page.  If using donation's, both the image and link must be set
+链接到捐赠页面。 如果使用捐赠，必须设置映像和链接
 :end
 
 :docker_client_hub_url_help:
-The path to the container's repository location on the Docker Hub.
+容器在Docker Hub上的存储库位置的路径。
 :end
 
 :docker_client_template_url_help:
-This URL is used to keep the template updated.
+此URL用于保持模板更新。
 :end
 
 :docker_client_icon_url_help:
-Link to the icon image for your application (only displayed on dashboard if Show Dashboard apps under Display Settings is set to Icons).
+链接到您的应用程序的图标映像（如果 “显示设置” 下的 “显示仪表板应用程序” 设置为 “图标” ，则仅显示在仪表板上）。
 :end
 
 :docker_client_webui_help:
-When you click on an application icon from the Docker Containers page, the WebUI option will link to the path in this field.
-Use [IP] to identify the IP of your host and [PORT:####] replacing the #'s for your port.
+当您从 Docker 容器页面单击应用程序图标时，WebUI 选项将链接到此字段中的路径。
+使用 [IP] 标识主机的 IP ，然后使用 [PORT：####] 替换端口的 ＃。
 :end
 
 :docker_extra_parameters_help:
-If you wish to append additional commands to your Docker container at run-time, you can specify them here.<br>
-For all possible Docker run-time commands, see here: <a href="https://docs.docker.com/reference/run/" target="_blank">https://docs.docker.com/reference/run/</a>
+如果您希望在运行时将其他命令附加到 Docker 容器，可以在此处指定它们<br>
+有关所有可能的 Docker 运行时命令，请参见此处： <a href="https://docs.docker.com/reference/run/" target="_blank">https://docs.docker.com/reference/run/</a>
 :end
 
 :docker_post_arguments_help:
-If you wish to append additional arguments AFTER the container definition, you can specify them here.
-The content of this field is container specific.
+如果希望在容器定义后附加其他参数，可以在此处指定。
+字段的内容是特定于容器。
 :end
 
 :docker_cpu_pinning_help:
-Checking a CPU core(s) will limit the container to run on the selected cores only. Selecting no cores lets the container run on all available cores (default)
+检查一个或多个 CPU 内核将限制该容器仅在选定的内核上运行。 如果不选择核心，容器将在所有可用核心上运行（默认）
 :end
 
 :docker_fixed_ip_help:
-If the Bridge type is selected, the application’s network access will be restricted to only communicating on the ports specified in the port mappings section.
-If the Host type is selected, the application will be given access to communicate using any port on the host that isn’t already mapped to another in-use application/service.
-Generally speaking, it is recommended to leave this setting to its default value as specified per application template.
+如果选择网桥类型，应用程序的网络访问将被限制为仅在端口映射部分中指定的端口上进行通信。
+如果选择主机类型，将为应用程序提供访问权限，使其可以使用主机上尚未映射到另一个正在使用的应用程序 / 服务的任何端口进行通信。
+一般来说，建议将此设置保留为每个应用程序模板指定的默认值。
 
-IMPORTANT NOTE:  If adjusting port mappings, do not modify the settings for the Container port as only the Host port can be adjusted.
+重要说明：如果要调整端口映射，请不要修改容器端口的设置，因为只能调整主机端口。
 :end
 
 :docker_privileged_help:
-For containers that require the use of host-device access directly or need full exposure to host capabilities, this option will need to be selected.
-For more information, see this link: <a href="https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities" target="_blank">https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities</a>
+对于需要直接使用主机设备访问权限或需要充分利用主机功能的容器，将需要选择此选项。
+有关更多信息，请参见以下链接： <a href="https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities" target="_blank">https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities</a>
 :end
 
 ; sysdevs help - added May 18, 2020
 :sysdevs_iommu_groups_help:
-This displays a list of IOMMU groups available on your system along with the output of the `lspci` command for each IOMMU group.  The numeric identifiers are used to configure PCI pass-through.
+此将显示系统上可用的 IOMMU 组的列表，以及每个 IOMMU 组的 lspci 命令的输出。 数字标识符用于配置PCI直通。
 
-Devices you select will be bound to the vfio-pci driver at boot, which makes them available for assignment to a virtual machine, and also prevents the Linux kernel from automatically binding them to any present host driver.
+您选择的设备将在引导时绑定到 vfio-pci 驱动程序，这使它们可用于分配给虚拟机，并且还防止 Linux 内核自动将它们绑定到任何现有的主机驱动程序。
 
-**Note that selecting a device will bind not only the specified device(s), but *all* other devices in the same IOMMU group as well.**
+**请注意，选择设备不仅会绑定指定的设备，而且还会绑定同一 IOMMU 组中的*所有*其他设备。**
 
-&nbsp;<i class="fa fa-circle orb green-orb middle"></i>&nbsp;This symbol indicates the device is currently bound to the vfio-pci driver.
+&nbsp;<i class="fa fa-circle orb green-orb middle"></i>&nbsp;此符号表示设备当前已绑定到 vfio-pci 驱动程序。
 
-&nbsp;<i class="fa fa-retweet grey-orb middle"></i>&nbsp;&nbsp;&nbsp;This symbol indicates the device supports FLR (Function Level Reset).
+&nbsp;<i class="fa fa-retweet grey-orb middle"></i>&nbsp;&nbsp;&nbsp; 此符号表示设备支持 FLR （功能级别重置）。
 
-<input type="checkbox" value="" disabled>&nbsp;&nbsp;If a checkbox is greyed out it means the device is in use by Unraid and can not be passed through.
+<input type="checkbox" value="" disabled>&nbsp;&nbsp; 如果复选框为灰色，则表示该设备已被 Unraid 使用，无法直通。
 :end
 
 :sysdevs_thread_pairings_help:
-This displays a list of CPU thread pairings.
+此显示CPU线程配对的列表。
 :end
 
 :sysdevs_usb_devices_help:
-This displays the output of the `lsusb` command.  The numeric identifiers are used to configure PCI pass-through.
+此显示 "lsusb" 命令的输出。 数字标识符用于配置PCI直通。
 :end
 
 :sysdevs_scsi_devices_help:
-This displays the output of the `lsscsi` command.  The numeric identifiers are used to configure PCI pass-through.
+此显示 "lsscsi" 命令的输出。 数字标识符用于配置PCI直通。
 
-Note that linux groups ATA, SATA and SAS devices with true SCSI devices.
+请注意, Linux 将 ATA, SATA 和 SAS 设备与真正的 SCSI 设备进行分组。
 :end
