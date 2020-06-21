@@ -13,51 +13,51 @@
 
 <i class='fa fa-square orb grey-orb'></i>设备不存在，位置为空。
 
-**标识**是唯一标识存储设备的*签名*。签名
+**标识** 是唯一标识存储设备的 *签名* 。签名
 包括设备型号、序列号、Linux设备ID和设备大小。
 
 **温度** (温度) 直接从设备读取。您可以在 [显示首选项](Settings/DisplaySettings)
 页面上配置要使用的单位。 我们不读取快速旋转的硬盘驱动器的温度，
-因为这通常会使它们旋转，而是显示*符号。我们还会显示`*`SSD和闪存设备的符号，
+因为这通常会使它们旋转，而是显示*符号。我们还会显示 `*` SSD和闪存设备的符号，
 尽管有时这些设备确实报告了有效的温度，
 有时它们返回值0。
 
-**Size, Used, Free** reports the total device size, used space, and remaining space for files.  These
-units are also configured on the [Display Preferences](Settings/DisplaySettings) page.  The
-amount of space used will be non-zero even for an empty disk due to file system overhead.
+**尺寸, 已用, 剩余** 报告文件的总设备大小、已用空间和剩余空间。这些
+还可以在 [显示首选项](Settings/DisplaySettings) 页面上配置单位。 这个
+由于文件系统开销，即使对于空磁盘，使用的空间量也将不为零。
 
-*Note: for a multi-device cache pool, this data is for the entire pool as returned by btrfs.*
+*注意：对于多设备缓存池，此数据是btrfs返回的整个池的数据。*
 
-**Reads, Writes** are a count of I/O requests sent to the device I/O drivers.  These statistics may
-be cleared at any time, refer to the Array Status section below.
+**读取, 写入**是一个发送到设备I/O驱动程序到I/O请求的计数。 这些统计数据可能
+随时清除，请参阅下面的阵列状态部分。
 
-**Errors** counts the number of *unrecoverable* errors reported by the device
-I/O drivers. Missing data due to unrecoverable array read errors is filled in on-the-fly using parity
-reconstruct (and we attempt to write this data back to the sector(s) which failed). Any unrecoverable
-write error results in *disabling* the disk.
+**错误数** 统计设备I/O驱动程序报错的 *不可恢复* 的错误数。
+使用奇偶校验动态填充因不可恢复的阵列读取错误而丢失的数据。
+重建(并且我们尝试将该数据写回失败的扇区)。 任何不可恢复
+的写入错误都会导致 *禁用* 磁盘。
 
-**FS** indicates the file system detected in partition 1 of the device.
+**FS** 指的是在设备的分区1中检测到的文件系统类型。
 
-**View** column contains a folder icon indicating the device is *mounted*. Click the icon to
-browse the file system.
+**查看** 包含一个文件夹图标，表示设备已 *挂载*。 单击图标
+浏览文件系统。
 
-If "Display array totals" is enable on the [Display Preferences](Settings/DisplaySettings) page, a
-**Total** line is included which provides a tally of the device statistics, including the average temperature
-of your devices.
+如果 "显示阵列总计" 在 [显示首选项](Settings/DisplaySettings) 页面是打开的, 则
+一个 **总计** 行它提供设备统计数据，包括设备的
+平均温度。
 
-The Array must be Stopped in order to change Array device assignments.
+必须停止阵列才能更改阵列设备分配。
 
-An Unraid array consists of one or two Parity disks and a number of Data disks. The Data
-disks are exclusively used to store user data, and the Parity disk(s) provides the redundancy necessary
-to recover from disk failures.
+UnRAID阵列由一个或两个奇偶校验磁盘和多个数据磁盘组成。数据。
+磁盘专门用于存储用户数据，奇偶校验磁盘提供必要的冗余
+从磁盘故障中恢复。
 
-Since data is not striped across the array, the Parity disk(s) must be as large, or larger than the largest Data
-disk.  Parity should also be your highest performance drive.
+由于数据不跨阵列条带化，因此奇偶校验磁盘必须与最大数据相同或大于最大数据
+磁盘。奇偶校验也应该是您的最高性能驱动器。
 
-Each Data disk has its own file system and can be exported as a
-separate share.
+每个数据磁盘都有自己的文件系统，并且可以导出为
+分开分享。
 
-Click on the Device name to configure individual device settings and launch certain utilities.
+单击设备名称以配置各个设备设置并启动某些实用程序。
 :end
 
 :main_slots_help:
