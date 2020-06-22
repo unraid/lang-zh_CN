@@ -255,7 +255,7 @@ will bring the array on-line=将使数组在线
 will copy the parity information to the new parity disk=会将奇偶校验信息复制到新的奇偶校验磁盘
 will create a file system in all Unmountable disks=将在所有不可安装的磁盘中创建文件系统
 will delete the encryption keyfile=将删除加密密钥文件
-will disable the missing disk and then bring the array on-line Install a replacement disk as soon as possible=will disable the missing disk and then bring the array on-line. Install a replacement disk as soon as possible=将禁用丢失的磁盘，然后使阵列联机。尽快安装替换磁盘将禁用丢失的磁盘，然后使阵列联机。尽快安装替换磁盘
+will disable the missing disk and then bring the array on-line Install a replacement disk as soon as possible=将禁用丢失的磁盘，然后使阵列联机。尽快安装替换磁盘将禁用丢失的磁盘，然后使阵列联机。尽快安装替换磁盘
 will expand the file system of the data disk if possible then bring the array on-line and start Data-Rebuild=will expand the file system of the data disk; if possible then bring the array on-line and start Data-Rebuild
 will immediately clear all disk statistics=将立即清除所有磁盘统计信息
 will immediately invoke the Mover=将立即调用Mover 
