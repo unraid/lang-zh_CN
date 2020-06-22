@@ -1,5 +1,3 @@
-; Translation Credit.  Will appear in CA's credits
-translationCredit=<少花一点> (<中文>)
 Cancel=取消
 
 ; My PSAs / banners
