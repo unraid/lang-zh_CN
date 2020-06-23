@@ -1599,126 +1599,126 @@ When both IPv4 and IPv6 is selected, each protocol can be configured independent
 :end
 
 :eth_ipv4_address_assignment_help:
-The following settings are possible:
+可以进行以下设置：
 
-*Automatic* - the server will attempt to obtain a IPv4 address from the local DHCP server<br>
-*Static* - the IPv4 address is manually set for this interface<br>
-*None* - no IPv4 address is assigned to the interface (only available for VLANs)
+*自动* - 服务器将尝试从本地 DHCP 服务器获取 IPv4 地址 <br>
+*静态* - 为此接口手动设置 IPv4 地址 <br>
+*无* - 不为接口分配 IPv4 地址（仅适用于 VLAN ）
 :end
 
 :eth_ipv4_address_help:
-Greyed out when using automatic IP assignment. Otherwise specify here the IPv4 address and mask of the system.
+使用自动 IP 分配时显示为灰色。 否则，请在此处指定系统的 IPv4 地址和掩码。
 :end
 
 :eth_ipv4_default_gateway_help:
-Greyed out when using automatic IP assignment. Otherwise specify here the IPv4 address of your router.
+使用自动 IP 分配时显示为灰色。 否则请在此处指定路由器的 IPv4 地址。
 :end
 
 :eth_ipv4_dns_server_assignment_help:
-If set to *Automatic* the server will use IPv4 DNS server(s) returned by the local automatic assignment.<br>
-If set to *Static* you may enter your own list.
+如果设置为 *自动*，则服务器将使用本地自动分配返回的 IPv4 DNS 服务器。<br>
+如果设置为 *静态*，则可以输入自己的列表。
 
-This is useful in Active Directory configurations where you need to set the first DNS Server entry to the IP address of your AD Domain server.
+这在 Active Directory 配置中很有用，在该配置中，您需要将第一个 DNS 服务器条目设置为 AD 域服务器的 IP 地址。
 :end
 
 :eth_ipv4_dns_server_help:
-This is the primary IPv4 DNS server to use. Enter a IPv4 address.
+这是要使用的主要 IPv4 DNS 服务器。 输入一个 IPv4 地址。
 
-Note: for *Active Directory* you **must** ensure this is set to the IP address of your AD Domain server.
+注意：对于 *Active Directory*，您 **必须** 确保将其设置为 AD 域服务器的 IP 地址。
 :end
 
 :eth_ipv4_dns_server2_help:
-This is the IPv4 DNS server to use when IPv4 DNS server 1 is down.
+这是 IPv4 DNS 服务器 1 关闭时要使用的 IPv4 DNS 服务器。
 :end
 
 :eth_ipv4_dns_server3_help:
-This is the IPv4 DNS server to use when IPv4 DNS servers 1 and 2 are both down.
+这是 IPv4 DNS 服务器 1 和 2 都关闭时要使用的 IPv4 DNS 服务器。
 :end
 
 :eth_ipv6_address_assignment_help:
-The following settings are possible:
+可以进行以下设置：
 
-*Automatic* - the server will attempt to obtain a IPv6 address from the local DHCP server or Router Advertisement (RA)<br>
-*Static* - the IPv6 address is manually set for this interface<br>
-*None* - no IPv6 address is assigned to the interface (only available for VLANs)
+*自动* - 服务器将尝试从本地 DHCP 服务器或路由器公告（RA）获取 IPv6 地址 <br>
+*静态* - 为此接口手动设置 IPv6 地址 <br>
+*无* - 不为接口分配 IPv6 地址（仅适用于 VLAN ）
 :end
 
 :eth_ipv6_address_help:
-Greyed out when using automatic IP assignment. Otherwise specify here the IPv6 address of the system.
+使用自动 IP 分配时显示为灰色。 否则请在此处指定系统的 IPv6 地址。
 :end
 
 :eth_ipv6_default_gateway_help:
-Greyed out when using automatic IP assignment. Otherwise specify here the IPv6 address of your router.
+使用自动 IP 分配时显示为灰色。 否则请在此处指定路由器的 IPv6 地址。
 :end
 
 :eth_ipv6_privacy_extensions_help:
-Enable or disable the generation of a random IPv6 interface identifier according to RFC4941. This is similar to the temporary IPv6 address generation on Windows machines.
+根据 RFC4941 启用或禁用随机 IPv6 接口标识符的生成。 这类似于 Windows 计算机上的临时 IPv6 地址生成。
 :end
 
 :eth_ipv6_dns_server_assignment_help:
-If set to *Automatic* the server will use IPv6 DNS server(s) returned by the local automatic assignment.<br>
-If set to *Static* you may enter your own list.
+如果设置为*自动*，则服务器将使用本地自动分配返回的 IPv6 DNS 服务器。<br>
+如果设置为“静态”，则可以输入自己的列表。
 :end
 
 :eth_ipv6_dns_server_help:
-This is the primary IPv6 DNS server to use. Enter a IPv6 address.
+这是使用的主要 IPv6 DNS 服务器。 输入一个IPv6地址。
 :end
 
 :eth_ipv6_dns_server2_help:
-This is the IPv6 DNS server to use when IPv6 DNS server 1 is down.
+这是 IPv6 DNS 服务器 1 关闭时要使用的 IPv6 DNS 服务器。
 :end
 
 :eth_ipv6_dns_server3_help:
-This is the IPv6 DNS server to use when IPv6 DNS servers 1 and 2 are both down.
+这是 IPv6 DNS 服务器 1 和 2 都关闭时要使用的 IPv6 DNS 服务器。
 :end
 
 :eth_desired_mtu_help:
-This is the MTU size to use on the physical Ethernet interface.
-If left blank, the MTU will automatically be determined (by default 1500 bytes).
+这是物理以太网接口上使用的 MTU 大小。
+如果留空，则将自动确定 MTU （默认为 1500 字节）。
 :end
 
 :eth_enable_vlans_help:
-By default no VLANs are configured.<br>
-Enabling VLANs extends the number of logical connections over the same physical connection.
+默认情况下，未配置任何 VLAN 。<br>
+启用 VLAN 可将逻辑连接数扩展到同一物理连接上。
 
-Note: your router and switch must support VLANs too when this feature is used.
+注意：使用此功能时，您的路由器和交换机也必须支持 VLAN 。
 :end
 
 :eth_vlan_number_help:
-Give each VLAN a unique identifier. Numbers range from 1 to 4095.
+为每个 VLAN 分配一个唯一的标识符。 编号范围是 1 到 4095。
 :end
 
 :eth_network_rules_help:
-The interface assignment rules can be changed here and might be necessary to set the preferred interface for managing Unraid - *use with care, usually there is no need to change*.
+接口分配规则可以在此处更改，并且可能是设置管理 Unraid 的首选接口所必需 - *小心使用，通常无需更改*。
 
-**eth0** is the main interface used to manage the Unraid system. The other interfaces are optional and may be used as desired.
-Every interface must be uniquely identified by its MAC (hardware) address.
+**eth0** 是用于管理 Unraid 系统的主要界面。 其他接口是可选，可以根据需要使用。
+每个接口必须通过其 MAC （硬件）地址唯一标识。
 
-The interface assignment is stored on the flash device under */config/network-rules.cfg*. This file can be viewed with any editor, but it is recommended to make changes via the webGUI only.<br>
-Deleting the file *network-rules.cfg* from the flash device will restore automatic interface assignment after a system reboot.
+接口分配存储在闪存设备上的 */config/network-rules.cfg* 下。 可以使用任何编辑器查看此文件，但是建议仅通过 webGUI 进行更改。<br>
+从闪存设备中删除文件 *network-rules.cfg* 将在系统重启后恢复自动接口分配。
 :end
 
 :eth_routing_table_help:
-Enter a valid IPv4 route in the format *nnn.nnn.nnn.nnn/xx*, e.g. *192.168.1.0/24*<br>
-or enter a valid IPv6 route in the format *nnnn:nnnn:nnnn::nnnn/xxx*, e.g. *fe80::3ad8:2fff:fe25:9709/64*
+输入 *nnn.nnn.nnn.nnn/xx* 格式的有效 IPv4 路由，例如 *192.168.1.0/24* <br>
+或以 *nnnn:nnnn:nnnn:nnnn/xxx* 的格式输入有效的 IPv6 路由，例如 *fe80:3ad8:2fff:fe25:9709/64*
 
-Select the gateway from the dropdown list or enter a valid IPv4/IPv6 address as gateway value.
+从下拉列表中选择网关，或输入有效的 IPv4/IPv6 地址作为网关值。
 
-The metric value is optional, it defaults to 1. Use it to select the prefered gateway when more than one entry of the same route exist.
+度量值是可选，默认值为 1。当同一路由存在多个条目时，可使用它来选择首选网关。
 :end
 
 :apc_ups_daemon_help:
-Set to 'Yes' to enable apcupsd and start the daemon, set to 'No' to disable apcupsd and stop the daemon.
+设置为“是”以启用 apcupsd 并启动子程序，设置为“否”以禁用 apcupsd 并停止子程序。
 :end
 
 :apc_ups_cable_help:
-Defines the type of cable connecting the UPS to your computer.Possible generic choices for 'cable' are:
+定义将UPS连接到计算机的电缆的类型.``电缆''的可能通用选择是：
 
-+ USB, Simple, Smart, Ether, or Custom to specify a special cable.
++ USB ，简单，智能，以太或自定义以指定特殊电缆。
 :end
 
 :apc_ups_custom_cable_help:
-Specify a special cable by model number, only applicable when *UPS cable* is set to Custom.
+通过型号指定特殊电缆，仅在 * UPS 电缆*设置为自定义时适用。
 
 + 940-0119A, 940-0127A, 940-0128A, 940-0020B
 + 940-0020C, 940-0023A, 940-0024B, 940-0024C
@@ -1727,77 +1727,77 @@ Specify a special cable by model number, only applicable when *UPS cable* is set
 :end
 
 :apc_ups_type_help:
-Define a *UPS type*, which corresponds to the type of UPS you have (see the Description for more details).
+定义一个* UPS 类型*，它与您拥有的 UPS 类型相对应（有关更多详细信息，请参见说明）。
 
-+ **USB** - most new UPSes are USB
-+ **APCsmart** - newer serial character device, appropriate for SmartUPS models using a serial cable (not USB)
-+ **Net** - network link to a master apcupsd through apcupsd's Network Information Server. This is used if the UPS powering your computer is connected to a different computer for monitoring
-+ **SNMP** - SNMP network link to an SNMP-enabled UPS device
-+ **Dumb** - old serial character device for use with simple-signaling UPSes
-+ **PCnet** - PowerChute Network Shutdown protocol which can be used as an alternative to SNMP with the AP9617 family of smart slot cards
-+ **ModBus** - serial device for use with newest SmartUPS models supporting the MODBUS protocol
++ **USB** - 大多数新的 UPS 是 USB
++ **APCsmart** - 较新的串行字符设备，适用于使用串行电缆（非 USB ）的 SmartUPS 型号
++ **Net** - 通过 apcupsd 的网络信息服务器连接到主 apcupsd 的网络链接。 如果为计算机供电的UPS连接到另一台计算机进行监视，则使用此方法
++ **SNMP** - SNMP 网络链接到启用 SNMP 的 UPS 设备
++ **Dumb** - 用于简单信号 UPS 的旧串行字符设备
++ **PCnet** - PowerChute 网络关闭协议，可与 AP9617 系列智能插槽卡一起用作 SNMP 的替代协议
++ **ModBus** - 与支持 MODBUS 协议的最新 SmartUPS 型号一起使用的串行设备
 :end
 
 :apc_ups_device_help:
-Enter the *device* which correspondes to your situation, only applicable when *UPS type* is not set to USB.
+输入与您的情况相对应的*设备*，仅在* UPS 类型*未设置为 USB 时适用。
 
 + **apcsmart** - /dev/tty**
-+ **net** - hostname:port. Hostname is the IP address of the NIS server. The deafult port is 3551
-+ **snmp** - hostname:port:vendor:community. Hostname is the ip address or hostname of the UPS on the network. Vendor can be can be "APC" or "APC_NOTRAP". "APC_NOTRAP" will disable SNMP trap catching; you usually want "APC". Port is usually 161. Community is usually "private"
++ **net** - 主机名：端口。 主机名是 NIS 服务器的 IP 地址。 默认端口为 3551
++ **snmp** - 主机名：端口：供应商：社区。 主机名是网络上 UPS 的 IP 地址或主机名。 主机名是网络上 UPS 的 IP 地址或主机名。 "APC_NOTRAP" 将禁用 SNMP 陷阱捕获;  您通常需要 "APC" 。 端口通常是 161 。社区通常是“私有”
 + **dumb** - /dev/tty**
-+ **pcnet** - ipaddr:username:passphrase:port. ipaddr is the IP address of the UPS management card. username and passphrase are the credentials for which the card has been configured. port is the port number on which to listen for messages from the UPS, normally 3052. If this parameter is empty or missing, the default of 3052 will be used
++ **pcnet** - ipaddr：用户名：密码：端口。 ipaddr 是 UPS 管理卡的 IP 地址。 用户名和密码是已配置卡的凭据。 端口是用于侦听来自 UPS 的消息的端口号，通常为 3052。如果此参数为空或缺失，将使用默认值 3052。
 + **modbus** - /dev/tty**
 :end
 
 :apc_battery_level_help:
-If during a power failure, the remaining battery percentage (as reported by the UPS) is below or equal to *Battery level*, apcupsd will initiate a system shutdown.
+如果在电源故障期间，剩余电池百分比（由 UPS 报告）低于或等于*电池电量*， apcupsd 将启动系统关机。
 :end
 
 :apc_runtime_left_help:
-If during a power failure, the remaining runtime in minutes (as calculated internally by the UPS) is below or equal to this field, apcupsd, will initiate a system shutdown.
+如果在电源故障期间，剩余以分钟为单位的运行时间（由 UPS 内部计算）低于或等于此字段， apcupsd 将启动系统关闭。
 :end
 
 :apc_battery_time_help:
-If during a power failure, the UPS has run on batteries for *time-out* many seconds or longer; apcupsd will initiate a system shutdown. A value of zero disables this timer.
+如果在电源故障期间， UPS 依靠电池运行*超时*数秒或更长时间； apcupsd 将启动系统关闭。 零值将禁用此计时器。
 
-If you have a Smart UPS, you will most likely want to disable this timer by setting it to zero.
-That way, your UPS will continue on batteries until either the % charge remaining drops to or below *Battery level* or the remaining battery runtime drops to or below *minutes*.
+如果您有 Smart UPS ，您最可能希望通过将此计时器设置为零来禁用它。
+这样，您的 UPS 将继续使用电池，直到剩余电量百分比降至或低于*电池电量*或剩余电池运行时间降至或低于*分钟*。
 
-Of course - when testing - setting this to 60 causes a quick system shutdown if you pull the power plug.
-If you have an older dumb UPS, you will want to set this to less than the time you know you can run on batteries.
+当然 - 在测试时 - 如果您拔下电源插头，将其设置为 60 会导致系统快速关闭。
+如果您使用的是旧式 UPS，则将其设置为小于您可以使用电池供电的时间。
 :end
 
 :apc_note_help:
-**Note:** *Battery level*, *Runtime left*, and *Time on battery* work in conjunction, so the first that occurs will cause the initiation of a shutdown.
+**注意：** *电池电量*，*剩余运行时间*和*电池续航时间*一起工作，因此以上任何一项最先发生将启动关机。
 :end
 
 :apc_killups_help:
-Set to *Yes* to turn off the power to the UPS after a shutdown.
+设置为*是*以在关机后关闭UPS的电源。
 :end
 
 :parity_check_scheduled_help:
-By default no parity check is scheduled. Select here the desired schedule. This can be one of the preset schedules for daily, weekly, monthly, yearly or a custom schedule.
+默认情况下不计划会奇偶校验检查。 在此处选择所需的计划。 这可以是每日，每周，每月，每年或自定义计划。
 :end
 
 :parity_day_of_the_week_help:
-When a **weekly** or **custom** schedule is selected then choose here the preferred *day of the week*, in the other schedules this setting is not used and unavailable.
+当选择了**每周**或**自定义**计划后，请在此处选择首选的*周中一日*，在其他计划中，此设置将不被使用且不可用。
 :end
 
 :parity_week_of_the_month_help:
-When a **monthly** or **yearly** schedule is selected then choose here the preferred *day of the month*.
-When a **custom** schedule is selected then choose here the preferred *week of the month*, in the other schedules this setting is not used and unavailable.
+当选择**每月**或**每年**计划后，请在此处选择首选的*月中一日*。
+当选择了**自定义**计划后，请在此处选择首选的*月中一周*，在其他计划中，此设置将不被使用且不可用。
 :end
 
 :parity_time_of_the_day_help:
-Choose the desired *time of the day* to start the schedule. Time granularity is given in half hour periods.
+选择所需的*日中时间*以开始计划。 时间间隔以半小时为单位。
 :end
 
 :parity_month_of_the_year_help:
-When a **yearly** or **custom** schedule is selected then choose here the preferred *month of the year*, in the other schedules this setting is not used and unavailable.
+当选择了**年度**或**自定义**计划后，请在此处选择首选的*年中一月*，在其他计划中，此设置将不被使用且不可用。
 :end
 
 :parity_write_corrections_help:
-Choose here whether any parity errors found during the check, need to be corrected on the parity disk or not.
+在此处选择是否需要在奇偶校验磁盘上更正检查期间发现的任何奇偶校验错误。
 :end
 
 :mover_schedule_help:
