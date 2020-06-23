@@ -61,143 +61,143 @@ UnRAID阵列由一个或两个奇偶校验磁盘和多个数据磁盘组成。�
 :end
 
 :main_slots_help:
-**Slots** select the number of device slots in your server designated for Array devices.
-The minimum number of Array slots is 2, and you must have at least one device assigned to the array.
+**插槽** 选择服务器中为阵列设备指定的设备插槽数。
+阵列插槽的最小数量为2，并且必须至少为该阵列分配一个设备。
 :end
 
 :cache_devices_help:
-**Colored Status Indicator** the significance of the color indicator at the beginning of each line in *Pool Devices* is as follows:
+**颜色状态指示器** 在*池设备*中每行开头颜色指示器的意义如下：
 
-<i class='fa fa-circle orb green-orb'></i>Normal operation, device is active.
+<i class='fa fa-circle orb green-orb'></i>正常运行，设备处于可用状态。
 
-<i class='fa fa-circle orb grey-orb'></i>Device is in standby mode (spun-down).
+<i class='fa fa-circle orb grey-orb'></i>设备处于待机模式（旋转降速）。
 
-<i class='fa fa-square orb blue-orb'></i>New device.
+<i class='fa fa-square orb blue-orb'></i>新设备。
 
-<i class='fa fa-square orb grey-orb'></i>No device present, position is empty.
+<i class='fa fa-square orb grey-orb'></i>没有设备，位置为空。
 
-**Pool Devices** is a single device, or pool of multiple devices, *outside* the Unraid array.  It may be exported for network access just
-like an Array device.  Being outside the Unraid array results in significantly faster write access.
+**设备池**是单个设备，或多个设备的池，位于 Unraid 阵列的外部。 可以像阵列设备一样
+将其导出以进行网络访问。在 Unraid 阵列之外可以显着加快写入访问速度。
 
-There are two ways to configure the Pool devices:
+有两种配置池设备的方法：
 
-1. As a single device, or
-2. As a multi-device pool.
+1. 作为单个设备，或
+2. 作为多设备池。
 
-When configured as a single device you may format the device using any supported file system (btrfs, reiserfs,
-or xfs).  This configuration offers the highest performance, but at the cost of no data protection - if the
-single pool device fails all data contained on it may be lost.
+当配置为单个设备时，您可以使用任何受支持的文件系统（ btrfs、reiserfs、
+或 xfs ）格式化该设备。 此配置可提供最高的性能，但不以数据保护为代价 - 
+如果单个池设备发生故障，其中包含的所有数据可能会丢失。
 
-When configured as a multi-device pool, Unraid OS will automatically select *btrfs-raid1* format (for both data
-and meta-data).  btrfs permits any number of devices to be added to the pool and each copy of data is guaranteed
-to be written to two different devices.  Hence the pool can withstand a single-disk failure without losing data.
+当配置为多设备池时， Unraid OS 将自动选择 *btrfs-raid1* 格式（用于数据
+和元数据）。 btrfs 允许将任意数量的设备添加到池中，并且保证
+每个数据副本都可以写入两个不同的设备。 因此该池可以承受单磁盘故障而不会丢失数据。
 
-When [User Shares](/Settings/ShareSettings) are enabled, user shares may be configured to
-automatically make use of the Pool device in order to
-speed up writes.  A special background process called the *mover* can be scheduled to run
-periodically to move user share files off the Cache and onto the Array.
+启用［用户共享］ (/Settings/ShareSettings) 时，可以将用户共享配置为
+自动使用池设备，以加快写入速度。
+可以计划一个称为 *mover* 的特殊后台进程
+定期运行，以将用户共享文件从缓存移到阵列上。
 :end
 
 :cache_slots_help:
-**Slots** select the number of device slots in your server designated for Cache devices.
+**插槽** 选择服务器中为缓存设备指定的设备插槽数。
 :end
 
 :boot_device_help:
-Vital array configuration is maintained on the USB Flash device; for this reason, it must remain
-plugged in to your server.  Click on [Flash](/Main/Flash?name=flash) to see the GUID and registration
-information, and to configure export settings.  Since the USB Flash device is formatted using FAT file system,
-it may only be exported using SMB protocol.
+重要的阵列配置会保留在 USB 闪存设备上；因此， 必须将其
+保持插入服务器。单击［闪存］ (/Main/Flash?name=flash) 以查看 GUID 和
+注册信息，并配置导出设置。由于 USB 闪存设备是使用 FAT 文件系统格式化，
+因此只能使用 SMB 协议将其导出。
 :end
 
 :array_status_help:
-**Colored Status Indicator** the significance of the color indicator of the *Array* is as follows:
+**颜色状态指示器** 在*阵列*中的颜色指示器的意义如下：
 
-<i class='fa fa-circle orb green-orb'></i>Array is Started and Parity is valid.
+<i class='fa fa-circle orb green-orb'></i>阵列已启动且奇偶校验有效。
 
-<i class='fa fa-circle orb grey-orb'></i>Array is Stopped, Parity is valid.
+<i class='fa fa-circle orb grey-orb'></i>阵列已停止，奇偶校验有效。
 
-<i class='fa fa-warning orb yellow-orb'></i>Array is Started, but Parity is invalid.
+<i class='fa fa-warning orb yellow-orb'></i>阵列已启动，但奇偶校验无效。
 
-<i class='fa fa-warning orb grey-orb'></i>Array is Stopped, Parity is invalid.
+<i class='fa fa-warning orb grey-orb'></i>阵列已停止，奇偶校验无效。
 
 :end
 
 :array_devices_help:
-#### Assigning Devices
+#### 分配设备
 
-An unRAID disk array consists of a single parity disk and a number of data disks. The data
-disks are exclusively used to store user data, and the parity disk provides the redundancy necessary
-to recover from any singe disk failure.
+一个 unRAID 磁盘阵列由一个奇偶校验磁盘和多个数据磁盘组成。 数据磁盘
+专门用于存储用户数据，而奇偶校验磁盘提供必要的冗余，
+以从任何单个磁盘故障中恢复。
 
-Note that we are careful to use the term *disk* when referring to an array storage device.  We
-use the term *hard drive* (or sometimes just *drive*) when referring to an actual hard disk drive (HDD)
-device. This is because in a RAID system it is possible to read/write an array disk whose corresponding
-hard drive is disabled or even missing! In addition, it is useful to be able to ask, "which device is
-assigned to be the parity disk?"; or, "which device corresponds to disk2?".
+请注意，在引用阵列存储设备时，我们会谨慎使用术语*磁盘*。
+当引用实际硬盘驱动器 (HDD) 设备时，我们会使用术语*硬盘驱动器*（有时也称为*驱动器*）。
+这是因为在 RAID 系统中，可以读取/写入的阵列磁盘的相应
+硬盘驱动器可能已禁用甚至已丢失! 另外，懂得询问 “将哪个设备
+分配为奇偶校验磁盘？” 或 “哪个设备对应于 disk2 ？”都会是很有用的
 
-We therefore need a way to assign hard drives to array disks. This is accomplished here on the
-Main page when the array is stopped. There is a drop-down box for each array disk which lists all the
-unassigned devices. To assign a device simply select it from the list. Each time a device
-assignment is made, the system updates a configuration file to record the assignment.
+因此我们需要一种方法将硬盘驱动器分配给阵列磁盘。当阵列停止时，
+可以在主页上完成此操作。每个阵列磁盘都有一个下拉框，其中列出了所有
+未分配设备。T要分配设备，只需从列表中选择它即可。 每次进行设备
+分配时，系统都会更新配置文件以记录分配。
 
-#### Requirements
+#### 要求
 
-Unlike traditional RAID systems which stripe data across all the array devices, an unRAID server
-stores files on individual hard drives. Consequently, all file write operations will involve both the
-data disk the file is being written to, and the parity disk. For these reasons,
+与在所有阵列设备上对数据进行条带化的传统 RAID 系统不同， unRAID 服务器
+会将文件存储在各个硬盘驱动器上。 因此，所有文件写入操作都将涉及
+所写入的数据磁盘和奇偶校验磁盘。原因如下，
 
-* the parity disk size must be as large or larger than any of the data disks,
+* 奇偶校验磁盘的大小必须大于或等于任何数据磁盘的大小，
 
-and
+以及
 
-* given a choice, the parity disk should be the fastest disk in your collection.
+* 可选择的情况下，奇偶校验磁盘应该要是集合中最快的磁盘。
 
-#### Guidelines
+#### 指导方针
 
-Here are the steps you should follow when designing your unRAID disk array:
+在设计 unRAID 磁盘阵列时，应遵循以下步骤：
 
-1. Decide which hard drive you will use for parity, and which hard drives you will use for
-data disk1, disk2, etc., and label them in some fashion. Also, find the serial number of each hard
-drive and jot it down somewhere; you will need this information later.
+1. 确定要用于奇偶校验的硬盘驱动器，以及要用于
+数据的硬盘 disk1 、 disk2 等，并以某种方式标记它们。另外，找到每个硬盘驱动器
+的序列号并将其记在某个位置； 您稍后将需要此信息。
 
-2. Install your hard drive devices, boot unRAID Server and bring up the webGui. If this is a fresh system
-build, then the Main page will show no disks installed. This doesn't mean the system can't detect your
-hard drives; it just means that none have been assigned yet.
+2. 安装硬盘设备，启动 unRAID 服务器并启动 webGui 。 如果这是全新的
+系统构建，主页将显示未安装任何磁盘。这并不意味着系统无法检测
+到硬盘；这只是意味着还没有已分配的磁盘。
 
-3. Remember the serial numbers you recored back in step 1? For parity and each data disk, select the
-proper hard drive based on its serial number from the drop down list.
+3. 还记得在步骤 1 中记录的序列号吗？ 对于奇偶校验和每个数据磁盘，
+请从下拉列表中根据其序列号选择合适的硬盘驱动器。
 
-#### Hot Plug
+#### 热插拔
 
-You may also *hot plug* hard drives into your server if your hardware supports it. For example,
-if you are using hard drive cages, you may simply plug them into your server while powered on and
-with array Stopped. Refresh the Main page to have new unassigned devices appear in the assignment
-dropdown lists.
+如果硬件支持，也可以将硬盘驱动器*热插拔*到服务器中。例如，
+如果使用的是硬盘驱动器固定框架，可以在通电且阵列已停止的情况下
+将它们简单地插入服务器。刷新主页以使新的未分配设备出现在可分配
+下拉列表中。
 
-#### Next Steps
+#### 下一步
 
-Once you have assigned all of your hard drives, refer to the Array Status section below
-and Start the array.
+分配所有硬盘驱动器后，请参考下面的阵列状态部分
+并启动阵列。
 :end
 
 :encryption_help:
-#### Encryption input
+#### 加密输入
 
-With array Stopped, the user can specify a new encryption key. Note that once a device
-is formatted with a particular key it may only be opened using that same key. Changing the encryption key requires
-encrypted devices to be reformatted **resulting in permanent loss of all existing data on those devices.**
+当阵列已停止，用户可以指定一个新的加密密钥。 请注意，当使用
+特定密钥格式化设备后，只能使用相同的密钥将其打开。更改加密密钥会要求
+重新格式化已加密设备 **导致这些设备上所有现有数据永久丢失。**
 
-#### Passphrase
+#### 密码
 
-Enter a passphrase of up to 512 characters. It is highly advisable to only use the 95 printable characters from the
-first 128 characters of the [ASCII table](https://en.wikipedia.org/wiki/ASCII), as they will always have the same binary
-representation. Other characters may have different encoding depending on system configuration and your passphrase will
-not work with a different encoding. If you want a longer passphrase or to include binary data, upload a keyfile instead.
+输入最多512个字符的密码。 强烈建议仅使用 [ASCII表] 强烈建议仅使用 [ASCII 表] (https://en.wikipedia.org/wiki/ASCII)
+前128个字符中的95个可打印字符，因为它们始终具有相同的二进制表示形式。
+根据系统配置，其他字符可能具有不同的编码， 您的密码
+将无法使用其他编码。如果您希望使用更长的密码或包含二进制数据，请上载密钥文件。
 
-Please refer to the [cryptsetup FAQ](https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions#5-security-aspects)
-for what constitutes a *secure* passphrase.
+请参考 [cryptsetup FAQ] (https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions#5-security-aspects)
+以认识构成*安全*密码的元素。
 
-**Memorize** this passphrase. **IF LOST, ENCRYPTED CONTENT CANNOT BE RECOVERED!**
+**记住**这个密码。 **如果丢失密码，已加密的内容将无法恢复！**
 
 #### Keyfile
 
