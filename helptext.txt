@@ -199,237 +199,237 @@ UnRAID阵列由一个或两个奇偶校验磁盘和多个数据磁盘组成。�
 
 **记住**这个密码。 **如果丢失密码，已加密的内容将无法恢复！**
 
-#### Keyfile
+#### 密钥文件
 
-Select a local keyfile with a stored encryption key or a binary file. The maximum size of the keyfile is 8M (8388608 byte).
+选择具有存储的加密密钥的本地密钥文件或二进制文件.密钥文件的最大大小为8M（8388608字节）.
 
-**Backup** your local keyfile. **IF LOST, ENCRYPTED CONTENT CANNOT BE RECOVERED!**
+**备份** 您的本地密钥文件. **如果丢失了,加密的内容将无法恢复！**
 :end
 
 :info_warning_temp_help:
-*Warning disk temperature* sets the warning threshold for this hard disk temperature. Exceeding this threshold will result in a warning notification.
+*警告磁盘温度* 设置此硬盘温度的警告阈值,超过此阈值将导致警告通知.
 
-A value of zero will disable the warning threshold (including notifications).
+零值将禁用警告阈值（包括通知）.
 :end
 
 :info_critical_temp_help:
-*Critical disk temperature* sets the critical threshold for this hard disk temperature. Exceeding this threshold will result in an alert notification.
+*磁盘临界温度* 设置此硬盘温度的临界阈值.超过此阈值将导致警报通知.
 
-A value of zero will disable the critical threshold (including notifications).
+零值将禁用关键阈值（包括通知）.
 :end
 
 :info_file_system_help:
-Enter the desired file system type.  Changing the file system type of a device will permit you to reformat
-that device using the new file system.  Be aware that **all existing data on the device will be lost**.
+输入所需的文件系统类型,更改设备的文件系统类型将允许您重新格式化
+使用新文件系统的设备.请注意 **设备上的所有现有数据都将丢失**.
 :end
 
 :info_comments_help:
-This text will appear under the *Comments* column for the share in Windows Explorer.
-Enter anything you like, up to 256 characters.
+该文本将显示在Windows资源管理器中共享的 “注释” 列下
+输入您喜欢的任何字符,最多256个字符.
 :end
 
 :info_warning_utilization_help:
-*Warning disk utilization* sets the warning threshold for this hard disk utilization. Exceeding this threshold will result in a warning notification.
+*警告磁盘利用率* 设置此硬盘利用率的警告阈值,超过此阈值将导致警告通知.
 
-When the warning threshold is set equal or greater than the critical threshold, there will be only critical notifications (warnings are not existing).
+当警告阈值设置为等于或大于严重阈值时,将仅存在严重通知（不存在警告）,
 
-A value of zero will disable the warning threshold (including notifications).
+零值将禁用警告阈值（包括通知）.
 :end
 
 :info_critical_utilization_help:
-*Critical disk utilization* sets the critical threshold for this hard disk utilization. Exceeding this threshold will result in an alert notification.
+*关键磁盘利用率* 设置此硬盘利用率的关键阈值,超过此阈值将导致警报通知,
 
-A value of zero will disable the critical threshold (including notifications).
+零值将禁用关键阈值（包括通知）.
 :end
 
 :info_btrfs_balance_help:
-**Balance** will run the *btrfs balance* program to restripe the extents across all pool devices, for example,
-to convert the pool from raid1 to raid0 or vice-versa.
+** 余额 ** 将运行 *btrfs余额* 程序以重新整理所有池设备中的盘区;例如,
+将池从raid1转换为raid0或反之亦然.
 
-When a *full balance* is perfomred, it basically rewrites everything in the current filesystem.
+当实现了 *完全余额* 时,它基本上会重写当前文件系统中的所有内容.
 
-A *mode conversion* affects the btrfs data extents; metadata always uses raid1 and is converted to raid1 if necessary by any balance operation.
+*模式转换*会影响btrfs数据区；元数据始终使用raid1,并在必要时通过任何平衡操作转换为raid1.
 
-The run time is potentially very long, depending on the filesystem size and speed of the device.
+运行时间可能非常长,具体取决于设备的文件系统大小和速度.
 
-Unraid uses these default options when creating a multiple-device pool:
+UnRAID在创建多设备池时使用以下默认选项：
 
 `-dconvert=raid1 -mconvert=raid1`
 
-For more complete documentation, please refer to the btrfs-balance [Manpage](https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-balance)
+有关更完整的文档,请参阅btrfs余额 [手册页](https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-balance)
 
-*Note: raid5 and raid6 are generally still considered **experimental** by the Linux community*
+*注：普遍认为raid5和raid6仍是 **实验性** 在linux社区*.
 :end
 
 :info_balance_cancel_help:
-**Cancel** will cancel the balance operation in progress.
+**取消** 将取消进行中的余额操作.
 :end
 
 :info_btrfs_scrub_help:
-**Scrub** runs the *btrfs scrub* program which will read all data and metadata blocks from all
-devices and verify checksums.
+**擦洗** 运行 *btrfs擦洗* 程序,它将从所有程序读取所有数据和元数据块
+设备并验证校验和.
 
-If *Repair corrupted blocks* is checked, *btrfs scrub* will repair corrupted blocks if there’s a correct copy available.
+如果选中了*修复损坏的块*,且有正确的副本可用,*btrfs擦洗* 将修复损坏的块.
 :end
 
 :info_scrub_cancel_help:
-**Cancel** will cancel the Scrub operation in progress.
+**取消** 将取消正在进行的清理操作.
 :end
 
 :info_btrfs_check_help:
-**Check** will run the *btrfs check* program to check file system integrity on the device.
+**检查** 将运行 *btrfs检查* 程序以检查设备上的文件系统完整性.
 
-The *Options* field is initialized with *--readonly* which specifies check-only.  If repair is needed, you should run
-a second Check pass, setting the *Options* to *--repair*; this will permit *btrfs check* to fix the file system.
+*选项* 字段初始化为 *--只读* ,指定只读.如果需要修复,您应该运行
+第二次检查,将 *选项* 设置为 *--修复* ；这将允许 *btrfs检查* 修复文件系统.
 
-After starting a Check, you should Refresh to monitor progress and status.  Depending on
-how large the file system is, and what errors might be present, the operation can take **a long time** to finish (hours).
-Not much info is printed in the window, but you can verify the operation is running by observing the read/write counters
-increasing for the device on the Main page.
+开始检查后,您应该刷新以监视进度和状态.取决于
+文件系统有多大,可能会出现什么错误,因此该操作可能需要 **很长时间** （几小时）才能完成.
+窗口中没有打印太多信息,但是您可以通过观察读写计数器来验证操作是否正在运行
+在主页上增加设备.
 :end
 
 :info_check_cancel_help:
-**Cancel** will cancel the Check operation in progress.
+**取消** 将取消正在进行的检查操作.
 :end
 
 :info_reiserfs_check_help:
-**Check** will run the *reiserfsck* program to check file system integrity on the device.
+**检查** 将运行 *reiserfsck* 程序检查设备上的文件系统完整性.
 
-The *Options* field may be filled in with specific options used to fix problems in the file system. Typically, you
-first run a Check pass leaving *Options* blank.  Upon completion, if *reiserfsck* finds any problems, you must
-run a second Check pass, using a specific option as instructed by the first *reiserfsck* pass.
+*选项* 字段可能填入用于修复文件系统中问题的特定选项.通常情况下,您
+首先运行一次检查,将*选项*留空.完成后,如果*reiserfsck*发现任何问题,您必须
+使用第一次 *reiserfsck* 检查所指示的特定选项,运行第二次检查次.
 
-After starting a Check you should Refresh to monitor progress and status.  Depending on
-how large the file system is, and what errors might be present, the operation can take **a long time** to finish (hours).
-Not much info is printed in the window, but you can verify the operation is running by observing the read/write counters
-increasing for the device on the Main page.
+开始检查后,您应该刷新以监视进度和状态.取决于
+文件系统有多大,可能会出现什么错误,因此该操作可能需要 **很长时间** （几小时）才能完成.
+窗口中打印的信息不多,但您可以通过观察读/写计数器来验证操作是否正在运行
+在主页上增加设备.
 :end
 
 :info_reiserfs_cancel_help:
-**Cancel** will cancel the Check operation in progress.
+**取消** 将取消正在进行的检查操作.
 :end
 
 :info_xfs_check_help:
-**Check** will run the *xfs_repair* program to check file system integrity on the device.
+**检查** 将运行 *XFS_修复* 程序以检查设备上的文件系统完整性.
 
-The *Options* field is initialized with *-n* which specifies check-only.  If repair is needed, you should run
-a second Check pass, setting the *Options* blank; this will permit *xfs_repair* to fix the file system.
+*选项* 字段使用指定仅检查的 *-n* 进行初始化.如果需要修复,您应该运行
+第二次检查,将 *选项* 设置为空；这将允许 *XFS_修复* 修复文件系统.
 
-After starting a Check, you should Refresh to monitor progress and status.  Depending on
-how large the file system is, and what errors might be present, the operation can take **a long time** to finish (hours).
-Not much info is printed in the window, but you can verify the operation is running by observing the read/write counters
-increasing for the device on the Main page.
+开始检查后,您应该刷新以监视进度和状态.取决于
+文件系统有多大,可能会出现什么错误,因此该操作可能需要 **很长时间** （几小时）才能完成.
+窗口中没有打印太多信息,但是您可以通过观察读写计数器来验证操作是否正在运行
+在主页上增加设备.
 :end
 
 :info_xfs_cancel_help:
-**Cancel** will cancel the Check operation in progress.
+**取消** 将取消正在进行的检查操作.
 :end
 
 :info_smart_notifications_help:
-SMART notifications are generated on either an increasing RAW value of the attribute, or a decreasing NORMALIZED value which reaches a predefined threshold set by the manufacturer.
+根据属性的原始RAW值增加或达到制造商设置的预定义阈值的降低的NORMALIZED值,生成SMART通知.
 
-Each disk may have its own specific setting overruling the 'default' setting (see global SMART settings under Disk Settings).
+每个磁盘可能都有自己的特定设置,而不是 '默认' 设置（请参阅磁盘设置下的全局SMART设置）.
 :end
 
 :info_tolerance_level_help:
-A tolerance level may be given to prevent that small changes result in a notification. Setting a too high tolerance level may result in critical changes without a notification.
+可以给出一个公差级别,以防止微小的变化导致通知.设置的公差级别过高可能会导致重大更改,而不会发出通知.
 
-Each disk may have its own specific setting overruling the 'default' setting (see global SMART settings under Disk Settings).
+每个磁盘可能都有自己的特定设置,而不是 '默认' 设置（请参阅磁盘设置下的全局SMART设置）.
 :end
 
 :info_controller_type_help:
-By default automatic controller selection is done by smartctl to read the SMART information. Certain controllers however need specific settings for smartctl to work.
-Use this setting to select your controller type and fill-in the specific disk index and device name for your situation. Use the manufacturer's documentation to find the relevant information.
+默认情况下,smartctl会自动选择控制器,以读取SMART信息;但是,某些控制器需要特定的设置才能使smartctl正常工作.
+使用此设置选择您的控制器类型,并根据您的情况填写特定的磁盘索引和设备名称.使用制造商的文档来查找相关信息.
 
-Each disk may have its own specific setting overruling the 'default' setting (see global SMART settings under Disk Settings).
+每个磁盘可能都有自己的特定设置,而不是 '默认' 设置（请参阅磁盘设置下的全局SMART设置）.
 :end
 
 :info_attribute_notifications_help:
-The user can enable or disable notifications for the given SMART attributes. It is recommended to keep the default, which is ALL selected attributes,
-when certain attributes are not present on your hard disk or do not provide the correct information, these may be excluded.
-In addition custom SMART attributes can be entered to generate notifications. Be careful in this selection,
-it may cause an avalance of notifcations if inappropriate SMART attributes are chosen.
+用户可以为给定的SMART属性启用或禁用通知.建议保留默认值,即所有选定的属性,
+如果您的硬盘上没有某些属性或提供的信息不正确,则可能会排除这些属性.
+另外,可以输入自定义SMART属性以生成通知.请谨慎选择
+如果选择了不适当的SMART属性,可能会导致大量通知.
 
-Each disk may have its own specific setting overruling the 'default' setting (see global SMART settings under Disk Settings).
+每个磁盘可能都有自己的特定设置,而不是 '默认' 设置（请参阅磁盘设置下的全局SMART设置）.
 :end
 
 :selftest_history_help:
-Press **Show** to view the self-test history as is kept on the disk itself.
-This feature is only available when the disk is in active mode.
+按 **显示**查看保存在磁盘上的自检历史记录.
+仅当磁盘处于活动模式时,此功能才可用.
 :end
 
 :selftest_error_log_help:
-Press **Show** to view the error report as is kept on the disk itself.
-This feature is only available when the disk is in active mode.
+按 **显示** 查看错误报告,该报告保留在磁盘本身上.
+仅当磁盘处于活动模式时,此功能才可用.
 :end
 
 :selftest_short_test_help:
-Starts a *short* SMART self-test, the estimated duration can be viewed under the *Capabilities* section. This is usually a few minutes.
+启动 *短的* 智能自检,预计持续时间可以在 *功能* 部分下查看,这通常需要几分钟.
 
-When the disk is spun down, it will abort any running self-test.
-This feature is only available when the disk is in active mode.
+旋转磁盘后,它将中止所有正在运行的自检.
+仅当磁盘处于活动模式时,此功能才可用.
 :end
 
 :selftest_long_test_help:
-Starts an *extended* SMART self-test, the estimated duration can be viewed under the *Capabilities* section. This is usually several hours.
+启动 *扩展* 智能自检,预计持续时间可在 *功能* 部分下查看.这通常需要几个小时.
 
-When the disk is spun down, it will abort any running self-test. It is advised to disable the spin down timer of the disk
-to avoid interruption of this self-test.
+旋转磁盘后,它将中止所有正在运行的自检.建议禁用磁盘的降速定时器
+以避免中断此自检.
 
-This feature is only available when the disk is in active mode.
+仅当磁盘处于活动模式时,此功能才可用.
 :end
 
 :selftest_result_help:
-When no test is running it will show here the latest obtained self-test result (if available).
-Otherwise a progress indicator (percentage value) is shown for a running test.
+如果没有运行任何测试,它将在此处显示最新获得的自测结果（如果有）.
+否则,将显示正在运行的测试的进度指示器（百分比值）.
 :end
 
 :smart_attributes_help:
-This list shows the SMART attributes supported by this disk. For more information about each SMART attribute, it is recommended to search online.
+此列表显示此磁盘支持的SMART属性.有关每个SMART属性的更多信息,建议在线搜索.
 
-Attributes in *orange* may require your attention. They have a **raw value** greater than zero and may indicate a pending disk failure.
+*橙色* 中的属性可能需要您注意.它们的 **原始值** 大于零,可能表示磁盘挂起故障.
 
-Special attention is required when the particular attribute raw value starts to increase over time. When in doubt, consult the Limetech forum for advice.
+当特定属性原始值开始随时间增加时,需要特别注意.如有疑问,请咨询Limetech论坛以获取建议.
 :end
 
 :smart_capabilities_help:
-This list shows the SMART capabilities supported by this disk.
+此列表显示此磁盘支持的SMART功能.
 
-Observe here the estimated duration of the SMART short and extended self-tests.
+在此处观察SMART短期和扩展自我测试的估计持续时间.
 :end
 
 :smart_identity_help:
-This list shows the SMART identity information of this disk
+此列表显示此磁盘的SMART身份信息
 :end
 
 :open_devices_help:
-These are devices installed in your server but not assigned to either the parity-protected
-array or the cache disk/pool.
+这些是服务器中安装的设备,但未分配给受奇偶校验保护的设备
+阵列或缓存磁盘/池.
 :end
 
 :flash_backup_help:
-Use *Flash backup* to create a single zip file of the current contents of the flash device and store it locally on your computer.
+使用 *闪存备份* 创建闪存设备当前内容的单个zip文件,并将其本地存储在您的计算机上.
 :end
 
 :syslinux_cfg_help:
-Use this page to make changes to your `syslinux.cfg` file.
-You will need to reboot your server for these changes to take effect.
+使用此页面可以更改您的 `syslinux.cfg` 文件.
+您将需要重新引导服务器,以使这些更改生效.
 :end
 
 :syslinux_button_help:
-Click the **Default** button to initialize the edit box with the
-factory-default contents.  You still need to click **Apply** in order to
-commit the change.
+点击 **默认值** 按钮,以使用
+出厂默认内容.您仍然需要点击 **应用** 才能
+提交更改.
 
-Click the **Apply** button to commit the current edits.  Click **Reset** to
-undo any changes you make (before Saving). Click **Done** to exit this page.
+单击 **应用** 按钮,提交本次编辑.单击 **重置** 以
+撤消您所做的任何更改(在保存之前),单击 **完成** 退出此页面.
 :end
 
 :info_free_space_help:
-This defines a "floor" for the amount of free space remaining in the volume.
-If the free space becomes less than this value, then new files written via user shares will fail with "not enough space" error.
+这为卷中剩余的空闲空间量定义了一个“底限”.
+如果可用空间小于此值,则通过用户共享写入的新文件将失败,并显示 "没有足够的空间" 错误.
 
-Enter a numeric value with one of these suffixes:
+输入带有以下后缀之一的数值：
 
 **KB** = 1,000<br>
 **MB** = 1,000,000<br>
@@ -440,375 +440,375 @@ Enter a numeric value with one of these suffixes:
 **G** = 1,073,741,824 (ie, 2^30)<br>
 **T** = 1,099,511,627,776 (ie, 2^40)<br>
 
-If no suffix, a count of 1024-byte blocks is assumed.
+如果没有后缀,则假定为1024个字节的块数.
 :end
 
 :share_list_help:
-**Colored Status Indicator** -- the significance of the color indicator at the beginning of each line in *User Shares* is as follows:
+**彩色状态指示器** -- *用户共享* 中每行开头的颜色指示器的意义如下：
 
-<i class='fa fa-circle orb green-orb'></i>All files are on protected storage.
+<i class='fa fa-circle orb green-orb'></i>所有文件都位于受保护的存储区中.
 
-<i class='fa fa-warning orb yellow-orb'></i>Some or all files are on unprotected storage.
+<i class='fa fa-warning orb yellow-orb'></i>某些或所有文件都处于不受保护的存储中.
 
-**Security modes:**
+**安全模式:**
 
-+ '-' -- user share is not exported and unavailable on the network
-+ *Public* -- all users including guests have full read/write access (open access)
-+ *Secure* -- all users including guests have read access, write access is set per user (limited access)
-+ *Private* -- no guest access at all, read/write or read-only access is set per user (closed access)
++ '-' -- 用户共享未导出且在网络上不可用
++ *公共* -- 包括来宾在内的所有用户都具有完全读/写访问权限(开放访问)
++ *安全* -- 包括来宾在内的所有用户都有读访问权限，写访问权限是按用户设置的(受限访问权限)
++ *私人* -- 根本没有来宾访问权限，每个用户设置读/写或只读访问权限(关闭访问)
 
-**Special modes:**
+**特殊模式:**
 
-+ SMB security mode displayed in *italics* indicates exported hidden user shares.
-+ AFP security mode displayed in *italics* indicates exported time-machine user shares.
-+ NFS does not have special modes for user shares.
++ SMB 以*斜体*显示的安全模式表示导出的隐藏用户共享。
++ AFP 以*斜体*显示的安全模式表示导出的时光机用户共享。
++ NFS 没有针对用户共享的特殊模式。
 :end
 
 :disk_list_help:
-**Colored Status Indicator** -- the significance of the color indicator at the beginning of each line in *Disk Shares* is as follows:
+**彩色状态指示器** -- *磁盘共享* 中每行开头的颜色指示器的含义如下：
 
-<i class='fa fa-circle orb green-orb'></i>Mounted, underlying device has redundancy/protection.
+<i class='fa fa-circle orb green-orb'></i>已安装的基础设备具有冗余/保护功能.
 
-<i class='fa fa-warning orb yellow-orb'></i>Mounted, underlying device does not have redundancy/protection.
+<i class='fa fa-warning orb yellow-orb'></i>已安装的基础设备没有冗余/保护.
 
-**Security modes:**
+**安全模式:**
 
-+ '-' -- disk share is not exported and unavailable on the network
-+ *Public* -- all users including guests have full read/write access (open access)
-+ *Secure* -- all users including guests have read access, write access is set per user (limited access)
-+ *Private* -- no guest access at all, read/write or read-only access is set per user (closed access)
++ '-' -- 磁盘共享未导出且在网络上不可用
++ *公共* -- 包括来宾在内的所有用户都具有完全读/写访问权限(开放访问)
++ *安全* -- 包括来宾在内的所有用户都有读访问权限，写访问权限是按用户设置的(受限访问权限)
++ *私人* -- 根本没有来宾访问权限，每个用户设置读/写或只读访问权限(关闭访问)
 
-**Special modes:**
+**特殊模式:**
 
-+ SMB security mode displayed in *italics* indicates exported hidden disk shares.
-+ AFP security mode displayed in *italics* indicates exported time-machine disk shares.
-+ NFS does not have special modes for disk shares.
++ SMB 以*斜体*显示的安全模式表示导出的隐藏用户共享。
++ AFP 以*斜体*显示的安全模式表示导出的时光机用户共享。
++ NFS 没有针对用户共享的特殊模式。
 :end
 
 :share_edit_global1_help:
-A *Share*, also called a *User Share*, is simply the name of a top-level directory that exists on one or more of your
-storage devices (array and cache).  Each share can be exported for network access.  When browsing a share, we return the
-composite view of all files and subdirectories for which that top-level directory exists on each storage device.
+*共享*,也称为 *用户共享* ,只是存在于一个或多个
+存储设备（阵列和缓存）.每个共享都可以导出以进行网络访问.浏览共享时,我们返回
+每个存储设备上都有该顶级目录的所有文件和子目录的组合视图.
 
-*Read settings from* is used to preset the settings of the new share with the settings of an existing share.
+*读取设置* 用于将新共享的设置预置为现有共享的设置.
 
-Select the desired share name and press **Read** to copy the settings from the selected source.
+选择所需的共享名称,然后按 **读取** 从所选源复制设置.
 :end
 
 :share_edit_global2_help:
-*Write settings to* is used to copy the settings of the current share to one or more other existing shares.
+*将设置写入* 用于将当前共享的设置复制到一个或多个其他现有共享.
 
-Select the desired destinations and press **Write** to copy the settings to the selected shares.
+选择所需的目的地,然后按 **写入** 将设置复制到选定的共享.
 :end
 
 :share_edit_name_help:
-The share name can be up to 40 characters, and is case-sensitive with these restrictions:
+共享名最多可以包含40个字符,并且区分大小写,并具有以下限制：
 
-* cannot contain a double-quote character (") or the following characters: / \ * < > |
-* cannot be one of the reserved share names: flash, cache, cache2, .., disk1, disk2, ..
+* 不能包含双引号字符(“)或以下字符：/ \* < > |
+* 不能是保留的共享名称之一：flash、cache、cache2、..、disk1、disk2、..
 
-We highly recommend to make your life easier and avoid special characters.
+强烈建议您简化生活并避免使用特殊字符.
 :end
 
 :share_edit_comments_help:
-Anything you like, up to 256 characters.
+您喜欢的任何字符,最多256个字符.
 :end
 
 :share_edit_allocation_method_help:
-This setting determines how Unraid OS will choose which disk to use when creating a new file or directory:
+此设置确定UnRAID操作系统在创建新文件或目录时如何选择要使用的磁盘：
 
-**High-water**
-Choose the lowest numbered disk with free space still above the current *high water mark*.  The
-*high water mark* is initialized with the size of the largest data disk divided by 2.  If no disk
-has free space above the current *high water mark*, divide the *high water mark* by 2 and choose again.
+**高水位**
+选择可用空间仍高于当前 *高水位线* 的编号最低的磁盘.
+*高水位线*用最大的数据盘大小除以2进行初始化.  如果没有磁盘
+的可用空间超过当前的 *高水位线*,请将 *高水位线* 除以2,然后重新选择.
 
-The goal of **High-water** is to write as much data as possible to each disk (in order to minimize
-how often disks need to be spun up), while at the same time, try to keep the same amount of free space on
-each disk (in order to distribute data evenly across the array).
+**高水位** 的目标是向每个磁盘写入尽可能多的数据(以便最小化
+磁盘需要旋转的频率),同时尝试保持相同数量的可用空间量
+每个磁盘(以便跨阵列均匀分布数据).
 
-**Fill-up**
-Choose the lowest numbered disk that still has free space above the current **Minimum free space**
-setting.
+**填补**
+选择编号最小的磁盘,其剩余可用空间仍大于当前的**最小可用空间**
+设置.
 
-**Most-free**
-Choose the disk that currently has the most free space.
+**最自由**
+选择当前具有最大可用空间的磁盘.
 :end
 
 :share_edit_free_space_help:
-The *minimum free space* available to allow writing to any disk belonging to the share.<br>
+*最小可用空间* 可用于写入属于该共享的任何磁盘.<br>
 
-Choose a value which is equal or greater than the biggest single file size you intend to copy to the share.
-Include units KB, MB, GB and TB as appropriate, e.g. 10MB.
+选择一个等于或大于您打算复制到共享的最大单个文件大小的值.
+适当包含单位KB,MB,GB和TB,例如10MB.
 :end
 
 :share_edit_split_level_help:
-Determines whether a directory is allowed to expand onto multiple disks.
+确定是否允许目录扩展到多个磁盘.
 
-**Automatically split any directory as required**
-When a new file or subdirectory needs to be created in a share, Unraid OS first chooses which disk
-it should be created on, according to the configured *Allocation method*.  If the parent directory containing
-the new file or or subdirectory does not exist on this disk, then Unraid OS will first create all necessary
-parent directories, and then create the new file or subdirectory.
+**根据需要自动拆分任何目录**
+当需要在共享中创建新文件或子目录时,Unraid OS首先选择哪个磁盘
+它应该根据配置的 *分配方法* 创建.如果父目录包含
+该磁盘上不存在新文件或子目录,则Unraid OS将首先创建所有必需文件
+父目录,然后创建新文件或子目录.
 
-**Automatically split only the top level directory as required**
-When a new file or subdirectory is being created in the first level subdirectory of a share, if that first
-level subdirectory does not exist on the disk being written, then the subdirectory will be created first.
-If a new file or subdirectory is being created in the second or lower level subdirectory of a share, the new
-file or subdirectory is created on the same disk as the new file or subdirectory's parent directory.
+**根据需要仅自动拆分顶级目录**
+在共享的第一级子目录中创建新文件或子目录时,如果
+要写入的磁盘上不存在该第一级子目录,则将首先创建子目录.
+如果要在共享的第二级或较低级子目录中创建新文件或子目录,
+则会在与新文件或子目录的父目录相同的磁盘上创建新文件或子目录.
 
-**Automatically split only the top "N" level directories as required**
-Similar to previous: when a new file or subdirectory is being created, if the parent directory is at level "N",
-and does not exist on the chosen disk, Unraid OS will first create all necessary parent directories.  If the
-parent directory of the new file or subdirectory is beyond level "N", then the new file or subdirectory is
-created on the same disk where the parent directory exists.
+**根据需要仅自动拆分前 "N" 级目录**
+与以前类似：当创建新文件或子目录时,如果父目录处于"N" 级,
+并且在所选磁盘上不存在,则UnRAID OS将首先创建所有必要的父目录.
+如果新文件或子目录的父目录超出级别 "N",
+则在父目录所在的同一磁盘上创建新文件或子目录.
 
-**Manual: do not automatically split directories**
-When a new file or subdirectory needs to be created in a share, Unraid OS will only consider disks where the
-parent directory already exists.
+**手动：不自动拆分目录**
+当需要在共享中创建新文件或子目录时,Unraid OS将仅考虑在
+父目录已存在.
 :end
 
 :share_edit_included_disks_help:
-Specify the disks which can be used by the share. By default all disks are included; that is, if specific
-disks are not selected here, then the share may expand into *all* array disks.
+指定共享可以使用的磁盘.默认情况下,所有磁盘都包括在内；也就是说,如果具体
+此处未选择磁盘,则共享可能会扩展为 *所有* 阵列磁盘.
 :end
 
 :share_edit_excluded_disks_help:
-Specify the disks which can *not* be used by the share. By default no disks are excluded.
+指定共享可以 *不* 使用的磁盘.默认情况下,不排除任何磁盘.
 :end
 
 :share_edit_cache_pool_help:
-Specify whether new files and directories written on the share can be written onto the Cache disk/pool if present.
-This setting also affects *mover* behavior.
+指定是否可以将写入共享的新文件和目录写入缓存磁盘/池(如果存在).
+此设置还会影响 *移动* 行为.
 
-**No** prohibits new files and subdirectories from being written onto the Cache disk/pool.
-*Mover* will take no action so any existing files for this share that are on the cache are left there.
+**否**禁止将新文件和子目录写入缓存磁盘/池.
+*移动*不会执行任何操作,因此缓存中此共享的所有现有文件都会保留在那里.
 
-**Yes** indicates that all new files and subdirectories should be written to the Cache disk/pool, provided
-enough free space exists on the Cache disk/pool.
-If there is insufficient space on the Cache disk/pool, then new files and directories are created on the array.
-When the *mover* is invoked, files and subdirectories are transferred off the Cache disk/pool and onto the array.
+**是**表示所有新的文件和子目录都应该写入到高速缓存磁盘/池中,前提
+是高速缓存磁盘/池上有足够的可用空间.
+如果缓存磁盘/池上的空间不足,则会在阵列上创建新文件和目录.
+调用 *移动* 时,文件和子目录将从缓存磁盘/池传输到阵列.
 
-**Only** indicates that all new files and subdirectories must be writen to the Cache disk/pool.
-If there is insufficient free space on the Cache disk/pool, *create* operations will fail with *out of space* status.
-*Mover* will take no action so any existing files for this share that are on the array are left there.
+**仅仅**表示所有新文件和子目录都必须写入高速缓存磁盘/池.
+如果缓存磁盘/池上没有足够的可用空间,*创建* 操作将失败,并显示 *空间不足* 状态.
+*移动*不会执行任何操作,因此缓存中此共享的所有现有文件都会保留在那里.
 
-**Prefer** indicates that all new files and subdirectories should be written to the Cache disk/pool, provided
-enough free space exists on the Cache disk/pool.
-If there is insufficient space on the Cache disk/pool, then new files and directories are created on the array.
-When the *mover* is invoked, files and subdirectories are transferred off the array and onto the Cache disk/pool.
+**首选**表示所有新文件和子目录都应该写入高速缓存磁盘/池,前提
+是高速缓存磁盘/池有足够的空闲空间.
+如果缓存磁盘/池上的空间不足,则会在阵列上创建新文件和目录.
+调用 *移动* 时,文件和子目录将从阵列传输到缓存磁盘/池.
 
-**NOTE:** Mover will never move any files that are currently in use.
-This means if you want to move files associated with system services such as Docker or VMs then you need to
-disable these services while mover is running.
+**注意：**移动不会移动当前正在使用的任何文件.
+这意味着,如果您要移动与Docker或VM等系统服务关联的文件,则
+需要在Mover运行时禁用这些服务.
 :end
 
 :share_edit_copy_on_write_help:
-Set to **No** to cause the *btrfs* NOCOW (No Copy-on-Write) attribute to be set on the share directory
-when created on a device formatted with *btrfs* file system.  Once set, newly created files and
-subdirectories on the device will inherit the NOCOW attribute.  We recommend this setting for shares
-used to store vdisk images, including the Docker loopback image file.  This setting has no effect
-on non-btrfs file systems.
+设置为 **否** 将导致在使用 *btrfs* 文件系统格式化的设备上创建共享目
+录时,在共享目录上设置 *btrfs* NOCOW(写入时无拷贝)属性.设置
+后,设备上新创建的文件和子目录将继承NOCOW属性.我们建议将此
+设置用于存储虚盘映像的共享,包括Docker环回映像文件.此设置对
+非btrfs文件系统没有影响.
 
-Set to **Auto** for normal operation, meaning COW **will** be in effect on devices formatted with *btrfs*.
+设为**自动**即可正常运行,这意味着COW **将** 在 * btrfs *格式化的设备上生效.
 :end
 
 :share_edit_status_help:
-Share does *not* contain any data and may be deleted if not needed any longer.
+共享 *不* 包含任何数据,如果不再需要,可以将其删除.
 :end
 
 :share_edit_delete_help:
-Share can *not* be deleted as long as it contains data. Be aware that some data can be hidden. See also [SMB Settings](/Settings/SMB) -> Hide "dot" files.
+只要共享包含数据,就不能删除它.请注意,某些数据可能会被隐藏.另请参阅 [SMB设置](/Settings/SMB) -> 隐藏 "点" 文件
 :end
 
 :smb_security_help:
-*Read settings from* is used to preset the SMB security settings of the current selected share with the settings of an existing share.
+*读取设置来源* 用于将当前所选共享的SMB安全设置预置为现有共享的设置.
 
-Select the desired share name and press **Read** to copy the SMB security settings from the selected source.
+选择所需的共享名称,然后按**读取**,从所选源复制SMB安全设置.
 
-*Write settings to* is used to copy the SMB security settings of the current selected share to one or more other existing shares.
+*将设置写入*用于将当前选定共享的SMB安全设置复制到一个或多个其他现有共享.
 
-Select the desired destinations and press **Write** to copy the SMB security settings to the selected shares.
+选择所需目标,然后按 **写入** 将SMB安全设置复制到所选共享.
 :end
 
 :smb_export_help:
-This setting determines whether the share is visible and/or accessible.  The 'Yes (hidden)' setting
-will *hide* the share from *browsing* but is still accessible if you know the share name.
+此设置确定共享是否可见和/或可访问.'是(隐藏)' 设置
+将向*浏览*隐藏共享,但如果您知道共享名称,则仍可访问.
 :end
 
 :smb_time_machine_volume_help:
-This limits the reported volume size, preventing Time Machine from using the entire real disk space
-for backup.  For example, setting this value to "1024" would limit the reported disk space to 1GB.
+这限制了报告的卷大小,从而阻止Time Machine使用整个实际磁盘空间
+用于备份.例如,将此值设置为“ 1024”会将报告的磁盘空间限制为1GB.
 :end
 
 :smb_case_sensitive_names_help:
-Controls whether filenames are case-sensitive.
+控制文件名是否区分大小写.
 
-The default setting of **auto** allows clients that support case sensitive filenames (Linux CIFSVFS)
-to tell the Samba server on a per-packet basis that they wish to access the file system in a case-sensitive manner (to support UNIX
-case sensitive semantics). No Windows system supports case-sensitive filenames so setting this option to **auto** is the same as
-setting it to No for them; however, the case of filenames passed by a Windows client will be preserved.  This setting can result
-in reduced peformance with very large directories because Samba must do a filename search and match on passed names.
+默认设置 **自动** 允许支持区分大小写的文件名(Linux CIFSVFS)的客
+户端按数据包告知Samba服务器希望以区分大小写的方式访问文件系统
+(以支持UNIX区分大小写的语义). 没有Windows系统支持区分大小写的文件名,因此将此选项
+设置为 **自动** 等同于将其设置为No；但是,将保留Windows客户端传递的文件名的大小写. 此设置可能会降低
+非常大目录的性能,因为Samba必须对传递的名称执行文件名搜索和匹配.
 
-A setting of **Yes** means that files are created with the case that the client passes, and only accessible using this same case.
-This will speed very large directory access, but some Windows applications may not function properly with this setting.  For
-example, if "MyFile" is created but a Windows app attempts to open "MYFILE" (which is permitted in Windows), it will not be found.
+设置为  **是**表示文件是在客户端通过的情况下创建的,只有在相同的情况下才能访问.
+这将加快非常大的目录访问速度,但某些Windows应用程序可能无法在此设置下正常运行.
+例如,如果创建了"MyFile",但Windows应用程序试图打开 "MYFILE"(这在Windows中是允许的),则将找不到它.
 
-A value of **Forced lower** is special: the case of all incoming client filenames, not just new filenames, will be set to lower-case.
-In other words, no matter what mixed case name is created on the Windows side, it will be stored and accessed in all lower-case.  This
-ensures all Windows apps will properly find any file regardless of case, but case will not be preserved in folder listings.
-Note this setting should only be configured for new shares.
+**强制降低** 的值是特殊的：所有传入的客户端文件名的大小写都会设置为小写,而不仅仅是新的文件名.
+换句话说,无论在Windows端创建了哪种大小写混合的名称,都将以所有小写形式存储和访问它.这个
+确保所有Windows应用程序无论大小写都能正确找到任何文件,但大小写不会保留在文件夹列表中.
+请注意,仅应为新共享配置此设置.
 :end
 
 :smb_security_modes_help:
-Summary of security modes:
+安全模式摘要：
 
-**Public** All users including guests have full read/write access.
+**公共** 包括来宾在内的所有用户都具有完全的读取/写入权限.
 
-**Secure** All users including guests have read access, you select which of your users
-have write access.
+**安全** 包括来宾在内的所有用户都具有读取权限,您可以选择其中的哪个用户
+有写权限.
 
-**Private** No guest access at all, you select which of your users have read/write or
-read-only access.
+**私人** 根本没有访客访问权限,您可以选择哪些用户具有读/写权限或
+只读访问.
 :end
 
 :smb_secure_access_help:
-*Read settings from* is used to preset the SMB User Access settings of the current selected share with the settings of an existing share.
+*读取设置* 用于将当前所选共享的SMB用户访问设置预设为现有共享的设置.
 
-Select the desired share name and press **Read** to copy the SMB security settings from the selected source.
+选择所需的共享名称,然后按**读取**,从所选源复制SMB安全设置.
 
-*Write settings to* is used to copy the SMB User Access settings of the current share to one or more other existing shares.
+*将设置写入*用于将当前共享的SMB用户访问设置复制到一个或多个其他现有共享.
 
-Select the desired destinations and press **Write** to copy the SMB User access settings to the selected shares.
+选择所需目标,然后按**写入**将SMB用户访问设置复制到所选共享.
 :end
 
 :smb_private_access_help:
-*Read settings from* is used to preset the SMB User Access settings of the current selected share with the settings of an existing share.
+*读取设置*用于将当前所选共享的SMB用户访问设置预设为现有共享的设置.
 
-Select the desired share name and press **Read** to copy the SMB security settings from the selected source.
+选择所需的共享名称,然后按**读取**,从所选源复制SMB安全设置.
 
-*Write settings to* is used to copy the SMB User Access settings of the current share to one or more other existing shares.
+*将设置写入*用于将当前共享的SMB用户访问设置复制到一个或多个其他现有共享.
 
-Select the desired destinations and press **Write** to copy the SMB User access settings to the selected shares.
+选择所需目标,然后按**写入**将SMB用户访问设置复制到所选共享.
 :end
 
 :nfs_security_help:
-*Read settings from* is used to preset the NFS security settings of the current selected share with the settings of an existing share.
+*读取设置*用于将当前选定共享的NFS安全设置预置为现有共享的设置.
 
-Select the desired share name and press **Read** to copy the NFS security settings from the selected source.
+选择所需的共享名称,然后按**读取**,从所选源复制NFS安全设置.
 
-*Write settings to* is used to copy the NFS security settings of the current selected share to one or more other existing shares.
+*将设置写入*用于将当前选定共享的NFS安全设置复制到一个或多个其他现有共享.
 
-Select the desired destinations and press **Write** to copy the NFS security settings to the selected shares.
+选择所需目标,然后按**写入**将NFS安全设置复制到所选共享.
 :end
 
 :user_add_username_help:
-Usernames may be up to 40 characters long and must start with a **lower case letter** or an underscore,
-followed by **lower case letters**, digits, underscores, or dashes. They can end with a dollar sign.
+用户名最长可达40个字符,并且必须以 **小写字母** 或下划线开头,
+后跟**小写字母**、数字、下划线或破折号.它们可以以美元符号结束.
 :end
 
 :user_add_description_help:
-Up to 64 characters. The characters ampersand (&amp;) quote (&quot;) and colon (:) are not allowed.
+最多64个字符.不允许使用的字符与符号,引号和冒号.
 :end
 
 :user_add_custom_image_help:
-The image will be scaled to 48x48 pixels in size. The maximum image file upload size is 95 kB (97,280 bytes).
+图像将缩放到48x48像素.图像文件上传的最大大小为95 kB(97,280字节).
 :end
 
 :user_password_help:
-Up to 128 characters.
+最多128个字符.
 :end
 
 :user_edit_description_help:
-Up to 64 characters. The characters ampersand (&amp;) quote (&quot;) and colon (:) are not allowed.
+最多64个字符.不允许使用的字符与符号,引号和冒号.
 :end
 
 :user_edit_custom_image_help:
-The image will be scaled to 48x48 pixels in size. The maximum image file upload size is 512 kB (524,288 bytes).
+图像将被缩放为48x48像素.图片文件的最大上传大小为512 kB（524,288字节）.
 :end
 
 :cpu_vms_help:
-This page gives a total view of the current CPU pinning assignments for VMs.<br>
-It also allows to modify these assignments.
+此页面提供了VM的当前CPU固定分配的总视图.<br>
+它还允许修改这些分配.
 
-Running VMs are **stopped first** and restarted after the modification.<br>
-Stopped VMs are instantly modified and new assignments become active when the VM is started.
+正在运行的虚拟机 **先停止**,修改后重启.<br>
+停止的VM会立即被修改,并且启动VM时新的分配将变为活动状态.
 
-When ***Apply*** is pressed a scan is performed to find the changes, subsequently only VMs which have changes are modified in parallel.
+当按下 ***应用*** 时,将执行扫描以查找更改,随后并行更改具有更改的容器.
 
-*Important: Please wait until all updates are finished before leaving this page*.
+*重要提示：请等到所有更新完成后再离开此页面*.
 :end
 
 :cpu_pinning_help:
-This page gives a total view of the current CPU pinning assignments for Docker containers.<br>
-It also allows to modify these assignments.
+此页面提供了Docker容器当前CPU固定分配的总视图.<br>
+它还允许修改这些分配.
 
-Running containers are **stopped first** and restarted after the modification.<br>
-Stopped containers are instantly modified and new assignments become active when the user manually starts the container.
+正在运行的容器 ** 先停止**,然后在修改后重新启动.<br>
+用户手动启动容器后,立即修改停止的容器,并激活新的分配.
 
-When ***Apply*** is pressed a scan is performed to find the changes, subsequently containers which have changes are modified in parallel.
+当按下 ***应用*** 时,将执行扫描以查找更改,随后并行更改具有更改的容器.
 
-*Important: Please wait until all updates are finished before leaving this page*.
+*重要提示：请等到所有更新完成后再离开此页面*.
 
-By default NO cores are selected for a Docker container, which means it uses all available cores.<br>
-Do not select **ALL** cores for containers, just select **NO** cores if you want unrestricted core use.
+默认情况下,没有为Docker容器选择任何核心,这意味着它使用了所有可用的核心.<br>
+不要为容器选择 **全部** 核心,如果您希望不受限制地使用核心,请选择 **否** 即可.
 
-Do not select cores for containers which are *isolated*.
-By design a container will only use a single core (the lowest numbered core) when multiple isolated cores are selected.<br>
-Usually this is not what a user wants when selecting multiple cores.
+不要为 *隔离* 的容器选择核心.
+通过设计,当选择多个隔离的核心时,容器将仅使用单个核心（编号最小的核心）.<br>
+通常,这不是用户选择多个内核时想要的.
 :end
 
 :cpu_isolation_help:
-CPU isolation allows the user to specify CPU cores that are to be explicitly reserved for assignment (to VMs or Docker containers).
+CPU隔离允许用户指定要显式保留用于分配（分配给VM或Docker容器）的CPU核心.
 
-This is incredibly important for gaming VMs to run smoothly because even if you manually pin your Docker containers to not overlap with your gaming VM,
-the host OS can still utilize those same cores as the guest VM needs for things like returning responses for the webGui, running a parity check, btrfs operations, etc.
+这对于游戏虚拟机平稳运行至关重要,因为即使您手动固定Docker容器使其与游戏虚拟机不重叠,
+主机OS仍可以使用与来宾VM所需的内核相同的内核来执行诸如为WebGui返回响应,运行奇偶校验,btrfs操作等操作.
 :end
 
 :timezone_help:
-Select your applicable time zone from the drop-down list.
+从下拉列表中选择您适用的时区.
 :end
 
 :use_ntp_help:
-Select 'Yes' to use Network Time Protocol to keep your server time accurate.
-We **highly** recommend the use of a network time server, especially if you plan on using Active Directory.
+选择 '是' 以使用网络时间协议来保持服务器时间准确.
+强烈建议您使用网络时间服务器,特别是如果您打算使用Active Directory.
 
-Note: if using `pool.ntp.org` time servers, please also refer to [their documentation](http://www.pool.ntp.org/en/use.html).
+注意：如果使用 `pool.ntp.org` 时间服务器,也请参考[其文档]（http://www.pool.ntp.org/en/use.html）.
 :end
 
 :ntp_server1_help:
-This is the primary NTP server to use.  Enter a FQDN or an IP address.
-:end
-
-:ntp_server2_help:
-This is the alternate NTP server to use if NTP Server 1 is down.
+这是要使用的主要NTP服务器.输入FQDN或IP地址.
+如果NTP服务器1关闭,则这是备用NTP服务器.
+如果NTP服务器1和2都关闭,则这是备用NTP服务器.
+如果NTP服务器1、2和3都关闭,这是备用NTP服务器.
+如果NTP服务器1关闭,则这是备用NTP服务器.
 :end
 
 :ntp_server3_help:
-This is the alternate NTP Server to use if NTP Servers 1 and 2 are both down.
+如果NTP服务器1和2都关闭,则这是备用NTP服务器.
 :end
 
 :ntp_server4_help:
-This is the alternate NTP Server to use if NTP Servers 1, 2, and 3 are all down.
+如果NTP服务器1、2和3都关闭,这是备用NTP服务器.
 :end
 
 :current_time_help:
-Enter the current time-of-day.  Use format YYYY-MM-DD HH:MM:SS. Greyed out when using NTP.
+输入当前时间.使用格式YYYY-MM-DD HH：MM：SS.使用NTP时显示为灰色.
 :end
 
 :disk_enable_autostart_help:
-If set to 'Yes' then if the device configuration is correct upon server start-up,
-the array will be automatically Started and shares exported.<br>
-If set to 'No' then you must Start the array yourself.
+如果设置为 '是',则在服务器启动时设备配置正确时,
+阵列将自动启动并导出共享.<br>
+如果设置为 '否',则必须自己启动阵列.
 :end
 
 :disk_spindown_delay_help:
-This setting defines the 'default' time-out for spinning hard drives down after a period
-of no I/O activity.  You may override the default value for an individual disk on the Disk Settings
-page for that disk.
+此设置定义一段时间后旋转硬盘驱动器的 '默认' 超时时间
+没有I / O活动.您可以在该磁盘的设置页面中覆盖
+单个磁盘的默认值.
 :end
 
 :disk_spinup_groups_help:
-If set to 'Yes' then the [Spinup Groups](/Help) feature is enabled.
+如果设置为 '是',则启用[旋转数组](/Help)功能.
 :end
 
 :disk_default_partition_format_help:
