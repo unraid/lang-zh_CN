@@ -12,7 +12,7 @@ Backup Server Active Some icons may not appear, and plugin installations may be 
 Sorting options=排序选项
 Sorting options unavailable=排序选项不可用
 Sort By Name Ascending=按名称升序排列
-Sort By Name Descending=按名称降序排序 
+Sort By Name Descending=按名称降序排序
 Sort By Downloads=按下载量排序
 Sort By Trend=按趋势排序
 Sort By Date Added=按添加日期排序
@@ -26,7 +26,7 @@ Installations of apps disabled You must accept the warning to be able to install
 Click here=单击此处
 
 ; Plugin Disclaimer
-Community Applications contains both docker containers and plugin applications Plugins are designed for OS enhancements, and run with full privileges on your system and are clearly identified within CA=Community Applications 同时包含 docker 容器和插件应用程序，这些插件是为增强操作系统而设计的，在您的系统上以完全的权限运行，并且在 CA 中进行了明确标识 
+Community Applications contains both docker containers and plugin applications Plugins are designed for OS enhancements, and run with full privileges on your system and are clearly identified within CA=Community Applications 同时包含 docker 容器和插件应用程序，这些插件是为增强操作系统而设计的，在您的系统上以完全的权限运行，并且在 CA 中进行了明确标识
 Plugin Note=插件说明
 
 ; Multi Install
@@ -72,7 +72,7 @@ Yes, install them=是的，请安装
 Cookies not enabled Plugins must be separately installed from docker applications=未启用 Cookie。这些插件必须与 Docker 应用程序分开安装
 Docker applications will be installed utilizing the most recently saved template with no user input on your part=Docker 应用程序将使用最近保存的模板进行安装，无需用户输入
 Updating Support Links=正在更新支持链接
-Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=完成安装。如果未出现“完成”按钮，则需要单击右上角的红色 X 
+Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=完成安装。如果未出现“完成”按钮，则需要单击右上角的红色 X
 
 ; error messages
 No data was returned It is probable that another browser session has rebooted your server Reloading this browser tab will probably fix this error=没有返回任何数据。可能是另一个浏览器会话重新启动了服务器。重新加载此浏览器标签页可能会解决此错误
@@ -101,7 +101,7 @@ OTHER=其他
 Statistics=统计信息
 Credits=信用
 Support=支持
-VERSION=版本 
+VERSION=版本
 Change Log=更改日志
 
 ; Credits
@@ -174,13 +174,13 @@ Video=视频
 Other=其他
 Media Servers=媒体服务器
 Network Services=网络服务
-DNS=DNS 
-FTP=FTP 
+DNS=DNS
+FTP=FTP
 Management=管理
-Messenger=Messenger 
+Messenger=Messenger
 Proxy=代理
-VOIP=VOIP 
-VPN=VPN 
+VOIP=VOIP
+VPN=VPN
 Web=Web
 Productivity=生产力
 Security=安全性
@@ -193,7 +193,7 @@ Uncategorized=未分类
 
 ; Categories displayed within a popup or on the card
 GameServers=游戏服务器
-HomeAutomation=家庭自动化 
+HomeAutomation=家庭自动化
 MediaApp=媒体应用
 MediaAppBooks=媒体应用：书籍
 MediaAppMusic=媒体应用：音乐
@@ -220,28 +220,28 @@ ToolsThemes=工具：主题
 ToolsUtilities=工具：实用程序
 Other=其他
 OtherUncategorized=其他：未分类
-and %s more=和另外 ％s 
+and %s more=和另外 ％s
 
 ; App Popup Related
 Donate To Author=捐赠给作者
 Donate To Maintainer=捐赠给维护者
 Author=作者
 Maintainer=维护者
-DockerHub=DockerHub 
+DockerHub=DockerHub
 Application Template=应用程序模板
 Base OS=基本操作系统
 DockerHub Stars=DockerHub 星形
-Added to CA=已添加到 CA 
+Added to CA=已添加到 CA
 Date Updated=日期已更新
 Current Version=当前版本
-Minimum OS=最低 OS 
-Max OS=最高 OS 
+Minimum OS=最低 OS
+Max OS=最高 OS
 Total Downloads=总下载量
 Licence=许可证
 30 Day Trend=30 天趋势
-Ranked #%s=排名＃％s 
+Ranked #%s=排名＃％s
 ; as in Trending up or down arrow
-Trending %s=趋势 ％s 
+Trending %s=趋势 ％s
 ; as in As of some date
 As of %s=（截至 %s）
 This application template has been blacklisted=此应用程序/模板已被列入黑名单
@@ -249,7 +249,7 @@ This application template has been deprecated=此应用程序/模板已弃用
 This application is not compatible with your version of Unraid=此应用程序与您的 Unraid 版本不兼容
 Another browser tab or device has updated the displayed templates Some actions are not available=另一个浏览器标签页或设备已更新所显示的模板。某些操作不可用
 Reinstall default=重新安装（默认）
-WebUI=WebUI 
+WebUI=WebUI
 Reinstall=重新安装
 Install=安装
 Project=项目
@@ -265,7 +265,7 @@ Install The Update=安装更新
 Latest Version=最新版本
 Multi Language Support=多语言支持
 ; as in more than 100000
-More than %s=超过 ％s 
+More than %s=超过 ％s
 
 ; Graphs
 Trend Per Month=每月趋势
@@ -273,8 +273,8 @@ Downloads Per Month=每月下载量
 Total Downloads=总下载量
 
 ; Multi install script
-Installing docker applications %s=安装 Docker 应用程序 ％s 
-Starting %s=正在启动 ％s 
+Installing docker applications %s=安装 Docker 应用程序 ％s
+Starting %s=正在启动 ％s
 %s failed to start You should install it by itself to fix the errors=％s 无法启动，您应当让它自行安装以修复错误
 Setting installed applications to autostart=将已安装的应用程序设置为自动启动
 Docker Application Installation finished=Docker 应用程序安装完成
@@ -293,8 +293,8 @@ Click to edit the application values=单击以编辑应用程序值
 Click to reinstall=单击以重新安装
 Click to install=单击以安装
 Install plugin=安装插件
-Click to go to the WebUI=单击以转到 WebUI 
-This application has been marked as being Beta=此应用程序已被标记为 Beta 
+Click to go to the WebUI=单击以转到 WebUI
+This application has been marked as being Beta=此应用程序已被标记为 Beta
 This application template has been deprecated=此应用程序模板已弃用
 This application is not compatible with your version of Unraid=此应用程序与您的 Unraid 版本不兼容
 This application template has been blacklisted=此应用程序模板已被列入黑名单
