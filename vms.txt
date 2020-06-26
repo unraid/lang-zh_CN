@@ -2,7 +2,7 @@
 30 nec XHCI=3.0 (nec XHCI)
 30 qemu XHCI=3.0 (qemu XHCI)
 Allocation=分配
-and if using graphics device passthrough it too needs UEFI=如果使用图形设备直通，也需要 UEFI 
+and if using graphics device passthrough it too needs UEFI=如果使用图形设备直通，也需要 UEFI
 Are you sure=是否确定
 Array must be started to view Virtual Machines=必须启动阵列才能查看虚拟机
 Autostart=自动启动
