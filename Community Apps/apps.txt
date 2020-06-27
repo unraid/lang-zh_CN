@@ -157,7 +157,7 @@ Applied to all applications=（适用于所有应用程序）
 Individual Application Moderation=个人应用程序审核
 
 ; Misc
-Community Applications Changelog= Community Applications 变更日志
+Community Applications Changelog=Community Applications 变更日志
 
 ; Categories try not to be excessively long This is displayed on the left of CA screen
 
