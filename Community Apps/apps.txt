@@ -8,6 +8,7 @@ Popup Blocked CA requires popups to be enabled under certain circumstances You m
 Docker Service Not Enabled - Only Plugins Available To Be Installed Or Managed=未启用 Docker 服务 - 仅可安装或管理的插件
 Community Applications works best when cookies are enabled in your browser Certain features may not be available=在浏览器中启用 Cookie 时，Community Applications 使用效果最好。某些功能可能不可用
 Backup Server Active Some icons may not appear, and plugin installations may be affected=备份服务器处于活动状态。某些图标可能不会显示，插件安装可能受到影响
+
 ; Sorting Options
 Sorting options=排序选项
 Sorting options unavailable=排序选项不可用
@@ -84,6 +85,7 @@ Post the ENTIRE contents of this message in the Community Applications Support T
 Unknown error happened Please post a screenshot in the support thread of the Statistics screen=发生未知错误   请在统计屏幕的支持对话中发布屏幕截图
 Something really wrong happened Reloading the Apps tab will probably fix the problem=真的出错了。重新加载应用选项卡可能会解决该问题
 This plugin has a duplicated name from another plugin %s This will impact your ability to install both plugins simultaneously=此插件的名称与另一个插件 %s 重复，这将影响您同时安装这两个插件的能力
+You have been logged out=
 
 ; CA Sections Keep the length reasonable
 MENU=菜单
@@ -191,7 +193,7 @@ Utilities=实用程序
 Private Apps=私人应用
 Uncategorized=未分类
 
-; Categories displayed within a popup or on the card
+; Categories displayed within a popup or on the card.  Where an entry exists after the "=" it is not translated, but rather how it should look
 GameServers=游戏服务器
 HomeAutomation=家庭自动化
 MediaApp=媒体应用
@@ -317,6 +319,7 @@ Remove Language Pack=移除语言包
 Update Language Pack=更新语言包
 Installed Version=安装的版本
 A note about translations=翻译说明
+Click here to view the language changelog=
 
 ; Help Text
 This chooses how to sort the results=这将选择结果的排序方式
