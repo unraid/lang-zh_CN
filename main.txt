@@ -220,6 +220,7 @@ Too many attached devices Please consider upgrading your=连接的设备过多�
 Too many wrong andor missing disks=错误和/或丢失的磁盘太多
 Total size=总尺寸
 Unassign ALL devices to delete this pool=取消分配 **所有** 设备以删除此池
+Unassigned Devices=
 unavailable no parity-check entries logged=不可用(未记录奇偶校验条目)
 Unavailable - disk must be spun up=不可用-磁盘必须旋转
 Unavailable=不可用
@@ -257,7 +258,6 @@ will create a file system in all Unmountable disks=将在所有不可安装的�
 will delete the encryption keyfile=将删除加密密钥文件
 will disable the missing disk and then bring the array on-line Install a replacement disk as soon as possible=将禁用丢失的磁盘，然后使阵列联机。尽快安装替换磁盘将禁用丢失的磁盘，然后使阵列联机。尽快安装替换磁盘
 will expand the file system of the data disk if possible then bring the array on-line and start Data-Rebuild=将扩展数据磁盘的文件系统；
-如果可能，则将阵列联机并开始数据重建
 will immediately clear all disk statistics=将立即清除所有磁盘统计信息
 will immediately invoke the Mover=将立即调用移动器
 will immediately spin down all disks=将立即降低所有磁盘的速度
