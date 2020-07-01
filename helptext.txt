@@ -802,800 +802,800 @@ CPU隔离允许用户指定要显式保留用于分配（分配给VM或Docker容
 :end
 
 :disk_spindown_delay_help:
-此设置定义一段时间后旋转硬盘驱动器的 '默认' 超时时间
-没有I / O活动.您可以在该磁盘的设置页面中覆盖
-单个磁盘的默认值.
+该设置定义 ‘默认’ 的超时，用于在一段没有I/O 活动的时间后
+将硬盘驱动器降速，您可以在磁盘设置页面为单独的某个磁盘
+替换其默认值。
 :end
 
 :disk_spinup_groups_help:
-如果设置为 '是',则启用[旋转数组](/Help)功能.
+当设置为 ‘是’ 后 [提速群组] (/Help) 特性将启用。
 :end
 
 :disk_default_partition_format_help:
-Defines the type of partition layout to create when formatting hard drives 2TB in size and
-smaller **only**. (All devices larger then 2TB are always set up with GPT partition tables.)
+定义在格式化**仅 2TB 及以下**容量的硬盘驱动器时
+创建的分区布局类型。（所有大于 2TB 的设备都只能设置为 GPT 分区表。）
 
-**MBR: unaligned** setting will create MBR-style partition table, where the single
-partition 1 will start in the **63rd sector** from the start of the disk.  This is the *traditional*
-setting for virtually all MBR-style partition tables.
+**MBR ：未对齐**设置会创建 MBR-style 分区表，其中单个分区 1
+将会从磁盘开头的 **第63扇区** 开始。这几乎是所有
+MBR-style 分区表的*传统*设置。
 
-**MBR: 4K-aligned** setting will create an MBR-style partition table, where the single
-partition 1 will start in the **64th sector** from the start of the disk. Since the sector size is 512 bytes,
-this will *align* the start of partition 1 on a 4K-byte boundry.  This is required for proper
-support of so-called *Advanced Format* drives.
+**MBR ：4K-对齐**设置会创建 MBR-style 分区表，其中单个分区 1
+将会从磁盘开头的 **第64扇区** 开始。由于扇区的大小是 512 byte ，
+这将使分区 1 以 4K-byte 为边界 *对齐*。对于所谓的 *高级格式化*的磁盘
+需要该选项以提供合适的支持。
 
-Unless you have a specific requirement do not change this setting from the default **MBR: 4K-aligned**.
+除非您拥有特定的需求，否则请不要对默认的 **MBR ：4K-对齐** 设置进行更改。
 :end
 
 :disk_default_file_system_help:
-Defines the default file system type to create when an *unmountable* array device is formatted.
+定义在格式化一个*不可挂载的*阵列设备时，默认创建的文件系统类型。
 
-The default file system type for a single or multi-device cache is always Btrfs.
+对于单个或多个设备的缓存，默认的文件系统类型始终为 Btrfs 。
 :end
 
 :disk_shutdown_timeout_help:
-When shutting down the server, this defines how long to wait in seconds for *graceful* shutdown before forcing
-shutdown to continue.
+在关闭服务器时，该选项定义了在进行强制关机之前，等待多少秒
+以实现 *优雅* 关闭。
 :end
 
 :disk_tunable_poll_attributes_help:
-This defines the disk SMART polling interval, in seconds.  A value of 0 disables SMART polling (not recommended).
+该选项以秒为单位，定义磁盘 SMART 的轮询间隔。设为0 值将会禁用 SMART 轮询（不推荐）。
 :end
 
 :disk_tunable_enable_ncq_help:
-If set to **No** then *Native Command Queuing* is disabled for all array devices that support NCQ.
+当设置为 **否** 则会禁用所有支持 NCQ 的阵列设备的 *原生命令排序* 。
 
-**Auto** leaves the setting for each device as-is.
+**自动**会对每个设备按默认方式设置。
 
-Note: You must reboot after selecting Auto for setting to take effect.
+备注：在选择自动后，必须重新启动以使设置生效。
 :end
 
 :disk_tunable_nr_requests_help:
-This defines the `nr_requests` device driver setting for all array devices.
+该选项为所有的阵列设备定义 'nr_requests' 设备驱动设置。
 
-**Auto** leaves the setting for each device as-is.
+**自动**会对每个设备按默认方式设置。
 
-Note: if you set to blank and click Apply, the setting is restored to its default, and you must reboot for setting to take effect.
+备注：当您设置为空白并单击提交，该设置项将还原为默认值，系统必须重新启动以使设置生效。
 :end
 
 :disk_tunable_scheduler_help:
-Selects which kernel I/O scheduler to use for all array devices.
+为所有的阵列设备选择内核 I/O 调度程序。
 
-**Auto** leaves the setting for each device as-is (mq-deadline).
+**自动**会对每个设备按默认方式设置 (mq-deadline) 。
 
-Note: You must reboot after selecting Auto for setting to take effect.
+备注：在选择自动后，必须重新启动以使设置生效。
 :end
 
 :disk_tunable_md_num_stripes_help:
-This is the size of the *stripe pool* in number of *stripes*.  A *stripe* refers to a data structure that facilitates parallel 4K read/write
-operations necessary for a parity-protected array.
+该项为 *带区池* 的 *带区* 数的大小。*带区* 指一种便于并行 4K 读/写的数据结构
+对奇偶校验保护的阵列，必须配置该选项。
 
-Note: if you set to blank and click Apply, the setting is restored to its default, and will take effect after reboot.
+备注：当您设置为空白并单击提交，该设置项将还原为默认值，系统必须重新启动以使设置生效。
 :end
 
 :disk_tunable_md_queue_limit_help:
-This is a number in [1..100] which is the maximum steady-load percentage of the stripe pool permitted to be in use.
+该选项是一个位于 [1..100] 区间内的数，是允许使用的带区池的最大恒定负载百分比。
 
-Note: if you set to blank and click Apply, the setting is restored to its default.
+备注：当您设置为空白并单击提交，该设置项将还原为默认值。
 :end
 
 :disk_tunable_md_sync_limit_help:
-This is a number in [0..100] which is the maximum percentage of the stripe pool allocated for parity sync/check in the presence of other I/O.
+该选项是一个位于 [0..100] 区间内的数，是分配给奇偶校验同步/检查的带区池剩余状态 I/O 的最大百分比。
 
-Note: if you set to blank and click Apply, the setting is restored to its default.
+备注：当您设置为空白并单击提交，该设置项将还原为默认值。
 :end
 
 :disk_tunable_md_write_method_help:
-Selects the method to employ when writing to enabled disk in parity protected array.
+选择写入到奇偶校验保护阵列中的可用磁盘时采用的方式。
 
-*Auto* selects `read/modify/write`.
+设为*自动* 会选择‘读取/修改/写入’。
 :end
 
 :disk_default_warning_utilization_help:
-*Warning disk utilization* sets the default warning threshold for all hard disks utilization. Exceeding this threshold will result in a warning notification.
+*磁盘警告利用率* 为所有的硬盘利用率设置默认的警告阈值。超出这一阈值将会产生警告通知。
 
-When the warning threshold is set equal or greater than the critical threshold, there will be only critical notifications (warnings are not existing).
+当警告阈值设为等于或大于危险阈值时，将只会存在危险通知（不存在警告通知）。
 
-A value of zero will disable the warning threshold (including notifications).
+设为 0 值将会禁用警告阈值（包括通知）。
 :end
 
 :disk_default_critical_utilization_help:
-*Critical disk utilization* sets the default critical threshold for all hard disks utilization. Exceeding this threshold will result in an alert notification.
+*磁盘危险利用率* 为所有的硬盘利用率设置默认的危险阈值。超出这一阈值将会产生警报通知。
 
-A value of zero will disable the critical threshold (including notifications).
+设为 0 值将会禁用危险阈值（包括通知）。
 :end
 
 :disk_default_warning_temperature_help:
-*Warning disk temperature* sets the default warning threshold for all hard disks temperature. Exceeding this threshold will result in a warning notification.
+*磁盘警告温度* 为所有的硬盘温度设置默认的警告阈值。超出这一阈值将会产生警告通知。
 
-A value of zero will disable the warning threshold (including notifications).
+设为 0 值将会禁用警告阈值（包括通知）。
 :end
 
 :disk_default_critical_temperature_help:
-*Critical disk temperature* sets the default critical threshold for all hard disks temperature. Exceeding this threshold will result in an alert notification.
+*磁盘危险温度* 为所有的硬盘温度设置默认的危险阈值。超出这一阈值将会产生警报通知。
 
-A value of zero will disable the critical threshold (including notifications).
+设为 0 值将会禁用危险阈值（包括通知）。
 :end
 
 :disk_default_smart_notification_help:
-SMART notifications are generated on either an increasing RAW value of the attribute, or a decreasing NORMALIZED value which reaches a predefined threshold set by the manufacturer.
+当 RAW 属性值增长到，或标准值降低到了制造商设定的阈值时，将会生成 SMART 通知。
 
-This section is used to set the global settings for all disks. It is possible to adjust settings for individual disks.
+这一部分用于对所有磁盘进行全局设置。当然对个别硬盘调整设置也是可行的。
 :end
 
 :disk_default_smart_tolerance_help:
-A tolerance level may be given to prevent that small changes result in a notification. Setting a too high tolerance level may result in critical changes without a notification.
+容差级别可用于阻止微小更改引发的通知。设置过高的容差级别可能导致对于危险更改毫无预警。
 
-This section is used to set the global settings for all disks. It is possible to adjust settings for individual disks.
+这一部分用于对所有磁盘进行全局设置。当然对个别硬盘调整设置也是可行的。
 :end
 
 :disk_default_smart_controller_help:
-By default automatic controller selection is done by smartctl to read the SMART information. Certain controllers however need specific settings for smartctl to work.
-Use this setting to select your controller type and fill-in the specific disk index and device name for your situation. Use the manufacturer's documentation to find the relevant information.
+自动控制器选择默认由 smartctl 完成，以读取 SMART 信息。然而，特定的控制器需要为 smartctl 进行特别设置才可工作。
+使用该设置项选择控制器类型，并为您的应用场景填写特定的磁盘索引和设备名。使用制造商的文档以发现相关信息。
 
-This section is used to set the global settings for all disks. It is possible to adjust settings for individual disks.
+这一部分用于对所有磁盘进行全局设置。当然对个别硬盘调整设置也是可行的。
 :end
 
 :disk_default_smart_attribute_help:
-The user can enable or disable notifications for the given SMART attributes. It is recommended to keep the default, which is ALL selected attributes,
-when certain attributes are not present on your hard disk or do not provide the correct information, these may be excluded.
-In addition custom SMART attributes can be entered to generate notifications. Be careful in this selection,
-it may cause an avalance of notifcations if inappropriate SMART attributes are chosen.
+用户能够启用或禁用给定的 SMART 属性。推荐保持选择所有属性的默认设置，
+当您的硬盘不支持某些特定属性，或不提供正确的信息时，则可以禁用它们。
+此外，自定义可输入的 SMART 属性能够生成通知。请谨慎选择该项，
+如果选中了不合适的 SMART 属性，可能导致通知崩溃。
 
-This section is used to set the global settings for all disks. It is possible to adjust settings for individual disks.
+这一部分用于对所有磁盘进行全局设置。当然对个别硬盘调整设置也是可行的。
 :end
 
 :docker_repositories_help:
-Use this field to add template repositories.
-Docker templates are used to facilitate the creation and re-creation of Docker containers.  Please setup one per line.
+使用该区域来添加模板存储库。
+Docker 模板用于轻松创建和重建 Docker 容器。每行请仅设置一个。
 
-For a list of popular community-supported repositories, visit here: <a href="http://lime-technology.com/forum/index.php?topic=37958.0" target="_blank">http://lime-technology.com/forum/index.php?topic=37958.0</a>
+访问该页面以查找社区支持的流行存储库：<a href="http://lime-technology.com/forum/index.php?topic=37958.0" target="_blank">http://lime-technology.com/forum/index.php?topic=37958.0</a>
 :end
 
 :docker_enable_help:
-Before you can start the Docker service for the first time, please specify an image file for Docker to install to.
+在第一次运行 Docker 服务之前，请指定一个用于安装 Docker 的映像文件。
 
-Once started, Docker will always automatically start after the array has been started.
+完成首次启动之后， Docker 将总会在阵列启动后自动启动。
 :end
 
 :docker_vdisk_size_help:
-If the system needs to create a new docker image file, this is the default size to use specified in GB.
+此处为系统在创建一个新的 docker 映像文件时，以 GB 指定的默认大小。
 
-To resize an existing image file, specify the new size here. Next time the Docker service is started the file (and file system) will increased to the new size (but never decreased).
+若要调整一个已有的映像文件的大小，请在此处指定新的值。文件（及文件系统）将会在下一次启动 Docker 服务的时候增大到新的大小（但绝不会减小）。
 :end
 
 :docker_vdisk_location_help:
-You must specify an image file for Docker. The system will automatically create this file when the Docker service is first started.
+必须为 Docker 指定一个映像文件。系统会在 Docker 服务首次启动时自动创建该文件。
 
-The image file name must have the extension .img, If not the input is not accepted and marked red.
+该映像的文件名必须以 .img 为扩展名，否则系统将无法接受该输入并将其标红。
 
-It is recommended to create this image file outside the array, e.g. on the Cache pool. For best performance SSD devices are preferred.
+推荐将该映像文件创建在阵列之外，例如在缓存池中。为获得最佳体验， 请首选 SSD 设备。
 :end
 
 :docker_appdata_location_help:
-You can specify a folder to automatically generate and store subfolders containing configuration files for each Docker app (via the /config mapped volume).
+您可以指定一个文件夹，用于自动生成和存储包含每个 Docker 应用配置文件的子文件夹（通过 /config 已映射的卷）。
 
-The folder's path must end with a trailing slash (/) character. If not the input is not accepted and marked red.
+该文件夹的路径必须以一个反斜杠 (/) 字符结尾。否则系统将无法接受该输入并将其标红。
 
-It is recommended to create this folder outside the array, e.g. on the Cache pool. For best performance SSD devices are preferred.
+推荐将该映像文件创建在阵列之外，例如在缓存池中。为获得最佳体验， 请首选 SSD 设备。
 
-Only used when adding new Docker apps. Editing existing Docker apps will not be affected by this setting.
+只在添加新的 Docker 应用时使用。编辑已有的 Docker 应用不会影响该设置。
 :end
 
 :docker_log_rotation_help:
-By default LOG rotation is disabled and will create a single LOG file of unlimited size.
+默认禁用日志轮换，并创建单个不限大小的日志文件。
 
-Enable LOG rotation to limit the size of the LOG file and specify the number of files to keep in the rotation scheme.
+启用日志轮换可限制日志文件的大小，并指定保存在轮换方案中的文件数。
 :end
 
 :docker_log_file_size_help:
-Specifies the maximum LOG size. When exceeded LOG rotation will occur.
+指定最大的日志大小。超出时将会产生日志轮换。
 :end
 
 :docker_log_file_number_help:
-Specifies the number of LOG files when LOG rotation is done.
+指定当启用日志轮换时的日志文件数。
 :end
 
 :docker_authoring_mode_help:
-If set to **Yes**, when creating/editing containers the interface will be present with some extra fields related to template authoring.
+如果设为 **是** ，在创建/编辑容器时，界面将会呈现一些额外的与模板创作相关的区域。
 :end
 
 :docker_custom_network_access_help:
-Allows direct communication between the host and containers using a custom (macvlan) network.<br>
-By default this is prohibited.
+允许主机和容器间利用一个自定义的 (macvlan) 网络直接通信。<br>
+默认禁用该选项。
 :end
 
 :docker_user_defined_network_help:
-User created networks are networks created by the user outside of the GUI.<br>
-By default user created networks are removed from Docker. This is done to prevent potential conflicts with the automatic generation of custom networks.
+用户定义网络是指由用户在 GUI 之外创建的网络。
+默认从 Docker 中移除用户定义网络。这么做是为了阻止潜在的与自动生成的自定义网络间的冲突。
 
-Change this setting to preserve user defined networks, but it is the responsibility of the user to ensure these entries work correctly and are conflict free.
+更改这一设置以保留用户定义网络，但用户有责任确保这些项正确工作且不会发生冲突。
 :end
 
 :docker_include_interface_vlan_ipv4_help:
-Include (default) or exclude the above interfaces or VLANs as custom network for Docker.
+为 Docker 自定义网络包括（默认值）或排除上述接口或 VLAN。
 
-Enter the pool range within each allocated subnet which is used for DHCPv4 assignments by Docker. E.g. 192.168.1.128/25
+输入每个被分配的子网的池范围，这将被 Docker 用于 DHCPv4 分发。例如 192.168.1.128/25
 :end
 
 :docker_exclude_interface_vlan_ipv4_help:
-Include or exclude (default) the above interfaces or VLANs as custom network for Docker.
+为 Docker 自定义网络包括（默认值）或排除上述接口或 VLAN。
 
-Enter the pool range within each allocated subnet which is used for DHCPv4 assignments by Docker. E.g. 192.168.1.128/25
+输入每个被分配的子网的池范围，这将被 Docker 用于 DHCPv4 分发。例如 192.168.1.128/25
 :end
 
 :docker_include_interface_vlan_ipv6_help:
-Include (default) or exclude the above interfaces or VLANs as custom network for Docker.
+为 Docker 自定义网络包括（默认值）或排除上述接口或 VLAN。
 
-Enter the pool range within each allocated subnet which is used for DHCPv6 assignments by Docker. E.g. 2a02:abcd:9ef5:100:1::/72
+输入每个被分配的子网的池范围，这将被 Docker 用于 DHCPv6 分发。例如 2a02:abcd:9ef5:100:1::/72
 :end
 
 :docker_exclude_interface_vlan_ipv6_help:
-Include or exclude (default) the above interfaces or VLANs as custom network for Docker.
+为 Docker 自定义网络包括（默认值）或排除上述接口或 VLAN。
 
-Enter the pool range within each allocated subnet which is used for DHCPv6 assignments by Docker. E.g. 2a02:abcd:9ef5:100:1::/72
+输入每个被分配的子网的池范围，这将被 Docker 用于 DHCPv6 分发。例如 2a02:abcd:9ef5:100:1::/72
 :end
 
 :docker_version_help:
-This is the active Docker version.
+使用中的 Docker 版本。
 :end
 
 :docker_vdisk_location_active_help:
-This is the location of the Docker image.
+Docker 映像文件的位置。
 :end
 
 :docker_appdata_location_active_help:
-This is the storage location for Docker containers.
+Docker 容器的存储位置。
 :end
 
 :docker_log_rotation_active_help:
-By default a single unlimited LOG file is created. Otherwise LOG file size and number of files are limited when LOG rotation is enabled.
+默认创建单个无限制大小的日志文件。否则当启用日志轮换时，日志的大小及文件数将受限。
 :end
 
 :docker_custom_network_active_help:
-Allows direct communication between the host and containers using a custom (macvlan) network.<br>
-By default this is prohibited.
+允许主机和容器间利用一个自定义的 (macvlan) 网络直接通信。<br>
+默认禁用该选项。
 :end
 
 :docker_user_defined_network_active_help:
-Shows whether networks created outside of the GUI are removed or preserved for Docker. When preserved *user defined networks* become available in the *Network type* dropdown list of containers.
+显示为 Docker 移除或保留在 GUI 之外创建的网络。当设为保留时，在容器的 *网络类型* 下拉列表中 *用户定义网络* 将可用。
 :end
 
 :docker_scrub_help:
-**Scrub** runs the *btrfs scrub* program to check file system integrity.
+**清理**运行 *btrfs 清理* 程序以检查文件系统的完整性。
 
-If repair is needed you should check the *Correct file system errors* and run a second Scrub pass; this will permit *btrfs scrub* to fix the file system.
+若需要修复，您应当检查 *修正文件系统错误* 并再次运行清理并通过；这将允许  *btrfs 清理* 修复文件系统。
 :end
 
 :docker_cancel_help:
-**Cancel** will cancel the Scrub operation in progress.
+**取消** 将会取消正在进行的清理操作。
 :end
 
 :id_server_name_help:
-The network identity of your server.  Also known as *hostname* or *short hostname*. Windows networking
-refers to this as the *NetBIOS name* and must be 15 characters or less in length.
-Use only alphanumeric characters (that is, "A-Z", "a-z", and "0-9"), dashes ("-"), and dots (".");
-and, the first and last characters must be alphanumeric.
+服务器的网络标识。也被称作 *主机名* 或 *短主机名* 。Windows 网络
+将其指代为 *NetBIOS 名* ，且必须小于等于 15 个字符。
+仅可使用字母数字字符（也就是 "A-Z" ， "a-z" ，以及 "0-9" ）,短划线 ("-") ，和点 (".") ；
+同时，第一个和最后一个字符必须是字母数字。
 :end
 
 :id_description_help:
-This is a text field that is seen next to a server when listed within Network or File Explorer
-(Windows), or Finder (macOS).
+在网络，或文件资源管理器 (Windows) ，或 Finder (macOS) 中列出服务器时，将会
+在旁边显示该文本字段。
 :end
 
 :id_model_help:
-This is the server model number.
+这是服务器模型数。
 :end
 
 :mgmt_start_page_help:
-Select the page which is opened first when entering the GUI. By default the *Main* page is selected.
+选择在进入 GUI 时首次打开的页面。默认选择 *主磁盘* 页面。
 :end
 
 :mgmt_use_telnet_help:
-By default TELNET access is enabled. TELNET is an insecure type of CLI access however,
-and it is highly recommended to use SSH access instead and disable TELNET access.
+TELNET 访问默认启用。然而， TELNET 是一种不安全的 CLI 访问类型，
+强烈建议您使用 SSH 访问作为替代，并禁用 TELNET 访问。
 :end
 
 :mgmt_telnet_port_help:
-Enter the TELNET port, default port is 23.
+输入 TELNET 端口，默认端口是 23 。
 :end
 
 :mgmt_use_ssh_help:
-SSH is enabled by default and offers a secure way of CLI access. Upon system startup SSH keys are automatically generated
-if not yet existing, and stored on the flash device in the folder */config/ssh*.
+默认启用 SSH 以提供一种安全的 CLI 访问类型。如果秘钥尚未生成并存储在闪存设备的 */config/ssh* 文件夹中，
+系统会在启动之后立即自动生成 SSH 秘钥。
 :end
 
 :mgmt_ssh_port_help:
-Enter the SSH port, default port is 22.
+输入 SSH 端口，默认端口是 22 。
 :end
 
 :mgmt_use_upnp_help:
-Enable (default) or disable the UPnP function on the server. This function allows automatic forwarding of ports on the router, only applicable when UPnP is enabled on the router itself.
+启用（默认）或禁用服务器的 UPnP 功能。这一功能允许自动转发端口到路由器上，只有当路由器上也已启用 UPnP 时才适用。
 :end
 
 :mgmt_use_ssl_tls_help:
-Determines how the webGUI responds to HTTP and/or HTTPS protocol.
+确定 webGUI 如何响应 HTTP 和/或 HTTPS 协议。
 
-Select **No** to disable HTTPS
+选择 **否** 以禁用 HTTPS 。
 
-Select **Yes** to enable HTTPS and redirect HTTP to HTTPS. If a Let's Encrypt SSL certificate has not
-been provisioned, then an automatically generated self-signed SSL certificate will be used.
+选择 **是** 以启用 HTTPS 并将 HTTP 重定向至 HTTPS 。如果没有预配 Let's Encrypt SSL 证书，
+则会自动生成一个自签名 SSL 证书以供使用。
 
-Select **Auto** if you are using or plan to use a Let's Encrypt SSL certificate provisioned
-by Lime Technology. Before the certificate is provisioned, the webGUI remains
-in http-mode. After provisioning, the webGUI automatically switches to https-mode. In addition
-two background processes are enabled:
+如果你正在或计划使用由 Lime-Technology 预配的 Let's Encrypt SSL 证书，
+请选择 **自动** 。在预配证书之前， webGUI 仍将保持 http 模式。
+一旦预配了证书， webGUI 将自动切换至 https 模式。此外，
+还将启用两个后台进程：
 
-- *updatedns* - This starts 30 seconds after server reboot has completed and contacts the Lime Technology
-DNS service to register the servers local IP address. Thereafter it wakes up every 10 minutes in case
-the local IP address has changed again.
+- *updatedns* - 该进程在服务器重启完毕 30s 后启动，并联系 Lime Technology
+DNS 服务以注册服务器本地 IP 地址。此后将每 10 分钟唤醒一次以防止
+本地 IP 地址再次变化。
 
-- *renewcert* - This starts 60 seconds after server reboot has completed and contacts the Lime Technology
-certificate renewal service to determine if your Let's Encrypt SSL certificate needs to be renewed.
-Thereafter it wakes up every 24 hours. If within 30 days of expiration, a new certificate is automatically
-provisioned and downloaded to your server.
+- *renewcert* - 该进程在服务器重启完毕 60s 后启动，并联系 Lime Technology
+证书更新服务以确定您的 Let's Encrypt SSL 证书是否需要续订。
+此后将每 24 小时唤醒一次。如果证书将在30天内到期，会自动
+预配一个新的证书并下载到服务器。
 
-Note: After provisioning a Let's Encrypt SSL certificate you may turn off the *updatedns* and *newcert*
-background processes by changing this field to **Yes**.
+备注：在签发了一个 Let's Encrypt SSL 证书后，您可以通过更改该字段为 **是**
+来关闭 *updatedns* 和 *newcert*后台程序。
 
-**nginx certificate handling details**
+**nginx 证书处理详细信息**
 
-The nginx startup script looks for a SSL certificate on the USB boot flash in this order:<br>
+nginx 启动脚本将在 USB 引导闪存中以如下顺序查找 SSL 证书：<br>
 `config/ssl/certs/certificate_bundle.pem`<br>
 `config/ssl/certs/<server-name>_unraid_bundle.pem`
 
-If neither file exists, a self-signed SSL certificate is automatically created and stored in<br>
+如果两者中都不存在文件，则会在此处自动创建和存储一个自签名 SSL 证书<br>
 `config/ssl/certs/<server-name>_unraid_bundle.pem`<br>
 
-Provisioning a Let's Encrypt certificate writes the certificate to<br>
+签发的 Let's Encrypt 证书会将证书写入到<br>
 `config/ssl/certs/certificate_bundle.pem`<br>
 
-**nginx stapling support**
+**nginx stapling 支持**
 
-Whether nginx enables OCSP Staping is determined by which certificate is in use:<br>
-`config/ssl/certs/certificate_bundle.pem` => Yes<br>
-`config/ssl/certs/<server-name>_unraid_bundle.pem` => No
+nginx 是否启用 OCSP Staping 取决于使用了下列哪个证书：<br>
+`config/ssl/certs/certificate_bundle.pem` => 是<br>
+`config/ssl/certs/<server-name>_unraid_bundle.pem` => 否
 :end
 
 :mgmt_http_port_help:
-Enter the HTTP port, default port is 80.
+输入 HTTP 端口，默认端口是 80 。
 :end
 
 :mgmt_https_port_help:
-Enter the HTTPS port, default port is 443.
+输入 HTTPS 端口，默认端口是 443 。
 :end
 
 :mgmt_local_tld_help:
-Enter your local Top Level Domain. May be blank.
+输入本地顶级域名。可以留空。
 :end
 
 :mgmt_certificate_expiration_help:
-**Provision** may be used to allocate a *free* SSL Certficiate from [Let's Encrypt](https://letsencrypt.org/) and
-then upload to your server. Note: We **highly** recommend using a static IP address in this case.
+**预配** 可用于从 [Let's Encrypt](https://letsencrypt.org/) 分配一个 *免费* 的 SSL 证书
+并随后上传到服务器。备注：**强烈** 推荐在此情况下使用一个静态 IP 地址。
 
-**Update DNS** may be used to manually initiate updating the DNS A-record of your server FQDN on unraid.net. Note
-that DNS propagation change could take anywhere from 1 minute to several hours (we set TTL to 60 seconds).
+**更新 DNS** 可用于为服务器在 unraid.net 上的 FQDN 手动发起 DNS A 记录的更新。注意
+DNS 传播更改可能需要1分钟到几个小时（我们设置的 TTL 为 60 秒）。
 
-Note: **Provision** may fail if your router or upstream DNS server has
-[DNS rebinding protection](https://en.wikipedia.org/wiki/DNS_rebinding) enabled. DNS rebinding
-protection prevents DNS from resolving a private IP network range. DNS rebinding protection is meant as
-a security feature on a local LAN which includes legacy devices with buggy/insecure "web" interfaces.
+备注：如果您的路由器或上游 DNS 服务器已启用了
+[DNS 重绑定保护](https://en.wikipedia.org/wiki/DNS_rebinding) ，**预配** 可能会失败。
+DNS 重绑定保护阻止 DNS 解析到一个私有 IP 网络范围。DNS 重绑定保护是一种安全特性，
+用于接入了带有大量漏洞/不可靠的 "web" 接口的旧设备在内的本地 LAN 。
 
-One source of DNS rebinding protection could be your ISP DNS server. In this case the problem may be solved by
-switching to a different DNS server such as Google's public DNS.
+DNS 重绑定保护的来源之一可能是您的 ISP DNS 服务商。这种情况下可以通过切换到另一个不同的
+DNS 服务商来解决问题，例如谷歌的公共 DNS 。
 
-More commonly, DNS rebinding protection could be enabled in your router. Most consumer routers do not implement DNS
-rebinding protection; but, if they do, a configuration setting should be available to turn it off.
+而更普遍的情况下，DNS 重绑定保护可能是由您的路由器启用的。大多数消费级路由器不执行 DNS 重绑定保护；
+但如果执行了，应当有一条配置设置可用于关闭它。
 
-Higher end routers usually do enable DNS rebinding protection however. Typically there are ways of turning it off
-entirely or selectively based on domain. Examples:
+然而，较高端的路由器往往会**启用** DNS 重绑定保护。通常可以通过一些方法来基于域名
+完全地或选择性地关闭它。例如：
 
-**DD-WRT:** If you are using "dnsmasq" with DNS rebinding protection enabled, you can add this line to your router
-configuration file:
+**DD-WRT:** 如果您正在使用启用了 DNS 重绑定保护的 "dnsmasq" ，可以在路由器的配置文件中
+添加以下一行：
 
 `rebind-domain-ok=/unraid.net/`
 
-**pfSense:** If you are using pfSense internal DNS resolver service, you can add these Custom Option lines:
+**pfSense:** 如果您正在使用 pfSense internal DNS resolver 服务，您可以添加以下自定义选项行：
 
 `server:`<br>
 `private-domain: "unraid.net"`
 
-**Ubiquiti USG router:** you can add this configuration line:
+**Ubiquiti USG router:** 您可以添加以下自定义配置行：
 
 `set service dns forwarding options rebind-domain-ok=/unraid.net/`
 
-**OpenDNS:** Go to Settings -> Security and *remove* the checkbox next to
- "Suspicious Responses - Block internal IP addresses". It is an all-or-nothing setting.
-
-When all else fails, you can create an entry in your PC's *hosts* file to override external DNS and
-directly resolve your servers unraid.net FQDN to its local IP address.
+**OpenDNS:** 转到 设置 -> 安全 然后*移除*位于 "Suspicious Responses
+ - Block internal IP addresses"  旁的复选框。这是一个全有或全无的设置。
+ 
+若以上方法均不奏效，您可以在电脑的 *host* 文件创建一个条目，以覆盖外部 DNS ，
+并直接将您服务器的 unraid.net FQDN 重定向到它的本地 IP 地址。
 :end
 
 :ftp_server_help:
-Enable or disable the FTP server daemon. By default the FTP server is enabled.
-This setting is not saved, i.e. upon system reboot it will revert to its default setting.
+启用或禁用 FTP 服务器守护程序。FTP 服务器默认启用。
+这一设置不会保存，也就是说，一旦系统重新启动，它将会还原回默认设置。
 :end
 
 :ftp_users_help:
-Enter the user names (separated by spaces) permitted to access the server using FTP.
-To disallow any user access, clear this setting.
+输入允许使用 FTP 访问服务器的用户名（使用空格分开）。
+要禁止任何用户的访问，请清空该项设置。
 
-**Note:** do not enter user name `root` since this may cause problems in the future.
+**注意：**不要输入用户名 `root` ，因为这可能在随后引发某些问题。
 :end
 
 :ftp_overview_help:
-### Overview
+### 概况
 
-Unraid includes the popular `vsftpd` FTP server.  The configuration of `vsftp` is currently very
-simple: **All** user names entered above are permitted to access the server via FTP and will have
-*full read/write/delete access* to the entire server, so use with caution.
+Unraid 包含有广受欢迎的 `vsftpd` FTP 服务器。`vsftp` 的设置现在十分
+简单：**所有**在上面输入的用户名都可以通过 FTP 访问服务器，并且拥有
+对整个服务器*完全读取/写入/删除的权限*，因此请谨慎使用。
 :end
 
 :smb_enable_help:
-Select 'Yes (Workgroup)' to enable SMB (Windows Networking) protocol support. This
-also enables Windows host discovery.
+选择 ‘是（工作组）’以启用 SMB （Windows 网络） 协议支持。这也会
+启用 Windows 主机发现。
 
-Select 'Yes (Active Directory)' to enable Active Directory integration.
+选择‘是 (Active Directory) ’以启用 Active Directory 集成。
 :end
 
 :smb_hide_files_help:
-If set to 'Yes' then files starting with a '.' (dot) will appear as *hidden files* and normally
-will not appear in Windows folder lists unless you have "Show hidden files, folders, and drives" enabled
-in Windows Folder Options.
-
-If set to 'No' then dot files will appear in folder lists the same as any other file.
+如果设为‘是’，那么以 '.' （句点）开头的文件将会显示为 *隐藏文件* 并且通常
+不会出现在 Windows 文件夹列表中，除非您已经在 Windows 文件夹选项中启用了
+ “显示隐藏的文件、文件夹和驱动器”。
+ 
+如果设为‘否’，那么句点开头的文件将如同其他文件一样出现在文件夹列表中。
 :end
 
 :smb_enhanced_macos_help:
-When set to 'Yes' provides enhanced compatibility with Apple SMB clients, resulting, for example, in faster
-Finder browsing, and ability to export Time Machine shares.  This may cause some issues with Windows clients, however.
-Please also refer to the [VFS_FRUIT MAN PAGE](https://www.mankier.com/8/vfs_fruit).
+当设置为‘是’时，为 Apple SMB 客户端增强兼容性，体现在诸如更快的 Finder 浏览，
+以及导出到 Time Machine 共享的能力。然而，这可能会导致一些 Windows 客户端的问题。
+请参阅 [VFS_FRUIT 主页] (https://www.mankier.com/8/vfs_fruit) 。
 :end
 
 :smb_enable_netbios_help:
-Select 'Yes' to enable NetBIOS.  If enabled, SMBv1 protocol will also be recognized.  If disabled,
-clients must use SMBv2 or higher.
+选择‘是’以启用 NEtBios 。如果启用，则可以识别 SMBv1 协议。如果禁用，
+客户端必须使用 SMBv2 或更高版本。
 :end
 
 :smb_enable_wsd_help:
-Select 'Yes' to enable WSD (WS-Discovery).  The only reason to turn this off is when you are running an
-old LAN setup based on SMBv1.
+选择‘是’以启用 WSD （WS 发现）。只有当您正在运行一个基于 SMBv1 的老旧 LAN 设置时，
+才需要关闭这一项。
 :end
 
 :smb_wsd_options_help:
-This is a command line options string passed to the WSD daemon upon startup. Leave this field blank unless
-instructed by support to put something here.
+这是一个命令行选项，设定在启动时输入给 WSD 守护程序的字符串。除非在客户支持的指导下填写，
+否则请将此字段留空。
 :end
 
 :smb_extra_conf_help:
-Use this page to make changes to your `smb-extra.conf` file.  Samba will need
-to be restarted in order for changes to take effect.
+使用该页面来修改 `smb-extra.conf` 文件。为使更改生效，需要
+重新启动 Samba 。
 :end
 
 :smb_extra_button_help:
-Click the **Apply** button to commit the current edits.  Click **Reset** to
-undo any changes you make (before Saving). Click **Done** to exit this page.
+单击 **应用** 按钮以提交当前的编辑。单击 **重置** 以撤销您
+作的任何更改（在保存之前）。单击 **完成** 以离开当前页面。
 :end
 
 :smb_workgroup_help:
-Enter your local network Workgroup name. Usually this is "WORKGROUP".
+输入您的本地网络工作组名。通常这是 "WORKGROUP" 。
 :end
 
 :smb_local_master_help:
-If set to 'Yes' then the server will fully participate in browser elections, and in the absense
-of other servers, will usually become the local Master Browser.
+如果设为‘是’，那么服务器将会完全参与浏览器选举，并在其他服务器缺席时，
+通常会成为本地主浏览器。
 :end
 
 :nfs_enable_help:
-Select 'Yes' to enable the NFS protocol.
+选择‘是’以启用 NFS 协议。
 :end
 
 :nfs_tunable_fuse_remember_help:
-When NFS is enabled, this Tunable may be used to alleviate or solve instances of "NFS Stale File Handles"
-you might encounter with your NFS client.
+当启用 NFS 时，这一可调项可用于减轻或解决您可能在 NFS 客户端上遇到的
+"NFS Stale File Handles" 问题。
 
-In essence, (fuse_remember) tells an internal subsystem (named "fuse") how long to "remember" or "cache"
-file and directory information associated with user shares.  When an NFS client attempts to access a file
-(or directory) on the server, and that file (or directory) name is not cached, then you could encounter
-"stale file handle".
+本质上来说， (fuse_remember) 告知一个内部子系统（名为 "fuse" ）“记住”或“缓存”
+与用户共享关联的文件和目录信息多长时间。当一个 NFS 客户端尝试访问服务器上的
+一个文件（或目录），且该文件（或目录）没有被缓存时，您可能会遇到
+"stale file handle" 。
 
-The numeric value of this tunable is the number of seconds to cache file/directory name entries,
-where the default value of 330 indicates 5 1/2 minutes.  There are two special values you may also set
-this to:
+这一可调项的数值是缓存文件/目录名条目的秒数，
+默认值为 330，也就是 5.5 分钟。有两个可以设置的
+特殊值：
 
-* 0 which means, do not cache file/directory names at all, and
-* -1 which means cache file/directory names forever (or until array is stopped)
+* 0 意味着完全不缓存文件/目录名，以及
+* -1 意味着永久缓存文件/目录名（或者直到阵列停止）
 
-A value of 0 would be appropriate if you are enabling NFS but only plan to use it for disk shares,
-not user shares.
+如果您启用了 NFS ，但只计划使用它作为磁盘共享，而非用户共享时，设为 0 值是
+较为合适的。
 
-A value of -1 would be appropriate if no other timeout seems to solve the "stale file handle" on
-your client.  Be aware that setting a value of -1 will cause the memory footprint to grow by approximately
-108 bytes per file/directory name cached.  Depending how much RAM is installed in your server and how many
-files/directories you access via NFS this may or may not lead to out-of-memory conditions.
+如果没有其他的超时设置能够解决您客户端上的 "stale file handle" 时，设为 -1 值
+是较为合适的。需要意识到，设为 -1 值将会导致内存占用情况以缓存每个文件/目录名
+占用大约108 byte 的速度增长。这可能会导致内存不足的情况，也可能不会，取决于
+服务器安装了多少内存以及您通过 NFS 访问了多少文件/目录。
 :end
 
 :shares_enable_disk_help:
-If set to No, disk shares are unconditionally not exported.
+如果设为‘否’，那么磁盘共享将不能自由导出。
 
-If set to Yes, disk shares may be exported.  **WARNING:** Do not copy data from a disk share to a user share
-unless you *know* what you are doing.  This may result in the loss of data and is not supported.
+如果设为‘是’，磁盘共享可能会被导出。**警告：**不要从一个磁盘共享复制数据到用户共享，
+除非您 *了解* 您在做什么。这可能会引发数据丢失，并且不会予以支持。
 
-If set to Auto, only disk shares not participating in User Shares may be exported.
+如果设为‘自动’，只有未参与到用户共享的磁盘共享可以被导出。
 :end
 
 :shares_enable_shares_help:
-If set to 'Yes' the User Shares feature is activated.
+如果设为‘是’，将会激活用户共享特性。
 :end
 
 :shares_included_disks_help:
-This setting defines the set of array disks which are *included* in User Shares.
-Unchecking all disks will allow **all** array disks to be included.
+该设置定义了在用户共享中 *包括* 的一组阵列磁盘。
+取消勾选所有磁盘将会包括 **所有** 阵列磁盘。
 :end
 
 :shares_excluded_disks_help:
-This setting defines the set of array disk which are *excluded* from User Shares.
-Uncheck all disks in order to not exclude any disks
+该设置定义了在用户共享中 *排除* 的一组阵列磁盘。
+取消勾选所有磁盘将不会排除任何磁盘
 
-**Note:** Each separate User Share also includes its own set of Included and Excluded
-disks which represent a subset of the Included/Excluded disks defined here.
+**备注：**每个单独的用户共享都包含有自定的一个包括与排除磁盘的集合，
+作为在此处定义的包括/排除磁盘的子集。
 :end
 
 :shares_tunable_hard_links_help:
-If set to Yes then support the link() operation.
+如果设为是，则支持 link() 操作。
 
-If set to No then hard links are not supported.
+如果设为否，则不支持硬链接。
 
-Notes:
+备注：
 
-* Setting to Yes may cause problems for older media and dvd/bluray players accessing shares using NFS.
-* No matter how this is set, the **mover** will still properly handle any detected hard links.
+*如果设为是，当较旧的媒体和 dvd/bluray 播放器使用 NFS 访问共享时可能会产生问题。
+*无论该项如何设置， **mover** 都能够正确地操作任何检测到的硬链接。
 :end
 
 :shares_tunable_direct_io_help:
-**Experimental**: If set to Yes then mount User Share file system with FUSE *direct_io* mount option.
-This will increase write performance but might possibly decrease read performance.
+**实验性**：如果设为是，则通过 FUSE *direct_io* 挂载选项来挂载用户共享文件系统。
+这将会增强写入性能，但有可能会降低读取性能。
 
-*Auto* selects No.
+*自动* 选择否。
 :end
 
 :syslog_local_server_help:
-Let the server act as a central syslog server and collect syslog messages from other systems.
-The server can listen on UDP, TCP or both with a selectable port number.
+使服务器充当一个中心 syslog 服务器，并从其他系统收集 syslog 信息。
+服务器能够监听 UDP ， TCP 或 两者，并选择所需的端口号。
 
-Syslog information is stored per IP address. That is every system gets its own syslog file.
+Syslog 信息为每个 IP 地址单独存储。也就是说，每个系统都将拥有一个自己的 syslog 文件。
 :end
 
 :syslog_local_folder_help:
-Select the share folder where the syslogs will be stored.
-It is recommended that you use a share located on the cache drive to prevent array disk spinups.
+选择存储 syslog 的共享文件夹。
+推荐使用位于缓存驱动器上的共享，以减少阵列磁盘的旋转。
 :end
 
 :syslog_local_rotation_help:
-By default LOG rotation is disabled and will create a single LOG file of unlimited size.
+默认禁用日志轮换，并创建单个无限制大小的日志文件。
 
-Enable LOG rotation to limit the size of the LOG file and specify the number of files to keep in the rotation scheme.
+启用日志轮换可限制日志文件的大小，并指定保存在轮换方案中的文件数。
 :end
 
 :syslog_local_file_size_help:
-Specifies the maximum LOG size. When exceeded LOG rotation will occur.
+指定最大的日志大小。超出时将会产生日志轮换。
 :end
 
 :syslog_local_file_number_help:
-Specifies the number of additional LOG files to keep in the rotation scheme.
+指定保存在轮换方案中的文件数。
 :end
 
 :syslog_remote_server_help:
-Enter a name or IP address of a remote syslog server.
-This will send a copy of the syslog messages to the designated server.
+输入一个远程 syslog 服务器的名称或 IP 地址。
+这将复制 syslog 消息并发送给指定的服务器。
 :end
 
 :syslog_mirror_flash_help:
-This setting is NO by default and must be used with care to avoid unnecessary wear and tear of the USB device.
+该选项默认设置为否，并且必须谨慎使用以避免不必要地插入和移除 USB 设备。
 
-Change this setting to YES when troubleshooting is required and it is not possible to get the regular diagnostics information.
-A mirror of the syslog file is stored in the **logs** folder of the flash device.
+在需要故障排除，且无法得到常规的诊断信息时，更改这一设置为是。
+syslog 文件的镜像存储在闪存设备的 **logs** 文件夹内。
 :end
 
 :confirm_reboot_help:
-Choose if rebooting or powering down the server needs a confirmation checkbox.
+需要通过确认复选框以选择重新启动或者关闭服务。
 :end
 
 :confirm_array_stop_help:
-Choose if stopping the array needs a confirmation checkbox.
+需要通过确认复选框以选择是否停止阵列。
 :end
 
 :display_settings_help:
-The display settings below determine how items are displayed on screen. Use these settings to tweak the visual effects to your likings.
+以下显示设置确定了各项目如何显示在屏幕上，利用这些设置来调整为你喜爱的视觉效果。
 
-You can experiment with these settings as desired, they only affect visual properties.
+你可以根据需要来试验这些设置，它们只会影响视觉属性。
 :end
 
 :display_font_size_help:
-This is a per device setting
+此设置针对不同设备独立生效
 :end
 
 :display_wwn_device_id_help:
-World Wide Name (WWN) is a unique identifier used for SAS attached devices.
+全球通用名称 (WWN) 是一个用于 SAS 连接设备的特定标识符。
 
-Select *Disabled* to suppress the appending of WWN to the device identification
+选择*已禁用* 将不会在设备标识上追加 WWN
 
-Select "Automatic" to append WWN to the device identification in case of SAS devices
+选择*自动* 将会对 SAS 设备的标识追加 WWN
 :end
 
 :display_custom_text_color_help:
-Overrule the default text color in the header. This can be used to match the text color with a background image.
+影响标题中默认的文本颜色。该选项可用于将文本颜色与背景图片进行合理搭配。
 :end
 
 :display_custom_background_color_help:
-Overrule the default background color in the header. This can be used to match the background color with a custom text color.
+影响标题中默认的背景颜色。该选项可用于将背景颜色与自定义的文本颜色进行合理搭配。
 :end
 
 :display_custom_banner_help:
-Image will be scaled to 1920x90 pixels. The maximum image file upload size is 512 kB (524,288 bytes).
+图片将会被缩放到 1920x90 像素。上传图片文件的最大大小为 512 kB (524,288 bytes) 。
 :end
 
 :display_temperature_unit_help:
-Selects the temperature unit for the disk temperature thresholds. Changing the unit will adjust the existing value in the disk temperature thresholds as appropriate.
+选择磁盘温度阈值的温度单位。更改这一单位将会调整磁盘温度阈值中已设定的值为适合新单位的值。
 
-Make sure any newly entered values represent the selected temperature unit.
+请确保任何新输入的值对应已选择的温度单位。
 :end
 
 :vms_enable_help:
-Stopping the VM Manager will first attempt to shutdown all running VMs. After 60 seconds, any remaining VM instances will be terminated.
+停止虚拟机管理器的操作将会首先尝试关闭所有正在运行中的虚拟机。在 60 秒后，所有剩余的虚拟机实例都会被终止。
 :end
 
 :vms_libvirt_volume_help:
-This is the libvirt volume.
+这是一个 libvirt 卷。
 :end
 
 :vms_libvirt_vdisk_size_help:
-If the system needs to create a new libvirt image file, this is the default size to use specified in GB.
-To resize an existing image file, specify the new size here. Next time the Libvirt service is started the file (and file system) will increased to the new size (but never decreased).
+该数值为系统在创建一个新的 libvirt 映像文件时默认的文件大小，以 GB 为单位定义。
+若要调整一个已有的映像文件的大小，请在此处指定新的值。文件（及文件系统）将会在下一次启动 Libvirt 服务的时候增大到新的大小（但绝不会减小）。
 :end
 
 :vms_libvirt_location_help:
-You must specify an image file for Libvirt. The system will automatically create this file when the Libvirt service is first started.
+必须为 Libvirt 定义一个映像文件。当 Libvirt 服务首次启动时，系统将会自动创建这一文件。
 :end
 
 :vms_libvirt_storage_help:
-Specify a user share that contains all your VM subdirectories with vdisks
+定义一个用户共享，包含所有的虚拟机子目录及虚拟磁盘
 :end
 
 :vms_libvirt_iso_storage_help:
-Specify a user share that contains all your installation media for operating systems
+定义一个用户共享，包含所有的操作系统安装介质
 :end
 
 :vms_virtio_driver_help:
-Specify the virtual CD-ROM (ISO) that contains the VirtIO Windows drivers as provided by the Fedora Project.
-Download the latest ISO from here: <a href="https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-direct-downloads" target="_blank">fedoraproject.org</a>
+定义虚拟 CD-ROM (ISO) ，包含由 Fedora 项目提供的 VirtIO Windows 驱动。
+从此处下载最新的 ISO ：<a href="https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-direct-downloads" target="_blank">fedoraproject.org</a>
 
-When installing Windows, you will reach a step where no disk devices will be found. There is an option to browse for drivers on that screen.
-Click browse and locate the additional CD-ROM in the menu. Inside there will be various folders for the different versions of Windows.
-Open the folder for the version of Windows you are installing and then select the AMD64 subfolder inside (even if you are on an Intel system, select AMD64).
-Three drivers will be found. Select them all, click next, and the vDisks you have assigned will appear.
+在安装 Windows 时，您会到达一个“未发现磁盘设备”的步骤。屏幕上会有一个选项来浏览驱动。
+请在菜单中单击“浏览”并定位到附加的 CD-ROM 。此处将会有针对不同版本 Windows 的不同文件夹。
+请打开对应您正在安装的 Windows 版本的文件夹，然后选择里面的 AMD64 子文件夹（即使您使用 Intel 平台，也请选择 AMD64）。
+您将会看到3个驱动。请全选，并单击下一步，就会出现您分配的虚拟磁盘了。
 :end
 
 :vms_network_bridge_help:
-Select the name of the network bridge you wish to use as default for your VMs,
-the setting 'virbr0' will let libvirt create a virtual bridge that utilizes NAT (network address translation)
-and act as a DHCP server to hand out IP addresses to virtual machines directly.
-More optional selections are present when virtual bridges are created under network settings.
+选择您希望用于虚拟机的默认网桥的名字，
+'virbr0'设置项将会使 libvirt 利用 NAT （网络地址转换）来创建一个虚拟网桥，
+并以 DHCP 服务器的形式工作，直接分发 IP 地址给虚拟机。
+在网络设置中创建了虚拟网桥之后，将会列出更多的可选项。
 
-NOTE: You can also specify a network bridge on a per-VM basis.
+备注：你也可以在每个虚拟机的基础设置中定义一个网桥。
 :end
 
 :vms_host_shutdown_help:
-When shutting down the server, this defines the action to take upon running VMs. If *Hibernate VMs* is chosen,
-the VM will be instructed to hibernate (if supported) otherwise it will attempt a VM shutdown.
+当关闭服务器时，该选项定义了对正在运行的虚拟机进行的操作。如果选中 *休眠虚拟机* ，
+虚拟机将会收到休眠指令（如果支持的话），否则则会尝试关闭虚拟机。
 :end
 
 :vms_shutdown_timeout_help:
-When shutting down the server, this defines how long to wait in seconds for *graceful* VM shutdown before forcing shutdown to continue.
-NOTE: It's recommended to shut down guest VMs from within the VM.
+当关闭服务器时，该选项定义了在进行强制关机之前，等待多少秒以使虚拟机实现 *优雅* 关闭。
+备注：推荐在 VM 菜单中内关闭客户虚拟机。
 :end
 
 :vms_acs_override_help:
-*PCIe ACS override* allows various hardware components to expose themselves as isolated devices.
-Typically it is sufficient to isolate *Downstream* ports.
-A hardware component may need the setting *Multi-function* or *Both* to further isolate different hardware functions.<br>
-A reboot is required for changes to this setting to take affect.
+*PCIe ACS 覆盖* 允许各种硬件组件暴露为独立设备。
+通常暴露 *下游* 端口已经足够了。
+某个硬件组件可能需要设置为 *多功能* 或 *两者* 以实现更多不同的硬件功能。<br>
+必须重新启动系统以使这一设置的更改生效。
 
-**Warning: use of this setting could cause possible data corruption with certain hardware configurations.**
-Please visit the [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm) for more information.
+**警告：使用这一设置项，在特定的硬件配置下可能会导致数据损坏。**
+请访问 [Lime Technology 论坛](https://forums.unraid.net/forum/51-vm-engine-kvm) 以获取更多信息。
 :end
 
 :vms_vfio_interupts_help:
-If your system doesn't support interrupt remapping, these can be enabled by allowing unsafe interrupts.<br>
-A reboot will be required for changes to this setting to take affect.
+如果你的系统不支持中断重新映射，则可通过允许不安全的中断，以启用该项。<br>
+必须重新启动系统以使这一设置的更改生效。
 
-**Warning: use of this setting could cause possible data corruption with certain hardware configurations.**
-Please visit the [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm) for more information.
+**警告：使用这一设置项，在特定的硬件配置下可能会导致数据损坏。**
+请访问 [Lime Technology 论坛](https://forums.unraid.net/forum/51-vm-engine-kvm) 以获取更多信息。
 :end
 
 :vms_libvirt_log_help:
-View the log for libvirt: <a id="openlog" title="/var/log/libvirt/libvirtd.log" href="#" onclick="openWindow('/webGui/scripts/tail_log&arg1=libvirt/libvirtd.log','_(Libvirt Log)_',600,900);">/var/log/libvirt/libvirtd.log</a>
+查看 libvirt 日志：<a id="openlog" title="/var/log/libvirt/libvirtd.log" href="#" onclick="openWindow('/webGui/scripts/tail_log&arg1=libvirt/libvirtd.log','_(Libvirt Log)_',600,900);">/var/log/libvirt/libvirtd.log</a>
 :end
 
 :vms_scrub_help:
-**Scrub** runs the *btrfs scrub* program to check file system integrity.
-If repair is needed you should check the *Correct file system errors* and run a second Scrub pass; this will permit *btrfs scrub* to fix the file system.
+**清理**运行 *btrfs 清理* 程序以检查文件系统的完整性。
+若需要修复，您应当检查 *修正文件系统错误* 并再次运行清理并通过；这将允许  *btrfs 清理* 修复文件系统。
 :end
 
 :vms_cancel_help:
-**Cancel* will cancel the Scrub operation in progress.
+**取消** 将会取消正在进行的清理操作。
 :end
 
 :eth_interface_description_help:
-Use this optional field to provide addditional information about the purpose of the connection.
+使用这一可选字段以提供关于连接用途的额外信息。
 :end
 
 :eth_mac_address_help:
-This is the hardware address of the interface.
-When tagging is enabled all VLANs on this interface will share the same hardware address.
+此处为接口的硬件地址。
+当标记设为可用时，在此接口上的所有 VLAN 将会共享相通的硬件地址。
 :end
 
 :eth_enable_bonding_help:
-Bonding is a feature that combines multiple physical Ethernet interfaces into a single *bonded* interface named **bond0**.
-This can be used to improve the connection redundancy and/or throughput of the system.
-Different bonding modes are supported (see below), but some modes require proper switch support.
+绑定是一种将多个物理网络接口合并为一个名为 **bond0** 的单个 *被绑定* 接口的特性。
+该选项可用于提高连接冗余和/或系统的吞吐量。
+支持多种不同的绑定模式（如下），但某些模式需要合适的交换机支持。
 :end
 
 :eth_bonding_mode_help:
-**Mode 0 (balance-rr)**<br>
-This mode transmits packets in a sequential order from the first available slave through the last.
-If two real interfaces are slaves in the bond and two packets arrive destined out of the bonded interface the first will be transmitted on the first slave and the second frame will be transmitted on the second slave.
-The third packet will be sent on the first and so on. This provides load balancing and fault tolerance.
+**模式 0（平衡 - 轮循）**<br>
+该模式将从第一个可用的从属接口到最后一个，按顺序传输数据包。
+当两个物理接口从属于同一个绑定，且两个数据包的到达目标均为该绑定接口时，第一个数据包奖杯传输给第一个从属接口，而第二帧则会被传输到第二个从属接口。
+第三个数据包会被传输到第一个从属接口，如此反复。该模式能提供负载均衡和容错。
 
-**Mode 1 (active-backup) - default**<br>
-This mode places one of the interfaces into a backup state and will only make it active if the link is lost by the active interface.
-Only one slave in the bond is active at an instance of time. A different slave becomes active only when the active slave fails.
-This mode provides fault tolerance.
+**模式 1（主动备份） - 默认**<br>
+该模式将其中的一个接口置于备份状态，并且只会在主动接口的链接丢失时激活该接口。
+在同一时间实例内，只有一个绑定中的从属接口为活跃状态。只有在活跃的从属接口故障时，才会激活另一个从属接口。
+该模式能提供容错。
 
-**Mode 2 (balance-xor)**<br>
-This mode transmits packets based on an XOR formula. Source MAC address is XOR'd with destination MAC address modula slave count.
-This selects the same slave for each destination MAC address and provides load balancing and fault tolerance.
+**模式 2（平衡 - 异或）**<br>
+该模式基于异或公式传输数据包。源 MAC 地址与目标 MAC 地址通过异或公式对从属接口数取模。
+这将对每个目标 MAC 地址选择相同的从属接口，从而提供负载均衡和容错。
 
-**Mode 3 (broadcast)**<br>
-This mode transmits everything on all slave interfaces. This mode is least used (only for specific purpose) and provides only fault tolerance.
+**模式 3（广播）**<br>
+该模式在所有从属接口上传输所有数据包。该模式仅偶尔使用（用于特定目的），且只提供容错。
 
-**Mode 4 (802.3ad)**<br>
-This mode is known as *Dynamic Link Aggregation*. It creates aggregation groups that share the same speed and duplex settings.
-It requires a switch that supports IEEE 802.3ad dynamic link.
-Slave selection for outgoing traffic is done according to the transmit hash policy, which may be changed from the default simple XOR policy via the xmit_hash_policy option.
-Note that not all transmit policies may be 802.3ad compliant, particularly inregards to the packet mis-ordering requirements of section 43.2.4 of the 802.3ad standard.
-Different peer implementations will have varying tolerances for noncompliance.
+**模式 4（802.3ad）**<br>
+该模式被称作*动态链路聚合*。通过创建聚合组来共享相同的速度和双工设置。
+需要交换机支持 IEEE 802.3ad 动态链路。
+根据选定的传输哈希策略对传出流量的从属接口进行选择，可以通过 xmit_hash_policy 选项来从默认的简单异或策略更改为其他策略。
+注意并非所有的传输策略都与 802.3ad 兼容，尤其是 802.3ad 标准的 43.2.4 章节中关于 packet mis-ordering 要求的地方。
+不同个例的实现往往有着不同的兼容表现。
 
-**Mode 5 (balance-tlb)**<br>
-This mode is called *Adaptive transmit load balancing*. The outgoing traffic is distributed according to the current load and queue on each slave interface.
-Incoming traffic is received by the current slave.
+**模式 5（平衡 - 传输负载平衡）**<br>
+该模式被称为 *自适应传输负载均衡*。传出流量根据现有的每个从属接口的负载和序列情况进行分发。
+传入流量由现有的从属接口接收。
 
-**Mode 6 (balance-alb)**<br>
-This mode is called *Adaptive load balancing*. This includes balance-tlb + receive load balancing (rlb) for IPV4 traffic.
-The receive load balancing is achieved by ARP negotiation.
-The bonding driver intercepts the ARP Replies sent by the server on their way out and overwrites the src hw address with the unique hw address of one of the slaves in the bond
-such that different clients use different hw addresses for the server.
+**模式 6（平衡 - 自适应负载平衡）**<br>
+该模式被称为 *自适应负载均衡* ，包括平衡 - 传输负载平衡和对 IPV4 流量的接收负载平衡 (rlb) 。
+接收负载均衡利用 ARP 协商来实现。
+绑定的驱动将拦截服务器发出的 ARP 回应报文，并且用绑定中的某一个从属接口的独有硬件地址改写源硬件地址，
+使得服务器对不同的客户端使用不同的硬件地址。
 
-*Mode 1 (active-backup) is the recommended setting. Other modes allow you to set up a specific environment, but may require proper switch support.
-Choosing a unsupported mode can result in a disrupted communication.*
+*推荐设置为模式 1（主动备份）。其他模式允许您设置特定的环境，但可能需要合适的交换机支持。
+选择一个不支持的模式可能导致通信中断。*
 :end
 
 :eth_bonding_members_help:
-Select which interfaces are member of the *bonded* interface. By default eth0 is a member, while other interfaces are optional.
+选择哪些接口作为*绑定的*接口的成员。默认情况下 eth0 是成员之一，其他接口为可选项。
 :end
 
 :eth_enable_bridging_help:
-Bridging is a feature which creates a virtual bridge and allows VMs and Docker containers to communicate directly with the physical Ethernet port.
-Both bonding and bridging can be combined to let VMs or containers communicate over a *bonded* interface.
+桥接是一种用于创建虚拟桥并允许虚拟机和 Docker 容器直接通过物理网口通信的特性。
+绑定和桥接都能联合使用，以让虚拟机或容器通过一个*绑定的*接口通信。
 :end
 
 :eth_bridging_members_help:
-Select which interfaces are member of the *bridged* interface. By default eth0 is a member, while other interfaces are optional.
+选择哪些接口作为*桥接的*接口的成员。默认情况下 eth0 是成员之一，其他接口为可选项。
 :end
 
 :eth_network_protocol_help:
-Select which protocol(s) are used. By default IPv4 only is used.<br>
-When both IPv4 and IPv6 is selected, each protocol can be configured independently.
+选择使用哪个（些）协议。默认使用仅 IPV4 。<br>
+当选择 IPV4 和 IPV6 两者时，每个协议都可以独立配置。
 :end
 
 :eth_ipv4_address_assignment_help:
