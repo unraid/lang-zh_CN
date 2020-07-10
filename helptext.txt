@@ -411,87 +411,87 @@ SMART 通知會根据属性 RAW 值的增加或 NORMALIZED 值减少至制造商
 :end
 
 :syslinux_cfg_help:
-Use this page to make changes to your `syslinux.cfg` file.
-You will need to reboot your server for these changes to take effect.
+使用此页面可以更改您的 'syslinux.cfg' 文件。
+您将需要重启您的服务器，以使这些更改生效。
 :end
 
 :syslinux_button_help:
-Click the **Default** button to initialize the edit box with the
-factory-default contents.  You still need to click **Apply** in order to
-commit the change.
+单击 **默认** 按钮以使用出厂默认内容
+初始化编辑框。 您仍需要单击 **应用** 
+以提交更改。
 
-Click the **Apply** button to commit the current edits.  Click **Reset** to
-undo any changes you make (before Saving). Click **Done** to exit this page.
+单击 **应用** 按钮以提交当前编辑。单击 **重置**
+以撤消所做的任何更改（保存之前）。单击 **完成** 以退出此页面。
 :end
 
 :info_free_space_help:
-This defines a "floor" for the amount of free space remaining in the volume.
-If the free space becomes less than this value, then new files written via user shares will fail with "not enough space" error.
+这为卷中剩余的可用空间量定义了一个 '基底'。
+如果可用空间小于此值，通过用户共享写入的新文件将会失败，并显示 “没有足够空间” 的错误。
 
-Enter a numeric value with one of these suffixes:
+输入具有其中以下后缀之一的数值：
 
 **KB** = 1,000<br>
 **MB** = 1,000,000<br>
 **GB** = 1,000,000,000<br>
 **TB** = 1,000,000,000,000<br>
-**K** = 1,024 (ie, 2^10)<br>
-**M** = 1,048,576 (ie, 2^20)<br>
-**G** = 1,073,741,824 (ie, 2^30)<br>
-**T** = 1,099,511,627,776 (ie, 2^40)<br>
+**K** = 1,024 ( 即 2^10)<br>
+**M** = 1,048,576 ( 即 2^20)<br>
+**G** = 1,073,741,824 ( 即 2^30)<br>
+**T** = 1,099,511,627,776 ( 即 2^40)<br>
 
-If no suffix, a count of 1024-byte blocks is assumed.
+如果没有后缀，将假定为 1024 个字节块。
 :end
 
 :share_list_help:
-**Colored Status Indicator** -- the significance of the color indicator at the beginning of each line in *User Shares* is as follows:
+**彩色状态指示器** -- *用户共享* 中每行开头的颜色指示器的重要性如下：
 
-<i class='fa fa-circle orb green-orb'></i>All files are on protected storage.
+<i class='fa fa-circle orb green-orb'></i>所有文件都在受保护的存储区中。
 
-<i class='fa fa-warning orb yellow-orb'></i>Some or all files are on unprotected storage.
+<i class='fa fa-warning orb yellow-orb'></i>部分或全部文件位于不受保护的存储区中。
 
-**Security modes:**
+**安全模式：**
 
-+ '-' -- user share is not exported and unavailable on the network
-+ *Public* -- all users including guests have full read/write access (open access)
-+ *Secure* -- all users including guests have read access, write access is set per user (limited access)
-+ *Private* -- no guest access at all, read/write or read-only access is set per user (closed access)
++ '-' -- 用户共享未导出并且在网络上不可用
++ *公用* -- 所有用户包括访客都具有完全的读/写访问权限（开放访问权限）
++ *安全* -- 所有用户包括访客都具有读取权限，为每个用户设置了写入权限（受限访问权限）
++ *私人* -- 完全没有访客访问权限，为每个用户设置了读/写或只读访问权限（封闭访问）
 
-**Special modes:**
+**特殊模式：**
 
-+ SMB security mode displayed in *italics* indicates exported hidden user shares.
-+ AFP security mode displayed in *italics* indicates exported time-machine user shares.
-+ NFS does not have special modes for user shares.
++ 以 *斜体* 显示 SMB 安全模式表示已导出的隐藏用户共享。
++ 以 *斜体* 显示 AFP 安全模式表示已导出的 time-machine 用户共享。
++ NFS 没有用于用户共享的特殊模式。
 :end
 
 :disk_list_help:
-**Colored Status Indicator** -- the significance of the color indicator at the beginning of each line in *Disk Shares* is as follows:
+**彩色状态指示器** -- *磁盘共享* 中每行开头的颜色指示器的重要性如下：
 
-<i class='fa fa-circle orb green-orb'></i>Mounted, underlying device has redundancy/protection.
+<i class='fa fa-circle orb green-orb'></i>已装载，基础设备具有冗余 / 保护功能。
 
-<i class='fa fa-warning orb yellow-orb'></i>Mounted, underlying device does not have redundancy/protection.
+<i class='fa fa-warning orb yellow-orb'></i>已装载，基础设备没有冗余 / 保护功能。
 
-**Security modes:**
+**安全模式：**
 
-+ '-' -- disk share is not exported and unavailable on the network
-+ *Public* -- all users including guests have full read/write access (open access)
-+ *Secure* -- all users including guests have read access, write access is set per user (limited access)
-+ *Private* -- no guest access at all, read/write or read-only access is set per user (closed access)
++ '-' -- 磁盘共享未导出并且在网络上不可用
++ *公用* -- 所有用户包括访客都具有完全的读/写访问权限（开放访问权限）
++ *安全* -- 所有用户包括访客都具有读取权限，为每个用户设置了写入权限（受限访问权限）
++ *私人* -- 完全没有访客访问权限，为每个用户设置了读/写或只读访问权限（封闭访问）
 
-**Special modes:**
+**特殊模式：**
 
-+ SMB security mode displayed in *italics* indicates exported hidden disk shares.
-+ AFP security mode displayed in *italics* indicates exported time-machine disk shares.
-+ NFS does not have special modes for disk shares.
++ 以 *斜体* 显示 SMB 安全模式表示已导出的隐藏磁盘共享。
++ 以 *斜体* 显示 AFP 安全模式表示已导出的 time-machine 磁盘共享。
++ NFS 没有用于磁盘共享的特殊模式。
 :end
 
 :share_edit_global1_help:
-A *Share*, also called a *User Share*, is simply the name of a top-level directory that exists on one or more of your
-storage devices (array and cache).  Each share can be exported for network access.  When browsing a share, we return the
-composite view of all files and subdirectories for which that top-level directory exists on each storage device.
+*共享*，也称为 *用户共享* ，是一个或多个存储设备（阵列和缓存）上
+存在的顶级目录的名称。每个共享可以导出以进行网络访问。浏览共享时，我们会返回
+每个存储设备上都有该顶级目录的所有文件和子目录的组合视图。
 
-*Read settings from* is used to preset the settings of the new share with the settings of an existing share.
+*读取设置自* 用于将新共享的设置与现有共享的设置进行预设。
 
-Select the desired share name and press **Read** to copy the settings from the selected source.
+选择所需的共享名，然后按 **Read** 以从所选来源复制设置。
 :end
 
 :share_edit_global2_help:
