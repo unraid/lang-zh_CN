@@ -495,110 +495,110 @@ SMART 通知會根据属性 RAW 值的增加或 NORMALIZED 值减少至制造商
 :end
 
 :share_edit_global2_help:
-*Write settings to* is used to copy the settings of the current share to one or more other existing shares.
+*设置写入到* 用于将当前共享的设置复制到一个或多个其他现有共享。
 
-Select the desired destinations and press **Write** to copy the settings to the selected shares.
+选择所需的目的地，然后按 **写入** 将设置复制到所选共享。
 :end
 
 :share_edit_name_help:
-The share name can be up to 40 characters, and is case-sensitive with these restrictions:
+共享名最多可以包含40个字符，区分大小写，并具有以下限制：
 
-* cannot contain a double-quote character (") or the following characters: / \ * < > |
-* cannot be one of the reserved share names: flash, cache, cache2, .., disk1, disk2, ..
+* 不能包含双引号字符 (") 或以下字符： / \ * < > |
+* 不能是保留共享名称之一： flash, cache, cache2, .., disk1, disk2, ..
 
-We highly recommend to make your life easier and avoid special characters.
+强烈建议避免使用特殊字符。
 :end
 
 :share_edit_comments_help:
-Anything you like, up to 256 characters.
+喜欢的任何字符，最多256个字符。
 :end
 
 :share_edit_allocation_method_help:
-This setting determines how Unraid OS will choose which disk to use when creating a new file or directory:
+此设置确定在创建新文件或目录时，Unraid OS如何选择要使用的磁盘：
 
 **High-water**
-Choose the lowest numbered disk with free space still above the current *high water mark*.  The
-*high water mark* is initialized with the size of the largest data disk divided by 2.  If no disk
-has free space above the current *high water mark*, divide the *high water mark* by 2 and choose again.
+选择编号最小的磁盘，其可用空间仍高于当前 *高水位标记* 。
+*高水位标记* 用最大数据磁盘的大小除以 2 初始化。如果
+没有磁盘具有高于当前 *高水位标记* 的可用空间，请将 *高水位标记* 除以 2 ，然后再次选择。
 
-The goal of **High-water** is to write as much data as possible to each disk (in order to minimize
-how often disks need to be spun up), while at the same time, try to keep the same amount of free space on
-each disk (in order to distribute data evenly across the array).
+**High-water** 的目标是向每个磁盘写入尽可能多的数据（以便最大程度地
+减少磁盘提速的频率），同时尝试在每个磁盘上保留相同数量的
+可用空间（以便在整个阵列上均匀分布数据）。
 
 **Fill-up**
-Choose the lowest numbered disk that still has free space above the current **Minimum free space**
-setting.
+选择编号最小的磁盘，该磁盘仍具有高于当前 **最小可用空间** 设置的
+可用空间。
 
 **Most-free**
-Choose the disk that currently has the most free space.
+选择当前具有最大可用空间的磁盘。
 :end
 
 :share_edit_free_space_help:
-The *minimum free space* available to allow writing to any disk belonging to the share.<br>
+*最小可用空间* 可用于写入属于共享的任何磁盘。<br>
 
-Choose a value which is equal or greater than the biggest single file size you intend to copy to the share.
-Include units KB, MB, GB and TB as appropriate, e.g. 10MB.
+选择一个等于或大于打算复制到共享的最大单个文件大小的值。
+包含适当单位 KB 、 MB 、 GB 和 TB ，例如 10MB 。
 :end
 
 :share_edit_split_level_help:
-Determines whether a directory is allowed to expand onto multiple disks.
+确定是否允许目录扩展到多个磁盘。
 
-**Automatically split any directory as required**
-When a new file or subdirectory needs to be created in a share, Unraid OS first chooses which disk
-it should be created on, according to the configured *Allocation method*.  If the parent directory containing
-the new file or or subdirectory does not exist on this disk, then Unraid OS will first create all necessary
-parent directories, and then create the new file or subdirectory.
+**根据需要自动拆分任何目录**
+当需要在共享中创建新文件或子目录时，Unraid OS 首先根据配置的
+*分配方法* 选择应在哪个磁盘上创建共享。如果此磁盘
+上不存在包含新文件或子目录的父目录，Unraid OS 将首先创建所有
+必需的父目录，然后创建新文件或子目录。
 
-**Automatically split only the top level directory as required**
-When a new file or subdirectory is being created in the first level subdirectory of a share, if that first
-level subdirectory does not exist on the disk being written, then the subdirectory will be created first.
-If a new file or subdirectory is being created in the second or lower level subdirectory of a share, the new
-file or subdirectory is created on the same disk as the new file or subdirectory's parent directory.
+**根据需要自动仅拆分顶层目录**
+当在共享的第一级子目录中创建新文件或子目录时，如果正在写入
+的磁盘上不存在该第一级子目录，则将首先创建该子目录。
+如果要在共享的第二个或更低级别的子目录中创建新文件或子目录，
+将在与新文件或子目录的父目录相同的磁盘上创建新文件或子目录。
 
-**Automatically split only the top "N" level directories as required**
-Similar to previous: when a new file or subdirectory is being created, if the parent directory is at level "N",
-and does not exist on the chosen disk, Unraid OS will first create all necessary parent directories.  If the
-parent directory of the new file or subdirectory is beyond level "N", then the new file or subdirectory is
-created on the same disk where the parent directory exists.
+**根据需要自动仅拆分顶层的 "N" 级目录**
+与之前类似：当创建新文件或子目录时，如果父目录处于“ N”级，
+并且在所选磁盘上不存在， 将首先创建所有必需的父目录。如果新文件
+或子目录的父目录超出级别 "N" ，则在存在父目录
+的同一磁盘上创建新文件或子目录。
 
-**Manual: do not automatically split directories**
-When a new file or subdirectory needs to be created in a share, Unraid OS will only consider disks where the
-parent directory already exists.
+**手动：不自动拆分目录**
+当需要在共享中创建新文件或子目录时，Unraid OS 将仅考虑
+已存在父目录的磁盘。
 :end
 
 :share_edit_included_disks_help:
-Specify the disks which can be used by the share. By default all disks are included; that is, if specific
-disks are not selected here, then the share may expand into *all* array disks.
+指定共享可以使用的磁盘。 默认情况下所有磁盘都包括在内；也就是说，
+如果未在此处选择特定磁盘，则共享可能会扩展到 *所有* 阵列磁盘。
 :end
 
 :share_edit_excluded_disks_help:
-Specify the disks which can *not* be used by the share. By default no disks are excluded.
+指定共享 *不能* 使用的磁盘。 默认情况下不排除任何磁盘。
 :end
 
 :share_edit_cache_pool_help:
-Specify whether new files and directories written on the share can be written onto the Cache disk/pool if present.
-This setting also affects *mover* behavior.
+指定是否可以将共享中写入的新文件和目录写入到缓存磁盘 / 池中。
+此设置还会影响 *Mover* 行为。
 
-**No** prohibits new files and subdirectories from being written onto the Cache disk/pool.
-*Mover* will take no action so any existing files for this share that are on the cache are left there.
+**否** 将禁止新文件和子目录写入缓存磁盘/池。
+*Mover* 将不会采取任何措施，因此该共享的所有现有文件都将保留在缓存中。
 
-**Yes** indicates that all new files and subdirectories should be written to the Cache disk/pool, provided
-enough free space exists on the Cache disk/pool.
-If there is insufficient space on the Cache disk/pool, then new files and directories are created on the array.
-When the *mover* is invoked, files and subdirectories are transferred off the Cache disk/pool and onto the array.
+**是** 表示应将所有新文件和子目录写入缓存磁盘 / 池，前提是
+缓存磁盘/池中存在足够的可用空间。
+如果缓存磁盘/池上没有足够的空间，则会在阵列上创建新的文件和目录。
+当调用 *Mover* 时，文件和子目录会从缓存磁盘 / 池转移到阵列上。
 
-**Only** indicates that all new files and subdirectories must be writen to the Cache disk/pool.
-If there is insufficient free space on the Cache disk/pool, *create* operations will fail with *out of space* status.
-*Mover* will take no action so any existing files for this share that are on the array are left there.
+**仅于** 表示必须将所有新文件和子目录写入高速缓存磁盘 / 池。
+如果缓存磁盘 / 池上的可用空间不足， *创建* 操作将失败，并显示 *空间不足* 状态。
+*Mover* 将不会采取任何措施，因此阵列上此共享的所有现有文件都保留在那里。
 
-**Prefer** indicates that all new files and subdirectories should be written to the Cache disk/pool, provided
-enough free space exists on the Cache disk/pool.
-If there is insufficient space on the Cache disk/pool, then new files and directories are created on the array.
-When the *mover* is invoked, files and subdirectories are transferred off the array and onto the Cache disk/pool.
+**首选** 表示应将所有新文件和子目录写入缓存磁盘 / 池，前提是
+缓存磁盘/池中存在足够的可用空间。
+如果缓存磁盘 / 池上的可用空间不足，则会在阵列上创建新的文件和目录。
+当调用 *Mover* 时，文件和子目录从阵列转移到缓存磁盘 / 池。
 
-**NOTE:** Mover will never move any files that are currently in use.
-This means if you want to move files associated with system services such as Docker or VMs then you need to
-disable these services while mover is running.
+**注意：** Mover 将永不会移动任何当前使用中的文件。
+这意味着如果要移动与 Docker 或虚拟机等
+系统服务关联的文件，则需要在 Mover 运行时禁用这些服务。
 :end
 
 :share_edit_copy_on_write_help:
