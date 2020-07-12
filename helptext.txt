@@ -602,202 +602,202 @@ SMART 通知會根据属性 RAW 值的增加或 NORMALIZED 值减少至制造商
 :end
 
 :share_edit_copy_on_write_help:
-Set to **No** to cause the *btrfs* NOCOW (No Copy-on-Write) attribute to be set on the share directory
-when created on a device formatted with *btrfs* file system.  Once set, newly created files and
-subdirectories on the device will inherit the NOCOW attribute.  We recommend this setting for shares
-used to store vdisk images, including the Docker loopback image file.  This setting has no effect
-on non-btrfs file systems.
+设置为 **否** 会导致在使用 *btrfs* 文件系统格式化的设备上创建共享目录时，
+在共享目录上设置 *btrfs* NOCOW（无写入时复制）属性。 设置后，
+设备上新创建的文件和子目录将继承 NOCOW 属性。  对于用于存储虚拟磁盘映像
+包括 Docker 环回映像文件的共享，我们建议使用此设置。
+此设置对非 btrfs 文件系统无效。
 
-Set to **Auto** for normal operation, meaning COW **will** be in effect on devices formatted with *btrfs*.
+设为 **自动** 即可正常运行，这意味着 COW **将会** 在以 *btrfs* 格式化的设备上生效。
 :end
 
 :share_edit_status_help:
-Share does *not* contain any data and may be deleted if not needed any longer.
+共享 *不* 包含任何数据，如不再需要，可将其删除。
 :end
 
 :share_edit_delete_help:
-Share can *not* be deleted as long as it contains data. Be aware that some data can be hidden. See also [SMB Settings](/Settings/SMB) -> Hide "dot" files.
+只要共享包含数据就 *不能* 将其删除。 请注意，某些数据可以隐藏。 另请参见 [SMB 设置] （/Settings/SMB）-> 隐藏 '点' 文件。
 :end
 
 :smb_security_help:
-*Read settings from* is used to preset the SMB security settings of the current selected share with the settings of an existing share.
+*读取设置自* 用于使用现有共享的设置来预设当前所选共享的 SMB 安全设置。
 
-Select the desired share name and press **Read** to copy the SMB security settings from the selected source.
+选择所需的共享名，然后按 **读取** 以从所选来源复制 SMB 安全设置。
 
-*Write settings to* is used to copy the SMB security settings of the current selected share to one or more other existing shares.
+*写入设置到* 用于将当前所选共享的 SMB 安全设置复制到一个或多个其他现有共享。
 
-Select the desired destinations and press **Write** to copy the SMB security settings to the selected shares.
+选择所需的目的地，然后按 **写入** 将 SMB 安全设置复制到所选共享。
 :end
 
 :smb_export_help:
-This setting determines whether the share is visible and/or accessible.  The 'Yes (hidden)' setting
-will *hide* the share from *browsing* but is still accessible if you know the share name.
+此设置确定共享是否可见和/或可访问。 '是（隐藏）' 设置将从 *浏览* 中
+*隐藏* 共享，但是如果您知道共享名，则仍可访问。
 :end
 
 :smb_time_machine_volume_help:
-This limits the reported volume size, preventing Time Machine from using the entire real disk space
-for backup.  For example, setting this value to "1024" would limit the reported disk space to 1GB.
+这限制了报告的卷大小，从而阻止 Time Machine 使用整个实际磁盘空间进行备份。 
+例如，将此值设置为 '1024' 会将报告的磁盘空间限制为 1GB 。
 :end
 
 :smb_case_sensitive_names_help:
-Controls whether filenames are case-sensitive.
+控制文件名是否区分大小写。
 
-The default setting of **auto** allows clients that support case sensitive filenames (Linux CIFSVFS)
-to tell the Samba server on a per-packet basis that they wish to access the file system in a case-sensitive manner (to support UNIX
-case sensitive semantics). No Windows system supports case-sensitive filenames so setting this option to **auto** is the same as
-setting it to No for them; however, the case of filenames passed by a Windows client will be preserved.  This setting can result
-in reduced peformance with very large directories because Samba must do a filename search and match on passed names.
+默认设置 **自动** 允许支持区分大小写的文件名 (Linux CIFSVFS) 的客户端
+以每个数据包的形式告诉 Samba 服务器，並希望以区分大小写的方式
+访问文件系统（以支持 UNIX 区分大小写的语义）。没有 Windows 系统支持区分大小写的文件名，因此
+将其设置为 **自动** 与将其设置为否相同； 但是，将保留 Windows 客户端传递的文件名的大小写。此设置可能会导致
+当目录很大时降低性能，因为 Samba 必须进行文件名搜索并匹配传递的名称。
 
-A setting of **Yes** means that files are created with the case that the client passes, and only accessible using this same case.
-This will speed very large directory access, but some Windows applications may not function properly with this setting.  For
-example, if "MyFile" is created but a Windows app attempts to open "MYFILE" (which is permitted in Windows), it will not be found.
+设置为 **是** 表示在客户端通过的情况下创建文件，并且只能使用相同的情况进行访问。
+这将加快非常大目录的访问速度，但是使用此设置可能会令某些 Windows 应用程序无法正常运行。
+例如，如果创建了 'MyFile' ，但 Windows 应用程序尝试打开 'MYFILE' （Windows 是允许的），则會找不到该文件
 
-A value of **Forced lower** is special: the case of all incoming client filenames, not just new filenames, will be set to lower-case.
-In other words, no matter what mixed case name is created on the Windows side, it will be stored and accessed in all lower-case.  This
-ensures all Windows apps will properly find any file regardless of case, but case will not be preserved in folder listings.
-Note this setting should only be configured for new shares.
+**强制小写**值是特殊的：所有传入客户端文件名（不仅是新文件名）都将设置为小写。 
+换句话说，无论在　Windows　端创建了大小写混合的名称，都将以全小写字母来存储和访问该名称。 
+这样可以确保所有 Windows 应用程序无论大小写如何都能正确找到任何文件，但大小写将不会保留在文件夹列表中。
+请注意，仅应为新共享配置此设置。
 :end
 
 :smb_security_modes_help:
-Summary of security modes:
+安全模式摘要：
 
-**Public** All users including guests have full read/write access.
+**公用** 所有用户包括访客都具有完全的读/写访问权限。
 
-**Secure** All users including guests have read access, you select which of your users
-have write access.
+**安全** 所有用户包括访客都具有读取权限，由您选择哪些用户
+具有写权限。
 
-**Private** No guest access at all, you select which of your users have read/write or
-read-only access.
+**私人** 完全没有访客访问权限，由您选择哪些用户具有读/写
+或只读访问权限。
 :end
 
 :smb_secure_access_help:
-*Read settings from* is used to preset the SMB User Access settings of the current selected share with the settings of an existing share.
+*读取设置自* 用于使用现有共享的设置来预设当前所选共享的 SMB 用户访问设置。
 
-Select the desired share name and press **Read** to copy the SMB security settings from the selected source.
+选择所需的共享名，然后按 **读取** 以从所选来源复制 SMB 安全设置。
 
-*Write settings to* is used to copy the SMB User Access settings of the current share to one or more other existing shares.
+*写入设置到* 用于将当前所选共享的 SMB 用户访问设置复制到一个或多个其他现有共享。
 
-Select the desired destinations and press **Write** to copy the SMB User access settings to the selected shares.
+选择所需的目的地，然后按 **写入** 将 SMB 用户访问设置复制到所选共享。
 :end
 
 :smb_private_access_help:
-*Read settings from* is used to preset the SMB User Access settings of the current selected share with the settings of an existing share.
+*读取设置自* 用于使用现有共享的设置来预设当前所选共享的 SMB 用户访问设置。
 
-Select the desired share name and press **Read** to copy the SMB security settings from the selected source.
+选择所需的共享名，然后按 **读取** 以从所选来源复制 SMB 安全设置。
 
-*Write settings to* is used to copy the SMB User Access settings of the current share to one or more other existing shares.
+*写入设置到* 用于将当前所选共享的 SMB 用户访问设置复制到一个或多个其他现有共享。
 
-Select the desired destinations and press **Write** to copy the SMB User access settings to the selected shares.
+选择所需的目的地，然后按 **写入** 将 SMB 用户访问设置复制到所选共享。
 :end
 
 :nfs_security_help:
-*Read settings from* is used to preset the NFS security settings of the current selected share with the settings of an existing share.
+*读取设置自* 用于使用现有共享的设置来预设当前所选共享的 NFS 安全设置。
 
-Select the desired share name and press **Read** to copy the NFS security settings from the selected source.
+选择所需的共享名，然后按 **读取** 以从所选来源复制 NFS 安全设置。
 
-*Write settings to* is used to copy the NFS security settings of the current selected share to one or more other existing shares.
+*写入设置到* 用于将当前所选共享的 NFS 安全设置复制到一个或多个其他现有共享。
 
-Select the desired destinations and press **Write** to copy the NFS security settings to the selected shares.
+选择所需的目的地，然后按 **写入** 将 NFS 安全设置复制到所选共享。
 :end
 
 :user_add_username_help:
-Usernames may be up to 40 characters long and must start with a **lower case letter** or an underscore,
-followed by **lower case letters**, digits, underscores, or dashes. They can end with a dollar sign.
+用户名最多可以包含 40 个字符，并且必须以 **小写字母** 或下划线开头，
+然后是 **小写字母** 、数字、下划线或破折号。 它们可以以货币符号结尾。
 :end
 
 :user_add_description_help:
-Up to 64 characters. The characters ampersand (&amp;) quote (&quot;) and colon (:) are not allowed.
+最多64个字符。 不允许使用 ＆字符 (&amp;) 、 引号 (&quot;) 和冒号 (:) 。
 :end
 
 :user_add_custom_image_help:
-The image will be scaled to 48x48 pixels in size. The maximum image file upload size is 95 kB (97,280 bytes).
+映像将被缩放为　48x48　像素。 映像文件的最大上传大小为　95 kB (97,280　字节)。
 :end
 
 :user_password_help:
-Up to 128 characters.
+最多128个字符。
 :end
 
 :user_edit_description_help:
-Up to 64 characters. The characters ampersand (&amp;) quote (&quot;) and colon (:) are not allowed.
+最多64个字符。 不允许使用 ＆字符 (&amp;) 、 引号 (&quot;) 和冒号 (:) 。
 :end
 
 :user_edit_custom_image_help:
-The image will be scaled to 48x48 pixels in size. The maximum image file upload size is 512 kB (524,288 bytes).
+映像将被缩放为　48x48　像素。 映像文件的最大上传大小为　512 kB（　524,288　字节）。
 :end
 
 :cpu_vms_help:
-This page gives a total view of the current CPU pinning assignments for VMs.<br>
-It also allows to modify these assignments.
+此页面提供了虚拟机的当前 CPU 绑定分配的总视图。<br>
+它亦允许修改这些分配。
 
-Running VMs are **stopped first** and restarted after the modification.<br>
-Stopped VMs are instantly modified and new assignments become active when the VM is started.
+正在运行的虚拟机要 **先停止** ，然后在修改后重新启动。<br>
+当用户手动启动虚拟机时，已停止的虚拟机会被立即修改并激活新的分配。
 
-When ***Apply*** is pressed a scan is performed to find the changes, subsequently only VMs which have changes are modified in parallel.
+按下 ***应用*** 时，将执行扫描以查找更改，随后并行更改需变更的虚拟机。
 
-*Important: Please wait until all updates are finished before leaving this page*.
+*重要提示：请等待所有更新完成，然后才退出此页面*。
 :end
 
 :cpu_pinning_help:
-This page gives a total view of the current CPU pinning assignments for Docker containers.<br>
-It also allows to modify these assignments.
+此页面提供了 Docker 容器当前 CPU 绑定分配的总视图。<br>
+它亦允许修改这些分配。
 
-Running containers are **stopped first** and restarted after the modification.<br>
-Stopped containers are instantly modified and new assignments become active when the user manually starts the container.
+正在运行的容器要 **先停止** ，然后在修改后重新启动。<br>
+当用户手动启动容器时，已停止的容器会被立即修改并激活新的分配。
 
-When ***Apply*** is pressed a scan is performed to find the changes, subsequently containers which have changes are modified in parallel.
+按下 ***应用*** 时，将执行扫描以查找更改，随后并行更改需变更的容器。
 
-*Important: Please wait until all updates are finished before leaving this page*.
+*重要提示：请等待所有更新完成，然后才退出此页面*。
 
-By default NO cores are selected for a Docker container, which means it uses all available cores.<br>
-Do not select **ALL** cores for containers, just select **NO** cores if you want unrestricted core use.
+默认情况下，没有为 Docker 容器选择任何核心，这意味着它使用了所有可用的核心。<br>
+不需为容器选择 **全部** 核心，如果您希望不受限制地使用核心，请 **不** 选择任何核心。
 
-Do not select cores for containers which are *isolated*.
-By design a container will only use a single core (the lowest numbered core) when multiple isolated cores are selected.<br>
-Usually this is not what a user wants when selecting multiple cores.
+不要为 **已隔离** 的容器选择核心。
+当选择多个隔离的核心时，按照设计，容器将仅使用单个核心（编号最小的核心）。<br>
+通常这不是用户选择多个核心时想要的结果。
 :end
 
 :cpu_isolation_help:
-CPU isolation allows the user to specify CPU cores that are to be explicitly reserved for assignment (to VMs or Docker containers).
+CPU 隔离允许用户指定要显式保留用于分配（给虚拟机或 Docker 容器）的 CPU 核心。
 
-This is incredibly important for gaming VMs to run smoothly because even if you manually pin your Docker containers to not overlap with your gaming VM,
-the host OS can still utilize those same cores as the guest VM needs for things like returning responses for the webGui, running a parity check, btrfs operations, etc.
+这对于游戏虚拟机的平稳运行极为重要，因为即使您手动固定 Docker 容器使其不与游戏虚拟机重叠，
+主机 OS 仍可以使用与来宾虚拟机相同的内核来进行诸如为 webGui 返回响应， 运行奇偶校验， btrfs 操作等
 :end
 
 :timezone_help:
-Select your applicable time zone from the drop-down list.
+从下拉列表中选择您适用的时区。
 :end
 
 :use_ntp_help:
-Select 'Yes' to use Network Time Protocol to keep your server time accurate.
-We **highly** recommend the use of a network time server, especially if you plan on using Active Directory.
+选择 '是' 以使用网络时间协议来保持服务器时间准确。
+**强烈** 建议使用网络时间服务器，特别是如果打算使用Active Directory。
 
-Note: if using `pool.ntp.org` time servers, please also refer to [their documentation](http://www.pool.ntp.org/en/use.html).
+注意：如果使用 'pool.ntp.org' 时间服务器，也请参考[其文档] (http://www.pool.ntp.org/en/use.html).
 :end
 
 :ntp_server1_help:
-This is the primary NTP server to use.  Enter a FQDN or an IP address.
+这是要使用的主要 NTP 服务器。 输入 FQDN 或 IP 地址。
 :end
 
 :ntp_server2_help:
-This is the alternate NTP server to use if NTP Server 1 is down.
+如果 NTP 服务器 1 关闭，这就是备用 NTP 服务器。
 :end
 
 :ntp_server3_help:
-This is the alternate NTP Server to use if NTP Servers 1 and 2 are both down.
+如果 NTP 服务器 1 和 2 都关闭，这就是备用 NTP 服务器。
 :end
 
 :ntp_server4_help:
-This is the alternate NTP Server to use if NTP Servers 1, 2, and 3 are all down.
+如果 NTP 服务器 1、2 和 3 都关闭，这就是备用 NTP 服务器。
 :end
 
 :current_time_help:
-Enter the current time-of-day.  Use format YYYY-MM-DD HH:MM:SS. Greyed out when using NTP.
+输入当前时间。 使用格式 YYYY-MM-DD HH:MM:SS 。 使用 NTP 时显示为灰色。
 :end
 
 :disk_enable_autostart_help:
-If set to 'Yes' then if the device configuration is correct upon server start-up,
-the array will be automatically Started and shares exported.<br>
-If set to 'No' then you must Start the array yourself.
+如果设置为 '是' ，在服务器启动时而
+设备配置正确，则阵列将自动启动并导出共享。<br>
+如果设置为 '否' ，则必须自己启动阵列。
 :end
 
 :disk_spindown_delay_help:
