@@ -60,6 +60,7 @@ name of mount tag inside vm=虚拟机挂载标签名称
 Name of virtual machine=虚拟机名称
 Network Bridge=网络桥接
 Network MAC=网络 MAC
+Network Model=
 No Virtual Machines installed=未安装虚拟机
 None available=无可用
 Not enough free space, need at least=可用空间不足，至少需要
