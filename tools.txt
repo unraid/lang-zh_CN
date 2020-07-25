@@ -55,6 +55,7 @@ Missing Language=缺少语言
 Network Settings=网络设置
 New Config=新配置
 New Permissions=新权限
+No notifications present=
 No personal information such as user names, passwords, or any other file contents is included in the hardware profile=硬件配置文件中不包括用户名、密码或任何其他文件内容等个人信息
 normal=正常
 Only ZIP files are allowed=仅允许 ZIP 文件
