@@ -67,6 +67,7 @@ Do not use user share names=不使用用户共享名称
 Download SMART report=下载 SMART 报告
 Dual parity valid requires ALL disks in their original slots=*双奇偶校验* 验证要求**所有**磁盘都位于其原始插槽中
 Elapsed time=经过的时间
+Enable user share assignment=
 encrypted=已加密
 Encryption input=加密输入
 Encryption status=加密状态
