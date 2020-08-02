@@ -32,6 +32,7 @@ Plugin Note=插件说明
 
 ; Multi Install
 Install Plugin Applications=安装插件应用程序
+Select all on page=
 
 ; Searches
 Search=搜索
