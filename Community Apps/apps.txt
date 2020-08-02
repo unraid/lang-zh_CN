@@ -32,7 +32,7 @@ Plugin Note=插件说明
 
 ; Multi Install
 Install Plugin Applications=安装插件应用程序
-Select all on page=
+Select all on page=页面上的全选
 
 ; Searches
 Search=搜索
@@ -90,22 +90,22 @@ You have been logged out=
 
 ; CA Sections Keep the length reasonable
 MENU=菜单
-Installed Apps=已安装的应用
+Installed Apps=已安装应用
 Previous Apps=以前的应用
 Pinned Apps=固定的应用
-CATEGORIES=类别
-New Apps=新应用
+CATEGORIES=应用分类
+New Apps=最新的应用
 Updated Apps=更新的应用
-Random Apps=随机应用
-Top New Installs=热门新安装
-Trending Apps=热门应用
-All Apps=所有应用
-OTHER=其他
+Random Apps=随机的应用
+Top New Installs=热门新应用
+Trending Apps=热门的应用
+All Apps=所有的应用
+OTHER=APP信息
 Statistics=统计信息
-Credits=信用
-Support=支持
-VERSION=版本
-Change Log=更改日志
+Credits=版权信息
+Support=技术支持
+VERSION=版本信息
+Change Log=更新日志
 
 ; Credits
 Development=开发
@@ -164,19 +164,19 @@ Community Applications Changelog=Community Applications 变更日志
 
 ; Categories try not to be excessively long This is displayed on the left of CA screen
 
-Backup=备份
-Cloud=云
-Downloaders=下载程序
+Backup=备份类应用
+Cloud=网络云应用
+Downloaders=下载类应用
 Game Servers=游戏服务器
 Home Automation=家庭自动化
-Media Applications=媒体应用程序
+Media Applications=媒体类应用
 Books=书籍
 Music=音乐
 Photos=照片
 Video=视频
 Other=其他
 Media Servers=媒体服务器
-Network Services=网络服务
+Network Services=网络类应用
 DNS=DNS
 FTP=FTP
 Management=管理
@@ -185,13 +185,13 @@ Proxy=代理
 VOIP=VOIP
 VPN=VPN
 Web=Web
-Productivity=生产力
-Security=安全性
-Tools Utilities=工具/实用程序
+Productivity=开发类应用
+Security=防护类应用
+Tools Utilities=实用的工具
 System=系统
 Themes=主题
 Utilities=实用程序
-Private Apps=私人应用
+Private Apps=私人的应用
 Uncategorized=未分类
 
 ; Categories displayed within a popup or on the card.  Where an entry exists after the "=" it is not translated, but rather how it should look
@@ -221,7 +221,7 @@ NetworkOther=网络：其他
 ToolsSystem=工具：系统
 ToolsThemes=工具：主题
 ToolsUtilities=工具：实用程序
-Other=其他
+Other=其他的应用
 OtherUncategorized=其他：未分类
 and %s more=和另外 ％s
 
