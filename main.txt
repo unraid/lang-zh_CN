@@ -153,7 +153,7 @@ Permit UEFI boot mode=允许 UEFI 引导模式
 Please check your system settings to support UEFI boot mode=请检查您的系统设置以支持 UEFI 引导模式
 Pool Devices=池设备
 Pool name already exists=池名称已存在
-Pool of %s devices=％s 设备池
+Pool of %s devices=%s 设备池
 Preclear in progress=正在进行预清除
 Printable Characters Only=仅可打印字符
 Proceed to start=继续开始
@@ -209,7 +209,7 @@ The array will be immediately available, but unprotected since parity has not be
 The array will be immediately available, but unprotected until Parity-Sync completes=阵列将立即可用，但**未受保护**，这种状态将延续到奇偶校验同步完成为止
 The replacement disk must be as big or bigger than the original=替换磁盘的容量必须大于或等于原始磁盘
 This is typically done when a new disk is added to the array to get it ready for files to be written to it=当将新磁盘添加到阵列中以使其准备好将文件写入其中时，就可以完成此操作
-This unRAID Server OS release has been withdrawn and may no longer be used. Please %s update your server=此 unRAID Server OS 版本已撤消，可能不再使用。请 ％s 更新您的服务器
+This unRAID Server OS release has been withdrawn and may no longer be used. Please %s update your server=此 unRAID Server OS 版本已撤消，可能不再使用。请 %s 更新您的服务器
 This will reboot the system=这将重启系统
 This will shutdown the system=这将关闭系统
 This will stop the array=这将停止阵列

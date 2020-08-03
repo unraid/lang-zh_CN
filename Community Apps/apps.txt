@@ -78,7 +78,7 @@ Finished Installing If the DONE button did not appear, then you will need to cli
 
 ; error messages
 No data was returned It is probable that another browser session has rebooted your server Reloading this browser tab will probably fix this error=没有返回任何数据。可能是另一个浏览器会话重新启动了服务器。重新加载此浏览器标签页可能会解决此错误
-An error occurred Could not find any %s Apps=发生错误，找不到任何 ％s 应用
+An error occurred Could not find any %s Apps=发生错误，找不到任何 %s 应用
 Download of appfeed failed=appfeed下载失败
 ; the %s here refers to a function being called
 Something really went wrong here=这里真的出问题了
@@ -223,7 +223,7 @@ ToolsThemes=工具：主题
 ToolsUtilities=工具：实用程序
 Other=其他
 OtherUncategorized=其他：未分类
-and %s more=和另外 ％s
+and %s more=和另外 %s
 
 ; App Popup Related
 Donate To Author=捐赠给作者
@@ -242,9 +242,9 @@ Max OS=最高 OS
 Total Downloads=总下载量
 Licence=许可证
 30 Day Trend=30 天趋势
-Ranked #%s=排名＃％s
+Ranked #%s=排名＃%s
 ; as in Trending up or down arrow
-Trending %s=趋势 ％s
+Trending %s=趋势 %s
 ; as in As of some date
 As of %s=（截至 %s）
 This application template has been blacklisted=此应用程序/模板已被列入黑名单
@@ -268,7 +268,7 @@ Install The Update=安装更新
 Latest Version=最新版本
 Multi Language Support=多语言支持
 ; as in more than 100000
-More than %s=超过 ％s
+More than %s=超过 %s
 
 ; Graphs
 Trend Per Month=每月趋势
@@ -276,9 +276,9 @@ Downloads Per Month=每月下载量
 Total Downloads=总下载量
 
 ; Multi install script
-Installing docker applications %s=安装 Docker 应用程序 ％s
+Installing docker applications %s=安装 Docker 应用程序 %s
 Starting %s=正在启动 ％s
-%s failed to start You should install it by itself to fix the errors=％s 无法启动，您应当让它自行安装以修复错误
+%s failed to start You should install it by itself to fix the errors=%s 无法启动，您应当让它自行安装以修复错误
 Setting installed applications to autostart=将已安装的应用程序设置为自动启动
 Docker Application Installation finished=Docker 应用程序安装完成
 
@@ -305,7 +305,7 @@ Search for more applications from %s=从 ％s 搜索更多应用程序
 Click for more information=单击以了解更多信息
 
 ; Dockerhub searches
-Search For Containers From %s=从 ％s 搜索容器
+Search For Containers From %s=从 %s 搜索容器
 Search for similar containers=搜索类似的容器
 
 ; Page Navigation
