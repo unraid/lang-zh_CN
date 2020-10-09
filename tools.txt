@@ -114,7 +114,7 @@ Use this to develop language packs=使用它来开发语言包
 Use this to install official language packs=使用它来安装官方语言包
 User Shares=用户共享
 User=用户
-Vars=Vars
+Vars=变量
 warning=警告
 webGUI=webGUI
 When received, please paste the URL into the Key file URL box and=收到邮件后，请将 URL 链接粘贴到<i>密钥文件</i> URL框中，然后
@@ -251,7 +251,7 @@ drwxrwxrwx
 :end
 
 :registration_4_plug:
-要继续使用 UnRAID 操作系统，您可以购买注册密钥。也可以申请*试用*延期密钥。
+要继续使用 UnRAID OS，您可以购买注册密钥。也可以申请*试用*延期密钥。
 
 大多数*试用*延期请求都会立即处理，但请给我们最多一个工作日接收您的*试用*延期密钥。
 :end
