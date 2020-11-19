@@ -3,7 +3,7 @@
 Active tunnels=活动隧道
 Activity=活动
 ago=以前
-Airflow=风扇信息
+Airflow=风量信息
 All Apps=所有应用
 All VMs=所有虚拟机
 Battery charge=电池电量
@@ -17,7 +17,7 @@ Data is invalid=数据无效
 default image=默认映像
 Docker Containers=Docker 容器
 Due in=剩余时间
-Elapsed time=已运行时间
+Elapsed time=运行时间
 Errors info=错误信息
 Estimated finish=预计完成
 failed device=故障设备
