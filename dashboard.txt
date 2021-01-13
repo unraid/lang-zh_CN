@@ -3,7 +3,7 @@
 Active tunnels=活动隧道
 Activity=活动
 ago=以前
-Airflow=Airflow
+Airflow=气流
 All Apps=所有应用
 All VMs=所有虚拟机
 Battery charge=电池电量
