@@ -11,4 +11,4 @@ This setting allows CA to periodically scan your system and alert you to the pre
 1 Known malware and security vulnerabilities within applications=1 应用程序中的已知恶意软件和安全漏洞
 2 Critical security vulnerabilities within Unraid OS=2 Unraid OS 中的严重安全漏洞
 3 Any installed applications which may seriously hinder the operation of your server=3 任何可能严重阻碍服务器运行的已安装应用程序
-Support Thread=支持线程
+Support Thread=支持论坛
