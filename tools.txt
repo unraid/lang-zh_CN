@@ -300,3 +300,11 @@ USB 闪存设备也可能被*列入黑名单*。
 
 如需了解更多信息，请[联系支持人员](https://lime-technology.com/contact)。
 :end
+
+; New entries - 2021-03-14
+Delete all notifications=
+Downloading=
+Install Language=
+please configure=
+Uploaded=
+PCI Devices No IOMMU Groups Available=PCI Devices (No IOMMU Groups Available)

@@ -292,3 +292,17 @@ Wrong key=错误密钥
 xfs_repair status=xfs 修复状态
 You may not add new disks and also remove existing disks=您不能添加新磁盘，也不能移除现有磁盘
 your server=您的服务器
+
+; New entries - 2021-03-14
+completed=
+Erase=
+Erase Device Content=
+Existing content is permanently lost=
+Invalid, missing or expired=
+SMART controller type=
+SMART notification tolerance level=
+SMART self-test in progress=
+This Unraid OS release has been withdrawn and may no longer be used Please=This Unraid OS release has been withdrawn and may no longer be used. Please
+This will ERASE ALL device content=
+This will ERASE content of ALL devices in the pool=
+To confirm your action type %s=To confirm your action type: %s

@@ -101,3 +101,6 @@ User count %s with %s unprotected=用户总计 %s 个，其中 %s 个未受保�
 utilization warning=利用率警告
 View Running Processes=查看正在运行的进程
 Virtual Machines=虚拟机
+
+; New entries - 2021-03-14
+Temp=
