@@ -566,3 +566,23 @@ WAN Port=
 xfs vDisk=
 Your server has been registered=
 Your Unraid Server is reachable from the internet=
+
+; New entries - 2021-03-14
+Celsius=
+CRAM-MD5=
+Docker VMs=Docker + VMs
+encrypted=
+Every 2 hours=
+Every 3 hours=
+Every 4 hours=
+Every 6 hours=
+Every 8 hours=
+Every hour=
+Failed to open=
+Fahrenheit=
+inactive=
+No Cache device present=
+shutdown=
+TCP=
+UDP=
+VM manager=

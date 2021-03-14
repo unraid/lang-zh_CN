@@ -306,3 +306,12 @@ This Unraid OS release has been withdrawn and may no longer be used Please=This 
 This will ERASE ALL device content=
 This will ERASE content of ALL devices in the pool=
 To confirm your action type %s=To confirm your action type: %s
+
+; New entries - 2021-03-14
+auto=
+Click on FLASH above this message=Click on **FLASH** above this message
+Convert to raid1c3 mode=
+Convert to raid1c4 mode=
+Flash device is set as public share=
+Please change share SMB security=
+See %s Settings=

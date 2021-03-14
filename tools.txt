@@ -308,3 +308,9 @@ Install Language=
 please configure=
 Uploaded=
 PCI Devices No IOMMU Groups Available=PCI Devices (No IOMMU Groups Available)
+
+; New entries - 2021-03-14
+Array slots=
+Pool slots=
+VFIO-PCI Log=
+View VFIO-PCI Log=

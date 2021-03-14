@@ -133,3 +133,6 @@ Writable=可写
 Drivers=
 Reset sorting=
 Start Container After Install=
+
+; New entries - 2021-03-14
+Total size=
