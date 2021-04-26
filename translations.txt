@@ -546,6 +546,7 @@ Back to Sign In=返回以登录
 Unraidnet Sign In=Unraid.net 登录
 Unraidnet Sign In to Recover Key=Unraid.net 登录以恢复密钥
 Unraidnet Sign In to Replace Key=Unraid.net 登录以更换密钥
+Please sign in with your Unraidnet forum account=请使用您的Unraid.net论坛帐户登录
 Please sign in with the same email with which you purchased your license=请使用您购买许可证所用的电子邮箱登录
 Acknowledge Replacement Conditions=确认更换条件
 I acknowledge that replacing a license key results in permanently blacklisting the previous USB Flash GUID=本人确认更换许可证密钥会导致先前的 USB 闪存 GUID 被永久列入黑名单
