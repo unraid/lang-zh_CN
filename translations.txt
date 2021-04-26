@@ -423,7 +423,7 @@ Unraid Forums=Unraid 论坛
 Settings=设置
 Settings > Management Access • Unraidnet=设置 > 管理访问权限 • Unraid.net
 Trial key expires at %s=试用版密钥将于 %s 过期
-Trial expires in %s= S=试用版将在 %s 天后过期
+Trial expires in %s=试用版将在 %s 天后过期
 Trial key expired at %s=试用版密钥将于 %s 过期
 Trial expired %s ago=试用版已于 %s 天前过期
 Server up since %s=服务器自 %s 起开始运行
