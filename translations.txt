@@ -504,7 +504,8 @@ Automatically closing in %=在 % 之后自动关闭
 bye bye 👋=再见 👋 
 Browser will self destruct in %=浏览器将在 % 之后自毁
 Closing this pop-up window while actions are being preformed may lead to unintended errors=在执行操作时关闭此弹窗可能会导致意外错误
-Go Back=返回 Shut Down=关闭
+Go Back=返回
+Shut Down=关闭
 Already have an account Sign In=已经有帐户？请登录
 Dont have an account Sign Up=还没有帐户？请注册
 Flash=闪存
