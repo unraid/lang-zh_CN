@@ -129,10 +129,8 @@ Web=Web
 WebUI=WebUI
 Writable=可写
 
-; New entries - 2021-03-14
+; New entries (4) - 2021-05-08
 Drivers=
 Reset sorting=
 Start Container After Install=
-
-; New entries - 2021-03-14
 Total size=

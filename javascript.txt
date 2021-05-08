@@ -55,3 +55,10 @@ Unmounting disks=正在卸载磁盘
 Autostart disabled=禁用自动启动
 Missing encryption key=缺少加密密钥
 Opening encrypted volumes=正在打开加密卷
+
+; New entries (5) - 2021-05-08
+Container Path=
+Container Port=
+Container Variable=
+Container Label=
+Container Device=
