@@ -30,3 +30,7 @@ View Release Notes=查看发行说明
 
 ; New entries (1) - 2021-05-08
 No plugins installed=
+
+; New entries (2) - 2021-05-09
+Checking connectivty=
+No response, aborting=
