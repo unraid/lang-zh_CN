@@ -636,3 +636,16 @@ Yes, I want to do this=
 You have an open pop-up=
 You may purchase a license key corresponding to this USB Flash device to continue using this installation=
 Your flash drive is corrupted or offline=
+
+; New entries (11) - 2021-05-09
+Blacklisted USB Flash GUID=
+complete=
+Copying=
+object=
+Password=
+Purchase Key=
+Subject=
+Thank you for choosing Unraid OS=
+There is a physical problem accessing your USB Flash boot device=
+Trial=
+Upgrade Key=
