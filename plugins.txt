@@ -37,3 +37,8 @@ No response, aborting=
 
 ; New entries (1) - 2021-05-10
 checking=
+
+; New entries (3) - 2021-05-10
+Delete Plugin=
+Remove Plugin=
+Update Plugin=
