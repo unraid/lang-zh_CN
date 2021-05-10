@@ -312,3 +312,8 @@ Uploaded=
 VFIO-PCI Log=
 View VFIO-PCI Log=
 PCI Devices No IOMMU Groups Available=PCI Devices (No IOMMU Groups Available)
+
+; New entries (3) - 2021-05-10
+Beta=
+Next=
+Stable=
