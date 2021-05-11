@@ -1,0 +1,108 @@
+Add=添加
+Auto Mount USB Devices=自动挂载 USB 设备
+Change Disk UUID=更改磁盘 UUID
+Change UUID=更改 UUID
+Change the disk UUID=更改磁盘 UUID
+Common Script=通用脚本
+Common Settings=通用设置
+Destructive Mode=破坏模式
+Disk spin down is managed by Unraid=磁盘休眠由 Unraid 管理
+Enable NFS export=启用 NFS 导出
+Enable SMB Security=启用 SMB 安全
+Enter Disk Password=输入磁盘密码
+Force all SMB remote shares to SMB v1=强制所有 SMB 远程共享到 SMB v1
+Legacy Mount Point Compatibility=传统挂载点兼容
+Mount SSDs with discard option=使用丢弃选项挂载 SSD
+must be enabled in SMB Settings to enable SMB v1=必须在 SMB 设置中启用 SMB v1
+NFS Security=NFS 安全
+NFS Settings=NFS 设置
+NFS must be enabled to enable NFS Export=必须启用 NFS 才能启用 NFS 导出
+Rule=规则
+SMB Security=SMB 安全
+Select Disk to change UUID=选择磁盘更改 UUID
+Select Disk=选择磁盘
+Set Encrypted Disk Password=设置加密磁盘密码
+Set Password=设置密码
+Set the disk Password=设置磁盘密码
+Specify SMB Version when Mounting Remote Shares=挂载远程共享时指定 SMB 版本
+Spin down disks=休眠磁盘
+The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=必须安装 Unassigned Devices Plus 插件才能启用破坏模式
+to SMB share config=到 SMB 共享配置
+Unassigned Devices=未分配设备
+
+; Help
+;
+:ud_settings_plus_plug:
+> **注意:** 必须安装 Unassigned Devices Plus 插件才能挂载 HFS+ 和 exFAT 磁盘格式，以及启用破坏模式。
+:end
+
+:ud_settings_common_script_plug:
+> 如果设置，此脚本将在设备脚本之前运行。该操作位于环境变量 **$ACTION** 中。确保以完整路径引用所有命令。
+:end
+
+:ud_settings_destructive_plug:
+> 如果启用，这将允许您使用未分配设备插件擦除并格式化分区。除非安装了 Unassigned Devices Plus 插件，否则无法启用此功能。
+:end
+
+:ud_settings_mount_usb_devices_plug:
+> 设置为 **是** 时，将自动挂载新的 USB 设备并共享它，无需用户干预。
+:end
+
+:ud_settings_discard_plug:
+> 支持通过 discard 选项挂载 SSD。如果您使用 SSD Trim Settings 进行定期 trim，则可以将其设置为 **否**。
+:end
+
+:ud_settings_spin_down_plug:
+> 设置为 **是** 将设置15分钟磁盘休眠计时器。设置为 **否** 将保持磁盘唤醒。Unraid 6.9 及更高版本由系统管理磁盘休眠。
+:end
+
+:ud_settings_symlinks_plug:
+> 设置为 **是** 将在 /mnt/disks/ 中为 /mnt/remotes/ 创建符号链接。
+>
+> 这是为了向后兼容映射到 /mnt/disks/ 挂载点的 VM 和 Docker 容器。
+> 建议您将映射更改为 /mnt/remotes/ 挂载点。
+>
+> 如果不需要向后兼容，请将其设置为 **否**。
+:end
+
+:ud_settings_specify_smb_vers_plug:
+> 设置为 **否**，使未分配设备插件在挂载时先尝试不设置 SMB 版本挂载远程共享。
+>
+> 设置为 **是**，使未分配设备插件仅挂载指定 SMB 版本的 SMB 远程共享。
+>
+> 某些远程服务器需要指定具体版本。
+:end
+
+:ud_settings_favor_reliability_plug:
+> 设置为 **是**，使未分配设备插件挂载远程共享而不进行缓存，从而获得更可靠的连接。
+>
+> 设置为 **否**，使未分配设备插件挂载远程共享进行缓存，从而可能提高速度。
+>
+> 将此项设置为 **否** 可能会提高连接速度，但有可能降低可靠性。
+:end
+
+:ud_settings_smb_security_plug:
+> 为 SMB 安全设置用户级别。
+>
+> + 设置为 **是** 将对 SMB 共享启用 SMB 安全。设置用户访问权限以允许访问，以及用户是否可以写入共享。
+> + 设置为 **隐藏** 将对不可见的 SMB 共享启用 SMB 安全。设置用户访问权限以允许访问，以及用户是否可以写入共享。
+> + 设置为 **否** 将开放读写权限公开共享设备、SMB/NFS 和 ISO 挂载。
+:end
+
+:ud_settings_force_user_plug:
+> 有时 SMB 共享的权限未按预期处理。启用此功能可以帮助获得这些权限。
+> 这适用于未分配设备插件挂载的所有设备。
+> 缺点是它会覆盖 Linux 组权限。如果您不确定是否需要，请将其保持启用状态。
+:end
+
+:ud_settings_nfs_shares_plug:
+> 设置为 **是** 将导出 NFS 共享。共享将导出为具有读写访问权限的“公开”或具有您设置的规则的“私有”。通过文件和文件夹上的权限设置来控制访问。
+:end
+
+:ud_settings_disk_pass_plug:
+> 选择要设置密码的磁盘。这仅是该磁盘的密码，不会影响阵列密码/密码短语。将密码保留为空白将为 luks 加密的磁盘使用阵列密码/密码短语。
+:end
+
+:ud_settings_change_uuid_plug:
+> 选择要更改 UUID 的磁盘。当 XFS 格式的磁盘已从阵列中移除并且具有与阵列磁盘相同的 UUID 时，这很有用。必须卸载驱动器才能更改 UUID。
+:end

@@ -1,0 +1,165 @@
+Add ISO File Share=添加 ISO 文件共享
+Add Remote SMBNFS Share=添加远程 SMB/NFS 共享
+An XFS or BTRFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=在 UD 中的 XFS 或 BTRFS 磁盘分区与阵列磁盘分区兼容，可以添加到阵列中
+Any data on this disk will be lost=该磁盘上的所有数据都将丢失
+Are you sure=你确定吗
+Auto mount=自动挂载
+Back=返回
+Browse Disk Share=浏览磁盘共享
+Browse ISO File Share=浏览 ISO 文件共享
+Browse Remote SMBNFS Share=浏览远程 SMB/NFS 共享
+Choose File System Format=选择文件系统格式
+Choose ISO File=选择 ISO 文件
+Choose Server=选择服务器
+Choose Share=选择共享
+Click on Icon to Choose Protocol=点击图标选择协议
+Change Disk Mount Point=更改磁盘挂载点
+Change ISO File Mount Point=更改 ISO 文件挂载点
+Change SMBNFS Mount Point=更改 SMB/NFS 挂载点
+Changing the Mount Point will also change the disk label=更改挂载点也将更改磁盘标签
+Click to select ISO file=点击选择 ISO 文件
+Click to view/hide partitions and mount points=点击查看/隐藏分区和挂载点
+Complete=完成
+Disks=磁盘
+Disk Log Information=磁盘日志信息
+Domain=域
+Edit Device Script=编辑设备脚本
+Edit ISO File Script=编辑 ISO 文件脚本
+Edit Remote SMBNFS Script=编辑远程 SMB/NFS 脚本
+Enter the Domain for the share if on a Domain=如果共享在域上，请输入共享的域
+Enter the Password if the share is password protected=如果共享受密码保护，请输入密码
+Enter the Username if the share is password protected=如果共享受密码保护，请输入用户名
+Enter the password to use for this disk=输入用于此磁盘的密码
+Execute Script as udev simulating a device being installed=作为udev执行脚本以模拟正在安装的设备
+Fail=失败
+file share for=文件共享自
+File System Check=文件系统检查
+Format=格式化
+Formatting=格式化中
+Free=可用空间
+from disk=从磁盘
+Historical Devices=历史设备
+ISO File Shares=ISO 文件共享
+Identification=标识
+If using a disk password be sure to enter the password for this disk in UD Settings so it can be mounted=如果正在使用磁盘密码，请确保在 UD 设置中输入该磁盘的密码，以便挂载该磁盘
+Leave blank to use the array passwordpassphrase=留空使用阵列密码/密码短语
+Load Shares=加载共享
+Loading=载入中
+Log=日志
+missing=丢失
+Mount=挂载
+Mounting=挂载中
+NFS Shares=NFS 共享
+Next=下一步
+No Remote SMBNFS or ISO File Shares configured=没有配置远程 SMB/NFS 或 ISO 文件共享
+No Unassigned Disks available=没有可用的未分配磁盘
+Note=注意
+Open=打开
+Partition and Format Disk=分区和格式化磁盘
+Pass Thru=直通
+Password=密码
+Read only=只读
+Refresh Disks and Configuration=刷新磁盘和配置
+Remember your password It cannot be recovered=请记住，您的密码无法恢复
+Remote share mounts are dependent on a solid and reliable network connection and that is difficult to achieve=远程共享挂载依赖稳定可靠的网络连接，这很难实现
+Remove Device configuration=删除设备配置
+Remove ISO File Share=删除 ISO 文件共享
+Remove Partition=删除分区
+Remove Remote SMBNFS Share=删除远程 SMB/NFS 共享
+Remove partition=删除分区
+Run with CORRECT flag=使用 CORRECT 标志运行
+Running=运行中
+Shares=共享
+SMART Attributes on=查看 SMART 属性
+SMB Shares=SMB 共享
+Script=脚本
+Search For Servers=搜索服务器
+Search for Servers, or enter the Server nameIP address manually=搜索服务器，或手动输入服务器名称/IP地址
+Search for Shares or enter the Share name manually=搜索共享或手动输入共享名称
+Searching=搜索中
+Serial Number Mountpoint=挂载点序列号
+share for=共享自
+Simple=简单
+Source=源
+Success=成功
+Switch On to Show SMB/NFS/ISO Shares=显示 SMB/NFS/ISO 共享
+Switch On to Show Historical Devices=显示历史设备
+Switch On to Show SMB/NFS/ISO Shares=显示 SMB/NFS/ISO 共享
+Switch On to Show Disk Devices=显示磁盘设备
+This will remove the ISO file share for=这将删除 ISO 文件共享自
+This will remove the remote=这将删除远程
+This will remove the saved configuration of=这将删除已保存的配置
+This will remove the=这将删除
+to confirm=以确认
+to format=以格式化
+Unmount=卸载
+Unmounting=卸载中
+Used=已使用
+Username=用户名
+View Device Script Log=查看设备脚本日志
+View ISO File Script Log=查看 ISO 文件脚本日志
+View Remote SMBNFS Script Log=查看远程 SMB/NFS 脚本日志
+WARNING: Do NOT use a remote share local mount in a Docker container or VM for critical data=警告: 请勿在 Docker 容器或 VM 中使用远程共享挂载目录处理重要数据
+You WILL have problems if you do=您会遇到问题如果您
+You will need to enter credentials for Windows 10 shares just to list them=您需要输入 Windows 10 共享的凭据才能列出它们
+
+; Help
+;
+:unassgned_devices_switches_plug:
+> 打开 **磁盘** 开关将在网页显示磁盘设备。关闭 **磁盘** 开关将在网页隐藏磁盘设备。
+>
+> 打开 **共享** 开关将在网页显示共享。关闭 **共享** 开关将在网页隐藏共享。
+>
+> 打开 **历史设备** 开关将显示历史磁盘设备。关闭 **历史设备** 开关将隐藏历史磁盘设备。
+>
+> 点击 <i style='color:black;font-weight:bold;' class="fa fa-refresh"></i> 图标刷新磁盘和配置。
+>
+> 点击 <i style='color:black;font-weight:bold;' class="fa fa-gear"></i> 图标转到 UD 设置。
+>
+> 您可以通过单击磁盘球来唤醒 <i class='fa fa-circle orb green-orb'></i>或休眠 <i class='fa fa-circle orb grey-orb'></i>磁盘。仅适用于 6.9 RC2 或更高版本。
+:end
+
+:unassigned_devices_general_help_plug:
+> **未分配设备(Unassigned Devices) 简称 UD**
+>
+> 将鼠标悬停在 UD 页面的任何活动区域上，工具提示将显示点击该区域的作用。
+> 您可以使用 UD 挂载 USB 设备、SATA 驱动器、远程 SMB/NFS 共享和 ISO 文件。启动阵列时，将打开自动挂载开关的设备将被自动挂载。当以“stopping_svcs”事件停止阵列时，所有驱动器和 SMB/NFS 挂载将被卸载。
+> 如果您想共享驱动器，可以打开共享开关。远程 SMB 共享的默认值为“公共读/写访问”。在未分配设备设置中可以按用户配置 SMB 安全设置。NFS 共享默认导出，访问权限为读/写。NFS 设备导出可以在未分配设备设置中修改。您还可以配置在每个磁盘挂载时执行的通用脚本。要共享任一 UD 设备，需要在 UD 设置中启用共享，然后打开开关共享特定设备。SMB/NFS 远程共享和 ISO 挂载始终是共享的。
+> 输入挂载点后，点击 &lt;Enter&gt; 保存更改。
+>
+> 点击设备标识处的 <i style='color:black;font-weight:bold;' class="fa fa-plus-square"></i> 图标可以查看其他选项。磁盘未挂载时，可以更改设备的挂载点。磁盘标签也将改变。可以格式化磁盘，并运行 fsck 来检查磁盘。
+>
+> 必须在“设置->未分配设备”中正确设置 SMB 和 NFS 的安全设置，SMB 和 NFS 共享才能正常工作。
+>
+> 如果 SMB/NFS 远程共享的挂载按钮显示为灰色，则表示远程服务器没有响应 ping。远程共享服务器必须响应 ping，否则 UD 将认为它不在线。
+>
+> UD 有一个破坏模式，该模式允许删除磁盘分区和格式化磁盘。如果没有在 UD 设置中打开破坏模式，则无法格式化磁盘或删除分区。转到“设置->未分配设备”设置破坏模式。
+>
+> **如果要格式化磁盘:**
+>
+> + 必须启用破坏模式。
+> + 磁盘必须删除所有分区。卸载磁盘, 点击 <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> 图标，然后点击所有的 <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> 图标删除分区。
+> + 如果磁盘已被 Preclear，并且“格式化”按钮显示为灰色，点击 <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> 图标，然后点击 <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> 图标删除 Preclear 状态文件。
+>
+> **注意：UD 中的磁盘分区与阵列磁盘分区兼容，可以添加到阵列中。支持的文件系统格式为 XFS、XFS 加密、BTRFS 和 BTRFS 加密。**
+>
+> **加密磁盘:**
+>
+> + UD 格式化的任何已加密磁盘默认使用阵列密码/密码短语，并且可以将其合并到阵列中。或者，您可以在格式化时设置唯一的密码。如果您在格式化时在磁盘上设置了密码，则需要在 未分配设备->设置 中为该磁盘输入磁盘密码。
+> + 通过 未分配设备->设置 为磁盘设置磁盘密码，可以挂载任何未使用阵列密码/密码短语加密的磁盘。
+>
+> **未分配设备脚本:**
+>
+> UD 包含用于安装和卸载设备以及 SMB/NFS 挂载的脚本。这些脚本可以从命令行调用，也可以根据需要在您的脚本中使用。
+>
+> + '/usr/local/sbin/rc.unassigned mount auto' - 将挂载所有设置为自动挂载的设备和 SMB/NFS 共享。
+> + '/usr/local/sbin/rc.unassigned umount auto' - 将卸载所有设置为自动挂载的设备和 SMB/NFS 共享。
+> + '/usr/local/sbin/rc.unassigned umount all' - 卸载所有设备和 SMB/NFS 挂载以准备关闭阵列。
+> + '/usr/local/sbin/rc.unassigned mount /dev/sdX' - 挂载设备 sdX，其中“X”是设备指示符。
+> + '/usr/local/sbin/rc.unassigned umount /dev/sdX' - 卸载设备 sdX，其中“X”是设备指示符。您可以在 UD 脚本中使用此命令，以便在脚本运行完成后卸载设备。
+> + '/usr/local/sbin/rc.unassigned refresh /dev/sdX' - 在脚本的“ADD”末尾使用，更新“Running...”指示器。
+> + '/usr/local/sbin/rc.unassigned spindown devX' - 令磁盘休眠。devX 是 UD 页面中的设备名称。如果设备名称为“Dev 1”，则使用 dev1 休眠指定设备。SSD 不会休眠。
+>
+> 请小心使用 /dev/sdX 名称，因为它在重启后可能会发生变化。
+:end
+

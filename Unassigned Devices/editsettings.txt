@@ -1,0 +1,46 @@
+Default Script=默认脚本
+Edit Script=编辑脚本
+Enter Script File Name=输入脚本文件名
+Enter and Edit the Script that runs when a udev or operator event occurs=输入并编辑在发生 udev 或 operator 事件时运行的脚本
+Load the default script=加载默认脚本
+Remove Script File=删除脚本文件
+Run in background=在后台运行
+Save your changes and save to Script File=保存您的更改到脚本文件
+Save=保存
+Script content=脚本内容
+Turn on to Mount Device Read only=以只读方式挂载设备
+Turn on to Mount Device when Array is Started=启动阵列时自动挂载设备
+Turn on to Mount ISO File when Array is Started=启动阵列时自动挂载ISO文件
+Turn on to Mount Remote SMBNFS Share when Array is Started=启动阵列时自动挂载远程 SMB/NFS 共享
+Turn on to run Script File in the background=在后台运行脚本文件
+Turn on to Share Device with SMB andor NFS=使用 SMB/NFS 共享设备
+Turn on to Share Remote Mount with SMB andor NFS=使用 SMB/NFS 共享远程挂载
+Turn on to mark this Device as passed through to a VM or Docker=将此设备标记为已直通虚拟机或 Docker
+Unassigned Devices Settings=未分配设备设置
+Undo your changes since last Save=撤消自上次保存以来的更改
+;
+; Help
+;
+:ud_edit_script_device_settings_plug:
+> 选择该设备/挂载点的选项。更改将立即生效。您无需点击“保存”。
+:end
+
+:ud_edit_script_choose_name_plug:
+> 从文件选择下拉列表中选择脚本名称，或输入所需的脚本名称。
+:end
+
+:ud_edit_user_script_choose_name_plug:
+> 如果安装了 User Scripts 插件，则可以使未分配设备显示使用此设备的用户脚本的运行状态。这一字段仅当脚本文件存在时才会启用。
+:end
+<?endif;?>
+
+:ud_edit_script_run_background_plug:
+> 打开“在后台运行”使脚本作为后台任务运行。当从用户界面运行脚本时，这可以防止未分配设备插件的 UI 挂起。
+:end
+
+:ud_edit_script_buttons_plug:
+> 点击 **保存** 按钮提交当前更改。点击 **重置** 撤消所做的所有更改（保存之前）。点击 **完成** 退出此页面。
+>
+> 点击 **默认脚本** 按钮将使用默认脚本初始化编辑框。
+> 您仍然需要点击 **保存** 提交更改。
+:end
