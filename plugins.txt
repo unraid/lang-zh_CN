@@ -42,3 +42,7 @@ checking=
 Delete Plugin=
 Remove Plugin=
 Update Plugin=
+
+; New entries (2) - 2021-05-15
+Plugin File Install Errors=
+Plugin History=
