@@ -106,3 +106,6 @@ Virtual Machines=虚拟机
 %s ago=
 Only PNG images are allowed=Only PNG images are allowed!
 Temp=
+
+; New entries (1) - 2021-05-15
+SMART health-check failed=
