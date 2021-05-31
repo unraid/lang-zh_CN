@@ -650,3 +650,20 @@ There is a physical problem accessing your USB Flash boot device=
 Trial=
 Upgrade Key=
 
+
+; New entries (15) - 2021-05-31
+Hide Password=
+Invalid Username or Password=
+Max password length is 128 characters=
+Password confirmatin does not match=
+Password recovery=
+Please enable it=
+root requires a password=
+Set Password=
+Show Password=
+Successfully logged out=
+The Unraid OS webgui requires JavaScript=
+Too many invalid login attempts=
+Unable to set password=
+Username not changeable=
+Your browser has JavaScript disabled=
