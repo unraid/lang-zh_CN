@@ -17,3 +17,13 @@ Use a password up to 128 characters=最多使用 128 个字符的密码
 Use only lowercase letters, digits, underscores and dashes=仅使用小写字母、数字、下划线和短划线
 User %s has been deleted=用户 %s 已被删除
 User name=用户名
+
+; New entries (8) - 2021-05-31
+Click Add User to create a user for remote shares access=Click **Add User** to create a user for remote shares access
+Invalid Key=
+Management Access=
+No users are defined=
+Save=
+Shares Access=
+SSH authorized keys=
+Syntax of the key is incorrect=
