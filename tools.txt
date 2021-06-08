@@ -12,7 +12,7 @@ Array must be Started to change permissions=阵列必须**启动**才能更改�
 Array must be Stopped to change=阵列必须**停止**才能更改
 Array=阵列
 Author=作者
-Blacklisted USB Flash GUID=载入黑名单的 USB 闪存 GUID
+Blacklisted USB Flash GUID=USB 闪存的 GUID 在黑名单内
 Branch=分支
 By using this software, you agree with our=使用此软件，即表示您同意我们的
 Cache slots=缓存插槽
@@ -21,7 +21,7 @@ Check for Updates=检查更新
 click Install Key=点击<i>安装密钥</i>
 collecting diagnostic information this may take several minutes=正在收集诊断信息（这可能需要几分钟）
 Component=组件
-Credits=学分
+Credits=致谢
 Data slots=数据插槽
 Delete notification=删除通知
 Developer=开发人员
@@ -34,7 +34,7 @@ Error accessing your physical USB Flash boot device=访问物理 USB 闪存引�
 EULA=EULA
 Event=事件
 Expiration=到期时间
-Extend=延期
+Extend=延长
 extended=已延期
 Get Trial Key=获取试用版密钥
 Hardware Profile=硬件配置文件
@@ -55,11 +55,11 @@ Missing Language=缺少语言
 Network Settings=网络设置
 New Config=新配置
 New Permissions=新权限
-No notifications present=
+No notifications present=没有通知
 No personal information such as user names, passwords, or any other file contents is included in the hardware profile=硬件配置文件中不包括用户名、密码或任何其他文件内容等个人信息
 normal=正常
 Only ZIP files are allowed=仅允许 ZIP 文件
-Page Map=页面地图
+Page Map=页面地图导航
 Parity slots=奇偶校验插槽
 Please check your=请检查您的
 Please select a language before proceeding=请先选择一种语言，然后再继续
@@ -69,11 +69,11 @@ previous=上一个
 Privacy Policy=隐私政策
 Processes=进程
 Purchase Key=购买密钥
-Registered GUID=已注册 GUID
+Registered GUID=GUID 已注册
 Registered on=注册于
 Registered to=注册到
 registering USB Flash GUID=正在注册 USB 闪存 GUID
-Release has been withdrawn=发布已撤消
+Release has been withdrawn=发布已撤回
 Remove the installed language=移除安装的语言
 Replaceable=可更换
 Request Extension=请求扩展
@@ -89,27 +89,27 @@ System Devices=系统设备
 System Update Check=系统更新检查
 Text=文本
 Thank you for choosing Unraid OS=感谢您选择 Unraid OS
-Thank you for registering USB Flash GUID=感谢您注册 USB 闪存 GUID
+Thank you for registering USB Flash GUID=感谢您注册 USB 闪存的 GUID
 Thank you for trying Unraid OS=感谢您试用 Unraid OS
 The registered GUID does not match the USB Flash boot device GUID=注册的 GUID 与 USB 闪存引导设备 GUID 不匹配
-There is a physical problem accessing your USB Flash boot device=访问 USB 闪存引导设备时出现物理问题，
+There is a physical problem accessing your USB Flash boot device=访问 USB 闪存引导设备时出现物理问题
 this may take several minutes=这可能需要几分钟的时间
-This release has been withdrawn for use with Trial keys=此版本已撤消，以便使用 *试用* 密钥
-This server has %s attached storage device=此服务器有 %s 个附加存储设备
-This server has %s attached storage devices=此服务器有 %s 个附加存储设备
+This release has been withdrawn for use with Trial keys=使用**试用**密钥的当前版本已被撤回
+This server has %s attached storage device=此服务器有 **%s** 个附加存储设备
+This server has %s attached storage devices=此服务器有 **%s** 个附加存储设备
 This utility is used for troubleshooting purposes=此实用程序用于故障排除目的
 This will delete all notification files=这将删除所有通知文件
 This will update folder file permissions=这将更新文件夹/文件权限
 Time=时间
-To install a registration key, paste the key file URL in the box below and click Install Key=要安装注册密钥，请将密钥文件 URL 粘贴在下面的框中，然后单击**安装密钥**。
+To install a registration key, paste the key file URL in the box below and click Install Key=要安装注册密钥，请将密钥文件 URL 粘贴在下面的框中，然后单击**安装密钥**
 to select your language=选择您的语言
-To support more storage devices as your server grows, click Upgrade Key below=要随着服务器的增加而支持更多存储设备，单击下面的*升级密钥*
-Trial key expires on=***试用版***密钥过期日期为
+To support more storage devices as your server grows, click Upgrade Key below=要随着服务器的增加而支持更多存储设备，单击下面的**升级密钥**
+Trial key expires on=**试用**密钥过期日期为
 Trial=试用
-Update OS=更新操作系统
+Update OS=系统更新
 Upgrade Key=升级密钥
-uploading hardware information=正在上载硬件信息
-Uploading=正在上载
+uploading hardware information=正在上传硬件信息
+Uploading=正在上传
 Use this to develop language packs=使用它来开发语言包
 Use this to install official language packs=使用它来安装官方语言包
 User Shares=用户共享
@@ -117,12 +117,12 @@ User=用户
 Vars=变量
 warning=警告
 webGUI=webGUI
-When received, please paste the URL into the Key file URL box and=收到邮件后，请将 URL 链接粘贴到<i>密钥文件</i> URL框中，然后
+When received, please paste the URL into the Key file URL box and=收到邮件后，请将 URL 链接粘贴到<i>密钥文件</i> URL 框中，然后
 Wrong File Extension=文件扩展名错误
 You havent sent Limetech your hardware profile yet=您尚未向 Limetech 发送您的硬件配置文件
 Your hardware profile was last submitted on=您的硬件配置文件最后一次提交于
-Your Trial key has expired=您的*试用*密钥已过期
-Your Trial key requires an internet connection=您的*试用*密钥要求联网
+Your Trial key has expired=您的**试用**密钥已过期
+Your Trial key requires an internet connection=您的**试用**密钥要求联网
 
 ; Sysdevs text - added May 18, 2020
 A reboot is required to apply changes=需要重启才能应用更改
@@ -131,7 +131,7 @@ Bind selected to VFIO at Boot=在引导时对 VFIO 选择了绑定
 CPU Thread Pairings=CPU 线程配对
 Changes saved=更改已保存
 Function Level Reset FLR supported=支持功能级复位 (FLR)
-In use by Unraid=由 Unraid 使用
+In use by Unraid=Unraid 正在使用
 Kernel driver in use vfio-pci=使用的内核驱动程序 vfio-pci
 No changes=无更改
 PCI Devices and IOMMU Groups=PCI 设备和 IOMMU 组
@@ -140,9 +140,9 @@ SCSI Devices=SCSI 设备
 The below list doesnt not reflect the way IOMMU would naturally group devices=下面的列表没有反映 IOMMU 对设备进行自然分组的方式
 This controller is bound to vfio, connected USB devices are not visible=此控制器已绑定到 vfio，相连的 USB 设备不可见
 This controller is bound to vfio, connected drives are not visible=此控制器已绑定到 vfio，相连的驱动不可见
-To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=要查看硬件的自然 IOMMU 组，请执行以下操作, 转到 [虚拟机管理器] 页面，并将 **PCIe ACS 覆盖** 设置为 **已禁用**
+To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=要查看硬件的自然 IOMMU 组，请执行以下操作, 转到[虚拟机管理器]页面，并将 **PCIe ACS 覆盖**设置为**已禁用**
 USB Devices=USB 设备
-Your system has booted with the PCIe ACS Override setting enabled=您的系统已启动且启用了PCIe ACS 覆盖设置
+Your system has booted with the PCIe ACS Override setting enabled=您的系统已启动且启用了 PCIe ACS 覆盖设置
 
 :diagnostics_1_plug:
 此实用程序用于故障排除。它将收集所有系统信息和配置文件，并将这些文件打包到一个可以保存在本地的 ZIP 文件。
@@ -154,7 +154,7 @@ Your system has booted with the PCIe ACS Override setting enabled=您的系统�
 
 :diagnostics_2_plug:
 + */config*
-<br>复制所有的 *\*.cfg 文件*、*go* 文件和 *super.dat* 文件。这些都是是配置文件。
+<br>复制所有的 *\*.cfg* 文件、*go* 文件和 *super.dat* 文件。这些都是是配置文件。
 + */config/shares*
 <br>复制所有的 *\*.cfg* 文件。这些是用户共享设置文件。
 + *Syslog file(s)*
@@ -162,7 +162,7 @@ Your system has booted with the PCIe ACS Override setting enabled=您的系统�
 + *System*
 <br>保存以下命令的输出：
 <br>lsscsi、lspci、lsusb、free、lsof、ps、ethtool 和 ifconfig。
-<br>显示IOMMU组。
+<br>显示 IOMMU 组。
 <br>显示命令行参数（例如 PCIe ACS 覆盖、PCI 存根等）。
 <br>保存系统变量。
 + *SMART reports*
@@ -175,12 +175,12 @@ Your system has booted with the PCIe ACS Override setting enabled=您的系统�
 单击**下载**将启动采集过程，然后指示您的浏览器将 zip 文件保存到本地。
 
 *不包括任何个人信息，如用户名、密码或上面未指定的任何其他文件内容
-通过 UnRAID OS；但是，您的服务器名称、IP 地址和用户共享名称* **将** *包括在内。*
+通过 UnRAID OS；但是，您的服务器名称、IP 地址和用户共享名称**将**包括在内。*
 
 *请注意第三方插件**可能**也许不会将个人信息存储在插件特定的配置文件和/或
 系统日志输出中。*
 
-在公共论坛上发布诊断文件时*使用* **匿名诊断** *。在与 Limetech 的私人通信中，建议取消选中此设置，并捕获所有未更改的信息。*
+在公共论坛上发布诊断文件时*使用* **匿名诊断**。*在与 Limetech 的私人通信中，建议取消选中此设置，并捕获所有未更改的信息。*
 :end
 
 :newconfig_plug:
@@ -190,10 +190,10 @@ Your system has booted with the PCIe ACS Override setting enabled=您的系统�
 当您添加或删除了多个驱动器并且希望基于新配置重建奇偶校验时，
 此功能很有用。
 
-重置阵列***之后***，使用“ *'保留当前分配'* 选项填充所需的磁盘插槽。默认情况下，**不**填充磁盘插槽。
+重置阵列***之后***，使用 *'保留当前分配'* 选项填充所需的磁盘插槽。默认情况下，**不**填充磁盘插槽。
 
-**请勿使用此实用程序，因为它会重建故障驱动器**- 它将产生相反的效果，
-将***无法***重建现有的故障驱动器 - 您已受到警告！
+**请勿使用此实用程序，因为它会重建故障驱动器** —— 它将产生相反的效果，
+将***无法***重建现有的故障驱动器 —— 您已受到警告！
 :end
 
 :newperms_1_plug:
@@ -228,8 +228,8 @@ drwxrwxrwx
 :end
 
 :registration_1_plug:
-在您购买注册密钥或安装免费的 30 天*试用*密钥之前，您的服务器将无法可用。
-*试用*密钥提供 *Pro* 注册密钥的所有功能。
+在您购买注册密钥或安装免费的 30 天**试用**密钥之前，您的服务器将无法可用。
+**试用**密钥提供 **Pro** 注册密钥的所有功能。
 
 注册密钥绑定到您的 USB 闪存引导设备序列号 (GUID)。请使用容量至少
 为 1GB 的优质品牌设备。
@@ -243,21 +243,21 @@ drwxrwxrwx
 :end
 
 :registration_3_plug:
-您的*试用*密钥包括 *Pro* 注册密钥的所有功能和设备支持。
+您的**试用**密钥包括 **Pro** 注册密钥的所有功能和设备支持。
 
-在您的*试用*密钥到期后，您的服务器**仍能正常工作**，直到您下次**停止**阵列为止。
+在您的**试用**密钥到期后，您的服务器**仍能正常工作**，直到您下次**停止**阵列为止。
 
-此时，您可以购买注册密钥，也可以请求延长*试用*。
+此时，您可以购买注册密钥，也可以请求延长**试用**。
 :end
 
 :registration_4_plug:
-要继续使用 UnRAID OS，您可以购买注册密钥。也可以申请*试用*延期密钥。
+要继续使用 UnRAID OS，您可以购买注册密钥。也可以申请**试用**延期密钥。
 
-大多数*试用*延期请求都会立即处理，但请给我们最多一个工作日接收您的*试用*延期密钥。
+大多数**试用**延期请求都会立即处理，但请给我们最多一个工作日接收您的**试用**延期密钥。
 :end
 
 :registration_5_plug:
-无法在现有的 UnRAID OS 安装中使用*试用*密钥。
+无法在现有的 UnRAID OS 安装中使用**试用**密钥。
 
 您可以购买与此 USB 闪存设备对应的注册密钥以继续使用此安装。
 
@@ -270,11 +270,11 @@ drwxrwxrwx
 
 如果您没有注册密钥文件的备份副本，请[联系支持人员](https://lime-technology.com/contact)。
 
-如果这是*试用*安装，您可以购买注册密钥。
+如果这是**试用**安装，您可以购买注册密钥。
 :end
 
 :registration_7_plug:
-*试用*安装仅适用于最初注册的 USB 闪存设备。
+**试用**安装仅适用于最初注册的 USB 闪存设备。
 
 若要在此 USB 闪存设备上继续使用此安装，您可以购买注册密钥。
 :end
@@ -288,34 +288,34 @@ drwxrwxrwx
 随时更换。此后，可以在一年之后再次更换替换密钥。如果您需要更快获得
 替换密钥，请[联系支持人员](https://lime-technology.com/contact)。
 
-**注意：**替换注册密钥会导致以前的 USB 闪存 GUID 被永久*列入黑名单*。
+**注意：**替换注册密钥会导致以前的 USB 闪存 GUID 被永久**列入黑名单**。
 :end
 
 :registration_9_plug:
-此 USB 闪存引导设备已被*列入黑名单*。这可能是由于您的注册密钥传输到
+此 USB 闪存引导设备已被**列入黑名单**。这可能是由于您的注册密钥传输到
 替换的USB闪存设备，并且您当前是从旧的 USB 闪存设备启动的。
 
 如果没有序列号，或者如果我们发现序列号不唯一（这种情况在 USB 读卡器中很常见），
-USB 闪存设备也可能被*列入黑名单*。
+USB 闪存设备也可能被**列入黑名单**。
 
 如需了解更多信息，请[联系支持人员](https://lime-technology.com/contact)。
 :end
 
 ; New entries (10) - 2021-05-08
-Array slots=
-Delete all notifications=
-Downloading=
-Install Language=
-please configure=
-Pool slots=
-Uploaded=
-VFIO-PCI Log=
-View VFIO-PCI Log=
-PCI Devices No IOMMU Groups Available=PCI Devices (No IOMMU Groups Available)
+Array slots=阵列插槽
+Delete all notifications=删除所有通知
+Downloading=下载中
+Install Language=安装语言
+please configure=请配置
+Pool slots=池插槽
+Uploaded=已上传
+VFIO-PCI Log=VFIO-PCI 日志
+View VFIO-PCI Log=查看 VFIO-PCI 日志
+PCI Devices No IOMMU Groups Available=PCI 设备 (没有可用的 IOMMU 组)
 
 ; New entries (2) - 2021-05-10
-Next=
-Stable=
+Next=预览版
+Stable=稳定版
 
 ; New entries (1) - 2021-05-20
-Beta=
+Beta=测试版
