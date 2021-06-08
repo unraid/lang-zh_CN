@@ -638,32 +638,32 @@ You may purchase a license key corresponding to this USB Flash device to continu
 Your flash drive is corrupted or offline=您的闪存驱动器已损坏或离线
 
 ; New entries (11) - 2021-05-09
-Blacklisted USB Flash GUID=
-complete=
-Copying=
-object=
-Password=
-Purchase Key=
-Subject=
-Thank you for choosing Unraid OS=
-There is a physical problem accessing your USB Flash boot device=
-Trial=
-Upgrade Key=
+Blacklisted USB Flash GUID=USB 闪存的 GUID 在黑名单中
+complete=完成
+Copying=拷贝中
+object=物品
+Password=密码
+Purchase Key=购买密钥
+Subject=主题
+Thank you for choosing Unraid OS=感谢您选择 Unraid 操作系统
+There is a physical problem accessing your USB Flash boot device=访问 USB 闪存引导设备时出现物理故障
+Trial=试用
+Upgrade Key=升级密钥
 
 
 ; New entries (15) - 2021-05-31
-Hide Password=
-Invalid Username or Password=
-Max password length is 128 characters=
-Password confirmatin does not match=
-Password recovery=
-Please enable it=
-root requires a password=
-Set Password=
-Show Password=
-Successfully logged out=
-The Unraid OS webgui requires JavaScript=
-Too many invalid login attempts=
-Unable to set password=
-Username not changeable=
-Your browser has JavaScript disabled=
+Hide Password=隐藏密码
+Invalid Username or Password=用户名或密码错误
+Max password length is 128 characters=密码的最大长度为 128 个字符
+Password confirmatin does not match=密码不匹配
+Password recovery=找回密码
+Please enable it=请启用它
+root requires a password=root 用户需要设置一个密码
+Set Password=设置密码
+Show Password=显示密码
+Successfully logged out=已注销登陆
+The Unraid OS webgui requires JavaScript=Unraid OS 的 web 图形界面需要使用 JavaScript
+Too many invalid login attempts=登录失败次数过多
+Unable to set password=无法设置密码
+Username not changeable=用户名不可更改
+Your browser has JavaScript disabled=您的浏览器禁用了 JavaScript
