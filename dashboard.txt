@@ -1,4 +1,4 @@
-%s used of %s %s %%=已使用 %s/%s %s %%
+%s used of %s %s %%=已使用 %s/%s，%s %%
 ---=---
 Active tunnels=活动隧道
 Activity=活动
@@ -11,7 +11,7 @@ BIOS dated=BIOS 日期
 Click to toggle details=单击以切换详细信息
 Completed=已完成
 Counters info=计数器信息
-Current operation %s on %s=当前操作 %s 于 **%s**
+Current operation %s on %s=当前操作 **%s** 于 **%s**
 custom image=自定义映像
 Data is invalid=数据无效
 default image=默认映像
@@ -70,14 +70,14 @@ Parity disks not present=不存在奇偶校验磁盘
 Parity has not been checked yet=目前未进行奇偶校验
 Parity is degraded=奇偶校验已降级
 Power=电源
-Put system to sleep=将系统置于睡眠状态
-Reboot the system=重启系统
+Put system to sleep=系统睡眠
+Reboot the system=系统重启
 Receive counters=接收计数器
 Received packets=已接收数据包
 Runtime left=剩余运行时间
 Scheduled parity check is disabled=计划的奇偶校验被禁用
 Select Case Model=选择机箱型号
-Share count %s with %s cache only and %s encrypted=共享总计 %s 个，%s 个仅缓存，%s 个已加密
+Share count %s with %s cache only and %s encrypted=共享总计 **%s** 个，**%s** 个仅缓存，**%s** 个已加密
 Show details=显示详细信息
 Show Information=显示信息
 Shutdown the system=关闭系统
@@ -87,36 +87,36 @@ sn=s/n
 Start the array=启动阵列
 Started only=仅启动
 Stop the array=停止阵列
-This will put the system to sleep=系统将进入睡眠状态
-This will reboot the system=系统将被重启
-This will shutdown the system=系统将被关闭
-This will start the array=磁盘阵列将被启动
-This will stop the array=磁盘阵列将被停止
+This will put the system to sleep=系统将睡眠
+This will reboot the system=系统将重启
+This will shutdown the system=系统将关闭
+This will start the array=磁盘阵列将启动
+This will stop the array=磁盘阵列将停止
 Transmit counters=传输计数器
 Transmitted packets=已传输的数据包
 UPS Load=UPS 负载
 UPS status=UPS 状态
 Usable size=可用大小
-User count %s with %s unprotected=用户总计 %s 个，其中 %s 个未受保护
+User count %s with %s unprotected=用户总计 **%s** 个，其中 **%s** 个未受保护
 utilization warning=利用率警告
 View Running Processes=查看正在运行的进程
 Virtual Machines=虚拟机
 
 ; New entries (3) - 2021-05-08
-%s ago=
-Only PNG images are allowed=Only PNG images are allowed!
-Temp=
+%s ago= %s 以前
+Only PNG images are allowed=只允许使用 PNG 图像
+Temp=温度
 
 ; New entries (1) - 2021-05-15
-SMART health-check failed=
+SMART health-check failed=SMART 健康检查失败
 
 ; New entries (2) - 2021-05-20
-Click to toggle CPU chart=
-Network traffic=
+Click to toggle CPU chart=单击以切换 CPU 视图
+Network traffic=网络流量
 
 ; New entries (5) - 2021-05-31
-10 s=
-30 s=
-1 m=
-2 m=
-Select time frame=
+10 s=10 秒
+30 s=30 秒
+1 m=1 分
+2 m=2 分
+Select time frame=选择时间范围
