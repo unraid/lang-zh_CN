@@ -19,11 +19,11 @@ User %s has been deleted=用户 %s 已被删除
 User name=用户名
 
 ; New entries (8) - 2021-05-31
-Click Add User to create a user for remote shares access=Click **Add User** to create a user for remote shares access
-Invalid Key=
-Management Access=
-No users are defined=
-Save=
-Shares Access=
-SSH authorized keys=
-Syntax of the key is incorrect=
+Click Add User to create a user for remote shares access=点击**添加用户**以创建一个用户用于远程共享访问
+Invalid Key=秘钥无效
+Management Access=管理权限
+No users are defined=没有定义用户
+Save=保存
+Shares Access=共享访问
+SSH authorized keys=SSH 认证密钥
+Syntax of the key is incorrect=密钥格式错误
