@@ -57,8 +57,8 @@ Missing encryption key=缺少加密密钥
 Opening encrypted volumes=正在打开加密卷
 
 ; New entries (5) - 2021-05-08
-Container Path=
-Container Port=
-Container Variable=
-Container Label=
-Container Device=
+Container Path=容器路径
+Container Port=容器端口
+Container Variable=容器变量
+Container Label=容器标签
+Container Device=容器设备
