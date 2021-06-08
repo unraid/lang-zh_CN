@@ -130,7 +130,7 @@ WebUI=WebUI
 Writable=可写
 
 ; New entries (4) - 2021-05-08
-Drivers=
-Reset sorting=
-Start Container After Install=
-Total size=
+Drivers=驱动
+Reset sorting=重置排序
+Start Container After Install=安装完成后启动容器
+Total size=总大小
