@@ -701,3 +701,7 @@ Your Unraid Server is reachable from the internet=
 ; New entries (2) - 2021-05-31
 Set password=
 User root=User 'root'
+
+; New entries (2) - 2021-06-12
+Manage password=
+Restore default image=
