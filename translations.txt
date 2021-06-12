@@ -667,3 +667,6 @@ Too many invalid login attempts=登录失败次数过多
 Unable to set password=无法设置密码
 Username not changeable=用户名不可更改
 Your browser has JavaScript disabled=您的浏览器禁用了 JavaScript
+
+; New entries (1) - 2021-06-12
+Docs=
