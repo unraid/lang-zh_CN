@@ -675,3 +675,9 @@ Docs=
 
 ; New entries (1) - 2021-06-12
 Username=
+
+; My Servers Wan IP Check - 2021-06-30
+Remark your WAN IPv4 is %s=Remark: your WAN IPv4 is **%s**
+Remark Unraids WAN IPv4 %1s does not match your clients WAN IPv4 %2s=Remark: Unraid's WAN IPv4 **%1s** does not match your client's WAN IPv4 **%2s**
+This may indicate a complex network that will not work with this Remote Access solution=
+Ignore this message if you are currently connected via Remote Access or VPN=
