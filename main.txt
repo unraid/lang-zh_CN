@@ -313,3 +313,8 @@ This Unraid OS release has been withdrawn and may no longer be used Please=此 U
 This will ERASE ALL device content=这将**擦除所有设备**的内容
 This will ERASE content of ALL devices in the pool=这将**擦除**池中**所有设备**的内容
 To confirm your action type %s=确认您的操作类型为：%s
+
+; New entries (3) - 2021-07-11
+enter disk index and device name as applicable to your controller=
+next device=
+previous device=
