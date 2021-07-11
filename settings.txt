@@ -713,3 +713,6 @@ DNS Propagation is PENDING=
 DNS Rebinding Protection is ENABLED=
 Manage=
 Not present=
+
+; New entries (1) - 2021-07-11
+Unraidnet account status=Unraid.net account status
