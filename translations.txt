@@ -686,3 +686,11 @@ Browser cookie support required for Unraid OS webgui=
 Password confirmation does not match=密码不匹配
 Please also ensure you have cookies enabled=
 Please set a password for the root user account=
+
+; New entries (6) - 2021-07-11
+Copied key url=
+Copy Key URL=
+Get quick real-time info on the status of your servers such as storage, container, and VM usage=
+Please copy the Key URL before closing this window=
+To manually install the key paste the key file url into the Key file URL field on the webGUI Registration page and then click Install Key=
+Unable to copy=
