@@ -657,7 +657,6 @@ Upgrade Key=升级密钥
 Hide Password=隐藏密码
 Invalid Username or Password=用户名或密码错误
 Max password length is 128 characters=密码的最大长度为 128 个字符
-Password confirmatin does not match=密码不匹配
 Password recovery=找回密码
 Please enable it=请启用它
 root requires a password=root 用户需要设置一个密码
@@ -681,3 +680,9 @@ Remark your WAN IPv4 is %s=Remark: your WAN IPv4 is **%s**
 Remark Unraids WAN IPv4 %1s does not match your clients WAN IPv4 %2s=Remark: Unraid's WAN IPv4 **%1s** does not match your client's WAN IPv4 **%2s**
 This may indicate a complex network that will not work with this Remote Access solution=
 Ignore this message if you are currently connected via Remote Access or VPN=
+
+; New entries (4) - 2021-07-11
+Browser cookie support required for Unraid OS webgui=
+Password confirmation does not match=密码不匹配
+Please also ensure you have cookies enabled=
+Please set a password for the root user account=
