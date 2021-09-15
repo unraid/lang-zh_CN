@@ -394,15 +394,6 @@ This will stop the array=这将停止阵列
 year=年
 years=年
 month=月
-months=月
-day=天
-days=天
-hour=小时
-hours=小时
-minute=分钟
-minutes=分钟
-second=秒
-seconds=秒
 ago=前
 
 ; New entries (178) - 2021-03-14
