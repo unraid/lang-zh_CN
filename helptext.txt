@@ -1983,13 +1983,7 @@ Docker Registry 上应用程序的存储库。格式为作者名称/应用名称
 链接到项目页面（例如：www.plex.tv ）
 :end
 
-:docker_client_donation_text_help:
-在“应用”标签中的“捐赠链接”上显示的文字
-:end
 
-:docker_client_donation_link_help:
-指向捐赠页面的链接。如果使用捐赠，必须设置映像和链接
-:end
 
 :docker_client_hub_url_help:
 容器在Docker Hub上的存储库位置的路径。
@@ -2215,4 +2209,30 @@ Normally this isn't a problem since a WireGuard tunnel is automatically re-estab
 A keepalive timer will hold the connection open, for most situations a timer value of 20 seconds is suitable.
 
 Note that for mobile devices this will use more data and drain your battery faster.
+:end
+
+; New entries (5) - 2021-09-18
+
+:info_share_assignment_help:
+The selected pool is available for user shares.
+:end
+
+:docker_timeout_help:
+The time in seconds to allow a container to gracefully stop before forcing it to stop
+:end
+
+:docker_vdisk_type_help:
+Select where to keep the Docker persistent state.
+
+This can be an image file with a specific size or a dedicated folder.
+:end
+
+:docker_vdisk_directory_help:
+You must specify a folder for Docker. The system will automatically create this folder when the Docker service is first started.
+
+It is recommended to create this folder under a share which resides on the Cache pool (setting: cache=Only). For best performance SSD devices are preferred.
+:end
+
+:docker_client_additional_requirements_help:
+Any additional requirements the container has.  Supports basic HTML mark-up.
 :end
