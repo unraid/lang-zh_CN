@@ -2182,7 +2182,7 @@ The <i class='fa fa-fw fa-key'></i> icon is used to show or hide the private, pu
 Use this field to set a name for this peer connection and make it easily recognizable. The same name will appear in the configuration of the peer at the opposite side.
 :end
 
-: wg_peer_preshared_key_help:
+:wg_peer_preshared_key_help:
 For added security a preshared key can be used. Use the **Generate Key** button to automatically create a unique preshared key.<br>
 This key is the same at both server and peer side and is added to the peer configuration as well.
 :end
