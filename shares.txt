@@ -60,6 +60,5 @@ Time Machine volume size limit=时间机器卷大小限制
 Unknown encryption state=未知加密状态
 Use cache pool for new filesdirectories=(对新文件/目录)使用缓存池
 User Shares=用户共享
-Volume dbpath=卷数据库路径
 Write=写入
 You cannot use the following within share names=您不能在共享名称中使用以下内容

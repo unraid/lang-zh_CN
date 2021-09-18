@@ -1,5 +1,4 @@
 %s used of %s %s %%=已使用 %s/%s，%s %%
----=---
 Active tunnels=活动隧道
 Activity=活动
 ago=以前
@@ -26,7 +25,6 @@ FAN=风扇
 Finding %s error=已发现: **%s** 个错误
 Finding %s errors=已发现: **%s** 个错误
 General info=常规信息
-Go to cache settings=转到缓存设置
 Go to CPU pinning settings=转到 CPU 绑定设置
 Go to disk settings=转到磁盘设置
 Go to Docker settings=转到 Docker 设置

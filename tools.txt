@@ -103,7 +103,6 @@ This will update folder file permissions=这将更新文件夹/文件权限
 Time=时间
 To install a registration key, paste the key file URL in the box below and click Install Key=要安装注册密钥，请将密钥文件 URL 粘贴在下面的框中，然后单击**安装密钥**
 to select your language=选择您的语言
-To support more storage devices as your server grows, click Upgrade Key below=要随着服务器的增加而支持更多存储设备，单击下面的**升级密钥**
 Trial key expires on=**试用**密钥过期日期为
 Trial=试用
 Update OS=系统更新
