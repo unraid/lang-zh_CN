@@ -193,6 +193,8 @@ Themes=主题
 Utilities=实用程序
 Private Apps=私人应用
 Uncategorized=未分类
+Crypto Currency=加密货币
+Repositories=代码仓库
 
 ; Categories displayed within a popup or on the card.  Where an entry exists after the "=" it is not translated, but rather how it should look
 GameServers=游戏服务器
