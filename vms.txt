@@ -134,3 +134,9 @@ XML View=XML 视图
 ; New entries (2) - 2021-09-18
 Pop-up Blocker is enabled Please add this site to your exception list=Pop-up Blocker is enabled! Please add this site to your exception list
 Verifying=
+
+; New entries (4) - 2021-11-06
+ETA=
+ISO storage path doesnt exist, please create the user share or empty folder first=ISO storage path doesn't exist, please create the user share (or empty folder) first
+OVMF TPM=
+Specify a ISO storage path first=

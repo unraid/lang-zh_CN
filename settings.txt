@@ -711,3 +711,10 @@ FTP Server=
 ipvlan=
 macvlan=
 Your local IP address %s has been updated for unraidnet=Your local IP address %s has been updated for unraid.net
+
+; New entries (5) - 2021-11-06
+Certificate will not renew unless you are signed in to Unraidnet=Certificate will not renew unless you are signed in to Unraid.net
+No change to report=
+Sign In to Unraidnet required=Sign In to Unraid.net required
+VM Settings A reboot is required to apply changes=VM Settings: A reboot is required to apply changes
+You must be signed in to Unraidnet in order to generate an Unraidnet SSL certificate=You must be signed in to Unraid.net in order to generate an Unraid.net SSL certificate

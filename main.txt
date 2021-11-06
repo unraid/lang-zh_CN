@@ -309,3 +309,6 @@ To confirm your action type %s=确认您的操作类型为：%s
 enter disk index and device name as applicable to your controller=
 next device=
 previous device=
+
+; New entries (1) - 2021-11-06
+If this is a new array, move the largest disk into the parity slot=If this is a new array, move the largest disk into the *parity* slot

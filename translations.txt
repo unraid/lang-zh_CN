@@ -681,3 +681,11 @@ Still working our magic=
 Switch Language=
 To manually install the key paste the key file url into the Key file URL field on the webGUI Tools > Registration page and then click Install Key=
 unavailable no parity-check entries logged=unavailable (no parity-check entries logged)
+
+; New entries (6) - 2021-11-06
+Checking Wan IPs=
+Create Unraidnet Account=Create Unraid.net Account
+DNS issue, unable to resolve mothershipunraidnet=DNS issue, unable to resolve mothership.unraid.net
+Sign In before your Unraidnet SSL certificate expires=Sign In before your Unraid.net SSL certificate expires
+This will start your free 30-day Trial=
+Unraidnet re-authentication required=Unraid.net re-authentication required
