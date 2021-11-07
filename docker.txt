@@ -136,3 +136,6 @@ Crypto Currency=
 ; New entries (2) - 2021-09-18
 Additional Requirements=
 None Listed=
+
+; New entries (1) - 2021-11-07
+Read Me First=
