@@ -161,7 +161,8 @@ Your system has booted with the PCIe ACS Override setting enabled=您的系统�
 随后，此文件可以包含在您与 Limetech 或 UnRAID 论坛的通信中。
 
 这有助于其他人快速获取您系统的内部信息，并为您的问题提供更好的支持。将收集以下信息
-和配置文件：:end
+和配置文件:
+:end
 
 :diagnostics_2_plug:
 + */config*
@@ -191,7 +192,8 @@ Your system has booted with the PCIe ACS Override setting enabled=您的系统�
 *请注意第三方插件**可能**也许不会将个人信息存储在插件特定的配置文件和/或
 系统日志输出中。*
 
-在公共论坛上发布诊断文件时*使用* **匿名诊断**。*在与 Limetech 的私人通信中，建议取消选中此设置，并捕获所有未更改的信息。*:end
+在公共论坛上发布诊断文件时*使用* **匿名诊断**。*在与 Limetech 的私人通信中，建议取消选中此设置，并捕获所有未更改的信息。*
+:end
 
 :newconfig_plug:
 该实用程序用于重置阵列磁盘配置，以使所有磁盘都显示为“新”磁盘，
@@ -203,7 +205,8 @@ Your system has booted with the PCIe ACS Override setting enabled=您的系统�
 重置阵列***之后***，使用 *'保留当前分配'* 选项填充所需的磁盘插槽。默认情况下，**不**填充磁盘插槽。
 
 **请勿使用此实用程序，因为它会重建故障驱动器** —— 它将产生相反的效果，
-将***无法***重建现有的故障驱动器 —— 您已受到警告！:end
+将***无法***重建现有的故障驱动器 —— 您已受到警告！
+:end
 
 :newperms_1_plug:
 从 5.0 之前的 Unraid 服务器版本升级到 Unraid v5 或更高版本之后，必须执行这项一次性操作。
@@ -262,7 +265,8 @@ drwxrwxrwx
 :registration_4_plug:
 要继续使用 UnRAID OS，您可以购买注册密钥。也可以申请**试用**延期密钥。
 
-大多数**试用**延期请求都会立即处理，但请给我们最多一个工作日接收您的**试用**延期密钥。:end
+大多数**试用**延期请求都会立即处理，但请给我们最多一个工作日接收您的**试用**延期密钥。
+:end
 
 :registration_5_plug:
 无法在现有的 UnRAID OS 安装中使用**试用**密钥。
@@ -284,7 +288,8 @@ drwxrwxrwx
 :registration_7_plug:
 **试用**安装仅适用于最初注册的 USB 闪存设备。
 
-若要在此 USB 闪存设备上继续使用此安装，您可以购买注册密钥。:end
+若要在此 USB 闪存设备上继续使用此安装，您可以购买注册密钥。
+:end
 
 :registration_8_plug:
 注册密钥文件与 USB 闪存引导设备不相符。
