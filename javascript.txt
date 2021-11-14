@@ -24,6 +24,7 @@ Ok=确定
 Pause=暂停
 Proceed=继续
 Project Page=项目页面
+Read Me First=
 Remove container=移除容器
 Remove definition=移除定义
 Remove image=移除映像
@@ -56,12 +57,11 @@ Autostart disabled=禁用自动启动
 Missing encryption key=缺少加密密钥
 Opening encrypted volumes=正在打开加密卷
 
-; New entries (5) - 2021-05-08
+; docker variables
 Container Path=容器路径
 Container Port=容器端口
 Container Variable=容器变量
 Container Label=容器标签
 Container Device=容器设备
 
-; New entries (1) - 2021-11-14
-Read Me First=
+; Note: November 14, 2021 - 1 missing translations

@@ -10,8 +10,10 @@ Are you sure=是否确定
 Array has been Reset=阵列已**重置**
 Array must be Started to change permissions=阵列必须**启动**才能更改权限
 Array must be Stopped to change=阵列必须**停止**才能更改
+Array slots=阵列插槽
 Array=阵列
 Author=作者
+Beta=测试版
 Blacklisted USB Flash GUID=USB 闪存的 GUID 在黑名单内
 Branch=分支
 By using this software, you agree with our=使用此软件，即表示您同意我们的
@@ -23,11 +25,13 @@ collecting diagnostic information this may take several minutes=正在收集诊�
 Component=组件
 Credits=致谢
 Data slots=数据插槽
+Delete all notifications=删除所有通知
 Delete notification=删除通知
 Developer=开发人员
 Diagnostics=诊断
 Disks=磁盘
 Display Settings=显示设置
+Downloading=下载中
 End-User License Agreement=最终用户许可协议
 Enter URL of language pack XML file=输入语言包 XML 文件的 URL 地址
 Error accessing your physical USB Flash boot device=访问物理 USB 闪存引导设备时出错
@@ -42,6 +46,7 @@ Hide Details=隐藏详细信息
 If you do not receive an email, please check your spam or junk-email folder=如果您没有收到电子邮件，请检查您的垃圾邮件或垃圾邮件文件夹
 Importance=重要性
 Important=重要
+Install Language=安装语言
 Install=安装
 Installed languages=已安装的语言
 Invalid Trial Installation=无效的*试用*安装
@@ -55,6 +60,7 @@ Missing Language=缺少语言
 Network Settings=网络设置
 New Config=新配置
 New Permissions=新权限
+Next=预览版
 No notifications present=没有通知
 No personal information such as user names, passwords, or any other file contents is included in the hardware profile=硬件配置文件中不包括用户名、密码或任何其他文件内容等个人信息
 normal=正常
@@ -62,8 +68,10 @@ Only ZIP files are allowed=仅允许 ZIP 文件
 Page Map=页面地图导航
 Parity slots=奇偶校验插槽
 Please check your=请检查您的
+please configure=请配置
 Please select a language before proceeding=请先选择一种语言，然后再继续
 Please=请
+Pool slots=池插槽
 Preserve current assignments=保留当前分配
 previous=上一个
 Privacy Policy=隐私政策
@@ -84,6 +92,7 @@ Select language file=选择语言文件
 Select language=选择语言
 Show Details=显示详细信息
 slots=插槽
+Stable=稳定版
 Subject=主题
 System Devices=系统设备
 System Update Check=系统更新检查
@@ -107,6 +116,7 @@ Trial key expires on=**试用**密钥过期日期为
 Trial=试用
 Update OS=系统更新
 Upgrade Key=升级密钥
+Uploaded=已上传
 uploading hardware information=正在上传硬件信息
 Uploading=正在上传
 Use this to develop language packs=使用它来开发语言包
@@ -114,6 +124,8 @@ Use this to install official language packs=使用它来安装官方语言包
 User Shares=用户共享
 User=用户
 Vars=变量
+VFIO-PCI Log=VFIO-PCI 日志
+View VFIO-PCI Log=查看 VFIO-PCI 日志
 warning=警告
 webGUI=webGUI
 When received, please paste the URL into the Key file URL box and=收到邮件后，请将 URL 链接粘贴到<i>密钥文件</i> URL 框中，然后
@@ -134,6 +146,7 @@ In use by Unraid=Unraid 正在使用
 Kernel driver in use vfio-pci=使用的内核驱动程序 vfio-pci
 No changes=无更改
 PCI Devices and IOMMU Groups=PCI 设备和 IOMMU 组
+PCI Devices No IOMMU Groups Available=PCI 设备 (没有可用的 IOMMU 组)
 Reboot to take effect=重启以生效
 SCSI Devices=SCSI 设备
 The below list doesnt not reflect the way IOMMU would naturally group devices=下面的列表没有反映 IOMMU 对设备进行自然分组的方式
@@ -149,6 +162,7 @@ Your system has booted with the PCIe ACS Override setting enabled=您的系统�
 
 这有助于其他人快速获取您系统的内部信息，并为您的问题提供更好的支持。将收集以下信息
 和配置文件：
+
 :end
 
 :diagnostics_2_plug:
@@ -180,6 +194,9 @@ Your system has booted with the PCIe ACS Override setting enabled=您的系统�
 系统日志输出中。*
 
 在公共论坛上发布诊断文件时*使用* **匿名诊断**。*在与 Limetech 的私人通信中，建议取消选中此设置，并捕获所有未更改的信息。*
+
+
+
 :end
 
 :newconfig_plug:
@@ -193,6 +210,9 @@ Your system has booted with the PCIe ACS Override setting enabled=您的系统�
 
 **请勿使用此实用程序，因为它会重建故障驱动器** —— 它将产生相反的效果，
 将***无法***重建现有的故障驱动器 —— 您已受到警告！
+
+
+
 :end
 
 :newperms_1_plug:
@@ -205,6 +225,8 @@ Your system has booted with the PCIe ACS Override setting enabled=您的系统�
 该实用程序将启动一个后台进程，该进程将访问每个数据磁盘和缓存磁盘，
 选择用户共享并将文件和目录所有权更改为*无人/用户*（即 uid / gid 更改为 99/100），
 并按以下方式设置权限：
+
+
 :end
 
 :newperms_2_plug:
@@ -216,6 +238,8 @@ drwxrwxrwx
 
 对于只读文件：
 -r--r--r--
+
+
 :end
 
 :newperms_3_plug:
@@ -224,6 +248,8 @@ drwxrwxrwx
 在完成之前关闭窗口将终止后台进程 - 因此请不要这样做。如果您有许多文件，则此进程可能耗时较长。
 
 请注意，如果允许包含您的应用数据共享，则此工具可能会对 Docker 容器产生不利影响。
+
+
 :end
 
 :registration_1_plug:
@@ -234,6 +260,8 @@ drwxrwxrwx
 为 1GB 的优质品牌设备。
 
 注意：通常**不**支持 USB 存储卡读卡器，因为大多数读卡器不提供唯一的序列号。
+
+
 :end
 
 :registration_2_plug:
@@ -247,12 +275,15 @@ drwxrwxrwx
 在您的**试用**密钥到期后，您的服务器**仍能正常工作**，直到您下次**停止**阵列为止。
 
 此时，您可以购买注册密钥，也可以请求延长**试用**。
+
+
 :end
 
 :registration_4_plug:
 要继续使用 UnRAID OS，您可以购买注册密钥。也可以申请**试用**延期密钥。
 
 大多数**试用**延期请求都会立即处理，但请给我们最多一个工作日接收您的**试用**延期密钥。
+
 :end
 
 :registration_5_plug:
@@ -261,6 +292,8 @@ drwxrwxrwx
 您可以购买与此 USB 闪存设备对应的注册密钥以继续使用此安装。
 
 要了解更多信息，请[联系支持人员](https://lime-technology.com/contact)。
+
+
 :end
 
 :registration_6_plug:
@@ -270,12 +303,15 @@ drwxrwxrwx
 如果您没有注册密钥文件的备份副本，请[联系支持人员](https://lime-technology.com/contact)。
 
 如果这是**试用**安装，您可以购买注册密钥。
+
+
 :end
 
 :registration_7_plug:
 **试用**安装仅适用于最初注册的 USB 闪存设备。
 
 若要在此 USB 闪存设备上继续使用此安装，您可以购买注册密钥。
+
 :end
 
 :registration_8_plug:
@@ -288,6 +324,8 @@ drwxrwxrwx
 替换密钥，请[联系支持人员](https://lime-technology.com/contact)。
 
 **注意：**替换注册密钥会导致以前的 USB 闪存 GUID 被永久**列入黑名单**。
+
+
 :end
 
 :registration_9_plug:
@@ -298,23 +336,6 @@ drwxrwxrwx
 USB 闪存设备也可能被**列入黑名单**。
 
 如需了解更多信息，请[联系支持人员](https://lime-technology.com/contact)。
+
+
 :end
-
-; New entries (10) - 2021-05-08
-Array slots=阵列插槽
-Delete all notifications=删除所有通知
-Downloading=下载中
-Install Language=安装语言
-please configure=请配置
-Pool slots=池插槽
-Uploaded=已上传
-VFIO-PCI Log=VFIO-PCI 日志
-View VFIO-PCI Log=查看 VFIO-PCI 日志
-PCI Devices No IOMMU Groups Available=PCI 设备 (没有可用的 IOMMU 组)
-
-; New entries (2) - 2021-05-10
-Next=预览版
-Stable=稳定版
-
-; New entries (1) - 2021-05-20
-Beta=测试版

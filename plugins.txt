@@ -2,22 +2,30 @@
 anonymous=匿名
 Author=作者
 Check For Updates=检查更新
+Checking connectivty=
+checking=
 Click here to install version %s=点击这里安装版本 %s
+Delete Plugin=
 DOWNGRADE TO VERSION=**降级至版本**
 Enter URL of remote plugin file or local plugin file=输入远程插件文件或本地插件文件的 URL
 ERROR=**错误**
 Install Plugin=安装插件
-install=安装
 Install=安装
+install=安装
 Installed Plugins=已安装的插件
 Installing Update=正在安装更新
 need check=需要检查
 Next=下一个
+No plugins installed=
 No release notes available=没有可用的发行说明
+No response, aborting=
 Plugin File=插件文件
+Plugin File Install Errors=
+Plugin History=
 Plugin Update Check=插件更新检查
 Plugin=插件
 Release Notes=发行说明
+Remove Plugin=
 remove=移除
 Select local plugin file=选择本地插件文件
 Stable=稳定
@@ -25,24 +33,8 @@ STALE=**旧版**
 Support Thread=支持论坛
 Uninstall=卸载
 Update All Plugins=更新所有插件
+Update Plugin=
 Upgrade=升级
 View Release Notes=查看发行说明
 
-; New entries (1) - 2021-05-08
-No plugins installed=
-
-; New entries (2) - 2021-05-09
-Checking connectivty=
-No response, aborting=
-
-; New entries (1) - 2021-05-10
-checking=
-
-; New entries (3) - 2021-05-10
-Delete Plugin=
-Remove Plugin=
-Update Plugin=
-
-; New entries (2) - 2021-05-15
-Plugin File Install Errors=
-Plugin History=
+; Note: November 14, 2021 - 9 missing translations

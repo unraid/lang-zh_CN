@@ -1,4 +1,9 @@
+%s ago= %s 以前
 %s used of %s %s %%=已使用 %s/%s，%s %%
+10 s=10 秒
+30 s=30 秒
+1 m=1 分
+2 m=2 分
 Active tunnels=活动隧道
 Activity=活动
 ago=以前
@@ -7,6 +12,7 @@ All Apps=所有应用
 All VMs=所有虚拟机
 Battery charge=电池电量
 BIOS dated=BIOS 日期
+Click to toggle CPU chart=单击以切换 CPU 视图
 Click to toggle details=单击以切换详细信息
 Completed=已完成
 Counters info=计数器信息
@@ -53,6 +59,7 @@ Last check incomplete on %s=上次不完整检查于**%s**
 Last checked on %s=上次检查于**%s**
 Maximum size=最大大小
 Mode of operation=操作模式
+Network traffic=网络流量
 Next check scheduled on %s=下次检查计划于**%s**
 No docker containers defined=没有定义的 Docker 容器
 No running docker containers=没有正在运行的 Docker 容器
@@ -61,6 +68,7 @@ No shares present=不存在共享
 No virtual machines defined=没有定义的虚拟机
 Nominal power=额定功率
 not received=未接收
+Only PNG images are allowed=只允许使用 PNG 图像
 Outbound=上行速率
 Overall Load=整体负载
 Parity disk not present=不存在奇偶校验磁盘
@@ -75,16 +83,19 @@ Received packets=已接收数据包
 Runtime left=剩余运行时间
 Scheduled parity check is disabled=计划的奇偶校验被禁用
 Select Case Model=选择机箱型号
+Select time frame=选择时间范围
 Share count %s with %s cache only and %s encrypted=共享总计 **%s** 个，**%s** 个仅缓存，**%s** 个已加密
 Show details=显示详细信息
 Show Information=显示信息
 Shutdown the system=关闭系统
 SMART error=SMART 错误
+SMART health-check failed=SMART 健康检查失败
 SMART=SMART
 sn=s/n
 Start the array=启动阵列
 Started only=仅启动
 Stop the array=停止阵列
+Temp=温度
 This will put the system to sleep=系统将睡眠
 This will reboot the system=系统将重启
 This will shutdown the system=系统将关闭
@@ -99,22 +110,3 @@ User count %s with %s unprotected=用户总计 **%s** 个，其中 **%s** 个未
 utilization warning=利用率警告
 View Running Processes=查看正在运行的进程
 Virtual Machines=虚拟机
-
-; New entries (3) - 2021-05-08
-%s ago= %s 以前
-Only PNG images are allowed=只允许使用 PNG 图像
-Temp=温度
-
-; New entries (1) - 2021-05-15
-SMART health-check failed=SMART 健康检查失败
-
-; New entries (2) - 2021-05-20
-Click to toggle CPU chart=单击以切换 CPU 视图
-Network traffic=网络流量
-
-; New entries (5) - 2021-05-31
-10 s=10 秒
-30 s=30 秒
-1 m=1 分
-2 m=2 分
-Select time frame=选择时间范围
