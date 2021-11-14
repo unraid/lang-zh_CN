@@ -62,3 +62,6 @@ Container Port=容器端口
 Container Variable=容器变量
 Container Label=容器标签
 Container Device=容器设备
+
+; New entries (1) - 2021-11-14
+Read Me First=
