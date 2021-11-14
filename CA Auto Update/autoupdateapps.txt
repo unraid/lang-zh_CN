@@ -5,7 +5,6 @@ Autoupdate OFF=关闭自动更新
 Send Notifications On Update=更新时发送通知
 Delay in days before updating applications=延迟更新的天数
 Auto Update All Plugins=自动更新所有插件
-Selecting Yes also updates languages=选择‘是’语言也将一并更新
 Update Check Frequency=检查更新频率
 Support=支持
 Day Of Week=星期
