@@ -290,6 +290,7 @@ Registration=注册
 reiserfs=reiserfs
 Release Notes=发行说明
 Remove=移除
+Rename=重命名
 Renew=续订
 Reset=重置
 Restart=重新启动
