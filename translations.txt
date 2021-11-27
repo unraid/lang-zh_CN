@@ -111,6 +111,7 @@ emulated=已模拟
 Enabled=已启用
 enabled=已启用
 Encrypted and unlocked=已加密和解锁
+Erase=擦除
 Error code=错误代码
 Error=错误
 error=错误

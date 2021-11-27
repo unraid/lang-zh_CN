@@ -74,7 +74,6 @@ Dual parity valid requires ALL disks in their original slots=*双奇偶校验* �
 Elapsed time=经过的时间
 Enable user share assignment=
 enter disk index and device name as applicable to your controller=
-Erase=擦除
 Erase Device Content=擦除设备内容
 encrypted=已加密
 Encryption input=加密输入
