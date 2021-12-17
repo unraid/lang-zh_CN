@@ -125,6 +125,7 @@ Fatal Flash Drive Error=
 This usually means your flash drive is corrupted or has dropped offline The rest of the Unraid GUI will also be affected Post a new thread in the Unraid forums if this error continues=
 Fatal Docker Image Error=
 Your docker image or folder is either read-only or completely full Issues will result because of this You should create a new post in the Unraid forums and include your diagnostics=
+This template is set up to use a custom network You may have to adjust the network or IP address etc to match your system=
 
 ; CA Sections Keep the length reasonable
 Installed Apps=已安装的应用
@@ -362,6 +363,9 @@ This container is digitally signed=
 Docker Hub=
 NOTE You must visit the dockerHub page to gather the information required to install correctly=
 Show CA templates=
+Deprecated=
+Incompatible=
+Blacklisted=
 
 Info=
 Attention=
@@ -388,4 +392,4 @@ View Missing Translations=
 ; WebGui
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 
-; Note: November 15, 2021 - 111 missing translations
+; Note: December 16, 2021 - 115 missing translations
