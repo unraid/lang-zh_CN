@@ -2242,3 +2242,21 @@ Any additional requirements the container has.  Supports basic HTML mark-up.
 :docker_client_readme_help:
 Link to a readme file or page
 :end
+
+; New entries (3) - 2021-12-16
+
+:parity_cumulative_check_help:
+Change this setting to **Yes** to divide long duration parity checks over multiple periods. This is useful the system needs to be available and a parity check runs only during off hours.
+:end
+
+:parity_accumulation_frequency_help:
+Specifies how accumulation periods are executed.
+
+**Daily** means every subsequent day the parity check continuous until finished
+
+**Weekly** means every subsequent week the parity check continuous until finished
+:end
+
+:parity_accumulation_duration_help:
+Specifies how long each accumulated period runs, expressed in hours. The **Time of the day** speficies the start time of the period.
+:end
