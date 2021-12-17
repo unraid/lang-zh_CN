@@ -11,11 +11,11 @@ Backup Server Active Some icons may not appear, and plugin installations may be 
 Debugging enabled This significantly increases the memory used by your browser=
 
 ; Sorting Options
-Sort By=
-Name Ascending=
-Name Descending=
-Downloads=
-Date Added=
+Sort By=排序
+Name Ascending=名称升序
+Name Descending=名称降序
+Downloads=下载量
+Date Added=更新日期
 Number Of Apps=
 ; Initial disclaimer translations
 Disclaimer=免责声明
@@ -53,9 +53,9 @@ Go to facebook=
 Go to discord=
 Go to forum profile=
 Show Profile=
-SHOW MORE=
+SHOW MORE=显示更多
 SHOW LESS=
-Read more=
+Read more=阅读更多
 Total Applications=
 Total Known Downloads=
 Total Docker Applications=
@@ -72,11 +72,11 @@ Twitter=
 Discord=
 Search Apps=
 Registry=
-Details=
-Added=
+Details=详情
+Added=最后更新
 ; Install Plugin title of openbox
 Install Plugin=安装插件
-BACK=
+BACK=返回
 
 ; Remove App from previously installed
 Delete Template=删除模板
@@ -131,13 +131,13 @@ This template is set up to use a custom network You may have to adjust the netwo
 Installed Apps=已安装的应用
 Previous Apps=以前的应用
 Pinned Apps=固定的应用
-Favourite Repo=
-Recently Added=
+Favourite Repo=热门存储库
+Recently Added=最近添加
 Updated Apps=更新的应用
 Random Apps=随机应用
 Top New Installs=热门新安装
-Top Trending Apps=
-Spotlight Apps=
+Top Trending Apps=热门应用
+Spotlight Apps=推荐应用
 All Apps=所有应用
 Statistics=统计信息
 Credits=信用
@@ -272,7 +272,7 @@ This application has additional requirements=
 Additional Requirements=
 Donate To Author=捐赠给作者
 Donate To Maintainer=捐赠给维护者
-CLOSE=
+CLOSE=关闭
 Author=作者
 Maintainer=维护者
 DockerHub=DockerHub
@@ -319,7 +319,7 @@ More than %s=超过 %s
 Remove from Previous Apps=
 See All Apps=
 Favourite=
-Application Type=
+Application Type=应用类型
 
 ; Graphs
 Trend Per Month=每月趋势
@@ -370,7 +370,7 @@ Blacklisted=
 Info=
 Attention=
 Repository=
-Why we picked it=
+Why we picked it=我们为什么选它
 Application Spotlight %s=
 Unraid Staff=
 
