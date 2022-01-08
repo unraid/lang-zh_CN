@@ -1,42 +1,23 @@
-30 seconds=
-1 minute=
-2 minutes=
-5 minutes=
-10 minutes=
-30 minutes=
-1 hour=
-2 hours=
 Bits per second=Bits 每秒
 Bytes per second=Bytes 每秒
 CPU graph scaling=CPU 图表尺寸
-Disk Stats=
 Ethernet interface=以太网接口
 Four=四项
-Header menu=
 Initial graphing mode=默认绘图模式
 Initial real-time sliding window=默认绘图显示时间范围
-Last day=
-Last 2 days=
-Last 3 days=
-Last week=
-Last 2 weeks=
-Last 3 weeks=
-Last month=
 Network graph display unit=网络信息图表单位
 Opening page=默认页面
 Pair=两项
 Placement of Stats menu=状态菜单显示位置
 Position of disk utilization percentage=磁盘利用率显示位置
-Real-time=
 Show disk size=显示磁盘大小
-Since start=
 Single=单项
-Storage=
 System graphs view per row=每行显示系统图表数
-System Stats=
 Three=三项
 Tools menu=工具页面
 Viewable system graphs=可视化系统信息图表
+
+
 
 :stats_utilization_plug:
 > 磁盘利用率可以设置显示在条形图的左边或者右边
@@ -77,12 +58,9 @@ Viewable system graphs=可视化系统信息图表
 >
 > 系统将会以月为单位进行数据记录，到期后将会移除旧的数据。每天的数据将会以单独文件的形式保存。
 :end
+
 :stats_realtime_plug:
 > 实时绘图模式以滑动图表的形式进行更新。例如，五分钟区间内，图表信息被写满，新的数据将会在现有的图标的末端（右侧）进行更新，区间内最旧的（最左侧）的数据将会不再进行显示。
 >
 > 该设置可以设定默认的时间范围，您也可以在系统统计信息页面上进行周期更改。
 :end
-
-
-
-; Note: January 8, 2022 - 21 missing translations

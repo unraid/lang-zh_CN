@@ -34,7 +34,6 @@ Stop the Recycle Bin=
 These actions apply to all shares=
 Trash Size=回收站大小
 Update Recycle Bin Size in Background=在后台更新回收站大小
-Yes I want to do this=是的，我想这样做
 ;
 ; Help
 ;
@@ -124,3 +123,5 @@ Yes I want to do this=是的，我想这样做
 > The deleted files will show in the log as unlinked files.
 > Click on the 'Clear' button to clear the log.
 :end
+
+; Note: January 8, 2022 - 14 missing translations
