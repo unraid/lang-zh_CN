@@ -3,6 +3,8 @@
 12 hours=12 小时制
 24 hours=24 小时制
 8023ad=802.3ad
+Accumulation duration=
+Accumulation frequency=
 Activate=
 Activated=
 Activating=
@@ -110,6 +112,7 @@ CPU Pinning Docker=CPU 绑定 Docker
 CPU Pinning VM=CPU 绑定虚拟机
 CPU Pinning=CPU 绑定
 CRAM-MD5=
+Cumulative parity check=
 Current date and time=当前日期和时间
 Custom attributes use comma to separate numbers=自定义属性使用逗号分隔数字
 Custom banner=自定义横幅
@@ -706,9 +709,4 @@ Your server has been registered=
 Your Unraid Server is reachable from the internet=
 YYYY-MM-DD=年-月-日
 
-; Note: November 16, 2021 - 183 missing translations
-
-; New entries (3) - 2021-12-16
-Accumulation duration=
-Accumulation frequency=
-Cumulative parity check=
+; Note: February 8, 2022 - 186 missing translations

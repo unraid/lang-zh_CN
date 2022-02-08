@@ -77,6 +77,7 @@ Copying=拷贝中
 CPU=CPU
 Create Unraidnet Account=Create Unraid.net Account
 Dashboard=仪表板
+Data-Rebuild=
 day=天
 Days_array=Sunday:星期天 Monday:星期一 Tuesday:星期二 Wednesday:星期三 Thursday:星期四 Friday:星期五 Saturday:星期六 Sun:星期天 Mon:星期一 Tue:星期二 Wed:星期三 Thu:星期四 Fri:星期五 Sat:星期六
 days=天
@@ -97,6 +98,7 @@ Disabled=已禁用
 disabled=已禁用
 Disk=磁盘
 disk=磁盘
+Disk-Clear=
 DNS issue, unable to resolve mothershipunraidnet=DNS issue, unable to resolve mothership.unraid.net
 Do you want to update to the new version=是否要更新到新版本
 Docker=
@@ -249,6 +251,7 @@ Parity is valid=奇偶校验有效
 Parity=奇偶校验
 parity=奇偶校验
 Parity-Check=奇偶校验
+Parity-Sync=
 Parity-Sync Data-Rebuild=奇偶校验同步/数据重建
 Password confirmation does not match=密码不匹配
 Password recovery=找回密码
@@ -673,4 +676,4 @@ Remark Unraids WAN IPv4 %1s does not match your clients WAN IPv4 %2s=Remark: Unr
 This may indicate a complex network that will not work with this Remote Access solution=
 Ignore this message if you are currently connected via Remote Access or VPN=
 
-; Note: November 16, 2021 - 24 missing translations
+; Note: February 8, 2022 - 27 missing translations
