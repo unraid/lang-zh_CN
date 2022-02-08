@@ -27,6 +27,8 @@ Anonymous Mode=
 Apply=应用
 Apps=应用
 Array must be Stopped to change=必须**停止**阵列才能更改
+Array Clearing=
+Array Copying=
 Array Started=阵列已启动
 Array Starting=阵列正在启动
 Array Stopped=阵列已停止
@@ -676,4 +678,4 @@ Remark Unraids WAN IPv4 %1s does not match your clients WAN IPv4 %2s=Remark: Unr
 This may indicate a complex network that will not work with this Remote Access solution=
 Ignore this message if you are currently connected via Remote Access or VPN=
 
-; Note: February 8, 2022 - 27 missing translations
+; Note: February 8, 2022 - 29 missing translations
