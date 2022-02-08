@@ -47,6 +47,8 @@ Yes, update it=是，请更新
 Yes=是
 
 ; footer messages
+Array Copying=
+Array Clearing=
 Array Starting=阵列正在启动
 Array Stopping=阵列正在停止
 Mounting disks=正在安装磁盘
@@ -65,4 +67,4 @@ Container Variable=容器变量
 Container Label=容器标签
 Container Device=容器设备
 
-; Note: February 8, 2022 - 2 missing translations
+; Note: February 8, 2022 - 4 missing translations
