@@ -1,5 +1,6 @@
 A format is NEVER part of a data recovery or disk rebuild process and if done in such circumstances will normally lead to loss of all data on the disks being formatted=格式化**决不**会是数据恢复或磁盘重建过程的一部分，如果在这种情况下进行格式化，通常会导致正在格式化的磁盘上的所有数据丢失
 Aborted=已中止
+Action=
 Add=添加
 Add Pool=添加池
 All existing data on this device will be OVERWRITTEN when array is Started=阵列启动时，此设备上的所有现有数据将被覆盖
@@ -55,6 +56,7 @@ Critical disk utilization threshold=临界磁盘利用率阈值
 Current operation %s on %s=当前操作 %s 在**%s**上进行
 Current position=当前位置
 Custom attributes use comma to separate numbers=自定义属性使用逗号分隔数字
+Data-Rebuild in progress=
 Date of purchase=购买日期
 Date=日期
 Delete Pool=删除缓存池
@@ -153,6 +155,7 @@ Parity-Check in progress=正在进行奇偶校验
 Parity Operation History=
 ParityRead-Check History=奇偶校验/读取检查历史记录
 Parity-SyncData-Rebuild in progress=正在进行奇偶校验-同步/数据-重建
+Parity-Sync in progress=
 Partition format=分区格式
 Partition size=分区大小
 Passed=通过
@@ -340,4 +343,4 @@ System in sleep mode=
 This will put the system in sleep mode=
 wiki entry=
 
-; Note: February 8, 2022 - 30 missing translations
+; Note: February 8, 2022 - 33 missing translations
