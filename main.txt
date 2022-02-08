@@ -219,6 +219,8 @@ Started, formatting=已启动，格式化
 Starting=正在启动
 Stopping=正在停止
 Sync errors=同步错误
+Sync errors corrected=
+Sync errors detected=
 Sync=同步
 Syslinux Configuration=Syslinux 配置
 Syslinux configuration=Syslinux 配置
@@ -343,4 +345,4 @@ System in sleep mode=
 This will put the system in sleep mode=
 wiki entry=
 
-; Note: February 8, 2022 - 33 missing translations
+; Note: February 8, 2022 - 35 missing translations
