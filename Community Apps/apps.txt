@@ -286,7 +286,6 @@ Min OS=
 Max OS=最高 OS
 Total Downloads=总下载量
 Licence=许可证
-30 Day Trend=30 天趋势
 Ranked #%s=排名＃%s
 ; as in Trending up or down arrow
 Trending %s=趋势 %s
@@ -307,6 +306,8 @@ Install Using The Templates Default Tag=使用模板的默认标签进行安装
 Moderator Comments=版主评论
 Note not all authors keep up to date on change logs=请注意，并非所有作者的变更日志都保持最新状态
 Note not all maintainers keep up to date on change logs=请注意，并非所有维护者的变更日志都保持最新状态
+Last Update=
+Note All statistics are only gathered every 30 days=
 ;the following if using a space you MUST use nbsp but keep it down to one word if at all possible
 Donate=捐赠
 Currently Installed Version=当前安装的版本
@@ -394,4 +395,4 @@ View Missing Translations=
 ; WebGui
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 
-; Note: January 8, 2022 - 100 missing translations
+; Note: February 19, 2022 - 102 missing translations

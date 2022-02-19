@@ -124,4 +124,4 @@ Update Recycle Bin Size in Background=在后台更新回收站大小
 > Click on the 'Clear' button to clear the log.
 :end
 
-; Note: January 8, 2022 - 14 missing translations
+; Note: February 19, 2022 - 14 missing translations
