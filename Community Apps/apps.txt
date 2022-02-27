@@ -369,6 +369,8 @@ Show CA templates=
 Deprecated=
 Incompatible=
 Blacklisted=
+Template Exists=
+Template already exists in Apps=
 
 Info=
 Attention=
@@ -395,4 +397,4 @@ View Missing Translations=
 ; WebGui
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 
-; Note: February 25, 2022 - 102 missing translations
+; Note: February 27, 2022 - 104 missing translations

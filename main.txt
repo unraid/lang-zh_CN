@@ -258,6 +258,7 @@ Unmountable Missing encryption key=无法挂载：缺少加密密钥
 Unmountable No file system=无法挂载：没有文件系统
 Unmountable No pool uuid=无法挂载：没有 UUID 池
 Unmountable not btrfs pool=无法挂载：不是 btrfs 池
+Unmountable Unsupported or no file system=Unmountable: Unsupported or no file system
 Unmountable Volume not encrypted=无法挂载：卷未加密
 Unmounted=未挂载
 Upgrading diskswapping parity=升级磁盘交换奇偶校验
@@ -347,4 +348,4 @@ System in sleep mode=
 This will put the system in sleep mode=
 wiki entry=
 
-; Note: February 25, 2022 - 37 missing translations
+; Note: February 27, 2022 - 37 missing translations

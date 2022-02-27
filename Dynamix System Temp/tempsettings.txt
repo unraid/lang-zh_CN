@@ -41,4 +41,4 @@ Unload drivers=卸载驱动
 > “重新扫描” 将重新刷新列表中可用的数据源。例如您安装了新的风扇传感器。
 :end
 
-; Note: February 25, 2022 - 1 missing translations
+; Note: February 27, 2022 - 1 missing translations
