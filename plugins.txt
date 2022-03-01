@@ -37,4 +37,4 @@ Update Plugin=
 Upgrade=升级
 View Release Notes=查看发行说明
 
-; Note: February 27, 2022 - 9 missing translations
+; Note: March 1, 2022 - 9 missing translations

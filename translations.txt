@@ -790,4 +790,4 @@ Updating=
 year=年
 years=年
 
-; Note: February 27, 2022 - 135 missing translations
+; Note: March 1, 2022 - 135 missing translations
