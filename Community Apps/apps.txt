@@ -8,7 +8,7 @@ Popup Blocked CA requires popups to be enabled under certain circumstances You m
 Docker Service Not Enabled - Only Plugins Available To Be Installed Or Managed=未启用 Docker 服务 - 仅可安装或管理的插件
 Community Applications works best when cookies are enabled in your browser Certain features may not be available=在浏览器中启用 Cookie 时，Community Applications 使用效果最好。某些功能可能不可用
 Backup Server Active Some icons may not appear, and plugin installations may be affected=备份服务器处于活动状态。某些图标可能不会显示，插件安装可能受到影响
-Debugging enabled This significantly increases the memory used by your browser=
+Debugging enabled This significantly increases the memory used by your browser=启用调试会显著增加浏览器的内存占用
 
 ; Sorting Options
 Sort By=排序
@@ -16,7 +16,7 @@ Name Ascending=名称升序
 Name Descending=名称降序
 Downloads=下载量
 Date Added=更新日期
-Number Of Apps=
+Number Of Apps=应用程序数
 ; Initial disclaimer translations
 Disclaimer=免责声明
 All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=此处列出的所有应用程序均为 Unraid 的第三方补充，Community Applications 或 Limetech 的作者均不对此处列出的任何应用程序的适合性做出任何保证。
@@ -32,7 +32,7 @@ Plugin Note=插件说明
 
 ; Multi Install
 Install Plugin Applications=安装插件应用程序
-Select all on page=
+Select all on page=全选本页
 
 ; Searches
 Search=搜索
@@ -40,37 +40,37 @@ Click Here To Get More Results From DockerHub=单击此处以从 DockerHub 获�
 No Matching Applications Found=找不到匹配的应用程序
 
 ; Repository Related
-%s removed as favourite repository=
-%s set as favourite repository=
-Click to remove favourite repository=
-Click to set %s as favourite repository=
-Search for apps in repository=
-No description present=
-Go to the forum page=
-Go to the webpage=
-Go to reddit=
-Go to facebook=
-Go to discord=
+%s removed as favourite repository=%s 从喜爱的存储库移除
+%s set as favourite repository=%s 设置为喜爱的存储库
+Click to remove favourite repository=点击移除此喜爱的存储库
+Click to set %s as favourite repository=点击设置 %s 为喜爱的存储库
+Search for apps in repository=在存储库中搜索应用
+No description present=目前没有描述
+Go to the forum page=论坛页面
+Go to the webpage=Web 页面
+Go to reddit=Reddit 页面
+Go to facebook=Facebook 页面
+Go to discord=Discord 页面
 Go to forum profile=
 Show Profile=
 SHOW MORE=显示更多
-SHOW LESS=
+SHOW LESS=显示更少
 Read more=阅读更多
-Total Applications=
-Total Known Downloads=
-Total Docker Applications=
-Total Plugin Applications=
-Total Languages=
-Average Downloads Per App=
-Web Page=
-Forum=
+Total Applications=应用程序总计
+Total Known Downloads=已知下载总计
+Total Docker Applications=Docker 应用程序总计
+Total Plugin Applications=插件应用程序总计
+Total Languages=语言包总计
+Average Downloads Per App=应用平均下载量
+Web Page=Web 页面
+Forum=论坛
 Forum Profile=
 Profile=
-Facebook=
-Reddit=
-Twitter=
-Discord=
-Search Apps=
+Facebook=Facebook
+Reddit=Reddit
+Twitter=Twitter
+Discord=Discord
+Search Apps=搜索应用程序
 Registry=
 Details=详情
 Added=最后更新
@@ -120,24 +120,26 @@ Post the ENTIRE contents of this message in the Community Applications Support T
 Unknown error happened Please post a screenshot in the support thread of the Statistics screen=发生未知错误   请在统计屏幕的支持对话中发布屏幕截图
 Something really wrong happened Reloading the Apps tab will probably fix the problem=真的出错了。重新加载应用选项卡可能会解决该问题
 This plugin has a duplicated name from another plugin %s This will impact your ability to install both plugins simultaneously=此插件的名称与另一个插件 %s 重复，这将影响您同时安装这两个插件的能力
-You have been logged out=
-Fatal Flash Drive Error=
-This usually means your flash drive is corrupted or has dropped offline The rest of the Unraid GUI will also be affected Post a new thread in the Unraid forums if this error continues=
-Fatal Docker Image Error=
+You have been logged out=你已注销
+Fatal Flash Drive Error=致命闪存驱动器错误
+This usually means your flash drive is corrupted or has dropped offline The rest of the Unraid GUI will also be affected Post a new thread in the Unraid forums if this error continues=这通常意味着您的闪存驱动器已损坏或已脱机。如果此错误继续存在，Unraid GUI的其余部分也将受到影响，请在Unraid论坛中反馈
+Fatal Docker Image Error=致命 Docker 镜像错误
 Your docker image or folder is either read-only or completely full Issues will result because of this You should create a new post in the Unraid forums and include your diagnostics=
-This template is set up to use a custom network You may have to adjust the network or IP address etc to match your system=
-One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=
+This template is set up to use a custom network You may have to adjust the network or IP address etc to match your system=此模板设置为使用自定义网络 您可能需要调整网络或 IP 地址等以匹配您的系统
+One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=此应用程序使用的一个或多个端口已被服务器上运行的另一服务或应用程序使用，您需要在模板上相应地调整端口
 
 ; CA Sections Keep the length reasonable
 Installed Apps=已安装的应用
 Previous Apps=以前的应用
 Pinned Apps=固定的应用
-Favourite Repo=热门存储库
+Favourite Repo=喜爱的存储库
 Recently Added=最近添加
+New Apps=新的应用
 Updated Apps=更新的应用
 Random Apps=随机应用
 Top New Installs=热门新安装
-Top Trending Apps=热门应用
+Trending Apps=热门应用
+Top Trending Apps=最热门应用
 Spotlight Apps=推荐应用
 All Apps=所有应用
 Statistics=统计信息
@@ -162,21 +164,21 @@ Translation=翻译
 
 unknown=未知
 Last Change To Application Feed=应用程序源的最新更改
-Docker Applications=
-Plugin Applications=
-Templates=
-Official Containers=
+Docker Applications=Docker 应用程序
+Plugin Applications=插件应用程序
+Templates=模板
+Official Containers=官方容器
 Repositories=代码仓库
-Private Docker Applications=
-Invalid Templates=
+Private Docker Applications=私人 Docker 应用程序
+Invalid Templates=无效模板
 Template Errors=模板错误
-Blacklisted Apps=
-Incompatible Applications=
-Deprecated Applications=
-Moderation Entries=
+Blacklisted Apps=黑名单应用
+Incompatible Applications=不兼容应用程序
+Deprecated Applications=已弃用应用程序
+Moderation Entries=审核条目
 Primary Server=主服务器
 Backup Server=备份服务器
-Installs not allowed from this page=
+Installs not allowed from this page=不允许从此页面进行安装
 
 ; Statistics Popup
 No invalid templates found=未找到无效模板
@@ -195,11 +197,11 @@ Individual Application Moderation=个人应用程序审核
 ; Misc
 Community Applications Changelog=Community Applications 变更日志
 
-Each month we highlight some of the amazing work from our community=
-Check out these newly added applications from our awesome community=
-Check out these up and coming apps=
-These apps have the highest percentage of new installs=
-An assortment of randomly chosen apps=
+Each month we highlight some of the amazing work from our community=每个月我们都会高亮社区一些令人惊叹的工作
+Check out these newly added applications from our awesome community=从社区了解这些新增的应用程序
+Check out these up and coming apps=了解这些即将推出的应用
+These apps have the highest percentage of new installs=这些应用的安装率最高
+An assortment of randomly chosen apps=随机选择的各种应用
 
 ; Categories try not to be excessively long This is displayed on the left of CA screen
 
@@ -207,7 +209,7 @@ Backup=备份
 Cloud=云
 Crypto Currency=加密货币
 Downloaders=下载程序
-Drivers=
+Drivers=驱动
 Game Servers=游戏服务器
 Home Automation=家庭自动化
 Media Applications=媒体应用程序
@@ -269,8 +271,8 @@ and %s more=和另外 %s
 ; App Popup Related
 This application template has been blacklisted=此应用程序模板已被列入黑名单
 This application template has been deprecated=此应用程序模板已弃用
-This application has additional requirements=
-Additional Requirements=
+This application has additional requirements=此应用程序有附加要求
+Additional Requirements=附加要求
 Donate To Author=捐赠给作者
 Donate To Maintainer=捐赠给维护者
 CLOSE=关闭
@@ -282,7 +284,7 @@ DockerHub Stars=DockerHub 星形
 Added to CA=已添加到 CA
 Date Updated=日期已更新
 Current Version=当前版本
-Min OS=
+Min OS=最低 OS
 Max OS=最高 OS
 Total Downloads=总下载量
 Licence=许可证
@@ -291,23 +293,23 @@ Ranked #%s=排名＃%s
 Trending %s=趋势 %s
 ; as in As of some date
 As of %s=（截至 %s）
-Show Charts=
-Hide Charts=
+Show Charts=显示图表
+Hide Charts=隐藏图表
 This application is not compatible with your version of Unraid=此应用程序与您的 Unraid 版本不兼容
 Another browser tab or device has updated the displayed templates Some actions are not available=另一个浏览器标签页或设备已更新所显示的模板。某些操作不可用
 WebUI=WebUI
 Reinstall=重新安装
-Reinstall From Previous Apps=
+Reinstall From Previous Apps=从以前的应用重新安装
 Install=安装
 Project=项目
 Read Me First=
-Install second instance=
+Install second instance=安装第二个实例
 Install Using The Templates Default Tag=使用模板的默认标签进行安装
 Moderator Comments=版主评论
 Note not all authors keep up to date on change logs=请注意，并非所有作者的变更日志都保持最新状态
 Note not all maintainers keep up to date on change logs=请注意，并非所有维护者的变更日志都保持最新状态
-Last Update=
-Note All statistics are only gathered every 30 days=
+Last Update=最后更新
+Note All statistics are only gathered every 30 days=所有统计数据每30天收集一次
 ;the following if using a space you MUST use nbsp but keep it down to one word if at all possible
 Donate=捐赠
 Currently Installed Version=当前安装的版本
@@ -315,12 +317,12 @@ Install The Update=安装更新
 ; as in you have the latest version already installed
 Latest Version=最新版本
 Multi Language Support=多语言支持
-Support Forum=
+Support Forum=论坛支持
 ; as in more than 100000
 More than %s=超过 %s
-Remove from Previous Apps=
-See All Apps=
-Favourite=
+Remove from Previous Apps=从以前的应用移除
+See All Apps=查看所有应用
+Favourite=喜爱的
 Application Type=应用类型
 
 ; Graphs
@@ -336,15 +338,15 @@ Docker Application Installation finished=Docker 应用程序安装完成
 
 ; Application Cards
 Actions=
-This application is a driver plugin=This application is a driver (plugin)
-This is a language pack=
-This application is a docker container=
-This application is a plugin=
+This application is a driver plugin=此应用程序是一个驱动程序（插件）
+This is a language pack=这是一个语言包
+This application is a docker container=此应用程序是一个 Docker 容器
+This application is a plugin=此应用程序是一个插件
 This is a spotlight application=
-This is your favourite repository=
-This application is from your favourite repository=
-This application is pinned for later viewing=
-Private Application=
+This is your favourite repository=这是您喜爱的存储库
+This application is from your favourite repository=此应用程序来自您喜爱的存储库
+This application is pinned for later viewing=此应用程序已固定以供稍后查看
+Private Application=私人应用程序
 Remove Application From List=从列表中移除应用程序
 Check off to select multiple reinstalls=选中以选择多个重新安装
 Go to the plugin settings=转到插件设置
@@ -355,26 +357,26 @@ Click to install=单击以安装
 Click to go to the WebUI=单击以转到 WebUI
 This application template has been deprecated=此应用程序模板已弃用
 This application template has been blacklisted=此应用程序模板已被列入黑名单
-Click info to see the notes regarding this application=
-This application has additional requirements=
-BETA= 
-INSTALLED=
-OFFICIAL=
-This is an official container=
-Digitally Signed=
-This container is digitally signed=
-Docker Hub=
-NOTE You must visit the dockerHub page to gather the information required to install correctly=
-Show CA templates=
-Deprecated=
-Incompatible=
-Blacklisted=
-Template Exists=
-Template already exists in Apps=
+Click info to see the notes regarding this application=单击信息以查看有关此应用程序的注释
+This application has additional requirements=此应用程序有附加的要求
+BETA=BETA
+INSTALLED=已安装
+OFFICIAL=官方
+This is an official container=这是一个官方容器
+Digitally Signed=数字签名
+This container is digitally signed=此容器经过数字签名
+Docker Hub=Docker Hub
+NOTE You must visit the dockerHub page to gather the information required to install correctly=注意：您必须访问 Docker Hub 页面来收集正确安装所需的信息
+Show CA templates=显示 CA 模板
+Deprecated=已弃用
+Incompatible=不兼容
+Blacklisted=黑名单
+Template Exists=模板存在
+Template already exists in Apps=模板已存在于应用中
 
 Info=
 Attention=
-Repository=
+Repository=存储库
 Why we picked it=我们为什么选它
 Application Spotlight %s=
 Unraid Staff=
@@ -391,8 +393,8 @@ Remove Language Pack=移除语言包
 Update Language Pack=更新语言包
 Installed Version=安装的版本
 A note about translations=翻译说明
-Click here to view the language changelog=
-View Missing Translations=
+Click here to view the language changelog=单击此处查看语言更改日志
+View Missing Translations=查看缺少的翻译
 
 ; WebGui
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
