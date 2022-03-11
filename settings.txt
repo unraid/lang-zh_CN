@@ -505,6 +505,7 @@ Protocol=协议
 Provision=预配
 QEMU version=
 readmodifywrite=读取／修改／写入
+recommended=
 reconstruct write=重建写入
 Refreshing=正在刷新
 Registration key required=需要注册密钥
@@ -715,4 +716,4 @@ Your server has been registered=
 Your Unraid Server is reachable from the internet=
 YYYY-MM-DD=年-月-日
 
-; Note: March 11, 2022 - 192 missing translations
+; Note: March 11, 2022 - 193 missing translations
