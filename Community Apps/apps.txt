@@ -9,6 +9,7 @@ Docker Service Not Enabled - Only Plugins Available To Be Installed Or Managed=�
 Community Applications works best when cookies are enabled in your browser Certain features may not be available=在浏览器中启用 Cookie 时，Community Applications 使用效果最好。某些功能可能不可用
 Backup Server Active Some icons may not appear, and plugin installations may be affected=备份服务器处于活动状态。某些图标可能不会显示，插件安装可能受到影响
 Debugging enabled This significantly increases the memory used by your browser=启用调试会显著增加浏览器的内存占用
+Browser translation detected Display issues may result=
 
 ; Sorting Options
 Sort By=排序
@@ -93,6 +94,8 @@ Yes, remove it=是的，请删除
 ; App Pinning
 Click to pin this application=单击以固定此应用程序
 Click to unpin this application=单击取消固定此应用程序
+Pin App=
+Unpin App=
 
 ; Branch installations
 Choose A Branch To Install=选择要安装的分支
@@ -134,11 +137,9 @@ Previous Apps=以前的应用
 Pinned Apps=固定的应用
 Favourite Repo=喜爱的存储库
 Recently Added=最近添加
-New Apps=新的应用
 Updated Apps=更新的应用
 Random Apps=随机应用
 Top New Installs=热门新安装
-Trending Apps=热门应用
 Top Trending Apps=最热门应用
 Spotlight Apps=推荐应用
 All Apps=所有应用
@@ -228,6 +229,7 @@ Proxy=代理
 VOIP=VOIP
 VPN=VPN
 Web=Web
+Privacy=
 Productivity=生产力
 Security=安全性
 Spotlight=
@@ -260,6 +262,7 @@ NetworkManagement=网络：管理
 NetworkProxy=网络：代理
 NetworkVOIP=网络：VOIP
 NetworkVPN=网络：VPN
+NetworkPrivacy=Network:Privacy
 NetworkWeb=网络：Web
 NetworkOther=网络：其他
 ToolsSystem=工具：系统
@@ -271,7 +274,7 @@ and %s more=和另外 %s
 ; App Popup Related
 This application template has been blacklisted=此应用程序模板已被列入黑名单
 This application template has been deprecated=此应用程序模板已弃用
-This application has additional requirements=此应用程序有附加要求
+This application has additional requirements=此应用程序有附加的要求
 Additional Requirements=附加要求
 Donate To Author=捐赠给作者
 Donate To Maintainer=捐赠给维护者
@@ -362,6 +365,7 @@ This application has additional requirements=此应用程序有附加的要求
 BETA=BETA
 INSTALLED=已安装
 OFFICIAL=官方
+Update Available=
 This is an official container=这是一个官方容器
 Digitally Signed=数字签名
 This container is digitally signed=此容器经过数字签名
@@ -399,4 +403,4 @@ View Missing Translations=查看缺少的翻译
 ; WebGui
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 
-; Note: March 1, 2022 - 104 missing translations
+; Note: March 11, 2022 - 21 missing translations

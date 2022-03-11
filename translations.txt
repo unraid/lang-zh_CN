@@ -274,6 +274,7 @@ Plugins=插件
 Plus=Plus
 prefix_IEC=Ki Mi Gi Ti Pi Ei Zi Yi
 prefix_SI=K M G T P E Z Y
+Press ANY KEY to close this window=
 Private=私有
 Pro=Pro
 Proceed=继续
@@ -789,7 +790,5 @@ Unrestricted access=无限制访问
 Updating=正在更新中
 year=年
 years=年
-No Unassigned Disks available=没有未分配的磁盘可用
-No Remote SMB/NFS or ISO File Shares configured=无远程 SMB/NFS 或 ISO 文件共享配置
 
-; Note: March 1, 2022 - 135 missing translations
+; Note: March 11, 2022 - 42 missing translations

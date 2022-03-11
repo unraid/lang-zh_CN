@@ -40,5 +40,3 @@ Unload drivers=卸载驱动
 :temp_rescan_plug:
 > “重新扫描” 将重新刷新列表中可用的数据源。例如您安装了新的风扇传感器。
 :end
-
-; Note: March 1, 2022 - 1 missing translations
