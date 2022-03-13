@@ -113,6 +113,8 @@ Information=信息
 Insufficient free disk space available=可用磁盘空间不足
 Interrupted=已中断
 Invalid configuration=无效的配置
+invalid device=
+invalid devices=
 Invalid expansion=无效的扩展
 Invalid pool name=无效的池名称
 Invalid, missing or expired=无效、丢失或过期
@@ -348,4 +350,4 @@ System in sleep mode=
 This will put the system in sleep mode=
 wiki entry=
 
-; Note: March 11, 2022 - 36 missing translations
+; Note: March 13, 2022 - 38 missing translations

@@ -46,6 +46,7 @@ Basic=基本
 BIOS=BIOS
 Black=黑色
 Blacklisted USB Flash GUID=USB 闪存的 GUID 在黑名单中
+bond down=
 Browse=浏览
 Browser cookie support required for Unraid OS webgui=Unraid OS WebGUI 需要浏览器支持并允许Cookie功能
 Browser error=浏览器错误
@@ -673,11 +674,23 @@ Your trial will expire in 30 days=您的试用版将在 30 天后过期
 Your Unraid registration key is ineligible for replacement as it has been replaced within the last 12 months=
 Your USB Flash GUID and other relevant server data will also be sent=您的 USB 闪存 GUID 和其他相关服务器数据也将一并发送
 
-; My Servers Wan IP Check - 2021-06-30
+; My Servers - 2022-03-13
 Remark your WAN IPv4 is %s=Remark: your WAN IPv4 is **%s**
 Remark Unraids WAN IPv4 %1s does not match your clients WAN IPv4 %2s=Remark: Unraid's WAN IPv4 **%1s** does not match your client's WAN IPv4 **%2s**
 This may indicate a complex network that will not work with this Remote Access solution=
 Ignore this message if you are currently connected via Remote Access or VPN=
+
+Automated flash backups will be disabled until you sign in again=
+Click to copy LAN IP %s=
+DNS issue, unable to resolve wanip4unraidnet=DNS issue, unable to resolve wanip4.unraid.net
+Download latest backup from My Servers Dashboard=
+Have the code now Go Back=Have the code now? Go Back
+LAN IP Copied=
+Remote access will be disabled=
+Resend Code=
+Resend Email Verification Code=
+We have sent a verifcation email to %s=
+You will no longer have access to this server using this url=You will no longer have access to this server using <abbr title="%s" class="italic">this url</abbr>
 
 ; Dynamix File Manager - 2022-02-21
 %s year ago=
@@ -709,6 +722,7 @@ DEVICE=设备
 Device name=设备名称
 Download File=下载文件
 Enter a valid target=输入一个有效的目标
+File Manager=
 File name=文件名称
 file type=文件类型
 Folder name=文件夹名称
@@ -791,4 +805,4 @@ Updating=正在更新中
 year=年
 years=年
 
-; Note: March 11, 2022 - 42 missing translations
+; Note: March 13, 2022 - 55 missing translations

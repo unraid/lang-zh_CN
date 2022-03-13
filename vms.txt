@@ -43,6 +43,7 @@ Hyper-V=Hyper-V
 i440fx will work for most=i440fx 适用于大多数
 Icon=图标
 Initial=初始
+Invalid storage path=
 Invalid VM to edit=要编辑的无效虚拟机
 ISO storage path doesnt exist=ISO 存储路径不存在
 ISO storage path doesnt exist, please create the user share or empty folder first=ISO storage path doesn't exist, please create the user share (or empty folder) first
@@ -137,4 +138,4 @@ Windows 7XP=Windows 7/XP
 Windows 82012, newer Linux distros=Windows 8/2012，新的 Linux 发行版
 XML View=XML 视图
 
-; Note: March 11, 2022 - 5 missing translations
+; Note: March 13, 2022 - 6 missing translations
