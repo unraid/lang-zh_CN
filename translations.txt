@@ -765,6 +765,7 @@ Rename Folder=重命名文件夹
 rename to=
 Renaming=正在重命名中
 Restricted access=
+Save=
 Share name=共享名称
 SHARE=
 Source device=源设备
@@ -805,4 +806,4 @@ Updating=正在更新中
 year=年
 years=年
 
-; Note: March 13, 2022 - 55 missing translations
+; Note: March 18, 2022 - 53 missing translations

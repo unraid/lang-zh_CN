@@ -400,7 +400,11 @@ A note about translations=翻译说明
 Click here to view the language changelog=单击此处查看语言更改日志
 View Missing Translations=查看缺少的翻译
 
+; dockerHub conversions
+Determine configuration=
+Would you like CA to attempt to determine any applicable paths, ports, and variables for the template This will entail performing a test installation of the container It will be automatically deleted after processing The container will not be started=Would you like CA to attempt to determine any applicable paths, ports, and variables for the template?  This will entail performing a test installation of the container.  It will be automatically deleted after processing.  The container will not be started.
+An error occurred - Could not determine configuration=
 ; WebGui
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 
-; Note: March 11, 2022 - 21 missing translations
+; Note: March 18, 2022 - 23 missing translations
