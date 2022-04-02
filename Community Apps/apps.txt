@@ -6,6 +6,8 @@ Happy Holidays from Andrew, Tracey, and family=来自 Andrew、Tracey 和家人�
 Please Enjoy Responsibly=请负责任地使用
 Popup Blocked CA requires popups to be enabled under certain circumstances You must white list your server within your browser to allow popups=弹出窗口拦截 CA 需要在某些情况下启用弹出窗口。您必须在浏览器中将服务器列入白名单以允许弹出窗口
 Docker Service Not Enabled - Only Plugins Available To Be Installed Or Managed=未启用 Docker 服务 - 仅可安装或管理的插件
+Docker system failed to start - Only Plugins Available To Be Installed Or Managed=
+Array not started - Only Plugins Available To Be Installed Or Managed=
 Community Applications works best when cookies are enabled in your browser Certain features may not be available=在浏览器中启用 Cookie 时，Community Applications 使用效果最好。某些功能可能不可用
 Backup Server Active Some icons may not appear, and plugin installations may be affected=备份服务器处于活动状态。某些图标可能不会显示，插件安装可能受到影响
 Debugging enabled This significantly increases the memory used by your browser=启用调试会显著增加浏览器的内存占用
@@ -365,7 +367,7 @@ This application has additional requirements=此应用程序有附加的要求
 BETA=BETA
 INSTALLED=已安装
 OFFICIAL=官方
-Update Available=
+UPDATED=
 This is an official container=这是一个官方容器
 Digitally Signed=数字签名
 This container is digitally signed=此容器经过数字签名
@@ -407,4 +409,4 @@ An error occurred - Could not determine configuration=
 ; WebGui
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 
-; Note: March 18, 2022 - 23 missing translations
+; Note: April 2, 2022 - 24 missing translations
