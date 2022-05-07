@@ -2296,3 +2296,11 @@ When Transparent 2FA for Local Access is enabled, you will access your server by
 
 This is fairly extreme for Local Access, and in most cases is not needed. It requires a solid Internet connection. If you need to access the webgui while the Internet is down, SSH to the server and run 'use_ssl no', this will give you access via http://<?=['NGINX_LANIP']?><?=['NGINX_PORT'] !== '80' ? ':'.['NGINX_PORT'] : '' ?>
 :end
+
+; New entries (1) - 2022-05-07
+
+:smb_multi_channel_help:
+When set to 'Yes' enables SMB Multi Channel support in the server. From
+[microsoft](https://docs.microsoft.com/en-us/azure-stack/hci/manage/manage-smb-multichannel):
+"SMB Multichannel enables file servers to use multiple network connections simultaneously." 
+:end
