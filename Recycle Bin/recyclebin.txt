@@ -55,7 +55,6 @@ Update Recycle Bin Size in Background=在后台更新回收站大小
 > 要隐藏回收站文件夹，请在 SMB 设置中将“隐藏 (.) 文件”设置为“是”。<a href='/Settings/SMB'>去设置</a>
 :end
 
-
 :recycle_bin_background_plug:
 > 设置为 **是** 时会每分钟在后台更新回收站占用大小
 > 这可以使回收站设置和共享页面更具响应性，并在访问回收站时防止磁盘唤醒
@@ -129,4 +128,4 @@ Update Recycle Bin Size in Background=在后台更新回收站大小
 > 单击“清除”按钮以清除日志
 :end
 
-; Note: April 2, 2022 - 1 missing translations
+; Note: May 7, 2022 - 1 missing translations

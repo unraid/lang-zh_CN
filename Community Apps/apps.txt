@@ -113,6 +113,7 @@ Yes, install them=是的，请安装
 Cookies not enabled Plugins must be separately installed from docker applications=未启用 Cookie。这些插件必须与 Docker 应用程序分开安装
 Docker applications will be installed utilizing the most recently saved template with no user input on your part=Docker 应用程序将使用最近保存的模板进行安装，无需用户输入
 Updating Support Links=正在更新支持链接
+Downloading docker icons=
 Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=完成安装。如果未出现“完成”按钮，则需要单击右上角的红色 X
 
 ; error messages
@@ -134,12 +135,13 @@ This template is set up to use a custom network You may have to adjust the netwo
 One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=此应用程序使用的一个或多个端口已被服务器上运行的另一服务或应用程序使用，您需要在模板上相应地调整端口
 
 ; CA Sections Keep the length reasonable
+Home=
 Installed Apps=已安装的应用
 Previous Apps=以前的应用
 Pinned Apps=固定的应用
 Favourite Repo=喜爱的存储库
+Action Centre=
 Recently Added=最近添加
-Updated Apps=更新的应用
 Random Apps=随机应用
 Top New Installs=热门新安装
 Top Trending Apps=最热门应用
@@ -298,8 +300,8 @@ Ranked #%s=排名＃%s
 Trending %s=趋势 %s
 ; as in As of some date
 As of %s=（截至 %s）
-Show Charts=显示图表
-Hide Charts=隐藏图表
+Play Video=
+Play Video %s=
 This application is not compatible with your version of Unraid=此应用程序与您的 Unraid 版本不兼容
 Another browser tab or device has updated the displayed templates Some actions are not available=另一个浏览器标签页或设备已更新所显示的模板。某些操作不可用
 WebUI=WebUI
@@ -326,6 +328,7 @@ Support Forum=论坛支持
 ; as in more than 100000
 More than %s=超过 %s
 Remove from Previous Apps=从以前的应用移除
+Remove=
 See All Apps=查看所有应用
 Favourite=喜爱的
 Application Type=应用类型
@@ -409,4 +412,4 @@ An error occurred - Could not determine configuration=
 ; WebGui
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 
-; Note: April 2, 2022 - 24 missing translations
+; Note: May 7, 2022 - 30 missing translations
