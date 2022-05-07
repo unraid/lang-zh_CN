@@ -806,7 +806,7 @@ year=年
 years=年
 
 ; My Servers refactor - 2022-05-07
- =
+
 A Trial key provides all the functionality of a Pro Registration key=
 All you need is an active internet connection, an Unraidnet account, and the <span>My Servers<span> plugin=All you need is an active internet connection, an Unraid.net account, and the <span class="inline-block">My Servers</span> plugin
 All you need is an active internet connection, an Unraidnet account, and the My Servers plugin=All you need is an active internet connection, an Unraid.net account, and the <span>My Servers</span> plugin
