@@ -2,7 +2,7 @@
 anonymous=匿名
 Author=作者
 Check For Updates=检查更新
-Checking connectivty=正在检查连通性
+Checking connectivity=正在检查连通性
 checking=
 Click here to install version %s=点击这里安装版本 %s
 Delete Plugin=删除插件
