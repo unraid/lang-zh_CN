@@ -531,8 +531,8 @@ Have a USB flash device that already has an account associated with it=有一个
 Hi %s=您好 %s！
 I acknowledge that replacing a license key results in permanently blacklisting the previous USB Flash GUID=本人确认更换许可证密钥会导致先前的 USB 闪存 GUID 被永久列入黑名单
 I agree to the=我同意
-If this was a Trial installation, you may purchase a license key=如果这是试用安装，您可以购买许可证密钥
-If you do not have a backup copy of your license key file you may attempt to recover your key=如果您没有许可证密钥文件的备份副本，则可以尝试恢复密钥
+If this was an expired Trial installation, you may purchase a license key=
+If you do not have a backup copy of your license key file you may install the My Servers beta plugin to attempt to recover your key=If you do not have a backup copy of your license key file you may install the My Servers (beta) plugin to attempt to recover your key
 If you fill this field out then your email will not be sent=如果填写此字段，您的电子邮件将不会发送
 If you want to replace one of your license keys with a new key bound to this USB Flash device please first remove all other key files first=如果要使用绑定到此 USB 闪存设备的新密钥替换您的许可证密钥之一，请首先删除所有其他密钥文件
 Installed %s Key=已安装 %s 密钥
@@ -853,11 +853,12 @@ Stop unraid-api=
 Thank you for choosing Unraid OS and My Servers=
 Thank you installing My Servers=
 This will connect your server to My Servers <sup>BETA</sup>=
-To support more storage devices as your server grows click the Open Dropdown button=
+To support more storage devices as your server grows click the Open Dropdown button=To support more storage devices as your server grows click the *Open Dropdown* button
 To support more storage devices as your server grows click the Open Dropdown button=To support more storage devices as your server grows click the *Open Dropdown* button
 To support more storage devices as your server grows click Upgrade Key=如果您的服务器增多，需要提供更多存储设备支持，请单击“升级密钥”。
 Transparent 2FA Token timed out=
 Your server will not be usable until you purchase a Registration key or install a free 30-day Trial key=
 Your Unraid registration key is ineligible for replacement as it is blacklisted=
+Oh no Are you pirating Unraid OS<br>Are you ready to buy a real license=Oh no! Are you pirating Unraid OS?<br>Are you ready to buy a real license?
 
-; Note: May 7, 2022 - 106 missing translations
+; Note: May 20, 2022 - 96 missing translations
