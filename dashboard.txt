@@ -1,4 +1,4 @@
-%s ago= %s 以前
+%s ago=%s 以前
 %s used of %s %s %%=已使用 %s/%s，%s %%
 10 s=10 秒
 30 s=30 秒

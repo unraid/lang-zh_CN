@@ -484,7 +484,7 @@ Best of all all SSL certificates are verified by Lets Encrypt so no browser secu
 beta=测试版
 BLACKLISTED=列入黑名单
 Browser will self destruct in %s=浏览器将在 %s 之后自毁
-bye bye 👋=再见 👋 
+bye bye 👋=再见 👋
 Cannot access your USB Flash boot device=无法访问您的 USB 闪存启动设备
 Cannot validate Unraid Trial key=无法验证 Unraid 试用版密钥
 Click a button and your flash is automatically backed up to Unraidnet enabling easy recovery in the event of a device failure=单击按钮，您的闪存就会自动备份到 Unraid.net，在设备发生故障时即可轻松进行恢复。
@@ -587,6 +587,7 @@ remaining=剩余
 Remote access=远程访问
 Replace Key=更换密钥
 Reset Password Now=立即重置密码
+Searching=
 Secure remote access=安全进行远程访问
 See also here=另见此
 Server Offline=服务器脱机
@@ -659,7 +660,7 @@ What is Unraidnet=Unraid.net 是什么？
 Whether you need to add a share container or virtual machine do it all from the webGui from anytime and anywhere using HTTPS=无论您需要添加共享容器还是虚拟机，都可以随时随地使用 HTTPS 通过 webGui 完成所有操作
 While we strive to respond to all requests as quickly as possible please allow for up to 3 business days for a response=我们努力尽快答复所有请求，请等待最多 3 个工作日
 With an Unraidnet account you can start using My Servers beta which gives you access to the following features=使用 Unraid.net 帐户，您可以开始使用 My Servers (beta)，它让您可以访问以下功能：
-You are all set 👍= 大功告成 👍 
+You are all set 👍=大功告成 👍
 You can safely close this window=您可以安全关闭本窗口
 You have %s remaining on your Trial key=您的试用版密钥还可以使用 %s 天
 You have an open pop-up=您有一个打开的弹出窗口
@@ -692,7 +693,7 @@ Resend Email Verification Code=
 We have sent a verifcation email to %s=
 You will no longer have access to this server using this url=You will no longer have access to this server using <abbr title="%s" class="italic">this url</abbr>
 
-; Dynamix File Manager - 2022-05-07
+; Dynamix File Manager - 2022-05-20
 %s year ago=
 %s years ago=
 Action=
@@ -748,6 +749,7 @@ New file name=
 New folder name=
 New owner=
 New permission=
+No results found=
 Not allowed to mix disk and user shares=不允许混合使用磁盘和用户共享
 Objects to change=
 Objects to copy=
@@ -766,6 +768,8 @@ Rename Folder=重命名文件夹
 rename to=
 Renaming=正在重命名中
 Save=
+Search=
+Search string=
 Share name=共享名称
 SHARE=
 Source device=源设备
@@ -805,7 +809,7 @@ Updating=正在更新中
 year=年
 years=年
 
-; My Servers refactor - 2022-05-07
+; My Servers refactor - 2022-05-20
 
 A Trial key provides all the functionality of a Pro Registration key=
 All you need is an active internet connection, an Unraidnet account, and the <span>My Servers<span> plugin=All you need is an active internet connection, an Unraid.net account, and the <span class="inline-block">My Servers</span> plugin
@@ -845,6 +849,7 @@ Redeem Activation Code=
 Registration keys are bound to your USB Flash boot device serial number GUID=Registration keys are bound to your USB Flash boot device serial number (GUID)
 Remove My Servers plugin=
 Removing My Servers plugin=
+Replace Key Ineligible=
 Restart unraid-api=
 Restarting=
 Sign In Up=Sign In / Up
@@ -861,4 +866,4 @@ Your server will not be usable until you purchase a Registration key or install 
 Your Unraid registration key is ineligible for replacement as it is blacklisted=
 Oh no Are you pirating Unraid OS<br>Are you ready to buy a real license=Oh no! Are you pirating Unraid OS?<br>Are you ready to buy a real license?
 
-; Note: May 20, 2022 - 96 missing translations
+; Note: May 20, 2022 - 99 missing translations
