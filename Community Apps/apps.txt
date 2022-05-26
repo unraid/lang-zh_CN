@@ -412,4 +412,4 @@ An error occurred - Could not determine configuration=
 ; WebGui
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 
-; Note: May 20, 2022 - 30 missing translations
+; Note: May 26, 2022 - 30 missing translations

@@ -865,5 +865,13 @@ Transparent 2FA Token timed out=
 Your server will not be usable until you purchase a Registration key or install a free 30-day Trial key=
 Your Unraid registration key is ineligible for replacement as it is blacklisted=
 Oh no Are you pirating Unraid OS<br>Are you ready to buy a real license=Oh no! Are you pirating Unraid OS?<br>Are you ready to buy a real license?
+Strict=
+Local T2FA requires Use SSLTLS to be Strict, Unraid 610 or higher, and a myunraidnet certificate=Local T2FA requires Use SSL/TLS to be Strict, Unraid 6.10 or higher, and a *.myunraid.net certificate
+Local T2FA requires Use SSLTLS to be Strict=Local T2FA requires Use SSL/TLS to be Strict
+Local T2FA requires Use SSLTLS to be Strict and Unraid 610 or higher=Local T2FA requires Use SSL/TLS to be Strict and Unraid 6.10 or higher
+Local T2FA requires Use SSLTLS to be Strict and a myunraidnet certificate=Local T2FA requires Use SSL/TLS to be Strict and a *.myunraid.net certificate
+Local T2FA requires Unraid 610 or higher=Local T2FA requires Unraid 6.10 or higher
+Local T2FA requires Unraid 610 or higher and a myunraidnet certificate=Local T2FA requires Unraid 6.10 or higher and a *.myunraid.net certificate
+Local T2FA requires a myunraidnet certificate=Local T2FA requires a *.myunraid.net certificate
 
-; Note: May 20, 2022 - 99 missing translations
+; Note: May 26, 2022 - 100 missing translations
