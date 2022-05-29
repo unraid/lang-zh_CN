@@ -142,4 +142,4 @@ Windows 7XP=Windows 7/XP
 Windows 82012, newer Linux distros=Windows 8/2012，新的 Linux 发行版
 XML View=XML 视图
 
-; Note: May 26, 2022 - 10 missing translations
+; Note: May 29, 2022 - 10 missing translations

@@ -28,6 +28,8 @@ Application Policy=应用程序政策
 I Understand=我了解
 Installations of apps disabled You must accept the warning to be able to install applications=禁止安装应用程序。您必须接受警告才能安装应用程序
 Click here=单击此处
+%s Results Per Page=
+Results Per Page: %s=
 
 ; Plugin Disclaimer
 Community Applications contains both docker containers and plugin applications Plugins are designed for OS enhancements, and run with full privileges on your system and are clearly identified within CA=Community Applications 同时包含 docker 容器和插件应用程序，这些插件是为增强操作系统而设计的，在您的系统上以完全的权限运行，并且在 CA 中进行了明确标识
@@ -308,6 +310,7 @@ WebUI=WebUI
 Reinstall=重新安装
 Reinstall From Previous Apps=从以前的应用重新安装
 Install=安装
+Uninstall=
 Project=项目
 Read Me First=
 Install second instance=安装第二个实例
@@ -382,6 +385,10 @@ Incompatible=不兼容
 Blacklisted=黑名单
 Template Exists=模板存在
 Template already exists in Apps=模板已存在于应用中
+; eg: LinuxServer Repository
+%s Repository=
+; eg: Squid's Repository
+%s's Repository=
 
 Info=
 Attention=
@@ -412,4 +419,4 @@ An error occurred - Could not determine configuration=
 ; WebGui
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 
-; Note: May 26, 2022 - 30 missing translations
+; Note: May 29, 2022 - 35 missing translations

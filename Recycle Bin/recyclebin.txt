@@ -15,6 +15,7 @@ Excluded Files=排除文件
 Excluded Shares=排除共享
 Log Deleted Files=记录删除的文件
 Recycle Bin=回收站
+Recycle Bin is empty=
 Recycle Bin Log=回收站日志
 Recycle Bin parameters=回收站参数
 Recycle Bin permissions=回收站权限
@@ -128,4 +129,4 @@ Update Recycle Bin Size in Background=在后台更新回收站大小
 > 单击“清除”按钮以清除日志
 :end
 
-; Note: May 26, 2022 - 1 missing translations
+; Note: May 29, 2022 - 2 missing translations
