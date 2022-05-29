@@ -1505,7 +1505,7 @@ Unraid 涵盖广受欢迎的 `vsftpd` FTP 服务器。`vsftp` 的设置现在十
 :end
 
 :vms_libvirt_log_help:
-查看 libvirt 日志：<a id="openlog" title="/var/log/libvirt/libvirtd.log" href="#" onclick="openWindow('/webGui/scripts/tail_log&arg1=libvirt/libvirtd.log','_(Libvirt Log)_',600,900);">/var/log/libvirt/libvirtd.log</a>
+查看 libvirt 日志： <a onclick="openTerminal('log','libvirt','libvirt/libvirtd.log')">View libvirtd.log</a>
 :end
 
 :vms_scrub_help:
