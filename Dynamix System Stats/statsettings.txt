@@ -84,4 +84,4 @@ Viewable system graphs=可见系统信息图表
 > 该设置可以设定默认的时间范围，您也可以在系统统计信息页面上进行周期更改。
 :end
 
-; Note: May 29, 2022 - 7 missing translations
+; Note: May 30, 2022 - 7 missing translations
