@@ -38,6 +38,11 @@ Plugin Note=插件说明
 ; Multi Install
 Install Plugin Applications=安装插件应用程序
 Select all on page=全选本页
+Install Application=
+Install Applications=
+Update Applications=
+Are you sure you want to update %s applications=
+Are you sure you want to install %s docker and %s plugin application(s)=Are you sure you want to install %1$s docker and %2$s plugin application(s)
 
 ; Searches
 Search=搜索
@@ -81,6 +86,11 @@ Details=详情
 Added=最后更新
 ; Install Plugin title of openbox
 Install Plugin=安装插件
+Update Plugin=
+
+Requirements not met=
+The requirements for this upgrade have not been met on your system=
+
 BACK=返回
 
 ; Remove App from previously installed
@@ -412,6 +422,14 @@ A note about translations=翻译说明
 Click here to view the language changelog=单击此处查看语言更改日志
 View Missing Translations=查看缺少的翻译
 
+; Update Checks
+Check For Updates=
+Check for updates already running=
+Checking for docker container updates=
+Checking for plugin updates=
+Checking for language updates=
+Checking %s=
+
 ; dockerHub conversions
 Determine configuration=
 Would you like CA to attempt to determine any applicable paths, ports, and variables for the template This will entail performing a test installation of the container It will be automatically deleted after processing The container will not be started=Would you like CA to attempt to determine any applicable paths, ports, and variables for the template?  This will entail performing a test installation of the container.  It will be automatically deleted after processing.  The container will not be started.
@@ -419,4 +437,5 @@ An error occurred - Could not determine configuration=
 ; WebGui
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 
-; Note: May 30, 2022 - 35 missing translations
+
+; Note: June 6, 2022 - 49 missing translations

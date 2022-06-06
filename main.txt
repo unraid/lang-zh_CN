@@ -350,4 +350,4 @@ System in sleep mode=
 This will put the system in sleep mode=
 wiki entry=
 
-; Note: May 29, 2022 - 38 missing translations
+; Note: June 6, 2022 - 38 missing translations

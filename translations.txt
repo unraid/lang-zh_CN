@@ -335,6 +335,7 @@ Sorry, an error occurred=抱歉，发生错误
 Sorry, this feature is not supported by MSIEEdge=抱歉，MSIE/Edge 不支持此功能
 Standby=待机
 standby=待机
+Stale configuration=
 Start=启动
 Started=已启动
 started=已启动
@@ -874,4 +875,4 @@ Local T2FA requires Unraid 610 or higher=Local T2FA requires Unraid 6.10 or high
 Local T2FA requires Unraid 610 or higher and a myunraidnet certificate=Local T2FA requires Unraid 6.10 or higher and a *.myunraid.net certificate
 Local T2FA requires a myunraidnet certificate=Local T2FA requires a *.myunraid.net certificate
 
-; Note: May 29, 2022 - 100 missing translations
+; Note: June 6, 2022 - 101 missing translations

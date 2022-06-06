@@ -132,4 +132,4 @@ Web=Web
 WebUI=WebUI
 Writable=可写
 
-; Note: May 29, 2022 - 4 missing translations
+; Note: June 6, 2022 - 4 missing translations
