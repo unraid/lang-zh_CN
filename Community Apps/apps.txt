@@ -42,7 +42,7 @@ Install Application=
 Install Applications=
 Update Applications=
 Are you sure you want to update %s applications=
-Are you sure you want to install %s docker and %s plugin application(s)=Are you sure you want to install %1$s docker and %2$s plugin application(s)
+Are you sure you want to install %s docker and %s plugin applications=Are you sure you want to install %1$s docker and %2$s plugin application(s)
 
 ; Searches
 Search=搜索
@@ -438,4 +438,4 @@ An error occurred - Could not determine configuration=
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 
 
-; Note: June 6, 2022 - 49 missing translations
+; Note: June 11, 2022 - 48 missing translations
