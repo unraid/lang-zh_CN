@@ -874,5 +874,10 @@ Local T2FA requires Use SSLTLS to be Strict and a myunraidnet certificate=Local 
 Local T2FA requires Unraid 610 or higher=Local T2FA requires Unraid 6.10 or higher
 Local T2FA requires Unraid 610 or higher and a myunraidnet certificate=Local T2FA requires Unraid 6.10 or higher and a *.myunraid.net certificate
 Local T2FA requires a myunraidnet certificate=Local T2FA requires a *.myunraid.net certificate
+Key file not valid=
+My Servers plugin install failed=
+The My Servers plugin install is incomplete=
+Please uninstall and reinstall the My Servers plugin=
+Be sure to let the install complete before you close the window=
 
-; Note: June 6, 2022 - 101 missing translations
+; Note: June 25, 2022 - 106 missing translations
