@@ -91,6 +91,7 @@ Update Plugin=
 
 Requirements not met=
 The requirements for this upgrade have not been met on your system=
+The sidebar for the app (click info) will list the details=
 
 BACK=返回
 
@@ -440,4 +441,4 @@ An error occurred - Could not determine configuration=
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 
 
-; Note: June 19, 2022 - 50 missing translations
+; Note: August 25, 2022 - 51 missing translations
