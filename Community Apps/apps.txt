@@ -91,7 +91,7 @@ Update Plugin=
 
 Requirements not met=
 The requirements for this upgrade have not been met on your system=
-The sidebar for the app (click info) will list the details=
+The sidebar for the app click info will list the details=The sidebar for the app (click info) will list the details
 
 BACK=返回
 
