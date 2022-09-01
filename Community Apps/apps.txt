@@ -6,13 +6,13 @@ Happy Holidays from Andrew, Tracey, and family=来自 Andrew、Tracey 和家人�
 Please Enjoy Responsibly=请负责任地使用
 Popup Blocked CA requires popups to be enabled under certain circumstances You must white list your server within your browser to allow popups=弹出窗口拦截 CA 需要在某些情况下启用弹出窗口。您必须在浏览器中将服务器列入白名单以允许弹出窗口
 Docker Service Not Enabled - Only Plugins Available To Be Installed Or Managed=未启用 Docker 服务 - 仅可安装或管理的插件
-Docker system failed to start - Only Plugins Available To Be Installed Or Managed=
-Array not started - Only Plugins Available To Be Installed Or Managed=
+Docker system failed to start - Only Plugins Available To Be Installed Or Managed=Docker 系统无法启动 - 只能安装或管理插件
+Array not started - Only Plugins Available To Be Installed Or Managed=阵列未启动 - 仅可安装或管理插件
 Community Applications works best when cookies are enabled in your browser Certain features may not be available=在浏览器中启用 Cookie 时，Community Applications 使用效果最好。某些功能可能不可用
 Backup Server Active Some icons may not appear, and plugin installations may be affected=备份服务器处于活动状态。某些图标可能不会显示，插件安装可能受到影响
 Debugging enabled This significantly increases the memory used by your browser=启用调试会显著增加浏览器的内存占用
 Browser translation detected Display issues may result=
-Action Centre Enabled=
+Action Centre Enabled=操作中心已启用
 
 ; Sorting Options
 Sort By=排序
@@ -39,10 +39,10 @@ Plugin Note=插件说明
 ; Multi Install
 Install Plugin Applications=安装插件应用程序
 Select all on page=全选本页
-Install Application=
-Install Applications=
-Update Applications=
-Are you sure you want to update %s applications=
+Install Application=安装应用程序
+Install Applications=安装应用程序
+Update Applications=升级应用程序
+Are you sure you want to update %s applications=确定要更新 %s 个应用程序吗
 Are you sure you want to install %s docker and %s plugin applications=Are you sure you want to install %1$s docker and %2$s plugin application(s)
 
 ; Searches
@@ -62,8 +62,8 @@ Go to the webpage=Web 页面
 Go to reddit=Reddit 页面
 Go to facebook=Facebook 页面
 Go to discord=Discord 页面
-Go to forum profile=
-Show Profile=
+Go to forum profile=转到论坛个人资料
+Show Profile=显示资料
 SHOW MORE=显示更多
 SHOW LESS=显示更少
 Read more=阅读更多
@@ -75,19 +75,19 @@ Total Languages=语言包总计
 Average Downloads Per App=应用平均下载量
 Web Page=Web 页面
 Forum=论坛
-Forum Profile=
+Forum Profile=论坛个人资料
 Profile=
 Facebook=Facebook
 Reddit=Reddit
 Twitter=Twitter
 Discord=Discord
 Search Apps=搜索应用程序
-Registry=
+Registry=注册
 Details=详情
 Added=最后更新
 ; Install Plugin title of openbox
 Install Plugin=安装插件
-Update Plugin=
+Update Plugin=升级插件
 
 Requirements not met=
 The requirements for this upgrade have not been met on your system=
@@ -110,8 +110,8 @@ Yes, remove it=是的，请删除
 ; App Pinning
 Click to pin this application=单击以固定此应用程序
 Click to unpin this application=单击取消固定此应用程序
-Pin App=
-Unpin App=
+Pin App=固定应用
+Unpin App=取消固定
 
 ; Branch installations
 Choose A Branch To Install=选择要安装的分支
@@ -127,7 +127,7 @@ Yes, install them=是的，请安装
 Cookies not enabled Plugins must be separately installed from docker applications=未启用 Cookie。这些插件必须与 Docker 应用程序分开安装
 Docker applications will be installed utilizing the most recently saved template with no user input on your part=Docker 应用程序将使用最近保存的模板进行安装，无需用户输入
 Updating Support Links=正在更新支持链接
-Downloading docker icons=
+Downloading docker icons=正在下载 docker 图标
 Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=完成安装。如果未出现“完成”按钮，则需要单击右上角的红色 X
 
 ; error messages
@@ -149,7 +149,7 @@ This template is set up to use a custom network You may have to adjust the netwo
 One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=此应用程序使用的一个或多个端口已被服务器上运行的另一服务或应用程序使用，您需要在模板上相应地调整端口
 
 ; CA Sections Keep the length reasonable
-Home=
+Home=首页
 Installed Apps=已安装的应用
 Previous Apps=以前的应用
 Pinned Apps=固定的应用
@@ -322,9 +322,9 @@ WebUI=WebUI
 Reinstall=重新安装
 Reinstall From Previous Apps=从以前的应用重新安装
 Install=安装
-Uninstall=
+Uninstall=卸载
 Project=项目
-Read Me First=
+Read Me First=先阅读此处
 Install second instance=安装第二个实例
 Install Using The Templates Default Tag=使用模板的默认标签进行安装
 Moderator Comments=版主评论
@@ -343,7 +343,7 @@ Support Forum=论坛支持
 ; as in more than 100000
 More than %s=超过 %s
 Remove from Previous Apps=从以前的应用移除
-Remove=
+Remove=移除
 See All Apps=查看所有应用
 Favourite=喜爱的
 Application Type=应用类型
@@ -383,7 +383,7 @@ This application template has been deprecated=此应用程序模板已弃用
 This application template has been blacklisted=此应用程序模板已被列入黑名单
 Click info to see the notes regarding this application=单击信息以查看有关此应用程序的注释
 This application has additional requirements=此应用程序有附加的要求
-BETA=BETA
+BETA=测试版
 INSTALLED=已安装
 OFFICIAL=官方
 UPDATED=
@@ -403,8 +403,8 @@ Template already exists in Apps=模板已存在于应用中
 ; eg: Squid's Repository
 %s's Repository=
 
-Info=
-Attention=
+Info=信息
+Attention=注意
 Repository=存储库
 Why we picked it=我们为什么选它
 Application Spotlight %s=
