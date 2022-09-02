@@ -436,7 +436,7 @@ Checking %s=
 ; dockerHub conversions
 Determine configuration=
 Would you like CA to attempt to determine any applicable paths, ports, and variables for the template This will entail performing a test installation of the container It will be automatically deleted after processing The container will not be started=Would you like CA to attempt to determine any applicable paths, ports, and variables for the template?  This will entail performing a test installation of the container.  It will be automatically deleted after processing.  The container will not be started.
-An error occurred - Could not determine configuration=
+An error occurred - Could not determine configuration=发生错误 - 无法确定配置
 ; WebGui
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 

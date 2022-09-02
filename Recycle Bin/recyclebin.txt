@@ -15,7 +15,7 @@ Excluded Files=排除文件
 Excluded Shares=排除共享
 Log Deleted Files=记录删除的文件
 Recycle Bin=回收站
-Recycle Bin is empty=
+Recycle Bin is empty=回收站为空
 Recycle Bin Log=回收站日志
 Recycle Bin parameters=回收站参数
 Recycle Bin permissions=回收站权限
@@ -32,7 +32,7 @@ SMB Share=SMB 共享
 Start the Recycle Bin=启动回收站
 Starting and stopping the Recycle Bin can cause SMB shares to go offline for a short period=启动和停止回收站时可能会导致SMB共享短时间脱机
 Stop the Recycle Bin=停止回收站
-These actions apply to all shares=
+These actions apply to all shares=这些操作适用于所有共享
 Trash Size=回收站大小
 Update Recycle Bin Size in Background=在后台更新回收站大小
 ;
