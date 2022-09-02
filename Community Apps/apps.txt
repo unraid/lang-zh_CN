@@ -314,8 +314,8 @@ Ranked #%s=排名＃%s
 Trending %s=趋势 %s
 ; as in As of some date
 As of %s=（截至 %s）
-Play Video=
-Play Video %s=
+Play Video=播放视频
+Play Video %s=播放 %s
 This application is not compatible with your version of Unraid=此应用程序与您的 Unraid 版本不兼容
 Another browser tab or device has updated the displayed templates Some actions are not available=另一个浏览器标签页或设备已更新所显示的模板。某些操作不可用
 WebUI=WebUI
@@ -360,13 +360,13 @@ Setting installed applications to autostart=将已安装的应用程序设置为
 Docker Application Installation finished=Docker 应用程序安装完成
 
 ; Application Cards
-Actions=
+Actions=更多操作
 Pending=
 This application is a driver plugin=此应用程序是一个驱动程序（插件）
 This is a language pack=这是一个语言包
 This application is a docker container=此应用程序是一个 Docker 容器
 This application is a plugin=此应用程序是一个插件
-This is a spotlight application=
+This is a spotlight application=这是一个推荐应用
 This is your favourite repository=这是您喜爱的存储库
 This application is from your favourite repository=此应用程序来自您喜爱的存储库
 This application is pinned for later viewing=此应用程序已固定以供稍后查看
@@ -386,7 +386,7 @@ This application has additional requirements=此应用程序有附加的要求
 BETA=测试版
 INSTALLED=已安装
 OFFICIAL=官方
-UPDATED=
+UPDATED=有更新
 This is an official container=这是一个官方容器
 Digitally Signed=数字签名
 This container is digitally signed=此容器经过数字签名
@@ -399,9 +399,9 @@ Blacklisted=黑名单
 Template Exists=模板存在
 Template already exists in Apps=模板已存在于应用中
 ; eg: LinuxServer Repository
-%s Repository=
+%s Repository=%s 储存库
 ; eg: Squid's Repository
-%s's Repository=
+%s's Repository=%s 的储存库
 
 Info=信息
 Attention=注意
