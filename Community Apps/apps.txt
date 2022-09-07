@@ -11,7 +11,7 @@ Array not started - Only Plugins Available To Be Installed Or Managed=阵列未�
 Community Applications works best when cookies are enabled in your browser Certain features may not be available=在浏览器中启用 Cookie 时，Community Applications 使用效果最好。某些功能可能不可用
 Backup Server Active Some icons may not appear, and plugin installations may be affected=备份服务器处于活动状态。某些图标可能不会显示，插件安装可能受到影响
 Debugging enabled This significantly increases the memory used by your browser=启用调试会显著增加浏览器的内存占用
-Browser translation detected Display issues may result=
+Browser translation detected Display issues may result=检测到浏览器翻译，这可能导致显示问题
 Action Centre Enabled=操作中心已启用
 
 ; Sorting Options
@@ -29,8 +29,8 @@ Application Policy=应用程序政策
 I Understand=我了解
 Installations of apps disabled You must accept the warning to be able to install applications=禁止安装应用程序。您必须接受警告才能安装应用程序
 Click here=单击此处
-%s Results Per Page=
-Results Per Page: %s=
+%s Results Per Page=每页 %s 个结果
+Results Per Page: %s=每页数量：%s
 
 ; Plugin Disclaimer
 Community Applications contains both docker containers and plugin applications Plugins are designed for OS enhancements, and run with full privileges on your system and are clearly identified within CA=Community Applications 同时包含 docker 容器和插件应用程序，这些插件是为增强操作系统而设计的，在您的系统上以完全的权限运行，并且在 CA 中进行了明确标识
@@ -82,15 +82,15 @@ Reddit=Reddit
 Twitter=Twitter
 Discord=Discord
 Search Apps=搜索应用程序
-Registry=注册
+Registry=Docker 注册表
 Details=详情
 Added=最后更新
 ; Install Plugin title of openbox
 Install Plugin=安装插件
 Update Plugin=升级插件
 
-Requirements not met=
-The requirements for this upgrade have not been met on your system=
+Requirements not met=未满足要求
+The requirements for this upgrade have not been met on your system=您的系统尚未满足此升级的要求
 The sidebar for the app click info will list the details=The sidebar for the app (click info) will list the details
 
 BACK=返回
@@ -250,7 +250,7 @@ Web=Web
 Privacy=
 Productivity=生产力
 Security=安全性
-Spotlight=
+Spotlight=推荐
 Tools Utilities=工具/实用程序
 System=系统
 Themes=主题
@@ -408,7 +408,7 @@ Attention=注意
 Repository=存储库
 Why we picked it=我们为什么选它
 Application Spotlight %s=
-Unraid Staff=
+Unraid Staff=Unraid 员工
 
 ; Page Navigation
 Displaying %s - %s of %s=正在显示 %1$s - %2$s（总共为 %3$s）
