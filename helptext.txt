@@ -600,8 +600,8 @@ UnRAID 阵列由一个或两个奇偶校验磁盘和多个数据磁盘组成。�
 :share_edit_copy_on_write_help:
 设置为**否**会导致在使用 *btrfs* 文件系统格式化的设备上创建共享目录时，
 在共享目录中设置 *btrfs*NOCOW（无写入时复制）属性。设置后，
-设备上新创建的文件和子目录将继承 NOCOW 属性。对于用于存储虚拟磁盘映像
-包括 Docker 环回映像文件的共享，我们建议使用此设置。
+设备上新创建的文件和子目录将继承 NOCOW 属性。对于用于存储虚拟磁盘镜像
+包括 Docker 环回镜像文件的共享，我们建议使用此设置。
 此设置对非 btrfs 文件系统无效。
 
 设为**自动**即可正常运行，这意味着 COW 在以 *btrfs* 格式化的设备上**将会**生效。
@@ -706,7 +706,7 @@ UnRAID 阵列由一个或两个奇偶校验磁盘和多个数据磁盘组成。�
 :end
 
 :user_add_custom_image_help:
-映像将缩放至 48x48 像素大小。映像文件的最大上传大小为 95 kB (97,280 字节)。
+图片将缩放至 48x48 像素大小。图片文件的最大上传大小为 95 kB (97,280 字节)。
 :end
 
 :user_password_help:
@@ -718,7 +718,7 @@ UnRAID 阵列由一个或两个奇偶校验磁盘和多个数据磁盘组成。�
 :end
 
 :user_edit_custom_image_help:
-映像将缩放至 48x48 像素大小。映像文件的最大上传大小为 512 kB（524,288 字节）。
+图片将缩放至 48x48 像素大小。图片文件的最大上传大小为 512 kB（524,288 字节）。
 :end
 
 :cpu_vms_help:
@@ -948,23 +948,23 @@ MBR 样式分区表的*传统*设置。
 :end
 
 :docker_enable_help:
-在第一次运行 Docker 服务之前，请指定一个用于安装 Docker 的映像文件。
+在第一次运行 Docker 服务之前，请指定一个用于安装 Docker 的镜像文件。
 
 完成首次启动之后，Docker 总是会在阵列启动后自动启动。
 :end
 
 :docker_vdisk_size_help:
-如果系统需要创建新的 docker 映像文件，可以使用此选项指定默认大小 (GB)。
+如果系统需要创建新的 docker 镜像文件，可以使用此选项指定默认大小 (GB)。
 
-要调整现有映像文件的大小，请在此处指定新的大小。下次启动 Docker 服务时，文件（及文件系统）将增至新的大小（但绝不会减小）。
+要调整现有镜像文件的大小，请在此处指定新的大小。下次启动 Docker 服务时，文件（及文件系统）将增至新的大小（但绝不会减小）。
 :end
 
 :docker_vdisk_location_help:
-必须为 Docker 指定映像文件。系统会在 Docker 服务首次启动时自动创建该文件。
+必须为 Docker 指定镜像文件。系统会在 Docker 服务首次启动时自动创建该文件。
 
-映像文件名必须以 .img 为扩展名，否则系统将无法接受该输入并将其标红。
+镜像文件名必须以 .img 为扩展名，否则系统将无法接受该输入并将其标红。
 
-建议将该映像文件创建在阵列之外，例如在缓存池中创建。为获得最佳性能，首选 SSD 设备。
+建议将该镜像文件创建在阵列之外，例如在缓存池中创建。为获得最佳性能，首选 SSD 设备。
 :end
 
 :docker_appdata_location_help:
@@ -972,7 +972,7 @@ MBR 样式分区表的*传统*设置。
 
 该文件夹的路径必须以反斜杠 (/) 字符结尾。否则系统将无法接受该输入并将其标红。
 
-建议将该映像文件创建在阵列之外，例如在缓存池中创建。为获得最佳性能，首选 SSD 设备。
+建议将该镜像文件创建在阵列之外，例如在缓存池中创建。为获得最佳性能，首选 SSD 设备。
 
 只在添加新的 Docker 应用时使用。编辑现有 Docker 应用不影响该设置。
 :end
@@ -1036,7 +1036,7 @@ MBR 样式分区表的*传统*设置。
 :end
 
 :docker_vdisk_location_active_help:
-这是 Docker 映像的位置。
+这是 Docker 镜像的位置。
 :end
 
 :docker_appdata_location_active_help:
@@ -1441,12 +1441,12 @@ Unraid 涵盖广受欢迎的 `vsftpd` FTP 服务器。`vsftp` 的设置现在十
 :end
 
 :vms_libvirt_vdisk_size_help:
-如果系统需要创建新的 libvirt 映像文件，这便是指定的默认大小 (GB)。
-要调整现有映像文件的大小，请在此处指定新的大小。下次启动 Libvirt 服务时，文件（及文件系统）将增大到新的大小（但绝不会减小）。
+如果系统需要创建新的 libvirt 镜像文件，这便是指定的默认大小 (GB)。
+要调整现有镜像文件的大小，请在此处指定新的大小。下次启动 Libvirt 服务时，文件（及文件系统）将增大到新的大小（但绝不会减小）。
 :end
 
 :vms_libvirt_location_help:
-必须为 Libvirt 定义映像文件。首次启动 Libvirt 服务时，系统将自动创建此文件。
+必须为 Libvirt 定义镜像文件。首次启动 Libvirt 服务时，系统将自动创建此文件。
 :end
 
 :vms_libvirt_storage_help:
@@ -1459,7 +1459,7 @@ Unraid 涵盖广受欢迎的 `vsftpd` FTP 服务器。`vsftp` 的设置现在十
 
 :vms_virtio_driver_help:
 指定包含 Fedora 项目提供的 VirtIO Windows 驱动程序的虚拟 CD-ROM (ISO)。
-从此处下载最新 ISO 映像：<a href="https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-direct-downloads" target="_blank">fedoraproject.org</a>
+从此处下载最新 ISO 镜像：<a href="https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-direct-downloads" target="_blank">fedoraproject.org</a>
 
 在安装 Windows 时，会到达未发现磁盘设备的步骤。使用此选项可在该屏幕上浏览驱动程序。
 请在菜单中单击“浏览”，并定位到附加的 CD-ROM。此处将会有针对不同 Windows 版本的不同文件夹。
@@ -1972,7 +1972,7 @@ Unraid 涵盖广受欢迎的 `vsftpd` FTP 服务器。`vsftp` 的设置现在十
 
 :docker_client_repository_help:
 Docker Registry 上应用程序的存储库。格式为作者名称/应用名称。
-（可选）您可以在应用名称之后添加 '：'，并请求容器映像的特定版本。
+（可选）您可以在应用名称之后添加 '：'，并请求容器镜像的特定版本。
 :end
 
 :docker_client_support_thread_help:
