@@ -162,11 +162,11 @@ Top Trending Apps=最热门应用
 Spotlight Apps=推荐应用
 All Apps=所有应用
 Statistics=统计信息
-Credits=信用
+Credits=贡献者
 Support=支持
 VERSION=版本
 Change Log=更改日志
-Debugging=
+Debugging=调试
 
 ; Credits
 Development=开发
@@ -426,15 +426,15 @@ Click here to view the language changelog=单击此处查看语言更改日志
 View Missing Translations=查看缺少的翻译
 
 ; Update Checks
-Check For Updates=
-Check for updates already running=
-Checking for docker container updates=
-Checking for plugin updates=
-Checking for language updates=
+Check For Updates=检查更新
+Check for updates already running=检查更新已经运行
+Checking for docker container updates=检查 docker 容器更新
+Checking for plugin updates=检查插件更新
+Checking for language updates=检查语言包更新
 Checking %s=
 
 ; dockerHub conversions
-Determine configuration=
+Determine configuration=确定配置
 Would you like CA to attempt to determine any applicable paths, ports, and variables for the template This will entail performing a test installation of the container It will be automatically deleted after processing The container will not be started=Would you like CA to attempt to determine any applicable paths, ports, and variables for the template?  This will entail performing a test installation of the container.  It will be automatically deleted after processing.  The container will not be started.
 An error occurred - Could not determine configuration=发生错误 - 无法确定配置
 ; WebGui
