@@ -11,7 +11,7 @@ Array not started - Only Plugins Available To Be Installed Or Managed=阵列未�
 Community Applications works best when cookies are enabled in your browser Certain features may not be available=在浏览器中启用 Cookie 时，Community Applications 使用效果最好。某些功能可能不可用
 Backup Server Active Some icons may not appear, and plugin installations may be affected=备份服务器处于活动状态。某些图标可能不会显示，插件安装可能受到影响
 Debugging enabled This significantly increases the memory used by your browser=启用调试会显著增加浏览器的内存占用
-Browser translation detected Display issues may result=
+Browser translation detected Display issues may result=检测到浏览器翻译，这可能导致显示问题
 Action Centre Enabled=操作中心已启用
 
 ; Sorting Options
@@ -29,8 +29,8 @@ Application Policy=应用程序政策
 I Understand=我了解
 Installations of apps disabled You must accept the warning to be able to install applications=禁止安装应用程序。您必须接受警告才能安装应用程序
 Click here=单击此处
-%s Results Per Page=
-Results Per Page: %s=
+%s Results Per Page=每页 %s 个结果
+Results Per Page: %s=每页数量：%s
 
 ; Plugin Disclaimer
 Community Applications contains both docker containers and plugin applications Plugins are designed for OS enhancements, and run with full privileges on your system and are clearly identified within CA=Community Applications 同时包含 docker 容器和插件应用程序，这些插件是为增强操作系统而设计的，在您的系统上以完全的权限运行，并且在 CA 中进行了明确标识
@@ -82,15 +82,15 @@ Reddit=Reddit
 Twitter=Twitter
 Discord=Discord
 Search Apps=搜索应用程序
-Registry=注册
+Registry=Docker 注册表
 Details=详情
 Added=最后更新
 ; Install Plugin title of openbox
 Install Plugin=安装插件
 Update Plugin=升级插件
 
-Requirements not met=
-The requirements for this upgrade have not been met on your system=
+Requirements not met=未满足要求
+The requirements for this upgrade have not been met on your system=您的系统尚未满足此升级的要求
 The sidebar for the app click info will list the details=The sidebar for the app (click info) will list the details
 
 BACK=返回
@@ -162,11 +162,11 @@ Top Trending Apps=最热门应用
 Spotlight Apps=推荐应用
 All Apps=所有应用
 Statistics=统计信息
-Credits=信用
+Credits=贡献者
 Support=支持
 VERSION=版本
 Change Log=更改日志
-Debugging=
+Debugging=调试
 
 ; Credits
 Development=开发
@@ -250,7 +250,7 @@ Web=Web
 Privacy=
 Productivity=生产力
 Security=安全性
-Spotlight=
+Spotlight=推荐
 Tools Utilities=工具/实用程序
 System=系统
 Themes=主题
@@ -314,8 +314,8 @@ Ranked #%s=排名＃%s
 Trending %s=趋势 %s
 ; as in As of some date
 As of %s=（截至 %s）
-Play Video=
-Play Video %s=
+Play Video=播放视频
+Play Video %s=播放 %s
 This application is not compatible with your version of Unraid=此应用程序与您的 Unraid 版本不兼容
 Another browser tab or device has updated the displayed templates Some actions are not available=另一个浏览器标签页或设备已更新所显示的模板。某些操作不可用
 WebUI=WebUI
@@ -360,13 +360,13 @@ Setting installed applications to autostart=将已安装的应用程序设置为
 Docker Application Installation finished=Docker 应用程序安装完成
 
 ; Application Cards
-Actions=
+Actions=更多操作
 Pending=
 This application is a driver plugin=此应用程序是一个驱动程序（插件）
 This is a language pack=这是一个语言包
 This application is a docker container=此应用程序是一个 Docker 容器
 This application is a plugin=此应用程序是一个插件
-This is a spotlight application=
+This is a spotlight application=这是一个推荐应用
 This is your favourite repository=这是您喜爱的存储库
 This application is from your favourite repository=此应用程序来自您喜爱的存储库
 This application is pinned for later viewing=此应用程序已固定以供稍后查看
@@ -386,7 +386,7 @@ This application has additional requirements=此应用程序有附加的要求
 BETA=测试版
 INSTALLED=已安装
 OFFICIAL=官方
-UPDATED=
+UPDATED=有更新
 This is an official container=这是一个官方容器
 Digitally Signed=数字签名
 This container is digitally signed=此容器经过数字签名
@@ -399,16 +399,16 @@ Blacklisted=黑名单
 Template Exists=模板存在
 Template already exists in Apps=模板已存在于应用中
 ; eg: LinuxServer Repository
-%s Repository=
+%s Repository=%s 储存库
 ; eg: Squid's Repository
-%s's Repository=
+%s's Repository=%s 的储存库
 
 Info=信息
 Attention=注意
 Repository=存储库
 Why we picked it=我们为什么选它
 Application Spotlight %s=
-Unraid Staff=
+Unraid Staff=Unraid 员工
 
 ; Page Navigation
 Displaying %s - %s of %s=正在显示 %1$s - %2$s（总共为 %3$s）
@@ -426,15 +426,15 @@ Click here to view the language changelog=单击此处查看语言更改日志
 View Missing Translations=查看缺少的翻译
 
 ; Update Checks
-Check For Updates=
-Check for updates already running=
-Checking for docker container updates=
-Checking for plugin updates=
-Checking for language updates=
+Check For Updates=检查更新
+Check for updates already running=检查更新已经运行
+Checking for docker container updates=检查 docker 容器更新
+Checking for plugin updates=检查插件更新
+Checking for language updates=检查语言包更新
 Checking %s=
 
 ; dockerHub conversions
-Determine configuration=
+Determine configuration=确定配置
 Would you like CA to attempt to determine any applicable paths, ports, and variables for the template This will entail performing a test installation of the container It will be automatically deleted after processing The container will not be started=Would you like CA to attempt to determine any applicable paths, ports, and variables for the template?  This will entail performing a test installation of the container.  It will be automatically deleted after processing.  The container will not be started.
 An error occurred - Could not determine configuration=发生错误 - 无法确定配置
 ; WebGui
