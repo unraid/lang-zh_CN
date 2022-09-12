@@ -1,4 +1,4 @@
-also remove image=也移除镜像
+also remove image=同时移除镜像
 Apply=应用
 Are you sure=是否确定？
 Cancel=取消
