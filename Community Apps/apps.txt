@@ -431,7 +431,7 @@ Check for updates already running=检查更新已经运行
 Checking for docker container updates=检查 docker 容器更新
 Checking for plugin updates=检查插件更新
 Checking for language updates=检查语言包更新
-Checking %s=
+Checking %s=正在检查 %s
 
 ; dockerHub conversions
 Determine configuration=确定配置
