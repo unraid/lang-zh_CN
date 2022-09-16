@@ -350,4 +350,4 @@ System in sleep mode=系统处于睡眠模式
 This will put the system in sleep mode=这将使系统进入睡眠模式
 wiki entry=wiki 条目
 
-; Note: June 6, 2022 - 38 missing translations
+; Note: September 16, 2022 - 15 missing translations

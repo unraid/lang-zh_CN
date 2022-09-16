@@ -131,5 +131,3 @@ Was this container created using this plugin=是否使用此插件创建该容�
 Web=Web
 WebUI=WebUI
 Writable=可写
-
-; Note: June 6, 2022 - 4 missing translations

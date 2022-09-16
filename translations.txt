@@ -880,4 +880,4 @@ The My Servers plugin install is incomplete=My Servers 安装不完整
 Please uninstall and reinstall the My Servers plugin=请卸载并重新安装 My Servers
 Be sure to let the install complete before you close the window=确保在完成安装之后关闭窗口
 
-; Note: June 25, 2022 - 106 missing translations
+; Note: September 16, 2022 - 76 missing translations

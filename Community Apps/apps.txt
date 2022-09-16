@@ -441,4 +441,4 @@ An error occurred - Could not determine configuration=发生错误 - 无法确�
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 
 
-; Note: August 25, 2022 - 51 missing translations
+; Note: September 16, 2022 - 7 missing translations
