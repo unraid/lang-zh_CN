@@ -154,7 +154,7 @@ Installed Apps=已安装的应用
 Previous Apps=以前的应用
 Pinned Apps=固定的应用
 Favourite Repo=喜爱的存储库
-Action Centre=
+Action Centre=操作中心
 Recently Added=最近添加
 Random Apps=随机应用
 Top New Installs=热门新安装
@@ -431,7 +431,7 @@ Check for updates already running=检查更新已经运行
 Checking for docker container updates=检查 docker 容器更新
 Checking for plugin updates=检查插件更新
 Checking for language updates=检查语言包更新
-Checking %s=
+Checking %s=正在检查 %s
 
 ; dockerHub conversions
 Determine configuration=确定配置
