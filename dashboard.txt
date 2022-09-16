@@ -70,6 +70,7 @@ Nominal power=额定功率
 not received=未接收
 Only PNG images are allowed=只允许使用 PNG 图像
 Outbound=上行速率
+Output voltage=
 Overall Load=整体负载
 Parity disk not present=不存在奇偶校验磁盘
 Parity disks not present=不存在奇偶校验磁盘
@@ -110,3 +111,5 @@ User count %s with %s unprotected=用户总计 **%s** 个，其中 **%s** 个未
 utilization warning=利用率警告
 View Running Processes=查看正在运行的进程
 Virtual Machines=虚拟机
+
+; Note: September 16, 2022 - 1 missing translations
