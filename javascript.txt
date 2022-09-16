@@ -71,5 +71,3 @@ Container Port=容器端口
 Container Variable=容器变量
 Container Label=容器标签
 Container Device=容器设备
-
-; Note: September 16, 2022 - 4 missing translations

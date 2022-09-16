@@ -349,5 +349,3 @@ Sleeping=睡眠中
 System in sleep mode=系统处于睡眠模式
 This will put the system in sleep mode=这将使系统进入睡眠模式
 wiki entry=wiki 条目
-
-; Note: September 16, 2022 - 15 missing translations
