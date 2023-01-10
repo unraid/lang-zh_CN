@@ -84,7 +84,7 @@ Discord=Discord
 Search Apps=搜索应用程序
 Registry=Docker 注册表
 Details=详情
-Added=最后更新
+Added=添加日期
 ; Install Plugin title of openbox
 Install Plugin=安装插件
 Update Plugin=升级插件
