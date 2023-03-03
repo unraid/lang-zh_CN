@@ -326,7 +326,7 @@ Shares List=共享列表
 Shares=共享
 Show Password=显示密码
 Shutdown=关机
-Sign In before your Unraidnet SSL certificate expires=Sign In before your Unraid.net SSL certificate expires
+Sign In before your Unraidnet SSL certificate expires=在你的 Unraid.net SSL 证书过期前登录
 Size=大小
 SMB Security Settings=SMB 安全设置
 SMB=SMB
@@ -388,7 +388,7 @@ unassigned=未分配
 Unknown=未知
 unknown=未知
 Unraid OS=Unraid OS
-Unraidnet re-authentication required=Unraid.net re-authentication required
+Unraidnet re-authentication required=需要重新认证 Unraid.net
 Unsupported Feature=不支持的功能
 Update Container=更新容器
 Update Now=立即更新
@@ -397,8 +397,8 @@ Update=更新
 update=更新
 Updated=已更新
 Upgrade Key=升级密钥
-Upload error=上载错误
-Upload=上载
+Upload error=上传错误
+Upload=上传
 Uptime=正常运行时间
 up-to-date=最新
 User Access=用户访问权限
@@ -431,7 +431,7 @@ yesterday=昨天
 YesTime Machine hidden=是/时间机器（隐藏）
 YesTime Machine=是/时间机器
 You must reboot for changes to take effect=您必须重新启动才能使更改生效
-Your browser does not support HTML5 file uploads=您的浏览器不支持 HTML5 文件上载
+Your browser does not support HTML5 file uploads=您的浏览器不支持 HTML5 文件上传
 Your browser has JavaScript disabled=您的浏览器禁用了 JavaScript
 
 ; Dynamix.system.button plugin
@@ -533,7 +533,7 @@ Hi %s=您好 %s！
 I acknowledge that replacing a license key results in permanently blacklisting the previous USB Flash GUID=本人确认更换许可证密钥会导致先前的 USB 闪存 GUID 被永久列入黑名单
 I agree to the=我同意
 If this was an expired Trial installation, you may purchase a license key=如果这是一个过期的试用安装，您可以购买许可证密钥
-If you do not have a backup copy of your license key file you may install the My Servers beta plugin to attempt to recover your key=If you do not have a backup copy of your license key file you may install the My Servers (beta) plugin to attempt to recover your key
+If you do not have a backup copy of your license key file you may install the My Servers beta plugin to attempt to recover your key=如果你没有许可证密钥文件的备份，你可以安装 My Servers（测试版）插件来尝试恢复你的密钥。
 If you fill this field out then your email will not be sent=如果填写此字段，您的电子邮件将不会发送
 If you want to replace one of your license keys with a new key bound to this USB Flash device please first remove all other key files first=如果要使用绑定到此 USB 闪存设备的新密钥替换您的许可证密钥之一，请首先删除所有其他密钥文件
 Installed %s Key=已安装 %s 密钥
@@ -572,8 +572,8 @@ Please copy the correct key file to the config directory on your USB Flash boot 
 Please copy the Key URL before closing this window=请在关闭此窗口之前复制密钥 URL
 Please keep this window open=请保持该窗口处于打开状态
 Please refresh the page to ensure you load your latest configuration=请刷新页面以确保您加载了最新配置
-Please remove all key files except the one you want to replace from the config directory on your USB Flash boot device=Please remove all key files except the one you want to replace from the */config* directory on your USB Flash boot device
-Please sign in with your Unraidnet forum account=请使用您的Unraid.net论坛帐户登录
+Please remove all key files except the one you want to replace from the config directory on your USB Flash boot device=请从您的 USB 闪存启动设备的 */config* 目录中删除除您要替换的密钥文件外的所有密钥文件。
+Please sign in with your Unraidnet forum account=请使用您的 Unraid.net 论坛帐户登录
 Please try a different USB Flash device=请尝试使用其他 USB 闪存设备
 Please wait a moment and reload the page=正在重新加载页面，请稍候
 Pop-up=弹出窗口
@@ -601,14 +601,14 @@ Sign In to resolve=登录以进行解决
 Sign In=登录
 Sign me up for the monthly Unraid newsletter=我要注册以获取 Unraid 月报
 Sign Out=注销
-Sign Out of Unraidnet=Sign Out of Unraid.net
+Sign Out of Unraidnet=登出 Unraid.net
 Sign Up for Unraidnet=注册 Unraid.net
 Sign Up=注册
 Signing in %s to Unraidnet account=%s 正在登录到 Unraid.net 帐户
 Signing out %s from Unraidnet account=%s 正在注销 Unraid.net 帐户
 Stale Server=服务器过期
 Stale=过期
-Still working our magic=
+Still working our magic=仍在施展我们的魔法
 Submitting=正在提交
 Success=成功了！
 Switch Language=切换语言
@@ -640,7 +640,7 @@ Trial key expires at %s=试用版密钥将于 %s 过期
 Trial Requires Internet Connection=试用版需要联网
 Troubleshoot=故障排除
 Unable to copy=无法复制
-unavailable no parity-check entries logged=unavailable (no parity-check entries logged)
+unavailable no parity-check entries logged=不可用（没有记录奇偶校验条目）。
 Unraid API Error=Unraid API 错误
 Unraid Forums=Unraid 论坛
 Unraidnet account password=Unraid.net 帐户密码
@@ -677,22 +677,22 @@ Your Unraid registration key is ineligible for replacement as it has been replac
 Your USB Flash GUID and other relevant server data will also be sent=您的 USB 闪存 GUID 和其他相关服务器数据也将一并发送
 
 ; My Servers - 2022-03-13
-Remark your WAN IPv4 is %s=Remark: your WAN IPv4 is **%s**
-Remark Unraids WAN IPv4 %1s does not match your clients WAN IPv4 %2s=Remark: Unraid's WAN IPv4 **%1s** does not match your client's WAN IPv4 **%2s**
-This may indicate a complex network that will not work with this Remote Access solution=
+Remark your WAN IPv4 is %s=注意：你的广域网IPv4地址是 **%s**
+Remark Unraids WAN IPv4 %1s does not match your clients WAN IPv4 %2s=注意：Unraid 的 WAN IPv4 地址为 **%1s**，与您的客户端的 WAN IPv4 地址 **%2s** 不匹配
+This may indicate a complex network that will not work with this Remote Access solution=这可能表明一个复杂的网络将无法与该远程访问解决方案配合使用
 Ignore this message if you are currently connected via Remote Access or VPN=如果您当前通过远程访问或 VPN 连接，请忽略此消息
 
 Automated flash backups will be disabled until you sign in again=自动闪存备份将被禁用，直到您再次登录
-Click to copy LAN IP %s=
-DNS issue, unable to resolve wanip4unraidnet=DNS issue, unable to resolve wanip4.unraid.net
+Click to copy LAN IP %s=点击复制 LAN IP %s
+DNS issue, unable to resolve wanip4unraidnet=DNS 问题，无法解析 wanip4.unraid.net
 Download latest backup from My Servers Dashboard before signing out=在退出前从 My Servers 仪表板下载最新备份
-Have the code now Go Back=Have the code now? Go Back
-LAN IP Copied=
+Have the code now Go Back=现在有密码了吗？返回
+LAN IP Copied=局域网的IP被复制
 Remote access will be disabled=远程访问将被禁用
 Resend Code=
 Resend Email Verification Code=
 We have sent a verifcation email to %s=我们已向 %s 发送了一封验证电子邮件📧
-You will no longer have access to this server using this url=You will no longer have access to this server using <abbr title="%s" class="italic">this url</abbr>
+You will no longer have access to this server using this url=你将不能再使用<abbr title="%s" class="italic">这个网址</abbr>访问服务器了
 
 ; Dynamix File Manager - 2022-05-20
 %s year ago=% 年前

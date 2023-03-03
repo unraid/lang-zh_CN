@@ -76,7 +76,7 @@ Average Downloads Per App=应用平均下载量
 Web Page=Web 页面
 Forum=论坛
 Forum Profile=论坛个人资料
-Profile=
+Profile=个人资料
 Facebook=Facebook
 Reddit=Reddit
 Twitter=Twitter
@@ -91,7 +91,7 @@ Update Plugin=升级插件
 
 Requirements not met=未满足要求
 The requirements for this upgrade have not been met on your system=您的系统尚未满足此升级的要求
-The sidebar for the app click info will list the details=The sidebar for the app (click info) will list the details
+The sidebar for the app click info will list the details=应用程序的侧边栏（点击信息）将列出详细信息
 
 BACK=返回
 
@@ -133,7 +133,7 @@ Finished Installing If the DONE button did not appear, then you will need to cli
 ; error messages
 No data was returned It is probable that another browser session has rebooted your server Reloading this browser tab will probably fix this error=没有返回任何数据。可能是另一个浏览器会话重新启动了服务器。重新加载此浏览器标签页可能会解决此错误
 An error occurred Could not find any %s Apps=发生错误，找不到任何 %s 应用
-Download of appfeed failed=appfeed下载失败
+Download of appfeed failed=应用程序资源文件下载失败
 ; the %s here refers to a function being called
 Something really went wrong here=这里真的出问题了
 Post the ENTIRE contents of this message in the Community Applications Support Thread=在 Community Applications 支持对话中发布此消息的**全部**内容
@@ -280,7 +280,7 @@ NetworkManagement=网络：管理
 NetworkProxy=网络：代理
 NetworkVOIP=网络：VOIP
 NetworkVPN=网络：VPN
-NetworkPrivacy=Network:Privacy
+NetworkPrivacy=网络隐私
 NetworkWeb=网络：Web
 NetworkOther=网络：其他
 ToolsSystem=工具：系统
