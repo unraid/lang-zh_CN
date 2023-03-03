@@ -397,8 +397,8 @@ Update=更新
 update=更新
 Updated=已更新
 Upgrade Key=升级密钥
-Upload error=上载错误
-Upload=上载
+Upload error=上传错误
+Upload=上传
 Uptime=正常运行时间
 up-to-date=最新
 User Access=用户访问权限
@@ -431,7 +431,7 @@ yesterday=昨天
 YesTime Machine hidden=是/时间机器（隐藏）
 YesTime Machine=是/时间机器
 You must reboot for changes to take effect=您必须重新启动才能使更改生效
-Your browser does not support HTML5 file uploads=您的浏览器不支持 HTML5 文件上载
+Your browser does not support HTML5 file uploads=您的浏览器不支持 HTML5 文件上传
 Your browser has JavaScript disabled=您的浏览器禁用了 JavaScript
 
 ; Dynamix.system.button plugin

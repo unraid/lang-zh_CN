@@ -188,7 +188,7 @@ UnRAID 阵列由一个或两个奇偶校验磁盘和多个数据磁盘组成。�
 
 输入最多 512 个字符的密码。强烈建议仅使用 [ASCII 表](https://en.wikipedia.org/wiki/ASCII) 中前面 128 个字符中的 95 个可打印字符，因为它们始终具有相同的二进制表示形式。
 根据系统配置，其他字符可能具有不同的编码，您的密码
-将无法使用其他编码。如果您希望使用更长的密码或包含二进制数据，请改为上载密钥文件。
+将无法使用其他编码。如果您希望使用更长的密码或包含二进制数据，请改为上传密钥文件。
 
 请参考 [cryptsetup FAQ]（https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions#5-security-aspects）
 以了解构成*安全*密码的元素。
