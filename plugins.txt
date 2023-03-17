@@ -1,4 +1,5 @@
 %s An update is available=%s 有可用更新
+Alert Message=
 anonymous=匿名
 Author=作者
 Check For Updates=检查更新
@@ -19,13 +20,14 @@ Next=下一个
 No plugins installed=没有安装插件
 No release notes available=没有可用的发行说明
 No response, aborting=没有响应，正在中止
-Plugin File=插件文件
 Plugin File Install Errors=插件文件安装错误
+Plugin File=插件文件
 Plugin History=插件历史
 Plugin Update Check=插件更新检查
 Plugin=插件
 Release Notes=发行说明
 Remove Plugin=移除插件
+Remove Selected Plugins=
 remove=移除
 Select local plugin file=选择本地插件文件
 Stable=稳定
@@ -36,3 +38,5 @@ Update All Plugins=更新所有插件
 Update Plugin=更新插件
 Upgrade=升级
 View Release Notes=查看发行说明
+
+; Note: March 17, 2023 - 2 missing translations
