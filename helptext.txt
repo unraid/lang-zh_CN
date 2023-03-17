@@ -1467,14 +1467,6 @@ Unraid 涵盖广受欢迎的 `vsftpd` FTP 服务器。`vsftp` 的设置现在十
 您将会看到3个驱动程序。请全选，并单击下一步，就会出现您分配的虚拟磁盘。
 :end
 
-:vms_network_bridge_help:
-选择您希望用作虚拟机默认设置的网桥名称，
-设置为 'virbr0’ 将使 libvirt 创建利用 NAT （网络地址转换）的虚拟网桥，
-并发挥 DHCP 服务器的作用，来直接分发 IP 地址给虚拟机。
-在网络设置下创建虚拟网桥之后，将会呈现更多的可选项。
-
-备注：您也可以根据虚拟机指定网桥。
-:end
 
 :vms_host_shutdown_help:
 该选项定义关闭服务器时要对正在运行的虚拟机执行的操作。如果选中*休眠虚拟机*，
@@ -2300,3 +2292,45 @@ Cloudflare 用户需要注意：Cloudflare 的代理专为 http 流量设计，�
 “SMB 多通道使文件服务器能够同时使用多个网络连接。”
 :end
 
+
+; New entries (4) - 2023-03-17
+
+:docker_readmore_help:
+Some systems with a lot of docker containers may experience lag using the main Docker page.
+
+Setting this to "No" may help speed up general page usage by disabling the use of readmore-js.
+Instead of chevrons indicating more data for Port and Volume mapping, all data is displayed.
+:end
+
+:docker_custom_network_type_help:
+The **ipvlan** type is best when connection to the physical network is not needed.
+Please read <u><a style="color:blue" href='https://docs.docker.com/network/ipvlan/', target='_blank'>this</a></u> on implementing an ipvlan network.<br>
+
+The **macvlan** type of network allows direct connection to the physical network.
+Please read <u><a style="color:blue" href='https://docs.docker.com/network/macvlan/', target='_blank'>this</a></u> on implementing a macvlan network.<br>
+
+**Note:** Docker uses its own dhcp service, which is the **DHCP Pool** setting.
+When you use multiple Unraid servers, then each server must have a different Docker **DHCP Pool** range configured.
+:end
+
+:mgmt_local_access_urls_help:
+The Local Access URLs shown above are based on your current settings. 
+To adjust URLs or redirects, see the help text for "Use SSL/TLS".
+:end
+
+:vms_network_source_help:
+Select the name of the network you wish to use as default for your VMs.
+You can choose between **'bridges'** created under network settings or
+**'libvirt'** created with virsh command in the terminal.
+The bridge **'virbr0'** and the associated virtual network **'default'** are
+created by libvirt.  
+Both utilizes NAT (network address translation) and act as a DHCP server to hand out IP addresses to virtual machines directly.
+More optional selections are present for bridges under network settings or for libvirt networks with the virsh command in the terminal.
+
+**If your are unsure, choose 'virbr0' as the recommended Unraid default.**
+
+NOTE: You can also specify a network source on a per-VM basis.
+
+**IMPORTANT: Neither Libvirt nor Unraid automatically brings up an interface that is assigned to a Libvirt network.
+Before you use a Libvirt network, please go to Settings -> Network Settings and, if necessary, manually set the associated interface to up.**
+:end
