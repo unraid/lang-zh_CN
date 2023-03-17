@@ -146,7 +146,10 @@ This usually means your flash drive is corrupted or has dropped offline The rest
 Fatal Docker Image Error=致命 Docker 镜像错误
 Your docker image or folder is either read-only or completely full Issues will result because of this You should create a new post in the Unraid forums and include your diagnostics=
 This template is set up to use a custom network You may have to adjust the network or IP address etc to match your system=此模板设置为使用自定义网络 您可能需要调整网络或 IP 地址等以匹配您的系统
+This template is set up to run as Privileged This is a possible security risk and usually does not need to be enabled Note that some applications require privileged in order to operate correctly=
 One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=此应用程序使用的一个或多个端口已被服务器上运行的另一服务或应用程序使用，您需要在模板上相应地调整端口
+Not Enough Memory=
+Community Applications (and Unraid OS) have a minimum required installed memory of 4G CA cannot run without those mimimums being met=
 
 ; CA Sections Keep the length reasonable
 Home=首页
@@ -308,6 +311,7 @@ Current Version=当前版本
 Min OS=最低 OS
 Max OS=最高 OS
 Total Downloads=总下载量
+Popularity=
 Licence=许可证
 Ranked #%s=排名＃%s
 ; as in Trending up or down arrow
@@ -441,4 +445,4 @@ An error occurred - Could not determine configuration=发生错误 - 无法确�
 Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 
 
-; Note: September 16, 2022 - 5 missing translations
+; Note: March 17, 2023 - 8 missing translations

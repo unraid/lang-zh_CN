@@ -4,8 +4,8 @@ Hide Incompatible Applications=隐藏不兼容的应用程序
 This setting will hide applications that are listed as being incompatible with your version of Unraid=此设置将隐藏列出的与您的 Unraid 版本不兼容的应用程序
 Allow install of second instance=允许安装第二实例
 This option enables another button on the cards and popups which will allow you to reinstall an installed application using its default template values This option can be confusing at times, and is only generally used if you wish to install and have an application running twice simultaneously=此选项启用卡片和弹出窗口上的另一个按钮，该按钮允许您使用默认模板值重新安装已安装的应用程序。此选项有时会令人混淆，通常在您希望安装并且同时运行应用程序两次时才使用
-Show descriptions on application cards=在应用程序窗口上显示说明
-This option dictates whether the descriptions appear on the cards or not=此选项决定描述是否出现在窗口上
+Automatically open the sidebar=
+Allows CA to automatically open the sidebar for more information when hovering over an application's icon=
 Allow CA to check for updates to applications=允许 CA 检查应用程序的更新
 This setting enables CA to check for updates to applications Note that Community Applications will always check for updates to itself=此设置使 CA 能够检查应用程序的更新，请注意：社区应用程序将始终检查自身的更新
 Allow CA to send any emergency notifications=允许 CA 发送任何紧急通知
@@ -18,3 +18,5 @@ Only enable this when advised to from the author of Community Applications=仅�
 Enable developer mode=启用开发者模式
 This unlocks some extra features within CA generally only used by developers Not recommended to enable=这会解锁 CA 中的一些额外功能（通常仅由开发人员使用，不建议启用）
 Support Thread=支持论坛
+
+; Note: March 17, 2023 - 2 missing translations
