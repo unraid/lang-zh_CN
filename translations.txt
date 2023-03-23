@@ -711,8 +711,8 @@ We have sent a verifcation email to %s=我们已向 %s 发送了一封验证电�
 You will no longer have access to this server using this url=你将不能再使用<abbr title="%s" class="italic">这个网址</abbr>访问服务器了
 
 ; Dynamix File Manager - 2022-05-20
-%s year ago=% 年前
-%s years ago=% 年前
+%s year ago=%s 年前
+%s years ago=%s 年前
 Action=
 Calculate Occupied Space=计算占用空间
 Calculate=计算
