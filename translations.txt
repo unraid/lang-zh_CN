@@ -168,6 +168,7 @@ Interface=接口
 Invalid Username or Password=用户名或密码错误
 IOMMU=IOMMU
 is available=可用
+Job=
 KB=KB
 Keep server details anonymous=保持服务器详细信息匿名
 Kernel=内核
@@ -710,7 +711,7 @@ This may indicate a complex network that will not work with this Remote Access s
 We have sent a verifcation email to %s=我们已向 %s 发送了一封验证电子邮件📧
 You will no longer have access to this server using this url=你将不能再使用<abbr title="%s" class="italic">这个网址</abbr>访问服务器了
 
-; Dynamix File Manager - 2022-05-20
+; Dynamix File Manager - 2023-04-11
 %s year ago=%s 年前
 %s years ago=%s 年前
 Action=
@@ -742,6 +743,7 @@ DEVICE=设备
 Download File=下载文件
 Enter a valid target=输入一个有效的目标
 Expand=扩展
+File is removed=
 File Manager=文件管理器
 File name=文件名称
 file type=文件类型
@@ -755,7 +757,11 @@ in %s folders and %s files=
 Invalid path=无效路径
 Invalid source=无效来源
 Invalid target=无效目标
+Job running=
+Jobs=
 Last modified=最后修改时间
+Minimize=
+more=
 Move Device=移动设备
 Move File=移动文件
 Move Folder=移动文件夹
@@ -766,6 +772,7 @@ New file name=新文件名
 New folder name=新文件夹名
 New owner=新所有者
 New permission=新权限
+No jobs scheduled=
 No results found=未找到结果
 Not allowed to mix disk and user shares=不允许混合使用磁盘和用户共享
 Objects to change=
@@ -779,12 +786,15 @@ Owner=所有者
 Page will be reloaded=页面将被重新加载
 Parent Directory=父级目录
 Permission=权限
+Queue=
 Removing=正在移除中
 Rename File=重命名文件
 Rename Folder=重命名文件夹
 rename to=重命名为
 Renaming=正在重命名中
 Save=保存
+Scheduled Jobs=
+Search pattern=
 Search string=搜索字符串
 Search=搜索
 Share name=共享名称
@@ -823,6 +833,7 @@ This renames the selected source=这将重命名已选定的源
 Toggle TimeAge display=Toggle Time/Age display
 Total occupied space=总占用空间
 Updating=正在更新中
+Upload Error=
 Use sparse option=
 year=年
 years=年
@@ -898,4 +909,4 @@ Your current url %s is not in the list of allowed origins for this server=Your c
 Your server will not be usable until you purchase a Registration key or install a free 30-day Trial key=在您购买注册密钥或安装免费的 30 天试用密钥之前，您的服务器将无法使用
 Your Unraid registration key is ineligible for replacement as it is blacklisted=您的 Unraid 注册码已被列入黑名单，无法更换
 
-; Note: March 17, 2023 - 36 missing translations
+; Note: April 11, 2023 - 47 missing translations

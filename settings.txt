@@ -263,6 +263,7 @@ Fahrenheit=华氏度
 Failed to open=打开失败
 Failed to stop=停止失败
 Failure to do so may result in your docker image suffering corruption at a later time=否则可能导致 Docker 镜像日后损坏
+Finished=
 First day=第一天
 First week=第一周
 Flash backup=
@@ -764,11 +765,25 @@ YYYY-MM-DD=年-月-日
 zfs=
 
 ; My Servers plugin
+Account status=
+Also delete cloud backup Restore from backup will be unavailable=Also delete cloud backup. Restore from backup will be unavailable.
+Always - Manual Port Forward=
+Always - UPnP=
 Are you sure you want pause communication with your remote flash backup on unraidnet=您确定要暂停与 unraid.net 上远程闪存备份的通信吗？
+Are you sure you want to delete your cloud backup Restore from backup will be unavailable=Are you sure you want to delete your cloud backup? Restore from backup will be unavailable.
+Are you sure you want to delete your local flash backup=Are you sure you want to delete your local flash backup?
 Are you sure you want to erase all change history in both local and unraidnet remote=您确定要删除本地和 unraid.net 远程中的所有更改历史记录吗？
+Connected to My Servers Cloud=
+Delete Cloud Backup=
+Disabled until connected to My Servers Cloud=
+Disabled until you have signed in=
+Disabled until you Provision a myunraidnet SSL Cert=Disabled until you Provision a myunraid.net SSL Cert
 Disabled until you Provision an unraidnet SSL Cert and set SSL-TLS to Auto=在您配置 unraid.net SSL 证书并将 SSL-TLS 设置为 Auto 之前禁用
 Disabled until you Provision an unraidnet SSL Cert=禁用，直到您提供 unraid.net SSL 证书
 Disabled until your root user account is password-protected=在您的 root 用户帐户受密码保护之前禁用
+Dynamic - Manual Port Forward=
+Dynamic - UPnP=
+Dynamic Remote Access allows you to do stuff that someone else can explain=Dynamic Remote Access allows you to do stuff that someone else can explain.
 Enable Transparent 2FA for Local Access=开启本地访问的透明二步验证
 Enable Transparent 2FA for Remote Access=
 In order to activate Flash Backup there must be at least 1GB of free space on your flash drive=In order to activate Flash Backup there must be at least 1GB of free space on your flash drive.
@@ -794,4 +809,4 @@ Transient errors in this log can be ignored unless you are having issues=如果�
 Unraid API extra origins=Unraid API 的额外来源
 View Flash Backup Error Log=查看闪存备份错误日志
 
-; Note: March 17, 2023 - 136 missing translations
+; Note: April 11, 2023 - 151 missing translations

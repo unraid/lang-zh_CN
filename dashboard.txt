@@ -94,6 +94,7 @@ Parity disks not present=不存在奇偶校验磁盘
 Parity has not been checked yet=目前未进行奇偶校验
 Parity Information=
 Parity is degraded=奇偶校验已降级
+Pool=
 Power Status=
 Power=电源
 Processor Information=
@@ -141,4 +142,4 @@ VPN Connections=
 Warnings=
 ZFS=
 
-; Note: March 17, 2023 - 30 missing translations
+; Note: April 11, 2023 - 31 missing translations
