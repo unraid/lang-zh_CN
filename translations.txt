@@ -55,6 +55,7 @@ Bug Description=错误说明
 Bug Report=错误报告
 bytes=字节
 Cache=缓存
+Calculated free space value=
 Cancel=取消
 Capabilities=容量
 Case-sensitive names=名称区分大小写
@@ -909,4 +910,4 @@ Your current url %s is not in the list of allowed origins for this server=Your c
 Your server will not be usable until you purchase a Registration key or install a free 30-day Trial key=在您购买注册密钥或安装免费的 30 天试用密钥之前，您的服务器将无法使用
 Your Unraid registration key is ineligible for replacement as it is blacklisted=您的 Unraid 注册码已被列入黑名单，无法更换
 
-; Note: April 11, 2023 - 47 missing translations
+; Note: April 18, 2023 - 48 missing translations

@@ -809,4 +809,4 @@ Transient errors in this log can be ignored unless you are having issues=如果�
 Unraid API extra origins=Unraid API 的额外来源
 View Flash Backup Error Log=查看闪存备份错误日志
 
-; Note: April 11, 2023 - 151 missing translations
+; Note: April 18, 2023 - 146 missing translations
