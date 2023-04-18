@@ -72,4 +72,4 @@ User Shares=用户共享
 Write=写入
 You cannot use the following within share names=您不能在共享名称中使用以下内容
 
-; Note: April 18, 2023 - 9 missing translations
+; Note: April 18, 2023 - 8 missing translations
