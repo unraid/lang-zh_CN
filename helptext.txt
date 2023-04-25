@@ -2275,11 +2275,11 @@ Cloudflare 用户需要注意：Cloudflare 的代理专为 http 流量设计，�
 :end
 
 :myservers_remote_t2fa_help:
-启用远程访问的两步验证后，您将通过单击 <a href="https://forums.unraid.net/my-servers/" target="_blank"  rel="noopener noreferrer">我的服务器仪表板</a>访问。系统将从您的服务器请求两步验证令牌并将其嵌入服务器的登录表单中。您的服务器将拒绝任何不包含有效令牌的远程访问。每个令牌只能使用一次，有效期五分钟。
+启用远程访问的两步验证后，您将通过单击 <a href="https://connect.myunraid.net/" target="_blank"  rel="noopener noreferrer">我的服务器仪表板</a>访问。系统将从您的服务器请求两步验证令牌并将其嵌入服务器的登录表单中。您的服务器将拒绝任何不包含有效令牌的远程访问。每个令牌只能使用一次，有效期五分钟。
 :end
 
 :myservers_local_t2fa_help:
-启用两步验证后，您将通过单击 <a href="https://forums.unraid.net/my-servers/" target="_blank" rel="noopener noreferrer">我的服务器仪表板</a>访问 web 管理端。系统将从您的服务器请求两步验证令牌并将其嵌入服务器的登录表单中。您的服务器将拒绝任何不包含有效令牌的访问。每个令牌只能使用一次，有效期五分钟。
+启用两步验证后，您将通过单击 <a href="https://connect.myunraid.net/" target="_blank" rel="noopener noreferrer">我的服务器仪表板</a>访问 web 管理端。系统将从您的服务器请求两步验证令牌并将其嵌入服务器的登录表单中。您的服务器将拒绝任何不包含有效令牌的访问。每个令牌只能使用一次，有效期五分钟。
 
 这对于本地访问来说是有影响的，开启远程访问请注意，Linux 通过真正的 SCSI 设备对 ATA、SATA 和 SAS 设备分组后在大多数情况下是不需要用本地访问。远程访问需要可靠的外网网络状态。如果您需要在没有外网时访问web管理端，请通过 SSH 连接到服务器并执行“use_ssl no”，这将使您可以通过 http://<?=['NGINX_LANIP']?><?=['NGINX_PORT'] !== '80' ? ':'.['NGINX_PORT'] : '' ?>访问
 :end
