@@ -2334,3 +2334,39 @@ NOTE: You can also specify a network source on a per-VM basis.
 **IMPORTANT: Neither Libvirt nor Unraid automatically brings up an interface that is assigned to a Libvirt network.
 Before you use a Libvirt network, please go to Settings -> Network Settings and, if necessary, manually set the associated interface to up.**
 :end
+
+; New entries (5) - 2023-04-25
+
+:share_edit_exclusive_access_help:
+When set to "yes" indicates a bind-mount directly to a pool has been set up for the share in the /mnt/user tree, provided the following
+conditions are met:
+
+- Primary storage is a pool.
+- Secondary storage is set to **none**.
+- The share does not exist on any other volumes.
+:end
+
+:share_edit_primary_storage_help:
+**Primary storage** is where *new files and folders* are created.  If
+Primary storage is below the minimum free space setting then new files
+and folders will be created in **Secondary storage**, if configured.
+
+**Important:** For *Exclusive accss* shares, the Min free space
+settings are ignored.
+:end
+
+:share_edit_secondary_storage_help:
+**Secondary storage** is where new files and directories are created if no
+room on Primary storage.  When both Primary and Secondary storage are
+configured the 'mover' will transfer files between them.
+:end
+
+:share_edit_mover_action_help:
+This defines the direction of file transfer between Primary and
+Secondary storage when both are configured.
+:end
+
+:vms_console_help:
+For setting the console options to show on context menus. Web will show only inbuild web clients(VNC and SPICE), 
+Virtual Manager Remote Viewer will only show the Remote Viewer option. Both will show both Web and Remote Viewer.
+:end
