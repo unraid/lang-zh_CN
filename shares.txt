@@ -11,6 +11,8 @@ Automatically split only the top level directory as required=根据需要仅自�
 Automatically split only the top three directory levels as required=根据需要仅自动拆分前三个目录级别
 Automatically split only the top two directory levels as required=根据需要仅自动拆分前两个目录级别
 Calculated free space value=
+Clean Up=
+CLEAN UP=
 Comments=备注
 Compute All=全部计算
 Compute=计算
@@ -41,14 +43,19 @@ Mover transfers files from cache to array=Mover 将文件从缓存传输到阵�
 Mover transfers files from Primary storage to Secondary storage=
 Mover transfers files from Secondary storage to Primary storage=
 next user share=下一个用户共享
+No unused share configurations present=
 Not used=
 Only=仅
 Prefer=首选
 previous user share=上一个用户共享
 Primary storage for new files and folders=Primary storage (for new files and folders)
+Primary storage to Secondary storage=
 Read=读取
 Recompute=重新计算
+Remove unused share configurations=
+Removed share configurations=
 Rule=规则
+Secondary storage to Primary storage=
 Secondary storage=
 Select cache pool=选择缓存池
 Set when adding new share only=仅在添加新共享时设置
@@ -72,4 +79,4 @@ User Shares=用户共享
 Write=写入
 You cannot use the following within share names=您不能在共享名称中使用以下内容
 
-; Note: April 18, 2023 - 8 missing translations
+; Note: April 28, 2023 - 15 missing translations
