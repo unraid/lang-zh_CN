@@ -64,7 +64,7 @@ User Shares=用户共享
 Write=写入
 You cannot use the following within share names=您不能在共享名称中使用以下内容
 
-; Note: April 28, 2023 - 15 missing translations
+; Note: April 28, 2023 - 16 missing translations
 Calculated free space value=
 Clean Up=
 CLEAN UP=
@@ -74,6 +74,7 @@ Mover transfers files from Primary storage to Secondary storage=
 Mover transfers files from Secondary storage to Primary storage=
 No unused share configurations present=
 Not used=
+Primary storage %s=
 Primary storage to Secondary storage=
 Remove unused share configurations=
 Removed share configurations=
