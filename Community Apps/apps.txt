@@ -431,13 +431,11 @@ Checking %s=正在检查 %s
 
 ; dockerHub conversions
 Determine configuration=确定配置
-Would you like CA to attempt to determine any applicable paths, ports, and variables for the template This will entail performing a test installation of the container It will be automatically deleted after processing The container will not be started=Would you like CA to attempt to determine any applicable paths, ports, and variables for the template?  This will entail performing a test installation of the container.  It will be automatically deleted after processing.  The container will not be started.
 An error occurred - Could not determine configuration=发生错误 - 无法确定配置
 ; WebGui
-Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
 
 
-; Note: April 28, 2023 - 13 missing translations
+; Note: April 29, 2023 - 15 missing translations
 Your docker image or folder is either read-only or completely full Issues will result because of this You should create a new post in the Unraid forums and include your diagnostics=
 This template is set up to run as Privileged This is a possible security risk and usually does not need to be enabled Note that some applications require privileged in order to operate correctly=
 Not Enough Memory=
@@ -451,3 +449,5 @@ Privacy=
 Popularity=
 Pending=
 Application Spotlight %s=
+Would you like CA to attempt to determine any applicable paths, ports, and variables for the template This will entail performing a test installation of the container It will be automatically deleted after processing The container will not be started=Would you like CA to attempt to determine any applicable paths, ports, and variables for the template?  This will entail performing a test installation of the container.  It will be automatically deleted after processing.  The container will not be started.
+Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
