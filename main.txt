@@ -64,7 +64,6 @@ Device is part of a pool=该设备属于一个缓存池
 Device locked unknown error=该设备因未知错误而锁定
 Device locked wrong encryption key=该设备因加密密钥错误而锁定
 Device to be encrypted=要加密的设备
-Disable Spin down delay to run a SMART extended self-test=Disable **Spin down delay** to run a SMART extended self-test
 Disk in parity slot is not biggest=奇偶校验插槽中的磁盘不是最大磁盘
 Disk Log Information=磁盘日志信息
 Disk-Clear in progress=正在进行磁盘擦除
@@ -104,7 +103,6 @@ Hide=隐藏
 Identification=标识
 Identity=身份
 if checked, Start array but do not mount disks=如果选中，则启动阵列但不挂载磁盘
-If this is a new array, move the largest disk into the parity slot=If this is a new array, move the largest disk into the *parity* slot
 If you are adding a new disk or replacing a disabled disk, try Parity-Swap=如果要添加新磁盘或替换被禁用的磁盘，请尝试奇偶校验交换 (Parity-Swap)
 Information=信息
 Insufficient free disk space available=可用磁盘空间不足
@@ -347,12 +345,14 @@ System in sleep mode=系统处于睡眠模式
 This will put the system in sleep mode=这将使系统进入睡眠模式
 wiki entry=wiki 条目
 
-; Note: April 28, 2023 - 28 missing translations
+; Note: April 29, 2023 - 30 missing translations
 Attributes not available=
 Autotrim=
 Capabilities not available=
 Compression=
+Disable Spin down delay to run a SMART extended self-test=Disable **Spin down delay** to run a SMART extended self-test
 Identity is not available=
+If this is a new array, move the largest disk into the parity slot=If this is a new array, move the largest disk into the *parity* slot
 Incorrect confirmation=
 mirror=
 no devices=

@@ -39,7 +39,6 @@ next user share=下一个用户共享
 Only=仅
 Prefer=首选
 previous user share=上一个用户共享
-Primary storage for new files and folders=Primary storage (for new files and folders)
 Read=读取
 Recompute=重新计算
 Rule=规则
@@ -64,7 +63,7 @@ User Shares=用户共享
 Write=写入
 You cannot use the following within share names=您不能在共享名称中使用以下内容
 
-; Note: April 28, 2023 - 16 missing translations
+; Note: April 29, 2023 - 17 missing translations
 Calculated free space value=
 Clean Up=
 CLEAN UP=
@@ -75,6 +74,7 @@ Mover transfers files from Secondary storage to Primary storage=
 No unused share configurations present=
 Not used=
 Primary storage %s=
+Primary storage for new files and folders=Primary storage (for new files and folders)
 Primary storage to Secondary storage=
 Remove unused share configurations=
 Removed share configurations=
