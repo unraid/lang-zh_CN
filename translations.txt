@@ -611,7 +611,6 @@ Confirm closure then continue to webGUI=确认关闭，然后继续访问 webGUI
 Confirm Password=确认密码
 Confirm=确认
 Connect your Unraidnet account to get started=连接您的 Unraidnet 帐户以开始使用
-Connected to Mothership=连接到 Mothership
 Continue to Unraid=继续使用 Unraid
 Continue Trial=继续试用
 Copied key url=复制的密钥网址
@@ -833,7 +832,7 @@ Your Unraid registration key is ineligible for replacement as it has been replac
 Your Unraid registration key is ineligible for replacement as it is blacklisted=您的 Unraid 注册码已被列入黑名单，无法更换
 Your USB Flash GUID and other relevant server data will also be sent=您的 USB 闪存 GUID 和其他相关服务器数据也将一并发送
 
-; Note: April 28, 2023 - 82 missing translations
+; Note: April 28, 2023 - 83 missing translations
 bond down=
 Calculated free space value=
 Job=
@@ -880,15 +879,16 @@ Confirm Connect plugin removal=
 Connect Error=
 Connect plugin install failed=
 Connect=
+Connected=
 Continue using Connect=
 Customizable Dashboard Tiles=
 Deep Linking=
+Disconnected=
 Download latest backup from Connect Dashboard before signing out=
 Download latest backup from Go to Connect before signing out=
 Download unraid-api Logs=
 Dynamic Remote Access=
 Enhance your experience with Connect=
-Executes `unraid-api start`; no terminal needed=
 For best results, use one of these urls=
 Go to Connect=
 Go to Go to Connect=
