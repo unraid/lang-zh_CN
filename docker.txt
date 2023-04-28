@@ -59,7 +59,6 @@ Icon URL=图标链接
 Image ID=镜像 ID
 Key=键
 Label=标签
-Lock sortable items=
 Management=管理
 MediaApp=媒体应用
 MediaServer=媒体服务器
@@ -120,7 +119,6 @@ The command finished successfully=命令成功完成
 TOTAL DATA PULLED=**拉取的数据总量**
 Total size=总大小
 Unknown action=未知操作
-Unlock sortable items=
 Update All=全部更新
 update ready=更新就绪
 Value=值
@@ -134,4 +132,6 @@ Web=Web
 WebUI=WebUI
 Writable=可写
 
-; Note: March 17, 2023 - 2 missing translations
+; Note: April 28, 2023 - 2 missing translations
+Lock sortable items=
+Unlock sortable items=
