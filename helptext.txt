@@ -2351,7 +2351,7 @@ conditions are met:
 Primary storage is below the minimum free space setting then new files
 and folders will be created in **Secondary storage**, if configured.
 
-**Important:** For *Exclusive accss* shares, the Min free space
+**Important:** For *Exclusive access* shares, the Min free space
 settings are ignored.
 :end
 
