@@ -17,6 +17,8 @@ Enable developer mode=启用开发者模式
 This unlocks some extra features within CA generally only used by developers Not recommended to enable=这会解锁 CA 中的一些额外功能（通常仅由开发人员使用，不建议启用）
 Support Thread=支持论坛
 
-; Note: April 28, 2023 - 2 missing translations
+; Note: May 10, 2023 - 4 missing translations
 Automatically open the sidebar=
 Allows CA to automatically open the sidebar for more information when hovering over an application's icon=
+Disable Mouse Wheel Page Changes=
+This setting disables using left or right on a mouse wheel to change the page=
