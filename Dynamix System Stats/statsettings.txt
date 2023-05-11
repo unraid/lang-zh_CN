@@ -6,7 +6,7 @@
 30 minutes=30 分钟
 1 hour=1 小时
 2 hours=2 小时
-Bits per second=Bits/s
+Bits per second=bits/s
 Bytes per second=Bytes/s
 CPU graph scaling=CPU 图表尺寸
 Disk Stats=磁盘状态

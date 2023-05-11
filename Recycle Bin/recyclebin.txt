@@ -1,6 +1,6 @@
 Age Days=过期天数
-Array=阵列
-Array is stopped=阵列已停止
+Array=磁盘阵列
+Array is stopped=磁盘阵列已停止
 Browse the Share Recycle Bin=浏览此共享的回收站内容
 Deleted Files=已删除文件
 Deleted Files Log=删除记录
