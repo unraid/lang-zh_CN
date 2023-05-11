@@ -1,5 +1,127 @@
 # lang-zh_CN
 
+### 请在您准备翻译前阅读以下内容!
+
+这个翻译项目里包含了16个txt文件, 分别对应Unraid系统中相应的部分:
+
+- translations.txt -- 包含通用(general)翻译, 每次都会载入
+- helptext.txt     -- 包含所有帮助文本的翻译 , 每次都会载入
+- dashboard.txt    -- 包含仪表盘(dashboard)部分的翻译
+- main.txt         -- 包含主要部分的翻译
+- shares.txt       -- 包含共享部分的翻译
+- users.txt        -- 包含用户部分的翻译
+- settings.txt     -- 包含设置部分的翻译
+- plugins.txt      -- 包含插件部分的翻译
+- docker.txt       -- 包含容器(docker)部分的翻译
+- vms.txt          -- 包含虚拟机部分的翻译
+- tools.txt        -- 包含工具部分的翻译
+- javascript.txt   -- 包含javascript脚本部分的翻译
+- scripts.txt      -- 包含本地脚本部分的翻译
+- apps.txt         -- 包含社区软件(apps)部分的翻译
+- ca_settings      -- 包含社区软件设置部分的翻译
+- javascript.ca.txt-- 社区软件提供的javascript部分的翻译
+
+为保证翻译完整性, 所有文件名必须是小写的, 并且所有文件都应该包含在仓库中.
+
+删除掉某个文件，意味着该部分将没有可用的翻译，WEB GUI将显示原始的英语文本.
+
+### 翻译
+
+每个文本文件都包含以UTF-8格式存储的常规文本字符串, 并带有linux行结束符.
+应使用支持UTF-8和linux格式的文本编辑器, 例如 [notepad++](https://notepad-plus-plus.org/downloads)
+
+每个文本文件的内容分为两个部分
+
+### 第一部分
+
+具有固定格式的单行条目:
+
+`原始的英语文本=翻译后的文本`
+
+只修改等号(=)后面的文本,不应修改左侧的原始英文文本.
+删除一行或省略等号后面的翻译, WEB GUI将会显示这一行内容的原始英语文本.
+
+翻译后的文本可能含有"特殊字符", 如斜杠, 圆括号或方括号, 这些字符不应出现在关键文本中, 而是为了使翻译后的内容表达更加准确. 
+例如.
+`Options see Help=选项 (查看帮助)`
+
+使用 \* 字符标示内容, 可使得对应内容以斜体显示,
+使用 \*\* 字符标示内容, 可使得对应内容以粗体显示.
+例如.
+`Array must be Stopped to change=如要更改设置, 磁盘阵列必须先**停止**`
+
+建议分别翻译, 即每次翻译一个文件, 并在WEB GUI中验证翻译的正确性.
+
+请尽可能匹配翻译与原文本的长度, 避免WEB GUI中显示错乱.
+
+### 第二部分
+
+用于一次性翻译多行文本的条目.
+多行翻译条目有唯一的开始和结束标签:
+
+**:unique_tag_name_plug:** - 用于任何多行文本(unique_tag_name_plug)部分的唯一开始标签
+
+**:end**    - 多行翻译条目的结束标签
+
+不要删除或改变这些标签, 只翻译开始和结束标签之间的文本!
+
+### 帮助文本
+
+WEB GUI所有的帮助文本都存储在一个文件中 *helptext.txt*.
+
+这个文件有包含多个部分的帮助文本. 每个部分都包含唯一的开始标签和相应的结束标签.
+
+**:unique_tag_name_help:** - 帮助文本部分的唯一开始标签
+
+**:end**    - 相应的结束标签
+
+不要删除或改变这些标签, 只翻译开始和结束标签之间的文本!
+
+注意: 使用了Markdown语法, 相关的格式描述符必须保留.
+
+### 本地测试
+
+翻译完成后，如您希望在本地(临时)测试结果, 需要将文本文件压缩到单个ZIP文件中.
+将ZIP文件命改为您翻译的语言, 例如. zh_CN.zip.
+
+在WEB GUI中如下设置: 工具 -> webGUI -> 语言 (切换到开发者视图)
+
+- 默认情况下, 只安装英语语言(内置).
+- 选择翻译后创建的ZIP文件.
+- 如果系统识别出语言名称, 将自动选择语言名称, 否则请在下拉菜单中选择语言名称进行安装.
+- 点击"上传", 您的翻译会出现在WEB GUI语言选项的下拉菜单中.
+
+提示: 如果下拉菜单中没有列出您的语言, 请在论坛中提交反馈 [Unraid forum](https://forums.unraid.net/forum/75-multi-language-section/)
+
+现在你可以对翻译后的文本进行本地测试了!
+
+在WEB GUI中如下设置: Settings -> Display Settings -> Language
+
+- 从下拉菜单中选择首选语言. (只有成功安装语言才会出现在列表中)
+
+### GITHUB
+
+语言仓库在 [Github](https://github.com/unraid) 上提供, 翻译人员可以随时创建PR(Pull Request)提交翻译成果.
+
+请使用Github(需要注册帐户)派生(fork)官方语言存储库到自己的账户, 一旦您翻译完成, 就可以创建PR.
+
+负责人 Limetech 将审查提交内容, 审查通过后会合并您的修改.
+
+### 更新
+
+当有新的英语文本可用时, 会在Github提供更新.
+
+翻译人员可以使用Github系统查看做出了哪些更改, 并相应地更新他们的翻译.
+
+### 致谢
+
+我们非常欢迎您参与到翻译工作中，为了表达我们的感激之情，您的名字和语言将被记录到GUI工具页面下的"致谢"(Credits)页面。
+
+非常感谢!
+
+
+# lang-zh_CN
+
 ### READ THIS WHEN YOU WANT TO MAKE TRANSLATIONS TO ANOTHER LANGUAGE
 
 There are sixteen text files included in this repository, each with their own section of translations:

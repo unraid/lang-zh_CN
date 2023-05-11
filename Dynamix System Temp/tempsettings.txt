@@ -1,4 +1,4 @@
-Array fan speed=阵列风扇速度
+Array fan speed=磁盘阵列风扇速度
 Available drivers=可用驱动
 Click DETECT=点击以检测
 Detect=检测驱动
@@ -6,7 +6,7 @@ Load drivers=加载驱动
 Mainboard temperature=主板温度
 No drivers detected=未检测到驱动程序
 Not used=未使用
-Perl must be installed to do automated driver detection=必须安装**Perl**以执行自动驱动程序检测
+Perl must be installed to do automated driver detection=必须安装**Perl**以执行自动检测驱动程序
 Processor temperature=处理器温度
 Rescan=重新扫描
 Save=保存

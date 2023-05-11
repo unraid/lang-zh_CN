@@ -3,15 +3,15 @@ Cancel=取消
 ; My PSAs / banners
 Happy New Year=新年快乐
 Happy Holidays from Andrew, Tracey, and family=来自 Andrew、Tracey 和家人的节日快乐祝福
-Please Enjoy Responsibly=请负责任地使用
-Popup Blocked CA requires popups to be enabled under certain circumstances You must white list your server within your browser to allow popups=弹出窗口拦截 CA 需要在某些情况下启用弹出窗口。您必须在浏览器中将服务器列入白名单以允许弹出窗口
-Docker Service Not Enabled - Only Plugins Available To Be Installed Or Managed=未启用 Docker 服务 - 仅可安装或管理的插件
-Docker system failed to start - Only Plugins Available To Be Installed Or Managed=Docker 系统无法启动 - 只能安装或管理插件
-Array not started - Only Plugins Available To Be Installed Or Managed=阵列未启动 - 仅可安装或管理插件
-Community Applications works best when cookies are enabled in your browser Certain features may not be available=在浏览器中启用 Cookie 时，Community Applications 使用效果最好。某些功能可能不可用
-Backup Server Active Some icons may not appear, and plugin installations may be affected=备份服务器处于活动状态。某些图标可能不会显示，插件安装可能受到影响
+Please Enjoy Responsibly=请尽情享受
+Popup Blocked CA requires popups to be enabled under certain circumstances You must white list your server within your browser to allow popups=弹出窗口拦截 社区应用中心(CA)需要在某些情况下弹出新窗口. 您必须在浏览器中将服务器列入允许弹出窗口的白名单
+Docker Service Not Enabled - Only Plugins Available To Be Installed Or Managed=未启用容器(Docker)服务 - 仅可安装或管理的插件
+Docker system failed to start - Only Plugins Available To Be Installed Or Managed=容器(Docker)服务启动失败 - 只能安装或管理插件
+Array not started - Only Plugins Available To Be Installed Or Managed=磁盘阵列未启动 - 仅可安装或管理插件
+Community Applications works best when cookies are enabled in your browser Certain features may not be available=某些功能可能不可用. 社区应用中心(CA)在浏览器启用 Cookie 时使用效果最好.
+Backup Server Active Some icons may not appear, and plugin installations may be affected=当前使用备用服务器. 某些图标可能不会显示, 插件安装可能受到影响. 请检查网络连接!
 Debugging enabled This significantly increases the memory used by your browser=启用调试会显著增加浏览器的内存占用
-Browser translation detected Display issues may result=检测到浏览器翻译，这可能导致显示问题
+Browser translation detected Display issues may result=检测到浏览器启用翻译, 这可能导致显示问题
 Action Centre Enabled=操作中心已启用
 
 ; Sorting Options
@@ -23,17 +23,17 @@ Date Added=更新日期
 Number Of Apps=应用程序数
 ; Initial disclaimer translations
 Disclaimer=免责声明
-All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=此处列出的所有应用程序均为 Unraid 的第三方补充，Community Applications 或 Limetech 的作者均不对此处列出的任何应用程序的适合性做出任何保证。
+All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=此处列出的所有应用程序均由第三方提供, 应用程序的作者或 Limetech 均不对应用程序的兼容性做出任何保证
 Every attempt is made to ensure that only safe and compatible applications are present=我们已尽力确保只提供安全且兼容的应用程序
 Application Policy=应用程序政策
 I Understand=我了解
-Installations of apps disabled You must accept the warning to be able to install applications=禁止安装应用程序。您必须接受警告才能安装应用程序
+Installations of apps disabled You must accept the warning to be able to install applications=已阻止安装应用程序. 您必须接受警告才能安装应用程序
 Click here=单击此处
-%s Results Per Page=每页 %s 个结果
-Results Per Page: %s=每页数量：%s
+%s Results Per Page=每页显示 %s 个结果
+Results Per Page: %s=每页显示结果数量：%s
 
 ; Plugin Disclaimer
-Community Applications contains both docker containers and plugin applications Plugins are designed for OS enhancements, and run with full privileges on your system and are clearly identified within CA=Community Applications 同时包含 docker 容器和插件应用程序，这些插件是为增强操作系统而设计的，在您的系统上以完全的权限运行，并且在 CA 中进行了明确标识
+Community Applications contains both docker containers and plugin applications Plugins are designed for OS enhancements, and run with full privileges on your system and are clearly identified within CA=社区应用程序同时包含(Docker)容器和插件应用程序，这些插件是为增强操作系统而设计的，在您的系统上以最高权限运行，并且在社区应用中心(CA)中有明显标识
 Plugin Note=插件说明
 
 ; Multi Install
@@ -42,8 +42,8 @@ Select all on page=全选本页
 Install Application=安装应用程序
 Install Applications=安装应用程序
 Update Applications=升级应用程序
-Are you sure you want to update %s applications=确定要更新 %s 个应用程序吗
-Are you sure you want to install %s docker and %s plugin applications=Are you sure you want to install %1$s docker and %2$s plugin application(s)
+Are you sure you want to update %s applications=确定要更新 %s 个应用程序吗?
+Are you sure you want to install %s docker and %s plugin applications=确定要安装 %1$s 个(Docker)容器和 %2$s 个插件应用程序吗?
 
 ; Searches
 Search=搜索
@@ -51,8 +51,8 @@ Click Here To Get More Results From DockerHub=单击此处以从 DockerHub 获�
 No Matching Applications Found=找不到匹配的应用程序
 
 ; Repository Related
-%s removed as favourite repository=%s 从喜爱的存储库移除
-%s set as favourite repository=%s 设置为喜爱的存储库
+%s removed as favourite repository=将 %s 从喜爱的存储库中移除
+%s set as favourite repository=将 %s 设置为喜爱的存储库
 Click to remove favourite repository=点击移除此喜爱的存储库
 Click to set %s as favourite repository=点击设置 %s 为喜爱的存储库
 Search for apps in repository=在存储库中搜索应用
@@ -91,27 +91,27 @@ Update Plugin=升级插件
 
 Requirements not met=未满足要求
 The requirements for this upgrade have not been met on your system=您的系统尚未满足此升级的要求
-The sidebar for the app click info will list the details=应用程序的侧边栏（点击信息）将列出详细信息
+The sidebar for the app click info will list the details=(点击信息)将在侧边栏列出应用程序的详细信息
 
 BACK=返回
 
 ; Remove App from previously installed
 Delete Template=删除模板
-Yes, delete it=是的，请删除
+Yes, delete it=是的, 请删除
 
 ; Uninstall popup
 Uninstall Application=卸载应用程序
-Yes uninstall it=是的，请卸载
+Yes uninstall it=是的, 请卸载
 
 ; Remove Private Application
 Remove Private Application=移除私人应用程序
-Yes, remove it=是的，请删除
+Yes, remove it=是的, 请删除
 
 ; App Pinning
 Click to pin this application=单击以固定此应用程序
 Click to unpin this application=单击取消固定此应用程序
-Pin App=固定应用
-Unpin App=取消固定
+Pin App=固定应用程序
+Unpin App=取消固定应用程序
 
 ; Branch installations
 Choose A Branch To Install=选择要安装的分支
@@ -120,32 +120,32 @@ Choose A Branch To Install=选择要安装的分支
 ; no apps selected
 Install Selected Applications=安装选定的应用程序
 
-Yes, install it=是的，请安装
+Yes, install it=是的, 请安装
 
 ; Multi-install popup
-Yes, install them=是的，请安装
-Cookies not enabled Plugins must be separately installed from docker applications=未启用 Cookie。这些插件必须与 Docker 应用程序分开安装
-Docker applications will be installed utilizing the most recently saved template with no user input on your part=Docker 应用程序将使用最近保存的模板进行安装，无需用户输入
+Yes, install them=是的, 请安装
+Cookies not enabled Plugins must be separately installed from docker applications=未启用Cookie. 这些插件必须与容器(Docker)应用程序分开安装
+Docker applications will be installed utilizing the most recently saved template with no user input on your part=容器(Docker)应用程序将使用最近保存的模板进行安装, 无需用户手动配置
 Updating Support Links=正在更新支持链接
-Downloading docker icons=正在下载 docker 图标
-Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=完成安装。如果未出现“完成”按钮，则需要单击右上角的红色 X
+Downloading docker icons=正在下载容器(docker)图标
+Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=已完成安装。如果未出现“完成”按钮，则需要单击右上角的红色 X
 
 ; error messages
-No data was returned It is probable that another browser session has rebooted your server Reloading this browser tab will probably fix this error=没有返回任何数据。可能是另一个浏览器会话重新启动了服务器。重新加载此浏览器标签页可能会解决此错误
-An error occurred Could not find any %s Apps=发生错误，找不到任何 %s 应用
+No data was returned It is probable that another browser session has rebooted your server Reloading this browser tab will probably fix this error=没有返回任何数据. 可能是另一个浏览器会话重启了服务器. 刷新此浏览器标签页可能会解决此错误
+An error occurred Could not find any %s Apps=发生错误, 找不到任何关于 %s 的应用
 Download of appfeed failed=应用程序资源文件下载失败
 ; the %s here refers to a function being called
-Something really went wrong here=这里真的出问题了
-Post the ENTIRE contents of this message in the Community Applications Support Thread=在 Community Applications 支持对话中发布此消息的**全部**内容
+Something really went wrong here=遇到了一些问题
+Post the ENTIRE contents of this message in the Community Applications Support Thread=在社区应用支持对话中发布此消息的**全部**内容
 Unknown error happened Please post a screenshot in the support thread of the Statistics screen=发生未知错误   请在统计屏幕的支持对话中发布屏幕截图
-Something really wrong happened Reloading the Apps tab will probably fix the problem=真的出错了。重新加载应用选项卡可能会解决该问题
-This plugin has a duplicated name from another plugin %s This will impact your ability to install both plugins simultaneously=此插件的名称与另一个插件 %s 重复，这将影响您同时安装这两个插件的能力
+Something really wrong happened Reloading the Apps tab will probably fix the problem=遇到了一些问题. 重新加载应用选项卡可能会解决该问题
+This plugin has a duplicated name from another plugin %s This will impact your ability to install both plugins simultaneously=此插件的名称与另一个插件 %s 重复, 您不能同时安装这两个插件
 You have been logged out=你已注销
-Fatal Flash Drive Error=致命闪存驱动器错误
-This usually means your flash drive is corrupted or has dropped offline The rest of the Unraid GUI will also be affected Post a new thread in the Unraid forums if this error continues=这通常意味着您的闪存驱动器已损坏或已脱机。如果此错误继续存在，Unraid GUI的其余部分也将受到影响，请在Unraid论坛中反馈
-Fatal Docker Image Error=致命 Docker 镜像错误
-This template is set up to use a custom network You may have to adjust the network or IP address etc to match your system=此模板设置为使用自定义网络 您可能需要调整网络或 IP 地址等以匹配您的系统
-One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=此应用程序使用的一个或多个端口已被服务器上运行的另一服务或应用程序使用，您需要在模板上相应地调整端口
+Fatal Flash Drive Error=致命闪存驱动器(U盘)错误
+This usually means your flash drive is corrupted or has dropped offline The rest of the Unraid GUI will also be affected Post a new thread in the Unraid forums if this error continues=这通常意味着您的闪存驱动器(U盘)已损坏或离线. 如果此错误继续存在, Unraid GUI的其余部分也将受到影响, 请在Unraid论坛中反馈
+Fatal Docker Image Error=致命容器(Docker)镜像错误
+This template is set up to use a custom network You may have to adjust the network or IP address etc to match your system=此模板使用自定义的网络设置, 您可能需要调整网络设置如 IP 地址等以匹配您的系统
+One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=此应用程序使用的一个或多个端口已被服务器上运行的另一服务或应用程序使用, 您需要在模板上调整相关端口
 
 ; CA Sections Keep the length reasonable
 Home=首页
@@ -156,9 +156,9 @@ Favourite Repo=喜爱的存储库
 Action Centre=操作中心
 Recently Added=最近添加
 Random Apps=随机应用
-Top New Installs=热门新安装
+Top New Installs=热门新安装应用
 Top Trending Apps=最热门应用
-Spotlight Apps=推荐应用
+Spotlight Apps=推荐(聚焦)的应用
 All Apps=所有应用
 Statistics=统计信息
 Credits=贡献者
@@ -182,40 +182,40 @@ Translation=翻译
 
 unknown=未知
 Last Change To Application Feed=应用程序源的最新更改
-Docker Applications=Docker 应用程序
+Docker Applications=容器(Docker)应用程序
 Plugin Applications=插件应用程序
 Templates=模板
 Official Containers=官方容器
 Repositories=代码仓库
-Private Docker Applications=私人 Docker 应用程序
+Private Docker Applications=私人容器(Docker)应用程序
 Invalid Templates=无效模板
 Template Errors=模板错误
 Blacklisted Apps=黑名单应用
-Incompatible Applications=不兼容应用程序
-Deprecated Applications=已弃用应用程序
+Incompatible Applications=不兼容的应用程序
+Deprecated Applications=已弃用的应用程序
 Moderation Entries=审核条目
 Primary Server=主服务器
-Backup Server=备份服务器
+Backup Server=备用服务器
 Installs not allowed from this page=不允许从此页面进行安装
 
 ; Statistics Popup
 No invalid templates found=未找到无效模板
-These templates are invalid and the application they are referring to is unknown=这些模板无效，并且它们指向的应用程序未知
+These templates are invalid and the application they are referring to is unknown=这些模板无效, 它们指向未知的应用程序
 No templates were automatically fixed=没有模板被自动修复
-All of these errors found have been fixed automatically=找到的所有这些错误已自动修复
-Note that many of these errors can be avoided by following the directions=请注意，遵循说明本可避免其中许多错误
+All of these errors found have been fixed automatically=所有找到的错误已被自动修复
+Note that many of these errors can be avoided by following the directions=请注意, 遵循使用说明可避免许多错误
 HERE=此处
-The following plugins have duplicated filenames and are not able to be installed simultaneously=以下插件的文件名重复，无法同时安装
-The following docker applications refer to the same docker repository but may have subtle changes in the template to warrant this=以下 docker 应用程序引用相同的 docker 存储库，但为了保证这一点，模板中可能进行了细微的更改
-If any of these entries are incorrect then contact the moderators of CA to discuss=如果其中任何一个条目不正确，请联系 CA 的版主进行讨论
+The following plugins have duplicated filenames and are not able to be installed simultaneously=以下插件的文件名重复, 无法同时安装
+The following docker applications refer to the same docker repository but may have subtle changes in the template to warrant this=以下容器(docker)应用程序引用相同的存储库, 但模板中的配置可能进行了细微的更改
+If any of these entries are incorrect then contact the moderators of CA to discuss=如果其中任何一个条目不正确, 请联系社区应用中心(CA)的版主进行讨论
 Global Repository Comments=全局存储库注释
-Applied to all applications=（适用于所有应用程序）
+Applied to all applications=(适用于所有应用程序)
 Individual Application Moderation=个人应用程序审核
 
 ; Misc
 Community Applications Changelog=Community Applications 变更日志
 
-Each month we highlight some of the amazing work from our community=每个月我们都会高亮社区一些令人惊叹的工作
+Each month we highlight some of the amazing work from our community=每个月我们都会聚焦一些社区里令人惊叹的工作
 Check out these newly added applications from our awesome community=从社区了解这些新增的应用程序
 Check out these up and coming apps=了解这些即将推出的应用
 These apps have the highest percentage of new installs=这些应用的安装率最高
@@ -224,7 +224,7 @@ An assortment of randomly chosen apps=随机选择的各种应用
 ; Categories try not to be excessively long This is displayed on the left of CA screen
 
 Backup=备份
-Cloud=云
+Cloud=云服务
 Crypto Currency=加密货币
 Downloaders=下载程序
 Drivers=驱动
@@ -243,7 +243,7 @@ FTP=FTP
 Management=管理
 Messenger=Messenger
 Proxy=代理
-VOIP=VOIP
+VOIP=VoIP
 VPN=VPN
 Web=Web
 Productivity=生产力
@@ -276,7 +276,7 @@ NetworkDNS=网络：DNS
 NetworkFTP=网络：FTP
 NetworkManagement=网络：管理
 NetworkProxy=网络：代理
-NetworkVOIP=网络：VOIP
+NetworkVOIP=网络：VoIP
 NetworkVPN=网络：VPN
 NetworkPrivacy=网络隐私
 NetworkWeb=网络：Web
@@ -292,19 +292,19 @@ This application template has been blacklisted=此应用程序模板已被列入
 This application template has been deprecated=此应用程序模板已弃用
 This application has additional requirements=此应用程序有附加的要求
 Additional Requirements=附加要求
-Donate To Author=捐赠给作者
-Donate To Maintainer=捐赠给维护者
+Donate To Author=给作者捐赠
+Donate To Maintainer=给维护者捐赠
 CLOSE=关闭
 Author=作者
 Maintainer=维护者
 DockerHub=DockerHub
 Application Template=应用程序模板
-DockerHub Stars=DockerHub 星形
-Added to CA=已添加到 CA
+DockerHub Stars=DockerHub 明星(Stars)
+Added to CA=已添加到社区应用中心(CA)
 Date Updated=日期已更新
 Current Version=当前版本
-Min OS=最低 OS
-Max OS=最高 OS
+Min OS=最低系统(OS)
+Max OS=最高系统(OS)
 Total Downloads=总下载量
 Licence=许可证
 Ranked #%s=排名＃%s
@@ -314,11 +314,11 @@ Trending %s=趋势 %s
 As of %s=（截至 %s）
 Play Video=播放视频
 Play Video %s=播放 %s
-This application is not compatible with your version of Unraid=此应用程序与您的 Unraid 版本不兼容
-Another browser tab or device has updated the displayed templates Some actions are not available=另一个浏览器标签页或设备已更新所显示的模板。某些操作不可用
+This application is not compatible with your version of Unraid=此应用程序与您的 Unraid 系统版本不兼容
+Another browser tab or device has updated the displayed templates Some actions are not available=另一个浏览器标签页或设备已更新当前显示的模板。某些操作不可用
 WebUI=WebUI
 Reinstall=重新安装
-Reinstall From Previous Apps=从以前的应用重新安装
+Reinstall From Previous Apps=重新安装以前版本的应用
 Install=安装
 Uninstall=卸载
 Project=项目
@@ -326,8 +326,8 @@ Read Me First=先阅读此处
 Install second instance=安装第二个实例
 Install Using The Templates Default Tag=使用模板的默认标签进行安装
 Moderator Comments=版主评论
-Note not all authors keep up to date on change logs=请注意，并非所有作者的变更日志都保持最新状态
-Note not all maintainers keep up to date on change logs=请注意，并非所有维护者的变更日志都保持最新状态
+Note not all authors keep up to date on change logs=请注意, 并非所有作者的变更日志都保持最新状态
+Note not all maintainers keep up to date on change logs=请注意, 并非所有维护者的变更日志都保持最新状态
 Last Update=最后更新
 Note All statistics are only gathered every 30 days=所有统计数据每30天收集一次
 ;the following if using a space you MUST use nbsp but keep it down to one word if at all possible
@@ -340,7 +340,7 @@ Multi Language Support=多语言支持
 Support Forum=论坛支持
 ; as in more than 100000
 More than %s=超过 %s
-Remove from Previous Apps=从以前的应用移除
+Remove from Previous Apps=从以前的应用中移除
 Remove=移除
 See All Apps=查看所有应用
 Favourite=喜爱的
@@ -351,25 +351,25 @@ Trend Per Month=每月趋势
 Downloads Per Month=每月下载量
 
 ; Multi install script
-Installing docker applications %s=安装 Docker 应用程序 %s
+Installing docker applications %s=安装容器(Docker)应用程序 %s
 Starting %s=正在启动 %s
-%s failed to start You should install it by itself to fix the errors=%s 无法启动，您应当让它自行安装以修复错误
+%s failed to start You should install it by itself to fix the errors=%s 无法启动, 您可以尝试让它以默认设置安装以修复错误
 Setting installed applications to autostart=将已安装的应用程序设置为自动启动
 Docker Application Installation finished=Docker 应用程序安装完成
 
 ; Application Cards
 Actions=更多操作
-This application is a driver plugin=此应用程序是一个驱动程序（插件）
+This application is a driver plugin=此应用程序是一个驱动程序/插件
 This is a language pack=这是一个语言包
-This application is a docker container=此应用程序是一个 Docker 容器
+This application is a docker container=此应用程序是一个容器(Docker)
 This application is a plugin=此应用程序是一个插件
 This is a spotlight application=这是一个推荐应用
 This is your favourite repository=这是您喜爱的存储库
 This application is from your favourite repository=此应用程序来自您喜爱的存储库
-This application is pinned for later viewing=此应用程序已固定以供稍后查看
+This application is pinned for later viewing=此应用程序已固定供稍后查看
 Private Application=私人应用程序
 Remove Application From List=从列表中移除应用程序
-Check off to select multiple reinstalls=选中以选择多个重新安装
+Check off to select multiple reinstalls=选中多个项目来重新安装
 Go to the plugin settings=转到插件设置
 Click to reinstall the application using default values=单击以采用默认选项重新安装该应用程序
 Click to edit the application values=单击以编辑应用程序值
@@ -382,17 +382,17 @@ Click info to see the notes regarding this application=单击信息以查看有�
 This application has additional requirements=此应用程序有附加的要求
 BETA=测试版
 INSTALLED=已安装
-OFFICIAL=官方
+OFFICIAL=官方版
 UPDATED=有更新
 This is an official container=这是一个官方容器
 Digitally Signed=数字签名
 This container is digitally signed=此容器经过数字签名
 Docker Hub=Docker Hub
 NOTE You must visit the dockerHub page to gather the information required to install correctly=注意：您必须访问 Docker Hub 页面来收集正确安装所需的信息
-Show CA templates=显示 CA 模板
+Show CA templates=显示社区应用中心(CA)模板
 Deprecated=已弃用
 Incompatible=不兼容
-Blacklisted=黑名单
+Blacklisted=已进入黑名单
 Template Exists=模板存在
 Template already exists in Apps=模板已存在于应用中
 ; eg: LinuxServer Repository
@@ -416,15 +416,15 @@ Country Code=国家代码
 Install Language Pack=安装语言包
 Remove Language Pack=移除语言包
 Update Language Pack=更新语言包
-Installed Version=安装的版本
+Installed Version=已安装的版本
 A note about translations=翻译说明
-Click here to view the language changelog=单击此处查看语言更改日志
+Click here to view the language changelog=单击此处查看语言包的更改日志
 View Missing Translations=查看缺少的翻译
 
 ; Update Checks
 Check For Updates=检查更新
 Check for updates already running=检查更新已经运行
-Checking for docker container updates=检查 docker 容器更新
+Checking for docker container updates=检查容器(docker)更新
 Checking for plugin updates=检查插件更新
 Checking for language updates=检查语言包更新
 Checking %s=正在检查 %s
@@ -436,18 +436,18 @@ An error occurred - Could not determine configuration=发生错误 - 无法确�
 
 
 ; Note: April 29, 2023 - 15 missing translations
-Your docker image or folder is either read-only or completely full Issues will result because of this You should create a new post in the Unraid forums and include your diagnostics=
-This template is set up to run as Privileged This is a possible security risk and usually does not need to be enabled Note that some applications require privileged in order to operate correctly=
-Not Enough Memory=
-Community Applications and Unraid OS have a minimum required installed memory of 4G CA cannot run without those mimimums being met=
-Installation already in progress=
-Another plugin installation or update is already in progress and this one cannot start Wait until the current installation or update is completed and try again=
-%s is incompatible with your OS version Please update the OS to proceed=
-%s is incompatible with your OS version Either uninstall %s or update the OS=
-Featured Applications=
-Privacy=
-Popularity=
-Pending=
-Application Spotlight %s=
-Would you like CA to attempt to determine any applicable paths, ports, and variables for the template This will entail performing a test installation of the container It will be automatically deleted after processing The container will not be started=Would you like CA to attempt to determine any applicable paths, ports, and variables for the template?  This will entail performing a test installation of the container.  It will be automatically deleted after processing.  The container will not be started.
-Click Install to download and install the Community Applications plugin=Click **Install** to download and install the **Community Applications** plugin
+Your docker image or folder is either read-only or completely full Issues will result because of this You should create a new post in the Unraid forums and include your diagnostics=这个问题可能是因为您的docker镜像或文件夹是只读的, 或无可用空间. 你应该在Unraid论坛中创建一个新帖子, 并附上您系统的诊断信息
+This template is set up to run as Privileged This is a possible security risk and usually does not need to be enabled Note that some applications require privileged in order to operate correctly=此应用模板设置为以特权身份运行, 这可能存在安全风险, 通常不需要启用. 请注意, 有些应用程序需要在特权模式下才能正常运行
+Not Enough Memory=内存不足
+Community Applications and Unraid OS have a minimum required installed memory of 4G CA cannot run without those mimimums being met=社区应用程序中心和Unraid操作系统的最低内存要求为4G。如果不满足, 社区应用程序中心(CA)就无法运行
+Installation already in progress=已经开始安装进程
+Another plugin installation or update is already in progress and this one cannot start Wait until the current installation or update is completed and try again=正在进行另一个插件的安装或更新, 此插件无法启动. 请等待当前安装或更新完成, 然后重试
+%s is incompatible with your OS version Please update the OS to proceed=%s 与您的Unraid OS版本不兼容, 请升级Unraid OS后再试
+%s is incompatible with your OS version Either uninstall %s or update the OS=%s 与您的Unraid OS版本不兼容, 请卸载或者升级Unraid OS
+Featured Applications=特色应用
+Privacy=隐私
+Popularity=受欢迎的
+Pending=待处理
+Application Spotlight %s=推荐应用 %s
+Would you like CA to attempt to determine any applicable paths, ports, and variables for the template This will entail performing a test installation of the container It will be automatically deleted after processing The container will not be started=您希望社区应用中心(CA)尝试为模板确定适用的路径、端口和变量吗? 这将需要对容器进行测试安装. 测试容器在结束后会自动删除且不会启动.
+Click Install to download and install the Community Applications plugin=单击**安装**以下载和安装**社区应用中心**插件
