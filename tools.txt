@@ -7,11 +7,11 @@ Anonymize diagnostics=匿名诊断
 Anytime=随时
 Archived Notifications=存档的通知
 Are you sure=是否确定
-Array has been Reset=阵列已**重置**
-Array must be Started to change permissions=阵列必须**启动**才能更改权限
-Array must be Stopped to change=阵列必须**停止**才能更改
-Array slots=阵列插槽
-Array=阵列
+Array has been Reset=磁盘阵列已**重置**
+Array must be Started to change permissions=磁盘阵列必须**启动**后才能更改权限
+Array must be Stopped to change=磁盘阵列必须**停止**后才能更改
+Array slots=磁盘阵列插槽
+Array=磁盘阵列
 Author=作者
 Beta=测试版
 Blacklisted USB Flash GUID=USB 闪存的 GUID 在黑名单内
@@ -255,7 +255,7 @@ drwxrwxrwx
 :end
 
 :registration_3_plug:
-您的**试用**密钥包括 **Pro** 注册密钥的所有功能和设备支持。
+您的**试用**密钥包括 **Pro** 版的所有功能和设备支持。
 
 在您的**试用**密钥到期后，您的服务器**仍能正常工作**，直到您下次**停止**阵列为止。
 
@@ -314,27 +314,27 @@ USB 闪存设备也可能被**列入黑名单**。
 :end
 
 ; Note: April 28, 2023 - 24 missing translations
-Alert Message=
-Alerts=
-All Categories=
-Clear Log=
+Alert Message=警告信息
+Alerts=警告
+All Categories=全部分类
+Clear Log=清除日志
 Deprecated Only=
-Error reporting level=
-Errors Only=
-Log file cleared=
-Log size=
-LOG size=
-No filter=
-Notices Only=
-Notices=
-PHP Info=
-PHP Information=
-PHP Log File=
-PHP Settings=
-Please provide diagnostics when experiencing problems=
-Post these in the forums=
-Show errors on screen=
-This will delete the selected notification files=
-View Log=
-Warnings Only=
-Warnings=
+Error reporting level=错误报告等级
+Errors Only=只看错误
+Log file cleared=日志已被清理
+Log size=日志大小
+LOG size=日志大小
+No filter=无过滤
+Notices Only=只看通知(Notices)
+Notices=通知(Notices)
+PHP Info=PHP 信息
+PHP Information=PHP 信息
+PHP Log File=PHP 日志文件
+PHP Settings=PHP 设置
+Please provide diagnostics when experiencing problems=请在遇到问题时, 提供诊断信息
+Post these in the forums=将这些填入表单
+Show errors on screen=在屏幕上显示错误
+This will delete the selected notification files=这将会删除选中的通知(notification)文件
+View Log=查看日志
+Warnings Only=只看警告
+Warnings=警告
