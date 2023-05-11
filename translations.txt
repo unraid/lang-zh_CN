@@ -919,4 +919,4 @@ Your Unraid registration key is ineligible for replacement as it has been replac
 Your Unraid registration key is ineligible for replacement as it is blacklisted=您的 Unraid 注册码已被列入黑名单，无法更换
 Your USB Flash GUID and other relevant server data will also be sent=您的 USB 闪存 GUID 和其他相关服务器数据也将一并发送
 
-; Note: April 29, 2023 - 107 missing translations
+; Note: May 11, 2023 - 77 missing translations
