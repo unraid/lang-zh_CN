@@ -173,7 +173,7 @@ Default Windows VirtIO driver ISO=默认 Windows VirtIO 驱动程序 ISO
 Define a TLS certificate=定义 TLS 证书
 Delete directory=删除目录
 Delete Image File=删除镜像文件
-Delete Peer=删除 Perr
+Delete Peer=删除 Peer
 Delete tunnel failed=删除隧道失败
 Delete Tunnel=删除隧道
 Delete vDisk file=删除虚拟磁盘文件
@@ -203,7 +203,7 @@ Docker LOG rotation=容器(Docker)日志轮换
 Docker only=仅限容器(Docker)
 Docker service=容器(Docker)服务
 Docker Stop Timeout=容器(Docker) 停止超时
-Docker update notification容器(Docker)更新通知
+Docker update notification=容器(Docker)更新通知
 Docker update=容器(Docker)更新
 Docker vDisk location=容器(Docker)虚拟磁盘位置
 Docker vDisk size=容器(Docker)虚拟磁盘大小
