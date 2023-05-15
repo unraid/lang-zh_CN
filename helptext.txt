@@ -2296,77 +2296,59 @@ Cloudflare 用户需要注意：Cloudflare 的代理专为 http 流量设计，�
 ; New entries (4) - 2023-03-17
 
 :docker_readmore_help:
-Some systems with a lot of docker containers may experience lag using the main Docker page.
+使用许多Docker容器的某些系统可能会在使用主要的Docker页面时出现延迟。
 
-Setting this to "No" may help speed up general page usage by disabling the use of readmore-js.
-Instead of chevrons indicating more data for Port and Volume mapping, all data is displayed.
+将此设置为“否”可能有助于通过禁用readmore-js.2302使用来加速一般页面使用。而不是使用尖角符号表示更多的端口和音量映射数据，所有数据都会被显示出来。
 :end
 
 :docker_custom_network_type_help:
-The **ipvlan** type is best when connection to the physical network is not needed.
-Please read <u><a style="color:blue" href='https://docs.docker.com/network/ipvlan/', target='_blank'>this</a></u> on implementing an ipvlan network.<br>
+当不需要连接物理网络时，**ipvlan**类型最为适用。请参阅<u><a style="color:blue" href='https://docs.docker.com/network/ipvlan/', target='_blank'>此文档</a></u>，了解ipvlan网络的实现。
 
-The **macvlan** type of network allows direct connection to the physical network.
-Please read <u><a style="color:blue" href='https://docs.docker.com/network/macvlan/', target='_blank'>this</a></u> on implementing a macvlan network.<br>
+**macvlan**网络类型允许直接连接到物理网络。请参阅<u><a style="color:blue" href='https://docs.docker.com/network/macvlan/', target='_blank'>此文档</a></u>了解如何实现macvlan网络。
 
-**Note:** Docker uses its own dhcp service, which is the **DHCP Pool** setting.
-When you use multiple Unraid servers, then each server must have a different Docker **DHCP Pool** range configured.
+注意：Docker使用自己的DHCP服务，即“DHCP池”设置。当您使用多个Unraid服务器时，每个服务器必须配置不同的Docker“DHCP池”范围。
 :end
 
 :mgmt_local_access_urls_help:
-The Local Access URLs shown above are based on your current settings. 
-To adjust URLs or redirects, see the help text for "Use SSL/TLS".
+以上的本地访问 URL 基于您当前的设置。如需调整 URL 或重定向，请查看“使用 SSL/TLS”的帮助文本。
 :end
 
 :vms_network_source_help:
-Select the name of the network you wish to use as default for your VMs.
-You can choose between **'bridges'** created under network settings or
-**'libvirt'** created with virsh command in the terminal.
-The bridge **'virbr0'** and the associated virtual network **'default'** are
-created by libvirt.  
-Both utilizes NAT (network address translation) and act as a DHCP server to hand out IP addresses to virtual machines directly.
-More optional selections are present for bridges under network settings or for libvirt networks with the virsh command in the terminal.
+选择您想要用作VM默认网络的名称。 您可以在网络设置下选择“桥接”，也可以使用终端中的virsh命令创建“libvirt”。
+桥接器 **'virbr0'** 和相关的虚拟网络 **'default'** 是由libvirt创建的。 
+两者都使用NAT（网络地址转换）并作为DHCP服务器直接向虚拟机分发IP地址。
+在网络设置中，或者使用终端中的 virsh 命令操作 libvirt 网络时，桥接的选择更加丰富。
 
-**If your are unsure, choose 'virbr0' as the recommended Unraid default.**
+如果你不确定，请选择建议使用的Unraid默认值'virbr0'。
+注意：您还可以在每个虚拟机基础上指定网络来源。
 
-NOTE: You can also specify a network source on a per-VM basis.
-
-**IMPORTANT: Neither Libvirt nor Unraid automatically brings up an interface that is assigned to a Libvirt network.
-Before you use a Libvirt network, please go to Settings -> Network Settings and, if necessary, manually set the associated interface to up.**
+重要提示: Libvirt和Unraid不会自动启动分配给Libvirt网络的接口。在使用Libvirt网络之前，请转到“设置->网络设置”，必要时手动将关联的接口启用。
 :end
 
 ; New entries (5) - 2023-04-25
 
 :share_edit_exclusive_access_help:
-When set to "yes" indicates a bind-mount directly to a pool has been set up for the share in the /mnt/user tree, provided the following
-conditions are met:
+当设置为“是”时，表示在/mnt/user树中为共享设置了绑定挂载到池的直接连接，前提是满足以下条件：
 
-- Primary storage is a pool.
-- Secondary storage is set to **none**.
-- The share does not exist on any other volumes.
+- 主存储器是一个池。
+- 二级存储设定为**无**。
+- 这个共享不存在于其它任何卷中。
 :end
 
 :share_edit_primary_storage_help:
-**Primary storage** is where *new files and folders* are created.  If
-Primary storage is below the minimum free space setting then new files
-and folders will be created in **Secondary storage**, if configured.
+**主存储器**是创建*新文件和文件夹*的地方。如果主存储器的可用空间低于最低可用空间设置，那么新的文件和文件夹将被创建在**辅助存储器**中（如果已配置）。
 
-**Important:** For *Exclusive access* shares, the Min free space
-settings are ignored.
+重要提示：对于“独占访问”共享，将忽略最小剩余空间设置。
 :end
 
 :share_edit_secondary_storage_help:
-**Secondary storage** is where new files and directories are created if no
-room on Primary storage.  When both Primary and Secondary storage are
-configured the 'mover' will transfer files between them.
+**二级存储**是在主存储器上没有空间时创建新文件和目录的地方。当主存储器和二级存储器都被配置好后，“Mover”将在它们之间传输文件。
 :end
 
 :share_edit_mover_action_help:
-This defines the direction of file transfer between Primary and
-Secondary storage when both are configured.
+当主存储和次级存储都被配置时，这定义了文件传输的方向。
 :end
 
 :vms_console_help:
-For setting the console options to show on context menus. Web will show only inbuild web clients(VNC and SPICE), 
-Virtual Manager Remote Viewer will only show the Remote Viewer option. Both will show both Web and Remote Viewer.
+为设置控制台选项以在上下文菜单中显示。Web只会显示内置Web客户端（VNC和SPICE），虚拟管理器远程查看器只会显示远程查看器选项。两者都将显示Web和远程查看器。
 :end
