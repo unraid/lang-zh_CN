@@ -172,8 +172,8 @@ Windows 82012, newer Linux distros=Windows 8/2012，新的 Linux 发行版
 XML View=XML 视图
 
 ; Note: May 11, 2023 - 5 missing translations
-Lock sortable items=
-Unlock sortable items=
-Unraid Mount Tag=
-VM Console WS Port=
-wsport for virtual console=
+Lock sortable items=锁定可排序的项目
+Unlock sortable items=解锁可排序的项目
+Unraid Mount Tag=Unraid挂载标签
+VM Console WS Port=虚拟机控制台WS端口
+wsport for virtual console=虚拟控制台的WS端口
