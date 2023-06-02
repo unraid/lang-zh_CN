@@ -2352,3 +2352,30 @@ Cloudflare 用户需要注意：Cloudflare 的代理专为 http 流量设计，�
 :vms_console_help:
 为设置控制台选项以在上下文菜单中显示。Web只会显示内置Web客户端（VNC和SPICE），虚拟管理器远程查看器只会显示远程查看器选项。两者都将显示Web和远程查看器。
 :end
+
+; New entries (3) - 2023-06-02
+
+:shares_exclusive_shares_help:
+If set to Yes, share directories under /mnt/user are actually symlinks to the share directory on a storage volume
+provided the following conditions are met:
+
+* The Primary storage for a share is set to a pool.
+* The Secondary storage for a share is set to **none**.
+* The share exists on a single volume.
+* The share is **not** exported over NFS.
+
+The advantage of *exclusive* shares is that transfers bypass the FUSE layer which may significantly
+increase I/O performance.
+:end
+
+:eth_network_extra_include_help:
+Enter one or more interface names or IP addresses which will be included in the list of listening interfaces for local system services.
+
+This is particularly useful when you have created custom interfaces (e.g. tailscale VPN tunnel) which are used to access local system services.
+:end
+
+:eth_network_extra_exclude_help:
+Enter one or more interface names or IP addresses which will be excluded from the list of listening interfaces for local system services.
+
+This can be used to exclude dedicated local interfaces (e.g. p-t-p connections) or exclude dynamic interfaces (WireGuard tunnels) from using local system services.
+:end
