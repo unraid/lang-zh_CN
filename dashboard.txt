@@ -1,8 +1,8 @@
 %s ago=%s 以前
 %s used of %s %s %%=已使用 %s/%s，%s %%
-1 m=1 分
+1 m=1 分钟
 10 s=10 秒
-2 m=2 分
+2 m=2 分钟
 30 s=30 秒
 5 m=5 分钟
 Abort background operation=终止后台操作
@@ -142,4 +142,4 @@ Warnings=警告信息
 ZFS=ZFS
 
 ; Note: May 11, 2023 - 1 missing translations
-Unassigned Devices=
+Unassigned Devices=未分配的设备

@@ -375,4 +375,4 @@ This will put the system in sleep mode=这将使系统进入睡眠模式
 wiki entry=wiki 条目
 
 ; Note: May 11, 2023 - 1 missing translations
-Not present=
+Not present=不存在

@@ -16,14 +16,14 @@
 **标识**是用于唯一识别存储设备的*签名*。签名
 包括设备型号、序列号、Linux 设备 ID 和设备大小。
 
-**温度**直接从设备读取。您可以在 [显示首选项] (Settings/DisplaySettings)
+**温度**直接从设备读取。您可以在 [显示首选项](/Settings/DisplaySettings)
 页面配置要使用的单位。我们不读取休眠硬盘驱动器的温度，
 因为这通常会使它们被唤醒，所以改为显示 `*` 符号。我们还会显示 `*` SSD 和闪存设备的符号，
 尽管有时这些设备确实报告了有效的温度，
 但有时它们还是返回值 `0`。
 
 **大小, 已用, 可用**报告总设备大小、已用空间和剩余空间。这些
-还可以在 [显示首选项] (Settings/DisplaySettings) 页面上配置单位。
+还可以在 [显示首选项](/Settings/DisplaySettings) 页面上配置单位。
 由于文件系统开销，空磁盘使用的空间量也不会为零。
 
 *注意：对于多设备缓存池，此数据是 btrfs 返回的整个池的数据。*
@@ -40,7 +40,7 @@
 **查看**列中有一个文件夹图标，表示设备已*挂载*。单击此图标
 浏览文件系统。
 
-如果在 [显示首选项] (Settings/DisplaySettings) 页面开启了 "显示阵列总计"，则
+如果在 [显示首选项](/Settings/DisplaySettings) 页面开启了 "显示阵列总计"，则
 会包含一行**总计**，其中提供设备统计数据，包括设备的
 平均温度。
 
@@ -90,7 +90,7 @@ UnRAID 阵列由一个或两个奇偶校验磁盘和多个数据磁盘组成。�
 和元数据）。btrfs 允许将任意数量的设备添加到池中，并且保证
 每个数据副本都可以写入两个不同的设备。因此该池可以承受单一磁盘故障，不会丢失数据。
 
-启用［用户共享］(/Settings/ShareSettings) 时，可以将用户共享配置为
+启用[用户共享](/Settings/ShareSettings) 时，可以将用户共享配置为
 自动使用池设备，以加快写入速度。
 可以计划一个称为 *mover* 的特殊后台进程
 定期运行，以将用户共享文件从缓存移到阵列。
@@ -102,7 +102,7 @@ UnRAID 阵列由一个或两个奇偶校验磁盘和多个数据磁盘组成。�
 
 :boot_device_help:
 重要的阵列配置会保留在 USB 闪存设备上；因此，必须
-保持插入服务器。单击［闪存］(/Main/Flash?name=flash) 以查看 GUID 和
+保持插入服务器。单击[闪存](/Main/Flash?name=flash) 以查看 GUID 和
 注册信息，并配置导出设置。由于 USB 闪存设备是使用 FAT 文件系统格式化，
 因此只能使用 SMB 协议将其导出。
 :end
@@ -131,7 +131,7 @@ UnRAID 阵列由一个或两个奇偶校验磁盘和多个数据磁盘组成。�
 当引用实际硬盘驱动器 (HDD) 设备时，我们使用*硬盘驱动器*（有时也称为*驱动器*）一词。
 这是因为在 RAID 系统中，可以读取/写入的阵列磁盘的相应
 硬盘驱动器可能已禁用甚至已丢失! 另外，懂得询问 “将哪个设备
-分配为奇偶校验磁盘？” 或 “哪个设备对应于 disk2 ？”都很有用。
+分配为奇偶校验磁盘？” 或 “哪个设备对应于 disk2？”都很有用。
 
 因此我们需要一种方法来将硬盘驱动器分配给阵列磁盘。当阵列停止时，
 可以在主页上完成此操作。每个阵列磁盘都有一个下拉框，其中列出了所有
@@ -190,7 +190,7 @@ UnRAID 阵列由一个或两个奇偶校验磁盘和多个数据磁盘组成。�
 根据系统配置，其他字符可能具有不同的编码，您的密码
 将无法使用其他编码。如果您希望使用更长的密码或包含二进制数据，请改为上传密钥文件。
 
-请参考 [cryptsetup FAQ]（https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions#5-security-aspects）
+请参考 [cryptsetup FAQ](https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions#5-security-aspects)
 以了解构成*安全*密码的元素。
 
 **记住**这个密码。**如果丢失密码，已加密的内容将无法恢复！**
@@ -199,7 +199,7 @@ UnRAID 阵列由一个或两个奇偶校验磁盘和多个数据磁盘组成。�
 
 选择具有存储的加密密钥的本地密钥文件或二进制文件。密钥文件的最大大小为 8M（8388608 字节）。
 
-**备份**您的本地密钥文件.**如果丢失，已加密的内容将无法恢复！**
+**备份**您的本地密钥文件。**如果丢失，已加密的内容将无法恢复！**
 :end
 
 :info_warning_temp_help:
@@ -448,9 +448,9 @@ UnRAID 阵列由一个或两个奇偶校验磁盘和多个数据磁盘组成。�
 **安全模式：**
 
 + '-' -- 用户共享未导出并且在网络上不可用
-+*公用*-- 所有用户包括访客都具有完全读/写访问权限（开放式访问）
-+*安全*-- 所有用户包括访客都具有读取权限，根据用户设置写入权限（受限访问）
-+*专用*-- 完全没有访客访问权限，根据用户设置读/写或只读访问权限（封闭式访问）
++ *公用*-- 所有用户包括访客都具有完全读/写访问权限（开放式访问）
++ *安全*-- 所有用户包括访客都具有读取权限，根据用户设置写入权限（受限访问）
++ *专用*-- 完全没有访客访问权限，根据用户设置读/写或只读访问权限（封闭式访问）
 
 **特殊模式：**
 
@@ -469,9 +469,9 @@ UnRAID 阵列由一个或两个奇偶校验磁盘和多个数据磁盘组成。�
 **安全模式：**
 
 + '-' -- 磁盘共享未导出并且在网络上不可用
-+*公用*-- 所有用户包括访客都具有完全读/写访问权限（开放式访问）
-+*安全*-- 所有用户包括访客都具有读取权限，根据用户设置写入权限（受限访问）
-+*专用*-- 完全没有访客访问权限，根据用户设置读/写或只读访问权限（封闭式访问）
++ *公用*-- 所有用户包括访客都具有完全读/写访问权限（开放式访问）
++ *安全*-- 所有用户包括访客都具有读取权限，根据用户设置写入权限（受限访问）
++ *专用*-- 完全没有访客访问权限，根据用户设置读/写或只读访问权限（封闭式访问）
 
 **特殊模式：**
 
@@ -612,7 +612,7 @@ UnRAID 阵列由一个或两个奇偶校验磁盘和多个数据磁盘组成。�
 :end
 
 :share_edit_delete_help:
-只要共享包含数据就*不能*将其删除。请注意，某些数据可以隐藏。另请参见 [SMB 设置] (/Settings/SMB) -> 隐藏 '点' 文件。
+只要共享包含数据就*不能*将其删除。请注意，某些数据可以隐藏。另请参见 [SMB 设置](/Settings/SMB) -> 隐藏 '点' 文件。
 :end
 
 :smb_security_help:
@@ -767,7 +767,7 @@ CPU 隔离允许用户指定要显式保留用于分配（给虚拟机或 Docker
 选择 '是' 以使用网络时间协议来保持服务器时间准确无误。
 **强烈**建议使用网络时间服务器，特别是如果打算使用 Active Directory。
 
-注意：如果使用 'pool.ntp.org' 时间服务器，也请参考[其文档] (http://www.pool.ntp.org/en/use.html)。
+注意：如果使用 'pool.ntp.org' 时间服务器，也请参考[其文档](http://www.pool.ntp.org/en/use.html)。
 :end
 
 :ntp_server1_help:
@@ -802,7 +802,7 @@ CPU 隔离允许用户指定要显式保留用于分配（给虚拟机或 Docker
 :end
 
 :disk_spinup_groups_help:
-设置为 ‘是’ 时，将启用 [唤醒阵列] (/Help) 功能。
+设置为 ‘是’ 时，将启用 [唤醒阵列](/Help) 功能。
 :end
 
 :disk_default_partition_format_help:
@@ -868,13 +868,13 @@ MBR 样式分区表的*传统*设置。
 :end
 
 :disk_tunable_md_queue_limit_help:
-该选项是一个位于 [1..100] 区间内的数值，是允许使用的条带池的最大稳定负载百分比。
+该选项是一个位于 1~100 区间内的数值，是允许使用的条带池的最大稳定负载百分比。
 
 备注：若是将此选项留空并单击“应用”，该设置将恢复为默认值。
 :end
 
 :disk_tunable_md_sync_limit_help:
-该选项是一个位于 [0..100] 区间内的数值，是存在其他 I/O 时分配给奇偶校验同步/检查的条带池的最大百分比。
+该选项是一个位于 0~100 区间内的数值，是存在其他 I/O 时分配给奇偶校验同步/检查的条带池的最大百分比。
 
 备注：若是将此选项留空并单击“应用”，该设置将恢复为默认值。
 :end
@@ -1173,7 +1173,7 @@ nginx 是否启用 OCSP Staping 取决于使用了下列哪个证书：<br>
 **更新 DNS** 可用于手动启动 unraid.net 上服务器 FQDN 的 DNS A 记录更新。注意，DNS 传播更改可能需要 1 分钟到几小时不等（我们设置的 TTL 为 60 秒）。
 
 备注：如果您的路由器或上游 DNS 服务器启用了 
-[DNS 重新绑定保护] (https://en.wikipedia.org/wiki/DNS_rebinding)，**预配**可能会失败。
+[DNS 重新绑定保护](https://en.wikipedia.org/wiki/DNS_rebinding)，**预配**可能会失败。
 DNS 重新绑定保护可防止 DNS 解析到专用 IP 网络范围。在有漏洞/不安全 "web" 接口的传统设备所在的本地 LAN 中，DNS 重新绑定保护将作为一项安全特性。
 
 DNS 重新绑定保护的来源之一可能是您的 ISP DNS 服务商。这种情况下可以切换到其他DNS 服务商来解决问题，例如切换到谷歌的公用 DNS。
@@ -1241,7 +1241,7 @@ Unraid 涵盖广受欢迎的 `vsftpd` FTP 服务器。`vsftp` 的设置现在十
 :smb_enhanced_macos_help:
 当设置为‘是’时，将增强与 Apple SMB 客户端的兼容性，例如可以加快访达浏览速度，
 以及可以导出到 Time Machine 共享。不过，这可能会导致 Windows 客户端出现某些问题。
-请参阅 [VFS_FRUIT MAN PAGE] (https://www.mankier.com/8/vfs_fruit)。
+请参阅 [VFS_FRUIT MAN PAGE](https://www.mankier.com/8/vfs_fruit)。
 :end
 
 :smb_enable_netbios_help:
@@ -2288,7 +2288,7 @@ Cloudflare 用户需要注意：Cloudflare 的代理专为 http 流量设计，�
 
 :smb_multi_channel_help:
 当设置为“是”时，在服务器中启用 SMB 多通道支持。从
-微软说明文档https://docs.microsoft.com/en-us/azure-stack/hci/manage/manage-smb-multichannel可知
+[微软说明文档](https://docs.microsoft.com/en-us/azure-stack/hci/manage/manage-smb-multichannel)可知
 “SMB 多通道使文件服务器能够同时使用多个网络连接。”
 :end
 
@@ -2296,17 +2296,17 @@ Cloudflare 用户需要注意：Cloudflare 的代理专为 http 流量设计，�
 ; New entries (4) - 2023-03-17
 
 :docker_readmore_help:
-使用许多Docker容器的某些系统可能会在使用主要的Docker页面时出现延迟。
+使用许多 Docker 容器的某些系统可能会在使用主要的 Docker 页面时出现延迟。
 
-将此设置为“否”可能有助于通过禁用readmore-js.2302使用来加速一般页面使用。而不是使用尖角符号表示更多的端口和音量映射数据，所有数据都会被显示出来。
+将此设置为“否”可能有助于通过禁用 readmore-js.2302 使用来加速一般页面使用。而不是使用尖角符号表示更多的端口和音量映射数据，所有数据都会被显示出来。
 :end
 
 :docker_custom_network_type_help:
-当不需要连接物理网络时，**ipvlan**类型最为适用。请参阅<u><a style="color:blue" href='https://docs.docker.com/network/ipvlan/', target='_blank'>此文档</a></u>，了解ipvlan网络的实现。
+当不需要连接物理网络时，**ipvlan** 类型最为适用。请参阅<u><a style="color:blue" href='https://docs.docker.com/network/ipvlan/', target='_blank'>此文档</a></u>，了解ipvlan网络的实现。
 
 **macvlan**网络类型允许直接连接到物理网络。请参阅<u><a style="color:blue" href='https://docs.docker.com/network/macvlan/', target='_blank'>此文档</a></u>了解如何实现macvlan网络。
 
-注意：Docker使用自己的DHCP服务，即“DHCP池”设置。当您使用多个Unraid服务器时，每个服务器必须配置不同的Docker“DHCP池”范围。
+注意：Docker 使用自己的 DHCP 服务，即“DHCP 池”设置。当您使用多个 Unraid 服务器时，每个服务器必须配置不同的 Docker “DHCP 池”范围。
 :end
 
 :mgmt_local_access_urls_help:
@@ -2314,21 +2314,21 @@ Cloudflare 用户需要注意：Cloudflare 的代理专为 http 流量设计，�
 :end
 
 :vms_network_source_help:
-选择您想要用作VM默认网络的名称。 您可以在网络设置下选择“桥接”，也可以使用终端中的virsh命令创建“libvirt”。
-桥接器 **'virbr0'** 和相关的虚拟网络 **'default'** 是由libvirt创建的。 
-两者都使用NAT（网络地址转换）并作为DHCP服务器直接向虚拟机分发IP地址。
+选择您想要用作 VM 默认网络的名称。 您可以在网络设置下选择“桥接”，也可以使用终端中的virsh命令创建“libvirt”。
+桥接器 **'virbr0'** 和相关的虚拟网络 **'default'** 是由 libvirt 创建的。 
+两者都使用 NAT（网络地址转换）并作为 DHCP 服务器直接向虚拟机分发 IP 地址。
 在网络设置中，或者使用终端中的 virsh 命令操作 libvirt 网络时，桥接的选择更加丰富。
 
-如果你不确定，请选择建议使用的Unraid默认值'virbr0'。
+如果你不确定，请选择建议使用的 Unraid 默认值 'virbr0'。
 注意：您还可以在每个虚拟机基础上指定网络来源。
 
-重要提示: Libvirt和Unraid不会自动启动分配给Libvirt网络的接口。在使用Libvirt网络之前，请转到“设置->网络设置”，必要时手动将关联的接口启用。
+重要提示: Libvirt 和 Unraid 不会自动启动分配给 Libvirt 网络的接口。在使用 Libvirt 网络之前，请转到“设置->网络设置”，必要时手动将关联的接口启用。
 :end
 
 ; New entries (5) - 2023-04-25
 
 :share_edit_exclusive_access_help:
-当设置为“是”时，表示在/mnt/user树中为共享设置了绑定挂载到池的直接连接，前提是满足以下条件：
+当设置为“是”时，表示在 `/mnt/user` 树中为共享设置了绑定挂载到池的直接连接，前提是满足以下条件：
 
 - 主存储器是一个池。
 - 二级存储设定为**无**。
@@ -2356,16 +2356,14 @@ Cloudflare 用户需要注意：Cloudflare 的代理专为 http 流量设计，�
 ; New entries (3) - 2023-06-02
 
 :shares_exclusive_shares_help:
-If set to Yes, share directories under /mnt/user are actually symlinks to the share directory on a storage volume
-provided the following conditions are met:
+如果设置为“是”，则在满足以下条件的情况下，`/mnt/user` 下的共享目录实际上是存储卷上共享目录的符号链接：
 
 * The Primary storage for a share is set to a pool.
-* The Secondary storage for a share is set to **none**.
-* The share exists on a single volume.
-* The share is **not** exported over NFS.
+* 共享的辅助存储设置为 **none**.
+* 共享存在于单个卷上
+* 共享**未通过** NFS 导出。
 
-The advantage of *exclusive* shares is that transfers bypass the FUSE layer which may significantly
-increase I/O performance.
+*exclusive* 共享的优点是传输绕过了 FUSE 层，这可能会显著提高 I/O 性能。
 :end
 
 :eth_network_extra_include_help:
