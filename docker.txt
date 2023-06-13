@@ -133,5 +133,5 @@ WebUI=WebUI
 Writable=可写
 
 ; Note: April 28, 2023 - 2 missing translations
-Lock sortable items=
-Unlock sortable items=
+Lock sortable items=锁定可排序项目
+Unlock sortable items=解锁可排序项目

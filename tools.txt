@@ -337,4 +337,4 @@ USB 闪存设备也可能被**列入黑名单**。
 :end
 
 ; Note: May 11, 2023 - 1 missing translations
-Deprecated Only=
+Deprecated Only=已弃用
