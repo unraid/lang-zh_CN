@@ -2367,13 +2367,13 @@ Cloudflare 用户需要注意：Cloudflare 的代理专为 http 流量设计，�
 :end
 
 :eth_network_extra_include_help:
-Enter one or more interface names or IP addresses which will be included in the list of listening interfaces for local system services.
+输入一个或多个接口名称或IP地址，这些将被包含在本地系统服务的监听接口列表中。
 
-This is particularly useful when you have created custom interfaces (e.g. tailscale VPN tunnel) which are used to access local system services.
+当您创建了自定义接口（例如 tailscale VPN 隧道）以访问本地系统服务时，这将特别有用。
 :end
 
 :eth_network_extra_exclude_help:
-Enter one or more interface names or IP addresses which will be excluded from the list of listening interfaces for local system services.
+输入一个或多个接口名称或IP地址，这些将从本地系统服务的监听接口列表中排除。
 
-This can be used to exclude dedicated local interfaces (e.g. p-t-p connections) or exclude dynamic interfaces (WireGuard tunnels) from using local system services.
+此功能可用于排除专用本地接口（例如点对点连接）或动态接口（WireGuard隧道）使用本地系统服务。
 :end
