@@ -127,6 +127,7 @@ This will start the array=磁盘阵列将启动
 This will stop the array=磁盘阵列将停止
 Transmit counters=传输计数器
 Transmitted packets=已传输的数据包
+Unassigned Devices=未分配的设备
 Unlock sortable items=解锁可分拣项目
 UPS Load=UPS 负载
 UPS Model=UPS 型号
@@ -140,6 +141,3 @@ Virtual Machines=虚拟机
 VPN Connections=VPN 连接
 Warnings=警告信息
 ZFS=ZFS
-
-; Note: May 11, 2023 - 1 missing translations
-Unassigned Devices=未分配的设备

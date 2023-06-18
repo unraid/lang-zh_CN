@@ -31,6 +31,7 @@ Credits=致谢
 Data slots=数据插槽
 Delete all notifications=删除所有通知
 Delete notification=删除通知
+Deprecated Only=已弃用
 Developer=开发人员
 Diagnostics=诊断
 Disks=磁盘
@@ -335,6 +336,3 @@ USB 闪存设备也可能被**列入黑名单**。
 
 如需了解更多信息，请[联系支持人员](https://lime-technology.com/contact)。
 :end
-
-; Note: May 11, 2023 - 1 missing translations
-Deprecated Only=已弃用

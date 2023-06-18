@@ -150,6 +150,7 @@ no devices=没有设备
 No parity check history present=没有奇偶校验历史记录
 No self-tests logged on this disk=此磁盘上没有记录任何自检
 Not installed=未安装
+Not present=不存在
 OK=确定
 Once copy completes, the array may be Started, to initiate Data-Rebuild of the disabled disk=复制完成后，可以启动阵列，以启动被禁用磁盘的数据重建。
 operation=操作
@@ -373,6 +374,3 @@ Sleeping=睡眠中
 System in sleep mode=系统处于睡眠模式
 This will put the system in sleep mode=这将使系统进入睡眠模式
 wiki entry=wiki 条目
-
-; Note: May 11, 2023 - 1 missing translations
-Not present=不存在
