@@ -812,5 +812,5 @@ Unraid API extra origins=Unraid API 的额外来源
 View Flash Backup Error Log=查看U盘(flash)备份错误日志
 
 ; Note: June 18, 2023 - 2 missing translations
-LAN hub spoke access=LAN hub & spoke access
-Server hub spoke access=Server hub & spoke access
+LAN hub spoke access=局域网中心与辐射式访问
+Server hub spoke access=服务器中心与辐射式访问
