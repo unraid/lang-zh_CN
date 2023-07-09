@@ -141,3 +141,8 @@ Virtual Machines=虚拟机
 VPN Connections=VPN 连接
 Warnings=警告信息
 ZFS=ZFS
+
+; Note: July 9, 2023 - 3 missing translations
+ShowHide All Content=Show/Hide All Content
+ShowHide Content=Show/Hide Content
+Tile Management=

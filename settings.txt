@@ -352,6 +352,7 @@ Isolation=隔离
 Join=加入
 Key=键
 kyber=kyber
+LAN hub spoke access=局域网中心与辐射式访问
 LAN to LAN access=点对点局域网(LAN to LAN access)
 Language update notification=语言更新通知
 Language update=语言更新
@@ -578,6 +579,7 @@ Send once a week=每周发送一次
 Send three times a day=每天发送三次
 Send twice a day=每天发送两次
 Sending email address=正在发送电邮地址
+Server hub spoke access=服务器中心与辐射式访问
 Server name=服务器名称
 Server to server access=服务器到服务器访问
 Server was unable to provision SSL certificate=服务器无法预配 SSL 证书
@@ -811,6 +813,21 @@ Transient errors in this log can be ignored unless you are having issues=如果�
 Unraid API extra origins=Unraid API 的额外来源
 View Flash Backup Error Log=查看U盘(flash)备份错误日志
 
-; Note: June 18, 2023 - 2 missing translations
-LAN hub spoke access=局域网中心与辐射式访问
-Server hub spoke access=服务器中心与辐射式访问
+; Note: July 9, 2023 - 17 missing translations
+Always On - Manual Port Forward=
+Always On - UPnP=
+Any=
+Connected to Unraid Connect Cloud=
+Current listening interfaces=
+Disabled until connected to Unraid Connect Cloud=
+Exclude listening interfaces=
+Include listening interfaces=
+Interface Extra=
+Management Interface=
+Permit exclusive shares=
+Questions See the documentation=Questions? See <a href="https://wiki.unraid.net/Connect" target="_blank">the documentation</a>.
+Remark to use the Dynamic - Manual Port Forward option for Remote Access please set Use SSLTLS to Strict in Management Access=Remark: to use the "Dynamic - Manual Port Forward" option for Remote Access please set "Use SSL/TLS" to "Strict" in Management Access.
+Remark to use the UPnP options please set Use UPnP to Yes in Management Access=Remark: to use the UPnP options please set "Use UPnP" to "Yes" in Management Access.
+To test your manual port forward, temporarily configure Allow Remote Access as Always On - Manual Port Forward=To test your manual port forward, temporarily configure 'Allow Remote Access' as 'Always On - Manual Port Forward'
+Unraid Connect=
+You can not exclude this interface=
