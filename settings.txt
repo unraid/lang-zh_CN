@@ -814,20 +814,20 @@ Unraid API extra origins=Unraid API 的额外来源
 View Flash Backup Error Log=查看U盘(flash)备份错误日志
 
 ; Note: July 9, 2023 - 17 missing translations
-Always On - Manual Port Forward=
-Always On - UPnP=
-Any=
-Connected to Unraid Connect Cloud=
-Current listening interfaces=
-Disabled until connected to Unraid Connect Cloud=
-Exclude listening interfaces=
-Include listening interfaces=
-Interface Extra=
-Management Interface=
-Permit exclusive shares=
-Questions See the documentation=Questions? See <a href="https://wiki.unraid.net/Connect" target="_blank">the documentation</a>.
-Remark to use the Dynamic - Manual Port Forward option for Remote Access please set Use SSLTLS to Strict in Management Access=Remark: to use the "Dynamic - Manual Port Forward" option for Remote Access please set "Use SSL/TLS" to "Strict" in Management Access.
-Remark to use the UPnP options please set Use UPnP to Yes in Management Access=Remark: to use the UPnP options please set "Use UPnP" to "Yes" in Management Access.
-To test your manual port forward, temporarily configure Allow Remote Access as Always On - Manual Port Forward=To test your manual port forward, temporarily configure 'Allow Remote Access' as 'Always On - Manual Port Forward'
-Unraid Connect=
-You can not exclude this interface=
+Always On - Manual Port Forward=Always On - 手动配置端口转发
+Always On - UPnP=Always On - UPnP
+Any=任何
+Connected to Unraid Connect Cloud=已连接到Unraid Connect 云
+Current listening interfaces=目前监听的接口
+Disabled until connected to Unraid Connect Cloud=在连接到 Unraid Connect 云之前禁用
+Exclude listening interfaces=排除监听的接口
+Include listening interfaces=包含监听的接口
+Interface Extra=额外接口
+Management Interface=管理接口
+Permit exclusive shares=允许独占共享
+Questions See the documentation=有问题? 见<a href="https://wiki.unraid.net/Connect" target="_blank">文档</a>.
+Remark to use the Dynamic - Manual Port Forward option for Remote Access please set Use SSLTLS to Strict in Management Access=笔记: 要为远程访问使用 "Dynamic - 手动配置端口转发" 功能  请在访问控制中将"使用 SSL/TLS"设置到"严格".
+Remark to use the UPnP options please set Use UPnP to Yes in Management Access=笔记: 要使用 UPnP 选项，请在访问管理中将"使用 UPnP" 设置为 "是".
+To test your manual port forward, temporarily configure Allow Remote Access as Always On - Manual Port Forward=为了测试您手动配置的端口, 请临时将 '允许远程访问' 设置为 'Always On - 手动配置端口转发'
+Unraid Connect=Unraid Connect
+You can not exclude this interface=您不能排除此接口
