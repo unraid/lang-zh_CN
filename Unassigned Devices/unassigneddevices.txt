@@ -5,7 +5,7 @@ An XFS, BTRFS, or ZFS disk partitioned in UD is compatible with the array disk p
 Any data on this disk will be lost=此磁盘上的所有数据都将清除
 Are you sure=你确定吗
 Auto mount=自动挂载
-Back=返回（Back）
+Back=返回
 Browse Disk Share=浏览磁盘共享
 Browse ISO File Share=浏览 ISO 文件共享
 Browse Remote SMB=浏览远程 SMB
@@ -131,7 +131,7 @@ Used=已使用
 User and Pool Shares=用户与池共享
 User Shares=用户共享
 User and Pool Shares will include all files in User Shares, Cache and Pool Devices=用户与池共享将包含用户共享文件夹、缓存盘与池设备上的所有文件
-User Shares will allow access to User Shares, but the Root Share will not include Cache and Pool Device files=用户共享允许访问 Unraid 用户共享文件夹，但根共享不包含缓存盘和池设备文件
+User Shares will allow access to User Shares, but the Root Share will not include Cache and Pool Device files=用户共享允许访问 Unraid 用户共享文件夹，但这种根共享方式不包含缓存盘和池设备文件
 Username=用户名
 View Device Script Log=查看设备脚本日志
 View ISO File Script Log=查看 ISO 文件脚本日志
