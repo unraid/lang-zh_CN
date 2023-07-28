@@ -51,7 +51,7 @@ Volume=卷
 :end
 
 :ud_edit_script_run_background_plug:
-> 设为“是”让设备脚本作为后台任务运行。当从 Unassigned Device UI 运行脚本时，可避免 UI 停止响应。
+> 设为**是**让设备脚本作为后台任务运行。当从 Unassigned Device UI 运行脚本时，可避免 UI 停止响应。
 :end
 
 :ud_edit_script_buttons_plug:

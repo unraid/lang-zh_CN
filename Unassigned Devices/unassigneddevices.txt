@@ -95,9 +95,9 @@ Remote Share is=远程共享（为）
 Remote share mounts are dependent on a solid and reliable network connection and that is difficult to achieve=远程共享挂载依赖稳固的网络连接，而稳固的网络连接难以实现
 Remove Device configuration=删除设备配置
 Remove ISO File Share=移除 ISO 文件共享
-Remove Partition=移除分区
+Remove Partition=删除分区
 Remove Remote SMB=移除远程 SMB
-Remove partition=移除分区
+Remove partition=删除分区
 Running=正在运行
 Script=脚本
 Search For Servers=查找服务器
@@ -120,7 +120,7 @@ Show Disk Devices=显示磁盘设备
 This is a way to gather Unraid shares into one Root Share=这是一种将 Unraid 共享文件夹聚合进一个根共享的方式
 This will remove the ISO file share for=这将会移除下列 ISO 文件共享
 This will remove the remote=这将会移除远程
-This will remove the saved configuration of=这将会移除下列已保存配置
+This will remove the saved configuration of=这将会删除下列已保存配置
 This will remove the=这将会移除
 to confirm=以确定
 to format=以格式化
@@ -169,7 +169,6 @@ ZFS Volume=ZFS 卷
 > **格式化磁盘**：
 >
 > + 破坏性模式必须启用。
-> + Disk must have all partitions removed.  Unmount disk, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon,, and click on all <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icons to delete partitions.
 > + 磁盘上的所有分区必须已经删除。卸载磁盘，点击 <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> 图标，然后点击所有的 <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> 图标来删除分区。
 > + 如果磁盘已经预清除并显示灰色的“格式化”按钮，点击 <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> 图标，然后点击 <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> 图标以删除预清除状态文件。
 >
