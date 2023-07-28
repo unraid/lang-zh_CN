@@ -1,0 +1,62 @@
+Click the 'Default' button to select the default Device Script File=点击“默认”以选择默认设备脚本文件
+Default=默认
+Delete Device Script File=删除设备脚本文件
+Device Script content=设备脚本文件内容
+Disable Mount=关闭挂载
+Disk Name=磁盘名称
+Edit Device Script=编辑设备脚本
+Enter Device Script File Name=输入设备脚本文件名称
+Enter and Edit the Device Script that runs when a udev or operator event occurs=输入并编辑设备脚本，设备脚本在 udev 或 operator 事件发生时运行
+Enter the User Script that will be using this device=输入使用此设备的用户脚本
+Load the default Device Script=加载默认设备脚本
+Run in background=在后台运行
+Mount Device Read only=只读挂载设备
+Mount Device when Plugged in or Array is Started=在设备插入或阵列启动时挂载设备
+Mount ISO File when Array is Started=在阵列启动时挂载 ISO 文件
+Mount Remote SMB or NFS Share when Array is Started=在阵列启动时挂载远程 SMB 或 NFS 共享
+Run Device Script File in the background=在后台运行设备脚本文件
+Save your Device Script File changes=保存设备脚本文件更改
+Save=保存
+Share Device with SMB and NFS=使用 SMB 和 NFS 共享设备
+Share Remote Mount with SMB and NFS=使用 SMB 和 NFS 共享远程挂载
+Mark this Device as passed through to a VM or Docker=标记此设备直通虚拟机或 Docker
+Unassigned Devices Settings=Unassigned Devices 设置
+Undo your changes since last Save=撤销自上次保存以来的更改
+Volume=卷
+;
+; Help
+;
+:ud_edit_script_device_settings_plug:
+> 指定用于此设备/挂载点的选项。更改立即生效。你不需要点击**保存**来保存更改。
+:end
+
+:ud_disk_name_plug:
+> 为此设备输入别名。在此输入的名称是你想要用来指代该设备的名称。留空则自动分配“devX”格式的名称。
+>
+> **名称**：最多 8 字符，空格将被转换为连字符，允许基本的特殊字符，区别大小写。
+>
+> **注意**：不能以“dev”作为开头。格式“devX”被保留。
+:end
+
+:ud_apfs_volume_plug:
+> 输入此 APFS 分区需要挂载的卷。点击**保存**以保存此项设置。
+:end
+
+:ud_edit_script_choose_name_plug:
+> 设备挂载时会运行此脚本。从文件选择下拉菜单中选择脚本文件名称，也可以输入所需脚本。
+:end
+
+:ud_edit_user_script_choose_name_plug:
+> 如果已安装 User Script 插件，Unassigned Devices 可以显示使用此设备的用户脚本的运行状态。此字段只在设备脚本文件存在时可用。
+:end
+
+:ud_edit_script_run_background_plug:
+> 设为**是**让设备脚本作为后台任务运行。当从 Unassigned Device UI 运行脚本时，可避免 UI 停止响应。
+:end
+
+:ud_edit_script_buttons_plug:
+> 点击**保存**以提交当前设置。点击**重置**以撤销未保存的任何更改。点击**完成**以退出此页面。
+>
+> 点击**恢复默认**使用默认设备脚本重置编辑框。
+> 你仍需点击**保存**来保存脚本更改。
+:end
