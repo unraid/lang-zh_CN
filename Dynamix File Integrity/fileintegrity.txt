@@ -47,7 +47,7 @@ Verification tasks=验证任务
 view hash files=查看哈希文件
 view log files=查看日志文件
 view saved files=查看保存文件
-When parity operation is running=当系统校验（parity）操作运行时
+When parity operation is running=当系统校验操作运行时
 
 :integrity_control_plug:
 > 选择 File Integrity Control 页面的放置位置。默认放在**工具**菜单下，也可移至标题菜单。
@@ -106,7 +106,7 @@ When parity operation is running=当系统校验（parity）操作运行时
 :end
 
 :integrity_parity_plug:
-> 若系统校验（parity）操作正在运行，验证任务可跳过或正常执行。
+> 若系统校验操作正在运行，验证任务可跳过或正常执行。
 > 如果跳过，到下一轮计划时才会执行验证任务。
 :end
 
