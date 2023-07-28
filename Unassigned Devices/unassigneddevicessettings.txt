@@ -1,151 +1,151 @@
-Add=
-Auto Mount USB Devices=
-Change Disk UUID=
-Change UUID=
-Change Disk UUID=
-Command times=
-Common Script=
-Common Settings=
-Destructive Mode=
-Disabled=
-Disk spin down is managed by Unraid=
-Enable NFS export=
-Enable SMB Security=
-Enter Disk Password=
-Enter Pool Mount Point=
-Legacy Mount Point Compatibility=
-Mount SSDs with discard option=
-NFS Security=
-NFS Settings=
-NFS must be enabled in Settings->NFS to enable NFS Export=
-NFS Version to use when Mounting Remote Shares=
-Public=
-Private=
-Private Hidden=
-Refresh and Update=
-Remote Share Mount Wait Time=
-Rule=
-SMB Settings=
-Select Disk=
-Set Encrypted Disk Password=
-Set Password=
-Set Pool Mount Point=
-Set the Pool Mount Point for this disk=
-Set the disk Password=
-Specify SMB Version when Mounting Remote Shares=
-Spin down disks=
-The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=
-to SMB share config=
-Udev and Hotplug=
-Unassigned Devices=
-Unraid 6.10 or later is required for NFSv4 support=
-Use only when directed for support because the messages can flood the log=
+Add=添加
+Auto Mount USB Devices=自动挂载 USB 设备
+Change Disk UUID=更改磁盘 UUID
+Change UUID=更改 UUID
+Change Disk UUID=更改磁盘 UUID
+Command times=命令时间
+Common Script=通用脚本
+Common Settings=通用设置
+Destructive Mode=破坏性模式
+Disabled=已关闭
+Disk spin down is managed by Unraid=磁盘停转由 Unraid 管理
+Enable NFS export=开启 NFS 导出
+Enable SMB Security=开启 SMB 安全
+Enter Disk Password=输入磁盘密码
+Enter Pool Mount Point=输入池挂载点
+Legacy Mount Point Compatibility=遗留挂载点兼容性
+Mount SSDs with discard option=带 discard 选项挂载 SSD
+NFS Security=NFS 安全
+NFS Settings=NFS 设置
+NFS must be enabled in Settings->NFS to enable NFS Export=在“设置->NFS”处启用 NFS 才能开启 NFS 导出
+NFS Version to use when Mounting Remote Shares=挂载远程共享时使用的 NFS 版本
+Public=公共
+Private=私有
+Private Hidden=私有且隐藏
+Refresh and Update=刷新并更新
+Remote Share Mount Wait Time=远程共享挂载等待时间
+Rule=规则
+SMB Settings=SMB 设置
+Select Disk=选择磁盘
+Set Encrypted Disk Password=设置加密的磁盘的密码
+Set Password=设置密码
+Set Pool Mount Point=设置池挂载点
+Set the Pool Mount Point for this disk=为此磁盘设置池挂载点
+Set the disk Password=设置磁盘密码
+Specify SMB Version when Mounting Remote Shares=挂载远程共享时使用的 SMB 版本
+Spin down disks=停转磁盘
+The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=必须安装 Unassigned Devices Plus 才能启用破坏性模式
+to SMB share config=到 SMB 共享配置
+Udev and Hotplug=udev 与热插拔
+Unassigned Devices=未分配设备
+Unraid 6.10 or later is required for NFSv4 support=NFSv4 支持要求 Unraid 6.10 或更高版本
+Use only when directed for support because the messages can flood the log=只在寻求支持时使用，否则会有大量消息充斥日志
 
 ; Help
 ;
 :ud_settings_plus_plug:
-> **Note:** The 'Unassigned Devices Plus' plugin must be installed in order to mount HFS+ and exFAT disk formats, and enable destructive mode.
+> **注意**： 必须安装“Unassigned Devices Plus”插件才能挂载 HFS+ 和 exFAT 文件系统或启用破坏性模式。
 :end
 
 :ud_settings_common_script_plug:
-> If set, this script will run before the device script. The action is in the environment variable **$ACTION**. Be sure you reference all commands with their full path.
+> 如果设置，此脚本将在设备脚本之前执行。动作（action）位于坏境变量 **$ACTION**。请确保以完整路径引用命令。
 :end
 
 :ud_settings_destructive_plug:
-> If enabled, this will allow you to erase and format partitions using Unassigned Devices. This cannot be enabled unless the 'Unassigned Devices Plus' plugin is installed.
+> 如果启用，可使用 Unassigned Devices 擦除与格式化分区。必须安装“Unassigned Devices Plus”才能启用此功能。
 :end
 
 :ud_settings_mount_usb_devices_plug:
-> When set to **Yes**, will auto mount a new USB device and share it without user intervention.
+> 设为**是**时，将自动挂载新的 USB 设备并共享，无需用户干预。
 :end
 
 :ud_settings_discard_plug:
-> Mount SSDs that support discard with 'discard' option. If you are using the SSD Trim Settings to do a periodic trim of SSDs you can set this to **No**.
+> 对于支持 discard 操作的 SSD，带“discard”选项挂载它们。你可以选择**否**，如果你使用 SSD trim 设置定期运行 trim。
 :end
 
 :ud_settings_symlinks_plug:
-> Set to **Yes** to create symlinks for /mnt/remotes/ at /mnt/disks/.
+> 设为**是**以创建符号链接，将 /mnt/disks/ 指向 /mnt/remotes/。
 >
-> This is for backwards compatibility of VM and Docker Container mappings to the /mnt/disks/ mount point.
-> You are encouraged to change your mappings to the /mnt/remotes/ mount point.
+> 此项设置用于向后兼容映射了 /mnt/disks/ 挂载点的虚拟机和 Docker 容器。
+> 建议将映射更改为 /mnt/remotes/ 挂载点。
 >
-> If you do not need the backwards compatibility, leave it set to **No**.
+> 如果你不需要向后兼容性，保持为**否**。
 :end
 
 :ud_settings_remote_share_wait_plug:
-> This is the time in seconds to wait before mounting remote shares when the array is first started.
+> 当阵列首先启动时，挂载远程共享前等待的秒数。
 >
 :end
 
 :ud_settings_specify_smb_vers_plug:
-> Set to **No** for Unassigned Devices to first try to mount remote shares by not setting the SMB version when mounting.
+> 设为**否**，Unassigned Devices 首先尝试不指定版本挂载 SMB 远程共享。
 >
-> Set to **Yes** for Unassigned Devices to only mount SMB remote shares specifying the SMB version.
+> 设为**是**，Unassigned Devices 只挂载指定了版本的 SMB 远程共享。
 >
-> Some remote servers need to have the version specified.
+> 某些远程服务器需要指定 SMB 版本。
 :end
 
 :ud_settings_debug_level_plug:
-> Setting a Debug Log Level adds additional logging in specific areas of UD for troubleshooting.  Set the Debug Log Level to debug a specific area of UD.
+> 排除故障时，设置调试日志等级让 UD 在特定区域增加额外的日志记录，以此调试 UD 的特定区域。
 >
-> Set to **None** to turn off debug logging.
+> 设为**无**以关闭调试日志记录。
 >
-> **Udev and Hotplug** udev, disk discovery and hotplug debug.
+> **udev 与热插拔** udev、磁盘发现与热插拔调试。
 >
-> **Refresh and Update** to find issues where UD hangs.
+> **刷新并更新** 查找导致 UD 停止响应的问题。
 >
-> **Command times** command execution times. **Warning:** very chatty.
+> **命令时间** 命令执行时间。**警告**： 日志记录将非常繁杂。
 >
-> **Note:** Don't leave the Debug Log Level on for extended periods of time.  It can add a lot of log messages to the syslog.
+> **注意**：不要长时间开启调试日志等级，否则可导致系统日志内充斥大量消息。
 :end
 
 :ud_settings_specify_nfs_vers_plug:
-> Set to **NFSv3** to mount all NFS Remote Shares with NFSv3.
+> 设为 **NFSv3** 以 NFSv3 挂载所有 NFS 远程共享。
 >
-> Set to **NFSv4** to mount all NFS Remote Shares with NFSv4.
+> 设为 **NFSv4** 以 NFSv4 挂载所有 NFS 远程共享。
 >
-> All NFS remote shares will be mounted with the specified version.
+> 所有 NFS 远程共享都将以特定版本挂载。
 :end
 
 :ud_settings_smb_security_plug:
-> Set the user level of SMB Sharing.
+> 设置 SMB 共享的用户等级。
 >
-> + Set to **Disabled** to disable SMB sharing.
-> + Set to **Public** will share devices, Remote SMB/NFS shares, and iso Mounts Public with read and write access.
-> + Set to **Private** to enable SMB Security on SMB shares. Set access by user to allow access and whether or not the user can write to the share.
-> + Set to **Private Hidden** to enable SMB Security on SMB shares that will not be visible. Set access by user to allow access and whether or not the user can write to the share.
+> + 设为**关闭**以关闭 SMB 共享。
+> + 设为**公共**将以公共读写权限共享设备、远程 SMB/NFS 共享和 ISO 挂载。
+> + 设为**私有**为 SMB 共享启用 SMB 安全。按用户设置读写权限。
+> + 设为**私有且隐藏**为不可见的 SMB 共享启用 SMB 安全。按用户设置读写权限。
 :end
 
 :ud_settings_case_sensitive_plug:
-> Controls whether filenames are case-sensitive.
+> 决定文件名是否区别大小写。
 >
-> The default setting of **Auto** allows clients that support case sensitive filenames (Linux CIFSVFS) to tell the Samba server on a per-packet basis that they wish to access the file system in a case-sensitive manner (to support UNIX case sensitive semantics). No Windows system supports case-sensitive filenames so setting this option to auto is the same as setting it to No for them; however, the case of filenames passed by a Windows client will be preserved. This setting can result in reduced performance with very large directories because Samba must do a filename search and match on passed names.
+> 默认值**自动**允许 Linux CIFSVFS 等区别文件名大小写的客户端以封包为单位报告 Samba 服务器它们希望以区别文件名大小写的方式访问文件系统（以支持 Unix 区别大小写的语义）。Windows 系统不区别文件名大小写，因此设为自动对于 Windows 系统来说等效于设为否；然而，由 Windows 客户端传递的文件名的大小写被保留。此项设置可导致处理非常大的目录时性能下降，因为 Samba 必须搜索匹配传递的文件名。
 >
-> A setting of **Yes** means that files are created with the case that the client passes, and only accessible using this same case. This will speed very large directory access, but some Windows applications may not function properly with this setting. For example, if "MyFile" is created but a Windows app attempts to open "MYFILE" (which is permitted in Windows), it will not be found.
+> **是**意味着创建文件时，文件名使用客户端传递的大小写，并且只有使用同样大小写的文件名才能访问此文件。相比之下，这不会影响非常大的目录的访问速度，但在此项设置下，某些 Windows 应用程序可能无法正常运转。比如，创建远程文件“MyFile”，但一个 Windows 应用程序试图打开“MYFILE”，将无法找到它，尽管在 Windows 的原生环境中，大小写是不区别的。
 >
-> A value of **Forced lower** is special: the case of all incoming client filenames, not just new filenames, will be set to lower-case. In other words, no matter what mixed case name is created on the Windows side, it will be stored and accessed in all lower-case. This ensures all Windows apps will properly find any file regardless of case, but case will not be preserved in folder listings.
+> **强制小写**特殊在于，来自客户端的所有文件名——而不仅仅是新文件名——的大小写，都将转为小写。换句话说，无论在 Windows 一侧有着怎样大小写的文件名，此文件都将在远程端以小写文件名存储和访问。这保证了所有 Windows 应用程序都能正确寻找任何文件，而不管文件名大小写，但在列出文件夹时，文件名的大小写不会保留。
 :end
 
 :ud_settings_force_user_plug:
-> There are times when permissions on SMB shares aren't handled as expected. Turning this feature on can help with those permissions.
-> This applies to all devices mounted with Unassigned Devices.
-> The down side is that it overrides Linux group permissions. If you are unsure about whether or not this is necessary, leave it disabled.
+> 有时 SMB 共享的权限没有按预期处理，开启此功能可帮助解决此类权限问题。
+> 此项设置应用于所有使用 Unassigned Devices 挂载的设备。
+> 弊端是它覆盖了 Linux 组权限。如果你不确定此功能是否必要，请保持关闭。
 :end
 
 :ud_settings_nfs_security_plug:
-> Set to **Yes** to export Unassigned Devices with NFS sharing. Shares are exported Public with read and write access or Private with the rule you set. Access is controlled with permission settings on files and folders.
+> 设为**是**以 NFS 共享的方式导出未分配设备。共享以公共读写权限导出，也可以遵循你设置的私有规则。访问操作由文件和文件夹的权限控制。
 :end
 
 :ud_settings_nfs_shares_plug:
-> **Note:** The normal rule used by UD is '*(sec=sys,rw,insecure,anongid=100,anonuid=99,all_squash)'.
+> **注意**：UD 使用的正常规则是“*(sec=sys,rw,insecure,anongid=100,anonuid=99,all_squash)”。
 :end
 
 :ud_settings_disk_pass_plug:
-> Select the disk that you want to set a Password. This is the password for this disk only and does not affect the array password/passphrase. Leave password blank to use the array password/passphrase for luks encrypted disks.
+> 选择你要设置密码的磁盘。此密码设置只为该磁盘所用，不影响阵列密码。对于 LUKS 加密的磁盘，留空以使用阵列密码。
 :end
 
 :ud_settings_change_uuid_plug:
-> Select the disk that you want to change the UUID. This is useful when a XFS formatted disk has been removed from the array and has the same UUID as an array disk. Drive must be unmounted to change the UUID.
+> 选择你要更改 UUID 的磁盘。当一块 XFS 格式磁盘从阵列移除，还保留阵列磁盘的 UUID 时，此功能很有用。磁盘必须卸载才能更改 UUID。
 >
-> **Note:** Don't change the UUID of a pooled disk.
+> **注意**：不要更改包含在池中的磁盘的 UUID。
 :end

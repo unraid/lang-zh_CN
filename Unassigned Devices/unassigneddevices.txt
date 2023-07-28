@@ -43,7 +43,7 @@ Execute Script as udev simulating a device being installed=udev 模拟设备安�
 Fail=失败
 file share for=文件共享（给）
 File System Check=文件系统检查
-File System Scrub=文件系统擦洗（Scrub）
+File System Scrub=文件系统 scrub
 Format=格式化
 Formatting=正在格式化
 Free=剩余
@@ -142,7 +142,7 @@ Working=正在工作
 You can also subject yourself to security issues like ransomware by exposing all your shares in one Root Share=将所有共享文件夹暴露在唯一的根共享内可能使你自己面临勒索软件等安全问题
 You must enable NFS in Settings->NFS to mount NFS shares=你必须在“设置->NFS”处启用 NFS 才能挂载 NFS 共享
 You must enable SMB in Settings->SMB to mount SMB shares=你必须在“设置->SMB”处启用 SMB 才能挂载 SMB 共享
-You must enable the Destructive Mode in UD Settings before you can Format this disk=你必须在 Unassigned Devices 设置中启用破坏模式才能格式化此磁盘
+You must enable the Destructive Mode in UD Settings before you can Format this disk=你必须在 Unassigned Devices 设置中启用破坏性模式才能格式化此磁盘
 You WILL have problems if you do=你将会面临问题，如果你（做）
 You will need to enter credentials to list the shares=你需要输入凭据才能列出共享
 ZFS Pool Name=ZFS 池名称
@@ -153,7 +153,7 @@ ZFS Volume=ZFS 卷
 >
 > 将鼠标指针悬浮在 UD 页面任何激活区域上，一个提示气泡将会显示此区域的功能。
 > 通过 UD，你可以挂载 USB 设备、SATA 磁盘、远程 SMB/NFS 共享和 ISO 文件。开启自动挂载的设备将在阵列启动时自动挂载。所有磁盘及 SMB/NFS 挂载将在阵列停止，触发“stopping_svcs”事件时卸载。
-> 如果你想共享磁盘，可以打开共享开关。远程 SMB 共享的默认设置是公开读写。可在 Unassigned Devices 设置中按用户配置 SMB 安全。NFS 共享被导出，权限是读写。NFS 设备的导出在 Unassigned Devices 设置中开启。你还可以设置一个在每次挂载时执行的通用脚本。要共享任何 UD 设备，必须在 UD 设置中开启共享功能，并打开共享特定设备的开关。SMB/NFS 远程共享和 ISO 挂载总是共享的。
+> 如果你想共享磁盘，可以打开共享开关。远程 SMB 共享的默认设置是公共读写。可在 Unassigned Devices 设置中按用户配置 SMB 安全。NFS 共享被导出，权限是读写。NFS 设备的导出在 Unassigned Devices 设置中开启。你还可以设置一个在每次挂载时执行的通用脚本。要共享任何 UD 设备，必须在 UD 设置中开启共享功能，并打开共享特定设备的开关。SMB/NFS 远程共享和 ISO 挂载总是共享的。
 > 输入挂载点后，按 &lt;Enter&gt; 保存更改。
 >
 > 点击设备标识的 <i style='color:black;font-weight:bold;' class="fa fa-plus-square"></i> 图标，可以看到额外选项。设备挂载点可在设备未挂载时更改。磁盘标签也将更改。磁盘可被格式化或运行 fsck 检查。
@@ -162,43 +162,44 @@ ZFS Volume=ZFS 卷
 >
 > SMB/NFS 远程共享的按钮变灰，代表远程服务器没有响应 ping 请求。远程共享服务其必须响应 ping 请求，否则 UD 会认定其离线。
 >
-> The 'Add Root Share' button is disabled when 'Enable disk shares' is enabled and any Root Shares previously added will not mount.
+> 启用磁盘共享时“添加根共享”按钮不可用，之前添加的任何根共享都不会挂载。
 >
-> UD has a destructive mode that allows deleting disk partitions and formatting disks.	If Destructive Mode is not turned on in the UD Settings, you WILL NOT be able to format a disk or remove partitions.  Go the the 'Settings->Unassigned Devices' to set the destructive mode.
+> UD 有一个允许删除磁盘分区及格式化磁盘的破坏性模式。如果未在 UD 设置中启用破坏性模式，你无法格式化磁盘或删除分区。在“设置->Unassigned Devices”页面启用破坏模式。
 >
-> **To format a disk:**
+> **格式化磁盘**：
 >
-> + Destructive mode must be enabled.
+> + 破坏性模式必须启用。
 > + Disk must have all partitions removed.  Unmount disk, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon,, and click on all <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icons to delete partitions.
-> + If the disk has been precelared and shows a grayed 'Format' button, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, then click on the <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icon to delete the preclear status file.
+> + 磁盘上的所有分区必须已经删除。卸载磁盘，点击 <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> 图标，然后点击所有的 <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> 图标来删除分区。
+> + 如果磁盘已经预清除并显示灰色的“格式化”按钮，点击 <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> 图标，然后点击 <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> 图标以删除预清除状态文件。
 >
-> **Note: A disk partitioned in UD is compatible with the array disk partitioning and can be added to the array.  Supported file formats are XFS, XFS encrypted, BTRFS, BTRFS encrypted, ZFS and ZFS encrypted.**
+> **注意：使用 UD 分区的磁盘可被阵列读写，只需添加到阵列中。支持 XFS、加密的 XFS、BTRFS、加密的 BTRFS、ZFS 和加密的 ZFS**。
 >
-> **Encrypted Disks:**
+> **加密的磁盘**：
 >
-> + Any disk formatted in UD that is encrypted will use the array password/passphrase and can be incorporated into the array.  Or you can set a unique password when it is formatted.  If you set a password on the disk when it is formatted, you will need to enter a disk password in Unassignd Devices->Settings for that disk.
-> + Any disk that was not encrypted with the Array password/passphrase can be mounted by setting a per disk passord set in Unassigned Devices->Settings.
+> + 任何在 UD 中格式化的加密磁盘都将使用阵列密码并可整合进阵列。你也可以在格式化时设置独立的密码。若要在格式化磁盘时设置密码，请在“Unassignd Devices->设置”页面输入该磁盘的密码。 
+> + 任何未使用阵列密码的加密磁盘可通过在“Unassignd Devices->设置”页面设置对应的密码来挂载。
 >
-> **Unassigned devices script:**
+> **未分配磁盘的脚本**：
 >
-> UD includes a script that is used for mounting and unmounting devices and SMB/NFS mounts. These scripts can be used from the command line or in your scripts as necessary.
+> UD 包含了一个脚本，可用来挂载、卸载设备及 SMB/NFS 挂载（SMB/NFS mounts）。可在命令行或你自己的脚本中按需使用。
 >
-> + '/usr/local/sbin/rc.unassigned mount autodevices' - all devices set to auto mount will be mounted.
-> + '/usr/local/sbin/rc.unassigned mount autoshares' - all SMB/NFS mounts set to auto mount will be mounted.
-> + '/usr/local/sbin/rc.unassigned umount auto' - all devices and SMB/NFS mounts set to auto mount will be unmounted.
-> + '/usr/local/sbin/rc.unassigned umount all' - all devices and SMB/NFS mounts are unmounted in preparation for shutting down the array.
-> + '/usr/local/sbin/rc.unassigned mount /dev/sdX or devX' - mount disk device.
-> + '/usr/local/sbin/rc.unassigned mount name=diskname' - mount disk device by disk name.
-> + '/usr/local/sbin/rc.unassigned umount /dev/sdX or devX' - unmount disk device. You can use this command in a UD script to unmount the device when the script has completed.
-> + '/usr/local/sbin/rc.unassigned umount name=diskname' - unmount device by disk name.
-> + '/usr/local/sbin/rc.unassigned spindown /dev/sdX or devX' - spin down disk device.
-> + '/usr/local/sbin/rc.unassigned spindown name=diskname' - spin down a disk by disk name.
-> + '/usr/local/sbin/rc.unassigned detach /dev/sdX or devX' - detach a USB disk device. You can use this command in a UD script to detach the device when the script has completed.
-> + '/usr/local/sbin/rc.unassigned attach serial - attach a disk device. You can use this command in a script to attach the device.
-> + '/usr/local/sbin/rc.unassigned mount source' - where source is the SMB/NFS source.
-> + '/usr/local/sbin/rc.unassigned umount source' - where source is the SMB/NFS source.
+> + '/usr/local/sbin/rc.unassigned mount autodevices' - 所有开启自动挂载的设备都将挂载。
+> + '/usr/local/sbin/rc.unassigned mount autoshares' - 所有开启自动挂载的 SMB/NFS 挂载（SMB/NFS mounts）都将挂载。
+> + '/usr/local/sbin/rc.unassigned umount auto' - 所有开启自动挂载的设备及 SMB/NFS 挂载（SMB/NFS mounts）都将卸载。
+> + '/usr/local/sbin/rc.unassigned umount all' - 所有设备及 SMB/NFS 挂载（SMB/NFS mounts）都将卸载以备停止阵列。
+> + '/usr/local/sbin/rc.unassigned mount /dev/sdX or devX' - 挂载磁盘设备。
+> + '/usr/local/sbin/rc.unassigned mount name=diskname' - 按磁盘名称挂载磁盘设备。
+> + '/usr/local/sbin/rc.unassigned umount /dev/sdX or devX' - 卸载磁盘设备。可将此命令写入脚本，以便在脚本完成时卸载设备。
+> + '/usr/local/sbin/rc.unassigned umount name=diskname' - 按磁盘名称卸载磁盘设备。
+> + '/usr/local/sbin/rc.unassigned spindown /dev/sdX or devX' - 停转磁盘设备。
+> + '/usr/local/sbin/rc.unassigned spindown name=diskname' - 按磁盘名称停转磁盘设备。
+> + '/usr/local/sbin/rc.unassigned detach /dev/sdX or devX' - 脱离 USB 磁盘设备。可将此命令写入脚本，以便在脚本完成时脱离设备。
+> + '/usr/local/sbin/rc.unassigned attach serial - 附加磁盘设备。可将此命令写入脚本以附加设备。
+> + '/usr/local/sbin/rc.unassigned mount source' - source 为 SMB/NFS 源。
+> + '/usr/local/sbin/rc.unassigned umount source' - source 为 SMB/NFS 源。
 >
-> Note: /dev/sdX where 'X' is the device designator.  The devX is the device name in the UD page.  If the device name is 'Dev 1', then use dev1 as the device to spin down.  Using the name=diskname is useful if you have a User Script needing to perform UD operations on a disk.
+> 注意：/dev/sdX 的“X”是设备代号。devX 是 UD 页面显示的设备名称。如果设备名称是“Dev 1”，则使用 dev1 作为要停转的设备。 要在用户脚本中对磁盘执行 UD 操作，可使用 name=磁盘名称。
 >
-> Be careful using the /dev/sdX or devX designation because they can change after a reboot.  It's best to use the values passed into the UD script for sdX (DEVICE) and devX (UD_DEVICE).
+> 使用 /dev/sdX 或 devX 代号时请小心，因为它们可在重启后改变。对于 sdX（DEVICE）和 devX（UD_DEVICE），在 UD 脚本中使用最好传值。
 :end
