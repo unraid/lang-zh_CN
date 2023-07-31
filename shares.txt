@@ -81,4 +81,4 @@ Write=写入
 You cannot use the following within share names=您不能在共享名称中使用以下内容
 
 ; Note: July 9, 2023 - 1 missing translations
-Share name contains invalid characters for ZFS use=ZFS共享名称包含不允许使用的字符
+Share name contains invalid characters for ZFS use=

@@ -143,6 +143,6 @@ Warnings=警告信息
 ZFS=ZFS
 
 ; Note: July 9, 2023 - 3 missing translations
-ShowHide All Content=显示/隐藏所有内容
-ShowHide Content=显示/隐藏内容
-Tile Management=标题管理
+ShowHide All Content=Show/Hide All Content
+ShowHide Content=Show/Hide Content
+Tile Management=
