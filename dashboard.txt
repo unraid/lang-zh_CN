@@ -110,6 +110,8 @@ Share count %s with %s cache only and %s encrypted=共享总计 **%s** 个，**%
 Shares Information=共享信息
 Show details=显示详细信息
 Show Information=显示信息
+ShowHide All Content=显示/隐藏所有内容
+ShowHide Content=显示/隐藏内容
 Shutdown the system=关闭系统
 SMART error=S.M.A.R.T 错误
 SMART health-check failed=S.M.A.R.T 健康检查失败
@@ -125,6 +127,7 @@ This will reboot the system=系统将重启
 This will shutdown the system=系统将关闭
 This will start the array=磁盘阵列将启动
 This will stop the array=磁盘阵列将停止
+Tile Management=标题管理
 Transmit counters=传输计数器
 Transmitted packets=已传输的数据包
 Unassigned Devices=未分配的设备
@@ -141,8 +144,3 @@ Virtual Machines=虚拟机
 VPN Connections=VPN 连接
 Warnings=警告信息
 ZFS=ZFS
-
-; Note: July 9, 2023 - 3 missing translations
-ShowHide All Content=Show/Hide All Content
-ShowHide Content=Show/Hide Content
-Tile Management=

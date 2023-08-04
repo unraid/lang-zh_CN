@@ -59,7 +59,7 @@ Invalid Configuration - Remove and Re-add=无效的配置 - 删除并重添加
 is offline=离线
 ISO File is=ISO 文件
 ISO File Shares=ISO 文件共享
-If using a disk password be sure to enter the password for this disk in UD Settings so it can be mounted=如果磁盘设置了密码，请确保在 Unassigned Devices 设置中为此磁盘输入了密码，使之能够挂载
+If using a disk password be sure to enter the password for this disk in UD Settings so it can be mounted=如果磁盘设置了密码，请确保在 Unassigned Devices（未分配的设备）设置中为此磁盘输入了密码，使之能够挂载
 Device=设备
 Leave blank to use the array passwordpassphrase=留空使用阵列密码
 Load Shares=加载共享
@@ -142,7 +142,7 @@ Working=正在工作
 You can also subject yourself to security issues like ransomware by exposing all your shares in one Root Share=将所有共享文件夹暴露在唯一的根共享内可能使你自己面临勒索软件等安全问题
 You must enable NFS in Settings->NFS to mount NFS shares=你必须在“设置->NFS”处启用 NFS 才能挂载 NFS 共享
 You must enable SMB in Settings->SMB to mount SMB shares=你必须在“设置->SMB”处启用 SMB 才能挂载 SMB 共享
-You must enable the Destructive Mode in UD Settings before you can Format this disk=你必须在 Unassigned Devices 设置中启用破坏性模式才能格式化此磁盘
+You must enable the Destructive Mode in UD Settings before you can Format this disk=你必须在 Unassigned Devices（未分配的设备）设置中启用破坏性模式才能格式化此磁盘
 You WILL have problems if you do=你将会面临问题，如果你（做）
 You will need to enter credentials to list the shares=你需要输入凭据才能列出共享
 ZFS Pool Name=ZFS 池名称
@@ -153,18 +153,18 @@ ZFS Volume=ZFS 卷
 >
 > 将鼠标指针悬浮在 UD 页面任何激活区域上，一个提示气泡将会显示此区域的功能。
 > 通过 UD，你可以挂载 USB 设备、SATA 磁盘、远程 SMB/NFS 共享和 ISO 文件。开启自动挂载的设备将在阵列启动时自动挂载。所有磁盘及 SMB/NFS 挂载将在阵列停止，触发“stopping_svcs”事件时卸载。
-> 如果你想共享磁盘，可以打开共享开关。远程 SMB 共享的默认设置是公共读写。可在 Unassigned Devices 设置中按用户配置 SMB 安全。NFS 共享被导出，权限是读写。NFS 设备的导出在 Unassigned Devices 设置中开启。你还可以设置一个在每次挂载时执行的通用脚本。要共享任何 UD 设备，必须在 UD 设置中开启共享功能，并打开共享特定设备的开关。SMB/NFS 远程共享和 ISO 挂载总是共享的。
+> 如果你想共享磁盘，可以打开共享开关。远程 SMB 共享的默认设置是公共读写。可在 Unassigned Devices（未分配的设备）设置中按用户配置 SMB 安全。NFS 共享被导出，权限是读写。NFS 设备的导出在 Unassigned Devices（未分配的设备）设置中开启。你还可以设置一个在每次挂载时执行的通用脚本。要共享任何 UD 设备，必须在 UD（未分配的设备）设置中开启共享功能，并打开共享特定设备的开关。SMB/NFS 远程共享和 ISO 挂载总是共享的。
 > 输入挂载点后，按 &lt;Enter&gt; 保存更改。
 >
 > 点击设备标识的 <i style='color:black;font-weight:bold;' class="fa fa-plus-square"></i> 图标，可以看到额外选项。设备挂载点可在设备未挂载时更改。磁盘标签也将更改。磁盘可被格式化或运行 fsck 检查。
 >
-> 为了让 SMB 及 NFS 共享正常工作，“设置->Unassigned Devices”内的 SMB 及 NFS 安全选项必须正确配置。
+> 为了让 SMB 及 NFS 共享正常工作，“设置->Unassigned Devices（未分配的设备）”内的 SMB 及 NFS 安全选项必须正确配置。
 >
 > SMB/NFS 远程共享的按钮变灰，代表远程服务器没有响应 ping 请求。远程共享服务其必须响应 ping 请求，否则 UD 会认定其离线。
 >
 > 启用磁盘共享时“添加根共享”按钮不可用，之前添加的任何根共享都不会挂载。
 >
-> UD 有一个允许删除磁盘分区及格式化磁盘的破坏性模式。如果未在 UD 设置中启用破坏性模式，你无法格式化磁盘或删除分区。在“设置->Unassigned Devices”页面启用破坏模式。
+> UD 有一个允许删除磁盘分区及格式化磁盘的破坏性模式。如果未在 UD 设置中启用破坏性模式，你无法格式化磁盘或删除分区。在“设置->Unassigned Devices（未分配的设备）”页面启用破坏模式。
 >
 > **格式化磁盘**：
 >

@@ -37,7 +37,7 @@ Spin down disks=停转磁盘
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=必须安装 Unassigned Devices Plus 才能启用破坏性模式
 to SMB share config=到 SMB 共享配置
 Udev and Hotplug=udev 与热插拔
-Unassigned Devices=未分配设备
+Unassigned Devices=未分配的设备
 Unraid 6.10 or later is required for NFSv4 support=NFSv4 支持要求 Unraid 6.10 或更高版本
 Use only when directed for support because the messages can flood the log=只在寻求支持时使用，否则会有大量消息充斥日志
 
@@ -119,9 +119,9 @@ Use only when directed for support because the messages can flood the log=只在
 :ud_settings_case_sensitive_plug:
 > 决定文件名是否区别大小写。
 >
-> 默认值**自动**允许 Linux CIFSVFS 等区别文件名大小写的客户端以封包为单位报告 Samba 服务器它们希望以区别文件名大小写的方式访问文件系统（以支持 Unix 文件名区别大小写的语义）。Windows 系统不区别文件名大小写，因此设为自动对于 Windows 系统来说等效于设为否；然而，由 Windows 客户端传递的文件名的大小写被保留。使用此项可导致处理非常大的目录时性能下降，因为 Samba 必须搜索匹配传递的文件名。
+> 默认值**自动**允许 Linux CIFSVFS 等区别文件名大小写的客户端以封包为单位报告 Samba 服务器它们希望以区别文件名大小写的方式访问文件系统（以支持 Unix 文件名区别大小写的语义）。Windows 系统不区别文件名大小写，因此设为自动对于 Windows 系统来说等效于设为否；然而，由 Windows 客户端传递的文件名的大小写被保留。使用此项可导致处理大型目录时性能下降，因为 Samba 必须搜索匹配传递的文件名。
 >
-> **是**意味着创建文件时，文件名使用客户端传递的大小写，并且只有使用同样大小写的文件名才能访问此文件。相比之下，这不会影响非常大的目录的访问速度，但在此项设置下，某些 Windows 应用程序可能无法正常运转。比如，创建远程文件“MyFile”，但一个 Windows 应用程序试图打开“MYFILE”，将无法找到它，尽管在 Windows 的原生环境中，文件名大小写是不区别的。
+> **是**意味着创建文件时，文件名使用客户端传递的大小写，并且只有使用同样大小写的文件名才能访问此文件。相比之下，这不会影响大型目录的访问速度，但在此项设置下，某些 Windows 应用程序可能无法正常运转。比如，创建远程文件“MyFile”，但一个 Windows 应用程序试图打开“MYFILE”，将无法找到它，尽管在 Windows 的原生环境中，文件名大小写是不区别的。
 >
 > **强制小写**特殊在于，来自客户端的所有文件名——而不仅仅是新文件名——的大小写，都将转为小写。换句话说，无论在 Windows 一侧有着怎样大小写的文件名，此文件都将在远程端以小写文件名存储和访问。这保证了所有 Windows 应用程序都能正确寻找任何文件，而不管文件名大小写，但在列出文件夹时，文件名的大小写不会保留。
 :end
