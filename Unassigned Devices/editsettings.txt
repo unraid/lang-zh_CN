@@ -20,7 +20,7 @@ Save=保存
 Share Device with SMB and NFS=使用 SMB 和 NFS 共享设备
 Share Remote Mount with SMB and NFS=使用 SMB 和 NFS 共享远程挂载
 Mark this Device as passed through to a VM or Docker=标记此设备直通虚拟机或 Docker
-Unassigned Devices Settings=Unassigned Devices 设置
+Unassigned Devices Settings=Unassigned Devices（未分配的设备）设置
 Undo your changes since last Save=撤销自上次保存以来的更改
 Volume=卷
 ;
