@@ -100,11 +100,9 @@ Use only when directed for support because the messages can flood the log=只在
 :end
 
 :ud_settings_specify_nfs_vers_plug:
-> 设为 **NFSv3** 以 NFSv3 挂载所有 NFS 远程共享。
+> 设为**自动**，在挂载所有 NFS 远程共享时自动协商使用的 NFS 版本。
 >
-> 设为 **NFSv4** 以 NFSv4 挂载所有 NFS 远程共享。
->
-> 所有 NFS 远程共享都将以特定版本挂载。
+> 如果**自动**项无效或只能挂载 NFSv3，你需要将此项设为 **NFSv4**，因为你的 Unraid 版本不会自动协商使用 NFSv4。
 :end
 
 :ud_settings_smb_security_plug:
