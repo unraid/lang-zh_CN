@@ -906,6 +906,7 @@ You have an open pop-up=您有一个打开的弹出窗口
 You have used all your Trial extensions=您所有的试用延长期都已使用完毕
 You may purchase a license key corresponding to this USB Flash device to continue using this installation=您可以购买与此 USB 闪存设备相对应的许可证密钥，以继续使用
 You will no longer have access to this server using this url=你将不能再使用<abbr title="%s" class="italic">这个网址</abbr>访问服务器了
+Your current url %s is not in the list of allowed origins for this server=当前的 url **%s** 不在此服务器允许的 origin 名单里
 Your flash drive is corrupted or offline=您的闪存驱动器已损坏或离线
 Your server will not be usable until you purchase a Registration key or install a free 30-day Trial key=在您购买注册密钥或安装免费的 30 天试用密钥之前，您的服务器将无法使用
 Your Trial has expired=您的试用版已过期
@@ -916,6 +917,3 @@ Your trial will expire in 30 days=您的试用版将在 30 天后过期
 Your Unraid registration key is ineligible for replacement as it has been replaced within the last 12 months=您的 Unraid 注册码在过去 12 个月内被更换过，因此无法更换
 Your Unraid registration key is ineligible for replacement as it is blacklisted=您的 Unraid 注册码已被列入黑名单，无法更换
 Your USB Flash GUID and other relevant server data will also be sent=您的 USB 闪存 GUID 和其他相关服务器数据也将一并发送
-
-; Note: August 23, 2023 - 1 missing translations
-Your current url %s is not in the list of allowed origins for this server=Your current url **%s** is not in the list of allowed origins for this server
