@@ -61,6 +61,7 @@ Secondary storage=辅助存储
 Select cache pool=选择缓存池
 Set when adding new share only=仅在添加新共享时设置
 Share contains data=共享包含的数据
+Share name contains invalid characters for ZFS use=共享名称包含对ZFS使用无效的字符
 Share is empty=共享为空
 Share is outside the list of designated disks=共享位于指定磁盘列表之外
 Share Settings=共享文件夹设置
@@ -79,6 +80,3 @@ Use cache pool for new filesdirectories=(对新文件/目录)使用缓存池
 User Shares=用户共享
 Write=写入
 You cannot use the following within share names=您不能在共享名称中使用以下内容
-
-; Note: July 9, 2023 - 1 missing translations
-Share name contains invalid characters for ZFS use=用于ZFS使用的共享名称包含无效字符
