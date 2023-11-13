@@ -117,7 +117,7 @@ Use only when directed for support because the messages can flood the log=只在
 :ud_settings_case_sensitive_plug:
 > 决定文件名是否区别大小写。
 >
-> 默认值**自动**允许 Linux CIFSVFS 等区别文件名大小写的客户端以封包为单位报告 Samba 服务器它们希望以区别文件名大小写的方式访问文件系统（以支持 Unix 文件名区别大小写的语义）。Windows 系统不区别文件名大小写，因此设为自动对于 Windows 系统来说等效于设为否；然而，由 Windows 客户端传递的文件名的大小写被保留。使用此项可导致处理大型目录时性能下降，因为 Samba 必须搜索匹配传递的文件名。
+> 默认值**自动**允许 Linux CIFS 和 NFS 等区别文件名大小写的客户端以封包为单位报告 Samba 服务器它们希望以区别文件名大小写的方式访问文件系统（以支持 Unix 文件名区别大小写的语义）。Windows 系统不区别文件名大小写，因此设为自动对于 Windows 系统来说等效于设为否；然而，由 Windows 客户端传递的文件名的大小写被保留。使用此项可导致处理大型目录时性能下降，因为 Samba 必须搜索匹配传递的文件名。
 >
 > **是**意味着创建文件时，文件名使用客户端传递的大小写，并且只有使用同样大小写的文件名才能访问此文件。相比之下，这不会影响大型目录的访问速度，但在此项设置下，某些 Windows 应用程序可能无法正常运转。比如，创建远程文件“MyFile”，但一个 Windows 应用程序试图打开“MYFILE”，将无法找到它，尽管在 Windows 的原生环境中，文件名大小写是不区别的。
 >
@@ -146,4 +146,8 @@ Use only when directed for support because the messages can flood the log=只在
 > 选择你要更改 UUID 的磁盘。当一块 XFS 格式磁盘从阵列移除，还保留阵列磁盘的 UUID 时，此功能很有用。磁盘必须卸载才能更改 UUID。
 >
 > **注意**：不要更改包含在池中的磁盘的 UUID。
+:end
+
+:ud_settings_zfs_upgrade_plug:
+> 选择要升级到最新 ZFS 版本的磁盘。必须加载驱动器才能升级 ZFS。
 :end
