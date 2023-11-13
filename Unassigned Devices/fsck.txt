@@ -1,4 +1,7 @@
+Cannot determine file system on an encrypted disk=无法确定加密磁盘上的文件系统
 Dirty log detected=检测到污损的日志
+Executing file system check=正在执行文件系统检查
+Executing file system scrub=正在执行文件系统擦洗（scrub）
 File system corruption detected=检测到文件系统损坏
 File system corruption fixed=已修复文件系统损坏
 Force Log Zeroing=强制日志置零
