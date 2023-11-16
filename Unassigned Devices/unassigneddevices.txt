@@ -18,7 +18,6 @@ Change Disk Mount Point=更改磁盘挂载点
 Change ISO File Mount Point=更改 ISO 文件挂载点
 Change Remote Share Mount Point=更改远程共享挂载点
 Change SMB=更改 SMB
-Changing the Mount Point will also change the disk label=更改挂载点也将更改磁盘标签
 Clear=清除
 Click to select ISO file=点击选择 ISO 文件
 Click to view/hide partitions and mount points=点击显示/隐藏分区与挂载点
@@ -80,7 +79,6 @@ No Unassigned Disks available=没有可用的未分配设备
 Not Enabled=未启用
 not installed=未安装
 Note=注意
-offilne=离线
 You must enable NFS in Settings->NFS to mount NFS shares=你必须在“设置->NFS”处启用 NFS 才能挂载 NFS 共享
 You must enable SMB in Settings->SMB to mount SMB shares=你必须在“设置->SMB”处启用 SMB 才能挂载 SMB 共享
 Open=打开
@@ -91,8 +89,6 @@ Read only=只读
 Reboot=重启
 Refresh Disks and Configuration=刷新磁盘与配置
 Remember your password It cannot be recovered=记住密码，一旦忘记，密码无法恢复
-Remote Share is=远程共享
-Remote share mounts are dependent on a solid and reliable network connection and that is difficult to achieve=远程共享挂载依赖稳固的网络连接，而稳固的网络连接难以实现
 Remove Device configuration=删除设备配置
 Remove ISO File Share=移除 ISO 文件共享
 Remove Partition=删除分区
@@ -119,7 +115,7 @@ Show SMB/NFS/ISO Shares=显示 SMB/NFS/ISO 共享
 Show Disk Devices=显示磁盘设备
 This is a way to gather Unraid shares into one Root Share=这是一种将 Unraid 共享文件夹聚合进一个根共享的方式
 This will remove the ISO file share for=这将会移除下列 ISO 文件共享
-This will remove the remote=这将会移除远程
+This will remove the=这将会移除
 This will remove the saved configuration of=这将会删除下列已保存配置
 This will remove the=这将会移除
 to confirm=以确定
@@ -202,3 +198,13 @@ ZFS Volume=ZFS 卷
 >
 > 使用 /dev/sdX 或 devX 代号时请小心，因为它们可在重启后改变。对于 sdX（DEVICE）和 devX（UD_DEVICE），在 UD 脚本中使用最好传值。
 :end
+
+; Note: November 16, 2023 - 8 missing translations
+Changing the Mount Point will also change the disk label on all disks and the pool name on a ZFS disk=
+Enter the server name and it will be added to the local DNS names and will then resolve by name=
+failed to=
+If the IP address of the server shows in the list after searching, your DNS server is not resolving the name=
+If shares do not show, check your credentials=
+offline=
+Remote Server is=
+Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=
