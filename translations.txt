@@ -908,7 +908,7 @@ You may purchase a license key corresponding to this USB Flash device to continu
 You will no longer have access to this server using this url=你将不能再使用<abbr title="%s" class="italic">这个网址</abbr>访问服务器了
 Your current url %s is not in the list of allowed origins for this server=Your current url **%s** is not in the list of allowed origins for this server
 Your flash drive is corrupted or offline=您的闪存驱动器已损坏或离线
-Your server will not be usable until you purchase a Registration key or install a free 30 day Trial key=
+Your server will not be usable until you purchase a Registration key or install a free 30 day Trial key=Your server will not be usable until you purchase a Registration key or install a free 30 day *Trial* key.
 Your Trial has expired=您的试用版已过期
 Your Trial key includes all the functionality and device support of a Pro key=您的试用版密钥包含专业版密钥的所有功能和设备支持
 Your Trial key requires an internet connection=您的试用版密钥需要联网
@@ -1232,7 +1232,7 @@ Key ineligible for %s=
 Up-to-date with eligible releases=
 Key ineligible for future releases=
 View Changelog=
-You are still eligible to access OS updates that were published on or before %s=
+You are still eligible to access OS updates that were published on or before %s=You are still eligible to access OS updates that were published on or before %s.
 Your %s license included one year of free updates at the time of purchase=Your %s license included one year of free updates at the time of purchase.
 You are now eligible to extend your license and access the latest OS updates=You are now eligible to extend your license and access the latest OS updates.
 Your %s license included one year of free updates at the time of purchase=Your %s license included one year of free updates at the time of purchase.
@@ -1267,4 +1267,4 @@ A reboot will be required=
 %s second=
 %s seconds=
 
-; Note: November 16, 2023 - 283 missing translations
+; Note: November 28, 2023 - 273 missing translations
