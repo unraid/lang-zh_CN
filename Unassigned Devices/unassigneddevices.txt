@@ -199,12 +199,11 @@ ZFS Volume=ZFS 卷
 > 使用 /dev/sdX 或 devX 代号时请小心，因为它们可在重启后改变。对于 sdX（DEVICE）和 devX（UD_DEVICE），在 UD 脚本中使用最好传值。
 :end
 
-; Note: November 16, 2023 - 8 missing translations
-Changing the Mount Point will also change the disk label on all disks and the pool name on a ZFS disk=
-Enter the server name and it will be added to the local DNS names and will then resolve by name=
-failed to=
-If the IP address of the server shows in the list after searching, your DNS server is not resolving the name=
-If shares do not show, check your credentials=
-offline=
-Remote Server is=
-Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=
+Changing the Mount Point will also change the disk label on all disks and the pool name on a ZFS disk=更改挂载点还将更改所有磁盘上的磁盘标签和ZFS磁盘上的池名称
+Enter the server name and it will be added to the local DNS names and will then resolve by name=输入服务器名称，它将被添加到本地DNS名称中，并通过名称解析
+failed to=失败
+If the IP address of the server shows in the list after searching, your DNS server is not resolving the name=如果在搜索后服务器的IP地址显示在列表中，那么您的DNS服务器无法解析该名称
+If shares do not show, check your credentials=如果共享未显示，请检查您的凭据。
+offline=离线
+Remote Server is=远程服务器是
+Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=远程共享挂载依赖于稳定可靠的网络连接，这可能很难实现
