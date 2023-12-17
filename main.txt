@@ -62,10 +62,10 @@ Date of purchase=购买日期
 Date=日期
 Delete Pool=删除池
 detected=检测到
-Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
+Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
 Device encrypted and unlocked=设备已加密并已解锁
 Device encrypted=设备已加密
-Device is missing disabled=Device is missing disabled=Device is missing disabled=Device is missing (disabled)
+Device is missing disabled=Device is missing (disabled)
 Device is part of a pool=该设备属于一个池
 Device locked unknown error=该设备因未知错误而锁定
 Device locked wrong encryption key=该设备因加密密钥错误而锁定
