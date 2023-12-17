@@ -336,3 +336,21 @@ USB 闪存设备也可能被**列入黑名单**。
 
 如需了解更多信息，请[联系支持人员](https://lime-technology.com/contact)。
 :end
+
+; Note: December 17, 2023 - 16 missing translations
+Creating Flash backup=
+Creation error=
+Delete Modprobe config=
+Downgrade OS=
+Driver=
+Edit Modprobe config=
+Flash backup=
+Insufficient free disk space available=
+Modprobed config file=Modprobe.d config file
+Rebuild Modules=
+Remove custom modprobed configuration=Remove custom modprobe.d configuration?
+Save Modprobe config=
+Select View=
+State=
+Support page=
+System Drivers=

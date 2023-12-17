@@ -194,9 +194,9 @@ raidz2=raidz2
 raidz3=raidz3
 Raw Value=原始值
 Raw View=原始视图
-Read-Check in progress=正在进行读取检查
 Read errors corrected=已修复读取错误
 Read errors detected=检测到读取错误
+Read-Check in progress=正在进行读取检查
 Reading=读取中
 Reboot in safe mode=以安全模式重启
 Registration Key Manager=注册密钥管理器
@@ -365,6 +365,7 @@ your server=您的服务器
 zfs pool status=zfs 存储池状态
 zfs=zfs
 
+
 ; Sleep plugin translations
 Check this=检查此处
 for more information=了解更多信息
@@ -374,3 +375,25 @@ Sleeping=睡眠中
 System in sleep mode=系统处于睡眠模式
 This will put the system in sleep mode=这将使系统进入睡眠模式
 wiki entry=wiki 条目
+
+; Note: December 17, 2023 - 20 missing translations
+Add Subpool=
+Add ZFS Subpool=
+cache - Cache Devices=
+Critical NVME temperature threshold=
+Critical SSD temperature threshold=
+dedup - Deduplication Tables=
+Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
+Device contents invalid=
+Device is disabled=
+Device is missing disabled=Device is missing disabled=Device is missing disabled=Device is missing (disabled)
+logs - ZFS Intent Log=
+Missing pool disk=
+Power=
+Power=
+spares - Hot Spares=
+special - Special Allocation Class=
+W=
+Warning NVME temperature threshold=
+Warning SSD temperature threshold=
+will remove the missing pool disk and then bring the array on-line=
