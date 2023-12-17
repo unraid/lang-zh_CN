@@ -62,10 +62,8 @@ Date of purchase=购买日期
 Date=日期
 Delete Pool=删除池
 detected=检测到
-Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
 Device encrypted and unlocked=设备已加密并已解锁
 Device encrypted=设备已加密
-Device is missing disabled=Device is missing (disabled)
 Device is part of a pool=该设备属于一个池
 Device locked unknown error=该设备因未知错误而锁定
 Device locked wrong encryption key=该设备因加密密钥错误而锁定
@@ -378,15 +376,17 @@ System in sleep mode=系统处于睡眠模式
 This will put the system in sleep mode=这将使系统进入睡眠模式
 wiki entry=wiki 条目
 
-; Note: December 17, 2023 - 17 missing translations
+; Note: December 17, 2023 - 19 missing translations
 Add Subpool=
 Add ZFS Subpool=
 cache - Cache Devices=
 Critical NVME temperature threshold=
 Critical SSD temperature threshold=
 dedup - Deduplication Tables=
+Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
 Device contents invalid=
 Device is disabled=
+Device is missing disabled=Device is missing (disabled)
 logs - ZFS Intent Log=
 Missing pool disk=
 Power=
