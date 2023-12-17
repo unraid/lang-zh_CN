@@ -1258,7 +1258,6 @@ By default UEFI and Legacy boot mode are both enabled when GRUB is used to boot 
 Data copied=
 Go to My Servers Dashboard=
 GRUB configuration=
-Options for Block $action=
 Percentage=
 Please access this server via the My Servers Dashboard=
 Submission of this troubleshooting request will automatically send your system diagnostics to Lime Technology=
