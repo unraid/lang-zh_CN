@@ -1189,12 +1189,6 @@ check for OS updates=检查OS更新
 unlimited=无限
 
 ; Downgrade component additions 2023-11-09
-A reboot will be required=将需要重启
-Confirm Downgrade=确认降级
-Create Bug Report=创建Bug报告
-Downloading=正在下载
-Open a bug report=打开一个bug报告
-
 %s day=%s天
 %s days=%s天
 %s hour=%s小时
@@ -1207,6 +1201,11 @@ Open a bug report=打开一个bug报告
 %s seconds=%s秒
 %s year=%s年
 %s years=%s年
+A reboot will be required=将需要重启
+Confirm Downgrade=确认降级
+Create Bug Report=创建Bug报告
+Downloading=正在下载
+Open a bug report=打开一个bug报告
 
 ; Note: December 17, 2023 - 24 missing translations
 Acklowledge that you have made a Flash Backup to enable this action=
