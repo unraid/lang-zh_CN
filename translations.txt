@@ -1208,11 +1208,8 @@ Open a bug report=打开一个bug报告
 %s year=%s年
 %s years=%s年
 
-; Note: December 25, 2023 - 27 missing translations
+; Note: December 25, 2023 - 24 missing translations
 By default UEFI and Legacy boot mode are both enabled when GRUB is used to boot the machine=
-Clock is unsynchronized with no NTP servers=
-Clock synchronized with %s NTP server=
-Clock synchronized with %s NTP servers=
 Data copied=
 Go to My Servers Dashboard=
 GRUB configuration=
