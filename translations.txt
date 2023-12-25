@@ -1189,6 +1189,12 @@ check for OS updates=检查OS更新
 unlimited=无限
 
 ; Downgrade component additions 2023-11-09
+A reboot will be required=将需要重启
+Confirm Downgrade=确认降级
+Create Bug Report=创建Bug报告
+Downloading=正在下载
+Open a bug report=打开一个bug报告
+
 %s day=%s天
 %s days=%s天
 %s hour=%s小时
@@ -1201,34 +1207,32 @@ unlimited=无限
 %s seconds=%s秒
 %s year=%s年
 %s years=%s年
-A reboot will be required=将需要重启
-Confirm Downgrade=确认降级
-Create Bug Report=创建Bug报告
-Downloading=正在下载
-Open a bug report=打开一个bug报告
 
-; Note: December 17, 2023 - 24 missing translations
-Acklowledge that you have made a Flash Backup to enable this action=
-Backing upthis may take a few minutes=Backing up...this may take a few minutes
+; Note: December 25, 2023 - 27 missing translations
 By default UEFI and Legacy boot mode are both enabled when GRUB is used to boot the machine=
-Create a bug report on our forums with a description of the issue along with your diagsnotics=
+Clock is unsynchronized with no NTP servers=
+Clock synchronized with %s NTP server=
+Clock synchronized with %s NTP servers=
 Data copied=
-Flash Backup is not available Navigate to %sMainSettingsFlash to try again then come back to this page=Flash Backup is not available. Navigate to %s/Main/Settings/Flash to try again then come back to this page.
-GRUB configuration=
 Go to My Servers Dashboard=
-If you do not have a backup copy of your license key file you may attempt to recover your key with your Unraidnet account=If you do not have a backup copy of your license key file you may attempt to recover your key with your Unraid.net account
-Loading=
-Manage Unraidnet Account=Manage Unraid.net Account
+GRUB configuration=
 Percentage=
 Please access this server via the My Servers Dashboard=
-Purchase=
-Sign In to your Unraidnet account to get started=Sign In to your Unraid.net account to get started
 Submission of this troubleshooting request will automatically send your system diagnostics to Lime Technology=
 The command failed revert to rsync=
 This will start your free 30 day Trial=
 Time remaining=
 Transfer Rate=
-You MUST provision a new SSL certificate to use our new myunraidnet domain=You MUST provision a new SSL certificate to use our new myunraid.net domain.
-You may attempt to recover your key with your Unraidnet account=You may attempt to recover your key with your Unraid.net account
 Your current url %s is not in the list of allowed origins for this server=Your current url **%s** is not in the list of allowed origins for this server
+If you do not have a backup copy of your license key file you may attempt to recover your key with your Unraidnet account=If you do not have a backup copy of your license key file you may attempt to recover your key with your Unraid.net account
+Loading=
+Manage Unraidnet Account=Manage Unraid.net Account
+Purchase=
+Sign In to your Unraidnet account to get started=Sign In to your Unraid.net account to get started
+You may attempt to recover your key with your Unraidnet account=You may attempt to recover your key with your Unraid.net account
+You MUST provision a new SSL certificate to use our new myunraidnet domain=You MUST provision a new SSL certificate to use our new myunraid.net domain.
 Youre one step closer to enhancing your Unraid experience=You're one step closer to enhancing your Unraid experience
+Acklowledge that you have made a Flash Backup to enable this action=
+Backing upthis may take a few minutes=Backing up...this may take a few minutes
+Flash Backup is not available Navigate to %sMainSettingsFlash to try again then come back to this page=Flash Backup is not available. Navigate to %s/Main/Settings/Flash to try again then come back to this page.
+Create a bug report on our forums with a description of the issue along with your diagsnotics=
