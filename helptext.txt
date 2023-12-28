@@ -2441,8 +2441,8 @@ A value of zero will disable the critical threshold (including notifications).
 :syslog_shutdown_flash_help:
 This setting is YES by default and enables the system to copy the syslog file to the USB device on shutdown or reboot.
 
-This is helpful for situations where the system hangs and a forced reboot is required.
-It will allow to troubleshoot the situation before a reboot when diagnostices are created.
+After rebooting, the syslog from this run will be visible on Tools > Syslog > syslog-previous;
+it will also be included in diagnostics as logs/syslog-previous.txt
 :end
 
 :WOL_enable_help:
