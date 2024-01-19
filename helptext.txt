@@ -2425,50 +2425,51 @@ Cloudflare 用户需要注意：Cloudflare 的代理专为 http 流量设计，�
 ; New entries (2) - 2023-12-17
 
 :ssd_default_warning_temperature_help:
-*Warning SSD temperature* sets the default warning threshold for all SSD devices temperature. Exceeding this threshold will result in a warning notification.
+*警告 SSD 温度* 设置所有 SSD 设备温度的默认警告阈值。超过此阈值将导致发出警告通知。
 
-A value of zero will disable the warning threshold (including notifications).
+零值将禁用警告阈值（包括通知）。
 :end
 
 :ssd_default_critical_temperature_help:
-*Critical disk temperature* sets the default critical threshold for all SSD devices temperature. Exceeding this threshold will result in an alert notification.
+*关键磁盘温度* 设置所有SSD设备温度的默认临界阈值。超过此阈值将导致警报通知。
 
-A value of zero will disable the critical threshold (including notifications).
+零值将禁用临界阈值（包括通知）。
 :end
 
 ; New entries (8) - 2023-12-28
 
 :syslog_shutdown_flash_help:
-This setting is YES by default and enables the system to copy the syslog file to the USB device on shutdown or reboot.
+此设置默认为是，并在关机或重启时使系统将syslog文件复制到USB设备上。
 
-After rebooting, the syslog from this run will be visible on Tools > Syslog > syslog-previous;
-it will also be included in diagnostics as logs/syslog-previous.txt
+重新启动后，此次运行的syslog将显示在“工具”>“Syslog”>“syslog-previous”中；
+
+它还将作为logs/syslog-previous.txt包含在诊断中。
 :end
 
 :WOL_enable_help:
-If set to yes Unraidwold daemon is set to run.
+如果设置为是，则启动Unraidwold守护进程。
 :end
 
 :WOL_docker_help:
-If set to yes when wake on lan packets are received checks are carrried out for dockers otherwise dockers will be ignored.
+如果设置为是，当接收到唤醒局域网数据包时，将进行对Docker的检查；否则将忽略Docker。
 :end
 
 :WOL_run_VM_help:
-If set to yes when wake on lan packets are received checks are carrried out for virtual machines otherwise virtual machines will be ignored.
+如果设置为是，当接收到远程唤醒数据包时，将对虚拟机进行检查；否则将忽略虚拟机。
 :end
 
 :WOL_run_LXC_help:
-If set to yes when wake on lan packets are received checks are carrried out for LXC otherwise LXC will be ignored. The LXC plugin needs to be installed for LXC to be processed.
+如果在收到唤醒局域网数据包时设置为是，则对LXC进行检查，否则将忽略LXC。需要安装LXC插件才能处理LXC。
 :end
 
 :WOL_interface_help:
-Specify the interface to the daemon to bind to. Some interfaces may not be able to recieve etherframe packets. Recommend to bind to a physical interface.
+指定绑定到守护程序的接口。某些接口可能无法接收以太帧数据包。建议绑定到物理接口。
 :end
 
 :WOL_promiscuous_mode_help:
-Enable to set the NIC not to filer packets.
+启用网络接口卡设置，不过滤数据包。
 :end
 
 :WOL_log_file_help:
-Default is to log to syslog but if you want a different log location set the file name.
+默认情况下日志记录到syslog，但如果您想设置不同的日志位置，请设置文件名。
 :end
