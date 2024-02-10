@@ -3,7 +3,6 @@ Attach=附加
 Attach This Disk=附加此磁盘
 Attaching=正在附加
 Automount=自动挂载
-Click to select file or click 'Default' button for the Device Script File=点击选择文件或点击“默认”按钮选择设备脚本文件
 Default=恢复默认
 Delete Device Script File=删除设备脚本文件
 Detach=脱离
@@ -99,3 +98,6 @@ ZFS Volume=ZFS 卷
 >
 > 点击**完成**以退出此页面。
 :end
+
+; Note: February 10, 2024 - 1 missing translations
+Click to select file or click Default button for the Device Script File=

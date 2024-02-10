@@ -2473,3 +2473,23 @@ Cloudflare 用户需要注意：Cloudflare 的代理专为 http 流量设计，�
 :WOL_log_file_help:
 默认情况下日志记录到syslog，但如果您想设置不同的日志位置，请设置文件名。
 :end
+
+; New entries (2) - 2024-02-10
+
+:WOL_intro_help:
+This page allows the setup to start/resume and stop VMs, Containters(Docker and LXC) using WOL magic packets
+
+It does setup wake up of the Unraid server.
+
+The process will look for the defined mac address defined within the service(VM or container) with the exception of dockers. Dockers do not have a mac address until they are running so you will need to define a user mac address to allow you to start them
+
+If the service is paused a WOL Packet will resume. 
+
+For each service you can set: enable, disable or enable and shutdown
+
+When the enable and shutdown is set if the service is running when the next WOL packet is recieved a shutdown will be performed.
+:end
+
+:WOL_run_shutdown_help:
+If set to yes when wake on lan packets are received checks are carrried out and if enabled for service and that service is running the entity will be shutdown. System has to be set to Enabled and Shutdwon for it to be action.
+:end

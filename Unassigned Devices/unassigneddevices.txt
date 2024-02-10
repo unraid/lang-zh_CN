@@ -85,11 +85,11 @@ Not Enabled=未启用
 not installed=未安装
 Note=注意
 offline=离线
+User Shares=用户共享
 You must enable NFS in Settings->NFS to mount NFS shares=你必须在“设置->NFS”处启用 NFS 才能挂载 NFS 共享
 You must enable SMB in Settings->SMB to mount SMB shares=你必须在“设置->SMB”处启用 SMB 才能挂载 SMB 共享
 Open=打开
 Partition and Format Disk=分区并格式化磁盘
-Pass Thru=直通
 Password=密码
 Read only=只读
 Reboot=重启
@@ -105,11 +105,8 @@ Remove partition=删除分区
 Running=正在运行
 Script=脚本
 Search For Servers=查找服务器
-Search for Servers, or enter the Server nameIP address manually=查找服务器，或手动输入 IP 地址
 Search for Shares or enter the Share name manually=查找共享，或手动输入共享名称
 Searching=正在查找
-Select the Mount Point to Root Share=选择根共享挂载点
-Serial Number Mount Point=序列号（挂载点）
 Shares=共享
 Share Type=共享类型
 share for=共享
@@ -132,10 +129,7 @@ Unmount=卸载
 Unmounting=正在卸载
 Use caution when gathering shares into one Root Share=将共享文件夹聚合进一个根共享时请小心
 Used=已使用
-User and Pool Shares=用户与池共享
 User Shares=用户共享
-User and Pool Shares will include all files in User Shares, Cache and Pool Devices=用户与池共享将包含用户共享文件夹、缓存盘与池设备上的所有文件
-User Shares will allow access to User Shares, but the Root Share will not include Cache and Pool Device files=用户共享允许访问 Unraid 用户共享文件夹，但这种根共享方式不包含缓存盘和池设备文件
 Username=用户名
 View Device Script Log=查看设备脚本日志
 View ISO File Script Log=查看 ISO 文件脚本日志
@@ -151,6 +145,36 @@ You WILL have problems if you do=你将会面临问题，如果你（做）
 You will need to enter credentials to list the shares=你需要输入凭据才能列出共享
 ZFS Pool Name=ZFS 池名称
 ZFS Volume=ZFS 卷
+
+:unassgned_devices_switches_plug:
+> Turn on the **Disks** switch to change the web page to show disk devices. Turn off the **Disks** switch to change the web page to hide disk devices.
+>
+> Turn on the **Shares** switch to change the web page to show shares. Turn off the **Shares** switch to change the web page to hide shares.
+>
+> Turn on the **Historical** switch to show Historical disk devices. Turn off **Historical** switch to switch back to not show Historical disk devices.
+>
+> Click on the <i class="fa fa-refresh"></i> icon to refresh disks and configuration.
+>
+> Click on the <i class="fa fa-gear"></i> icon to go to the UD Settings.
+>
+> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator.  Applies to version 6.9 RC2 and later only.
+>
+> Click on the <i class="fa fa-gears"></i> icon to go to the Device Settings configuration.  This is where you configure a device script and certain device characteristics.
+> 
+> Click on the <i class="icon-nvme"></i> or <i class="fa fa-hdd-o"></i> icon to display syslog entries specific to this disk device.
+>
+> **Mount Point icons:**
+>
+> When the <i class='fa fa-pencil'></i> icon shows next to the mount point it indicates the mount point can be changed when the mount point is clicked.
+>
+> When the <i class='fa fa-external-link'></i> icon shows next to the mount point it indicates the clicking on the mount point will browse the files on that partition.
+>
+> Click on the <i class="fa fa-align-left"></i> icon to display the device script log.  This is the log specific to the device script.
+>
+> Click on the <i class="fa fa-check"></i> icon to perform a file system check.  BTRFS and ZFS file systems need to be mounted to do a file check.  The file check on BTRFS and ZFS file systems is a scrub.
+>
+> Click on the <i class="fa fa-flash"></i> icon to run your device script as if it was hot plugged.  This only applies to disk devices.
+:end
 
 :unassigned_devices_general_help_plug:
 > **Unassigned Devices 简称为 UD**。
@@ -206,3 +230,21 @@ ZFS Volume=ZFS 卷
 >
 > 使用 /dev/sdX 或 devX 代号时请小心，因为它们可在重启后改变。对于 sdX（DEVICE）和 devX（UD_DEVICE），在 UD 脚本中使用最好传值。
 :end
+
+; Note: February 10, 2024 - 16 missing translations
+Encrypt CIFS Mount=
+User Shares without Pools=
+Partition=
+Passed=
+Passed Through=
+Pool=
+Preclear=
+Remote Shares=
+Search for Servers, or enter the Server name or IP address manually=
+Select the Root Share=
+Serial Number Mount Point=Serial Number (Mount Point)
+Unassigned Devices=
+Unassigned Disks=
+User Shares without Pools=
+User Shares - allow access to User Shares, including Cache and Pool files=
+User Shares without Pools - allow access to User Shares, but the Root Share will not include Cache and Pool files=

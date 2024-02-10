@@ -449,3 +449,12 @@ An error occurred - Could not determine configuration=发生错误 - 无法确�
 ; WebGui
 Click Install to download and install the Community Applications plugin=点击“安装”以下载并安装社区应用插件
 
+
+; Note: February 10, 2024 - 7 missing translations
+Deprecated OS version No further updates to Community Applications will be issued for this OS version=
+Update Application=
+Run Anyways=
+Memory Requirements not met Problems may result=
+Browser failed to communicate with Unraid Server=
+For unknown reasons, your browser was unable to communicate with Community Applications running on your server=
+Attempt to Fix Via Reload Page=
