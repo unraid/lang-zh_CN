@@ -7,6 +7,6 @@ Note: While there is some risk, if it is not possible to first mount the filesys
 Run with Correct flag=携带正确标志（correct flag）运行
 
 ; Note: November 16, 2023 - 3 missing translations
-Cannot determine file system on an encrypted disk=
-Executing file system check=
-Executing file system scrub=
+Cannot determine file system on an encrypted disk=无法检测加密磁盘上的文件系统
+Executing file system check=正在执行文件系统检测
+Executing file system scrub=正在执行文件系统检查

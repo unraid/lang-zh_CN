@@ -149,5 +149,5 @@ Use only when directed for support because the messages can flood the log=只在
 :end
 
 :ud_settings_zfs_upgrade_plug:
-> Select the disk that you want to upgrade to the latest ZFS version. Drive must be mounted to upgrade ZFS.
+> 选择想要升级到最新 ZFS 版本的磁盘。磁盘必须被挂载才能升级 ZFS。
 :end

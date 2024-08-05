@@ -451,10 +451,10 @@ Click Install to download and install the Community Applications plugin=点击�
 
 
 ; Note: February 10, 2024 - 7 missing translations
-Deprecated OS version No further updates to Community Applications will be issued for this OS version=
-Update Application=
-Run Anyways=
-Memory Requirements not met Problems may result=
-Browser failed to communicate with Unraid Server=
-For unknown reasons, your browser was unable to communicate with Community Applications running on your server=
-Attempt to Fix Via Reload Page=
+Deprecated OS version No further updates to Community Applications will be issued for this OS version=已过时的操作系统版本 - 这个版本的操作系统将不会接收到社区应用的后续更新
+Update Application=升级应用
+Run Anyways=总是运行
+Memory Requirements not met Problems may result=未达到内存要求，可能导致问题
+Browser failed to communicate with Unraid Server=浏览器未能成功与 Unraid 服务器联系
+For unknown reasons, your browser was unable to communicate with Community Applications running on your server=因未知原因，您的浏览器无法成功与您服务器上的社区应用联系
+Attempt to Fix Via Reload Page=尝试重新加载页面以修复

@@ -100,4 +100,4 @@ ZFS Volume=ZFS 卷
 :end
 
 ; Note: February 10, 2024 - 1 missing translations
-Click to select file or click Default button for the Device Script File=
+Click to select file or click Default button for the Device Script File=点击以选择文件或点击**默认**按钮以使用设备脚本文件

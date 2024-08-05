@@ -232,19 +232,19 @@ ZFS Volume=ZFS 卷
 :end
 
 ; Note: February 10, 2024 - 16 missing translations
-Encrypt CIFS Mount=
-User Shares without Pools=
-Partition=
-Passed=
-Passed Through=
-Pool=
-Preclear=
-Remote Shares=
-Search for Servers, or enter the Server name or IP address manually=
-Select the Root Share=
-Serial Number Mount Point=Serial Number (Mount Point)
-Unassigned Devices=
-Unassigned Disks=
-User Shares without Pools=
-User Shares - allow access to User Shares, including Cache and Pool files=
-User Shares without Pools - allow access to User Shares, but the Root Share will not include Cache and Pool files=
+Encrypt CIFS Mount=加密 CIFS 挂载
+User Shares without Pools=不含存储池的用户共享
+Partition=分区
+Passed=通过
+Passed Through=通过从
+Pool=存储池
+Preclear=预清理
+Remote Shares=远程共享
+Search for Servers, or enter the Server name or IP address manually=搜索服务器，或手动输入服务器的名称或 IP 地址
+Select the Root Share=选择根(Root)分享
+Serial Number Mount Point=序列号(挂载点)
+Unassigned Devices=未分配的设备
+Unassigned Disks=未分配的磁盘
+User Shares without Pools=不含存储池的用户共享
+User Shares - allow access to User Shares, including Cache and Pool files=用户共享 - 允许对包括缓存和存储池文件在内的用户共享的访问
+User Shares without Pools - allow access to User Shares, but the Root Share will not include Cache and Pool files=不含存储池的用户共享 - 允许对除缓存和存储池文件之外的用户共享的访问
