@@ -338,19 +338,19 @@ USB 闪存设备也可能被**列入黑名单**。
 :end
 
 ; Note: December 17, 2023 - 16 missing translations
-Creating Flash backup=
-Creation error=
-Delete Modprobe config=
-Downgrade OS=
-Driver=
-Edit Modprobe config=
-Flash backup=
-Insufficient free disk space available=
-Modprobed config file=Modprobe.d config file
-Rebuild Modules=
-Remove custom modprobed configuration=Remove custom modprobe.d configuration?
-Save Modprobe config=
-Select View=
-State=
-Support page=
-System Drivers=
+Creating Flash backup=创建闪存盘备份
+Creation error=创建出错
+Delete Modprobe config=删除 Modprobe 配置
+Downgrade OS=降级系统
+Driver=驱动
+Edit Modprobe config=编辑 Modprobe 配置
+Flash backup=闪存盘备份
+Insufficient free disk space available=磁盘可用空间不足
+Modprobed config file=Modprobe.d 配置文件
+Rebuild Modules=重建模块
+Remove custom modprobed configuration=确定移除 modprobe.d 配置吗？
+Save Modprobe config=保存 Modprobe 配置
+Select View=选择视图
+State=状态
+Support page=支持页面
+System Drivers=系统驱动

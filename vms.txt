@@ -224,7 +224,7 @@ wsport for virtual console=虚拟控制台的WS端口
 XML View=XML 视图
 
 ; Note: February 7, 2024 - 4 missing translations
-define Multifunctiion Support=
-Description=Description
-Disk devicesVolume=Disk devices/Volume
-Top Image=Top Image
+define Multifunctiion Support=定义多功能支持
+Description=描述
+Disk devicesVolume=磁盘设备/卷
+Top Image=常用映像
