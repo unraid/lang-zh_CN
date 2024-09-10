@@ -211,6 +211,7 @@ Months_array=January:一月 February:二月 March:三月 April:四月 May:五月
 months=个月
 More=更多
 Motherboard=主板
+Mainboard=主板
 Move=移动
 NA=N/A
 Name=名称
