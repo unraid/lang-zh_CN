@@ -162,7 +162,7 @@ Your Trial key requires an internet connection=您的**试用**密钥要求联�
 ; Sysdevs text - added May 18, 2020
 A reboot is required to apply changes=需要重启才能应用更改
 ALERT=警报
-Bind selected to VFIO at Boot=在引导时对 VFIO 选择了绑定
+Bind selected to VFIO at Boot=在系统引导时绑定已选项至 VFIO
 CPU Thread Pairings=CPU 线程配对
 Changes saved=更改已保存
 Function Level Reset FLR supported=支持功能级复位 (FLR)
@@ -220,16 +220,13 @@ Your system has booted with the PCIe ACS Override setting enabled=您的系统�
 :end
 
 :newconfig_plug:
-该实用程序用于重置阵列磁盘配置，以使所有磁盘都显示为“新”磁盘，
-就好像它是全新的服务器一样。
+此实用程序用于重置阵列磁盘配置，使所有磁盘都显示为“新”磁盘，就好像这是一台全新的服务器。
 
-当您添加或删除了多个驱动器并且希望基于新配置重建奇偶校验时，
-此功能很有用。
+当您添加或删除了多个驱动器并且希望基于新配置重建奇偶校验时，此功能将派上用场。
 
-重置阵列***之后***，使用 *'保留当前分配'* 选项填充所需的磁盘插槽。默认情况下，**不**填充磁盘插槽。
+调整*“保留当前分配”*选项，可在阵列重置***后***自动填充对应的磁盘插槽。默认**不会**填充任何磁盘插槽。
 
-**请勿使用此实用程序，因为它会重建故障驱动器** —— 它将产生相反的效果，
-将***无法***重建现有的故障驱动器 —— 您已受到警告！
+请注意，**此实用程序不应用于重建故障驱动器**——相反，它会导致现有的故障驱动器***无法***重建！
 :end
 
 :newperms_1_plug:
