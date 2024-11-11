@@ -1,7 +1,9 @@
 Add ISO File Share=添加 ISO 文件共享
 Add Remote SMB=添加远程 SMB
 Add Root Share=添加根共享
-An XFS, BTRFS, or ZFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=使用 Unassigned Devices 创建的 XFS、BTRFS 或 ZFS 分区磁盘可被阵列读写，只需添加到阵列中
+All Unassigned Devices configurations will be updated=将更新所有 Unassigned Devices 配置
+All disks will be refreshed using udev=将使用 udev 刷新所有磁盘
+An XFS, BTRFS, or ZFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=使用 Unassigned Devices 创建的 XFS、BTRFS 或 ZFS 分区磁盘只需添加到阵列中即可被阵列读写
 Any data on this disk will be lost=此磁盘上的所有数据都将清除
 Are you sure=你确定吗
 Auto mount=自动挂载
@@ -9,16 +11,18 @@ Back=返回
 Browse Disk Share=浏览磁盘共享
 Browse ISO File Share=浏览 ISO 文件共享
 Browse Remote SMB=浏览远程 SMB
+Check the syslog for details=检查系统日志以获取详情
 Choose File System Format=选择文件系统格式
 Choose ISO File=选择 ISO 文件
-Choose Server=选择服务器
+Choose NFS Server=选择 NFS 服务器
+Choose SMB Server=选择 SMB 服务器
 Choose Share=选择共享
 Click on Icon to Choose Protocol=点击图标以选择协议
 Change Disk Mount Point=更改磁盘挂载点
 Change ISO File Mount Point=更改 ISO 文件挂载点
 Change Remote Share Mount Point=更改远程共享挂载点
 Change SMB=更改 SMB
-Changing the Mount Point will also change the disk label on all disks and the pool name on a ZFS disk=更改挂载点还将更改所有磁盘上的磁盘标签和ZFS磁盘上的池名称
+Changing the Mount Point will also change the disk label on all disks and the pool name on a ZFS disk=更改挂载点还将更改所有磁盘上的磁盘标签和 ZFS 磁盘上的存储池名称
 Clear=清除
 Click to select ISO file=点击选择 ISO 文件
 Click to view/hide partitions and mount points=点击显示/隐藏分区与挂载点
@@ -34,6 +38,7 @@ Domain=域
 Edit Device Script=编辑设备脚本
 Edit ISO File Script=编辑 ISO 文件脚本
 Edit Remote SMB=编辑远程 SMB
+Encrypt CIFS Mount=加密 CIFS 挂载
 Enter the Domain for the share if on a Domain=若共享在域中，输入域
 Enter the Password if the share is password protected=若共享由密码保护，输入密码
 Enter the Username if the share is password protected=若共享由密码保护，输入用户名
@@ -43,9 +48,10 @@ Exclusive Share files will not be accessible in a Root Share=独占共享的文�
 Execute Script as udev simulating a device being installed=udev 模拟设备安装时执行脚本
 Fail=失败
 failed to=失败
+Failed to get data to refresh page=无法获取数据并刷新页面
 file share for=文件共享
 File System Check=文件系统检查
-File System Scrub=文件系统 scrub
+File System Scrub=文件系统清理（scrub）
 Format=格式化
 Formatting=正在格式化
 Free=剩余
@@ -55,10 +61,11 @@ Historical=历史
 Historical Devices=历史设备
 Historical Device is=历史设备
 Identification=身份验证
-If the IP address of the server shows in the list after searching, your DNS server is not resolving the name=如果在搜索后服务器的IP地址显示在列表中，那么您的DNS服务器无法解析该名称
-If this disk was pre-cleared, you will remove the pre-clear signature=如果此磁盘已预清除，这么做将会移除预清除签名（pre-clear signature）
-If you add the disk to the array and the pre-clear signature is removed, Unraid will go through the lengthy process of clearing the disk again=如果你将磁盘添加到阵列中并且预清除签名（pre-clear signature）已移除，Unraid 将启动再次清除磁盘的冗长进程
-If shares do not show, check your credentials=如果共享未显示，请检查您的凭据。
+If SMB shares do not show, check your credentials=如果 SMB 共享未显示，请检查你的凭据
+If the IP address of the server shows in the list after searching, your DNS server is not resolving the name=完成搜索后，如果列表中显示的是服务器 IP 地址而不是名称，代表你的 DNS 服务器并没有解析名称
+If this disk was pre-cleared, you will remove the pre-clear signature=如果此磁盘已预清除，这么做将会移除预清除标记（pre-clear signature）
+If you add the disk to the array and the pre-clear signature is removed, Unraid will go through the lengthy process of clearing the disk again=如果你将磁盘添加到阵列中并且预清除标记（pre-clear signature）已移除，Unraid 将启动再次清除磁盘的冗长进程
+If shares do not show, check your credentials=如果共享未显示，请检查你的凭据
 Invalid Configuration - Remove and Re-add=无效的配置 - 删除并重添加
 is offline=离线
 ISO File is=ISO 文件
@@ -74,7 +81,7 @@ Mount Point=挂载点
 Mounting=正在挂载
 Next=下一个
 NFS Mount Point=NFS 挂载点
-NFS or ISO File Shares configured=NFS 或 ISO 文件共享
+NFS or ISO File Shares configured=NFS 或 ISO 文件共享已配置
 NFS Script=NFS 脚本
 NFS Script Log=NFS 脚本日志
 NFS Share=NFS 共享
@@ -86,17 +93,25 @@ not installed=未安装
 Note=注意
 offline=离线
 User Shares=用户共享
+User Shares without Pools=不含存储池的用户共享
 You must enable NFS in Settings->NFS to mount NFS shares=你必须在“设置->NFS”处启用 NFS 才能挂载 NFS 共享
 You must enable SMB in Settings->SMB to mount SMB shares=你必须在“设置->SMB”处启用 SMB 才能挂载 SMB 共享
 Open=打开
+Partition=分区
 Partition and Format Disk=分区并格式化磁盘
+Passed=已通过
+Passed Through=已直通
 Password=密码
+Pool=存储池
+Preclear=预清除
 Read only=只读
 Reboot=重启
 Refresh Disks and Configuration=刷新磁盘与配置
 Remember your password It cannot be recovered=记住密码，一旦忘记，密码无法恢复
 Remote Server is=远程服务器是
-Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=远程共享挂载依赖于稳定可靠的网络连接，这可能很难实现
+Remote Shares=远程共享
+Remote Shares online status will be reset=远程共享在线状态将重置
+Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=远程共享挂载依赖于稳定可靠的网络连接，而那可能难以实现
 Remove Device configuration=删除设备配置
 Remove ISO File Share=移除 ISO 文件共享
 Remove Partition=删除分区
@@ -105,11 +120,17 @@ Remove partition=删除分区
 Running=正在运行
 Script=脚本
 Search For Servers=查找服务器
+Search for Servers, or enter the Server name or IP address manually=查找服务器，或手动输入服务器名称或 IP 地址
 Search for Shares or enter the Share name manually=查找共享，或手动输入共享名称
 Searching=正在查找
+Select the Root Share=选择根共享
+Serial Number (Mount Point)=序列号（挂载点）
 Shares=共享
 Share Type=共享类型
 share for=共享
+Show/Hide Historical Unassigned Devices=显示/隐藏历史未分配的设备
+Show/Hide SMB/NFS/ISO Shares=显示/隐藏 SMB/NFS/ISO 共享
+Show/Hide Unassiged Disk Devices=显示/隐藏未分配的磁盘设备
 Simple=简单
 SMB Shares=SMB 共享
 Source=源
@@ -118,18 +139,25 @@ Success=成功
 Show Historical Devices=显示历史设备
 Show SMB/NFS/ISO Shares=显示 SMB/NFS/ISO 共享
 Show Disk Devices=显示磁盘设备
-This is a way to gather Unraid shares into one Root Share=这是一种将 Unraid 共享文件夹聚合进一个根共享的方式
+This is a way to gather Unraid shares into one Root Share=这是一种将 Unraid 共享文件夹聚合进一个根目录共享的方式
 This will remove the ISO file share for=这将会移除下列 ISO 文件共享
 This will remove the=这将会移除
 This will remove the saved configuration of=这将会删除下列已保存配置
 This will remove the=这将会移除
+Timeout: Failed to get unassigned devices information - check the syslog=超时：获取未分配设备信息失败 - 请检查系统日志
 to confirm=以确定
 to format=以格式化
+Unassigned Devices Settings=Unassigned Devices（未分配的设备）设置
+Unassigned Disk Devices=未分配的磁盘设备
+Unassigned Disks=未分配的磁盘
 Unmount=卸载
 Unmounting=正在卸载
-Use caution when gathering shares into one Root Share=将共享文件夹聚合进一个根共享时请小心
+Use caution when gathering shares into one Root Share=将共享文件夹聚合为根共享时请小心
 Used=已使用
 User Shares=用户共享
+User Shares without Pools=不含存储池的用户共享
+User Shares - allow access to User Shares, including Cache and Pool files=用户共享 - 允许对包括缓存池和存储池文件在内的用户共享的访问
+User Shares without Pools - allow access to User Shares, but the Root Share will not include Cache and Pool files=不含存储池的用户共享 - 允许对除缓存池和存储池文件之外的用户共享的访问
 Username=用户名
 View Device Script Log=查看设备脚本日志
 View ISO File Script Log=查看 ISO 文件脚本日志
@@ -143,37 +171,37 @@ You must enable SMB in Settings->SMB to mount SMB shares=你必须在“设置->
 You must enable the Destructive Mode in UD Settings before you can Format this disk=你必须在 Unassigned Devices（未分配的设备）设置中启用破坏性模式才能格式化此磁盘
 You WILL have problems if you do=你将会面临问题，如果你（做）
 You will need to enter credentials to list the shares=你需要输入凭据才能列出共享
-ZFS Pool Name=ZFS 池名称
+ZFS Pool Name=ZFS 存储池名称
 ZFS Volume=ZFS 卷
 
 :unassgned_devices_switches_plug:
-> Turn on the **Disks** switch to change the web page to show disk devices. Turn off the **Disks** switch to change the web page to hide disk devices.
+> 打开**磁盘**开关显示磁盘设备，关闭它则隐藏磁盘设备。
 >
-> Turn on the **Shares** switch to change the web page to show shares. Turn off the **Shares** switch to change the web page to hide shares.
+> 打开**共享**开关显示共享，关闭它则隐藏共享。
 >
-> Turn on the **Historical** switch to show Historical disk devices. Turn off **Historical** switch to switch back to not show Historical disk devices.
+> 打开**历史**开关显示历史磁盘设备，关闭它则隐藏历史磁盘设备。
 >
-> Click on the <i class="fa fa-refresh"></i> icon to refresh disks and configuration.
+> 点击 <i class="fa fa-refresh"></i> 图标刷新磁盘和配置。
 >
-> Click on the <i class="fa fa-gear"></i> icon to go to the UD Settings.
+> 点击 <i class="fa fa-gear"></i> 图标跳转到 Unassigned Devices（未分配的设备）设置。
 >
-> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator.  Applies to version 6.9 RC2 and later only.
+> 点击 <i class='fa fa-circle orb green-orb'></i> 或 <i class='fa fa-circle orb grey-orb'></i> 圆形指示器使磁盘停转或启动。只在 6.9 RC2 及以上版本生效。
 >
-> Click on the <i class="fa fa-gears"></i> icon to go to the Device Settings configuration.  This is where you configure a device script and certain device characteristics.
-> 
-> Click on the <i class="icon-nvme"></i> or <i class="fa fa-hdd-o"></i> icon to display syslog entries specific to this disk device.
+> 点击 <i class="fa fa-gears"></i> 图标跳转到设备设置。在设备设置中可配置设备脚本和特性。
 >
-> **Mount Point icons:**
+> 点击 <i class="icon-nvme"></i> 或 <i class="fa fa-hdd-o"></i> 图标显示特定于此磁盘设备的系统日志条目。
 >
-> When the <i class='fa fa-pencil'></i> icon shows next to the mount point it indicates the mount point can be changed when the mount point is clicked.
+> **挂载点图标：**
 >
-> When the <i class='fa fa-external-link'></i> icon shows next to the mount point it indicates the clicking on the mount point will browse the files on that partition.
+> 挂载点旁显示 <i class='fa fa-pencil'></i> 图标时表示该挂载点可点击更改。
 >
-> Click on the <i class="fa fa-align-left"></i> icon to display the device script log.  This is the log specific to the device script.
+> 挂载点旁显示 <i class='fa fa-external-link'></i> 图标时表示该挂载点可通过点击来浏览对应分区。
 >
-> Click on the <i class="fa fa-check"></i> icon to perform a file system check.  BTRFS and ZFS file systems need to be mounted to do a file check.  The file check on BTRFS and ZFS file systems is a scrub.
+> 点击 <i class="fa fa-align-left"></i> 图标显示设备脚本日志。此日志特定于设备脚本。
 >
-> Click on the <i class="fa fa-flash"></i> icon to run your device script as if it was hot plugged.  This only applies to disk devices.
+> 点击 <i class="fa fa-check"></i> 图标执行文件系统检查。BTRFS 和 ZFS 文件系统在挂载后才能检查。对 BTRFS 和 ZFS 文件系统的检查作用为清理（scrub）。
+>
+> 点击 <i class="fa fa-flash"></i> 图标手动运行设备脚本。此图标只对磁盘设备生效。
 :end
 
 :unassigned_devices_general_help_plug:
@@ -181,7 +209,7 @@ ZFS Volume=ZFS 卷
 >
 > 将鼠标指针悬浮在 UD 页面任何激活区域上，一个提示气泡将会显示此区域的功能。
 > 通过 UD，你可以挂载 USB 设备、SATA 磁盘、远程 SMB/NFS 共享和 ISO 文件。开启自动挂载的设备将在阵列启动时自动挂载。所有磁盘及 SMB/NFS 挂载将在阵列停止，触发“stopping_svcs”事件时卸载。
-> 如果你想共享磁盘，可以打开共享开关。远程 SMB 共享的默认设置是公共读写。可在 Unassigned Devices（未分配的设备）设置中按用户配置 SMB 安全。NFS 共享被导出，权限是读写。NFS 设备的导出在 Unassigned Devices（未分配的设备）设置中开启。你还可以设置一个在每次挂载时执行的通用脚本。要共享任何 UD 设备，必须在 UD（未分配的设备）设置中开启共享功能，并打开共享特定设备的开关。SMB/NFS 远程共享和 ISO 挂载总是共享的。
+> 如果你想共享磁盘，可以打开共享开关。远程 SMB 共享的默认设置是公共读写，可在 Unassigned Devices（未分配的设备）设置中按用户配置 SMB 安全。NFS 设备的导出在 Unassigned Devices（未分配的设备）设置中开启，权限则是读写。你还可以设置一个在每次挂载时执行的通用脚本。要共享任何 UD 设备，必须在 UD（未分配的设备）设置中开启共享功能，并打开共享特定设备的开关。SMB/NFS 远程共享和 ISO 挂载总是共享的。
 > 输入挂载点后，按 &lt;Enter&gt; 保存更改。
 >
 > 点击设备标识的 <i style='color:black;font-weight:bold;' class="fa fa-plus-square"></i> 图标，可以看到额外选项。设备挂载点可在设备未挂载时更改。磁盘标签也将更改。磁盘可被格式化或运行 fsck 检查。
@@ -228,23 +256,5 @@ ZFS Volume=ZFS 卷
 >
 > 注意：/dev/sdX 的“X”是设备代号。devX 是 UD 页面显示的设备名称。如果设备名称是“Dev 1”，则使用 dev1 作为要停转的设备。 要在用户脚本中对磁盘执行 UD 操作，可使用 name=磁盘名称。
 >
-> 使用 /dev/sdX 或 devX 代号时请小心，因为它们可在重启后改变。对于 sdX（DEVICE）和 devX（UD_DEVICE），在 UD 脚本中使用最好传值。
+> 使用 /dev/sdX 或 devX 代号时请注意，它们可在重启后改变。在 UD 脚本中访问 sdX（DEVICE）和 devX（UD_DEVICE）时最好使用传入的参数。
 :end
-
-; Note: February 10, 2024 - 16 missing translations
-Encrypt CIFS Mount=加密 CIFS 挂载
-User Shares without Pools=不含存储池的用户共享
-Partition=分区
-Passed=通过
-Passed Through=通过从
-Pool=存储池
-Preclear=预清理
-Remote Shares=远程共享
-Search for Servers, or enter the Server name or IP address manually=搜索服务器，或手动输入服务器的名称或 IP 地址
-Select the Root Share=选择根(Root)分享
-Serial Number Mount Point=序列号(挂载点)
-Unassigned Devices=未分配的设备
-Unassigned Disks=未分配的磁盘
-User Shares without Pools=不含存储池的用户共享
-User Shares - allow access to User Shares, including Cache and Pool files=用户共享 - 允许对包括缓存和存储池文件在内的用户共享的访问
-User Shares without Pools - allow access to User Shares, but the Root Share will not include Cache and Pool files=不含存储池的用户共享 - 允许对除缓存和存储池文件之外的用户共享的访问

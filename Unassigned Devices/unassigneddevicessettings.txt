@@ -1,9 +1,10 @@
 Add=添加
 Auto Mount USB Devices=自动挂载 USB 设备
+Case-sensitive names=区别大小写的名称
 Change Disk UUID=更改磁盘 UUID
 Change UUID=更改 UUID
 Change Disk UUID=更改磁盘 UUID
-Command times=命令时间
+Command times=命令耗费时间
 Common Script=通用脚本
 Common Settings=通用设置
 Destructive Mode=破坏性模式
@@ -11,8 +12,10 @@ Disabled=已关闭
 Disk spin down is managed by Unraid=磁盘停转由 Unraid 管理
 Enable NFS export=开启 NFS 导出
 Enable SMB Security=开启 SMB 安全
+Enable Time Machine=开启时间机器（Time Machine）
 Enter Disk Password=输入磁盘密码
-Enter Pool Mount Point=输入池挂载点
+Enter the Remote Server name or IP address and the results from the Remote Server Test will show in the **Result** text area=输入远程服务器名称或 IP 地址，测试结果将显示在**结果**文本框内
+Enter Pool Mount Point=输入存储池挂载点
 Legacy Mount Point Compatibility=遗留挂载点兼容
 Mount SSDs with discard option=带 discard 选项挂载 SSD
 NFS Security=NFS 安全
@@ -25,21 +28,32 @@ Private Hidden=私有且隐藏
 Refresh and Update=刷新和更新
 Remote Share Mount Wait Time=远程共享挂载等待时间
 Rule=规则
-SMB Settings=SMB 设置
 Select Disk=选择磁盘
+See Help=查看帮助
 Set Encrypted Disk Password=设置加密的磁盘的密码
 Set Password=设置密码
-Set Pool Mount Point=设置池挂载点
-Set the Pool Mount Point for this disk=为此磁盘设置池挂载点
+Set Pool Mount Point=设置存储池挂载点
+Set the Pool Mount Point for this disk=为此磁盘设置存储池挂载点
 Set the disk Password=设置磁盘密码
+SMB Settings=SMB 设置
+SMB Sharing=SMB 共享
 Specify SMB Version when Mounting Remote Shares=挂载远程共享时使用的 SMB 版本
 Spin down disks=停转磁盘
+Test=测试
+Testing=正在测试
+Test the Remote Server=测试远程服务器
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=必须安装 Unassigned Devices Plus 才能启用破坏性模式
+This is a tool to help troubleshoot Remote Servers ability to serve SMB and NFS shares=该工具可帮助排查 SMB 和 NFS 共享远端服务器的问题
+Time Machine volume size limit=时间机器（Time Machine）卷大小限制
 to SMB share config=到 SMB 共享配置
 Udev and Hotplug=udev 与热插拔
 Unassigned Devices=未分配的设备
 Unraid 6.10 or later is required for NFSv4 support=NFSv4 支持要求 Unraid 6.10 或更高版本
+Upgrade ZFS Pool=升级 ZFS 存储池
 Use only when directed for support because the messages can flood the log=只在寻求支持时使用，否则会有大量消息充斥日志
+Warning=警告
+Windows may require a valid User to be defined even for Public shares=Windows 可能要求有效的用户凭证，即使共享是公共的
+Working=工作中
 
 ; Help
 ;
@@ -48,7 +62,7 @@ Use only when directed for support because the messages can flood the log=只在
 :end
 
 :ud_settings_common_script_plug:
-> 如果设置，此脚本将在设备脚本之前执行。动作（action）位于环境变量 **$ACTION**。请确保以完整路径引用命令。
+> 如果设置，此脚本将先于设备脚本执行。动作（action）通过环境变量 **$ACTION** 设置。请确保以完整路径引用命令。
 :end
 
 :ud_settings_destructive_plug:
@@ -56,7 +70,7 @@ Use only when directed for support because the messages can flood the log=只在
 :end
 
 :ud_settings_mount_usb_devices_plug:
-> 设为**是**时，将自动挂载新的 USB 设备并共享，无需用户干预。
+> 设为**是**时，将自动挂载新的 USB 设备并共享，无需用户操作。
 :end
 
 :ud_settings_discard_plug:
@@ -112,16 +126,30 @@ Use only when directed for support because the messages can flood the log=只在
 > + 设为**公共**将以公共读写权限共享设备、远程 SMB/NFS 共享和 ISO 挂载。
 > + 设为**私有**为 SMB 共享启用 SMB 安全。按用户设置读写权限。
 > + 设为**私有且隐藏**为不可见的 SMB 共享启用 SMB 安全。按用户设置读写权限。
+>
+> Windows 服务器签名：
+>
+> 在使用 Windows 11 24H2 或更新版本时，如无法浏览 SMB 共享，你需要针对一项叫作“服务器签名”的新功能作出一些更改。服务器签名在 Unraid 中为启用状态，你需要更改一些配置才能访问公共共享。
+> 你可以<u><a href='https://techcommunity.microsoft.com/t5/storage-at-microsoft/accessing-a-third-party-nas-with-smb-in-windows-11-24h2-may-fail/ba-p/4154300', target='_blank'>_(在 Windows 中禁用保护措施)_</a></u>，或者在启用服务器签名的情况下使用 Unraid——最简单的方法是在 Unraid 中创建一个与 Windows 账户同名的用户并设置密码，然后 Windows 将要求你提供凭据。
+> 如果你使用的是微软账户，最好先在 Unraid 中创建一个带密码的用户，然后在 Windows 的“控制面板->凭证管理器->Windows 凭证->添加 Windows 凭证”处添加正确的 Unraid 服务器名称和凭证。
 :end
 
 :ud_settings_case_sensitive_plug:
 > 决定文件名是否区别大小写。
 >
-> 默认值**自动**允许 Linux CIFSVFS 等区别文件名大小写的客户端以封包为单位报告 Samba 服务器它们希望以区别文件名大小写的方式访问文件系统（以支持 Unix 文件名区别大小写的语义）。Windows 系统不区别文件名大小写，因此设为自动对于 Windows 系统来说等效于设为否；然而，由 Windows 客户端传递的文件名的大小写被保留。使用此项可导致处理大型目录时性能下降，因为 Samba 必须搜索匹配传递的文件名。
+> 默认值**自动**允许 Linux CIFS 和 NFS 等区别文件名大小写的客户端以封包为单位报告 Samba 服务器它们希望以区别文件名大小写的方式访问文件系统（以支持 Unix 文件名区别大小写的语义）。Windows 系统不区别文件名大小写，因此设为自动对于 Windows 系统来说等效于设为否；不过，Windows 客户端传递的文件名的大小写会被保留。此选项可导致处理大型目录时性能下降，因为 Samba 必须搜索匹配传递的文件名。
 >
-> **是**意味着创建文件时，文件名使用客户端传递的大小写，并且只有使用同样大小写的文件名才能访问此文件。相比之下，这不会影响大型目录的访问速度，但在此项设置下，某些 Windows 应用程序可能无法正常运转。比如，创建远程文件“MyFile”，但一个 Windows 应用程序试图打开“MYFILE”，将无法找到它，尽管在 Windows 的原生环境中，文件名大小写是不区别的。
+> **是**意味着创建文件时，文件名使用客户端传递的大小写，并且只有使用同样大小写的文件名才能访问此文件。相比之下，这不会影响大型目录的访问速度，但在此项设置下，某些 Windows 应用程序可能无法正常运转。比如，远程文件名为“MyFile”，Windows 应用程序在打开“MYFILE”时就会失败，尽管在 Windows 的原生环境中，文件名大小写是不区别的。
 >
-> **强制小写**特殊在于，来自客户端的所有文件名——而不仅仅是新文件名——的大小写，都将转为小写。换句话说，无论在 Windows 一侧有着怎样大小写的文件名，此文件都将在远程端以小写文件名存储和访问。这保证了所有 Windows 应用程序都能正确寻找任何文件，而不管文件名大小写，但在列出文件夹时，文件名的大小写不会保留。
+> **强制小写**特殊在于，来自客户端的所有文件名，不仅仅是新文件名，都将转为小写。换句话说，无论在 Windows 一侧有着怎样大小写的文件名，此文件都将在远程端以小写文件名存储和访问。这保证了所有 Windows 应用程序都能正确寻找任何文件，而不管文件名大小写；但在列出文件夹时，文件名的大小写不会保留。
+:end
+
+:ud_time_machine_plug:
+> 设为**是**对 SMB 共享开启时间机器（Time Machine）。
+:end
+
+:ud_time_machine_vol_size_plug:
+> 此项限制报告的卷大小，防止时间机器占用磁盘实际的全部剩余空间来备份。例如，设为“1024”将限制报告的磁盘空间为 1 GB。
 :end
 
 :ud_settings_force_user_plug:
@@ -134,8 +162,8 @@ Use only when directed for support because the messages can flood the log=只在
 > 设为**是**以 NFS 共享的方式导出未分配设备。共享以公共读写权限导出，也可以遵循你设置的私有规则。访问操作由文件和文件夹的权限控制。
 :end
 
-:ud_settings_nfs_shares_plug:
-> **注意**：UD 使用的正常规则是“*(sec=sys,rw,insecure,anongid=100,anonuid=99,all_squash)”。
+:ud_settings_nfs_rules_plug:
+> **Note:** The normal rule used by UD is '*(rw,sec=sys,insecure,anongid=100,anonuid=99,no_root_squash)'.
 :end
 
 :ud_settings_disk_pass_plug:
@@ -145,9 +173,42 @@ Use only when directed for support because the messages can flood the log=只在
 :ud_settings_change_uuid_plug:
 > 选择你要更改 UUID 的磁盘。当一块 XFS 格式磁盘从阵列移除，还保留阵列磁盘的 UUID 时，此功能很有用。磁盘必须卸载才能更改 UUID。
 >
-> **注意**：不要更改包含在池中的磁盘的 UUID。
+> **注意**：不要更改包含在存储池中的磁盘的 UUID。
 :end
 
 :ud_settings_zfs_upgrade_plug:
 > 选择想要升级到最新 ZFS 版本的磁盘。磁盘必须被挂载才能升级 ZFS。
+:end
+
+:ud_remote_server_test_plug:
+> Remote Servers need to have SMB and/or NFS enabled.  This will check that the SMB and/or NFS ports are open.  The 'showmount -e <server>' command on Unraid must also show NFS mounts available.
+
+> For SMB to be considered online, the Remote Server has to have the SMB port open.
+
+> For NFS to be considered online, the Remote Server has to have the NFS port open and the 'showmount -e' command has to show NFS shares.
+> There can be a case where the port is open and 'showmount -e' doesn't show NFS shares and NFS will not work.
+
+> If showmount does not return any NFS shares on a reachable remote server like a Synology, it generally means one of the following:
+
+> No NFS Shares Exported:
+
+> The server might not have any directories configured for NFS export. Check the NFS configuration on the Synology device and ensure that folders intended for NFS sharing are explicitly exported.
+
+> Access Restrictions:
+
+> NFS shares may be configured with IP-based access restrictions. Synology devices allow you to specify which IP addresses or networks can access each NFS share. If your IP address is not allowed, the NFS share will not appear in showmount output.
+
+> NFS Service Not Enabled:
+
+> The NFS service on the Synology might not be enabled. Verify this in the Synology DSM settings under Control Panel > File Services > NFS. Enable NFS if it is currently disabled.
+
+> Firewall or Network Configuration:
+
+> The Synology device may have firewall rules blocking the showmount request or the required RPC communication. Ensure that the firewall settings allow traffic on NFS-related ports (typically 2049 for NFS and 111 for RPC).
+
+> Synology Export Options:
+
+> The Synology NFS settings can sometimes require enabling Enable NFS at the top level and specifying Allow NFSv3 if you are using clients that expect NFSv3. Check Control Panel > File Services > NFS to ensure proper configuration.
+
+> By ensuring that NFS is enabled, configured with the correct permissions, and exported directories are allowed for your client IP, showmount should list the available exports.
 :end
