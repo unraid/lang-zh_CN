@@ -181,34 +181,34 @@ Working=工作中
 :end
 
 :ud_remote_server_test_plug:
-> Remote Servers need to have SMB and/or NFS enabled.  This will check that the SMB and/or NFS ports are open.  The 'showmount -e <server>' command on Unraid must also show NFS mounts available.
+> 需要远程服务器启用 SMB 和/或 NFS。此功能将检查 SMB 和/或 NFS 端口联通性。此外，还要求 Unraid 的“showmount -e <server>”指令能够显示可用 NFS 挂载。
 
-> For SMB to be considered online, the Remote Server has to have the SMB port open.
+> 若要 SMB 显示为在线状态，远程服务器的 SMB 端口必须能够联通。
 
-> For NFS to be considered online, the Remote Server has to have the NFS port open and the 'showmount -e' command has to show NFS shares.
-> There can be a case where the port is open and 'showmount -e' doesn't show NFS shares and NFS will not work.
+> 若要 NFS 显示为在线状态，远程服务器的 NFS 端口必须能够联通，并且 Unraid 侧“showmount -e”指令能够显示 NFS 共享。
+> 某些情况下，端口能够联通，但“showmount -e”不显示 NFS 共享，此时 NFS 也无法使用。
 
-> If showmount does not return any NFS shares on a reachable remote server like a Synology, it generally means one of the following:
+> 对于实际能够连接的远程服务器，比如一台 Synology 设备，若 showmount 指令不返回任何 NFS 共享，你可能遇到了以下几种情况之一： 
 
-> No NFS Shares Exported:
+> NFS 共享没有导出：
 
-> The server might not have any directories configured for NFS export. Check the NFS configuration on the Synology device and ensure that folders intended for NFS sharing are explicitly exported.
+> 服务器可能没有配置以 NFS 导出任何目录。请检查 Synology 设备的 NFS 配置，确保 NFS 共享的目录已导出。
 
-> Access Restrictions:
+> 访问受限：
 
-> NFS shares may be configured with IP-based access restrictions. Synology devices allow you to specify which IP addresses or networks can access each NFS share. If your IP address is not allowed, the NFS share will not appear in showmount output.
+> NFS 共享可能配置了 IP 访问限制。Synology 设备允许为每个 NFS 共享指定允许访问的 IP 地址或网络。如果你的 IP 地址被限制，NFS 共享就不会在 showmount 指令输出中列出。
 
-> NFS Service Not Enabled:
+> 未启用 NFS 服务：
 
-> The NFS service on the Synology might not be enabled. Verify this in the Synology DSM settings under Control Panel > File Services > NFS. Enable NFS if it is currently disabled.
+> Synology 设备上的 NFS 服务可能没有启用。在 Synology DSM 的“控制面板->文件服务->NFS”处检查 NFS 服务配置，如果发现 NFS 服务关闭，请开启它。
 
-> Firewall or Network Configuration:
+> 防火墙或网络配置不当：
 
-> The Synology device may have firewall rules blocking the showmount request or the required RPC communication. Ensure that the firewall settings allow traffic on NFS-related ports (typically 2049 for NFS and 111 for RPC).
+> Synology 设备的防火墙规则可能阻止了 showmount 指令的请求或必需的 RPC 通信。确保防火墙配置允许 NFS 相关端口的流量。通常，NFS 服务使用端口 2049，RPC 使用端口 111。
 
-> Synology Export Options:
+> Synology 导出选项配置不当:
 
-> The Synology NFS settings can sometimes require enabling Enable NFS at the top level and specifying Allow NFSv3 if you are using clients that expect NFSv3. Check Control Panel > File Services > NFS to ensure proper configuration.
+> 对于 NFSv3 协议的客户端，Synology NFS 设置有时会要求在顶层启用 NFS 服务并允许 NFSv3 协议。检查“控制面板->文件服务->NFS”，确保配置得当。
 
-> By ensuring that NFS is enabled, configured with the correct permissions, and exported directories are allowed for your client IP, showmount should list the available exports.
+> 确保 NFS 服务启用，配置了正确的权限，并且允许向你的客户端 IP 导出目录后，showmount 指令应该能够列出可用的导出。
 :end
