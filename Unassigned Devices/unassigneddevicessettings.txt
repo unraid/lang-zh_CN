@@ -100,13 +100,13 @@ Working=工作中
 :end
 
 :ud_settings_debug_level_plug:
-> 排除故障时，设置调试日志等级让 UD 在特定区域增加额外的日志记录，以此调试 UD 的特定区域。
+> 排除故障时，设置调试日志等级让 Unassiged Devices 在特定区域增加额外的日志记录，以此调试 Unassiged Devices 的特定区域。
 >
 > 设为**无**以关闭调试日志记录。
 >
 > **udev 与热插拔** udev、磁盘发现与热插拔调试。
 >
-> **刷新和更新** 查找导致 UD 停止响应的问题。
+> **刷新和更新** 查找导致 Unassiged Devices 停止响应的问题。
 >
 > **命令时间** 命令执行时间。**警告**： 日志记录将非常繁杂。
 >
@@ -163,7 +163,7 @@ Working=工作中
 :end
 
 :ud_settings_nfs_rules_plug:
-> **注意：**UD 使用的常规规则是“*(rw,sec=sys,insecure,anongid=100,anonuid=99,no_root_squash)”。
+> **注意：**Unassigned Devices 使用的常规规则是“*(rw,sec=sys,insecure,anongid=100,anonuid=99,no_root_squash)”。
 :end
 
 :ud_settings_disk_pass_plug:
