@@ -163,7 +163,7 @@ Working=工作中
 :end
 
 :ud_settings_nfs_rules_plug:
-> **Note:** The normal rule used by UD is '*(rw,sec=sys,insecure,anongid=100,anonuid=99,no_root_squash)'.
+> **注意：**UD 使用的常规规则是“*(rw,sec=sys,insecure,anongid=100,anonuid=99,no_root_squash)”。
 :end
 
 :ud_settings_disk_pass_plug:
@@ -181,7 +181,7 @@ Working=工作中
 :end
 
 :ud_remote_server_test_plug:
-> 需要远程服务器启用 SMB 和/或 NFS。此功能将检查 SMB 和/或 NFS 端口联通性。此外，还要求 Unraid 的“showmount -e <server>”指令能够显示可用 NFS 挂载。
+> 需要远程服务器启用 SMB 和/或 NFS。此功能将检查 SMB 和/或 NFS 端口联通性。此外，还要求 Unraid 的“showmount -e &lt;server&gt;”指令能够显示可用 NFS 挂载。
 
 > 若要 SMB 显示为在线状态，远程服务器的 SMB 端口必须能够联通。
 
