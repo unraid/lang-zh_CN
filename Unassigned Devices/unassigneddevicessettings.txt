@@ -129,8 +129,8 @@ Working=工作中
 >
 > Windows 服务器签名：
 >
-> 在使用 Windows 11 24H2 或更新版本时，如无法浏览 SMB 共享，你需要针对一项叫作“服务器签名”的新功能作出一些更改。服务器签名在 Unraid 中为启用状态，你需要更改一些配置才能访问公共共享。
-> 你可以<u><a href='https://techcommunity.microsoft.com/t5/storage-at-microsoft/accessing-a-third-party-nas-with-smb-in-windows-11-24h2-may-fail/ba-p/4154300', target='_blank'>_(在 Windows 中禁用保护措施)_</a></u>，或者在启用服务器签名的情况下使用 Unraid——最简单的方法是在 Unraid 中创建一个与 Windows 账户同名的用户并设置密码，然后 Windows 将要求你提供凭据。
+> 在使用 Windows 11 24H2 或更新版本时，如无法浏览 SMB 共享，你需要针对一项叫作“服务器签名”的新功能作出更改。服务器签名在 Unraid 中为启用状态，你需要更改一些配置才能访问公共共享。
+> 你可以<u><a href='https://techcommunity.microsoft.com/t5/storage-at-microsoft/accessing-a-third-party-nas-with-smb-in-windows-11-24h2-may-fail/ba-p/4154300', target='_blank'>_(disable it in Windows)_</a></u>，或者在启用服务器签名的情况下使用 Unraid——最简单的方法是在 Unraid 中创建一个与 Windows 账户同名的用户并设置密码，然后 Windows 将要求你提供凭据。
 > 如果你使用的是微软账户，最好先在 Unraid 中创建一个带密码的用户，然后在 Windows 的“控制面板->凭证管理器->Windows 凭证->添加 Windows 凭证”处添加正确的 Unraid 服务器名称和凭证。
 :end
 
