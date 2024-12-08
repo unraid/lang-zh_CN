@@ -174,3 +174,12 @@ VPN Connections=VPN 连接
 W=瓦特
 Warnings=警告信息
 ZFS=ZFS
+
+; Note: December 8, 2024 - 7 missing translations
+checking=
+emulated=
+heat warnings=
+invalid=
+SMART errors=
+synching=
+utilization warnings=

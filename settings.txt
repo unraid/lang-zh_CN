@@ -167,7 +167,6 @@ Default appdata storage location=默认应用数据存储位置
 Default critical disk temperature threshold=默认危险磁盘温度阈值
 Default critical disk utilization threshold=默认危险磁盘利用率阈值
 Default critical SSD temperature threshold=默认SSD临界温度阈值
-Default file system=默认文件系统
 Default ISO storage path=默认 ISO 存储路径
 Default network bridge=默认网桥
 Default network source=默认网络资源(source)
@@ -196,6 +195,7 @@ Detailed=详细
 Device=设备
 DHCP pool=DHCP 池
 directory=目录
+Disable AutostartStart option for VMs=禁用虚拟机的自动启动/启动选项
 Disabled until connected to Unraid Connect Cloud=在连接到 Unraid Connect 云之前禁用
 Disk Settings=磁盘设置
 Display array totals=显示阵列总数
@@ -859,5 +859,6 @@ Transient errors in this log can be ignored unless you are having issues=如果�
 Unraid API extra origins=Unraid API 的额外来源
 View Flash Backup Error Log=查看U盘(flash)备份错误日志
 
-; Note: February 7, 2024 - 1 missing translations
-Disable AutostartStart option for VMs=禁用虚拟机的自动启动/启动选项
+; Note: December 8, 2024 - 2 missing translations
+Default file system for Array disks=
+Docker PID Limit=

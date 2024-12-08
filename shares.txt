@@ -10,7 +10,6 @@ Automatically split only the top four directory levels as required=根据需要�
 Automatically split only the top level directory as required=根据需要仅自动拆分顶层目录级别
 Automatically split only the top three directory levels as required=根据需要仅自动拆分前三个目录级别
 Automatically split only the top two directory levels as required=根据需要仅自动拆分前两个目录级别
-Calculated free space value=剩余空间已计算
 Clean Up=清除
 CLEAN UP=清除
 Comments=备注
@@ -80,3 +79,12 @@ Use cache pool for new filesdirectories=(对新文件/目录)使用缓存池
 User Shares=用户共享
 Write=写入
 You cannot use the following within share names=您不能在共享名称中使用以下内容
+
+; Note: December 8, 2024 - 7 missing translations
+Free Space will be calculated=
+is missing=
+it references storage that does not exist=
+Share is empty and is safe to delete=
+Share must be empty to be deleted=
+This share is invalid=
+Warning: Configured Pool=

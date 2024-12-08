@@ -211,7 +211,6 @@ Months_array=January:一月 February:二月 March:三月 April:四月 May:五月
 months=个月
 More=更多
 Motherboard=主板
-Mainboard=主板
 Move=移动
 NA=N/A
 Name=名称
@@ -1150,6 +1149,7 @@ Expired %s=已于%s过期
 Expired=已过期
 Expires at %s=到期时间%s
 Expires in %s=在%s内过期
+Flash Backup is not available Navigate to %sMainSettingsFlash to try again then come back to this page=Flash Backup is not available. Navigate to %s/Main/Settings/Flash to try again then come back to this page.闪存备份不可用。请到**主界面/设置/引导设备**界面重试后返回本界面查看。
 Flash GUID required to check replacement status=需要闪存GUID来检查替换状态
 Flash GUID=闪存GUID
 Flash Product=闪存产品
@@ -1232,5 +1232,10 @@ Open a bug report=打开一个bug报告
 %s year=%s年
 %s years=%s年
 
-; Note: February 7, 2024 - 1 missing translations
-Flash Backup is not available Navigate to %sMainSettingsFlash to try again then come back to this page=Flash Backup is not available. Navigate to %s/Main/Settings/Flash to try again then come back to this page.闪存备份不可用。请到**主界面/设置/引导设备**界面重试后返回本界面查看。
+; Note: December 8, 2024 - 6 missing translations
+Always Allow=
+Clicking OK will take you to a 3rd party website not associated with Lime Technology=
+External Link=
+Popup Blocked=
+See Help=
+Windows may require a valid User to be defined even for Public shares=
