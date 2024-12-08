@@ -2450,9 +2450,6 @@ Cloudflare 用户需要注意：Cloudflare 的代理专为 http 流量设计，�
 如果设置为是，则启动Unraidwold守护进程。
 :end
 
-:WOL_docker_help:
-如果设置为是，当接收到唤醒局域网数据包时，将进行对Docker的检查；否则将忽略Docker。
-:end
 
 :WOL_run_VM_help:
 如果设置为是，当接收到远程唤醒数据包时，将对虚拟机进行检查；否则将忽略虚拟机。
@@ -2492,4 +2489,206 @@ When the enable and shutdown is set if the service is running when the next WOL 
 
 :WOL_run_shutdown_help:
 If set to yes when wake on lan packets are received checks are carrried out and if enabled for service and that service is running the entity will be shutdown. System has to be set to Enabled and Shutdwon for it to be action.
+:end
+
+; New entries (35) - 2024-12-08
+
+:info_zfs_scrub_help:
+**Scrub** runs the *zfs scrub* program which will read all data and metadata blocks from all
+devices and verify checksums.
+
+Click the **Upgrade Pool** button to upgrade the ZFS pool to enable the latest ZFS features.
+:end
+
+:docker_pid_limit_help:
+Set a PID Limit to limit the number of PIDs that a docker can use. The default is 2048.  Set to zero for unlimited PIDs (not recommended).
+:end
+
+:docker_storage_driver_help:
+overlay2 (default): Will use overlay2 as the storage driver for Docker, regardless of the underlying filesystem.
+
+native: The native storage driver for your underlying filesystem will be used (XFS: overlay2 | ZFS: zfs | BTRFS: btrfs).
+
+ATTENTION: Changing the storage type from an existing Docker installation is not possible, you have to delete your Docker directory first, change the storage type and then reinstall your containers.
+It is recommended to take a screenshot from your Docker containers before changing the storage type. After deleting and changing the storage type, reinstall the containers by clicking Add Container on the Docker page and select one by one from the drop down to reinstall them with your previous settings).
+:end
+
+:docker_storage_driver_active_help:
+This is the storage driver for Docker.
+:end
+
+:mgmt_wg_access_urls_help:
+These URLs will only work when connected via the appropriate WireGuard tunnel as configured on ***Settings > VPN Manager***
+:end
+
+:mgmt_tailscale_access_urls_help:
+These URLs will only work when connected to the appropriate Tailscale Tailnet.
+:end
+
+:syslog_remote_system_identifier_help:
+Select the identifier for the remote system (used in the logfile name). 
+
+* "IP Address" uses the IP address (IPv4 or IPv6) of the sending system.
+* "Hostname (from syslog message)" uses the hostname included in each syslog message.
+* "Hostname (from DNS reverse lookup)" performs a DNS reverse lookup for the sending IP and uses the result.
+
+:end
+
+:display_favorites_enabled_help:
+Enables favorite support. If set to no, will stop heart icon showing for additions. If existing favorites are saved, favorites tab and pre-saved options will still continue to show and function until all are deleted.
+:end
+
+:vms_rdpopt_help:
+Adds option to menu to start RDP. RDP file is downloaded. You need to set browser to open when ready.
+:end
+
+:vms_usage_help:
+Show metrics for CPU both guest and host percentage, memory, disk io and network io.
+:end
+
+:vms_usage_timer_help:
+Setting in seconds for metrics refresh time.
+:end
+
+:apc_ups_override_ups_capacity_help:
+If your device doesn't natively report Nominal Power ('NOMPOWER') from 'apcupsd', but does report the Load Percentage ('LOADPCT'), you can manually define the UPS capacity rating in Watts (W) (this is the 'real power' value in Watts (W), not the 'apparent power' in Volt Amps (VA), and should be detailed on your UPS manual or product listing) and the plugin will dynamically calculate a virtual Nominal Power estimate ('≈') by comparing the Override UPS Capacity (W) and the current Load Percentage. It is only an estimate, as it doesn't factor in things like the UPS' efficiency.
+:end
+
+:docker_container_network_help:
+This allows your container to utilize the network configuration of another container. Select the appropriate container from the list.<br/>This setup can be particularly beneficial if you wish to route your container's traffic through a VPN.
+:end
+
+:docker_tailscale_help:
+Enable Tailscale to add this container as a machine on your Tailnet.
+:end
+
+:docker_tailscale_hostname_help:
+Provide the hostname for this container. It does not need to match the container name, but it must be unique on your Tailnet. Note that an HTTPS certificate will be generated for this hostname, which means it will be placed in a public ledger, so use a name that you don't mind being public.
+For more information see <a href="https://tailscale.com/kb/1153/enabling-https" target="_blank">enabling https</a>.
+:end
+
+:docker_tailscale_be_exitnode_help:
+Enable this if other machines on your Tailnet should route their Internet traffic through this container, this is most useful for containers that connect to commercial VPN services. 
+Be sure to authorize this Exit Node in your <a href="https://login.tailscale.com/admin/machines" target="_blank">Tailscale Machines Admin Panel</a>.
+For more details, see the Tailscale documentation on <a href="https://tailscale.com/kb/1103/exit-nodes" target="_blank">Exit Nodes</a>.
+:end
+
+:docker_tailscale_exitnode_ip_help:
+Optionally route this container's outgoing Internet traffic through an Exit Node on your Tailnet. Choose the Exit Node or input its Tailscale IP address.
+For more details, see <a href="https://tailscale.com/kb/1103/exit-nodes" target="_blank">Exit Nodes</a>.
+:end
+
+:docker_tailscale_lanaccess_help:
+Only applies when this container is using an Exit Node. Enable this to allow the container to access the local network.
+
+<b>WARNING:</b>&nbsp;Even with this feature enabled, systems on your LAN may not be able to access the container unless they have Tailscale installed.
+:end
+
+:docker_tailscale_userspace_networking_help:
+When enabled, this container will operate in a restricted environment. Tailscale DNS will not work, and the container will not be able to initiate connections to other Tailscale machines. However, other machines on your Tailnet will still be able to communicate with this container.
+
+When disabled, this container will have full access to your Tailnet. Tailscale DNS will work, and the container can fully communicate with other machines on the Tailnet.
+However, systems on your LAN may not be able to access the container unless they have Tailscale installed.
+:end
+
+:docker_tailscale_ssh_help:
+Tailscale SSH is similar to the Docker "Console" option in the Unraid webgui, except you connect with an SSH client and authenticate via Tailscale.
+For more details, see the <a href="https://tailscale.com/kb/1193/tailscale-ssh" target="_blank">Tailscale SSH</a> documentation..
+:end
+
+:docker_tailscale_serve_mode_help:
+Enabling <b>Serve</b> will automatically reverse proxy the primary web service from this container and make it available on your Tailnet using https with a valid certificate! 
+
+Note that when accessing the <b>Tailscale WebUI</b> url, no additional authentication layer is added beyond restricting it to your Tailnet - the container is still responsible for managing usernames/passwords that are allowed to access it. Depending on your configuration, direct access to the container may still be possible as well.
+
+For more details, see the <a href="https://tailscale.com/kb/1312/serve" target="_blank">Tailscale Serve</a> documentation.
+
+If the documentation recommends additional settings for a more complex use case, enable "Tailscale Show Advanced Settings". Support for these advanced settings is not available beyond confirming the commands are passed to Tailscale correctly.
+
+<b>Funnel</b> is similar to <b>Serve</b>, except that the web service is made available on the open Internet. Use with care as the service will likely be attacked. As with <b>Serve</b>, the container itself is responsible for handling any authentication.
+
+We recommend reading the <a href="https://tailscale.com/kb/1223/funnel" target="_blank">Tailscale Funnel</a> documentation. before enabling this feature.
+
+<b>Note:</b>&nbsp;Enabling <b>Serve</b> or <b>Funnel</b> publishes the Tailscale hostname to a public ledger.
+For more details, see the Tailscale Documentation: <a href="https://tailscale.com/kb/1153/enabling-https" target="_blank">Enabling HTTPS</a>.
+:end
+
+:docker_tailscale_serve_port_help:
+This field should specify the port for the primary web service this container offers. Note: it should specify the port in the container, not a port that was remapped on the host.
+
+The system attempted to determine the correct port automatically. If it used the wrong value then there is likely an issue with the "Web UI" field for this container, visible by switching from "Basic View" to "Advanced View" in the upper right corner of this page. 
+
+In most cases this port is all you will need to specify in order to Serve the website in this container, although additional options are available below for more complex containers.
+
+This value is passed to the '<serve_port>' portion of this command which starts serve or funnel:<br>
+'tailscale [serve|funnel] --bg --<protocol><protocol_port><path> http://localhost:'**'<serve_port>'**'<local_path>'<br>
+For more details see the <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve Command Line</a> documentation.
+:end
+
+:docker_tailscale_show_advanced_help:
+Here there be dragons!
+:end
+
+:docker_tailscale_serve_local_path_help:
+When not specified, this value defaults to an empty string. It is passed to the '<local_path>' portion of this command which starts serve or funnel:<br>
+'tailscale [serve|funnel] --bg --<protocol><protocol_port><path> http://localhost:<serve_port>'**'<local_path>'**<br>
+For more details see the <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve Command Line</a> documentation.
+:end
+
+:docker_tailscale_serve_protocol_help:
+When not specified, this value defaults to "https". It is passed to the '<protocol>' portion of this command which starts serve or funnel:<br>
+'tailscale [serve|funnel] --bg --'**'<protocol>'**'=<protocol_port><path> http://localhost:<serve_port><local_path>'<br>
+For more details see the <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve Command Line</a> documentation.
+:end
+
+:docker_tailscale_serve_protocol_port_help:
+When not specified, this value defaults to "=443". It is passed to the '<protocol_port>' portion of this command which starts serve or funnel:<br>
+'tailscale [serve|funnel] --bg --<protocol>'**'<protocol_port>'**'<path> http://localhost:<serve_port><local_path>'<br>
+For more details see the <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve Command Line</a> documentation.
+:end
+
+:docker_tailscale_serve_path_help:
+When not specified, this value defaults to an empty string. It is passed to the '<path>' portion of this command which starts serve or funnel:<br>
+'tailscale [serve|funnel] --bg --<protocol><protocol_port>'**'<path>'** 'http://localhost:<serve_port><local_path>'<br>
+For more details see the <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve Command Line</a> documentation.
+:end
+
+:docker_tailscale_serve_webui_help:
+If <b>Serve</b> is enabled this will be an https url with a proper domain name that is accessible over your Tailnet, no port needed!
+
+If <b>Funnel</b> is enabled the same url will be available on the Internet.
+
+If they are disabled then the url will be generated from the container's main "Web UI" field, but modified to use the Tailscale IP. If the wrong port is specified here then switch from "Basic View" to "Advanced View" and review the "Web UI" field for this container.
+:end
+
+:docker_tailscale_advertise_routes_help:
+If desired, specify any routes that should be passed to the **'--advertise-routes='** parameter when running **'tailscale up'**.
+For more details see the <a href="https://tailscale.com/kb/1019/subnets#connect-to-tailscale-as-a-subnet-router" target="_blank">Subnet routers</a> documentation.
+:end
+
+:docker_tailscale_accept_routes_help:
+When enabled, this will accept your subnet routes from other devices, adding the **'--accept-routes'** parameter when running **'tailscale up'**.
+For more details see the <a href="https://tailscale.com/kb/1019/subnets?q=allow+routes#use-your-subnet-routes-from-other-devices" target="_blank">Use your subnet routes from other devices</a> documentation.
+:end
+
+:docker_tailscale_daemon_extra_params_help:
+Specify any extra parameters to pass when starting **'tailscaled'**.
+For more details see the <a href="https://tailscale.com/kb/1278/tailscaled" target="_blank">tailscaled</a> documentation.
+:end
+
+:docker_tailscale_extra_param_help:
+Specify any extra parameters to pass when running **'tailscale up'**.
+For more details see the <a href="https://tailscale.com/kb/1080/cli#up" target="_blank">Tailscale CLI</a> documentation.
+:end
+
+:docker_tailscale_statedir_help:
+If state directory detection fails on startup, you can specify a persistent directory in the container to override automatic detection, i.e. '/container-path/.tailscale_state'
+:end
+
+:docker_tailscale_troubleshooting_packages_help:
+Enable this to install 'ping', 'nslookup', 'curl', and 'speedtest-cli' into the container to help troubleshoot networking issues. Once the issues are resolved we recommend disabling this to reduce the size of the container.
+:end
+
+:WOL_run_docker_help:
+If set to yes when wake on lan packets are received checks are carrried out for dockers otherwise dockers will be ignored.
 :end
