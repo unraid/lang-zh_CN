@@ -1,11 +1,8 @@
-Abort Device and User Scripts=中止设备脚本与用户脚本
+Abort Device Script=中止设备脚本
 Attach=附加
 Attach This Disk=附加此磁盘
 Attaching=正在附加
 Automount=自动挂载
-Clear=清除
-Clear the Device Script=清除设备脚本
-Click to select file or click 'Default' button for the Device Script File=点击以选择文件或点击“恢复默认”按钮以使用设备脚本文件
 Default=恢复默认
 Delete Device Script File=删除设备脚本文件
 Detach=脱离
@@ -18,7 +15,6 @@ Disable Mount Button=关闭挂载按钮
 Disk Name=磁盘名称
 Disk Serial=磁盘序列
 Edit Device Script=编辑设备脚本
-Encrypt CIFS Mount=加密 CIFS 挂载
 Enter Device Script File Name=输入设备脚本文件名称
 Enter and Edit the Device Script that runs when a udev or operator event occurs=输入并编辑设备脚本，设备脚本在 udev 或 operator 事件发生时运行
 Enter the User Script File Name=输入用户脚本文件名称
@@ -37,6 +33,7 @@ Note: Enable SMB Sharing or NFS Export in Unassigned Devices Settings to share t
 Passed Through=已直通
 Read Only=只读
 Run Device Script File in the background=在后台运行设备脚本文件
+Save your Device Script File=保存设备脚本文件
 Save your Device Script File changes=保存设备脚本文件更改
 Share Device with SMB and NFS=使用 SMB 和 NFS 共享设备
 Share Remote Mount with SMB and NFS=使用 SMB 和 NFS 共享远程挂载
@@ -46,6 +43,7 @@ Source=源
 Unassigned Devices Settings=Unassigned Devices（未分配的设备）设置
 Undo your changes since last Save=撤销自上次保存以来的更改
 User Script=用户脚本
+Volume=卷
 ZFS Volume=ZFS 卷
 
 ;
@@ -56,7 +54,7 @@ ZFS Volume=ZFS 卷
 :end
 
 :ud_edit_script_detach_plug:
-> 点击**脱离**以脱离设备。该设备将显示为历史设备并可在历史设备设置中再次附加。
+> 点击**脱离**以脱离设备。该设备将显示为历史设备并可在历史设备设置中附加。
 :end
 
 :ud_edit_script_attach_plug:
@@ -64,7 +62,7 @@ ZFS Volume=ZFS 卷
 :end
 
 :ud_edit_script_abort_plug:
-> 点击**中止**以中止设备脚本与用户脚本，并结束所有运行在对应挂载点上的进程。
+> 点击**中止**以中止设备脚本。
 :end
 
 :ud_disk_name_plug:
@@ -72,27 +70,15 @@ ZFS Volume=ZFS 卷
 >
 > **名称**：最多 8 字符，空格将被转换为连字符，允许基本的特殊字符，区别大小写。
 >
-> **注意**：不能以“dev”作为开头。“devX”是保留格式。 
-:end
-
-:ud_apfs_volume_plug:
-> 输入挂载此 APFS 分区的卷标。
-:end
-
-:ud_encrypt_connection_plug:
-> 设为**是**来加密 CIFS 挂载。由于其开销，最好只对非本机挂载（off-site mounts）启用加密。
-:end
-
-:compress_option_plug:
-> Select 'Yes' to mount a BTRFS or ZFS disk with the compress option. Compression for BTRFS is 'zlib' and for ZFS is 'lz4'.
+> **注意**：不能以“dev”作为开头。格式“devX”被保留。 
 :end
 
 :ud_edit_script_choose_name_plug:
-> 这是在设备挂载时运行的脚本文件。从文件选择下拉菜单中选择脚本文件名称，或输入要运行的脚本。
+> 设备挂载时会运行此脚本。从文件选择下拉菜单中选择脚本文件名称，也可以输入所需脚本。
 :end
 
 :ud_edit_user_script_choose_name_plug:
-> 如果已安装 User Script 插件，Unassigned Devices 可以显示使用此设备的用户脚本的运行状态。此字段只在设备脚本文件存在时启用。
+> 如果已安装 User Script 插件，Unassigned Devices 可以显示使用此设备的用户脚本的运行状态。此字段只在设备脚本文件存在时可用。
 :end
 
 :ud_edit_script_run_background_plug:
@@ -113,6 +99,5 @@ ZFS Volume=ZFS 卷
 > 点击**完成**以退出此页面。
 :end
 
-; Note: December 8, 2024 - 2 missing translations
-Save your Device Script=
-APFS Volume=
+; Note: February 10, 2024 - 1 missing translations
+Click to select file or click Default button for the Device Script File=

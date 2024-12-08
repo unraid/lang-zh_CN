@@ -13,6 +13,7 @@ Backup Server Active Some icons may not appear, and plugin installations may be 
 Debugging enabled This significantly increases the memory used by your browser=启用调试会显著增加浏览器的内存占用
 Browser translation detected Display issues may result=检测到浏览器启用翻译, 这可能导致显示问题
 Action Centre Enabled=操作中心已启用
+Deprecated OS version No further updates to Community Applications will be issued for this OS version=已过时的操作系统版本 - 这个版本的操作系统将不会接收到社区应用的后续更新
 
 ; Sorting Options
 Sort By=排序
@@ -41,6 +42,7 @@ Install Plugin Applications=安装插件应用程序
 Select all on page=全选本页
 Install Application=安装应用程序
 Install Applications=安装应用程序
+Update Application=升级应用
 Update Applications=升级应用程序
 Are you sure you want to update %s applications=确定要更新 %s 个应用程序吗?
 Are you sure you want to install %s docker and %s plugin applications=你确定要安装%s docker和%s插件应用程序吗？
@@ -150,10 +152,15 @@ This template is set up to run as Privileged This is a possible security risk an
 One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=此应用程序使用的一个或多个端口已被服务器上运行的另一服务或应用程序使用, 您需要在模板上调整相关端口
 Not Enough Memory=内存不足
 Community Applications and Unraid OS have a minimum required installed memory of 4G CA cannot run without those mimimums being met=社区应用程序中心和Unraid操作系统的最低内存要求为4G。如果不满足, 社区应用程序中心(CA)就无法运行
+Run Anyways=总是运行
+Memory Requirements not met Problems may result=未达到内存要求，可能导致问题
 Installation already in progress=已经开始安装进程
 Another plugin installation or update is already in progress and this one cannot start Wait until the current installation or update is completed and try again=正在进行另一个插件的安装或更新, 此插件无法启动. 请等待当前安装或更新完成, 然后重试
 %s is incompatible with your OS version Please update the OS to proceed=%s 与您的Unraid OS版本不兼容, 请升级Unraid OS后再试
 %s is incompatible with your OS version Either uninstall %s or update the OS=%s 与您的Unraid OS版本不兼容, 请卸载或者升级Unraid OS
+Browser failed to communicate with Unraid Server=浏览器未能成功与 Unraid 服务器联系
+For unknown reasons, your browser was unable to communicate with Community Applications running on your server=因未知原因，您的浏览器无法成功与您服务器上的社区应用联系
+Attempt to Fix Via Reload Page=尝试重新加载页面以修复
 
 ; CA Sections Keep the length reasonable
 Home=首页
@@ -334,7 +341,6 @@ Install=安装
 Uninstall=卸载
 Project=项目
 Read Me First=先阅读此处
-Install second instance=安装第二个实例
 Install Using The Templates Default Tag=使用模板的默认标签进行安装
 Moderator Comments=版主评论
 Note not all authors keep up to date on change logs=请注意, 并非所有作者的变更日志都保持最新状态
@@ -450,11 +456,8 @@ An error occurred - Could not determine configuration=发生错误 - 无法确�
 Click Install to download and install the Community Applications plugin=点击“安装”以下载并安装社区应用插件
 
 
-; Note: February 10, 2024 - 7 missing translations
-Deprecated OS version No further updates to Community Applications will be issued for this OS version=已过时的操作系统版本 - 这个版本的操作系统将不会接收到社区应用的后续更新
-Update Application=升级应用
-Run Anyways=总是运行
-Memory Requirements not met Problems may result=未达到内存要求，可能导致问题
-Browser failed to communicate with Unraid Server=浏览器未能成功与 Unraid 服务器联系
-For unknown reasons, your browser was unable to communicate with Community Applications running on your server=因未知原因，您的浏览器无法成功与您服务器上的社区应用联系
-Attempt to Fix Via Reload Page=尝试重新加载页面以修复
+; Note: December 8, 2024 - 4 missing translations
+Clear Flag=
+External Link=
+Clicking OK will take you to a 3rd party website not associated with Limetech=
+Install another instance=

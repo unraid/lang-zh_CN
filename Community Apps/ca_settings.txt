@@ -2,7 +2,6 @@ Hide Deprecated Applications=隐藏已弃用的应用程序
 This setting hides deprecated applications from the list of available apps Deprecated apps will still however display within the installed and previous apps sections=此设置将在可用应用列表中隐藏已弃用的应用程序, 但已弃用的应用仍将显示在已安装的应用和以前的应用列表中
 Hide Incompatible Applications=隐藏不兼容的应用程序
 This setting will hide applications that are listed as being incompatible with your version of Unraid=此设置将隐藏与您的 Unraid 版本不兼容的应用程序
-Allow install of second instance=允许安装第二实例
 This option enables another button on the cards and popups which will allow you to reinstall an installed application using its default template values This option can be confusing at times, and is only generally used if you wish to install and have an application running twice simultaneously=此选项将在卡片和弹出窗口上启用一个新按钮, 该按钮允许您使用默认模板值安装一个已安装应用程序的新实例. 此选项有时会令人混淆, 通常在您希望安装并且同时运行同一个应用的2份实例时才使用.
 Automatically open the sidebar=自动打开侧边栏
 Allows CA to automatically open the sidebar for more information when hovering over an application's icon=鼠标悬停在应用程序图标上时, 允许社区应用中心自动打开侧边栏以显示更多信息
@@ -20,3 +19,6 @@ Only enable this when advised to from the author of Community Applications=仅�
 Enable developer mode=启用开发者模式
 This unlocks some extra features within CA generally only used by developers Not recommended to enable=这会解锁社区应用中心中的一些额外功能(通常仅由开发人员使用, 不建议启用)
 Support Thread=论坛支持页
+
+; Note: December 8, 2024 - 1 missing translations
+Allow installation of multiple instances=
