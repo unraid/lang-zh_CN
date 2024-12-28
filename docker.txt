@@ -59,6 +59,7 @@ Icon URL=图标链接
 Image ID=镜像 ID
 Key=键
 Label=标签
+LAN IPPort=LAN IP:Port
 Lock sortable items=锁定可排序项目
 Management=管理
 MediaApp=媒体应用
@@ -134,7 +135,7 @@ Web=Web
 WebUI=WebUI
 Writable=可写
 
-; Note: December 28, 2024 - 22 missing translations
+; Note: December 28, 2024 - 21 missing translations
 3rd Party=
 Addresses=
 available=
@@ -148,7 +149,6 @@ Expired RenewDisable key expiry=Expired! Renew/Disable key expiry!
 Hostname=
 Is Exit Node=
 Key Expiry=
-LAN IPPort=LAN IP:Port
 Online=
 Please check the logs and refresh the page=
 Please check the logs=

@@ -116,6 +116,7 @@ Percent usage of Docker vdisk=Docker 虚拟磁盘使用百分比
 Percent usage of flash usb device=闪存 USB 设备使用百分比
 Percent usage of LOG file system=日志文件系统使用百分比
 Pool=池
+Popup Blocked=Popup Blocked.
 Power Status=电源信息
 Power=电源
 Processor Information=处理器信息
@@ -175,7 +176,7 @@ W=瓦特
 Warnings=警告信息
 ZFS=ZFS
 
-; Note: December 28, 2024 - 23 missing translations
+; Note: December 28, 2024 - 20 missing translations
 checking=
 Clock is synchronized using NTP, time offset is %s %s=
 Clock is synchronized using PTP, time offset is %s %s=
@@ -189,7 +190,6 @@ heat warnings=
 invalid=
 Memory dump=
 No VMs running=
-Popup Blocked=Popup Blocked.
 RX=
 SMART errors=
 synching=

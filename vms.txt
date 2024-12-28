@@ -173,10 +173,14 @@ Start All=全部启动
 Start Cloned VM=启动克隆的虚拟机
 Start VM after creation=创建后启动虚拟机
 Stop All=全部停止
+Template Name="Template Name"
+Template Name="Template Name"
+Template Name="Template Name"
 Tickpolicy=时钟策略
 Timer Source=计时器源
 Toggle VM autostart=切换虚拟机自动启动
 Top Image=Top Image
+Type Method=Type (Method)
 type of storage image=存储镜像档类型
 Unknown action=未知操作
 Unknown version=未知版本
@@ -227,7 +231,7 @@ Windows 82012, newer Linux distros=Windows 8/2012，新的 Linux 发行版
 wsport for virtual console=虚拟控制台的WS端口
 XML View=XML 视图
 
-; Note: December 28, 2024 - 57 missing translations
+; Note: December 28, 2024 - 53 missing translations
 CreateModify Template=Create/Modify Template
 CreateModify Template=Create/Modify Template
 CreateModify Template=Create/Modify Template
@@ -274,11 +278,7 @@ Snapshot Method=
 Snapshots being removed=
 SSD=
 SSD=
-Template Name="Template Name"
-Template Name="Template Name"
-Template Name="Template Name"
 Top Image=Top Image
-Type Method=Type (Method)
 Unchecked will use QEMU External Snapshot=
 VM Being removed=
 VM Usage Statisics=
