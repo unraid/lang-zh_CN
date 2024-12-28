@@ -53,8 +53,8 @@ Browser error=浏览器错误
 btrfs=btrfs
 Bug Description=错误说明
 Bug Report=错误报告
-bytes=字节
 By default UEFI and Legacy boot mode are both enabled when GRUB is used to boot the machine=默认情况下，当使用GRUB引导计算机时，UEFI和传统启动模式都是启用的
+bytes=字节
 Cache=Cache
 Calculated free space value=计算的可用空间值
 Cancel=取消
@@ -461,6 +461,8 @@ YesTime Machine=是/时间机器(Time Machine)
 You must reboot for changes to take effect=您必须重新启动才能使更改生效
 Your browser does not support HTML5 file uploads=您的浏览器不支持 HTML5 方式的上传文件
 Your browser has JavaScript disabled=您的浏览器禁用了 JavaScript
+
+; Favorites
 
 ; Dynamix.system.button plugin
 Array busy=磁盘阵列忙碌
@@ -1232,10 +1234,23 @@ Open a bug report=打开一个bug报告
 %s year=%s年
 %s years=%s年
 
-; Note: December 8, 2024 - 6 missing translations
+; Note: December 28, 2024 - 19 missing translations
 Always Allow=
 Clicking OK will take you to a 3rd party website not associated with Lime Technology=
 External Link=
+Options for Block commit=
+Options for Block Commit=
+Options for Block copy=
+Options for Block Copy=
+Options for Block pull=
+Options for Block Pull=
+Please enable cookies to use the Unraid webGUI=
 Popup Blocked=
+required=
 See Help=
 Windows may require a valid User to be defined even for Public shares=
+Add to favorites=
+Added to Favorites=
+My Favorites=
+No favorites available=
+Remove from favorites=

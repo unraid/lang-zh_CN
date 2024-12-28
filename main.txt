@@ -26,9 +26,9 @@ btrfs scrub status=btrfs 清理状态
 cache - Cache Devices=缓存 - 缓存设备
 Canceled=已取消
 Cannot contact key-server Please check your=无法联系密钥服务器，请检查您的
-Caution=**Caution**
 Capabilities not available=功能不可用
 Capabilities=功能
+Caution=**Caution**
 Check Filesystem Status=检查文件系统状态
 Clear Stats=清除统计信息
 Clearing in progress=正在清除中
@@ -383,7 +383,6 @@ your server=您的服务器
 zfs pool status=zfs 存储池状态
 zfs=zfs
 
-
 ; Sleep plugin translations
 Check this=检查此处
 for more information=了解更多信息
@@ -394,15 +393,21 @@ System in sleep mode=系统处于睡眠模式
 This will put the system in sleep mode=这将使系统进入睡眠模式
 wiki entry=Wiki 条目
 
-; Note: December 8, 2024 - 14 missing translations
+; Note: December 28, 2024 - 20 missing translations
 After renaming the pool, check that your shares are assigned to the proper primary and secondary storage locations=
 After upgrading the volume may not be mountable in previous versions of Unraid=
 btrfs filesystem usage=
+cache - L2ARC=
 Dirty log detected=
 File system corruption detected=
 Fix=
+Ineligible to run this version of Unraid OS Please consider extending your=Ineligible to run this version of Unraid OS. Please consider extending your
+logs - Separate Intent Log SLOG=logs - Separate Intent Log (SLOG)
+No array devices have been assigned=
+No devices=
 No file system corruption detected=
 Renaming the pool will change the share storage allocations=
+special - Metadata storage=
 The ZFS volume will be upgraded=
 This operation cannot be reversed=
 To confirm type %s=To confirm type: %s

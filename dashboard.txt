@@ -175,11 +175,25 @@ W=瓦特
 Warnings=警告信息
 ZFS=ZFS
 
-; Note: December 8, 2024 - 7 missing translations
+; Note: December 28, 2024 - 23 missing translations
 checking=
+Clock is synchronized using NTP, time offset is %s %s=
+Clock is synchronized using PTP, time offset is %s %s=
+Clock is unsynchronized with no PTP servers=
+Clock is unsynchronized, free-running clock=
+device warning=
+device warnings=
 emulated=
+FS Native Snapshot=
 heat warnings=
 invalid=
+Memory dump=
+No VMs running=
+Popup Blocked=Popup Blocked.
+RX=
 SMART errors=
 synching=
+TX=
+Unchecked will use QEMU External Snapshot=
 utilization warnings=
+Virtual Machines Usage=

@@ -60,9 +60,9 @@ Secondary storage=辅助存储
 Select cache pool=选择缓存池
 Set when adding new share only=仅在添加新共享时设置
 Share contains data=共享包含的数据
-Share name contains invalid characters for ZFS use=共享名称包含对ZFS使用无效的字符
 Share is empty=共享为空
 Share is outside the list of designated disks=共享位于指定磁盘列表之外
+Share name contains invalid characters for ZFS use=共享名称包含对ZFS使用无效的字符
 Share Settings=共享文件夹设置
 Share status=共享状态
 Size=大小
@@ -80,11 +80,15 @@ User Shares=用户共享
 Write=写入
 You cannot use the following within share names=您不能在共享名称中使用以下内容
 
-; Note: December 8, 2024 - 7 missing translations
+; Note: December 28, 2024 - 11 missing translations
 Free Space will be calculated=
 is missing=
 it references storage that does not exist=
+It references storage that does not exist=
 Share is empty and is safe to delete=
 Share must be empty to be deleted=
+There are no mountable array or pool disks - cannot add shares=
 This share is invalid=
+Unknown cache usage=
+Unknown protection status=
 Warning: Configured Pool=

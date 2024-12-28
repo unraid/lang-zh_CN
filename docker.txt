@@ -133,3 +133,27 @@ Was this container created using this plugin=是否使用此插件创建该容�
 Web=Web
 WebUI=WebUI
 Writable=可写
+
+; Note: December 28, 2024 - 22 missing translations
+3rd Party=
+Addresses=
+available=
+Compose=
+Container IP=
+Container not running=
+DERP Relay=
+Error gathering Tailscale information from container=
+Exit Node=
+Expired RenewDisable key expiry=Expired! Renew/Disable key expiry!
+Hostname=
+Is Exit Node=
+Key Expiry=
+LAN IPPort=LAN IP:Port
+Online=
+Please check the logs and refresh the page=
+Please check the logs=
+Real Hostname=
+Routes=
+Tailscale=
+update available=
+URL=
