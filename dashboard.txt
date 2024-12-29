@@ -176,18 +176,20 @@ W=瓦特
 Warnings=警告信息
 ZFS=ZFS
 
-; Note: December 28, 2024 - 20 missing translations
+; Note: December 29, 2024 - 22 missing translations
 checking=
-Clock is synchronized using NTP, time offset is %s %s=
-Clock is synchronized using PTP, time offset is %s %s=
+Clock is synchronized using %s NTP servers, time offset is %s %s=
+Clock is synchronized using %s PTP server, time offset is %s %s=
 Clock is unsynchronized with no PTP servers=
 Clock is unsynchronized, free-running clock=
 device warning=
 device warnings=
 emulated=
 FS Native Snapshot=
+grandmaster=
 heat warnings=
 invalid=
+master=
 Memory dump=
 No VMs running=
 RX=

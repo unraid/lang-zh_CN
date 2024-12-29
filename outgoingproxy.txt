@@ -1,12 +1,3 @@
-Enable Outgoing Proxy=
-Name=
-Optional=
-Outgoing Proxy=
-Password=
-Please match the requested format=
-Required=
-Select Proxy=
-User=
 
 :outgoing_proxy_enable_plug:
 > Select the Proxy to use.  Only online Proxies will be selectable.
@@ -32,3 +23,14 @@ User=
 > Outgoing Proxy User Name for this Proxy
 :end
 
+
+; Note: December 29, 2024 - 9 missing translations
+Enable Outgoing Proxy=
+Name=
+Optional=
+Outgoing Proxy=
+Password=
+Please match the requested format=
+Required=
+Select Proxy=
+User=
