@@ -228,7 +228,7 @@ Windows 82012, newer Linux distros=Windows 8/2012，新的 Linux 发行版
 wsport for virtual console=虚拟控制台的WS端口
 XML View=XML 视图
 
-; Note: December 29, 2024 - 37 missing translations
+; Note: December 29, 2024 - 38 missing translations
 CreateModify Template=Create/Modify Template
 Discard=
 Disk IO=
@@ -250,6 +250,7 @@ Name contains invalid characters or does not start with an alphanumberic for a Z
 Network IO=
 No GPU=
 Other XML=
+Rename disabled, %s snapshots exists=Rename disabled, %s snapshot(s) exists
 Remove all files=
 Remove User Template=
 Repeat=
