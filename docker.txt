@@ -136,12 +136,12 @@ WebUI=WebUI
 Writable=可写
 
 ; Note: December 28, 2024 - 21 missing translations
-3rd Party=
-Addresses=
-available=
+3rd Party=第三方
+Addresses=地址
+available=可用
 Compose=
-Container IP=
-Container not running=
+Container IP=容器IP
+Container not running=容器未运行
 DERP Relay=
 Error gathering Tailscale information from container=
 Exit Node=

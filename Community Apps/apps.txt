@@ -4,12 +4,12 @@ Cancel=取消
 Happy New Year=新年快乐
 Happy Holidays from Andrew, Tracey, and family=来自 Andrew、Tracey 和家人的节日快乐祝福
 Please Enjoy Responsibly=请尽情享受
-Popup Blocked CA requires popups to be enabled under certain circumstances You must white list your server within your browser to allow popups=弹出窗口拦截 社区应用中心(CA)需要在某些情况下弹出新窗口. 您必须在浏览器中将服务器列入允许弹出窗口的白名单
+Popup Blocked CA requires popups to be enabled under certain circumstances You must white list your server within your browser to allow popups=社区应用中心(CA)需要在某些情况下弹出新窗口。您必须在浏览器中将服务加入弹出窗口的白名单，防止被拦截
 Docker Service Not Enabled - Only Plugins Available To Be Installed Or Managed=未启用Docker服务 - 仅可安装或管理的插件
 Docker system failed to start - Only Plugins Available To Be Installed Or Managed=Docker服务启动失败 - 只能安装或管理插件
 Array not started - Only Plugins Available To Be Installed Or Managed=磁盘阵列未启动 - 仅可安装或管理插件
-Community Applications works best when cookies are enabled in your browser Certain features may not be available=当您的浏览器启用了 cookie 时，社区应用才能最好地运行。某些功能可能无法使用
-Backup Server Active Some icons may not appear, and plugin installations may be affected=当前使用备用服务器. 某些图标可能不会显示, 插件安装可能受到影响. 请检查网络连接!
+Community Applications works best when cookies are enabled in your browser Certain features may not be available=社区应用程序在浏览器启用 Cookie 时效果最佳，部分功能可能无法使用
+Backup Server Active Some icons may not appear, and plugin installations may be affected=当备份服务器处于活动状态时，部分图标可能无法显示，插件安装也可能会受到影响
 Debugging enabled This significantly increases the memory used by your browser=启用调试会显著增加浏览器的内存占用
 Browser translation detected Display issues may result=检测到浏览器启用翻译, 这可能导致显示问题
 Action Centre Enabled=操作中心已启用
@@ -21,7 +21,7 @@ Name Ascending=名称升序
 Name Descending=名称降序
 Downloads=下载量
 Date Added=更新日期
-Number Of Apps=应用程序数
+Number Of Apps=应用程序数量
 ; Initial disclaimer translations
 Disclaimer=免责声明
 All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=此处列出的所有应用程序均由第三方提供, 应用程序的作者或 Limetech 均不对应用程序的兼容性做出任何保证
@@ -49,7 +49,7 @@ Are you sure you want to install %s docker and %s plugin applications=你确定�
 
 ; Searches
 Search=搜索
-Click Here To Get More Results From DockerHub=单击此处以从 DockerHub 获取更多结果
+Click Here To Get More Results From DockerHub=单击此处从 DockerHub 获取更多结果
 No Matching Applications Found=找不到匹配的应用程序
 
 ; Repository Related
@@ -99,15 +99,15 @@ BACK=返回
 
 ; Remove App from previously installed
 Delete Template=删除模板
-Yes, delete it=是的, 请删除
+Yes, delete it=确定删除
 
 ; Uninstall popup
 Uninstall Application=卸载应用程序
-Yes uninstall it=是的, 请卸载
+Yes uninstall it=确定卸载
 
 ; Remove Private Application
 Remove Private Application=移除私人应用程序
-Yes, remove it=是的, 请删除
+Yes, remove it=确定移除
 
 ; App Pinning
 Click to pin this application=单击以固定此应用程序
@@ -122,10 +122,10 @@ Choose A Branch To Install=选择要安装的分支
 ; no apps selected
 Install Selected Applications=安装选定的应用程序
 
-Yes, install it=是的, 请安装
+Yes, install it=确定安装
 
 ; Multi-install popup
-Yes, install them=是的, 请安装
+Yes, install them=确定安装
 Cookies not enabled Plugins must be separately installed from docker applications=未启用Cookie. 这些插件必须与Docker应用分开安装
 Docker applications will be installed utilizing the most recently saved template with no user input on your part=Docker应用程序将使用最近保存的模板进行安装, 无需用户手动配置
 Updating Support Links=正在更新支持链接
@@ -457,7 +457,7 @@ Click Install to download and install the Community Applications plugin=点击�
 
 
 ; Note: December 8, 2024 - 4 missing translations
-Clear Flag=
-External Link=
-Clicking OK will take you to a 3rd party website not associated with Limetech=
-Install another instance=
+Clear Flag=清除标志
+External Link=外部链接
+Clicking OK will take you to a 3rd party website not associated with Limetech=单击“确定”将进入第三方网站，与 Limetech 无关
+Install another instance=安装其他实例

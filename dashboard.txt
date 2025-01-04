@@ -177,14 +177,14 @@ Warnings=警告信息
 ZFS=ZFS
 
 ; Note: December 29, 2024 - 22 missing translations
-checking=
-Clock is synchronized using %s NTP servers, time offset is %s %s=
-Clock is synchronized using %s PTP server, time offset is %s %s=
-Clock is unsynchronized with no PTP servers=
-Clock is unsynchronized, free-running clock=
-device warning=
-device warnings=
-emulated=
+checking=检查中
+Clock is synchronized using %s NTP servers, time offset is %s %s=时钟使用 %s NTP 服务器同步，时间调整为 %s %s
+Clock is synchronized using %s PTP server, time offset is %s %s=时钟使用 %s PTP 服务器同步，时间调整为 %s %s
+Clock is unsynchronized with no PTP servers=时钟未同步，无PTP服务器
+Clock is unsynchronized, free-running clock=时钟不同步，自由运行时钟
+device warning=设备警告
+device warnings=设备警告
+emulated=模拟
 FS Native Snapshot=
 grandmaster=
 heat warnings=

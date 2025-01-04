@@ -21,4 +21,4 @@ This unlocks some extra features within CA generally only used by developers Not
 Support Thread=论坛支持页
 
 ; Note: December 8, 2024 - 1 missing translations
-Allow installation of multiple instances=
+Allow installation of multiple instances=允许安装多个实例
