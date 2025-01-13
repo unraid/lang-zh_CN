@@ -1,0 +1,17 @@
+Halt=停止
+Host Address=主机地址
+Host=主机
+No active streams=无活动数据流
+Playtime=游戏时间
+Stop stream=停止数据流
+Stream=数据流
+User Name=用户名称
+User=用户
+
+:streams_plug:
+> 为IP地址赋予象征性名称，这些名称将在活动流页面上显示。
+>
+> 当检测到新的IP地址时，它们会自动添加到列表中。
+>
+> 要取消名称关联，请清空用户名框中的内容，然后点击“应用”。
+:end
