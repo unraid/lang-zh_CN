@@ -946,5 +946,3 @@ to the Unraid server at=连接到 Unraid 服务器, 通过
 Transient errors in this log can be ignored unless you are having issues=如果您没有遇到问题, 则可以忽略此日志中偶尔出现的错误
 Unraid API extra origins=Unraid API 的额外来源
 View Flash Backup Error Log=查看U盘(flash)备份错误日志
-
-; Note: December 28, 2024 - 87 missing translations
