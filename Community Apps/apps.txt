@@ -4,12 +4,12 @@ Cancel=取消
 Happy New Year=新年快乐
 Happy Holidays from Andrew, Tracey, and family=来自 Andrew、Tracey 和家人的节日快乐祝福
 Please Enjoy Responsibly=请尽情享受
-Popup Blocked CA requires popups to be enabled under certain circumstances You must white list your server within your browser to allow popups=弹出窗口拦截 社区应用中心(CA)需要在某些情况下弹出新窗口. 您必须在浏览器中将服务器列入允许弹出窗口的白名单
+Popup Blocked CA requires popups to be enabled under certain circumstances You must white list your server within your browser to allow popups=社区应用中心需要在某些情况下弹出新窗口。您必须在浏览器中将服务加入弹出窗口的白名单，防止被拦截
 Docker Service Not Enabled - Only Plugins Available To Be Installed Or Managed=未启用Docker服务 - 仅可安装或管理的插件
 Docker system failed to start - Only Plugins Available To Be Installed Or Managed=Docker服务启动失败 - 只能安装或管理插件
-Array not started - Only Plugins Available To Be Installed Or Managed=磁盘阵列未启动 - 仅可安装或管理插件
-Community Applications works best when cookies are enabled in your browser Certain features may not be available=当您的浏览器启用了 cookie 时，社区应用才能最好地运行。某些功能可能无法使用
-Backup Server Active Some icons may not appear, and plugin installations may be affected=当前使用备用服务器. 某些图标可能不会显示, 插件安装可能受到影响. 请检查网络连接!
+Array not started - Only Plugins Available To Be Installed Or Managed=硬盘阵列未启动 - 仅可安装或管理插件
+Community Applications works best when cookies are enabled in your browser Certain features may not be available=社区应用程序在浏览器启用 Cookie 时效果最佳，部分功能可能无法使用
+Backup Server Active Some icons may not appear, and plugin installations may be affected=当备份服务器处于活动状态时，部分图标可能无法显示，插件安装也可能会受到影响
 Debugging enabled This significantly increases the memory used by your browser=启用调试会显著增加浏览器的内存占用
 Browser translation detected Display issues may result=检测到浏览器启用翻译, 这可能导致显示问题
 Action Centre Enabled=操作中心已启用
@@ -19,9 +19,9 @@ Deprecated OS version No further updates to Community Applications will be issue
 Sort By=排序
 Name Ascending=名称升序
 Name Descending=名称降序
-Downloads=下载量
-Date Added=更新日期
-Number Of Apps=应用程序数
+Downloads=下载量排序
+Date Added=更新日期排序
+Number Of Apps=应用程序数量
 ; Initial disclaimer translations
 Disclaimer=免责声明
 All applications listed here are 3rd party additions to Unraid Neither the authors of Community Applications nor Limetech make any warranty as to the suitability of any application listed here=此处列出的所有应用程序均由第三方提供, 应用程序的作者或 Limetech 均不对应用程序的兼容性做出任何保证
@@ -34,7 +34,7 @@ Click here=单击此处
 Results Per Page: %s=每页显示结果数量：%s
 
 ; Plugin Disclaimer
-Community Applications contains both docker containers and plugin applications Plugins are designed for OS enhancements, and run with full privileges on your system and are clearly identified within CA=社区应用程序包含Docker容器和插件应用程序。插件是为操作系统增强而设计的，以完全权限在您的系统上运行，并在CA中明确标识
+Community Applications contains both docker containers and plugin applications Plugins are designed for OS enhancements, and run with full privileges on your system and are clearly identified within CA=社区应用程序包含Docker容器和插件应用。插件是为增强操作系统使用而设计的，以完整权限在您的系统上运行，并在社区应用中心明确标识
 Plugin Note=插件说明
 
 ; Multi Install
@@ -49,14 +49,14 @@ Are you sure you want to install %s docker and %s plugin applications=你确定�
 
 ; Searches
 Search=搜索
-Click Here To Get More Results From DockerHub=单击此处以从 DockerHub 获取更多结果
+Click Here To Get More Results From DockerHub=单击此处从 DockerHub 获取更多结果
 No Matching Applications Found=找不到匹配的应用程序
 
 ; Repository Related
-%s removed as favourite repository=将 %s 从喜爱的存储库中移除
-%s set as favourite repository=将 %s 设置为喜爱的存储库
-Click to remove favourite repository=点击移除此喜爱的存储库
-Click to set %s as favourite repository=点击设置 %s 为喜爱的存储库
+%s removed as favourite repository=将 %s 从收藏的应用中移除
+%s set as favourite repository=将 %s 设置为收藏的应用
+Click to remove favourite repository=点击移除收藏的应用
+Click to set %s as favourite repository=点击设置 %s 为收藏的应用
 Search for apps in repository=在存储库中搜索应用
 No description present=目前没有描述
 Go to the forum page=论坛页面
@@ -99,15 +99,15 @@ BACK=返回
 
 ; Remove App from previously installed
 Delete Template=删除模板
-Yes, delete it=是的, 请删除
+Yes, delete it=确定删除
 
 ; Uninstall popup
 Uninstall Application=卸载应用程序
-Yes uninstall it=是的, 请卸载
+Yes uninstall it=确定卸载
 
 ; Remove Private Application
 Remove Private Application=移除私人应用程序
-Yes, remove it=是的, 请删除
+Yes, remove it=确定移除
 
 ; App Pinning
 Click to pin this application=单击以固定此应用程序
@@ -122,10 +122,10 @@ Choose A Branch To Install=选择要安装的分支
 ; no apps selected
 Install Selected Applications=安装选定的应用程序
 
-Yes, install it=是的, 请安装
+Yes, install it=确定安装
 
 ; Multi-install popup
-Yes, install them=是的, 请安装
+Yes, install them=确定安装
 Cookies not enabled Plugins must be separately installed from docker applications=未启用Cookie. 这些插件必须与Docker应用分开安装
 Docker applications will be installed utilizing the most recently saved template with no user input on your part=Docker应用程序将使用最近保存的模板进行安装, 无需用户手动配置
 Updating Support Links=正在更新支持链接
@@ -167,19 +167,19 @@ Home=首页
 Installed Apps=已安装的应用
 Previous Apps=以前的应用
 Pinned Apps=固定的应用
-Favourite Repo=喜爱的存储库
+Favourite Repo=收藏的应用
 Action Centre=操作中心
 Recently Added=最近添加
 Random Apps=随机应用
 Top New Installs=热门新安装应用
-Top Trending Apps=最热门应用
-Spotlight Apps=推荐(聚焦)的应用
+Top Trending Apps=热门应用
+Spotlight Apps=推荐应用
 All Apps=所有应用
 Statistics=统计信息
 Credits=贡献者
 Support=支持
 VERSION=版本
-Change Log=更改日志
+Change Log=更新日志
 Debugging=调试
 
 ; Credits
@@ -316,7 +316,7 @@ Author=作者
 Maintainer=维护者
 DockerHub=DockerHub
 Application Template=应用程序模板
-DockerHub Stars=DockerHub 明星(Stars)
+DockerHub Stars=DockerHub 收藏数
 Added to CA=已添加到社区应用中心(CA)
 Date Updated=日期已更新
 Current Version=当前版本
@@ -336,14 +336,14 @@ This application is not compatible with your version of Unraid=此应用程序�
 Another browser tab or device has updated the displayed templates Some actions are not available=另一个浏览器标签页或设备已更新当前显示的模板。某些操作不可用
 WebUI=WebUI
 Reinstall=重新安装
-Reinstall From Previous Apps=重新安装以前版本的应用
+Reinstall From Previous Apps=重新安装旧版本的应用
 Install=安装
 Uninstall=卸载
 Project=项目
 Read Me First=先阅读此处
 Install Using The Templates Default Tag=使用模板的默认标签进行安装
-Moderator Comments=版主评论
-Note not all authors keep up to date on change logs=请注意, 并非所有作者的变更日志都保持最新状态
+Moderator Comments=管理员评论
+Note not all authors keep up to date on change logs=请注意, 并非所有开发人员的变更日志都保持最新状态
 Note not all maintainers keep up to date on change logs=请注意, 并非所有维护者的变更日志都保持最新状态
 Last Update=最后更新
 Note All statistics are only gathered every 30 days=所有统计数据每30天收集一次
@@ -360,7 +360,7 @@ More than %s=超过 %s
 Remove from Previous Apps=从以前的应用中移除
 Remove=移除
 See All Apps=查看所有应用
-Favourite=喜爱的
+Favourite=收藏
 Application Type=应用类型
 
 ; Graphs
@@ -382,8 +382,8 @@ This is a language pack=这是一个语言包
 This application is a docker container=此应用程序是一个docker容器
 This application is a plugin=此应用程序是一个插件
 This is a spotlight application=这是一个推荐应用
-This is your favourite repository=这是您喜爱的存储库
-This application is from your favourite repository=此应用程序来自您喜爱的存储库
+This is your favourite repository=这是您收藏的存储库
+This application is from your favourite repository=此应用程序来自您收藏的存储库
 This application is pinned for later viewing=此应用程序已固定供稍后查看
 Private Application=私人应用程序
 Remove Application From List=从列表中移除应用程序
@@ -393,7 +393,7 @@ Click to reinstall the application using default values=单击以采用默认选
 Click to edit the application values=单击以编辑应用程序值
 Click to reinstall=单击以重新安装
 Click to install=单击以安装
-Click to go to the WebUI=单击以转到 WebUI
+Click to go to the WebUI=单击以转到网页用户界面
 This application template has been deprecated=此应用程序模板已弃用
 This application template has been blacklisted=此应用程序模板已被列入黑名单
 Click info to see the notes regarding this application=单击信息以查看有关此应用程序的注释
@@ -407,10 +407,10 @@ Digitally Signed=数字签名
 This container is digitally signed=此容器经过数字签名
 Docker Hub=Docker Hub
 NOTE You must visit the dockerHub page to gather the information required to install correctly=注意：您必须访问 Docker Hub 页面来收集正确安装所需的信息
-Show CA templates=显示社区应用(CA)模板
+Show CA templates=显示社区应用模板
 Deprecated=已弃用
 Incompatible=不兼容
-Blacklisted=已进入黑名单
+Blacklisted=已加入黑名单
 Template Exists=模板存在
 Template already exists in Apps=模板已存在于应用中
 ; eg: LinuxServer Repository
@@ -454,10 +454,3 @@ Would you like CA to attempt to determine any applicable paths, ports, and varia
 An error occurred - Could not determine configuration=发生错误 - 无法确定配置
 ; WebGui
 Click Install to download and install the Community Applications plugin=点击“安装”以下载并安装社区应用插件
-
-
-; Note: December 8, 2024 - 4 missing translations
-Clear Flag=
-External Link=
-Clicking OK will take you to a 3rd party website not associated with Limetech=
-Install another instance=
