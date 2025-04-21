@@ -2692,3 +2692,28 @@ Enable this to install 'ping', 'nslookup', 'curl', and 'speedtest-cli' into the 
 :WOL_run_docker_help:
 If set to yes when wake on lan packets are received checks are carrried out for dockers otherwise dockers will be ignored.
 :end
+
+; New entries (4) - 2025-04-21
+
+:nfs_security_rules_help:
+Put the rule for each IP address on a separate line and terminate the Rule with a new line.
+You cannot enter a Rule in the format IP1,IP2(...).  Unraid does not format the exports file in that format.
+
+The default rules for every NFS Rule are - async and no_subtree_check.
+
+**Note:** The Public Rule used is '*(rw,sec=sys,insecure,anongid=100,anonuid=99,no_root_squash)'.
+:end
+
+:nfs_server_max_protocol_help:
+Select the max NFS Protocol version you want your Unraid server to support.
+:end
+
+:nfs_threads_help:
+Set the number of threads for NFS.  For light NFS loads, 8 is sufficient. For heaver NFS loads, a higher number of threads might be appropriate.
+
+If there aren't enough threads, NFS will probably crash.
+:end
+
+:shares_fuse_file_descriptors_io_help:
+Set the number of fuse file descriptors.  With a lot of file activity on the array, you may need to increase this value.
+:end
