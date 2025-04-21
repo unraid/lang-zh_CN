@@ -58,14 +58,12 @@ Free=剩余
 from disk=从磁盘
 Go to Settings->Global Share Settings and set Enable Disk Shares to Auto or Off=在“设置->全局共享设置”页面调整“启用磁盘共享”为“自动”或“否”
 Historical=历史
-Historical Devices=历史设备
 Historical Device is=历史设备
 Identification=身份验证
 If SMB shares do not show, check your credentials=如果 SMB 共享未显示，请检查你的凭据
 If the IP address of the server shows in the list after searching, your DNS server is not resolving the name=完成搜索后，如果列表中显示的是服务器 IP 地址而不是名称，代表你的 DNS 服务器并没有解析名称
 If this disk was pre-cleared, you will remove the pre-clear signature=如果此磁盘已预清除，这么做将会移除预清除标记（pre-clear signature）
 If you add the disk to the array and the pre-clear signature is removed, Unraid will go through the lengthy process of clearing the disk again=如果你将磁盘添加到阵列中并且预清除标记（pre-clear signature）已移除，Unraid 将启动再次清除磁盘的冗长进程
-If shares do not show, check your credentials=如果共享未显示，请检查你的凭据
 Invalid Configuration - Remove and Re-add=无效的配置 - 删除并重添加
 is offline=离线
 ISO File is=ISO 文件
@@ -83,7 +81,6 @@ Next=下一个
 NFS Mount Point=NFS 挂载点
 NFS or ISO File Shares configured=NFS 或 ISO 文件共享已配置
 NFS Script=NFS 脚本
-NFS Script Log=NFS 脚本日志
 NFS Share=NFS 共享
 NFS Shares=NFS 共享
 No Remote SMB=未配置远程 SMB
@@ -161,7 +158,6 @@ User Shares without Pools - allow access to User Shares, but the Root Share will
 Username=用户名
 View Device Script Log=查看设备脚本日志
 View ISO File Script Log=查看 ISO 文件脚本日志
-View Remote SMB=查看远程 SMB
 WARNING=警告
 When you copy files between shares in the Root Share, the files may not end up on the expected disks=在根共享的共享文件夹内复制文件时，文件可能不会复制到期望的磁盘上
 Working=正在工作
@@ -170,7 +166,6 @@ You must enable NFS in Settings->NFS to mount NFS shares=你必须在“设置->
 You must enable SMB in Settings->SMB to mount SMB shares=你必须在“设置->SMB”处启用 SMB 才能挂载 SMB 共享
 You must enable the Destructive Mode in UD Settings before you can Format this disk=你必须在 Unassigned Devices（未分配的设备）设置中启用破坏性模式才能格式化此磁盘
 You WILL have problems if you do=你将会面临问题，如果你（做）
-You will need to enter credentials to list the shares=你需要输入凭据才能列出共享
 ZFS Pool Name=ZFS 存储池名称
 ZFS Volume=ZFS 卷
 
@@ -258,3 +253,12 @@ ZFS Volume=ZFS 卷
 >
 > 使用 /dev/sdX 或 devX 代号时请注意，它们可在重启后改变。在 UD 脚本中访问 sdX（DEVICE）和 devX（UD_DEVICE）时最好使用传入的参数。
 :end
+
+; Note: April 21, 2025 - 7 missing translations
+Historical Unassigned Devices=
+No script file to execute=
+Script is already running=
+Script Log=
+View NFS Script Log=
+View SMB Script Log=
+You may need to enter credentials to list the shares=

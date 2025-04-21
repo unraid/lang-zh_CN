@@ -133,14 +133,12 @@ Downloading docker icons=正在下载docker图标
 Finished Installing If the DONE button did not appear, then you will need to click the red X in the top right corner=已完成安装。如果未出现“完成”按钮，则需要单击右上角的红色 X
 
 ; error messages
-No data was returned It is probable that another browser session has rebooted your server Reloading this browser tab will probably fix this error=没有返回任何数据. 可能是另一个浏览器会话重启了服务器. 刷新此浏览器标签页可能会解决此错误
 An error occurred Could not find any %s Apps=发生错误, 找不到任何关于 %s 的应用
 Download of appfeed failed=应用程序资源文件下载失败
 ; the %s here refers to a function being called
 Something really went wrong here=遇到了一些问题
 Post the ENTIRE contents of this message in the Community Applications Support Thread=在社区应用支持对话中发布此消息的**全部**内容
 Unknown error happened Please post a screenshot in the support thread of the Statistics screen=发生未知错误   请在统计屏幕的支持对话中发布屏幕截图
-Something really wrong happened Reloading the Apps tab will probably fix the problem=遇到了一些问题. 重新加载应用选项卡可能会解决该问题
 This plugin has a duplicated name from another plugin %s This will impact your ability to install both plugins simultaneously=此插件的名称与另一个插件 %s 重复, 您不能同时安装这两个插件
 You have been logged out=你已注销
 Fatal Flash Drive Error=致命闪存驱动器(U盘)错误
@@ -454,3 +452,11 @@ Would you like CA to attempt to determine any applicable paths, ports, and varia
 An error occurred - Could not determine configuration=发生错误 - 无法确定配置
 ; WebGui
 Click Install to download and install the Community Applications plugin=点击“安装”以下载并安装社区应用插件
+
+
+; Note: April 21, 2025 - 5 missing translations
+Clear Flag=
+Additional information may be within Tools, PHPSettings - View Log=
+External Link=
+Clicking OK will take you to a 3rd party website not associated with Limetech=
+Install another instance=
