@@ -349,3 +349,6 @@ USB 闪存设备也可能被**列入黑名单**。
 
 如需了解更多信息，请[联系支持人员](https://lime-technology.com/contact)。
 :end
+
+; Note: April 21, 2025 - 1 missing translations
+Log Viewer new=Log Viewer (new)

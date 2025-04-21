@@ -90,3 +90,6 @@ User Shares=用户共享
 Warning: Configured Pool=警告：池已配置
 Write=写入
 You cannot use the following within share names=您不能在共享名称中使用以下内容
+
+; Note: April 21, 2025 - 1 missing translations
+There are no mounted array or pool disks - cannot add shares=

@@ -393,7 +393,7 @@ System in sleep mode=系统处于睡眠模式
 This will put the system in sleep mode=这将使系统进入睡眠模式
 wiki entry=Wiki 条目
 
-; Note: December 28, 2024 - 20 missing translations
+; Note: April 21, 2025 - 24 missing translations
 After renaming the pool, check that your shares are assigned to the proper primary and secondary storage locations=
 After upgrading the volume may not be mountable in previous versions of Unraid=
 btrfs filesystem usage=
@@ -403,14 +403,18 @@ File system corruption detected=
 Fix=
 Ineligible to run this version of Unraid OS Please consider extending your=Ineligible to run this version of Unraid OS. Please consider extending your
 logs - Separate Intent Log SLOG=logs - Separate Intent Log (SLOG)
+loopback=
 No array devices have been assigned=
 No devices=
 No file system corruption detected=
+not set=
 Renaming the pool will change the share storage allocations=
+Rx=
 special - Metadata storage=
 The ZFS volume will be upgraded=
 This operation cannot be reversed=
 To confirm type %s=To confirm type: %s
+Tx=
 Upgrade Pool=
 While there is some risk, if it is not possible to first mount the filesystem to clear the log, zeroing it is the only option to try and repair the filesystem, and in most cases it results in little or no data loss=
 Zero Log=

@@ -1234,10 +1234,17 @@ Open a bug report=打开一个bug报告
 %s year=%s年
 %s years=%s年
 
-; Note: December 28, 2024 - 19 missing translations
+; Note: April 21, 2025 - 33 missing translations
+Abort background operation=
+Abort background process=
+Alert Message=
 Always Allow=
+Attention - operation continues in background=
 Clicking OK will take you to a 3rd party website not associated with Lime Technology=
 External Link=
+Live Updates Paused=
+Move To End=
+Notifications=
 Options for Block commit=
 Options for Block Commit=
 Options for Block copy=
@@ -1247,7 +1254,14 @@ Options for Block Pull=
 Please enable cookies to use the Unraid webGUI=
 Popup Blocked=
 required=
+Rx=
 See Help=
+This may leave an unknown state=
+Tx=
+Unlock sortable items=
+WiFi connected=
+WiFi disconnected=
+WiFi status unavailable=
 Windows may require a valid User to be defined even for Public shares=
 Add to favorites=
 Added to Favorites=
