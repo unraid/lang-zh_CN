@@ -2717,3 +2717,9 @@ If there aren't enough threads, NFS will probably crash.
 :shares_fuse_file_descriptors_io_help:
 Set the number of fuse file descriptors.  With a lot of file activity on the array, you may need to increase this value.
 :end
+
+; New entries (2) - 2025-05-31
+
+:nfs_client_max_protocol_help:
+Select the max NFS Protocol version you want to use to mount your remote shares.
+:end
