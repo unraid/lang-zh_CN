@@ -73,6 +73,7 @@ Language=语言
 Log file cleared=日志已被清理
 Log size=日志大小
 LOG size=日志大小
+Log Viewer new=Log Viewer (new)
 Missing Key File=缺少密钥文件
 Missing Language=缺少语言
 Modprobed config file=Modprobe.d 配置文件
@@ -349,6 +350,3 @@ USB 闪存设备也可能被**列入黑名单**。
 
 如需了解更多信息，请[联系支持人员](https://lime-technology.com/contact)。
 :end
-
-; Note: April 21, 2025 - 1 missing translations
-Log Viewer new=Log Viewer (new)

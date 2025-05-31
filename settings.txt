@@ -945,7 +945,7 @@ Transient errors in this log can be ignored unless you are having issues=如果�
 Unraid API extra origins=Unraid API 的额外来源
 View Flash Backup Error Log=查看U盘(flash)备份错误日志
 
-; Note: April 21, 2025 - 44 missing translations
+; Note: May 31, 2025 - 48 missing translations
 Add network=
 Allow realtime updates on inactive browsers=
 Allows the use of ethernet frames larger than 1500 bytes=
@@ -974,11 +974,14 @@ Network Info=
 Network name=
 NFSv3=
 NFSv4=
+No encrypted disks found=
 Number of fuse File Descriptors=
 Number of Threads=
 Or if they are improperly configured, use this feature with care=
 Other networks=
+Otherwise use the keyfile method for UTF8 input=Otherwise use the **keyfile** method for UTF8 input
 overlay2=
+Printable Characters Only=
 Receive bitrate=
 Regulatory region=
 Select All=
@@ -987,6 +990,7 @@ Signal level=
 stripe=
 Transmit bitrate=
 Two letter country code=
+Use ASCII characters from space to tilde=Use **ASCII** characters from space ' ' to tilde '~'
 vcpu allocated to vm=
 Wi-Fi=
 Wireless=

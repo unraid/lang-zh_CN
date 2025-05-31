@@ -157,5 +157,5 @@ WebUI=WebUI
 Writable=可写
 
 ; Note: April 21, 2025 - 2 missing translations
-Container not found Try reloading this page to fix=Container not found. Try reloading this page to fix.
+Container not found Try reloading this page to fix=Container not found.  Try reloading this page to fix.
 For security reasons, containers with Network Type Host should not have Tailscale enabled Please disable Tailscale in this container or change the Network Type of the container=For security reasons, containers with Network Type "Host" should not have Tailscale enabled. Please disable Tailscale in this container or change the Network Type of the container.
