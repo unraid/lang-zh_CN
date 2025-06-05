@@ -33,6 +33,7 @@ Container Path=容器路径
 Container Port=容器端口
 Container Size=容器大小
 Container=容器
+Container not found Try reloading this page to fix=找不到容器,请尝试重新加载此页面以修复
 CPU Memory load=CPU 内存负载
 CPU Pinning=CPU 绑定
 Created=已创建
@@ -55,6 +56,7 @@ Expired RenewDisable key expiry=域名过期或自动续订失败
 Extra Parameters=额外参数
 Fixed IP address=固定 IP 地址
 force update=强制更新
+For security reasons, containers with Network Type Host should not have Tailscale enabled Please disable Tailscale in this container or change the Network Type of the container=出于安全原因,具有网络类型主机的容器不应启用Tailscale. 请在此容器中禁用Tailscale或更改容器的网络类型
 FTP=FTP
 Game Servers=游戏服务器
 healthy=健康
@@ -155,7 +157,3 @@ Was this container created using this plugin=是否使用此插件创建该容�
 Web=Web
 WebUI=WebUI
 Writable=可写
-
-; Note: April 21, 2025 - 2 missing translations
-Container not found Try reloading this page to fix=Container not found.  Try reloading this page to fix.
-For security reasons, containers with Network Type Host should not have Tailscale enabled Please disable Tailscale in this container or change the Network Type of the container=For security reasons, containers with Network Type "Host" should not have Tailscale enabled. Please disable Tailscale in this container or change the Network Type of the container.
