@@ -7,73 +7,73 @@ Continue=继续
 Corz=Corz
 Custom files=自定义文件
 Custom folders=自定义文件夹
-Day of the month=月中某天
-Day of the week=周中某天
-Disk selection=磁盘选择
+Day of the month=几月几日
+Day of the week=星期几
+Disk selection=选择磁盘
 Disk verification schedule=磁盘验证计划
 Dont start=不要开始
 Download Now=立即下载
-Dynamix File Integrity=Dynamix File Integrity
-Error logging=错误日志记录
+Dynamix File Integrity=动态文件完整性
+Error logging=错误日志
 Excluded files=排除的文件
 Excluded folders and files=排除的文件夹和文件
 Excluded folders=排除的文件夹
 File Duplicates Check=重复文件检查
 Find=查找
 Generate Corz Files=生成 Corz 文件
-hash files=哈希文件
-Hashing method=哈希方法
+hash files=哈希值
+Hashing method=哈希算法
 Header menu=标题菜单
 HHMM=时:分
 Import=导入
-Include duplicate file hashes in Find command=在**查找**命令中包含重复的文件哈希
+Include duplicate file hashes in Find command=在**查找**命令中包含重复文件的哈希值
 log files=日志文件
 Low=低
 MD5=MD5
 Output file=输出文件
-Placement of file integrity control=File Integrity Control 放置位置
-Process priority=处理优先级
-Save new hashing results to flash=将新的哈希结果保存至闪存
-saved files=已保存的文件
+Placement of file integrity control=文件完整性控制的配置‌
+Process priority=进程优先级
+Save new hashing results to flash=将新的哈希值保存至闪存中
+saved files=已保存文件
 Send notifications=发送通知
 SHA2=SHA2
 Syslog only=仅系统日志
-Syslog Output file=系统日志与输出文件
+Syslog Output file=系统日志输出到文件
 Task=任务
-Time of the day=日中时间
+Time of the day=时间段
 Toggle all=全部开启
 Tools menu=工具菜单
 Verification tasks=验证任务
-view hash files=查看哈希文件
+view hash files=查看哈希值
 view log files=查看日志文件
 view saved files=查看保存文件
-When parity operation is running=当系统校验操作正在运行
+When parity operation is running=当奇偶校验操作正在运行时
 
 :integrity_control_plug:
-> 选择 File Integrity Control 页面的放置位置。默认放在**工具**菜单下，也可移至标题菜单。
+> 选择 文件完整性控制的配置‌ 页面的放置位置。默认放在**工具菜单**下，也可移至标题菜单。
 >
-> 小心，**标题**菜单空间有限。
+> 注意，**标题菜单**空间有限。
 :end
 
 :integrity_service_plug:
-> 启用时，会自动计算校验和并将其添加到新创建或修改的文件的扩展属性中。
-> 当检测到文件变化，但修改时间并未更新时，自动执行校验和验证，以检查是否存在文件静默损坏。
+> 当启用时，会自动计算校验值并添加到新创建或修改的文件扩展属性中‌。
+> 当检测到文件变化，但修改时间并未更新时，自动执行校验和验证，以检查文件是否损坏。
 >
-> 保护范围可通过排除文件夹（共享）和磁盘来框定，见下方表单。
+> 保护范围可通过排除文件夹（共享）和磁盘来选择，（参见下表）。
 >
-> 自动哈希关闭时，需手动操控以确保信息及时更新。
+> 自动哈希功能禁用时，需手动更新哈希值来确保信息及时更新。
 :end
 
 :integrity_hashing_plug:
-> 选择哈希方法。对于每份文件，SHA2 生成 256 位校验和，MD5 生成 128 位校验和，BLAKE2 生成 512 位校验和。
+> 选择默认哈希算法。对于每个文件，SHA2 生成 256 位校验和值，MD5 生成 128 位校验和值，BLAKE2 生成 512 位校验和值。
 >
-> MD5 是最常用的方法，且应在需要兼容外部程序时选择；BLAKE2 是最快的方法，且拥有最高的检测等级，但是一套专有的解决方案；SHA2 是官方标准，且默认使用，不过是三套方法中最慢的。
-> 如果处理器不支持，BLAKE2 选项不可用。
-> 所有方法都要求大量算力，性能过低的处理器可能无法到达预期。
+> MD5是最常用的方法，当需要与外部程序兼容时，应选择MD5。BLAKE2则是最快的方法，且具有最高的检测等级，不过这是一个专有解决方案。
+> SHA2是官方标准且默认被选中，尽管它是三种方法中最慢的。如果处理器不支持BLAKE2，则该选项会被禁用‌。
+> 所有哈希方法（如MD5、SHA2、BLAKE2等）都需要处理器提供强大的计算能力，如果处理器性能过弱，可能无法达到预期的性能表现‌。
 :end
 
 :integrity_flash_plug:
-> 启用后，每天都会在闪存上创建文件，记录当天新创建或修改的文件的校验和。
+> 当在闪存设备上启用此功能时，每天都会创建一个文件，用于保存当天所有新文件或修改过的文件的校验和值结果‌。
 > 此文件与标准导出文件格式相同。每日文件保存为 */config/plugins/dynamix.file.integrity/saved/disks.export.&lt;date&gt;.new.hash*。
 :end
 

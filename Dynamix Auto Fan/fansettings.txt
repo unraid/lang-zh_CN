@@ -1,6 +1,6 @@
 Click DETECT=点击检测
 Detect=检测
-Exclude drives=排除磁盘
+Exclude drives=排除硬盘
 Fan control function=风扇控制功能
 High temperature threshold=高温阈值
 Low temperature threshold=低温阈值

@@ -1,8 +1,8 @@
 A registration replacement key has been created for USB Flash GUID=已为 USB 闪存 GUID 创建了注册替换密钥
 About=关于
-Alert Message=警告信息
-alert=警告
-Alerts=警告
+Alert Message=严重信息
+alert=严重
+Alerts=严重
 All Categories=全部分类
 An email has been sent to=电子邮件已发送至
 and=和
@@ -10,11 +10,11 @@ Anonymize diagnostics=匿名诊断
 Anytime=随时
 Archived Notifications=存档的通知
 Are you sure=是否确定
-Array has been Reset=磁盘阵列已**重置**
-Array must be Started to change permissions=磁盘阵列必须**启动**后才能更改权限
-Array must be Stopped to change=磁盘阵列必须**停止**后才能更改
-Array slots=磁盘阵列插槽
-Array=磁盘阵列
+Array has been Reset=硬盘阵列已**重置**
+Array must be Started to change permissions=硬盘阵列必须**启动**后才能更改权限
+Array must be Stopped to change=硬盘阵列必须**停止**后才能更改
+Array slots=硬盘阵列插槽
+Array=硬盘阵列
 Author=作者
 Beta=测试版
 Blacklisted USB Flash GUID=USB 闪存的 GUID 在黑名单内
@@ -27,26 +27,33 @@ Clear Log=清除日志
 click Install Key=点击<i>安装密钥</i>
 collecting diagnostic information this may take several minutes=正在收集诊断信息（这可能需要几分钟）
 Component=组件
+Creating Flash backup=创建闪存盘备份
+Creation error=创建出错
 Credits=致谢
 Data slots=数据插槽
 Delete all notifications=删除所有通知
+Delete Modprobe config=删除 Modprobe 配置
 Delete notification=删除通知
-Deprecated Only=已弃用
+Deprecated Only=已弃用项
 Developer=开发人员
 Diagnostics=诊断
-Disks=磁盘
+Disks=硬盘
 Display Settings=显示设置
+Downgrade OS=降级系统
 Downloading=正在下载
+Driver=驱动
+Edit Modprobe config=编辑 Modprobe 配置
 End-User License Agreement=最终用户许可协议
 Enter URL of language pack XML file=输入语言包 XML 文件的 URL 地址
 Error accessing your physical USB Flash boot device=访问物理 USB 闪存引导设备时出错
 Error reporting level=错误报告等级
 Errors Only=只看错误
-EULA=EULA
+EULA=最终用户许可协议
 Event=事件
 Expiration=到期时间
-Extend=延长
+Extend=延期
 extended=已延期
+Flash backup=闪存盘备份
 Get Trial Key=获取试用版密钥
 Hardware Profile=硬件配置文件
 Hide Details=隐藏详细信息
@@ -56,6 +63,7 @@ Important=重要
 Install Language=安装语言
 Install=安装
 Installed languages=已安装的语言
+Insufficient free disk space available=硬盘可用空间不足
 Invalid Trial Installation=无效的*试用*安装
 It will collect all of the system hardware information, remove any serial numbers, and securely upload it to LimeTech=它将收集所有系统硬件信息，移除所有序列号，然后将其安全地上传到 LimeTech
 Key file URL=密钥文件 URL
@@ -65,8 +73,10 @@ Language=语言
 Log file cleared=日志已被清理
 Log size=日志大小
 LOG size=日志大小
+Log Viewer new=Log Viewer (new)
 Missing Key File=缺少密钥文件
 Missing Language=缺少语言
+Modprobed config file=Modprobe.d 配置文件
 Network Settings=网络设置
 New Config=新配置
 New Permissions=新权限
@@ -75,8 +85,8 @@ No filter=无过滤
 No notifications present=没有通知
 No personal information such as user names, passwords, or any other file contents is included in the hardware profile=硬件配置文件中不包括用户名、密码或任何其他文件内容等个人信息
 normal=正常
-Notices Only=只看通知(Notices)
-Notices=通知(Notices)
+Notices Only=只看通知
+Notices=通知
 Only ZIP files are allowed=仅允许 ZIP 文件
 Page Map=页面地图导航
 Parity slots=奇偶校验插槽
@@ -96,25 +106,32 @@ previous=上一个
 Privacy Policy=隐私政策
 Processes=进程
 Purchase Key=购买密钥
+Rebuild Modules=重建模块
 Registered GUID=GUID 已注册
 Registered on=注册于
 Registered to=注册到
 registering USB Flash GUID=正在注册 USB 闪存 GUID
 Release has been withdrawn=发布已撤回
+Remove custom modprobed configuration=确定移除 modprobe.d 配置吗？
 Remove the installed language=移除安装的语言
 Replaceable=可更换
 Request Extension=请求扩展
 Request Trial Extension=请求试用扩展
 Restore=恢复
+Save Modprobe config=保存 Modprobe 配置
 See=查看
 Select language file=选择语言文件
 Select language=选择语言
+Select View=选择视图
 Show Details=显示详细信息
 Show errors on screen=在屏幕上显示错误
 slots=插槽
 Stable=稳定版
+State=状态
 Subject=主题
+Support page=支持页面
 System Devices=系统设备
+System Drivers=系统驱动
 System Update Check=系统更新检查
 Text=文本
 Thank you for choosing Unraid OS=感谢您选择 Unraid OS
@@ -151,7 +168,7 @@ View VFIO-PCI Log=查看 VFIO-PCI 日志
 warning=警告
 Warnings Only=只看警告
 Warnings=警告
-webGUI=webGUI
+webGUI=web图形界面
 When received, please paste the URL into the Key file URL box and=收到邮件后，请将 URL 链接粘贴到<i>密钥文件</i> URL 框中，然后
 Wrong File Extension=文件扩展名错误
 You havent sent Limetech your hardware profile yet=您尚未向 Limetech 发送您的硬件配置文件
@@ -162,7 +179,7 @@ Your Trial key requires an internet connection=您的**试用**密钥要求联�
 ; Sysdevs text - added May 18, 2020
 A reboot is required to apply changes=需要重启才能应用更改
 ALERT=警报
-Bind selected to VFIO at Boot=在引导时对 VFIO 选择了绑定
+Bind selected to VFIO at Boot=在系统引导时绑定已选项至 VFIO
 CPU Thread Pairings=CPU 线程配对
 Changes saved=更改已保存
 Function Level Reset FLR supported=支持功能级复位 (FLR)
@@ -202,7 +219,7 @@ Your system has booted with the PCIe ACS Override setting enabled=您的系统�
 <br>显示命令行参数（例如 PCIe ACS 覆盖、PCI 存根等）。
 <br>保存系统变量。
 + *SMART reports*
-<br>保存系统中存在的每个磁盘的 SMART 报告。
+<br>保存系统中存在的每个硬盘的 SMART 报告。
 + *Docker*
 <br>保存文件 *docker.log*、*libvirtd.log*、*libvirt/qemu/\*.log* 和 *vfio-pci*。
 :end
@@ -220,26 +237,23 @@ Your system has booted with the PCIe ACS Override setting enabled=您的系统�
 :end
 
 :newconfig_plug:
-该实用程序用于重置阵列磁盘配置，以使所有磁盘都显示为“新”磁盘，
-就好像它是全新的服务器一样。
+此实用程序用于重置硬盘阵列配置，使所有硬盘都显示为“新”硬盘，就好像这是一台全新的服务器。
 
-当您添加或删除了多个驱动器并且希望基于新配置重建奇偶校验时，
-此功能很有用。
+当您添加或删除了多个驱动器并且希望基于新配置重建奇偶校验时，此功能将派上用场。
 
-重置阵列***之后***，使用 *'保留当前分配'* 选项填充所需的磁盘插槽。默认情况下，**不**填充磁盘插槽。
+调整*“保留当前分配”*选项，可在重置阵列***后***自动填充对应的硬盘插槽。默认**不会**填充任何硬盘插槽。
 
-**请勿使用此实用程序，因为它会重建故障驱动器** —— 它将产生相反的效果，
-将***无法***重建现有的故障驱动器 —— 您已受到警告！
+请注意，**此实用程序不应用于重建故障驱动器**——相反，它会导致现有的故障驱动器***无法***重建！
 :end
 
 :newperms_1_plug:
 从 5.0 之前的 Unraid 服务器版本升级到 Unraid v5 或更高版本之后，必须执行这项一次性操作。
-执行这项一次性操作时，选择**所有磁盘**。
+执行这项一次性操作时，选择**所有硬盘**。
 
 从 Active Directory 过渡到非 Active Directory 集成时，
 该实用程序还可用于恢复文件和目录的默认所有权/权限。
 
-该实用程序将启动一个后台进程，该进程将访问每个数据磁盘和缓存磁盘，
+该实用程序将启动一个后台进程，该进程将访问每个数据硬盘和缓存硬盘，
 选择用户共享并将文件和目录所有权更改为*无人/用户*（即 uid / gid 更改为 99/100），
 并按以下方式设置权限：
 :end

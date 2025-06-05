@@ -1,10 +1,10 @@
 Add User=添加用户
 Add=添加
-Click Add User to create a user for remote shares access=点击**添加用户**创建一个可访问远程共享的用户
-Click to select PNG file=单击选择 PNG 文件
+Click Add User to create a user for remote shares access=点击**添加用户**创建一个可远程访问共享的用户
+Click to select PNG file=选择 PNG 文件
 Custom image=自定义图像
 Description=描述
-Do not use reserved names=请勿使用保留的名称
+Do not use reserved names=请勿使用已有的名称
 Drag-n-drop a PNG file or click the image at the left=拖放 PNG 文件或单击左侧的图像
 Edit User=编辑用户
 Invalid Key=无效秘钥
