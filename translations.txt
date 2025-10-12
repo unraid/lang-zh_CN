@@ -84,6 +84,7 @@ Copying=复制中
 CPU=CPU
 Create Unraidnet Account=创建 Unraid.net 账户
 Dashboard=仪表板
+Favorites=收藏夹
 Data copied=数据已复制
 Data-Rebuild=数据重建
 Dated=日期
