@@ -2471,255 +2471,238 @@ Cloudflare 用户需要注意：Cloudflare 的代理专为 http 流量设计，�
 默认情况下日志记录到syslog，但如果您想设置不同的日志位置，请设置文件名。
 :end
 
-; New entries (2) - 2024-02-10
-
 :WOL_intro_help:
-This page allows the setup to start/resume and stop VMs, Containters(Docker and LXC) using WOL magic packets
+此页面用于设置通过 WOL（网络唤醒）魔术包启动、恢复或停止虚拟机、容器（Docker 与 LXC）。
 
-It does setup wake up of the Unraid server.
+它还可以设置唤醒 Unraid 服务器本身。
 
-The process will look for the defined mac address defined within the service(VM or container) with the exception of dockers. Dockers do not have a mac address until they are running so you will need to define a user mac address to allow you to start them
+该过程会在服务（虚拟机或容器）中查找已定义的 MAC 地址（Docker 容器除外）。由于 Docker 在运行前并无 MAC 地址，因此需要手动定义一个用户 MAC 地址以便通过 WOL 启动它们。
 
-If the service is paused a WOL Packet will resume. 
+如果服务处于暂停状态，收到 WOL 包后将恢复运行。
 
-For each service you can set: enable, disable or enable and shutdown
+对于每个服务，你可以设置：启用、禁用或“启用并关机”。
 
-When the enable and shutdown is set if the service is running when the next WOL packet is recieved a shutdown will be performed.
+当设置为“启用并关机”时，如果服务当前正在运行，则在接收到下一个 WOL 包时将执行关机操作。
 :end
 
 :WOL_run_shutdown_help:
-If set to yes when wake on lan packets are received checks are carrried out and if enabled for service and that service is running the entity will be shutdown. System has to be set to Enabled and Shutdwon for it to be action.
+若设置为“是”，当接收到网络唤醒包时，系统会执行检测；若服务启用了该选项且当前正在运行，将会对该服务执行关机操作。系统需设置为“启用并关机”模式，此选项方可生效。
 :end
 
-; New entries (35) - 2024-12-08
-
 :info_zfs_scrub_help:
-**Scrub** runs the *zfs scrub* program which will read all data and metadata blocks from all
-devices and verify checksums.
+**Scrub（清理）** 会运行 *zfs scrub* 程序，从所有设备读取所有数据和元数据块并验证校验和。
 
-Click the **Upgrade Pool** button to upgrade the ZFS pool to enable the latest ZFS features.
+点击 **升级池（Upgrade Pool）** 按钮可升级 ZFS 池以启用最新的 ZFS 功能。
 :end
 
 :docker_pid_limit_help:
-Set a PID Limit to limit the number of PIDs that a docker can use. The default is 2048.  Set to zero for unlimited PIDs (not recommended).
+设置 PID 限制，用于限制 Docker 容器可使用的进程数。默认值为 2048。设置为 0 表示无限制（不推荐）。
 :end
 
 :docker_storage_driver_help:
-overlay2 (default): Will use overlay2 as the storage driver for Docker, regardless of the underlying filesystem.
+overlay2（默认）：无论底层文件系统为何类型，都使用 overlay2 作为 Docker 的存储驱动。
 
-native: The native storage driver for your underlying filesystem will be used (XFS: overlay2 | ZFS: zfs | BTRFS: btrfs).
+native：使用底层文件系统的原生驱动（XFS：overlay2 | ZFS：zfs | BTRFS：btrfs）。
 
-ATTENTION: Changing the storage type from an existing Docker installation is not possible, you have to delete your Docker directory first, change the storage type and then reinstall your containers.
-It is recommended to take a screenshot from your Docker containers before changing the storage type. After deleting and changing the storage type, reinstall the containers by clicking Add Container on the Docker page and select one by one from the drop down to reinstall them with your previous settings).
+注意：无法直接在现有 Docker 安装中切换存储类型。必须先删除 Docker 目录，再更改存储类型，然后重新安装容器。
+建议在更改前对 Docker 容器列表进行截图。删除并切换存储类型后，可通过 Docker 页面点击“添加容器”，从下拉菜单中逐个重新安装以保留之前的配置。
 :end
 
 :docker_storage_driver_active_help:
-This is the storage driver for Docker.
+这是当前 Docker 使用的存储驱动。
 :end
 
 :mgmt_wg_access_urls_help:
-These URLs will only work when connected via the appropriate WireGuard tunnel as configured on ***Settings > VPN Manager***
+这些 URL 仅在通过 ***设置 > VPN 管理器*** 中配置的相应 WireGuard 隧道连接时有效。
 :end
 
 :mgmt_tailscale_access_urls_help:
-These URLs will only work when connected to the appropriate Tailscale Tailnet.
+这些 URL 仅在连接到相应的 Tailscale Tailnet 时有效。
 :end
 
 :syslog_remote_system_identifier_help:
-Select the identifier for the remote system (used in the logfile name). 
+选择远程系统的标识符（用于日志文件名）。
 
-* "IP Address" uses the IP address (IPv4 or IPv6) of the sending system.
-* "Hostname (from syslog message)" uses the hostname included in each syslog message.
-* "Hostname (from DNS reverse lookup)" performs a DNS reverse lookup for the sending IP and uses the result.
-
+* “IP 地址”：使用发送系统的 IPv4 或 IPv6 地址。
+* “主机名（来自 syslog 消息）”：使用每条 syslog 消息中包含的主机名。
+* “主机名（通过 DNS 反向解析）”：对发送方 IP 进行 DNS 反向解析并使用结果。
 :end
 
 :display_favorites_enabled_help:
-Enables favorite support. If set to no, will stop heart icon showing for additions. If existing favorites are saved, favorites tab and pre-saved options will still continue to show and function until all are deleted.
+启用收藏功能。若设置为“否”，则不再显示心形收藏图标。若已有收藏项保存，收藏标签页和预存选项仍可显示与使用，直到全部删除。
 :end
 
 :vms_rdpopt_help:
-Adds option to menu to start RDP. RDP file is downloaded. You need to set browser to open when ready.
+在菜单中添加“启动 RDP”选项。点击后会下载 RDP 文件，你需要将浏览器设置为自动打开该文件。
 :end
 
 :vms_usage_help:
-Show metrics for CPU both guest and host percentage, memory, disk io and network io.
+显示虚拟机的性能指标，包括 CPU（宿主与虚拟机）使用率、内存、磁盘 I/O 和网络 I/O。
 :end
 
 :vms_usage_timer_help:
-Setting in seconds for metrics refresh time.
+设置指标刷新时间（单位：秒）。
 :end
 
 :apc_ups_override_ups_capacity_help:
-If your device doesn't natively report Nominal Power ('NOMPOWER') from 'apcupsd', but does report the Load Percentage ('LOADPCT'), you can manually define the UPS capacity rating in Watts (W) (this is the 'real power' value in Watts (W), not the 'apparent power' in Volt Amps (VA), and should be detailed on your UPS manual or product listing) and the plugin will dynamically calculate a virtual Nominal Power estimate ('≈') by comparing the Override UPS Capacity (W) and the current Load Percentage. It is only an estimate, as it doesn't factor in things like the UPS' efficiency.
+如果设备未通过 “apcupsd” 报告额定功率（'NOMPOWER'），但报告了负载百分比（'LOADPCT'），可在此手动定义 UPS 的额定功率（单位：瓦特 W）。插件会通过额定功率与当前负载百分比动态估算虚拟额定功率值（≈）。  
+此值仅供估算，不考虑 UPS 效率等因素。
 :end
 
 :docker_container_network_help:
-This allows your container to utilize the network configuration of another container. Select the appropriate container from the list.<br/>This setup can be particularly beneficial if you wish to route your container's traffic through a VPN.
+允许当前容器使用另一个容器的网络配置。从列表中选择相应容器。  
+当你希望通过 VPN 路由容器流量时，此设置特别有用。
 :end
 
 :docker_tailscale_help:
-Enable Tailscale to add this container as a machine on your Tailnet.
+启用 Tailscale，将此容器作为一台设备加入到你的 Tailnet 中。
 :end
 
 :docker_tailscale_hostname_help:
-Provide the hostname for this container. It does not need to match the container name, but it must be unique on your Tailnet. Note that an HTTPS certificate will be generated for this hostname, which means it will be placed in a public ledger, so use a name that you don't mind being public.
-For more information see <a href="https://tailscale.com/kb/1153/enabling-https" target="_blank">enabling https</a>.
+为该容器指定主机名。无需与容器名称一致，但必须在 Tailnet 中唯一。  
+系统会为该主机名生成 HTTPS 证书，该证书会被公开记录，因此请使用你愿意公开的名称。  
+详细信息参见 <a href="https://tailscale.com/kb/1153/enabling-https" target="_blank">启用 HTTPS</a>。
 :end
 
 :docker_tailscale_be_exitnode_help:
-Enable this if other machines on your Tailnet should route their Internet traffic through this container, this is most useful for containers that connect to commercial VPN services. 
-Be sure to authorize this Exit Node in your <a href="https://login.tailscale.com/admin/machines" target="_blank">Tailscale Machines Admin Panel</a>.
-For more details, see the Tailscale documentation on <a href="https://tailscale.com/kb/1103/exit-nodes" target="_blank">Exit Nodes</a>.
+若希望其他设备通过此容器的网络访问互联网，可启用此选项（常用于商用 VPN 容器）。  
+请务必在 <a href="https://login.tailscale.com/admin/machines" target="_blank">Tailscale 管理控制台</a>中授权该出口节点。  
+详情参阅 <a href="https://tailscale.com/kb/1103/exit-nodes" target="_blank">Exit Nodes</a> 文档。
 :end
 
 :docker_tailscale_exitnode_ip_help:
-Optionally route this container's outgoing Internet traffic through an Exit Node on your Tailnet. Choose the Exit Node or input its Tailscale IP address.
-For more details, see <a href="https://tailscale.com/kb/1103/exit-nodes" target="_blank">Exit Nodes</a>.
+可选：通过 Tailnet 中的某个出口节点路由此容器的外部流量。选择出口节点或输入其 Tailscale IP 地址。  
+详情参阅 <a href="https://tailscale.com/kb/1103/exit-nodes" target="_blank">Exit Nodes</a> 文档。
 :end
 
 :docker_tailscale_lanaccess_help:
-Only applies when this container is using an Exit Node. Enable this to allow the container to access the local network.
+仅当容器使用出口节点时适用。启用后，允许容器访问本地网络。
 
-<b>WARNING:</b>&nbsp;Even with this feature enabled, systems on your LAN may not be able to access the container unless they have Tailscale installed.
+<b>警告：</b> 即使启用此功能，局域网中的系统若未安装 Tailscale，仍无法访问该容器。
 :end
 
 :docker_tailscale_userspace_networking_help:
-When enabled, this container will operate in a restricted environment. Tailscale DNS will not work, and the container will not be able to initiate connections to other Tailscale machines. However, other machines on your Tailnet will still be able to communicate with this container.
+启用后，容器将在受限环境中运行。Tailscale DNS 将不可用，且容器无法主动连接其他 Tailscale 设备，但其他设备仍可访问该容器。
 
-When disabled, this container will have full access to your Tailnet. Tailscale DNS will work, and the container can fully communicate with other machines on the Tailnet.
-However, systems on your LAN may not be able to access the container unless they have Tailscale installed.
+若禁用，则容器可完全访问 Tailnet。Tailscale DNS 将可用，容器能与其他设备互通。  
+但局域网中的系统若未安装 Tailscale，可能仍无法访问该容器。
 :end
 
 :docker_tailscale_ssh_help:
-Tailscale SSH is similar to the Docker "Console" option in the Unraid webgui, except you connect with an SSH client and authenticate via Tailscale.
-For more details, see the <a href="https://tailscale.com/kb/1193/tailscale-ssh" target="_blank">Tailscale SSH</a> documentation..
+Tailscale SSH 类似于 Unraid WebUI 中的 Docker“控制台”功能，但通过 SSH 客户端连接并通过 Tailscale 验证身份。  
+详情参见 <a href="https://tailscale.com/kb/1193/tailscale-ssh" target="_blank">Tailscale SSH</a> 文档。
 :end
 
 :docker_tailscale_serve_mode_help:
-Enabling <b>Serve</b> will automatically reverse proxy the primary web service from this container and make it available on your Tailnet using https with a valid certificate! 
+启用 <b>Serve</b> 后，将自动通过反向代理公开该容器的主要 Web 服务，使其在 Tailnet 内可通过 HTTPS 访问。
 
-Note that when accessing the <b>Tailscale WebUI</b> url, no additional authentication layer is added beyond restricting it to your Tailnet - the container is still responsible for managing usernames/passwords that are allowed to access it. Depending on your configuration, direct access to the container may still be possible as well.
+访问 <b>Tailscale WebUI</b> URL 时，不会额外添加认证层，容器自身仍需管理用户名与密码。  
+根据配置，仍可能存在直接访问容器的途径。
 
-For more details, see the <a href="https://tailscale.com/kb/1312/serve" target="_blank">Tailscale Serve</a> documentation.
+<b>Funnel</b> 类似于 <b>Serve</b>，但会将服务公开至互联网，请谨慎使用，因为可能受到攻击。  
+阅读 <a href="https://tailscale.com/kb/1223/funnel" target="_blank">Tailscale Funnel</a> 文档以了解更多。
 
-If the documentation recommends additional settings for a more complex use case, enable "Tailscale Show Advanced Settings". Support for these advanced settings is not available beyond confirming the commands are passed to Tailscale correctly.
-
-<b>Funnel</b> is similar to <b>Serve</b>, except that the web service is made available on the open Internet. Use with care as the service will likely be attacked. As with <b>Serve</b>, the container itself is responsible for handling any authentication.
-
-We recommend reading the <a href="https://tailscale.com/kb/1223/funnel" target="_blank">Tailscale Funnel</a> documentation. before enabling this feature.
-
-<b>Note:</b>&nbsp;Enabling <b>Serve</b> or <b>Funnel</b> publishes the Tailscale hostname to a public ledger.
-For more details, see the Tailscale Documentation: <a href="https://tailscale.com/kb/1153/enabling-https" target="_blank">Enabling HTTPS</a>.
+<b>注意：</b> 启用 <b>Serve</b> 或 <b>Funnel</b> 时，会将 Tailscale 主机名发布至公共记录。  
+详见 <a href="https://tailscale.com/kb/1153/enabling-https" target="_blank">启用 HTTPS</a>。
 :end
 
 :docker_tailscale_serve_port_help:
-This field should specify the port for the primary web service this container offers. Note: it should specify the port in the container, not a port that was remapped on the host.
+指定容器提供的主要 Web 服务端口（容器内部端口，而非主机映射端口）。
 
-The system attempted to determine the correct port automatically. If it used the wrong value then there is likely an issue with the "Web UI" field for this container, visible by switching from "Basic View" to "Advanced View" in the upper right corner of this page. 
+系统会尝试自动检测此端口；如错误，请切换为“高级视图”并检查容器的 “Web UI” 字段。
 
-In most cases this port is all you will need to specify in order to Serve the website in this container, although additional options are available below for more complex containers.
-
-This value is passed to the '<serve_port>' portion of this command which starts serve or funnel:<br>
-'tailscale [serve|funnel] --bg --<protocol><protocol_port><path> http://localhost:'**'<serve_port>'**'<local_path>'<br>
-For more details see the <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve Command Line</a> documentation.
+一般情况下仅需指定此端口即可启用 Serve 功能。  
+更多细节请参阅 <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve 命令行</a> 文档。
 :end
 
 :docker_tailscale_show_advanced_help:
-Here there be dragons!
+此处暗藏风险，请谨慎操作！
 :end
 
 :docker_tailscale_serve_local_path_help:
-When not specified, this value defaults to an empty string. It is passed to the '<local_path>' portion of this command which starts serve or funnel:<br>
-'tailscale [serve|funnel] --bg --<protocol><protocol_port><path> http://localhost:<serve_port>'**'<local_path>'**<br>
-For more details see the <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve Command Line</a> documentation.
+若未指定，此值默认为空。该值将传递至命令中的 `<local_path>` 部分。  
+详情参阅 <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve 命令行</a> 文档。
 :end
 
 :docker_tailscale_serve_protocol_help:
-When not specified, this value defaults to "https". It is passed to the '<protocol>' portion of this command which starts serve or funnel:<br>
-'tailscale [serve|funnel] --bg --'**'<protocol>'**'=<protocol_port><path> http://localhost:<serve_port><local_path>'<br>
-For more details see the <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve Command Line</a> documentation.
+若未指定，此值默认为 “https”。该值将传递至命令中的 `<protocol>` 部分。  
+详情参阅 <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve 命令行</a> 文档。
 :end
 
 :docker_tailscale_serve_protocol_port_help:
-When not specified, this value defaults to "=443". It is passed to the '<protocol_port>' portion of this command which starts serve or funnel:<br>
-'tailscale [serve|funnel] --bg --<protocol>'**'<protocol_port>'**'<path> http://localhost:<serve_port><local_path>'<br>
-For more details see the <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve Command Line</a> documentation.
+若未指定，此值默认为 “=443”。该值将传递至命令中的 `<protocol_port>` 部分。  
+详情参阅 <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve 命令行</a> 文档。
 :end
 
 :docker_tailscale_serve_path_help:
-When not specified, this value defaults to an empty string. It is passed to the '<path>' portion of this command which starts serve or funnel:<br>
-'tailscale [serve|funnel] --bg --<protocol><protocol_port>'**'<path>'** 'http://localhost:<serve_port><local_path>'<br>
-For more details see the <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve Command Line</a> documentation.
+若未指定，此值默认为空。该值将传递至命令中的 `<path>` 部分。  
+详情参阅 <a href="https://tailscale.com/kb/1242/tailscale-serve" target="_blank">Tailscale Serve 命令行</a> 文档。
 :end
 
 :docker_tailscale_serve_webui_help:
-If <b>Serve</b> is enabled this will be an https url with a proper domain name that is accessible over your Tailnet, no port needed!
+若启用了 <b>Serve</b>，此处将生成一个带域名的 HTTPS URL，可通过 Tailnet 访问（无需端口号）。
 
-If <b>Funnel</b> is enabled the same url will be available on the Internet.
+若启用了 <b>Funnel</b>，同一 URL 将可在公网访问。
 
-If they are disabled then the url will be generated from the container's main "Web UI" field, but modified to use the Tailscale IP. If the wrong port is specified here then switch from "Basic View" to "Advanced View" and review the "Web UI" field for this container.
+若未启用两者，则会根据容器的 “Web UI” 字段生成 URL，并替换为 Tailscale IP。
+如端口错误，请切换到“高级视图”检查 “Web UI” 设置。
 :end
 
 :docker_tailscale_advertise_routes_help:
-If desired, specify any routes that should be passed to the **'--advertise-routes='** parameter when running **'tailscale up'**.
-For more details see the <a href="https://tailscale.com/kb/1019/subnets#connect-to-tailscale-as-a-subnet-router" target="_blank">Subnet routers</a> documentation.
+如有需要，可在运行 **'tailscale up'** 时通过 **'--advertise-routes='** 参数指定需通告的路由。  
+详情参阅 <a href="https://tailscale.com/kb/1019/subnets#connect-to-tailscale-as-a-subnet-router" target="_blank">子网路由器</a> 文档。
 :end
 
 :docker_tailscale_accept_routes_help:
-When enabled, this will accept your subnet routes from other devices, adding the **'--accept-routes'** parameter when running **'tailscale up'**.
-For more details see the <a href="https://tailscale.com/kb/1019/subnets?q=allow+routes#use-your-subnet-routes-from-other-devices" target="_blank">Use your subnet routes from other devices</a> documentation.
+启用后，将接受来自其他设备的子网路由，并在运行 **'tailscale up'** 时添加 **'--accept-routes'** 参数。  
+详情参阅 <a href="https://tailscale.com/kb/1019/subnets?q=allow+routes#use-your-subnet-routes-from-other-devices" target="_blank">使用其他设备的子网路由</a> 文档。
 :end
 
 :docker_tailscale_daemon_extra_params_help:
-Specify any extra parameters to pass when starting **'tailscaled'**.
-For more details see the <a href="https://tailscale.com/kb/1278/tailscaled" target="_blank">tailscaled</a> documentation.
+指定启动 **'tailscaled'** 时传递的额外参数。  
+详情参阅 <a href="https://tailscale.com/kb/1278/tailscaled" target="_blank">tailscaled</a> 文档。
 :end
 
 :docker_tailscale_extra_param_help:
-Specify any extra parameters to pass when running **'tailscale up'**.
-For more details see the <a href="https://tailscale.com/kb/1080/cli#up" target="_blank">Tailscale CLI</a> documentation.
+指定运行 **'tailscale up'** 时传递的额外参数。  
+详情参阅 <a href="https://tailscale.com/kb/1080/cli#up" target="_blank">Tailscale CLI</a> 文档。
 :end
 
 :docker_tailscale_statedir_help:
-If state directory detection fails on startup, you can specify a persistent directory in the container to override automatic detection, i.e. '/container-path/.tailscale_state'
+若在启动时自动检测状态目录失败，可在此指定容器内的持久化目录（例如 '/container-path/.tailscale_state'）以覆盖自动检测。
 :end
 
 :docker_tailscale_troubleshooting_packages_help:
-Enable this to install 'ping', 'nslookup', 'curl', and 'speedtest-cli' into the container to help troubleshoot networking issues. Once the issues are resolved we recommend disabling this to reduce the size of the container.
+启用后，将在容器中安装 “ping”、“nslookup”、“curl” 与 “speedtest-cli” 等工具，用于排查网络问题。问题解决后建议关闭此功能以减小容器体积。
 :end
 
 :WOL_run_docker_help:
-If set to yes when wake on lan packets are received checks are carrried out for dockers otherwise dockers will be ignored.
+若设置为“是”，当接收到网络唤醒包时将执行针对 Docker 容器的检测，否则将忽略 Docker 容器。
 :end
 
-; New entries (4) - 2025-04-21
-
 :nfs_security_rules_help:
-Put the rule for each IP address on a separate line and terminate the Rule with a new line.
-You cannot enter a Rule in the format IP1,IP2(...).  Unraid does not format the exports file in that format.
+为每个 IP 地址单独输入规则，并以换行符结束。  
+不能使用 IP1,IP2(...) 这种格式。Unraid 不支持这种导出文件格式。
 
-The default rules for every NFS Rule are - async and no_subtree_check.
+所有 NFS 规则的默认参数为：async 和 no_subtree_check。
 
-**Note:** The Public Rule used is '*(rw,sec=sys,insecure,anongid=100,anonuid=99,no_root_squash)'.
+**注意：** 公共规则使用 '*(rw,sec=sys,insecure,anongid=100,anonuid=99,no_root_squash)'。
 :end
 
 :nfs_server_max_protocol_help:
-Select the max NFS Protocol version you want your Unraid server to support.
+选择 Unraid 服务器支持的最大 NFS 协议版本。
 :end
 
 :nfs_threads_help:
-Set the number of threads for NFS.  For light NFS loads, 8 is sufficient. For heaver NFS loads, a higher number of threads might be appropriate.
+设置 NFS 的线程数。对于轻负载，8 个线程足够；对于高负载，可适当增加线程数。
 
-If there aren't enough threads, NFS will probably crash.
+若线程数不足，NFS 可能会崩溃。
 :end
 
 :shares_fuse_file_descriptors_io_help:
-Set the number of fuse file descriptors.  With a lot of file activity on the array, you may need to increase this value.
+设置 FUSE 文件描述符数量。当阵列文件活动频繁时，可能需要增加该值。
 :end
 
-; New entries (2) - 2025-05-31
-
 :nfs_client_max_protocol_help:
-Select the max NFS Protocol version you want to use to mount your remote shares.
+选择用于挂载远程共享时的最大 NFS 协议版本。
 :end
