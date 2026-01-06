@@ -12,6 +12,8 @@ Rescan=重新扫描
 Save=保存
 Sensors=传感器
 Unload drivers=卸载驱动
+Processor=CPU温度
+Mainboard=主板温度
 
 :temp_drivers_plug:
 > 点击 “检测驱动” 将会调用 “sensors-detect” 脚本以识别设备传感器所需驱动。检测完毕后将会保存为列表。<br>
