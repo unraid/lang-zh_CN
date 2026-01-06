@@ -49,6 +49,7 @@ Docker Hub URL=Docker Hub 网址
 Docker Service failed to start=Docker 服务无法启动
 Downloaders=下载程序
 Drivers=驱动
+Compose Stack=Compose 堆栈
 Edit Configuration=编辑配置
 Error gathering Tailscale information from container=从容器中收集 Tailscale 信息时出错
 Exit Node=退出节点
