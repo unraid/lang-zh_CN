@@ -306,7 +306,6 @@ Use default=使用默认值
 Use only lowercase with no special characters or leadingtrailing digits=仅使用小写字母，没有特殊字符或前导/尾随数字
 use printable characters only=仅使用可打印字符
 Used=已使用
-Unassigned Disks/Remote Shares/Historical Unassigned Devices=未分配的磁盘/远程共享/历史未分配设备
 Value=值
 W=瓦特
 WARNING canceling may leave the array unprotected=警告：取消操作可能会使阵列不受保护
