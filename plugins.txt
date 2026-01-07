@@ -10,6 +10,7 @@ Delete Plugin=删除插件
 DOWNGRADE TO VERSION=**降级至版本**
 Enter URL of remote plugin file or local plugin file=输入插件的 URL 地址或本地插件文件的路径
 ERROR=**错误**
+Force Install=强制安装
 I have read the release notes=我已经阅读了发行日志
 Install Plugin=安装插件
 Install=安装

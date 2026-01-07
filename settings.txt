@@ -213,6 +213,7 @@ Display device name=显示设备名称
 Display position=显示位置
 Display Settings=显示设置
 Display width=显示宽度
+Show Terminal Button in header=在标题显示控制台按钮
 Display world-wide-name in device ID=在设备 ID 中显示通用名称
 DNS Propagation is PENDING=DNS 传播正在**等待中**
 DNS Rebinding Protection is ENABLED=已**开启** DNS 重绑定保护
