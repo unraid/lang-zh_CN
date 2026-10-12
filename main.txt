@@ -416,3 +416,6 @@ Tx=发送（Tx）
 Upgrade Pool=升级池
 While there is some risk, if it is not possible to first mount the filesystem to clear the log, zeroing it is the only option to try and repair the filesystem, and in most cases it results in little or no data loss=尽管存在一定风险，如果无法先挂载文件系统以清除日志，将日志归零是尝试修复文件系统的唯一选项，在大多数情况下仅会造成极少或无数据丢失
 Zero Log=清零日志
+Boot device backup=创建引导驱动器备份
+Data Partition=数据分区
+Internal Boot=内置引导
