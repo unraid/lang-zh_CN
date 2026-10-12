@@ -993,3 +993,7 @@ Use ASCII characters from space to tilde=仅使用从空格（' '）到波浪号
 vcpu allocated to vm=分配给虚拟机的 vCPU 数量
 Wi-Fi=Wi-Fi
 Wireless=无线
+Power Options=电源选项
+Boot Parameters=引导参数
+Menu View=菜单视图
+Raw View=原始视图
