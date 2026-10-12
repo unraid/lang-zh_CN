@@ -1,5 +1,6 @@
 %s ago=%s 以前
 %s used of %s %s %%=已使用 %s/%s，%s %%
+Used %s of %s %s %%=已使用 %s/%s，%s %%
 1 m=1 分钟
 10 s=10 秒
 2 m=2 分钟
@@ -198,3 +199,4 @@ TX=发送（TX）
 Unchecked will use QEMU External Snapshot=未选中时将使用 QEMU 外部快照
 utilization warnings=使用率警告
 Virtual Machines Usage=虚拟机使用情况
+Mbr Status=MBR 状态
