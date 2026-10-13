@@ -182,10 +182,11 @@ Onboarding=入门
 Internal Boot=内置引导
 Setup Wizard=设置向导
 OPEN WIZARD=打开向导
-Launch onboarding to customize your server and set up an internal boot drive.=启动入门向导以自定义您的服务器并设置内置引导驱动器。
-Array must be stopped to open onboarding.=要打开入门向导，磁盘阵列必须先**停止**
-Configure an internal boot device without opening the full onboarding wizard.=无需打开完整的入门向导即可配置内置引导设备。
-Array must be stopped to configure internal boot.=要配置内置引导，磁盘阵列必须先**停止**
+Open Wizard=打开向导
+Launch onboarding to customize your server and set up an internal boot drive=启动入门向导以自定义您的服务器并设置内置引导驱动器。
+Array must be stopped to open onboarding=要打开入门向导，磁盘阵列必须先**停止**
+Configure an internal boot device without opening the full onboarding wizard=无需打开完整的入门向导即可配置内置引导设备。
+Array must be stopped to configure internal boot=要配置内置引导，磁盘阵列必须先**停止**
 ; Sysdevs text - added May 18, 2020
 A reboot is required to apply changes=需要重启才能应用更改
 ALERT=警报
@@ -206,6 +207,7 @@ This controller is bound to vfio, connected drives are not visible=此控制器�
 To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=要查看硬件的自然 IOMMU 组，请执行以下操作, 转到[虚拟机管理器]页面，并将 **PCIe ACS 覆盖**设置为**已禁用**
 USB Devices=USB 设备
 Your system has booted with the PCIe ACS Override setting enabled=您的系统已启动且启用了 PCIe ACS 覆盖设置
+License key type=许可证密钥类型
 
 :diagnostics_1_plug:
 此实用程序用于故障排除。它将收集所有系统信息和配置文件，并将这些文件打包到一个可以保存在本地的 ZIP 文件。
