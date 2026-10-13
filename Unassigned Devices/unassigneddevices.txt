@@ -25,7 +25,7 @@ Change SMB=更改 SMB
 Changing the Mount Point will also change the disk label on all disks and the pool name on a ZFS disk=更改挂载点还将更改所有磁盘上的磁盘标签和 ZFS 磁盘上的存储池名称
 Clear=清除
 Click to select ISO file=点击选择 ISO 文件
-Click to view/hide partitions and mount points=点击显示/隐藏分区与挂载点
+Click to viewhide partitions and mount points=点击显示/隐藏分区与挂载点
 Complete=完成
 Device=设备
 Disks=磁盘
@@ -33,7 +33,7 @@ Disk Label=磁盘标签
 Disk Log Information=磁盘日志信息
 Disk Sharing must be disabled to add a Root Share=磁盘共享必须关闭才能添加根共享
 Do NOT use a remote share local mount in a Docker container or VM for critical data=不要在 Docker 容器或虚拟机中使用本地挂载的远程共享存储关键数据
-Do not put files or folders into the /mnt/rootshare/ folder=不要在 /mnt/rootshare/ 目录下存放文件
+Do not put files or folders into the mntrootshare folder=不要在 /mnt/rootshare/ 目录下存放文件或文件夹
 Domain=域
 Edit Device Script=编辑设备脚本
 Edit ISO File Script=编辑 ISO 文件脚本
@@ -97,7 +97,6 @@ Open=打开
 Partition=分区
 Partition and Format Disk=分区并格式化磁盘
 Passed=已直通
-Passed Through=已直通
 Password=密码
 Pool=存储池
 Preclear=预清除
@@ -125,16 +124,16 @@ Serial Number Mount Point=序列号（挂载点）
 Shares=共享
 Share Type=共享类型
 share for=共享
-Show/Hide Historical Unassigned Devices=显示/隐藏历史未分配的设备
-Show/Hide SMB/NFS/ISO Shares=显示/隐藏 SMB/NFS/ISO 共享
-Show/Hide Unassiged Disk Devices=显示/隐藏未分配的磁盘设备
+ShowHide Historical Unassigned Devices=显示/隐藏历史未分配的设备
+ShowHide SMBNFSISO Shares=显示/隐藏 SMB/NFS/ISO 共享
+ShowHide Unassiged Disk Devices=显示/隐藏未分配的磁盘设备
 Simple=简单
 SMB Shares=SMB 共享
 Source=源
 SSD cannot be spun down=SSD 无法停转
 Success=成功
 Show Historical Devices=显示历史设备
-Show SMB/NFS/ISO Shares=显示 SMB/NFS/ISO 共享
+Show SMBNFSISO Shares=显示 SMB/NFS/ISO 共享
 Show Disk Devices=显示磁盘设备
 This is a way to gather Unraid shares into one Root Share=这是一种将 Unraid 共享文件夹聚合进一个根目录共享的方式
 This will remove the ISO file share for=这将会移除下列 ISO 文件共享
@@ -144,7 +143,7 @@ This will remove the=这将会移除
 Timeout: Failed to get unassigned devices information - check the syslog=超时：获取未分配设备信息失败 - 请检查系统日志
 to confirm=以确定
 to format=以格式化
-Unassigned Devices Settings=Unassigned Devices（未分配的设备）设置
+Unassigned Devices Settings=未分配的设备设置
 Unassigned Disk Devices=未分配的磁盘设备
 Unassigned Disks=未分配的磁盘
 Unmount=卸载
@@ -162,12 +161,43 @@ WARNING=警告
 When you copy files between shares in the Root Share, the files may not end up on the expected disks=在根共享的共享文件夹内复制文件时，文件可能不会复制到期望的磁盘上
 Working=正在工作
 You can also subject yourself to security issues like ransomware by exposing all your shares in one Root Share=将所有共享文件夹暴露在唯一的根共享内可能使你自己面临勒索软件等安全问题
-You must enable NFS in Settings->NFS to mount NFS shares=你必须在“设置->NFS”处启用 NFS 才能挂载 NFS 共享
-You must enable SMB in Settings->SMB to mount SMB shares=你必须在“设置->SMB”处启用 SMB 才能挂载 SMB 共享
 You must enable the Destructive Mode in UD Settings before you can Format this disk=你必须在 Unassigned Devices（未分配的设备）设置中启用破坏性模式才能格式化此磁盘
 You WILL have problems if you do=你将会面临问题，如果你（做）
 ZFS Pool Name=ZFS 存储池名称
 ZFS Volume=ZFS 卷
+Temp=温度
+Root Share=根共享
+Pool Name=存储池名称
+Enter the Pool Name for this device=输入此设备的存储池名称
+This wil also be the mountpoint for the disk=这也将是该磁盘的挂载点
+If using a disk password, be sure to enter the password for this disk in UD Settings so it can be mounted=如果使用了磁盘密码，请确保在 UD 设置中为此磁盘输入密码，以便能够挂载
+Remember your password=请记住您的密码
+It cannot be recovered=密码无法恢复
+Type=输入
+Formatted=已格式化
+Format failed=格式化失败
+Data on this disk will be lost=此磁盘上的数据将会丢失
+to delete this partition=以删除此分区
+Removing=正在移除
+Clear Disk=清除磁盘
+to clear this disk of all partitions=以清除此磁盘的所有分区
+If this disk was pre-cleared, you will remove the pre-clear signature If you add the disk to the array and the pre-clear signature is removed, Unraid will go through the lengthy process of clearing the disk again=如果此磁盘已预清除，这么做将会移除预清除标记。如果你将磁盘添加到阵列中并且预清除标记已移除，Unraid 将启动再次清除磁盘的冗长进程
+Remove ISO File mount=移除 ISO 文件挂载
+Remove Disk Config=移除磁盘配置
+Remove SMBNFS mount=移除 SMB/NFS 挂载
+Add Remote Share=添加远程共享
+Click to select NFS=点击选择 NFS
+Click to select SMB=点击选择 SMB
+Use caution when using a remote share local mount in a Docker Container or VM for critical data=在 Docker 容器或虚拟机中使用本地挂载的远程共享存储关键数据时请小心
+Media mapped to apps like Plex should not be a problem=映射到 Plex 等应用的媒体文件通常不会有问题
+If the remote share goes offline, you may have problems=如果远程共享离线，你可能会遇到问题
+Enter or Select Server=输入或选择服务器
+You will need to enter credentials to list the shares=你需要输入凭据才能列出共享
+Enter or Select Share=输入或选择共享
+Change=更改
+Change SMBNFS Mount Point=更改 SMB/NFS 挂载点
+Proceed=继续
+All Unassigned Devices configurations will be updated from flash drive=所有 Unassigned Devices 配置将从闪存盘更新
 
 :unassgned_devices_switches_plug:
 > 打开**磁盘**开关显示磁盘设备，关闭它则隐藏磁盘设备。
@@ -227,7 +257,7 @@ ZFS Volume=ZFS 卷
 >
 > **加密的磁盘**：
 >
-> + 任何在 UD 中格式化的加密磁盘都将使用阵列密码并可整合进阵列。你也可以在格式化时设置独立的密码。若要在格式化磁盘时设置密码，请在“Unassignd Devices->设置”页面输入该磁盘的密码。 
+> + 任何在 UD 中格式化的加密磁盘都将使用阵列密码并可整合进阵列。你也可以在格式化时设置独立的密码。若要在格式化磁盘时设置密码，请在“Unassignd Devices->设置”页面输入该磁盘的密码。
 > + 任何未使用阵列密码的加密磁盘可通过在“Unassignd Devices->设置”页面设置对应的密码来挂载。
 >
 > **未分配磁盘的脚本**：
@@ -254,11 +284,19 @@ ZFS Volume=ZFS 卷
 > 使用 /dev/sdX 或 devX 代号时请注意，它们可在重启后改变。在 UD 脚本中访问 sdX（DEVICE）和 devX（UD_DEVICE）时最好使用传入的参数。
 :end
 
-; Note: April 21, 2025 - 7 missing translations
-Historical Unassigned Devices=
-No script file to execute=
-Script is already running=
-Script Log=
-View NFS Script Log=
-View SMB Script Log=
-You may need to enter credentials to list the shares=
+Historical Unassigned Devices=历史未分配的设备
+No script file to execute=没有可执行的脚本文件
+Script is already running=脚本已在运行中
+Script Log=脚本日志
+View NFS Script Log=查看 NFS 脚本日志
+View SMB Script Log=查看 SMB 脚本日志
+You may need to enter credentials to list the shares=你可能需要输入凭据才能列出共享
+Historical=历史
+Disks=磁盘
+Device Settings and Script=设备设置与脚本
+Passed Through=是否直通
+Disable Mount Button=是否禁用挂载按钮
+Read Only=是否只读
+Automount=自动挂载
+Show Partitions=显示分区
+Script Enabled=脚本是否启用
