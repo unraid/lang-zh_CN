@@ -24,11 +24,6 @@ Only enable this when advised to from the author of Community Applications=仅�
 Enable developer mode=启用开发者模式
 This unlocks some extra features within CA generally only used by developers Not recommended to enable=这会解锁社区应用中心中的一些额外功能(通常仅由开发人员使用, 不建议启用)
 Support Thread=论坛支持页
-Disable Featured Applications
-This setting will disable Featured applications appearing on the home screen
-Use CloudFlare CDN
-This setting will download the application feed from the CloudFlare CDN
-DOWNLOAD LOG
 Disable Featured Applications=禁用精选应用
 This setting will disable Featured applications appearing on the home screen=此设置将禁用显示在主屏幕上的精选应用
 Use CloudFlare CDN=使用 Cloudflare CDN
