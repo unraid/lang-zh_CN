@@ -1042,7 +1042,7 @@ PCIe ACS Override=PCIe ACS 覆盖
 details=详情
 Downstream=下游 (Downstream)
 Multi-function=多功能 (Multi-function)
-; 这句无法翻译，因此里面包含; 
+; 这句无法翻译，因为里面包含`; `被当成注释，所以将其标记为保留，并把译文放在紧邻的下一句上
 Splits IOMMU groups to allow individual device passthrough Use when devices are grouped together preventing passthrough Typically Downstream is sufficient Multi-function or Both may be needed for devices with multiple hardware functions=<br>
 Applies to GPUs, network cards, storage controllers, and other PCIe devices=拆分 IOMMU 组以允许单独的设备直通；当设备被捆绑在同一组从而无法单独直通时，请使用此选项；通常选择“下游 (Downstream)”即可；对于具有多个硬件功能的设备，可能需要选择“多功能 (Multi-function)”或“两者 (Both)”<br><br>适用于 GPU、网卡、存储控制器和其他 PCIe 设备
 This bypasses hardware isolation between devices While generally safe for GPU passthrough in home labs, use caution with untrusted VMs or certain hardware configurations=此操作会绕过设备间的硬件隔离；虽然在家庭环境中进行 GPU 直通通常是安全的，但在处理不受信任的虚拟机或某些特定硬件配置时仍需谨慎。
