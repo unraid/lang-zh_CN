@@ -2356,14 +2356,14 @@ Cloudflare 用户需要注意：Cloudflare 的代理专为 http 流量设计，�
 ; New entries (3) - 2023-06-02
 
 :shares_exclusive_shares_help:
-如果设置为“是”，则在满足以下条件的情况下，`/mnt/user` 下的共享目录实际上是存储卷上共享目录的符号链接：
+如果设置为“是”，在满足以下条件时，`/mnt/user` 下的共享目录实际上是存储卷上该共享目录的符号链接：
 
-* The Primary storage for a share is set to a pool.
-* 共享的辅助存储设置为 **none**.
-* 共享存在于单个卷上
+* 共享的**主存储**设置为某个存储池（Pool）。
+* 共享的**辅助存储**设置为 **none**（无）。
+* 共享仅存在于单个卷上。
 * 共享**未通过** NFS 导出。
 
-*exclusive* 共享的优点是传输绕过了 FUSE 层，这可能会显著提高 I/O 性能。
+**独占**（exclusive）共享的优点是，数据传输会绕过 FUSE 层，从而可能显著提升 I/O 性能。
 :end
 
 :eth_network_extra_include_help:
