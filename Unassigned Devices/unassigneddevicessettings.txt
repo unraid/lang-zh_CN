@@ -220,7 +220,7 @@ Working=工作中
 
 > 确保 NFS 服务启用，配置了正确的权限，并且允许向你的客户端 IP 导出目录后，showmount 指令应该能够列出可用的导出。
 :end
-
+Enter the Remote Server name or IP address and the results from the Unassigned Devices Remote Server Test will show in the Result text area=输入远程服务器名称或 IP 地址，Unassigned Devices 远程服务器测试的结果将显示在“结果”文本区域中
 Enter the Remote Server name or IP address and the results from the Remote Server Test will show in the Result text area=输入远程服务器名称或 IP 地址，远程服务器测试的结果将显示在结果文本区域中
 NFS must be enabled in Settings->NFS for NFS support=必须在“设置->NFS”中启用 NFS 才能获得 NFS 支持
 Debug Log Level=调试日志级别

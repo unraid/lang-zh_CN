@@ -490,3 +490,185 @@ Nvme version=NVMe 版本
 Number of namespaces=命名空间数量
 Local time=本地时间
 SMART overall-health=SMART 整体健康状态
+
+; 未分配设备插件相关
+Historical Unassigned Devices=历史未分配的设备
+Unassigned Disks=未分配的磁盘
+Remote Shares=远程共享
+Unassigned Disk Devices=未分配的磁盘设备
+Unassigned Devices Settings=未分配的设备设置
+Refresh Disks and Configuration=刷新磁盘与配置
+ShowHide Historical Unassigned Devices=显示/隐藏历史未分配的设备
+ShowHide SMBNFSISO Shares=显示/隐藏 SMB/NFS/ISO 共享
+ShowHide Unassiged Disk Devices=显示/隐藏未分配的磁盘设备
+Historical=历史
+Disks=磁盘
+SMB Shares=SMB 共享
+NFS Share=NFS 共享
+NFS Shares=NFS 共享
+ISO File Shares=ISO 文件共享
+Share Type=共享类型
+Mount Point=挂载点
+Add Remote SMB=添加远程 SMB
+Add ISO File Share=添加 ISO 文件共享
+Add Root Share=添加根共享
+Serial Number Mount Point=序列号（挂载点）
+Click on Icon to Choose Protocol=点击图标以选择协议
+Search For Servers=查找服务器
+Enter or Select Server=输入或选择服务器
+Use caution when using a remote share local mount in a Docker Container or VM for critical data=在 Docker 容器或虚拟机中使用本地挂载的远程共享存储关键数据时请小心
+Media mapped to apps like Plex should not be a problem=映射到 Plex 等应用的媒体文件通常不会有问题
+If the remote share goes offline, you may have problems=如果远程共享离线，你可能会遇到问题
+Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=远程共享挂载依赖于稳定可靠的网络连接，而那可能难以实现
+You must enable NFS in Settings->NFS to mount NFS shares=你必须在“设置->NFS”处启用 NFS 才能挂载 NFS 共享
+You must enable SMB in Settings->SMB to mount SMB shares=你必须在“设置->SMB”处启用 SMB 才能挂载 SMB 共享
+Search for Servers, or enter the Server name or IP address manually=查找服务器，或手动输入服务器名称或 IP 地址
+Search for Shares or enter the Share name manually=查找共享，或手动输入共享名称
+If the IP address of the server shows in the list after searching, your DNS server is not resolving the name=完成搜索后，如果列表中显示的是服务器 IP 地址而不是名称，代表你的 DNS 服务器并没有解析名称
+Enter the server name and it will be added to the local DNS names and will then resolve by name=输入服务器名称，它将被添加到本地DNS名称中，并通过名称解析
+Choose ISO File=选择 ISO 文件
+Click to select ISO file=点击选择 ISO 文件
+Partition and Format Disk=分区并格式化磁盘
+Choose File System Format=选择文件系统格式
+An XFS, BTRFS, or ZFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=使用 Unassigned Devices 创建的 XFS、BTRFS 或 ZFS 分区磁盘只需添加到阵列中即可被阵列读写
+ZFS Pool Name=ZFS 存储池名称
+Enter the Pool Name for this device=输入此设备的存储池名称
+This wil also be the mountpoint for the disk=这也将是该磁盘的挂载点
+Enter the password to use for this disk=输入用于此磁盘的密码
+Password=密码
+Note=注意
+Back=返回
+Next=下一步
+Remember your password=请记住您的密码
+It cannot be recovered=密码无法恢复
+Root Share=根共享
+User Shares=用户共享
+User Shares without Pools=不含存储池的用户共享
+Select the Root Share=选择根共享
+User Shares - allow access to User Shares, including Cache and Pool files=用户共享：允许对包括缓存池和存储池文件在内的用户共享的访问
+User Shares without Pools - allow access to User Shares, but the Root Share will not include Cache and Pool files=不含存储池的用户共享：允许对除缓存池和存储池文件之外的用户共享的访问
+Any data on this disk will be lost=此磁盘上的所有数据都将清除
+If using a disk password, be sure to enter the password for this disk in UD Settings so it can be mounted=如果磁盘设置了密码，请确保在未分配的设备设置中为此磁盘输入了密码，使之能够挂载
+This is a way to gather Unraid shares into one Root Share=这是一种将 Unraid 共享文件夹聚合进一个根目录共享的方式
+Use caution when gathering shares into one Root Share=将共享文件夹聚合为根共享时请小心
+Do not put files or folders into the mntrootshare folder=不要在 /mnt/rootshare/ 目录下存放文件或文件夹
+When you copy files between shares in the Root Share, the files may not end up on the expected disks=在根共享的共享文件夹内复制文件时，文件可能不会复制到期望的磁盘上
+You can also subject yourself to security issues like ransomware by exposing all your shares in one Root Share=将所有共享文件夹暴露在唯一的根共享内可能使你自己面临勒索软件等安全问题
+Disk Sharing must be disabled to add a Root Share=磁盘共享必须关闭才能添加根共享
+Go to Settings->Global Share Settings and set Enable Disk Shares to Auto or Off=在“设置->全局共享设置”页面调整“启用磁盘共享”为“自动”或“否”
+Formatted=已格式化
+Format failed=格式化失败
+to confirm=以确定
+to format=以格式化
+Change Disk Mount Point=更改磁盘挂载点
+Disk Label=磁盘标签
+Changing the Mount Point will also change the disk label on all disks and the pool name on a ZFS disk=更改挂载点还将更改所有磁盘上的磁盘标签和 ZFS 磁盘上的存储池名称
+Data on this disk will be lost=此磁盘上的数据将会丢失
+Remove Partition=删除分区
+Remove Remote SMB=移除远程 SMB
+Remove partition=删除分区
+from disk=从磁盘
+to delete this partition=以删除此分区
+Type=输入
+Clear Disk=清除磁盘
+to clear this disk of all partitions=以清除此磁盘的所有分区
+If this disk was pre-cleared, you will remove the pre-clear signature If you add the disk to the array and the pre-clear signature is removed, Unraid will go through the lengthy process of clearing the disk again=如果此磁盘已预清除，这么做将会移除预清除标记。如果你将磁盘添加到阵列中并且预清除标记已移除，Unraid 将启动再次清除磁盘的冗长进程
+Removing=正在移除
+Device Settings and Script=设备设置与脚本
+Passed Through=是否直通
+Disable Mount Button=是否禁用挂载按钮
+Read Only=是否只读
+Automount=自动挂载
+Show Partitions=显示分区
+Script Enabled=脚本是否启用
+Mounting=正在挂载
+Unmounting=正在卸载
+Restore Backup=还原备份
+No backups available=没有可用的备份
+
+; 页面 Main 未分配设备插件相关设置
+Unassigned Device Settings=未分配设备设置
+Source=源
+ZFS Volume=ZFS 卷
+APFS Volume=APFS 卷
+Mount Point=挂载点
+Mark this Device as passed through to a VM or Docker=标记此设备直通至虚拟机或 Docker
+Disable Mount and Unmount Button=禁用挂载与卸载按钮
+Mount Device Read only=以只读方式挂载设备
+Mount Device when Plugged in or Array is Started=在设备插入或阵列启动时挂载设备
+Mount Remote Share Read only=以只读方式挂载远程共享
+Mount Remote SMB or NFS Share when Array is Started=在阵列启动时挂载远程 SMB 或 NFS 共享
+Mount ISO File when Array is Started=在阵列启动时挂载 ISO 文件
+Share Device with SMB and NFS=使用 SMB 和 NFS 共享设备
+Show all partitions on this device by default=默认显示此设备的所有分区
+Note Enable SMB Sharing or NFS Export in Unassigned Devices Settings to share this device=注意：在 Unassigned Devices（未分配的设备）设置中启用 SMB 共享或 NFS 导出以共享此设备
+Detach This Disk=脱离此磁盘
+Detach=脱离
+Attach=附加
+Attach This Disk=附加此磁盘
+Abort Device and User Scripts=中止设备与用户脚本
+Abort=中止
+Disk Name=磁盘名称
+Disk Serial=磁盘序列号
+Use the NTFS3 Driver=使用 NTFS3 驱动
+Mount with compress option=使用压缩选项挂载
+Encrypt CIFS Mount=加密 CIFS 挂载
+Device Script=设备脚本
+Enter Device Script File Name=输入设备脚本文件名称
+Click here to select a Script File or Default button for a Default Script=点击此处选择脚本文件，或点击“默认”按钮使用默认脚本
+Enable Device Script=启用设备脚本
+Run Device Script File in the background=在后台运行设备脚本文件
+User Script=用户脚本
+Enter the User Script File Name=输入用户脚本文件名称
+Enter the User Script that will be using this device=输入将使用此设备的用户脚本
+Device Script content=设备脚本内容
+Enter and Edit the Device Script that runs when a udev or operator event occurs=输入并编辑在 udev 或操作员事件发生时运行的设备脚本
+Load the default Device Script=加载默认设备脚本
+Clear the Device Script=清空设备脚本
+Save your Device Script=保存设备脚本
+Delete Device Script File=删除设备脚本文件
+Save your Device Script File changes=保存设备脚本文件更改
+Detaching=正在脱离
+Attaching=正在附加
+
+:ud_disk_name_plug:
+> 为此设备输入别名，即你希望用来指代该驱动器的名称。留空则将自动分配“devX”名称。
+>
+> **名称**：最多 8 个字符，空格将被转换为下划线“_”，限制使用特殊字符，名称区分大小写。
+>
+> **注意**：不能以“dev”开头。该前缀保留给“devX”设备使用。
+:end
+
+:ntfs3_driver_plug:
+> 选择“是”以启用内置的 NTFS3 驱动模块来挂载此磁盘。NTFS3 驱动模块可能比 ntfs-3g 驱动更快，但可能不支持 NTFS 文件系统的所有功能。
+:end
+
+:ud_edit_script_choose_name_plug:
+> 这是设备挂载时运行的脚本文件。请从文件选择下拉菜单中选择脚本文件名，或输入所需的脚本路径。如果设备当前处于挂载状态，则无法更改此项。
+:end
+
+:ud_edit_script_enable_script_plug:
+> 设置为**是**，以便在任何 Unassigned Devices 事件发生时运行设备脚本。
+:end
+
+:ud_edit_script_run_background_plug:
+> 设置为**是**，使设备脚本作为后台任务运行。这可以避免在从 Unassigned Devices 界面运行脚本时导致界面卡死。
+:end
+
+:ud_edit_user_script_choose_name_plug:
+> 如果你已安装 User Scripts 插件，可以让 Unassigned Devices 显示使用该设备的用户脚本的运行状态。仅当存在设备脚本文件时，此字段才可用。
+:end
+
+:ud_edit_script_buttons_plug:
+> 点击**默认**以使用默认的设备脚本初始化编辑框。你仍需点击**保存**以提交更改。
+>
+> 点击**保存**以保存你的设备脚本文件。
+>
+> 点击**删除**以删除设备脚本文件。
+>
+> 点击**重置**以撤销你所做的任何更改（在保存之前）。
+>
+> 点击**应用**以提交当前的编辑。
+>
+> 点击**完成**以退出此页面。
+:end
