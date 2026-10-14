@@ -362,3 +362,35 @@ USB 闪存设备也可能被**列入黑名单**。
 
 如需了解更多信息，请[联系支持人员](https://lime-technology.com/contact)。
 :end
+
+; 系统设备翻译
+Show All=显示全部
+Filtered=过滤选项
+Filter options when not all=非全部时显示过滤选项
+Show GPUsAudio=显示 GPU/音频设备
+; 这里要写 杠t 真的服了这翻译引擎了
+Don\t show GPUsAudio=不显示 GPU/音频设备
+Show Networks=显示网络设备
+Don\t show networks=不显示网络设备
+Show storage=显示存储设备
+Don\t show storage=不显示存储设备
+Show USB=显示 USB 设备
+Don\t show USB=不显示 USB 设备
+Show all other devs=显示所有其他设备
+Don\t show all others=不显示所有其他设备
+Show SR-IOV=显示 SR-IOV
+Don\t filter SR-IOVs=不过滤 SR-IOV
+Configuration saved=配置已保存
+No PCI ID provided to generateMAC=未提供用于生成 MAC 地址的 PCI ID
+Invalid PCI ID=无效的 PCI ID
+Generated successfully=生成成功
+Acknowledge all PCI changes=确认所有 PCI 更改
+Toggle All=全选
+
+:php_settings_plug:
+此工具仅用于开发目的，允许插件作者通过启用不同级别的 PHP 错误报告来验证其 PHP 代码。
+
+默认情况下，错误日志记录级别最低，且不会在屏幕上显示错误。更改**错误报告级别**会将所选级别的错误捕获到日志 (LOG) 文件中，可以在单独的窗口中打开该文件，以便在访问各种 GUI 页面或在服务器上执行后台进程时实时监控事件。
+
+当存在多个错误时，日志文件可能会迅速变大，建议仅在开发期间使用它，并在正常运行条件下使用默认设置。
+:end

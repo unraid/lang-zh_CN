@@ -285,6 +285,7 @@ Please try a different browser=请尝试使用其他浏览器
 Please try again later=请稍后再试
 Please use a high quality name brand device at least 1GB in size min 4GB recommended=请使用容量大于1GB的高质量设备(推荐容量4GB以上)
 Please wait=请稍候
+Please Wait=请稍候
 Plugins=插件
 Plus=Plus
 prefix_IEC=Ki Mi Gi Ti Pi Ei Zi Yi
