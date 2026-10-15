@@ -427,6 +427,7 @@ Unraid Staff=Unraid 员工
 Displaying %s - %s of %s=正在显示 %1$s - %2$s（总共为 %3$s）
 
 Updating Content=正在更新内容
+Please Wait=请稍候
 Language=语言
 Switch to this language=切换到此语言
 Country Code=国家代码

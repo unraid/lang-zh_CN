@@ -66,38 +66,38 @@ ZFS Volume=ZFS 卷
 :end
 
 :ud_disk_name_plug:
-> 为此设备输入别名。在此输入的名称是你想要用来指代该设备的名称。留空则自动分配“devX”格式的名称。
+> 为此设备输入别名，即你希望用来指代该驱动器的名称。留空则将自动分配“devX”名称。
 >
-> **名称**：最多 8 字符，空格将被转换为连字符，允许基本的特殊字符，区别大小写。
+> **名称**：最多 8 个字符，空格将被转换为下划线“_”，限制使用特殊字符，名称区分大小写。
 >
-> **注意**：不能以“dev”作为开头。格式“devX”被保留。 
+> **注意**：不能以“dev”开头。该前缀保留给“devX”设备使用。
 :end
 
 :ud_edit_script_choose_name_plug:
-> 设备挂载时会运行此脚本。从文件选择下拉菜单中选择脚本文件名称，也可以输入所需脚本。
+> 这是设备挂载时运行的脚本文件。请从文件选择下拉菜单中选择脚本文件名，或输入所需的脚本路径。如果设备当前处于挂载状态，则无法更改此项。
 :end
 
 :ud_edit_user_script_choose_name_plug:
-> 如果已安装 User Script 插件，Unassigned Devices 可以显示使用此设备的用户脚本的运行状态。此字段只在设备脚本文件存在时可用。
+> 如果你已安装 User Scripts 插件，可以让 Unassigned Devices 显示使用该设备的用户脚本的运行状态。仅当存在设备脚本文件时，此字段才可用。
 :end
 
 :ud_edit_script_run_background_plug:
-> 设为**是**让设备脚本作为后台任务运行。当从 Unassigned Device UI 运行脚本时，可避免 UI 停止响应。
+> 设置为**是**，使设备脚本作为后台任务运行。这可以避免在从 Unassigned Devices 界面运行脚本时导致界面卡死。
 :end
 
 :ud_edit_script_buttons_plug:
-> 点击**恢复默认**使用默认设备脚本重置编辑框。你仍需点击**保存**来保存脚本更改。
+> 点击**默认**以使用默认的设备脚本初始化编辑框。你仍需点击**保存**以提交更改。
 >
-> 点击**保存**以保存设备脚本文件。
+> 点击**保存**以保存你的设备脚本文件。
 >
 > 点击**删除**以删除设备脚本文件。
 >
-> 点击**重置**以撤销未保存的任何更改。
+> 点击**重置**以撤销你所做的任何更改（在保存之前）。
 >
-> 点击**应用**以提交当前设置。
+> 点击**应用**以提交当前的编辑。
 >
 > 点击**完成**以退出此页面。
 :end
 
 ; Note: February 10, 2024 - 1 missing translations
-Click to select file or click Default button for the Device Script File=
+Click to select file or click Default button for the Device Script File=点击选择文件，或点击“默认”按钮来设置设备脚本文件

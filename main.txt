@@ -18,23 +18,27 @@ Balance Status=负载均衡状态
 Balance=负载均衡
 Blacklisted=已列入黑名单
 Boot Device=引导设备
+Boot Parameters=引导参数
+Boot Mode=引导模式
 Boot system in UEFI mode=UEFI 模式下的引导系统
-btrfs balance status=BTRFS文件系统负载均衡状态
-btrfs check status=BTRFS文件系统维护检查状态
+btrfs balance status=BTRFS 文件系统均衡状态
+btrfs check status=BTRFS 文件系统维护检查状态
 BTRFS operation is running=BTRFS 操作正在运行
-btrfs scrub status=btrfs 清理状态
+btrfs scrub status=BTRFS 清理状态
 cache - Cache Devices=缓存 - 缓存设备
 Canceled=已取消
 Cannot contact key-server Please check your=无法联系密钥服务器，请检查您的
 Capabilities not available=功能不可用
 Capabilities=功能
-Caution=**Caution**
+Caution=**注意**
 Check Filesystem Status=检查文件系统状态
 Clear Stats=清除统计信息
 Clearing in progress=正在清除中
 Click on FLASH above this message=点击此条消息上方的 **FLASH** 按钮
-Click to spin down device=点击以休眠设备
+Click to spin down device=点击以停转设备
 Click to spin up device=点击以唤醒设备
+CLICK TO SPIN DOWN DEVICE=点击以停转设备
+CLICK TO SPIN UP DEVICE=点击以唤醒设备
 Comments=注释
 complete=完成
 Completed without error=已完成且无错误
@@ -152,6 +156,7 @@ Missing key=缺少密钥
 Missing pool disk=缺少池磁盘
 Missing=缺少
 Mounted=已挂载
+mounted=已挂载
 Mover is running=Mover 正在运行
 network settings=网络设置
 New data disks detected=检测到新数据磁盘
@@ -181,7 +186,7 @@ Partition format=分区格式
 Partition size=分区大小
 Passed=直通
 Passphrase=密码
-Perform full balance=处理全部剩余空间
+Perform full balance=执行完全均衡
 Permit UEFI boot mode=允许 UEFI 引导模式
 Please change share SMB security=请更改 SMB 共享安全性
 Please check your system settings to support UEFI boot mode=请检查您的系统设置以支持 UEFI 引导模式
@@ -295,7 +300,7 @@ Unmountable Encrypted volume present=无法挂载：存在加密卷
 Unmountable Missing encryption key=无法挂载：缺少加密密钥
 Unmountable No file system=无法挂载：没有文件系统
 Unmountable No pool uuid=无法挂载：没有池 UUID
-Unmountable not btrfs pool=无法挂载：不是 btrfs 池
+Unmountable not btrfs pool=无法挂载：不是 BTRFS 池
 Unmountable Unsupported or no file system=无法挂载：不支持的文件系统或无文件系统
 Unmountable Volume not encrypted=无法挂载：卷未加密
 Unmounted=未挂载
@@ -319,19 +324,19 @@ will activate a clean system power down=将激活系统正常关机
 will activate a clean system reset=将激活系统正常重启
 will bring the array on-line and start Clearing new data disks=将使磁盘阵列联机并开始**清理**新数据磁盘
 will bring the array on-line and start Data-Rebuild=将磁盘阵列联机并开始**数据重建**
-will bring the array on-line and start Disk-Clear of new data disks=将磁盘阵列联机并开始**数据重建**
+will bring the array on-line and start Disk-Clear of new data disks=将磁盘阵列联机并开始**磁盘清理**
 will bring the array on-line and start Parity-Check=将使磁盘阵列联机并开始**奇偶校验**
 will bring the array on-line and start Parity-Sync andor Data-Rebuild=将使磁盘阵列联机并启动**奇偶校验同步**和/或**数据重建**
 will bring the array on-line and start Parity-Sync=将使磁盘阵列联机并开始**奇偶校验同步**
 will bring the array on-line=将使磁盘阵列联机
 will copy the parity information to the new parity disk=将奇偶校验信息复制到新的奇偶校验磁盘
-will create a file system in all Unmountable disks=将在所有不可挂载的磁盘中创建文件系统
+will create a file system in all Unmountable disks=将在所有无法挂载的磁盘中创建文件系统
 will delete the encryption keyfile=将删除加密密钥文件
 will disable the missing disk and then bring the array on-line Install a replacement disk as soon as possible=将禁用缺失的磁盘，然后使阵列联机。请尽快安装替换磁盘
 will expand the file system of the data disk if possible then bring the array on-line and start Data-Rebuild=将扩展数据磁盘的文件系统；如果可能，则将阵列联机并开始数据重建
 will immediately clear all disk statistics=将立即清除所有磁盘统计信息
 will immediately invoke the Mover=将立即调用迁移程序(Mover)
-will immediately spin down all disks=将立即休眠所有磁盘
+will immediately spin down all disks=将立即停转/休眠所有磁盘
 will immediately spin up all disks=将立即唤醒所有磁盘
 will pause Data-Rebuild=将暂停数据重建
 will pause Disk-Clear=将暂停磁盘清理
@@ -345,7 +350,7 @@ will pause the Read-Check=将暂停读取-检查
 will record all disk information and bring the array on-line=将记录所有磁盘信息并使阵列联机
 will record all disk information, bring the array on-line, and start Parity-Sync=将记录所有磁盘信息，使阵列联机并启动奇偶校验-同步
 will remove the missing cache disk and then bring the array on-line=将移除缺失的缓存磁盘，然后使阵列联机
-will remove the missing pool disk and then bring the array on-line=将移除缺失的池磁盘然后使阵列在线
+will remove the missing pool disk and then bring the array on-line=将移除缺失的存储池磁盘，然后使阵列联机
 will resume Data-Rebuild=将恢复数据重建
 will resume Disk-Clear=将恢复磁盘清除
 will resume Parity-Check=将恢复奇偶校验
@@ -380,8 +385,8 @@ Wrong Pool State=存储池异常
 xfs_repair status=xfs 修复状态
 You may not add new disks and also remove existing disks=您不能添加新磁盘，也不能移除现有磁盘
 your server=您的服务器
-zfs pool status=zfs 存储池状态
-zfs=zfs
+zfs pool status=ZFS 存储池状态
+zfs=ZFS
 
 ; Sleep plugin translations
 Check this=检查此处
@@ -392,9 +397,10 @@ Sleeping=睡眠中
 System in sleep mode=系统处于睡眠模式
 This will put the system in sleep mode=这将使系统进入睡眠模式
 wiki entry=Wiki 条目
-After renaming the pool, check that your shares are assigned to the proper primary and secondary storage locations=重命名池后，请检查共享是否分配到正确的主存储和次存储位置
+After renaming the pool, check that your shares are assigned to the proper primary and secondary storage locations=重命名存储池后，请检查共享是否分配到正确的主存储和次存储位置
 After upgrading the volume may not be mountable in previous versions of Unraid=升级后，该卷可能无法在旧版本的 Unraid 中挂载
-btrfs filesystem usage=btrfs 文件系统使用情况
+After upgrading, the disk may not be mountable in previous versions of Unraid=升级后，该磁盘可能无法在旧版本的 Unraid 中挂载
+btrfs filesystem usage=BTRFS 文件系统使用情况
 cache - L2ARC=缓存 - 二级自适应读缓存（L2ARC）
 Dirty log detected=检测到脏日志
 File system corruption detected=检测到文件系统损坏
@@ -419,3 +425,336 @@ Zero Log=清零日志
 Boot device backup=创建引导驱动器备份
 Data Partition=数据分区
 Internal Boot=内置引导
+Mark this Device as passed through to a VM or Docker Container=将此设备标记为直通给虚拟机或 Docker 容器
+will take the array offline=将使磁盘阵列离线
+creating boot device backup zip file this may take several minutes=正在创建引导驱动器备份 zip 文件，这可能需要几分钟
+Creating boot device backup=正在创建引导驱动器备份
+Active GUID=活动 GUID
+No GUID source found=未找到 GUID 源
+GUID Type=GUID 类型
+TPM Licensing=TPM 许可
+TPM licensing is available=TPM 许可可用
+No internal boot setup detected Launch %s to configure one=未检测到内置引导设置，请到 %s 进行配置
+
+; 储存池相关
+ONLINE=在线
+UNKNOWN=未知
+DEGRADED=降级
+FAULTED=故障
+OFFLINE=离线
+UNAVAIL=不可用
+REMOVED=已移除
+Check pool status=检查存储池状态
+View pool details=查看存储池详细信息
+Pool Status Summary=存储池状态摘要
+pool status=存储池状态
+Pool Information=存储池信息
+zfs pool information=ZFS 存储池信息
+Scrub Schedule=清理计划
+Scrub schedule=清理计划
+Hourly=每小时
+Daily=每日
+Weekly=每周
+Monthly=每月
+Day of the week=星期
+Sunday=星期日
+Monday=星期一
+Tuesday=星期二
+Wednesday=星期三
+Thursday=星期四
+Friday=星期五
+Saturday=星期六
+Day of the month=日期
+Time of the day=时间
+Every hour=每小时
+Every 2 hours=每 2 小时
+Every 3 hours=每 3 小时
+Every 4 hours=每 4 小时
+Every 6 hours=每 6 小时
+Every 8 hours=每 8 小时
+
+; 磁盘相关
+Supported Power States=支持的电源状态
+Supported LBA Sizes=支持的 LBA 大小
+Model number=型号
+Serial number=序列号
+Firmware version=固件版本
+PCI vendor=PCI 供应商
+subsystem ID=子系统 ID
+PCI vendorsubsystem ID=PCI 供应商/子系统 ID
+IEEE OUI identifier=IEEE OUI 标识符
+Total NVM capacity=NVM 总容量
+Unallocated NVM capacity=未分配 NVM 容量
+Controller ID=控制器 ID
+Nvme version=NVMe 版本
+Number of namespaces=命名空间数量
+Local time=本地时间
+SMART overall-health=SMART 整体健康状态
+
+; 未分配设备插件相关
+Historical Unassigned Devices=历史未分配的设备
+Unassigned Disks=未分配的磁盘
+Remote Shares=远程共享
+Unassigned Disk Devices=未分配的磁盘设备
+Unassigned Devices Settings=未分配的设备设置
+Refresh Disks and Configuration=刷新磁盘与配置
+ShowHide Historical Unassigned Devices=显示/隐藏历史未分配的设备
+ShowHide SMBNFSISO Shares=显示/隐藏 SMB/NFS/ISO 共享
+ShowHide Unassiged Disk Devices=显示/隐藏未分配的磁盘设备
+Historical=历史
+Disks=磁盘
+SMB Shares=SMB 共享
+NFS Share=NFS 共享
+NFS Shares=NFS 共享
+ISO File Shares=ISO 文件共享
+Share Type=共享类型
+Mount Point=挂载点
+Add Remote SMB=添加远程 SMB
+Add ISO File Share=添加 ISO 文件共享
+Add Root Share=添加根共享
+Serial Number Mount Point=序列号（挂载点）
+Click on Icon to Choose Protocol=点击图标以选择协议
+Search For Servers=查找服务器
+Enter or Select Server=输入或选择服务器
+Use caution when using a remote share local mount in a Docker Container or VM for critical data=在 Docker 容器或虚拟机中使用本地挂载的远程共享存储关键数据时请小心
+Media mapped to apps like Plex should not be a problem=映射到 Plex 等应用的媒体文件通常不会有问题
+If the remote share goes offline, you may have problems=如果远程共享离线，你可能会遇到问题
+Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=远程共享挂载依赖于稳定可靠的网络连接，而那可能难以实现
+You must enable NFS in Settings->NFS to mount NFS shares=你必须在“设置->NFS”处启用 NFS 才能挂载 NFS 共享
+You must enable SMB in Settings->SMB to mount SMB shares=你必须在“设置->SMB”处启用 SMB 才能挂载 SMB 共享
+Search for Servers, or enter the Server name or IP address manually=查找服务器，或手动输入服务器名称或 IP 地址
+Search for Shares or enter the Share name manually=查找共享，或手动输入共享名称
+If the IP address of the server shows in the list after searching, your DNS server is not resolving the name=完成搜索后，如果列表中显示的是服务器 IP 地址而不是名称，代表你的 DNS 服务器并没有解析名称
+Enter the server name and it will be added to the local DNS names and will then resolve by name=输入服务器名称，它将被添加到本地DNS名称中，并通过名称解析
+Choose ISO File=选择 ISO 文件
+Click to select ISO file=点击选择 ISO 文件
+Partition and Format Disk=分区并格式化磁盘
+Choose File System Format=选择文件系统格式
+An XFS, BTRFS, or ZFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=使用 Unassigned Devices 创建的 XFS、BTRFS 或 ZFS 分区磁盘只需添加到阵列中即可被阵列读写
+ZFS Pool Name=ZFS 存储池名称
+Enter the Pool Name for this device=输入此设备的存储池名称
+This wil also be the mountpoint for the disk=这也将是该磁盘的挂载点
+Enter the password to use for this disk=输入用于此磁盘的密码
+Password=密码
+Note=注意
+Back=返回
+Next=下一步
+Remember your password=请记住您的密码
+It cannot be recovered=密码无法恢复
+Root Share=根共享
+User Shares=用户共享
+User Shares without Pools=不含存储池的用户共享
+Select the Root Share=选择根共享
+User Shares - allow access to User Shares, including Cache and Pool files=用户共享：允许对包括缓存池和存储池文件在内的用户共享的访问
+User Shares without Pools - allow access to User Shares, but the Root Share will not include Cache and Pool files=不含存储池的用户共享：允许对除缓存池和存储池文件之外的用户共享的访问
+Any data on this disk will be lost=此磁盘上的所有数据都将清除
+If using a disk password, be sure to enter the password for this disk in UD Settings so it can be mounted=如果磁盘设置了密码，请确保在未分配的设备设置中为此磁盘输入了密码，使之能够挂载
+This is a way to gather Unraid shares into one Root Share=这是一种将 Unraid 共享文件夹聚合进一个根目录共享的方式
+Use caution when gathering shares into one Root Share=将共享文件夹聚合为根共享时请小心
+Do not put files or folders into the mntrootshare folder=不要在 /mnt/rootshare/ 目录下存放文件或文件夹
+When you copy files between shares in the Root Share, the files may not end up on the expected disks=在根共享的共享文件夹内复制文件时，文件可能不会复制到期望的磁盘上
+You can also subject yourself to security issues like ransomware by exposing all your shares in one Root Share=将所有共享文件夹暴露在唯一的根共享内可能使你自己面临勒索软件等安全问题
+Disk Sharing must be disabled to add a Root Share=磁盘共享必须关闭才能添加根共享
+Go to Settings->Global Share Settings and set Enable Disk Shares to Auto or Off=在“设置->全局共享设置”页面调整“启用磁盘共享”为“自动”或“否”
+Formatted=已格式化
+Format failed=格式化失败
+to confirm=以确定
+to format=以格式化
+Change Disk Mount Point=更改磁盘挂载点
+Disk Label=磁盘标签
+Changing the Mount Point will also change the disk label on all disks and the pool name on a ZFS disk=更改挂载点还将更改所有磁盘上的磁盘标签和 ZFS 磁盘上的存储池名称
+Data on this disk will be lost=此磁盘上的数据将会丢失
+Remove Partition=删除分区
+Remove Remote SMB=移除远程 SMB
+Remove partition=删除分区
+from disk=从磁盘
+to delete this partition=以删除此分区
+Type=输入
+Clear Disk=清除磁盘
+to clear this disk of all partitions=以清除此磁盘的所有分区
+If this disk was pre-cleared, you will remove the pre-clear signature If you add the disk to the array and the pre-clear signature is removed, Unraid will go through the lengthy process of clearing the disk again=如果此磁盘已预清除，这么做将会移除预清除标记。如果你将磁盘添加到阵列中并且预清除标记已移除，Unraid 将启动再次清除磁盘的冗长进程
+Removing=正在移除
+Device Settings and Script=设备设置与脚本
+Passed Through=是否直通
+Disable Mount Button=是否禁用挂载按钮
+Read Only=是否只读
+Automount=自动挂载
+Show Partitions=显示分区
+Script Enabled=脚本是否启用
+Mounting=正在挂载
+Unmounting=正在卸载
+Restore Backup=还原备份
+No backups available=没有可用的备份
+
+; 页面 Main 未分配设备插件相关设置
+Unassigned Device Settings=未分配设备设置
+Source=源
+ZFS Volume=ZFS 卷
+APFS Volume=APFS 卷
+Mount Point=挂载点
+Mark this Device as passed through to a VM or Docker=标记此设备直通至虚拟机或 Docker
+Disable Mount and Unmount Button=禁用挂载与卸载按钮
+Mount Device Read only=以只读方式挂载设备
+Mount Device when Plugged in or Array is Started=在设备插入或阵列启动时挂载设备
+Mount Remote Share Read only=以只读方式挂载远程共享
+Mount Remote SMB or NFS Share when Array is Started=在阵列启动时挂载远程 SMB 或 NFS 共享
+Mount ISO File when Array is Started=在阵列启动时挂载 ISO 文件
+Share Device with SMB and NFS=使用 SMB 和 NFS 共享设备
+Show all partitions on this device by default=默认显示此设备的所有分区
+Note Enable SMB Sharing or NFS Export in Unassigned Devices Settings to share this device=注意：在 Unassigned Devices（未分配的设备）设置中启用 SMB 共享或 NFS 导出以共享此设备
+Detach This Disk=脱离此磁盘
+Detach=脱离
+Attach=附加
+Attach This Disk=附加此磁盘
+Abort Device and User Scripts=中止设备与用户脚本
+Abort=中止
+Disk Name=磁盘名称
+Disk Serial=磁盘序列号
+Use the NTFS3 Driver=使用 NTFS3 驱动
+Mount with compress option=使用压缩选项挂载
+Encrypt CIFS Mount=加密 CIFS 挂载
+Device Script=设备脚本
+Enter Device Script File Name=输入设备脚本文件名称
+Click here to select a Script File or Default button for a Default Script=点击此处选择脚本文件，或点击“默认”按钮使用默认脚本
+Enable Device Script=启用设备脚本
+Run Device Script File in the background=在后台运行设备脚本文件
+User Script=用户脚本
+Enter the User Script File Name=输入用户脚本文件名称
+Enter the User Script that will be using this device=输入将使用此设备的用户脚本
+Device Script content=设备脚本内容
+Enter and Edit the Device Script that runs when a udev or operator event occurs=输入并编辑在 udev 或操作员事件发生时运行的设备脚本
+Load the default Device Script=加载默认设备脚本
+Clear the Device Script=清空设备脚本
+Save your Device Script=保存设备脚本
+Delete Device Script File=删除设备脚本文件
+Save your Device Script File changes=保存设备脚本文件更改
+Detaching=正在脱离
+Attaching=正在附加
+
+:ud_disk_name_plug:
+> 为此设备输入别名，即你希望用来指代该驱动器的名称。留空则将自动分配“devX”名称。
+>
+> **名称**：最多 8 个字符，空格将被转换为下划线“_”，限制使用特殊字符，名称区分大小写。
+>
+> **注意**：不能以“dev”开头。该前缀保留给“devX”设备使用。
+:end
+
+:ntfs3_driver_plug:
+> 选择“是”以启用内置的 NTFS3 驱动模块来挂载此磁盘。NTFS3 驱动模块可能比 ntfs-3g 驱动更快，但可能不支持 NTFS 文件系统的所有功能。
+:end
+
+:ud_edit_script_choose_name_plug:
+> 这是设备挂载时运行的脚本文件。请从文件选择下拉菜单中选择脚本文件名，或输入所需的脚本路径。如果设备当前处于挂载状态，则无法更改此项。
+:end
+
+:ud_edit_script_enable_script_plug:
+> 设置为**是**，以便在任何 Unassigned Devices 事件发生时运行设备脚本。
+:end
+
+:ud_edit_script_run_background_plug:
+> 设置为**是**，使设备脚本作为后台任务运行。这可以避免在从 Unassigned Devices 界面运行脚本时导致界面卡死。
+:end
+
+:ud_edit_user_script_choose_name_plug:
+> 如果你已安装 User Scripts 插件，可以让 Unassigned Devices 显示使用该设备的用户脚本的运行状态。仅当存在设备脚本文件时，此字段才可用。
+:end
+
+:ud_edit_script_buttons_plug:
+> 点击**默认**以使用默认的设备脚本初始化编辑框。你仍需点击**保存**以提交更改。
+>
+> 点击**保存**以保存你的设备脚本文件。
+>
+> 点击**删除**以删除设备脚本文件。
+>
+> 点击**重置**以撤销你所做的任何更改（在保存之前）。
+>
+> 点击**应用**以提交当前的编辑。
+>
+> 点击**完成**以退出此页面。
+:end
+
+; 引导参数翻译
+⚠ Hardware Change Detected=⚠ 检测到硬件更改
+Your system hardware has changed=您的系统硬件已发生变化
+Hardware changes may make your boot configuration invalid or unsafe Please review all boot parameters below before making changes=硬件更改可能会导致启动配置失效或存在安全隐患；在进行任何更改之前，请仔细审查以下所有启动参数
+I Understand=我已知晓
+VM Passthrough=虚拟机直通
+PCIe ACS Override=PCIe ACS 覆盖
+details=详情
+Downstream=下游 (Downstream)
+Multi-function=多功能 (Multi-function)
+; 这句无法翻译，因此里面包含; 
+Splits IOMMU groups to allow individual device passthrough Use when devices are grouped together preventing passthrough Typically Downstream is sufficient Multi-function or Both may be needed for devices with multiple hardware functions=<br>
+Applies to GPUs, network cards, storage controllers, and other PCIe devices=拆分 IOMMU 组以允许单独的设备直通；当设备被捆绑在同一组从而无法单独直通时，请使用此选项；通常选择“下游 (Downstream)”即可；对于具有多个硬件功能的设备，可能需要选择“多功能 (Multi-function)”或“两者 (Both)”<br><br>适用于 GPU、网卡、存储控制器和其他 PCIe 设备
+This bypasses hardware isolation between devices While generally safe for GPU passthrough in home labs, use caution with untrusted VMs or certain hardware configurations=此操作会绕过设备间的硬件隔离；虽然在家庭环境中进行 GPU 直通通常是安全的，但在处理不受信任的虚拟机或某些特定硬件配置时仍需谨慎。
+See=请参阅
+Lime Technology forums=Lime Technology 论坛
+for hardware-specific guidance=以获取针对特定硬件的指导
+VFIO Allow Unsafe Interrupts=VFIO 允许不安全中断
+Allows VFIO passthrough to work on systems without interrupt remapping support common on older hardware and some consumer motherboards Required when attempting GPU or device passthrough results in VFIO errors about missing interrupt remapping=允许 VFIO 直通在没有中断重映射支持的系统中运行（这种情况在旧硬件和部分消费级主板上很常见）当尝试进行 GPU 或设备直通时，若出现提示缺少中断重映射的 VFIO 错误，则需要启用此选项
+This bypasses interrupt isolation between devices While generally safe for GPU passthrough in home labs, certain hardware configurations may experience stability issues=此操作会绕过设备间的中断隔离；虽然在家庭环境中进行 GPU 直通通常是安全的，但某些硬件配置可能会遇到稳定性问题。
+Framebuffer=帧缓冲区 (Framebuffer)
+Passing your primary GPU to a VM can cause black screen issues Disabling framebuffers solves this by preventing the kernel from claiming the GPU at boot=将主 GPU 直通给虚拟机可能会导致黑屏问题；禁用帧缓冲区可防止内核在启动时占用 GPU，从而解决此问题。
+For complete GPU isolation, also bind the GPU to VFIO via=为了实现完全的 GPU 隔离，还可以在以下位置设置：
+Tools gt; System Devices=工具 > 系统设备
+1 Start by disabling your boot modes framebuffer EFI for UEFI, VESA for Legacy BIOS - one will be disabled based on your boot mode=1. 首先，根据您的启动模式禁用相应的帧缓冲区（UEFI 模式禁用 EFI，Legacy BIOS 模式禁用 VESA）
+2 If issues persist, also disable Simple Framebuffer=2. 如果问题依然存在，请尝试同时禁用“Simple Framebuffer”
+3 If still having problems, use Block All Framebuffers as a last resort=3. 若问题仍未解决，请将“阻止所有帧缓冲区”作为最后手段
+Important Do not add framebuffer parameters to GUI Mode boot configurations, as they will prevent GUI Mode from displaying=重要提示：请勿将帧缓冲区参数添加到 GUI 模式的启动配置中，否则将导致 GUI 模式无法正常显示
+Disable EFI Framebuffer=禁用 EFI 帧缓冲区
+Prevents the kernel from attaching to the GPU via EFI framebuffer at boot Required when passing through the primary or only GPU to a VM on UEFI servers=防止内核在启动时通过 EFI 帧缓冲区占用 GPU；在 UEFI 服务器上将主 GPU（或唯一 GPU）直通给虚拟机时，必须启用此选项
+This is the first step for UEFI servers If you still experience GPU passthrough issues after enabling this, also try enabling Disable Simple Framebuffer below=这是 UEFI 服务器排查的第一步。如果启用此选项后仍存在 GPU 直通问题，请尝试同时启用下方的“禁用 Simple Framebuffer”
+Disable VESA Framebuffer=禁用 VESA 帧缓冲区
+Prevents the kernel from attaching to the GPU via VESA framebuffer at boot Required when passing through the primary or only GPU to a VM on legacy BIOS servers=防止内核在启动时通过 VESA 帧缓冲区占用 GPU；在 Legacy BIOS 服务器上将主 GPU（或唯一 GPU）直通给虚拟机时，必须启用此选项
+This is the first step for Legacy BIOS servers If you still experience GPU passthrough issues after enabling this, also try enabling Disable Simple Framebuffer below=这是 Legacy BIOS 服务器排查的第一步；如果启用此选项后仍存在 GPU 直通问题，请尝试同时启用下方的“禁用 Simple Framebuffer”
+Disable Simple Framebuffer=禁用 Simple Framebuffer
+Prevents the kernel from using the Simple Framebuffer driver, which can sometimes interfere with GPU passthrough even when the primary framebuffer EFI or VESA is already disabled=防止内核使用 Simple Framebuffer 驱动程序，即使主帧缓冲区（EFI 或 VESA）已被禁用，该驱动程序有时仍会干扰 GPU 直通
+Enable this as a second step if disabling your boot modes primary framebuffer EFI or VESA above didnt fully resolve GPU passthrough issues=如果禁用上述启动模式的主帧缓冲区（EFI 或 VESA）后，仍未能完全解决 GPU 直通问题，请作为第二步启用此选项
+Block All Framebuffers=阻止所有帧缓冲区
+This is the most comprehensive approach blocks the kernels framebuffer initialization, preventing it from creating any framebuffer devices that could claim your GPU=这是最彻底的解决方案：阻止内核初始化帧缓冲区，从而防止其创建任何可能占用您 GPU 的帧缓冲区设备
+When to use this=何时使用此选项
+- Individual framebuffer options above didnt fully resolve GPU passthrough issues=- 上述单独的帧缓冲区选项未能完全解决 GPU 直通问题
+- You want the most aggressive GPU isolation method=- 您需要最彻底的 GPU 隔离方法
+Important warnings=重要警告
+- Completely disables console and graphical video output after boot=- 启动后将完全禁用控制台和图形视频输出
+- You MUST have WebGUI or SSH access to manage your server=- 您必须确保拥有 WebGUI 或 SSH 访问权限，否则将无法管理服务器
+When enabled, individual framebuffer options above are automatically disabled this replaces them all=启用此选项后，上述单独的帧缓冲区选项将自动被禁用（此选项将取代它们）
+Hardware Compatibility=硬件兼容性
+Hardware compatibility fixes for common issues Use these when system logs show hardware errors, devices fail to initialize properly, resource allocation conflicts occur, or hardware monitoring features arent working=针对常见问题的硬件兼容性修复；当系统日志显示硬件错误、设备无法正常初始化、发生资源分配冲突或硬件监控功能失效时请使用这些选项
+Enable Sensor Access=启用传感器访问
+May be required on some motherboards to allow sensor drivers such as nct6775 to access hardware monitoring chips for temperature, fan speed, and voltage readings Only needed if monitoring isnt working and youve confirmed this parameter resolves it May cause instability on some hardware=某些主板可能需要此选项，以允许传感器驱动程序（如 nct6775）访问硬件监控芯片，从而读取温度、风扇转速和电压；仅当监控功能失效，且您已确认此参数能解决问题时才需启用；在某些硬件上可能会导致系统不稳定
+Disable ACPI Hardware Error Reporting=禁用 ACPI 硬件错误报告
+Disables ACPI Generic Hardware Error Source reporting Use this if youre seeing spurious hardware error messages in logs or experiencing crashes on systems with buggy BIOS ACPI tables Common on certain Supermicro and ASRock motherboards=禁用 ACPI 通用硬件错误源报告；如果您的系统日志中出现虚假的硬件错误信息，或者在 BIOS ACPI 表存在缺陷的系统上遇到崩溃，请使用此选项；此问题在某些 Supermicro 和 ASRock 主板上较为常见
+Disable PCIe Error Reporting=禁用 PCIe 错误报告
+Disables PCIe Advanced Error Reporting May silence excessive error messages in the system log from some GPUs, HBAs, or other PCIe devices=禁用 PCIe 高级错误报告；这可以屏蔽系统日志中来自某些 GPU、HBA 或其他 PCIe 设备的冗余错误信息
+Note This suppresses error reporting, not the errors themselves - use only if the messages are confirmed to be benign=注意：此操作仅抑制错误报告，而非消除错误本身，建议仅在确认这些错误信息是无害的（良性）时才使用
+Enable PCI Resource Reallocation=启用 PCI 资源重新分配
+Forces the kernel to reallocate PCI resources, fixing detection issues when devices arent assigned proper memory regions by the BIOS Useful for multi-GPU systems, many NVMe drives, or when devices show in lspci but dont work properly=强制内核重新分配 PCI 资源，以修复因 BIOS 未给设备分配正确内存区域而导致的检测问题；适用于多 GPU 系统、安装了大量 NVMe 驱动器，或设备在 lspci 中显示但无法正常工作的情况
+Power Management=电源管理
+These options disable power-saving features that can cause stability issues Use when experiencing random USB disconnects, device freezes, or system lockups during idle periods Increases power consumption slightly=这些选项会禁用可能引发稳定性问题的节能功能；当遇到 USB 设备随机断开、设备冻结或空闲期间系统死机时，请使用这些选项；启用后会略微增加功耗
+Disable USB Autosuspend=禁用 USB 自动挂起
+Prevents USB devices from being automatically suspended when idle Enable this if USB devices disconnect randomly, micekeyboards become unresponsive after inactivity, or you experience issues with USB passthrough to VMs=防止 USB 设备在空闲时自动挂起；如果 USB 设备随机断开连接、鼠标/键盘在闲置后无响应，或者在将 USB 直通给虚拟机时遇到问题，请启用此选项
+Note Increases power consumption slightly as USB devices remain fully powered even when not in use=注意：由于 USB 设备即使在不使用时也会保持完全供电，因此会略微增加整体功耗
+Disable NVMe Deep Power States=禁用 NVMe 深度电源状态
+Prevents buggy NVMe drives from entering deep power states they cannot wake from Use this if NVMe drives disappear and require a cold reboot power cycle to recover Common on certain Samsung, Intel, and WD drives=防止存在缺陷的 NVMe 驱动器进入无法唤醒的深度电源状态；如果 NVMe 驱动器偶尔消失且需要冷重启（断电重启）才能恢复，请使用此选项；此问题在某些三星、英特尔和西部数据（WD）的驱动器上较为常见
+Increases idle power slightly typically 1-2W per drive Dashboard may show inflated NVMe power readings - this is a display artifact=会略微增加空闲功耗（通常每个驱动器增加 1-2W）仪表盘可能会显示虚高的 NVMe 功耗读数，这属于显示假象，无需担心
+Disable PCIe ASPM=禁用 PCIe ASPM
+Disables PCIe Active State Power Management for all devices May resolve log spam or stability issues with some GPUs particularly Nvidia Increases idle power for all PCIe devices=禁用所有设备的 PCIe 活动状态电源管理 (ASPM)；这可能会解决某些 GPU（尤其是 Nvidia）引发的日志刷屏或稳定性问题。会增加所有 PCIe 设备的空闲功耗
+Disable PCIe Port PM=禁用 PCIe 端口电源管理 (PM)
+Prevents PCIe root ports from entering low-power states May help when devices disappear after idle periods Often used alongside ASPM disable=防止 PCIe 根端口进入低功耗状态；当设备在闲置一段时间后消失时，此选项可能会有所帮助；通常与禁用 ASPM 配合使用
+Custom Parameters=自定义参数
+Only add parameters you understand - incorrect values may prevent your server from booting Add custom kernel parameters not covered by the options above Use the comment field to document what each parameter does=请仅添加您完全理解的参数，错误的数值可能会导致服务器无法启动；用于添加上述选项未涵盖的自定义内核参数；建议使用注释字段记录每个参数的具体作用
+Add Custom Parameter=添加自定义参数
+Optional comment eg, Disables CPU mitigations=可选注释（例如：禁用 CPU 缓解措施）
+Add=添加
+Parameters to Apply=待应用的参数
+Current Bootloader Configuration=当前引导加载程序配置
+Global Configuration=全局配置
+Boot Entries=启动项
+Default boot entry=Default boot entry
+Save Raw Config=保存原始配置
+Restore Backup=恢复备份
+Ive Tested - Apply to Safe Mode=我已测试（应用于安全模式）
+Skip=跳过
+Current GRUB Configuration=当前 GRUB 配置
+Current Syslinux Configuration=当前 Syslinux 配置

@@ -45,6 +45,14 @@ WebUI=打开网页图形界面
 Yes, delete it=确定删除
 Yes, update it=确定更新
 Yes=是
+Create Snapshot=创建快照
+Start with console=使用控制台启动
+Start with remote-viewer=使用 Remote-Viewer 启动
+Revert snapshot=还原快照
+Block Commit=块提交
+Block Pull=块拉取
+Remove snapshot=移除快照
+Clone=克隆
 
 ; footer messages
 Array Copying=硬盘阵列正在复制

@@ -10,6 +10,7 @@ Empty All Trash=清空所有垃圾
 Empty Trash=清空回收站
 Enable on Unassigned Devices=在未分配的设备上启用
 Enable Recycle Bin=启用回收站
+Hide Recycle Bin Folder=隐藏回收站文件夹
 Excluded Directories=排除目录
 Excluded Files=排除文件
 Excluded Shares=排除共享
@@ -51,14 +52,14 @@ Update Recycle Bin Size in Background=在后台更新回收站大小
 :end
 
 :recycle_bin_enable_plug:
-> 设置为 **是** 以在服务器启动时**启用**已删除文件的回收站功能
+> 设置为 **是** 以在服务器启动时启用针对 SMB 删除文件的回收站功能。
 >
-> 要隐藏回收站文件夹，请在 SMB 设置中将“隐藏 (.) 文件”设置为“是”。<a href='/Settings/SMB'>去设置</a>
+> 若要隐藏回收站文件夹，请在 SMB 设置 <a href='/Settings/SMB'>此处</a> 将“隐藏回收站文件夹”设置为“是”。
 :end
 
 :recycle_bin_hide_folder_plug:
-> 设置为 **否** 以在用户共享中显示回收站文件夹
-> SMB设置“隐藏 (.) 文件”控制是否在用户共享中显示隐藏文件夹。
+> 设置为 **否** 以在用户共享中显示回收站文件夹。
+> SMB 设置中的“隐藏回收站文件夹”选项用于控制隐藏文件夹是否在用户共享中显示。
 :end
 
 :recycle_bin_background_plug:

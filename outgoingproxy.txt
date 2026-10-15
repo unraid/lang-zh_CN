@@ -32,3 +32,6 @@ User=用户
 > 此代理的用户名
 :end
 
+:outgoing_proxy_password_plug:
+> 此代理的密码
+:end

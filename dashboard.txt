@@ -122,8 +122,13 @@ Parity is degraded=奇偶校验已降级
 Percent of total used memory=总内存使用百分比
 Percent usage of Docker folder=Docker 文件夹使用百分比
 Percent usage of Docker vdisk=Docker 虚拟磁盘使用百分比
+; 翻译有冲突，修改需要和Docker folder和Docker vdisk同步
+Percent usage of Docker文件夹=Docker 文件夹使用百分比
+Percent usage of Docker虚拟磁盘=Docker 虚拟磁盘使用百分比
 Percent usage of flash usb device=闪存 USB 设备使用百分比
 Percent usage of LOG file system=日志文件系统使用百分比
+Boot device=引导设备
+Percent usage of boot device=引导设备使用百分比
 Pool=池
 Popup Blocked=Popup Blocked.
 Power Status=电源信息
@@ -200,3 +205,5 @@ Unchecked will use QEMU External Snapshot=未选中时将使用 QEMU 外部快�
 utilization warnings=使用率警告
 Virtual Machines Usage=虚拟机使用情况
 Mbr Status=MBR 状态
+; 图表中ZFS 缓存的翻译，因上文已确认是缓存了，所以翻译成ZFS和其它类目统一；全部翻译只出现一次，后续若有相同键项请务必注意
+ZFS cache=ZFS
